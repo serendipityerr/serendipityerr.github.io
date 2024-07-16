@@ -6,21 +6,6 @@
     <description>Recent content in Tags on Serendipity_Blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://serendipityerr.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Blog</title>
-      <link>https://serendipityerr.github.io/tags/blog/</link>
-      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
-      <guid>https://serendipityerr.github.io/tags/blog/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Test</title>
-      <link>https://serendipityerr.github.io/tags/test/</link>
-      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
-      <guid>https://serendipityerr.github.io/tags/test/</guid>
-      <description></description>
-    </item>
   </channel>
 </rss>
