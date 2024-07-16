@@ -23,7 +23,7 @@ jobs:
 
     - name: Build and Deploy
       run: |
-        hugo -F --cleanDestinationDir  # 生成静态文件
+        C:\Users\潘末锴\Downloads\hugo_0.128.2_windows-amd64\hugo -F --cleanDestinationDir  # 生成静态文件
         mkdir -p public  # 确保public文件夹存在
         cp -r public/* ./  # 复制生成的静态文件到仓库根目录
 
