@@ -13,7 +13,7 @@
       <link>https://serendipityerr.github.io/post/2024-07-16/</link>
       <pubDate>Tue, 16 Jul 2024 14:16:38 +0800</pubDate>
       <guid>https://serendipityerr.github.io/post/2024-07-16/</guid>
-      <description>Study How To Build A Blog! New A Post Run the code in order in the PowerShell: cd D:/html D:/hugo_dir/hugo new post/fileName.md Push To Github Run the code in order in the PowerShell: D:/hugo_dir/hugo cd public git add . git commit -m &amp;#34;test&amp;#34; git push origin main </description>
+      <description>Study How To Build A Blog! New A Post Run the code in order in the PowerShell:&#xA;cd D:/html D:/hugo_dir/hugo new post/fileName.md Push To Github Run the code in order in the PowerShell:&#xA;D:/hugo_dir/hugo cd public git add . git commit -m &amp;#34;test&amp;#34; git push origin main </description>
     </item>
     <item>
       <title>My First Blog</title>
