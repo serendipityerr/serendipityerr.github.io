@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Serendipity</title>
+    <title>Serendipity_Blog</title>
     <link>https://serendipityerr.github.io/</link>
-    <description>Recent content on Serendipity</description>
+    <description>Recent content on Serendipity_Blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 16 Jul 2024 10:52:30 +0800</lastBuildDate>
