@@ -112,7 +112,26 @@
 </span></span><span style="display:flex;"><span>git add .
 </span></span><span style="display:flex;"><span>git commit -m <span style="color:#e6db74">&#34;test&#34;</span>
 </span></span><span style="display:flex;"><span>git push origin main
-</span></span></code></pre></div>
+</span></span></code></pre></div><h3 id="score-based-generative-modeling-through-stochastic-differential-equations">Score-Based Generative Modeling through Stochastic Differential Equations</h3>
+<p>We take the following SDE to Descirbe the Forward Diffusion Process: $$ dx_t = f(x_t, t) dt + g(t) dw_t \tag{1} $$</p>
+<p>Consider the limit of the discrete form as $\Delta t \rightarrow 0$ : $$ x_{t+\Delta t}- x_{t} = f(x_t, t) \Delta t + g(t) \sqrt{\Delta t} \varepsilon \quad  \varepsilon \sim N (0, I) \tag{2}$$</p>
+<p>which is equal to: $$ x_{t+\Delta t} = x_{t} + f(x_t, t) \Delta t + g(t) \sqrt{\Delta t} \varepsilon $$</p>
+<p>change it into probability:</p>
+<p>$$\begin{aligned}
+p\left(\boldsymbol{x}<em>{t+\Delta t} \mid \boldsymbol{x}</em>{t}\right) &amp; =\mathcal{N}\left(\boldsymbol{x}<em>{t+\Delta t} ; \boldsymbol{x}</em>{t}+\boldsymbol{f}<em>{t}\left(\boldsymbol{x}</em>{t}\right) \Delta t, g_{t}^{2} \Delta t \boldsymbol{I}\right) \
+&amp; \propto \exp \left(-\frac{\left|\boldsymbol{x}<em>{t+\Delta t}-\boldsymbol{x}</em>{t}-\boldsymbol{f}<em>{t}\left(\boldsymbol{x}</em>{t}\right) \Delta t\right|^{2}}{2 g_{t}^{2} \Delta t}\right) \tag{3}
+\end{aligned}$$</p>
+<p>According to the thought of DDPM, we need to get $p\left(\boldsymbol{x}<em>{t+\Delta t} \mid \boldsymbol{x}</em>{t}\right)$ from $p\left(\boldsymbol{x}<em>{t} \mid \boldsymbol{x}</em>{t+\Delta t}\right)$</p>
+<p>According to the Bayes Formula:
+$$\begin{aligned}
+p(\boldsymbol{x}<em>t|\boldsymbol{x}</em>{t+\Delta t})&amp; =\frac{p(\boldsymbol{x}_{t+\Delta t}|\boldsymbol{x}<em>t)p(\boldsymbol{x}<em>t)}{p(\boldsymbol{x}</em>{t+\Delta t})}=p(\boldsymbol{x}</em>{t+\Delta t}|\boldsymbol{x}<em>t)\exp(\log p(\boldsymbol{x}<em>t)-\log p(\boldsymbol{x}</em>{t+\Delta t})) \
+&amp;\propto\exp\left(-\frac{|\boldsymbol{x}</em>{t+\Delta t}-\boldsymbol{x}_t-\boldsymbol{f}_t(\boldsymbol{x}_t)\Delta t|^2}{2g_t^2\Delta t}+\log p(\boldsymbol{x}<em>t)-\log p(\boldsymbol{x}</em>{t+\Delta t})\right) \tag{4}
+\end{aligned}$$</p>
+<p>Take Taylor Expansion:
+$$ \mathcal \log p\left(\boldsymbol{x}<em>{t+\Delta t}\right) \approx \log p\left(\boldsymbol{x}</em>{t}\right)+\left(\boldsymbol{x}<em>{t+\Delta t}-\boldsymbol{x}</em>{t}\right) \cdot \nabla_{\boldsymbol{x}<em>{t}} \log p\left(\boldsymbol{x}</em>{t}\right)+\Delta t \frac{\partial}{\partial t} \log p\left(\boldsymbol{x}_{t}\right) \tag{5} \label{5} $$</p>
+<p>Be careful not to neglect the $\frac{∂}{∂t}$ term, because $p(x_t)$ is actually &ldquo;the probability density that the random variable is equal to $x_t$ at moment $t$&rdquo;, while $p(x_{t+\Delta t})$ is actually &ldquo;the probability density that the random variable is equal to $t+\Delta t$ at moment $t+\Delta t$&rdquo;, which means that $p(x_t)$ is actually both the probability density that $t+\Delta t$ is equal to $t+\Delta t$, which means that $p(x_t)$ is actually the probability density that $t+\Delta t$ is equal to $t+\Delta t$. This means that $p(x_t)$ is actually a function of both $t$ and $x_t$, so there is an extra item for the partial derivative of $t$.</p>
+<p>Then, in Eq $\eqref{5}$ $$p(\boldsymbol{x}<em>t|\boldsymbol{x}</em>{t+\Delta t})\propto\exp\left(-\frac{\left|\boldsymbol{x}_{t+\Delta t}-\boldsymbol{x}_t-\left[\boldsymbol{f}_t(\boldsymbol{x}<em>t)-g_t^2\nabla</em>{\boldsymbol{x}_t}\log p(\boldsymbol{x}_t)\right]\Delta t\right|^2}{2g_t^2\Delta t}+\theta(\Delta t)\right) \tag{6}$$</p>
+
           </section>
       </p>
       
