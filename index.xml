@@ -6,8 +6,15 @@
     <description>Recent content on Serendipity_Blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 16 Jul 2024 14:16:38 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 18 Jul 2024 23:45:09 +0800</lastBuildDate>
     <atom:link href="https://serendipityerr.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2024 07 18</title>
+      <link>https://serendipityerr.github.io/post/2024-07-18/</link>
+      <pubDate>Thu, 18 Jul 2024 23:45:09 +0800</pubDate>
+      <guid>https://serendipityerr.github.io/post/2024-07-18/</guid>
+      <description>Study on Score-Based Generative Modeling About Score-Based Generative Modeling: the following article has given a clear explanation: Diffusion Model: SDE&#xA;A simple conclusion of the Score-Based Generative Modeling through Stochastic Differential Equations: Generalization of discrete models such as DDPM to continuous SDE forms, through predictor-corrector samplers to correct the solution of a numerical SDE solver.</description>
+    </item>
     <item>
       <title>2024.07.16</title>
       <link>https://serendipityerr.github.io/post/2024-07-16/</link>
