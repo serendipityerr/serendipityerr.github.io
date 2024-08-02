@@ -186,33 +186,7 @@
 </span></span><span style="display:flex;"><span>            nn<span style="color:#f92672">.</span>Tanh()
 </span></span><span style="display:flex;"><span>            )
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># Design of the network can be changed</span>
-</span></span></code></pre></div><!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<pre><code>&lt;script&gt;
-  let heartButton = document.getElementById('heart');
-  let hearts = Array.from(heartButton.children);
-  hearts.reverse();
-  heartButton.addEventListener('click', function () {
-    let heartIndex = 0;
-    for (let heart of hearts) {
-      animateLeap(heartIndex++);
-    }
-    hearts.reverse();
-  });
-  function animateLeap(heartIndex) {
-    hearts[heartIndex].classList.remove('leap');
-    hearts[heartIndex].offsetWidth;
-    setTimeout(() =&gt; {
-      hearts[heartIndex].classList.add('leap');
-      setTimeout(() =&gt; {
-        hearts[heartIndex].style.zIndex = heartIndex;
-        hearts[heartIndex].style.strokeWidth = heartIndex / 4 + 'px';
-      }, 200);
-    }, 5 * (heartIndex * 10));
-  }
-&lt;/script&gt;
-</code></pre>
-<!-- raw HTML omitted -->
+</span></span></code></pre></div><p>{{ partial &ldquo;mathjax.html&rdquo; . }}</p>
 
           </section>
       </p>
