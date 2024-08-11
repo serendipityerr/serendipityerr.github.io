@@ -6,8 +6,15 @@
     <description>Recent content on Serendipity_Blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 02 Aug 2024 11:22:51 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 11 Aug 2024 12:09:12 +0800</lastBuildDate>
     <atom:link href="https://serendipityerr.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2024.08.11</title>
+      <link>https://serendipityerr.github.io/post/2024-08-11/</link>
+      <pubDate>Sun, 11 Aug 2024 12:09:12 +0800</pubDate>
+      <guid>https://serendipityerr.github.io/post/2024-08-11/</guid>
+      <description>Learning Diffusers Installation With pip&#xA;pip install --upgrade diffusers[torch] With conda&#xA;conda install -c conda-forge diffusers Use Directly call the pretrained model uploaded in diffusers:&#xA;import torch from diffusers import DDPMPipeline device = torch.device(&amp;#34;cuda&amp;#34; if torch.cuda.is_available() else &amp;#34;cpu&amp;#34;) # Load the butterfly pipeline butterfly_pipeline = DDPMPipeline.from_pretrained( &amp;#34;johnowhitaker/ddpm-butterflies-32px&amp;#34; ).to(device) # Create 8 images images = butterfly_pipeline(batch_size=8).images # View the result make_grid(images) Example Step 0: Some useful functions import numpy as np import torch import torch.</description>
+    </item>
     <item>
       <title>2024.08.02</title>
       <link>https://serendipityerr.github.io/post/2024-08-02/</link>
@@ -41,7 +48,7 @@
       <link>https://serendipityerr.github.io/post/first/</link>
       <pubDate>Tue, 16 Jul 2024 13:40:30 +0800</pubDate>
       <guid>https://serendipityerr.github.io/post/first/</guid>
-      <description>Hello Serendpity&amp;rsquo;s Blog This is the Serendpity&amp;rsquo;s first blog post. Love you all! ( •̀ ω •́ )y</description>
+      <description>Hello Serendpity&amp;rsquo;s Blog This is Serendpity&amp;rsquo;s first blog post. Love you all! ( •̀ ω •́ )y</description>
     </item>
   </channel>
 </rss>

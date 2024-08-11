@@ -145,6 +145,247 @@
 	   
 <article class="post post">
     <header class="post-header">
+        <h2 class="post-title"><a href="/post/2024-08-11/">2024.08.11</a></h2>
+    </header>
+    <section class="post-excerpt">
+      <p>
+          <section class="post-content">
+            <h3 id="learning-diffusers">Learning <code>Diffusers</code></h3>
+<h4 id="installation">Installation</h4>
+<p>With <code>pip</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pip install --upgrade diffusers<span style="color:#f92672">[</span>torch<span style="color:#f92672">]</span>
+</span></span></code></pre></div><p>With <code>conda</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>conda install -c conda-forge diffusers
+</span></span></code></pre></div><h4 id="use">Use</h4>
+<p>Directly call the pretrained model uploaded in <code>diffusers</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span><span style="color:#f92672">import</span> torch
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> diffusers <span style="color:#f92672">import</span> DDPMPipeline
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>device <span style="color:#f92672">=</span> torch<span style="color:#f92672">.</span>device(<span style="color:#e6db74">&#34;cuda&#34;</span> <span style="color:#66d9ef">if</span> torch<span style="color:#f92672">.</span>cuda<span style="color:#f92672">.</span>is_available() <span style="color:#66d9ef">else</span> <span style="color:#e6db74">&#34;cpu&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Load the butterfly pipeline</span>
+</span></span><span style="display:flex;"><span>butterfly_pipeline <span style="color:#f92672">=</span> DDPMPipeline<span style="color:#f92672">.</span>from_pretrained(
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;johnowhitaker/ddpm-butterflies-32px&#34;</span>
+</span></span><span style="display:flex;"><span>)<span style="color:#f92672">.</span>to(device)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Create 8 images</span>
+</span></span><span style="display:flex;"><span>images <span style="color:#f92672">=</span> butterfly_pipeline(batch_size<span style="color:#f92672">=</span><span style="color:#ae81ff">8</span>)<span style="color:#f92672">.</span>images
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># View the result</span>
+</span></span><span style="display:flex;"><span>make_grid(images)
+</span></span></code></pre></div><h4 id="example">Example</h4>
+<h5 id="step-0-some-useful-functions">Step 0: Some useful functions</h5>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span><span style="color:#f92672">import</span> numpy <span style="color:#66d9ef">as</span> np
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> torch
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> torch.nn.functional <span style="color:#66d9ef">as</span> F
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> matplotlib <span style="color:#f92672">import</span> pyplot <span style="color:#66d9ef">as</span> plt
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> PIL <span style="color:#f92672">import</span> Image
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">show_images</span>(x):
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;Given a batch of images x, make a grid and convert to PIL&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    x <span style="color:#f92672">=</span> x <span style="color:#f92672">*</span> <span style="color:#ae81ff">0.5</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">0.5</span>  <span style="color:#75715e"># Map from (-1, 1) back to (0, 1)</span>
+</span></span><span style="display:flex;"><span>    grid <span style="color:#f92672">=</span> torchvision<span style="color:#f92672">.</span>utils<span style="color:#f92672">.</span>make_grid(x)
+</span></span><span style="display:flex;"><span>    grid_im <span style="color:#f92672">=</span> grid<span style="color:#f92672">.</span>detach()<span style="color:#f92672">.</span>cpu()<span style="color:#f92672">.</span>permute(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">0</span>)<span style="color:#f92672">.</span>clip(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>) <span style="color:#f92672">*</span> <span style="color:#ae81ff">255</span>
+</span></span><span style="display:flex;"><span>    grid_im <span style="color:#f92672">=</span> Image<span style="color:#f92672">.</span>fromarray(np<span style="color:#f92672">.</span>array(grid_im)<span style="color:#f92672">.</span>astype(np<span style="color:#f92672">.</span>uint8))
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> grid_im
+</span></span></code></pre></div><h5 id="step-1-download-a-training-dataset">Step 1: Download a training dataset</h5>
+<p>For this example, we&rsquo;ll use a dataset of images from the Hugging Face Hub. Specifically, <a href="https://huggingface.co/datasets/huggan/smithsonian_butterflies_subset">this collection of 1000 butterfly pictures</a>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span><span style="color:#f92672">import</span> torchvision
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> datasets <span style="color:#f92672">import</span> load_dataset
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> torchvision <span style="color:#f92672">import</span> transforms
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Load dataset from https://huggingface.co/datasets/huggan/smithsonian_butterflies_subset</span>
+</span></span><span style="display:flex;"><span>dataset <span style="color:#f92672">=</span> load_dataset(<span style="color:#e6db74">&#34;huggan/smithsonian_butterflies_subset&#34;</span>, split<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;train&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#39;&#39;&#39;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74"># Or load images from a local folder
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">dataset = load_dataset(&#34;imagefolder&#34;, data_dir=&#34;path/to/folder&#34;)
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">&#39;&#39;&#39;</span> 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># We&#39;ll train on 32-pixel square images, but you can try larger sizes too</span>
+</span></span><span style="display:flex;"><span>image_size <span style="color:#f92672">=</span> <span style="color:#ae81ff">32</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># You can lower your batch size if you&#39;re running out of GPU memory</span>
+</span></span><span style="display:flex;"><span>batch_size <span style="color:#f92672">=</span> <span style="color:#ae81ff">64</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Define data augmentations</span>
+</span></span><span style="display:flex;"><span>preprocess <span style="color:#f92672">=</span> transforms<span style="color:#f92672">.</span>Compose(
+</span></span><span style="display:flex;"><span>    [
+</span></span><span style="display:flex;"><span>        transforms<span style="color:#f92672">.</span>Resize((image_size, image_size)),  <span style="color:#75715e"># Resize</span>
+</span></span><span style="display:flex;"><span>        transforms<span style="color:#f92672">.</span>RandomHorizontalFlip(),  <span style="color:#75715e"># Randomly flip (data augmentation)</span>
+</span></span><span style="display:flex;"><span>        transforms<span style="color:#f92672">.</span>ToTensor(),  <span style="color:#75715e"># Convert to tensor (0, 1)</span>
+</span></span><span style="display:flex;"><span>        transforms<span style="color:#f92672">.</span>Normalize([<span style="color:#ae81ff">0.5</span>], [<span style="color:#ae81ff">0.5</span>]),  <span style="color:#75715e"># Map to (-1, 1)</span>
+</span></span><span style="display:flex;"><span>    ]
+</span></span><span style="display:flex;"><span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">transform</span>(examples):
+</span></span><span style="display:flex;"><span>    images <span style="color:#f92672">=</span> [preprocess(image<span style="color:#f92672">.</span>convert(<span style="color:#e6db74">&#34;RGB&#34;</span>)) <span style="color:#66d9ef">for</span> image <span style="color:#f92672">in</span> examples[<span style="color:#e6db74">&#34;image&#34;</span>]]
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> {<span style="color:#e6db74">&#34;images&#34;</span>: images}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>dataset<span style="color:#f92672">.</span>set_transform(transform)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Create a dataloader from the dataset to serve up the transformed images in batches; Save the images in the dataloader</span>
+</span></span><span style="display:flex;"><span>train_dataloader <span style="color:#f92672">=</span> torch<span style="color:#f92672">.</span>utils<span style="color:#f92672">.</span>data<span style="color:#f92672">.</span>DataLoader(
+</span></span><span style="display:flex;"><span>    dataset, batch_size<span style="color:#f92672">=</span>batch_size, shuffle<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>
+</span></span><span style="display:flex;"><span>)
+</span></span></code></pre></div><p>View the first 8 image examples in the dataset:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span>xb <span style="color:#f92672">=</span> next(iter(train_dataloader))[<span style="color:#e6db74">&#34;images&#34;</span>]<span style="color:#f92672">.</span>to(device)[:<span style="color:#ae81ff">8</span>]
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;X shape:&#34;</span>, xb<span style="color:#f92672">.</span>shape)
+</span></span><span style="display:flex;"><span>show_images(xb)<span style="color:#f92672">.</span>resize((<span style="color:#ae81ff">8</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">64</span>, <span style="color:#ae81ff">64</span>), resample<span style="color:#f92672">=</span>Image<span style="color:#f92672">.</span>NEAREST)
+</span></span></code></pre></div><h5 id="step-2-define-the-scheduler">Step 2: Define the Scheduler</h5>
+<p>Our plan for training is to take these input images and add noise to them, then feed the noisy images to the model. And during inference, we will use the model predictions to iteratively remove noise. In <code>diffusers</code>,  these processes are both handled by the <strong>scheduler</strong>.</p>
+<p>The noise schedule determines how much noise is added at different timesteps.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span><span style="color:#f92672">from</span> diffusers <span style="color:#f92672">import</span> DDPMScheduler
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Define a Scheduler</span>
+</span></span><span style="display:flex;"><span>noise_scheduler <span style="color:#f92672">=</span> DDPMScheduler(num_train_timesteps<span style="color:#f92672">=</span><span style="color:#ae81ff">1000</span>)
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span><span style="color:#75715e"># Add noise and View the process of noise-adding</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># The core is add_noise()</span>
+</span></span><span style="display:flex;"><span>timesteps <span style="color:#f92672">=</span> torch<span style="color:#f92672">.</span>linspace(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">999</span>, <span style="color:#ae81ff">8</span>)<span style="color:#f92672">.</span>long()<span style="color:#f92672">.</span>to(device)
+</span></span><span style="display:flex;"><span>noise <span style="color:#f92672">=</span> torch<span style="color:#f92672">.</span>randn_like(xb) <span style="color:#75715e"># Random a noise from standard Guassian N(0,I)</span>
+</span></span><span style="display:flex;"><span>noisy_xb <span style="color:#f92672">=</span> noise_scheduler<span style="color:#f92672">.</span>add_noise(xb, noise, timesteps)
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Noisy X shape&#34;</span>, noisy_xb<span style="color:#f92672">.</span>shape)
+</span></span><span style="display:flex;"><span>show_images(noisy_xb)<span style="color:#f92672">.</span>resize((<span style="color:#ae81ff">8</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">64</span>, <span style="color:#ae81ff">64</span>), resample<span style="color:#f92672">=</span>Image<span style="color:#f92672">.</span>NEAREST)
+</span></span></code></pre></div><h5 id="step-3-define-the-model">Step 3: Define the Model</h5>
+<p>Most diffusion models use architectures that are some variant of a <strong>U-Net</strong> and that&rsquo;s what we&rsquo;ll use here.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span><span style="color:#f92672">from</span> diffusers <span style="color:#f92672">import</span> UNet2DModel
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Create a model</span>
+</span></span><span style="display:flex;"><span>model <span style="color:#f92672">=</span> UNet2DModel(
+</span></span><span style="display:flex;"><span>    sample_size<span style="color:#f92672">=</span>image_size,  <span style="color:#75715e"># the target image resolution</span>
+</span></span><span style="display:flex;"><span>    in_channels<span style="color:#f92672">=</span><span style="color:#ae81ff">3</span>,  <span style="color:#75715e"># the number of input channels, 3 for RGB images</span>
+</span></span><span style="display:flex;"><span>    out_channels<span style="color:#f92672">=</span><span style="color:#ae81ff">3</span>,  <span style="color:#75715e"># the number of output channels</span>
+</span></span><span style="display:flex;"><span>    layers_per_block<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>,  <span style="color:#75715e"># how many ResNet layers to use per UNet block</span>
+</span></span><span style="display:flex;"><span>    block_out_channels<span style="color:#f92672">=</span>(<span style="color:#ae81ff">64</span>, <span style="color:#ae81ff">128</span>, <span style="color:#ae81ff">128</span>, <span style="color:#ae81ff">256</span>),  <span style="color:#75715e"># More channels -&gt; more parameters</span>
+</span></span><span style="display:flex;"><span>    down_block_types<span style="color:#f92672">=</span>(
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;DownBlock2D&#34;</span>,  <span style="color:#75715e"># a regular ResNet downsampling block</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;DownBlock2D&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;AttnDownBlock2D&#34;</span>,  <span style="color:#75715e"># a ResNet downsampling block with spatial self-attention</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;AttnDownBlock2D&#34;</span>,
+</span></span><span style="display:flex;"><span>    ),
+</span></span><span style="display:flex;"><span>    up_block_types<span style="color:#f92672">=</span>(
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;AttnUpBlock2D&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;AttnUpBlock2D&#34;</span>,  <span style="color:#75715e"># a ResNet upsampling block with spatial self-attention</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;UpBlock2D&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;UpBlock2D&#34;</span>,  <span style="color:#75715e"># a regular ResNet upsampling block</span>
+</span></span><span style="display:flex;"><span>    ),
+</span></span><span style="display:flex;"><span>)
+</span></span><span style="display:flex;"><span>model<span style="color:#f92672">.</span>to(device)
+</span></span></code></pre></div><p>When dealing with higher-resolution inputs you may want to use more down and up-blocks, and keep the attention layers only at the lowest resolution (bottom) layers to <strong>reduce memory usage</strong>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span><span style="color:#75715e"># Check that passing in a batch of data and some random timesteps produces an output the same shape as the input data:</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">with</span> torch<span style="color:#f92672">.</span>no_grad():
+</span></span><span style="display:flex;"><span>    model_prediction <span style="color:#f92672">=</span> model(noisy_xb, timesteps)<span style="color:#f92672">.</span>sample
+</span></span><span style="display:flex;"><span>model_prediction<span style="color:#f92672">.</span>shape
+</span></span></code></pre></div><h5 id="step-4-training-create-a-training-loop">Step 4: Training: Create a Training Loop</h5>
+<p>For each batch of data, we</p>
+<ul>
+<li>Sample some random timesteps</li>
+<li>Noise the data accordingly</li>
+<li>Feed the noisy data through the model</li>
+<li>Compare the model predictions with the target (i.e. the noise in this case) using mean squared error as our loss function</li>
+<li>Update the model parameters via <code>loss.backward()</code> and <code>optimizer.step()</code></li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span><span style="color:#75715e"># Set the noise scheduler</span>
+</span></span><span style="display:flex;"><span>noise_scheduler <span style="color:#f92672">=</span> DDPMScheduler(
+</span></span><span style="display:flex;"><span>    num_train_timesteps<span style="color:#f92672">=</span><span style="color:#ae81ff">1000</span>, beta_schedule<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;squaredcos_cap_v2&#34;</span>
+</span></span><span style="display:flex;"><span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Training loop</span>
+</span></span><span style="display:flex;"><span>optimizer <span style="color:#f92672">=</span> torch<span style="color:#f92672">.</span>optim<span style="color:#f92672">.</span>AdamW(model<span style="color:#f92672">.</span>parameters(), lr<span style="color:#f92672">=</span><span style="color:#ae81ff">4e-4</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>losses <span style="color:#f92672">=</span> []
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Loop through the training epoch</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> epoch <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">30</span>):
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Loop through all data</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> step, batch <span style="color:#f92672">in</span> enumerate(train_dataloader):
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Set the Scheduler</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Load the data</span>
+</span></span><span style="display:flex;"><span>        clean_images <span style="color:#f92672">=</span> batch[<span style="color:#e6db74">&#34;images&#34;</span>]<span style="color:#f92672">.</span>to(device)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Sample noise to add to the images</span>
+</span></span><span style="display:flex;"><span>        noise <span style="color:#f92672">=</span> torch<span style="color:#f92672">.</span>randn(clean_images<span style="color:#f92672">.</span>shape)<span style="color:#f92672">.</span>to(clean_images<span style="color:#f92672">.</span>device)
+</span></span><span style="display:flex;"><span>        bs <span style="color:#f92672">=</span> clean_images<span style="color:#f92672">.</span>shape[<span style="color:#ae81ff">0</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Sample a random timestep for each image</span>
+</span></span><span style="display:flex;"><span>        timesteps <span style="color:#f92672">=</span> torch<span style="color:#f92672">.</span>randint(
+</span></span><span style="display:flex;"><span>            <span style="color:#ae81ff">0</span>, noise_scheduler<span style="color:#f92672">.</span>num_train_timesteps, (bs,), device<span style="color:#f92672">=</span>clean_images<span style="color:#f92672">.</span>device
+</span></span><span style="display:flex;"><span>        )<span style="color:#f92672">.</span>long()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Add noise to the clean images according to the noise magnitude at each timestep</span>
+</span></span><span style="display:flex;"><span>        noisy_images <span style="color:#f92672">=</span> noise_scheduler<span style="color:#f92672">.</span>add_noise(clean_images, noise, timesteps)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Input the noisy_images to the model and Get the model prediction</span>
+</span></span><span style="display:flex;"><span>        noise_pred <span style="color:#f92672">=</span> model(noisy_images, timesteps, return_dict<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span>)[<span style="color:#ae81ff">0</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Calculate the loss</span>
+</span></span><span style="display:flex;"><span>        loss <span style="color:#f92672">=</span> F<span style="color:#f92672">.</span>mse_loss(noise_pred, noise)
+</span></span><span style="display:flex;"><span>        loss<span style="color:#f92672">.</span>backward(loss)
+</span></span><span style="display:flex;"><span>        losses<span style="color:#f92672">.</span>append(loss<span style="color:#f92672">.</span>item())
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Update the model parameters with the optimizer</span>
+</span></span><span style="display:flex;"><span>        optimizer<span style="color:#f92672">.</span>step()
+</span></span><span style="display:flex;"><span>        optimizer<span style="color:#f92672">.</span>zero_grad()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (epoch <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>) <span style="color:#f92672">%</span> <span style="color:#ae81ff">5</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>:
+</span></span><span style="display:flex;"><span>        loss_last_epoch <span style="color:#f92672">=</span> sum(losses[<span style="color:#f92672">-</span>len(train_dataloader) :]) <span style="color:#f92672">/</span> len(train_dataloader)
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Epoch:</span><span style="color:#e6db74">{</span>epoch<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span><span style="color:#e6db74">}</span><span style="color:#e6db74">, loss: </span><span style="color:#e6db74">{</span>loss_last_epoch<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span><span style="color:#75715e"># Plot the loss</span>
+</span></span><span style="display:flex;"><span>fig, axs <span style="color:#f92672">=</span> plt<span style="color:#f92672">.</span>subplots(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, figsize<span style="color:#f92672">=</span>(<span style="color:#ae81ff">12</span>, <span style="color:#ae81ff">4</span>))
+</span></span><span style="display:flex;"><span>axs[<span style="color:#ae81ff">0</span>]<span style="color:#f92672">.</span>plot(losses)
+</span></span><span style="display:flex;"><span>axs[<span style="color:#ae81ff">1</span>]<span style="color:#f92672">.</span>plot(np<span style="color:#f92672">.</span>log(losses))
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>show()
+</span></span></code></pre></div><h5 id="step-5-generate-images">Step 5: Generate Images</h5>
+<ul>
+<li>Method 1: Create a pipeline</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span><span style="color:#f92672">from</span> diffusers <span style="color:#f92672">import</span> DDPMPipeline
+</span></span><span style="display:flex;"><span>image_pipe <span style="color:#f92672">=</span> DDPMPipeline(unet<span style="color:#f92672">=</span>model, scheduler<span style="color:#f92672">=</span>noise_scheduler)
+</span></span><span style="display:flex;"><span>pipeline_output <span style="color:#f92672">=</span> image_pipe()
+</span></span><span style="display:flex;"><span>pipeline_output<span style="color:#f92672">.</span>images[<span style="color:#ae81ff">0</span>]
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span><span style="color:#75715e"># save a pipeline to a local folder like so:</span>
+</span></span><span style="display:flex;"><span>image_pipe<span style="color:#f92672">.</span>save_pretrained(<span style="color:#e6db74">&#34;my_pipeline&#34;</span>)
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Inspecting the folder contents:</span>
+</span></span><span style="display:flex;"><span>ls my_pipeline/
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Output: model_index.json  scheduler  unet</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># The `scheduler` and `unet` subfolders contain everything needed to re-create those components. For example, inside the `unet` folder you&#39;ll find the model weights (`diffusion_pytorch_model.bin`) alongside a config file which specifies the UNet architecture. </span>
+</span></span></code></pre></div><ul>
+<li>Method 2: Writing a Sampling Loop</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span><span style="color:#75715e"># Random starting point (8 random images):</span>
+</span></span><span style="display:flex;"><span>sample <span style="color:#f92672">=</span> torch<span style="color:#f92672">.</span>randn(<span style="color:#ae81ff">8</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">32</span>, <span style="color:#ae81ff">32</span>)<span style="color:#f92672">.</span>to(device)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># A specific process of denoising and generating the images</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> i, t <span style="color:#f92672">in</span> enumerate(noise_scheduler<span style="color:#f92672">.</span>timesteps):
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Get model pred</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">with</span> torch<span style="color:#f92672">.</span>no_grad():
+</span></span><span style="display:flex;"><span>        residual <span style="color:#f92672">=</span> model(sample, t)<span style="color:#f92672">.</span>sample
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Update sample with step</span>
+</span></span><span style="display:flex;"><span>    sample <span style="color:#f92672">=</span> noise_scheduler<span style="color:#f92672">.</span>step(residual, t, sample)<span style="color:#f92672">.</span>prev_sample
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>show_images(sample)
+</span></span></code></pre></div>
+          </section>
+      </p>
+      
+    </section>
+    <footer class="post-meta">
+        
+            <img class="author-thumb" src="https://serendipityerr.github.io/images/chick.png" alt="Author image" nopin="nopin" />
+        
+        
+            Serendipity
+        
+        
+        <time class="post-date" datetime="2024-08-11T12:09:12&#43;08:00">
+            11 Aug 2024
+        </time>
+    </footer>
+</article>
+
+	
+	   
+<article class="post post">
+    <header class="post-header">
         <h2 class="post-title"><a href="/post/2024-08-02/">2024.08.02</a></h2>
     </header>
     <section class="post-excerpt">
@@ -450,7 +691,7 @@
       <p>
           <section class="post-content">
             <h3 id="hello-serendpitys-blog">Hello Serendpity&rsquo;s Blog</h3>
-<p>This is the Serendpity&rsquo;s first blog post. Love you all! ( •̀ ω •́ )y</p>
+<p>This is Serendpity&rsquo;s first blog post. Love you all! ( •̀ ω •́ )y</p>
 
           </section>
       </p>
