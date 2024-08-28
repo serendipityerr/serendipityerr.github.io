@@ -145,6 +145,82 @@
 	   
 <article class="post post">
     <header class="post-header">
+        <h2 class="post-title"><a href="/post/2024-08-28/">2024.08.28</a></h2>
+    </header>
+    <section class="post-excerpt">
+      <p>
+          <section class="post-content">
+            <h3 id="image-pre-processingtransformation">Image Pre-processing/Transformation</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span>train_tfm <span style="color:#f92672">=</span> transforms<span style="color:#f92672">.</span>Compose([
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Resize the images into the fixed size</span>
+</span></span><span style="display:flex;"><span>    transforms<span style="color:#f92672">.</span>Resize((<span style="color:#ae81ff">128</span>, <span style="color:#ae81ff">128</span>)),
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;&#39;&#39;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    Do some Image Enhancement
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    &#39;&#39;&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># ToTensor() should be the last transformation</span>
+</span></span><span style="display:flex;"><span>    transforms<span style="color:#f92672">.</span>ToTensor(),
+</span></span><span style="display:flex;"><span>])
+</span></span></code></pre></div><h4 id="geometric-transformations">Geometric Transformations</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span><span style="color:#75715e"># Rotation</span>
+</span></span><span style="display:flex;"><span>transform_rotate <span style="color:#f92672">=</span> transforms<span style="color:#f92672">.</span>RandomRotation(degrees<span style="color:#f92672">=</span><span style="color:#ae81ff">30</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Translation</span>
+</span></span><span style="display:flex;"><span>transform_translate <span style="color:#f92672">=</span> transforms<span style="color:#f92672">.</span>RandomAffine(degrees<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>, translate<span style="color:#f92672">=</span>(<span style="color:#ae81ff">0.1</span>, <span style="color:#ae81ff">0.1</span>))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Flipping</span>
+</span></span><span style="display:flex;"><span>transform_flip <span style="color:#f92672">=</span> transforms<span style="color:#f92672">.</span>RandomHorizontalFlip(p<span style="color:#f92672">=</span><span style="color:#ae81ff">0.5</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Scaling</span>
+</span></span><span style="display:flex;"><span>transform_scale <span style="color:#f92672">=</span> transforms<span style="color:#f92672">.</span>RandomResizedCrop(size<span style="color:#f92672">=</span><span style="color:#ae81ff">224</span>, scale<span style="color:#f92672">=</span>(<span style="color:#ae81ff">0.8</span>, <span style="color:#ae81ff">1.0</span>))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Shearing</span>
+</span></span><span style="display:flex;"><span>transform_shear <span style="color:#f92672">=</span> transforms<span style="color:#f92672">.</span>RandomAffine(degrees<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>, shear<span style="color:#f92672">=</span><span style="color:#ae81ff">20</span>)
+</span></span></code></pre></div><h4 id="color-transformations">Color Transformations</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span><span style="color:#75715e"># Brightness Adjustment</span>
+</span></span><span style="display:flex;"><span>transform_brightness <span style="color:#f92672">=</span> transforms<span style="color:#f92672">.</span>ColorJitter(brightness<span style="color:#f92672">=</span><span style="color:#ae81ff">0.5</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Contrast Adjustment</span>
+</span></span><span style="display:flex;"><span>transform_contrast <span style="color:#f92672">=</span> transforms<span style="color:#f92672">.</span>ColorJitter(contrast<span style="color:#f92672">=</span><span style="color:#ae81ff">0.5</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Satuation Adjustment</span>
+</span></span><span style="display:flex;"><span>transform_saturation <span style="color:#f92672">=</span> transforms<span style="color:#f92672">.</span>ColorJitter(saturation<span style="color:#f92672">=</span><span style="color:#ae81ff">0.5</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Hue Adjustment</span>
+</span></span><span style="display:flex;"><span>transform_hue <span style="color:#f92672">=</span> transforms<span style="color:#f92672">.</span>ColorJitter(hue<span style="color:#f92672">=</span><span style="color:#ae81ff">0.2</span>)
+</span></span></code></pre></div><h4 id="cropping-and-padding">Cropping and Padding</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span><span style="color:#75715e"># Random Cropping</span>
+</span></span><span style="display:flex;"><span>transform_random_crop <span style="color:#f92672">=</span> transforms<span style="color:#f92672">.</span>RandomCrop(size<span style="color:#f92672">=</span><span style="color:#ae81ff">224</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Padding</span>
+</span></span><span style="display:flex;"><span>transform_padding <span style="color:#f92672">=</span> transforms<span style="color:#f92672">.</span>Pad(padding<span style="color:#f92672">=</span><span style="color:#ae81ff">4</span>)
+</span></span></code></pre></div><h4 id="image-enhancement">Image Enhancement</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span><span style="color:#75715e"># Random Erasing</span>
+</span></span><span style="display:flex;"><span>transform_random_erasing <span style="color:#f92672">=</span> transforms<span style="color:#f92672">.</span>RandomErasing(p<span style="color:#f92672">=</span><span style="color:#ae81ff">0.5</span>, scale<span style="color:#f92672">=</span>(<span style="color:#ae81ff">0.02</span>, <span style="color:#ae81ff">0.33</span>), ratio<span style="color:#f92672">=</span>(<span style="color:#ae81ff">0.3</span>, <span style="color:#ae81ff">3.3</span>), value<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>)
+</span></span></code></pre></div>
+          </section>
+      </p>
+      
+    </section>
+    <footer class="post-meta">
+        
+            <img class="author-thumb" src="https://serendipityerr.github.io/images/chick.png" alt="Author image" nopin="nopin" />
+        
+        
+            Serendipity
+        
+        
+        <time class="post-date" datetime="2024-08-28T14:14:07&#43;08:00">
+            28 Aug 2024
+        </time>
+    </footer>
+</article>
+
+	
+	   
+<article class="post post">
+    <header class="post-header">
         <h2 class="post-title"><a href="/post/2024-08-11/">2024.08.11</a></h2>
     </header>
     <section class="post-excerpt">

@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Serendipity_Blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 11 Aug 2024 12:09:12 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 28 Aug 2024 14:14:07 +0800</lastBuildDate>
     <atom:link href="https://serendipityerr.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2024.08.28</title>
+      <link>https://serendipityerr.github.io/post/2024-08-28/</link>
+      <pubDate>Wed, 28 Aug 2024 14:14:07 +0800</pubDate>
+      <guid>https://serendipityerr.github.io/post/2024-08-28/</guid>
+      <description>Image Pre-processing/Transformation train_tfm = transforms.Compose([ # Resize the images into the fixed size transforms.Resize((128, 128)), &amp;#39;&amp;#39;&amp;#39; Do some Image Enhancement &amp;#39;&amp;#39;&amp;#39; # ToTensor() should be the last transformation transforms.ToTensor(), ]) Geometric Transformations # Rotation transform_rotate = transforms.RandomRotation(degrees=30) # Translation transform_translate = transforms.RandomAffine(degrees=0, translate=(0.1, 0.1)) # Flipping transform_flip = transforms.RandomHorizontalFlip(p=0.5) # Scaling transform_scale = transforms.RandomResizedCrop(size=224, scale=(0.8, 1.0)) # Shearing transform_shear = transforms.RandomAffine(degrees=0, shear=20) Color Transformations # Brightness Adjustment transform_brightness = transforms.ColorJitter(brightness=0.5) # Contrast Adjustment transform_contrast = transforms.</description>
+    </item>
     <item>
       <title>2024.08.11</title>
       <link>https://serendipityerr.github.io/post/2024-08-11/</link>
