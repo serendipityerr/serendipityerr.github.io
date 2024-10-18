@@ -13,7 +13,7 @@
       <link>https://serendipityerr.github.io/post/2024-10-18/</link>
       <pubDate>Fri, 18 Oct 2024 15:28:15 +0800</pubDate>
       <guid>https://serendipityerr.github.io/post/2024-10-18/</guid>
-      <description>Install Cuda In Virtual Environment of Conda First Run the code in the Terminal to determine the version of Cuda:&#xA;nvidia-smi CUDA Version is the version of cuda that the computer can support, so the version of cuda we want to install needs to be $\le$ CUDA Version (backward compatible)&#xA;Run the code in order in the Terminal:&#xA;conda create -n env_name python=3.10 conda activate env_name # conda search cudatoolkit --info conda install cudatoolkit=11.</description>
+      <description>Install Cuda In Virtual Environment of Conda First Run the code in the Terminal to determine the version of Cuda:&#xA;nvidia-smi CUDA Version is the version of cuda that the computer can support, so the version of cuda we want to install needs to be &amp;lt;= CUDA Version (backward compatible)&#xA;Run the code in order in the Terminal:&#xA;conda create -n env_name python=3.10 conda activate env_name # conda search cudatoolkit --info conda install cudatoolkit=11.</description>
     </item>
     <item>
       <title>2024.08.28</title>
