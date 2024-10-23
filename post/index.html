@@ -150,7 +150,10 @@
     <section class="post-excerpt">
       <p>
           <section class="post-content">
-            <h3 id="install-cuda-in-virtual-environment-of-conda">Install Cuda In Virtual Environment of Conda</h3>
+            <h3 id="python-permanently-modifies-pip-mirror-source">Python permanently modifies pip mirror source</h3>
+<p>If change the mirror source to Tsinghua Mirror Source, type the following code in the Terminal:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
+</span></span></code></pre></div><h3 id="install-cuda-in-virtual-environment-of-conda">Install Cuda In Virtual Environment of Conda</h3>
 <p>First Run the code in the Terminal to determine the version of Cuda:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>nvidia-smi
 </span></span></code></pre></div><p><code>CUDA Version</code> is the version of cuda that the computer can support, so the version of cuda we want to install needs to be &lt;= <code>CUDA Version</code> (backward compatible)</p>
