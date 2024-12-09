@@ -13,7 +13,7 @@
       <link>https://serendipityerr.github.io/post/2024-12-09/</link>
       <pubDate>Mon, 09 Dec 2024 18:50:29 +0800</pubDate>
       <guid>https://serendipityerr.github.io/post/2024-12-09/</guid>
-      <description>Solve the problem of export latex code in Markdown as pdf First, download VSCode and the &amp;ldquo;Markdown All in One&amp;rdquo; extension.&#xA;Second, &amp;ldquo;Ctrl + Shift + P&amp;rdquo; and input &amp;ldquo;Print current document to HTML&amp;rdquo;.&#xA;A html file is already created and with well-displayed latex equation.</description>
+      <description>Solve the problem of export latex code in Markdown as pdf First, download VSCode and the Markdown All in One extension.&#xA;Second, Ctrl + Shift + P and input Print current document to HTML.&#xA;A html file is already created and with well-displayed latex equation.</description>
     </item>
     <item>
       <title>2024.10.18</title>
