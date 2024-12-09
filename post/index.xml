@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Serendipity_Blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 18 Oct 2024 15:28:15 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 09 Dec 2024 18:50:29 +0800</lastBuildDate>
     <atom:link href="https://serendipityerr.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2024.12.09</title>
+      <link>https://serendipityerr.github.io/post/2024-12-09/</link>
+      <pubDate>Mon, 09 Dec 2024 18:50:29 +0800</pubDate>
+      <guid>https://serendipityerr.github.io/post/2024-12-09/</guid>
+      <description>Solve the problem of export latex code in Markdown as pdf First, download VSCode and the &amp;ldquo;Markdown All in One&amp;rdquo; extension.&#xA;Second, &amp;ldquo;Ctrl + Shift + P&amp;rdquo; and input &amp;ldquo;Print current document to HTML&amp;rdquo;.&#xA;A html file is already created and with well-displayed latex equation.</description>
+    </item>
     <item>
       <title>2024.10.18</title>
       <link>https://serendipityerr.github.io/post/2024-10-18/</link>
