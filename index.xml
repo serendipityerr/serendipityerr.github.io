@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Serendipity_Blog</title>
-        <link>https://serendipityerr.github.io/</link>
+        <link>https://example.com/</link>
         <description>Recent content on Serendipity_Blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Mon, 09 Dec 2024 18:50:29 +0800</lastBuildDate><atom:link href="https://serendipityerr.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 09 Dec 2024 18:50:29 +0800</lastBuildDate><atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>2024.12.09</title>
-        <link>https://serendipityerr.github.io/post/2024/2024-12-09/</link>
+        <link>https://example.com/p/2024.12.09/</link>
         <pubDate>Mon, 09 Dec 2024 18:50:29 +0800</pubDate>
         
-        <guid>https://serendipityerr.github.io/post/2024/2024-12-09/</guid>
+        <guid>https://example.com/p/2024.12.09/</guid>
         <description>&lt;h3 id=&#34;solve-the-problem-of-export-latex-code-in-markdown-as-pdf&#34;&gt;Solve the problem of export latex code in Markdown as pdf
 &lt;/h3&gt;&lt;p&gt;First, download VSCode and the &lt;code&gt;Markdown All in One&lt;/code&gt; extension.&lt;/p&gt;
 &lt;p&gt;Second, &lt;code&gt;Ctrl + Shift + P&lt;/code&gt; and input &lt;code&gt;Print current document to HTML&lt;/code&gt;.&lt;/p&gt;
@@ -20,10 +20,10 @@
         </item>
         <item>
         <title>2024.10.18</title>
-        <link>https://serendipityerr.github.io/post/2024-10-18/</link>
+        <link>https://example.com/p/2024.10.18/</link>
         <pubDate>Fri, 18 Oct 2024 15:28:15 +0800</pubDate>
         
-        <guid>https://serendipityerr.github.io/post/2024-10-18/</guid>
+        <guid>https://example.com/p/2024.10.18/</guid>
         <description>&lt;h3 id=&#34;python-permanently-modifies-pip-mirror-source&#34;&gt;Python permanently modifies pip mirror source
 &lt;/h3&gt;&lt;p&gt;If change the mirror source to Tsinghua Mirror Source, type the following code in the Terminal:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
@@ -50,10 +50,10 @@
         </item>
         <item>
         <title>2024.08.28</title>
-        <link>https://serendipityerr.github.io/post/2024-08-28/</link>
+        <link>https://example.com/p/2024.08.28/</link>
         <pubDate>Wed, 28 Aug 2024 14:14:07 +0800</pubDate>
         
-        <guid>https://serendipityerr.github.io/post/2024-08-28/</guid>
+        <guid>https://example.com/p/2024.08.28/</guid>
         <description>&lt;h3 id=&#34;image-pre-processingtransformation&#34;&gt;Image Pre-processing/Transformation
 &lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-py&#34; data-lang=&#34;py&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;train_tfm &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; transforms&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;Compose([
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;# Resize the images into the fixed size&lt;/span&gt;
@@ -106,10 +106,10 @@
         </item>
         <item>
         <title>2024.08.11</title>
-        <link>https://serendipityerr.github.io/post/2024-08-11/</link>
+        <link>https://example.com/p/2024.08.11/</link>
         <pubDate>Sun, 11 Aug 2024 12:09:12 +0800</pubDate>
         
-        <guid>https://serendipityerr.github.io/post/2024-08-11/</guid>
+        <guid>https://example.com/p/2024.08.11/</guid>
         <description>&lt;h3 id=&#34;learning-diffusers&#34;&gt;Learning &lt;code&gt;Diffusers&lt;/code&gt;
 &lt;/h3&gt;&lt;h4 id=&#34;installation&#34;&gt;Installation
 &lt;/h4&gt;&lt;p&gt;With &lt;code&gt;pip&lt;/code&gt;&lt;/p&gt;
@@ -332,10 +332,10 @@
         </item>
         <item>
         <title>2024.08.02</title>
-        <link>https://serendipityerr.github.io/post/2024-08-02/</link>
+        <link>https://example.com/p/2024.08.02/</link>
         <pubDate>Fri, 02 Aug 2024 11:22:51 +0800</pubDate>
         
-        <guid>https://serendipityerr.github.io/post/2024-08-02/</guid>
+        <guid>https://example.com/p/2024.08.02/</guid>
         <description>
   &lt;div class=&#34;heart-icon&#34; id=&#34;heart&#34;&gt;
     &lt;svg xmlns=&#34;&#34; viewBox=&#34;0 0 24 24&#34;&gt;
@@ -460,10 +460,10 @@
         </item>
         <item>
         <title>2024.07.20</title>
-        <link>https://serendipityerr.github.io/post/2024-07-20/</link>
+        <link>https://example.com/p/2024.07.20/</link>
         <pubDate>Sat, 20 Jul 2024 14:13:42 +0800</pubDate>
         
-        <guid>https://serendipityerr.github.io/post/2024-07-20/</guid>
+        <guid>https://example.com/p/2024.07.20/</guid>
         <description>&lt;h3 id=&#34;difference-between-pca-and-autoencoder&#34;&gt;Difference Between PCA and AutoEncoder
 &lt;/h3&gt;&lt;h4 id=&#34;pca&#34;&gt;PCA
 &lt;/h4&gt;&lt;p&gt;Suppose there are m n-dimensional data, $ X_{n \times m} = [x_1, x_2,&amp;hellip;, x_m]$, where each $x$ is an n-dimensional column vector.&lt;/p&gt;
@@ -507,10 +507,10 @@
         </item>
         <item>
         <title>2024.07.18</title>
-        <link>https://serendipityerr.github.io/post/2024-07-18/</link>
+        <link>https://example.com/p/2024.07.18/</link>
         <pubDate>Thu, 18 Jul 2024 23:45:09 +0800</pubDate>
         
-        <guid>https://serendipityerr.github.io/post/2024-07-18/</guid>
+        <guid>https://example.com/p/2024.07.18/</guid>
         <description>&lt;h3 id=&#34;study-on-score-based-generative-modeling&#34;&gt;Study on Score-Based Generative Modeling
 &lt;/h3&gt;&lt;p&gt;(●&amp;rsquo;◡&amp;rsquo;●)&lt;/p&gt;
 &lt;p&gt;About Score-Based Generative Modeling: the following article has given a clear explanation: &lt;a class=&#34;link&#34; href=&#34;https://kexue.fm/archives/9209#mjx-eqn-eq%3Abayes-dt&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -521,10 +521,10 @@
         </item>
         <item>
         <title>2024.07.16</title>
-        <link>https://serendipityerr.github.io/post/2024-07-16/</link>
+        <link>https://example.com/p/2024.07.16/</link>
         <pubDate>Tue, 16 Jul 2024 14:16:38 +0800</pubDate>
         
-        <guid>https://serendipityerr.github.io/post/2024-07-16/</guid>
+        <guid>https://example.com/p/2024.07.16/</guid>
         <description>&lt;h3 id=&#34;study-how-to-build-a-github-repository&#34;&gt;Study how to build a github repository
 &lt;/h3&gt;&lt;p&gt;ԅ(¯﹃¯ԅ)&lt;/p&gt;
 &lt;p&gt;First create a github repository and set the repository name.&lt;/p&gt;
@@ -553,12 +553,32 @@
         </item>
         <item>
         <title>My First Blog</title>
-        <link>https://serendipityerr.github.io/post/first/</link>
+        <link>https://example.com/p/my-first-blog/</link>
         <pubDate>Tue, 16 Jul 2024 13:40:30 +0800</pubDate>
         
-        <guid>https://serendipityerr.github.io/post/first/</guid>
+        <guid>https://example.com/p/my-first-blog/</guid>
         <description>&lt;h3 id=&#34;hello-serendpitys-blog&#34;&gt;Hello Serendpity&amp;rsquo;s Blog
 &lt;/h3&gt;&lt;p&gt;This is Serendpity&amp;rsquo;s first blog post. Love you all! ( •̀ ω •́ )y&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>Links</title>
+        <link>https://example.com/links/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://example.com/links/</guid>
+        <description>&lt;p&gt;To use this feature, add &lt;code&gt;links&lt;/code&gt; section to frontmatter.&lt;/p&gt;
+&lt;p&gt;This page&amp;rsquo;s frontmatter:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;links&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  - &lt;span style=&#34;color:#f92672&#34;&gt;title&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;GitHub&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;description&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;GitHub is the world&amp;#39;s largest software development platform.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;website&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;https://github.com&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;image&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  - &lt;span style=&#34;color:#f92672&#34;&gt;title&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;TypeScript&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;description&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;TypeScript is a typed superset of JavaScript that compiles to plain JavaScript.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;website&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;https://www.typescriptlang.org&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;image&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;ts-logo-128.jpg&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;code&gt;image&lt;/code&gt; field accepts both local and external images.&lt;/p&gt;
 </description>
         </item>
         
