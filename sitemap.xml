@@ -35,11 +35,15 @@
     <loc>https://example.com/p/my-first-blog/</loc>
     <lastmod>2024-07-16T13:40:30+08:00</lastmod>
   </url><url>
+    <loc>https://example.com/archives/</loc>
+    <lastmod>2019-05-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://example.com/page/</loc>
+    <lastmod>2019-05-28T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://example.com/categories/</loc>
   </url><url>
     <loc>https://example.com/links/</loc>
-  </url><url>
-    <loc>https://example.com/page/</loc>
   </url><url>
     <loc>https://example.com/tags/</loc>
   </url>
