@@ -1,75 +1,566 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Posts on Serendipity_Blog</title>
-    <link>https://serendipityerr.github.io/post/</link>
-    <description>Recent content in Posts on Serendipity_Blog</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <lastBuildDate>Mon, 09 Dec 2024 18:50:29 +0800</lastBuildDate>
-    <atom:link href="https://serendipityerr.github.io/post/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>2024.12.09</title>
-      <link>https://serendipityerr.github.io/post/2024-12-09/</link>
-      <pubDate>Mon, 09 Dec 2024 18:50:29 +0800</pubDate>
-      <guid>https://serendipityerr.github.io/post/2024-12-09/</guid>
-      <description>Solve the problem of export latex code in Markdown as pdf First, download VSCode and the Markdown All in One extension.&#xA;Second, Ctrl + Shift + P and input Print current document to HTML.&#xA;A html file is already created and with well-displayed latex equation.</description>
-    </item>
-    <item>
-      <title>2024.10.18</title>
-      <link>https://serendipityerr.github.io/post/2024-10-18/</link>
-      <pubDate>Fri, 18 Oct 2024 15:28:15 +0800</pubDate>
-      <guid>https://serendipityerr.github.io/post/2024-10-18/</guid>
-      <description>Python permanently modifies pip mirror source If change the mirror source to Tsinghua Mirror Source, type the following code in the Terminal:&#xA;pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple Install Cuda In Virtual Environment of Conda First Run the code in the Terminal to determine the version of Cuda:&#xA;nvidia-smi CUDA Version is the version of cuda that the computer can support, so the version of cuda we want to install needs to be &amp;lt;= CUDA Version (backward compatible)</description>
-    </item>
-    <item>
-      <title>2024.08.28</title>
-      <link>https://serendipityerr.github.io/post/2024-08-28/</link>
-      <pubDate>Wed, 28 Aug 2024 14:14:07 +0800</pubDate>
-      <guid>https://serendipityerr.github.io/post/2024-08-28/</guid>
-      <description>Image Pre-processing/Transformation train_tfm = transforms.Compose([ # Resize the images into the fixed size transforms.Resize((128, 128)), &amp;#39;&amp;#39;&amp;#39; Do some Image Enhancement &amp;#39;&amp;#39;&amp;#39; # ToTensor() should be the last transformation transforms.ToTensor(), ]) Geometric Transformations # Rotation transform_rotate = transforms.RandomRotation(degrees=30) # Translation transform_translate = transforms.RandomAffine(degrees=0, translate=(0.1, 0.1)) # Flipping transform_flip = transforms.RandomHorizontalFlip(p=0.5) # Scaling transform_scale = transforms.RandomResizedCrop(size=224, scale=(0.8, 1.0)) # Shearing transform_shear = transforms.RandomAffine(degrees=0, shear=20) Color Transformations # Brightness Adjustment transform_brightness = transforms.ColorJitter(brightness=0.5) # Contrast Adjustment transform_contrast = transforms.</description>
-    </item>
-    <item>
-      <title>2024.08.11</title>
-      <link>https://serendipityerr.github.io/post/2024-08-11/</link>
-      <pubDate>Sun, 11 Aug 2024 12:09:12 +0800</pubDate>
-      <guid>https://serendipityerr.github.io/post/2024-08-11/</guid>
-      <description>Learning Diffusers Installation With pip&#xA;pip install --upgrade diffusers[torch] With conda&#xA;conda install -c conda-forge diffusers Use Directly call the pretrained model uploaded in diffusers:&#xA;import torch from diffusers import DDPMPipeline device = torch.device(&amp;#34;cuda&amp;#34; if torch.cuda.is_available() else &amp;#34;cpu&amp;#34;) # Load the butterfly pipeline butterfly_pipeline = DDPMPipeline.from_pretrained( &amp;#34;johnowhitaker/ddpm-butterflies-32px&amp;#34; ).to(device) # Create 8 images images = butterfly_pipeline(batch_size=8).images # View the result make_grid(images) Example Step 0: Login and Initialize some useful functions # Login from huggingface_hub import notebook_login notebook_login() # copy the token in import numpy as np import torch import torch.</description>
-    </item>
-    <item>
-      <title>2024.08.02</title>
-      <link>https://serendipityerr.github.io/post/2024-08-02/</link>
-      <pubDate>Fri, 02 Aug 2024 11:22:51 +0800</pubDate>
-      <guid>https://serendipityerr.github.io/post/2024-08-02/</guid>
-      <description>&#xD;</description>
-    </item>
-    <item>
-      <title>2024.07.20</title>
-      <link>https://serendipityerr.github.io/post/2024-07-20/</link>
-      <pubDate>Sat, 20 Jul 2024 14:13:42 +0800</pubDate>
-      <guid>https://serendipityerr.github.io/post/2024-07-20/</guid>
-      <description>Difference Between PCA and AutoEncoder PCA Suppose there are m n-dimensional data, $ X_{n \times m} = [x_1, x_2,&amp;hellip;, x_m]$, where each $x$ is an n-dimensional column vector.&#xA;Reduce Dimensionality Decentralize the data: $x_{i} = x_{i} - \frac{1}{m} \sum_{j=1}^{m} x_{j}$ and update $X$ Calculate the Covariance matrix: $C = \frac{1}{m} XX^T$ Take eigenvalue decomposition of the Covariance matrix $C$ and get the eigenvector matrix (the eigenvector is arranged in columns from the related largest to smallest eigenvalues).</description>
-    </item>
-    <item>
-      <title>2024.07.18</title>
-      <link>https://serendipityerr.github.io/post/2024-07-18/</link>
-      <pubDate>Thu, 18 Jul 2024 23:45:09 +0800</pubDate>
-      <guid>https://serendipityerr.github.io/post/2024-07-18/</guid>
-      <description>Study on Score-Based Generative Modeling (●&amp;rsquo;◡&amp;rsquo;●)&#xA;About Score-Based Generative Modeling: the following article has given a clear explanation: Diffusion Model: SDE&#xA;A simple conclusion of the Score-Based Generative Modeling through Stochastic Differential Equations: Generalization of discrete models such as DDPM to continuous SDE forms, through predictor-corrector samplers to correct the solution of a numerical SDE solver.</description>
-    </item>
-    <item>
-      <title>2024.07.16</title>
-      <link>https://serendipityerr.github.io/post/2024-07-16/</link>
-      <pubDate>Tue, 16 Jul 2024 14:16:38 +0800</pubDate>
-      <guid>https://serendipityerr.github.io/post/2024-07-16/</guid>
-      <description>Study how to build a github repository ԅ(¯﹃¯ԅ)&#xA;First create a github repository and set the repository name.&#xA;Run the code in order in the PowerShell under the target directory:&#xA;cd dir_name git init git add . git commit -m &amp;#34;first commit&amp;#34; git remote add origin https://github.com/.... git push origin main Study how to build a blog New a post ( •̀ .̫ •́ )✧&#xA;Run the code in order in the PowerShell:</description>
-    </item>
-    <item>
-      <title>My First Blog</title>
-      <link>https://serendipityerr.github.io/post/first/</link>
-      <pubDate>Tue, 16 Jul 2024 13:40:30 +0800</pubDate>
-      <guid>https://serendipityerr.github.io/post/first/</guid>
-      <description>Hello Serendpity&amp;rsquo;s Blog This is Serendpity&amp;rsquo;s first blog post. Love you all! ( •̀ ω •́ )y</description>
-    </item>
-  </channel>
+    <channel>
+        <title>Posts on Serendipity_Blog</title>
+        <link>https://serendipityerr.github.io/post/</link>
+        <description>Recent content in Posts on Serendipity_Blog</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Mon, 09 Dec 2024 18:50:29 +0800</lastBuildDate><atom:link href="https://serendipityerr.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>2024.12.09</title>
+        <link>https://serendipityerr.github.io/post/2024-12-09/</link>
+        <pubDate>Mon, 09 Dec 2024 18:50:29 +0800</pubDate>
+        
+        <guid>https://serendipityerr.github.io/post/2024-12-09/</guid>
+        <description>&lt;h3 id=&#34;solve-the-problem-of-export-latex-code-in-markdown-as-pdf&#34;&gt;Solve the problem of export latex code in Markdown as pdf
+&lt;/h3&gt;&lt;p&gt;First, download VSCode and the &lt;code&gt;Markdown All in One&lt;/code&gt; extension.&lt;/p&gt;
+&lt;p&gt;Second, &lt;code&gt;Ctrl + Shift + P&lt;/code&gt; and input &lt;code&gt;Print current document to HTML&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;A &lt;code&gt;html&lt;/code&gt; file is already created and with well-displayed latex equation.&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>2024.10.18</title>
+        <link>https://serendipityerr.github.io/post/2024-10-18/</link>
+        <pubDate>Fri, 18 Oct 2024 15:28:15 +0800</pubDate>
+        
+        <guid>https://serendipityerr.github.io/post/2024-10-18/</guid>
+        <description>&lt;h3 id=&#34;python-permanently-modifies-pip-mirror-source&#34;&gt;Python permanently modifies pip mirror source
+&lt;/h3&gt;&lt;p&gt;If change the mirror source to Tsinghua Mirror Source, type the following code in the Terminal:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;install-cuda-in-virtual-environment-of-conda&#34;&gt;Install Cuda In Virtual Environment of Conda
+&lt;/h3&gt;&lt;p&gt;First Run the code in the Terminal to determine the version of Cuda:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;nvidia-smi
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;code&gt;CUDA Version&lt;/code&gt; is the version of cuda that the computer can support, so the version of cuda we want to install needs to be &amp;lt;= &lt;code&gt;CUDA Version&lt;/code&gt; (backward compatible)&lt;/p&gt;
+&lt;p&gt;Run the code in order in the Terminal:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;conda create -n env_name python&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;3.10
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;conda activate env_name
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# conda search cudatoolkit --info&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;conda install cudatoolkit&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;11.8.0
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;conda install cudnn
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# pytorch official website: https://pytorch.org/get-started/locally/&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;conda install pytorch torchvision torchaudio pytorch-cuda&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;12.4 -c pytorch -c nvidia
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;After installing the &lt;code&gt;Cuda&lt;/code&gt;, Run the code in order in the Terminal and verify that &lt;code&gt;Cuda&lt;/code&gt; was installed successfully:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;conda activate env_name
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;python
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;import torch
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;print&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;torch.cuda.is_available&lt;span style=&#34;color:#f92672&#34;&gt;())&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+        </item>
+        <item>
+        <title>2024.08.28</title>
+        <link>https://serendipityerr.github.io/post/2024-08-28/</link>
+        <pubDate>Wed, 28 Aug 2024 14:14:07 +0800</pubDate>
+        
+        <guid>https://serendipityerr.github.io/post/2024-08-28/</guid>
+        <description>&lt;h3 id=&#34;image-pre-processingtransformation&#34;&gt;Image Pre-processing/Transformation
+&lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-py&#34; data-lang=&#34;py&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;train_tfm &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; transforms&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;Compose([
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;# Resize the images into the fixed size&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    transforms&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;Resize((&lt;span style=&#34;color:#ae81ff&#34;&gt;128&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;128&lt;/span&gt;)),
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&amp;#39;&amp;#39;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;    Do some Image Enhancement
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;    &amp;#39;&amp;#39;&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;# ToTensor() should be the last transformation&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    transforms&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;ToTensor(),
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;])
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;geometric-transformations&#34;&gt;Geometric Transformations
+&lt;/h4&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-py&#34; data-lang=&#34;py&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Rotation&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;transform_rotate &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; transforms&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;RandomRotation(degrees&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;30&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Translation&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;transform_translate &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; transforms&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;RandomAffine(degrees&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;, translate&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;0.1&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;0.1&lt;/span&gt;))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Flipping&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;transform_flip &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; transforms&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;RandomHorizontalFlip(p&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0.5&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Scaling&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;transform_scale &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; transforms&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;RandomResizedCrop(size&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;224&lt;/span&gt;, scale&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;0.8&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;1.0&lt;/span&gt;))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Shearing&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;transform_shear &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; transforms&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;RandomAffine(degrees&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;, shear&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;20&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;color-transformations&#34;&gt;Color Transformations
+&lt;/h4&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-py&#34; data-lang=&#34;py&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Brightness Adjustment&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;transform_brightness &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; transforms&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;ColorJitter(brightness&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0.5&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Contrast Adjustment&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;transform_contrast &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; transforms&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;ColorJitter(contrast&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0.5&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Satuation Adjustment&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;transform_saturation &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; transforms&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;ColorJitter(saturation&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0.5&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Hue Adjustment&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;transform_hue &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; transforms&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;ColorJitter(hue&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0.2&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;cropping-and-padding&#34;&gt;Cropping and Padding
+&lt;/h4&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-py&#34; data-lang=&#34;py&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Random Cropping&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;transform_random_crop &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; transforms&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;RandomCrop(size&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;224&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Padding&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;transform_padding &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; transforms&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;Pad(padding&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;image-enhancement&#34;&gt;Image Enhancement
+&lt;/h4&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-py&#34; data-lang=&#34;py&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Random Erasing&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;transform_random_erasing &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; transforms&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;RandomErasing(p&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0.5&lt;/span&gt;, scale&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;0.02&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;0.33&lt;/span&gt;), ratio&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;0.3&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;3.3&lt;/span&gt;), value&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+        </item>
+        <item>
+        <title>2024.08.11</title>
+        <link>https://serendipityerr.github.io/post/2024-08-11/</link>
+        <pubDate>Sun, 11 Aug 2024 12:09:12 +0800</pubDate>
+        
+        <guid>https://serendipityerr.github.io/post/2024-08-11/</guid>
+        <description>&lt;h3 id=&#34;learning-diffusers&#34;&gt;Learning &lt;code&gt;Diffusers&lt;/code&gt;
+&lt;/h3&gt;&lt;h4 id=&#34;installation&#34;&gt;Installation
+&lt;/h4&gt;&lt;p&gt;With &lt;code&gt;pip&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;pip install --upgrade diffusers&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;torch&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;With &lt;code&gt;conda&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;conda install -c conda-forge diffusers
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;use&#34;&gt;Use
+&lt;/h4&gt;&lt;p&gt;Directly call the pretrained model uploaded in &lt;code&gt;diffusers&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-py&#34; data-lang=&#34;py&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; torch
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;from&lt;/span&gt; diffusers &lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; DDPMPipeline
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;device &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; torch&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;device(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;cuda&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; torch&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;cuda&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;is_available() &lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;cpu&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Load the butterfly pipeline&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;butterfly_pipeline &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; DDPMPipeline&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;from_pretrained(
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;johnowhitaker/ddpm-butterflies-32px&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;to(device)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Create 8 images&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;images &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; butterfly_pipeline(batch_size&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;8&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;images
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# View the result&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;make_grid(images)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;example&#34;&gt;Example
+&lt;/h4&gt;&lt;h5 id=&#34;step-0-login-and-initialize-some-useful-functions&#34;&gt;Step 0: Login and Initialize some useful functions
+&lt;/h5&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-py&#34; data-lang=&#34;py&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Login&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;from&lt;/span&gt; huggingface_hub &lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; notebook_login
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;notebook_login()
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# copy the token in&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-py&#34; data-lang=&#34;py&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; numpy &lt;span style=&#34;color:#66d9ef&#34;&gt;as&lt;/span&gt; np
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; torch
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; torch.nn.functional &lt;span style=&#34;color:#66d9ef&#34;&gt;as&lt;/span&gt; F
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;from&lt;/span&gt; matplotlib &lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; pyplot &lt;span style=&#34;color:#66d9ef&#34;&gt;as&lt;/span&gt; plt
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;from&lt;/span&gt; PIL &lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; Image
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;show_images&lt;/span&gt;(x):
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&amp;#34;Given a batch of images x, make a grid and convert to PIL&amp;#34;&amp;#34;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    x &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; x &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0.5&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0.5&lt;/span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;# Map from (-1, 1) back to (0, 1)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    grid &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; torchvision&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;utils&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;make_grid(x)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    grid_im &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; grid&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;detach()&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;cpu()&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;permute(&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;clip(&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;) &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;255&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    grid_im &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; Image&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;fromarray(np&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;array(grid_im)&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;astype(np&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;uint8))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; grid_im
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h5 id=&#34;step-1-download-a-training-dataset&#34;&gt;Step 1: Download a training dataset
+&lt;/h5&gt;&lt;p&gt;For this example, we&amp;rsquo;ll use a dataset of images from the Hugging Face Hub. Specifically, &lt;a class=&#34;link&#34; href=&#34;https://huggingface.co/datasets/huggan/smithsonian_butterflies_subset&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;this collection of 1000 butterfly pictures&lt;/a&gt;.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-py&#34; data-lang=&#34;py&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; torchvision
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;from&lt;/span&gt; datasets &lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; load_dataset
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;from&lt;/span&gt; torchvision &lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; transforms
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Load dataset from https://huggingface.co/datasets/huggan/smithsonian_butterflies_subset&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;dataset &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; load_dataset(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;huggan/smithsonian_butterflies_subset&amp;#34;&lt;/span&gt;, split&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;train&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&amp;#39;&amp;#39;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;# Or load images from a local folder
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;dataset = load_dataset(&amp;#34;imagefolder&amp;#34;, data_dir=&amp;#34;path/to/folder&amp;#34;)
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&amp;#39;&amp;#39;&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# We&amp;#39;ll train on 32-pixel square images, but you can try larger sizes too&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;image_size &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;32&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# You can lower your batch size if you&amp;#39;re running out of GPU memory&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;batch_size &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;64&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Define data augmentations&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;preprocess &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; transforms&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;Compose(
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    [
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        transforms&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;Resize((image_size, image_size)),  &lt;span style=&#34;color:#75715e&#34;&gt;# Resize&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        transforms&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;RandomHorizontalFlip(),  &lt;span style=&#34;color:#75715e&#34;&gt;# Randomly flip (data augmentation)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        transforms&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;ToTensor(),  &lt;span style=&#34;color:#75715e&#34;&gt;# Convert to tensor (0, 1)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        transforms&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;Normalize([&lt;span style=&#34;color:#ae81ff&#34;&gt;0.5&lt;/span&gt;], [&lt;span style=&#34;color:#ae81ff&#34;&gt;0.5&lt;/span&gt;]),  &lt;span style=&#34;color:#75715e&#34;&gt;# Map to (-1, 1)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    ]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;transform&lt;/span&gt;(examples):
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    images &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; [preprocess(image&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;convert(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;RGB&amp;#34;&lt;/span&gt;)) &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; image &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; examples[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;image&amp;#34;&lt;/span&gt;]]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; {&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;images&amp;#34;&lt;/span&gt;: images}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;dataset&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;set_transform(transform)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Create a dataloader from the dataset to serve up the transformed images in batches; Save the images in the dataloader&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;train_dataloader &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; torch&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;utils&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;data&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;DataLoader(
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    dataset, batch_size&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;batch_size, shuffle&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;True&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;View the first 8 image examples in the dataset:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-py&#34; data-lang=&#34;py&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;xb &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; next(iter(train_dataloader))[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;images&amp;#34;&lt;/span&gt;]&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;to(device)[:&lt;span style=&#34;color:#ae81ff&#34;&gt;8&lt;/span&gt;]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;print(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;X shape:&amp;#34;&lt;/span&gt;, xb&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;shape)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;show_images(xb)&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;resize((&lt;span style=&#34;color:#ae81ff&#34;&gt;8&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;64&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;64&lt;/span&gt;), resample&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;Image&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;NEAREST)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h5 id=&#34;step-2-define-the-scheduler&#34;&gt;Step 2: Define the Scheduler
+&lt;/h5&gt;&lt;p&gt;Our plan for training is to take these input images and add noise to them, then feed the noisy images to the model. And during inference, we will use the model predictions to iteratively remove noise. In &lt;code&gt;diffusers&lt;/code&gt;,  these processes are both handled by the &lt;strong&gt;scheduler&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;The noise schedule determines how much noise is added at different timesteps.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-py&#34; data-lang=&#34;py&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;from&lt;/span&gt; diffusers &lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; DDPMScheduler
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Define a Scheduler&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;noise_scheduler &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; DDPMScheduler(num_train_timesteps&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1000&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-py&#34; data-lang=&#34;py&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Add noise and View the process of noise-adding&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# The core is add_noise()&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;timesteps &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; torch&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;linspace(&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;999&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;8&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;long()&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;to(device)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;noise &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; torch&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;randn_like(xb) &lt;span style=&#34;color:#75715e&#34;&gt;# Random a noise from standard Guassian N(0,I)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;noisy_xb &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; noise_scheduler&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;add_noise(xb, noise, timesteps)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;print(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Noisy X shape&amp;#34;&lt;/span&gt;, noisy_xb&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;shape)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;show_images(noisy_xb)&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;resize((&lt;span style=&#34;color:#ae81ff&#34;&gt;8&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;64&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;64&lt;/span&gt;), resample&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;Image&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;NEAREST)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h5 id=&#34;step-3-define-the-model&#34;&gt;Step 3: Define the Model
+&lt;/h5&gt;&lt;p&gt;Most diffusion models use architectures that are some variant of a &lt;strong&gt;U-Net&lt;/strong&gt; and that&amp;rsquo;s what we&amp;rsquo;ll use here.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-py&#34; data-lang=&#34;py&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;from&lt;/span&gt; diffusers &lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; UNet2DModel
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Create a model&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;model &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; UNet2DModel(
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    sample_size&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;image_size,  &lt;span style=&#34;color:#75715e&#34;&gt;# the target image resolution&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    in_channels&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;,  &lt;span style=&#34;color:#75715e&#34;&gt;# the number of input channels, 3 for RGB images&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    out_channels&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;,  &lt;span style=&#34;color:#75715e&#34;&gt;# the number of output channels&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    layers_per_block&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;,  &lt;span style=&#34;color:#75715e&#34;&gt;# how many ResNet layers to use per UNet block&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    block_out_channels&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;64&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;128&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;128&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;256&lt;/span&gt;),  &lt;span style=&#34;color:#75715e&#34;&gt;# More channels -&amp;gt; more parameters&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    down_block_types&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;(
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;DownBlock2D&amp;#34;&lt;/span&gt;,  &lt;span style=&#34;color:#75715e&#34;&gt;# a regular ResNet downsampling block&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;DownBlock2D&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;AttnDownBlock2D&amp;#34;&lt;/span&gt;,  &lt;span style=&#34;color:#75715e&#34;&gt;# a ResNet downsampling block with spatial self-attention&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;AttnDownBlock2D&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    ),
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    up_block_types&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;(
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;AttnUpBlock2D&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;AttnUpBlock2D&amp;#34;&lt;/span&gt;,  &lt;span style=&#34;color:#75715e&#34;&gt;# a ResNet upsampling block with spatial self-attention&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;UpBlock2D&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;UpBlock2D&amp;#34;&lt;/span&gt;,  &lt;span style=&#34;color:#75715e&#34;&gt;# a regular ResNet upsampling block&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    ),
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;model&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;to(device)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;When dealing with higher-resolution inputs you may want to use more down and up-blocks, and keep the attention layers only at the lowest resolution (bottom) layers to &lt;strong&gt;reduce memory usage&lt;/strong&gt;.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-py&#34; data-lang=&#34;py&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Check that passing in a batch of data and some random timesteps produces an output the same shape as the input data:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;with&lt;/span&gt; torch&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;no_grad():
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    model_prediction &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; model(noisy_xb, timesteps)&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;sample
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;model_prediction&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;shape
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h5 id=&#34;step-4-training-create-a-training-loop&#34;&gt;Step 4: Training: Create a Training Loop
+&lt;/h5&gt;&lt;p&gt;For each batch of data, we&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Sample some random timesteps&lt;/li&gt;
+&lt;li&gt;Noise the data accordingly&lt;/li&gt;
+&lt;li&gt;Feed the noisy data through the model&lt;/li&gt;
+&lt;li&gt;Compare the model predictions with the target (i.e. the noise in this case) using mean squared error as our loss function&lt;/li&gt;
+&lt;li&gt;Update the model parameters via &lt;code&gt;loss.backward()&lt;/code&gt; and &lt;code&gt;optimizer.step()&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-py&#34; data-lang=&#34;py&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Set the noise scheduler&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;noise_scheduler &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; DDPMScheduler(
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    num_train_timesteps&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1000&lt;/span&gt;, beta_schedule&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;squaredcos_cap_v2&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Training loop&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;optimizer &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; torch&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;optim&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;AdamW(model&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;parameters(), lr&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;4e-4&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;losses &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; []
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Loop through the training epoch&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; epoch &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; range(&lt;span style=&#34;color:#ae81ff&#34;&gt;30&lt;/span&gt;):
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;# Loop through all data&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; step, batch &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; enumerate(train_dataloader):
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#75715e&#34;&gt;# Set the Scheduler&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#75715e&#34;&gt;# Load the data&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        clean_images &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; batch[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;images&amp;#34;&lt;/span&gt;]&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;to(device)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#75715e&#34;&gt;# Sample noise to add to the images&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        noise &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; torch&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;randn(clean_images&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;shape)&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;to(clean_images&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;device)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        bs &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; clean_images&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;shape[&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#75715e&#34;&gt;# Sample a random timestep for each image&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        timesteps &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; torch&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;randint(
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;, noise_scheduler&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;num_train_timesteps, (bs,), device&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;clean_images&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;device
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        )&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;long()
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#75715e&#34;&gt;# Add noise to the clean images according to the noise magnitude at each timestep&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        noisy_images &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; noise_scheduler&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;add_noise(clean_images, noise, timesteps)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#75715e&#34;&gt;# Input the noisy_images to the model and Get the model prediction&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        noise_pred &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; model(noisy_images, timesteps, return_dict&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;False&lt;/span&gt;)[&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#75715e&#34;&gt;# Calculate the loss&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        loss &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; F&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;mse_loss(noise_pred, noise)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        loss&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;backward(loss)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        losses&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;append(loss&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;item())
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#75715e&#34;&gt;# Update the model parameters with the optimizer&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        optimizer&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;step()
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        optimizer&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;zero_grad()
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (epoch &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;) &lt;span style=&#34;color:#f92672&#34;&gt;%&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        loss_last_epoch &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; sum(losses[&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;len(train_dataloader) :]) &lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt; len(train_dataloader)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        print(&lt;span style=&#34;color:#e6db74&#34;&gt;f&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Epoch:&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;{&lt;/span&gt;epoch&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;, loss: &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;{&lt;/span&gt;loss_last_epoch&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-py&#34; data-lang=&#34;py&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Plot the loss&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;fig, axs &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; plt&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;subplots(&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;, figsize&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;12&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;axs[&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;]&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;plot(losses)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;axs[&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;]&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;plot(np&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;log(losses))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;plt&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;show()
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h5 id=&#34;step-5-generate-images&#34;&gt;Step 5: Generate Images
+&lt;/h5&gt;&lt;ul&gt;
+&lt;li&gt;Method 1: Create a pipeline&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-py&#34; data-lang=&#34;py&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;from&lt;/span&gt; diffusers &lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; DDPMPipeline
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;image_pipe &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; DDPMPipeline(unet&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;model, scheduler&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;noise_scheduler)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;pipeline_output &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; image_pipe()
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;pipeline_output&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;images[&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;]
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-py&#34; data-lang=&#34;py&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# save a pipeline to a local folder like so:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;image_pipe&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;save_pretrained(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;my_pipeline&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Inspecting the folder contents:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ls my_pipeline/
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Output: model_index.json  scheduler  unet&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# The `scheduler` and `unet` subfolders contain everything needed to re-create those components. For example, inside the `unet` folder you&amp;#39;ll find the model weights (`diffusion_pytorch_model.bin`) alongside a config file which specifies the UNet architecture. &lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;Method 2: Writing a Sampling Loop&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-py&#34; data-lang=&#34;py&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Random starting point (8 random images):&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sample &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; torch&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;randn(&lt;span style=&#34;color:#ae81ff&#34;&gt;8&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;32&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;32&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;to(device)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# A specific process of denoising and generating the images&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; i, t &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; enumerate(noise_scheduler&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;timesteps):
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;# Get model pred&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;with&lt;/span&gt; torch&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;no_grad():
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        residual &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; model(sample, t)&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;sample
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;# Update sample with step&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    sample &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; noise_scheduler&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;step(residual, t, sample)&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;prev_sample
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;show_images(sample)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+        </item>
+        <item>
+        <title>2024.08.02</title>
+        <link>https://serendipityerr.github.io/post/2024-08-02/</link>
+        <pubDate>Fri, 02 Aug 2024 11:22:51 +0800</pubDate>
+        
+        <guid>https://serendipityerr.github.io/post/2024-08-02/</guid>
+        <description>
+  &lt;div class=&#34;heart-icon&#34; id=&#34;heart&#34;&gt;
+    &lt;svg xmlns=&#34;&#34; viewBox=&#34;0 0 24 24&#34;&gt;
+      &lt;path
+        d=&#34;M12.39 20.87a.696.696 0 0 1-.78 0C9.764 19.637 2 14.15 2 8.973c0-6.68 7.85-7.75 10-3.25 2.15-4.5 10-3.43 10 3.25 0 5.178-7.764 10.664-9.61 11.895z&#34;
+      /&gt;&lt;/svg&gt;
+    &lt;svg xmlns=&#34;&#34; viewBox=&#34;0 0 24 24&#34;&gt;
+      &lt;path
+        d=&#34;M12.39 20.87a.696.696 0 0 1-.78 0C9.764 19.637 2 14.15 2 8.973c0-6.68 7.85-7.75 10-3.25 2.15-4.5 10-3.43 10 3.25 0 5.178-7.764 10.664-9.61 11.895z&#34;
+      /&gt;&lt;/svg&gt;
+    &lt;svg xmlns=&#34;&#34; viewBox=&#34;0 0 24 24&#34;&gt;
+      &lt;path
+        d=&#34;M12.39 20.87a.696.696 0 0 1-.78 0C9.764 19.637 2 14.15 2 8.973c0-6.68 7.85-7.75 10-3.25 2.15-4.5 10-3.43 10 3.25 0 5.178-7.764 10.664-9.61 11.895z&#34;
+      /&gt;&lt;/svg&gt;
+    &lt;svg xmlns=&#34;&#34; viewBox=&#34;0 0 24 24&#34;&gt;
+      &lt;path
+        d=&#34;M12.39 20.87a.696.696 0 0 1-.78 0C9.764 19.637 2 14.15 2 8.973c0-6.68 7.85-7.75 10-3.25 2.15-4.5 10-3.43 10 3.25 0 5.178-7.764 10.664-9.61 11.895z&#34;
+      /&gt;&lt;/svg&gt;
+    &lt;svg xmlns=&#34;&#34; viewBox=&#34;0 0 24 24&#34;&gt;
+      &lt;path
+        d=&#34;M12.39 20.87a.696.696 0 0 1-.78 0C9.764 19.637 2 14.15 2 8.973c0-6.68 7.85-7.75 10-3.25 2.15-4.5 10-3.43 10 3.25 0 5.178-7.764 10.664-9.61 11.895z&#34;
+      /&gt;&lt;/svg&gt;
+    &lt;svg xmlns=&#34;&#34; viewBox=&#34;0 0 24 24&#34;&gt;
+      &lt;path
+        d=&#34;M12.39 20.87a.696.696 0 0 1-.78 0C9.764 19.637 2 14.15 2 8.973c0-6.68 7.85-7.75 10-3.25 2.15-4.5 10-3.43 10 3.25 0 5.178-7.764 10.664-9.61 11.895z&#34;
+      /&gt;&lt;/svg&gt;
+  &lt;/div&gt;
+
+  &lt;script&gt;
+    let heartButton = document.getElementById(&#39;heart&#39;);
+    let hearts = Array.from(heartButton.children);
+    hearts.reverse();
+    heartButton.addEventListener(&#39;click&#39;, function () {
+      let heartIndex = 0;
+      for (let heart of hearts) {
+        animateLeap(heartIndex++);
+      }
+      hearts.reverse();
+    });
+    function animateLeap(heartIndex) {
+      hearts[heartIndex].classList.remove(&#39;leap&#39;);
+      hearts[heartIndex].offsetWidth;
+      setTimeout(() =&gt; {
+        hearts[heartIndex].classList.add(&#39;leap&#39;);
+        setTimeout(() =&gt; {
+          hearts[heartIndex].style.zIndex = heartIndex;
+          hearts[heartIndex].style.strokeWidth = heartIndex / 4 + &#39;px&#39;;
+        }, 200);
+      }, 5 * (heartIndex * 10));
+    }
+  &lt;/script&gt;
+  &lt;style&gt;
+    :root {
+      --heart-color-1: #FFC0CB;
+      --heart-color-2: #24ffbe;
+      --heart-color-3: #72ff24;
+      --heart-color-4: #ffe024;
+      --heart-color-5: #ff7124;
+      --heart-color-6: #FFC0CB;
+    }
+    .heart-icon {
+      position: relative;
+      cursor: pointer;
+      width: 50px;
+      height: 50px;
+    }
+    .heart-icon svg {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .heart-icon svg:nth-of-type(1) {
+      z-index: 6;
+      fill: var(--heart-color-1);
+      stroke: var(--heart-color-1);
+    }
+    .heart-icon svg:nth-of-type(2) {
+      z-index: 5;
+      fill: var(--heart-color-2);
+      stroke: var(--heart-color-2);
+    }
+    .heart-icon svg:nth-of-type(3) {
+      z-index: 4;
+      fill: var(--heart-color-3);
+      stroke: var(--heart-color-3);
+    }
+    .heart-icon svg:nth-of-type(4) {
+      z-index: 3;
+      fill: var(--heart-color-4);
+      stroke: var(--heart-color-4);
+    }
+    .heart-icon svg:nth-of-type(5) {
+      z-index: 2;
+      fill: var(--heart-color-5);
+      stroke: var(--heart-color-5);
+    }
+    .heart-icon svg:nth-of-type(6) {
+      z-index: 1;
+      fill: var(--heart-color-6);
+      stroke: var(--heart-color-6);
+    }
+    .leap {
+      animation: leap 0.8s;
+      transition-timing-function: cubic-bezier(0, 1, 1, 1);
+      animation-fill-mode: forwards;
+    }
+    @keyframes leap {
+      50% {
+        transform: translateY(-150px);
+      }
+      90% {
+        transform: translateY(2px);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
+  &lt;/style&gt;
+
+
+</description>
+        </item>
+        <item>
+        <title>2024.07.20</title>
+        <link>https://serendipityerr.github.io/post/2024-07-20/</link>
+        <pubDate>Sat, 20 Jul 2024 14:13:42 +0800</pubDate>
+        
+        <guid>https://serendipityerr.github.io/post/2024-07-20/</guid>
+        <description>&lt;h3 id=&#34;difference-between-pca-and-autoencoder&#34;&gt;Difference Between PCA and AutoEncoder
+&lt;/h3&gt;&lt;h4 id=&#34;pca&#34;&gt;PCA
+&lt;/h4&gt;&lt;p&gt;Suppose there are m n-dimensional data, $ X_{n \times m} = [x_1, x_2,&amp;hellip;, x_m]$, where each $x$ is an n-dimensional column vector.&lt;/p&gt;
+&lt;h5 id=&#34;reduce-dimensionality&#34;&gt;Reduce Dimensionality
+&lt;/h5&gt;&lt;ol&gt;
+&lt;li&gt;Decentralize the data: $x_{i} = x_{i} - \frac{1}{m} \sum_{j=1}^{m} x_{j}$ and update $X$&lt;/li&gt;
+&lt;li&gt;Calculate the Covariance matrix: $C = \frac{1}{m} XX^T$&lt;/li&gt;
+&lt;li&gt;Take eigenvalue decomposition of the Covariance matrix $C$ and get the eigenvector matrix (the eigenvector is arranged in columns from the related largest to smallest eigenvalues). Take the first $k$ columns to form the matrix $P_{n \times k}$&lt;/li&gt;
+&lt;li&gt;Project the original data into the $P$ coordinate system to get the dimensionality reduced data: $Y_{k \times m} = P_{n \times k}^T \times X_{n \times m}$, which is &lt;strong&gt;a linear transformation&lt;/strong&gt;. &lt;strong&gt;The dimension of the data after PCA is changed compared to the origin data.&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h5 id=&#34;data-reconstruction&#34;&gt;Data Reconstruction
+&lt;/h5&gt;&lt;p&gt;PCA is lossy, that is, the compressed data does not maintain all the information of the original data, so the compressed data can not be restored back to the original high-dimensional data, but the restored data can be regarded as an approximation of the original data: $X_{n \times m}^{&amp;rsquo;} = P_{n \times k} Y_{k \times m}$&lt;/p&gt;
+&lt;h4 id=&#34;autoencoder&#34;&gt;AutoEncoder
+&lt;/h4&gt;&lt;h5 id=&#34;encoder&#34;&gt;Encoder
+&lt;/h5&gt;&lt;p&gt;The original data $X$ is input, and then compressed according to the network model, the original high dimensional data $X$ is compressed into low dimensional data C, and these low dimensional data is usually customarily referred to as latent vector, the original data after the activation function operation of the &lt;strong&gt;nonlinear&lt;/strong&gt; hidden layer, the original data will be transformed into a low dimensional space, this space is considered to be the high-feature space. After the original data is operated by the activation function of the nonlinear hidden layer, the original data will be transformed to a low-dimensional space, which is considered as the high-feature space. AutoEncoder is &lt;strong&gt;a non-linear transformation&lt;/strong&gt;. &lt;strong&gt;The dimension of the data after Encoder is the same as the origin data.&lt;/strong&gt;&lt;/p&gt;
+&lt;h5 id=&#34;decoder&#34;&gt;Decoder
+&lt;/h5&gt;&lt;p&gt;Convert the original implicit layer data back into the original data space.&lt;/p&gt;
+&lt;h5 id=&#34;how-to-design-the-network&#34;&gt;How to design the network
+&lt;/h5&gt;&lt;p&gt;For simple datasets such as MNIST, a network with &lt;strong&gt;1-2&lt;/strong&gt; hidden layers is usually sufficient. However, a network with 3 or more hidden layers can capture more complex features, but can also lead to overfitting.&lt;/p&gt;
+&lt;p&gt;As for MNIST, the number of nodes in the hidden layer should decrease layer by layer, usually the number of nodes in the last layer of the encoder, i.e., the dimension of the potential space, can be chosen from &lt;strong&gt;32&lt;/strong&gt; to &lt;strong&gt;128&lt;/strong&gt;.&lt;/p&gt;
+&lt;h5 id=&#34;code-example&#34;&gt;Code Example:
+&lt;/h5&gt;&lt;p&gt;AutoEncoder on MNIST dataset:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-py&#34; data-lang=&#34;py&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;self&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;encoder &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; nn&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;Sequential(
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;               nn&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;Linear(&lt;span style=&#34;color:#ae81ff&#34;&gt;28&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;28&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;128&lt;/span&gt;),
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;               nn&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;ReLU(&lt;span style=&#34;color:#66d9ef&#34;&gt;True&lt;/span&gt;),
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;               nn&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;Linear(&lt;span style=&#34;color:#ae81ff&#34;&gt;128&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;64&lt;/span&gt;),
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;               nn&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;ReLU(&lt;span style=&#34;color:#66d9ef&#34;&gt;True&lt;/span&gt;), 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;               nn&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;Linear(&lt;span style=&#34;color:#ae81ff&#34;&gt;64&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;32&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;               )
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Design of the network can be changed&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-py&#34; data-lang=&#34;py&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;self&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;decoder &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; nn&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;Sequential(
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            nn&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;Linear(&lt;span style=&#34;color:#ae81ff&#34;&gt;32&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;64&lt;/span&gt;),
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            nn&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;ReLU(&lt;span style=&#34;color:#66d9ef&#34;&gt;True&lt;/span&gt;),
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            nn&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;Linear(&lt;span style=&#34;color:#ae81ff&#34;&gt;64&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;128&lt;/span&gt;),
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            nn&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;ReLU(&lt;span style=&#34;color:#66d9ef&#34;&gt;True&lt;/span&gt;), 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            nn&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;Linear(&lt;span style=&#34;color:#ae81ff&#34;&gt;128&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;28&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;28&lt;/span&gt;), 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            nn&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;Tanh()
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            )
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Design of the network can be changed&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+        </item>
+        <item>
+        <title>2024.07.18</title>
+        <link>https://serendipityerr.github.io/post/2024-07-18/</link>
+        <pubDate>Thu, 18 Jul 2024 23:45:09 +0800</pubDate>
+        
+        <guid>https://serendipityerr.github.io/post/2024-07-18/</guid>
+        <description>&lt;h3 id=&#34;study-on-score-based-generative-modeling&#34;&gt;Study on Score-Based Generative Modeling
+&lt;/h3&gt;&lt;p&gt;(●&amp;rsquo;◡&amp;rsquo;●)&lt;/p&gt;
+&lt;p&gt;About Score-Based Generative Modeling: the following article has given a clear explanation: &lt;a class=&#34;link&#34; href=&#34;https://kexue.fm/archives/9209#mjx-eqn-eq%3Abayes-dt&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Diffusion Model: SDE&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;A simple conclusion of the &lt;a class=&#34;link&#34; href=&#34;https://arxiv.org/pdf/2011.13456&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Score-Based Generative Modeling through Stochastic Differential Equations&lt;/a&gt;: Generalization of discrete models such as DDPM to continuous SDE forms, through predictor-corrector samplers to correct the solution of a numerical SDE solver.&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>2024.07.16</title>
+        <link>https://serendipityerr.github.io/post/2024-07-16/</link>
+        <pubDate>Tue, 16 Jul 2024 14:16:38 +0800</pubDate>
+        
+        <guid>https://serendipityerr.github.io/post/2024-07-16/</guid>
+        <description>&lt;h3 id=&#34;study-how-to-build-a-github-repository&#34;&gt;Study how to build a github repository
+&lt;/h3&gt;&lt;p&gt;ԅ(¯﹃¯ԅ)&lt;/p&gt;
+&lt;p&gt;First create a github repository and set the repository name.&lt;/p&gt;
+&lt;p&gt;Run the code in order in the PowerShell under the target directory:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cd dir_name
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git init
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git add .
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git commit -m &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;first commit&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git remote add origin https://github.com/....
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git push origin main
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;study-how-to-build-a-blog&#34;&gt;Study how to build a blog
+&lt;/h3&gt;&lt;h4 id=&#34;new-a-post&#34;&gt;New a post
+&lt;/h4&gt;&lt;p&gt;( •̀ .̫ •́ )✧&lt;/p&gt;
+&lt;p&gt;Run the code in order in the PowerShell:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cd D:/html
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;D:/hugo_dir/hugo new post/fileName.md
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;push-to-github&#34;&gt;Push to Github
+&lt;/h4&gt;&lt;p&gt;(｡･ω･｡)ﾉ♡&lt;/p&gt;
+&lt;p&gt;Run the code in order in the PowerShell:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;D:/hugo_dir/hugo
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cd public
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git add .
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git commit -m &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;test&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git push origin main
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+        </item>
+        <item>
+        <title>My First Blog</title>
+        <link>https://serendipityerr.github.io/post/first/</link>
+        <pubDate>Tue, 16 Jul 2024 13:40:30 +0800</pubDate>
+        
+        <guid>https://serendipityerr.github.io/post/first/</guid>
+        <description>&lt;h3 id=&#34;hello-serendpitys-blog&#34;&gt;Hello Serendpity&amp;rsquo;s Blog
+&lt;/h3&gt;&lt;p&gt;This is Serendpity&amp;rsquo;s first blog post. Love you all! ( •̀ ω •́ )y&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
 </rss>

@@ -1,153 +1,178 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en-us" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="Learning Diffusers\rInstallation\rWith pip\npip install --upgrade diffusers[torch] With conda\nconda install -c conda-forge diffusers Use\rDirectly call the pretrained model uploaded in diffusers:\nimport torch from diffusers import DDPMPipeline device = torch.device(&#34;cuda&#34; if torch.cuda.is_available() else &#34;cpu&#34;) # Load the butterfly pipeline butterfly_pipeline = DDPMPipeline.from_pretrained( &#34;johnowhitaker/ddpm-butterflies-32px&#34; ).to(device) # Create 8 images images = butterfly_pipeline(batch_size=8).images # View the result make_grid(images) Example\rStep 0: Login and Initialize some useful functions\r# Login from huggingface_hub import notebook_login notebook_login() # copy the token in import numpy as np import torch import torch.nn.functional as F from matplotlib import pyplot as plt from PIL import Image def show_images(x): &#34;&#34;&#34;Given a batch of images x, make a grid and convert to PIL&#34;&#34;&#34; x = x * 0.5 + 0.5 # Map from (-1, 1) back to (0, 1) grid = torchvision.utils.make_grid(x) grid_im = grid.detach().cpu().permute(1, 2, 0).clip(0, 1) * 255 grid_im = Image.fromarray(np.array(grid_im).astype(np.uint8)) return grid_im Step 1: Download a training dataset\rFor this example, we&rsquo;ll use a dataset of images from the Hugging Face Hub. Specifically, this collection of 1000 butterfly pictures.\n">
+<title>2024.08.11</title>
 
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<link rel='canonical' href='https://serendipityerr.github.io/post/2024-08-11/'>
 
-  	<meta property="og:title" content=" 2024.08.11 &middot;  Serendipity_Blog" />
-  	<meta property="og:site_name" content="Serendipity_Blog" />
-  	<meta property="og:url" content="https://serendipityerr.github.io/post/2024-08-11/" />
-    
-    
-  	<meta property="og:type" content="article" />
+<link rel="stylesheet" href="/scss/style.min.b9c8156d464c343bdacaf14a871581fb94cbbdb9dd5cbce4ba017361187cc930.css"><meta property='og:title' content="2024.08.11">
+<meta property='og:description' content="Learning Diffusers\rInstallation\rWith pip\npip install --upgrade diffusers[torch] With conda\nconda install -c conda-forge diffusers Use\rDirectly call the pretrained model uploaded in diffusers:\nimport torch from diffusers import DDPMPipeline device = torch.device(&#34;cuda&#34; if torch.cuda.is_available() else &#34;cpu&#34;) # Load the butterfly pipeline butterfly_pipeline = DDPMPipeline.from_pretrained( &#34;johnowhitaker/ddpm-butterflies-32px&#34; ).to(device) # Create 8 images images = butterfly_pipeline(batch_size=8).images # View the result make_grid(images) Example\rStep 0: Login and Initialize some useful functions\r# Login from huggingface_hub import notebook_login notebook_login() # copy the token in import numpy as np import torch import torch.nn.functional as F from matplotlib import pyplot as plt from PIL import Image def show_images(x): &#34;&#34;&#34;Given a batch of images x, make a grid and convert to PIL&#34;&#34;&#34; x = x * 0.5 + 0.5 # Map from (-1, 1) back to (0, 1) grid = torchvision.utils.make_grid(x) grid_im = grid.detach().cpu().permute(1, 2, 0).clip(0, 1) * 255 grid_im = Image.fromarray(np.array(grid_im).astype(np.uint8)) return grid_im Step 1: Download a training dataset\rFor this example, we&rsquo;ll use a dataset of images from the Hugging Face Hub. Specifically, this collection of 1000 butterfly pictures.\n">
+<meta property='og:url' content='https://serendipityerr.github.io/post/2024-08-11/'>
+<meta property='og:site_name' content='Serendipity_Blog'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2024-08-11T12:09:12&#43;08:00'/><meta property='article:modified_time' content='2024-08-11T12:09:12&#43;08:00'/>
+<meta name="twitter:title" content="2024.08.11">
+<meta name="twitter:description" content="Learning Diffusers\rInstallation\rWith pip\npip install --upgrade diffusers[torch] With conda\nconda install -c conda-forge diffusers Use\rDirectly call the pretrained model uploaded in diffusers:\nimport torch from diffusers import DDPMPipeline device = torch.device(&#34;cuda&#34; if torch.cuda.is_available() else &#34;cpu&#34;) # Load the butterfly pipeline butterfly_pipeline = DDPMPipeline.from_pretrained( &#34;johnowhitaker/ddpm-butterflies-32px&#34; ).to(device) # Create 8 images images = butterfly_pipeline(batch_size=8).images # View the result make_grid(images) Example\rStep 0: Login and Initialize some useful functions\r# Login from huggingface_hub import notebook_login notebook_login() # copy the token in import numpy as np import torch import torch.nn.functional as F from matplotlib import pyplot as plt from PIL import Image def show_images(x): &#34;&#34;&#34;Given a batch of images x, make a grid and convert to PIL&#34;&#34;&#34; x = x * 0.5 + 0.5 # Map from (-1, 1) back to (0, 1) grid = torchvision.utils.make_grid(x) grid_im = grid.detach().cpu().permute(1, 2, 0).clip(0, 1) * 255 grid_im = Image.fromarray(np.array(grid_im).astype(np.uint8)) return grid_im Step 1: Download a training dataset\rFor this example, we&rsquo;ll use a dataset of images from the Hugging Face Hub. Specifically, this collection of 1000 butterfly pictures.\n">
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
 
-    <meta property="og:article:published_time" content="2024-08-11T12:09:12&#43;08:00" />
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
 
-    
-    
-
-  <title>
-     2024.08.11 &middot;  Serendipity_Blog
-  </title>
-
-    <meta name="description" content="Sleeping Everyday" />
-
-    <meta name="HandheldFriendly" content="True" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <link rel="shortcut icon" href="favicon.ico">
-	  <link rel="apple-touch-icon" href="https://serendipityerr.github.io/images/apple-touch-icon.png" />
-    
-    <link rel="stylesheet" type="text/css" href="https://serendipityerr.github.io/css/screen.css" />
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400|Inconsolata" />
-
-
-    
-      
-          <link href="https://serendipityerr.github.io/index.xml" rel="alternate" type="application/rss+xml" title="Serendipity_Blog" />
-      
-      
-    
-    <meta name="generator" content="Hugo 0.128.2">
-
-    <link rel="canonical" href="https://serendipityerr.github.io/post/2024-08-11/" />
-
-     
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css"
-
-  integrity="sha384-vKruj+a13U8yHIkAyGgK1J3ArTLzrFGBbBc0tDp4ad/EyewESeXE/Iv67Aj8gKZ0" crossorigin="anonymous">
-
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js"
-
-  integrity="sha384-PwRUT/YqbnEjkZO0zZxNqcxACrXe+j766U2amXcgMg5457rve2Y7I6ZJSm2A0mS4" crossorigin="anonymous"></script>
-
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/contrib/auto-render.min.js"
-
-  integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"
-
-  onload="renderMathInElement(document.body);"></script>
-
-<script defer>
-
-  document.addEventListener("DOMContentLoaded", function () {
-
-    renderMathInElement(document.body, {
-
-      delimiters: [
-
-        { left: "$$", right: "$$", display: true },
-
-        { left: "$", right: "$", display: false }
-
-      ]
-
-    });
-
-  });
-
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
 </script>
-</head>
-<body class="nav-closed">
-<div id="particles-js"></div>
-  
-<div class="nav">
-    <h3 class="nav-title">Menu</h3>
-    <a href="#" class="nav-close">
-        <span class="hidden">Close</span>
-    </a>
-    <ul>
+<div class="container main-container flex on-phone--column compact"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu_f509edb42ecc0ebd.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+            </figure>
+            
         
         
-    </ul>
-    
-    
-    <a class="subscribe-button icon-feed" href="https://serendipityerr.github.io/index.xml">Subscribe</a>
-    
-</div>
-<span class="nav-cover"></span>
-
-
-
- <div class="site-wrapper">
-
-
-
-<header class="main-header " style="background-image: url(https://serendipityerr.github.io/images/chick.jpg)">
-
-    <nav class="main-nav overlay clearfix">
-        
-            <a class="blog-logo" href="https://serendipityerr.github.io/"><img src="https://serendipityerr.github.io/images/chick.png" alt="Blog Logo" /></a>
-        
-        
-    </nav>
-<div class="vertical">
-        <div class="main-header-content inner">
-            <h1 class="page-title">
-              <a class="btn-bootstrap-2" href="#content">Serendipity_Blog</a>
-          </h1>
-          <h2 class="page-description">Sleeping Everyday</h2>
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">Serendipity_Blog</a></h1>
+            <h2 class="site-description"></h2>
         </div>
+    </header><ol class="menu" id="main-menu">
+        
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>Dark Mode</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    
+
+            <main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/post/2024-08-11/">2024.08.11</a>
+        </h2>
+    
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Aug 11, 2024</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    5 minute read
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
 </div>
-    <a class="scroll-down icon-arrow-left" href="#content"><span class="hidden">Scroll Down</span></a>
+
 </header>
 
-  <main id="content" class="content" role="main">
-
-
-  <article class="post post">
-
-    <header class="post-header">
-        <h1 class="post-title">2024.08.11</h1>
-        <section class="post-meta">
-        
-	<time class="post-date" datetime="2024-08-11">
-            2024-08-11
-          </time>
-        
-         
-        </section>
-    </header>
-
-    <section class="post-content">
-      <h3 id="learning-diffusers">Learning <code>Diffusers</code></h3>
-<h4 id="installation">Installation</h4>
-<p>With <code>pip</code></p>
+    <section class="article-content">
+    
+    
+    <h3 id="learning-diffusers">Learning <code>Diffusers</code>
+</h3><h4 id="installation">Installation
+</h4><p>With <code>pip</code></p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pip install --upgrade diffusers<span style="color:#f92672">[</span>torch<span style="color:#f92672">]</span>
 </span></span></code></pre></div><p>With <code>conda</code></p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>conda install -c conda-forge diffusers
-</span></span></code></pre></div><h4 id="use">Use</h4>
-<p>Directly call the pretrained model uploaded in <code>diffusers</code>:</p>
+</span></span></code></pre></div><h4 id="use">Use
+</h4><p>Directly call the pretrained model uploaded in <code>diffusers</code>:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span><span style="color:#f92672">import</span> torch
 </span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> diffusers <span style="color:#f92672">import</span> DDPMPipeline
 </span></span><span style="display:flex;"><span>
@@ -163,9 +188,9 @@
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># View the result</span>
 </span></span><span style="display:flex;"><span>make_grid(images)
-</span></span></code></pre></div><h4 id="example">Example</h4>
-<h5 id="step-0-login-and-initialize-some-useful-functions">Step 0: Login and Initialize some useful functions</h5>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span><span style="color:#75715e"># Login</span>
+</span></span></code></pre></div><h4 id="example">Example
+</h4><h5 id="step-0-login-and-initialize-some-useful-functions">Step 0: Login and Initialize some useful functions
+</h5><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span><span style="color:#75715e"># Login</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> huggingface_hub <span style="color:#f92672">import</span> notebook_login
 </span></span><span style="display:flex;"><span>notebook_login()
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># copy the token in</span>
@@ -182,8 +207,9 @@
 </span></span><span style="display:flex;"><span>    grid_im <span style="color:#f92672">=</span> grid<span style="color:#f92672">.</span>detach()<span style="color:#f92672">.</span>cpu()<span style="color:#f92672">.</span>permute(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">0</span>)<span style="color:#f92672">.</span>clip(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>) <span style="color:#f92672">*</span> <span style="color:#ae81ff">255</span>
 </span></span><span style="display:flex;"><span>    grid_im <span style="color:#f92672">=</span> Image<span style="color:#f92672">.</span>fromarray(np<span style="color:#f92672">.</span>array(grid_im)<span style="color:#f92672">.</span>astype(np<span style="color:#f92672">.</span>uint8))
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> grid_im
-</span></span></code></pre></div><h5 id="step-1-download-a-training-dataset">Step 1: Download a training dataset</h5>
-<p>For this example, we&rsquo;ll use a dataset of images from the Hugging Face Hub. Specifically, <a href="https://huggingface.co/datasets/huggan/smithsonian_butterflies_subset">this collection of 1000 butterfly pictures</a>.</p>
+</span></span></code></pre></div><h5 id="step-1-download-a-training-dataset">Step 1: Download a training dataset
+</h5><p>For this example, we&rsquo;ll use a dataset of images from the Hugging Face Hub. Specifically, <a class="link" href="https://huggingface.co/datasets/huggan/smithsonian_butterflies_subset"  target="_blank" rel="noopener"
+    >this collection of 1000 butterfly pictures</a>.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span><span style="color:#f92672">import</span> torchvision
 </span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> datasets <span style="color:#f92672">import</span> load_dataset
 </span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> torchvision <span style="color:#f92672">import</span> transforms
@@ -225,8 +251,8 @@
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span>xb <span style="color:#f92672">=</span> next(iter(train_dataloader))[<span style="color:#e6db74">&#34;images&#34;</span>]<span style="color:#f92672">.</span>to(device)[:<span style="color:#ae81ff">8</span>]
 </span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;X shape:&#34;</span>, xb<span style="color:#f92672">.</span>shape)
 </span></span><span style="display:flex;"><span>show_images(xb)<span style="color:#f92672">.</span>resize((<span style="color:#ae81ff">8</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">64</span>, <span style="color:#ae81ff">64</span>), resample<span style="color:#f92672">=</span>Image<span style="color:#f92672">.</span>NEAREST)
-</span></span></code></pre></div><h5 id="step-2-define-the-scheduler">Step 2: Define the Scheduler</h5>
-<p>Our plan for training is to take these input images and add noise to them, then feed the noisy images to the model. And during inference, we will use the model predictions to iteratively remove noise. In <code>diffusers</code>,  these processes are both handled by the <strong>scheduler</strong>.</p>
+</span></span></code></pre></div><h5 id="step-2-define-the-scheduler">Step 2: Define the Scheduler
+</h5><p>Our plan for training is to take these input images and add noise to them, then feed the noisy images to the model. And during inference, we will use the model predictions to iteratively remove noise. In <code>diffusers</code>,  these processes are both handled by the <strong>scheduler</strong>.</p>
 <p>The noise schedule determines how much noise is added at different timesteps.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span><span style="color:#f92672">from</span> diffusers <span style="color:#f92672">import</span> DDPMScheduler
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># Define a Scheduler</span>
@@ -238,8 +264,8 @@
 </span></span><span style="display:flex;"><span>noisy_xb <span style="color:#f92672">=</span> noise_scheduler<span style="color:#f92672">.</span>add_noise(xb, noise, timesteps)
 </span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Noisy X shape&#34;</span>, noisy_xb<span style="color:#f92672">.</span>shape)
 </span></span><span style="display:flex;"><span>show_images(noisy_xb)<span style="color:#f92672">.</span>resize((<span style="color:#ae81ff">8</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">64</span>, <span style="color:#ae81ff">64</span>), resample<span style="color:#f92672">=</span>Image<span style="color:#f92672">.</span>NEAREST)
-</span></span></code></pre></div><h5 id="step-3-define-the-model">Step 3: Define the Model</h5>
-<p>Most diffusion models use architectures that are some variant of a <strong>U-Net</strong> and that&rsquo;s what we&rsquo;ll use here.</p>
+</span></span></code></pre></div><h5 id="step-3-define-the-model">Step 3: Define the Model
+</h5><p>Most diffusion models use architectures that are some variant of a <strong>U-Net</strong> and that&rsquo;s what we&rsquo;ll use here.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span><span style="color:#f92672">from</span> diffusers <span style="color:#f92672">import</span> UNet2DModel
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># Create a model</span>
@@ -268,8 +294,8 @@
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">with</span> torch<span style="color:#f92672">.</span>no_grad():
 </span></span><span style="display:flex;"><span>    model_prediction <span style="color:#f92672">=</span> model(noisy_xb, timesteps)<span style="color:#f92672">.</span>sample
 </span></span><span style="display:flex;"><span>model_prediction<span style="color:#f92672">.</span>shape
-</span></span></code></pre></div><h5 id="step-4-training-create-a-training-loop">Step 4: Training: Create a Training Loop</h5>
-<p>For each batch of data, we</p>
+</span></span></code></pre></div><h5 id="step-4-training-create-a-training-loop">Step 4: Training: Create a Training Loop
+</h5><p>For each batch of data, we</p>
 <ul>
 <li>Sample some random timesteps</li>
 <li>Noise the data accordingly</li>
@@ -327,8 +353,8 @@
 </span></span><span style="display:flex;"><span>axs[<span style="color:#ae81ff">0</span>]<span style="color:#f92672">.</span>plot(losses)
 </span></span><span style="display:flex;"><span>axs[<span style="color:#ae81ff">1</span>]<span style="color:#f92672">.</span>plot(np<span style="color:#f92672">.</span>log(losses))
 </span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>show()
-</span></span></code></pre></div><h5 id="step-5-generate-images">Step 5: Generate Images</h5>
-<ul>
+</span></span></code></pre></div><h5 id="step-5-generate-images">Step 5: Generate Images
+</h5><ul>
 <li>Method 1: Create a pipeline</li>
 </ul>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span><span style="color:#f92672">from</span> diffusers <span style="color:#f92672">import</span> DDPMPipeline
@@ -358,66 +384,137 @@
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>show_images(sample)
 </span></span></code></pre></div>
-    </section>
-
-
-  <footer class="post-footer">
-
-
-    
-    <figure class="author-image">
-
-        <a class="img" href="https://serendipityerr.github.io/" style="background-image: url(https://serendipityerr.github.io/images/chick.png)"><span class="hidden">Serendipity</span></a>
-    </figure>
-    
-
-    <section class="author">
-
-  <p>Serendipity</p>
-  
-
 </section>
 
 
-    
-    <section class="share">
-      <h4>Share this post</h4>
-      <a class="icon-twitter" style="font-size: 1.4em" href="https://twitter.com/share?text=2024.08.11&amp;url=https%3a%2f%2fserendipityerr.github.io%2fpost%2f2024-08-11%2f"
-          onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
-          <span class="hidden">Twitter</span>
-      </a>
-      <a class="icon-facebook" style="font-size: 1.4em" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fserendipityerr.github.io%2fpost%2f2024-08-11%2f"
-          onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
-          <span class="hidden">Facebook</span>
-      </a>
-      <a class="icon-google-plus" style="font-size: 1.4em" href="https://plus.google.com/share?url=https%3a%2f%2fserendipityerr.github.io%2fpost%2f2024-08-11%2f"
-         onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
-          <span class="hidden">Google+</span>
-      </a>
-    </section>
+    <footer class="article-footer">
     
 
-    
-    
-    
+    </footer>
 
-  </footer>
+
+    
 </article>
 
-</main>
-    <footer class="site-footer clearfix">
-        <section class="copyright"><a href="">Serendipity_Blog</a> </section>
+    
+
+    
+
+     
+    
         
-        <section class="poweredby">Proudly generated by <a class="icon-hugo" href="https://gohugo.io">HUGO</a>, with <a class="icon-theme" href="https://github.com/syui/hugo-theme-air">hugo-theme-air</a> theme</section>
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
         
-    </footer>
+        2025 Serendipity_Blog
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.30.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
     </div>
-    <script type="text/javascript" src="https://serendipityerr.github.io/js/jquery.js"></script>
-    <script type="text/javascript" src="https://serendipityerr.github.io/js/jquery.fitvids.js"></script>
-    <script type="text/javascript" src="https://serendipityerr.github.io/js/index.js"></script>
-    <script src="https://serendipityerr.github.io/js/particles.min.js"></script>
-    <script src="https://serendipityerr.github.io/js/particles.js"></script>  
 
-</body>
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.1e9a3bafd846ced4c345d084b355fb8c7bae75701c338f8a1f8a82c780137826.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
 </html>
-
