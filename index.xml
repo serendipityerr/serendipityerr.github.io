@@ -64,9 +64,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;After that, the origin hugo &lt;code&gt;D:/hugo_dir&lt;/code&gt; can be deprecated and all the commands e.g. &lt;code&gt;D:/hugo_dir/hugo&lt;/code&gt; can be changed to &lt;code&gt;D:/hugo_extended/hugo&lt;/code&gt;. ✅&lt;/p&gt;
-$$
-    \varphi = 1+\frac{1} {1+\frac{1} {1+\frac{1} {1+\cdots} } } 
-$$</description>
+</description>
         </item>
         <item>
         <title>Some Skills on Exporting Latex in Markdown as pdf</title>

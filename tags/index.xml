@@ -15,14 +15,6 @@
         <description></description>
         </item>
         <item>
-        <title>Hugo-Extended</title>
-        <link>https://example.com/tags/hugo-extended/</link>
-        <pubDate>Mon, 17 Feb 2025 18:57:48 +0800</pubDate>
-        
-        <guid>https://example.com/tags/hugo-extended/</guid>
-        <description></description>
-        </item>
-        <item>
         <title>Html</title>
         <link>https://example.com/tags/html/</link>
         <pubDate>Mon, 09 Dec 2024 18:50:29 +0800</pubDate>
@@ -47,51 +39,11 @@
         <description></description>
         </item>
         <item>
-        <title>Conda</title>
-        <link>https://example.com/tags/conda/</link>
-        <pubDate>Fri, 18 Oct 2024 15:28:15 +0800</pubDate>
-        
-        <guid>https://example.com/tags/conda/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>Cuda</title>
-        <link>https://example.com/tags/cuda/</link>
-        <pubDate>Fri, 18 Oct 2024 15:28:15 +0800</pubDate>
-        
-        <guid>https://example.com/tags/cuda/</guid>
-        <description></description>
-        </item>
-        <item>
         <title>Python</title>
         <link>https://example.com/tags/python/</link>
         <pubDate>Fri, 18 Oct 2024 15:28:15 +0800</pubDate>
         
         <guid>https://example.com/tags/python/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>Pytorch</title>
-        <link>https://example.com/tags/pytorch/</link>
-        <pubDate>Fri, 18 Oct 2024 15:28:15 +0800</pubDate>
-        
-        <guid>https://example.com/tags/pytorch/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>Image Processing</title>
-        <link>https://example.com/tags/image-processing/</link>
-        <pubDate>Wed, 28 Aug 2024 14:14:07 +0800</pubDate>
-        
-        <guid>https://example.com/tags/image-processing/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>Diffusers</title>
-        <link>https://example.com/tags/diffusers/</link>
-        <pubDate>Sun, 11 Aug 2024 12:09:12 +0800</pubDate>
-        
-        <guid>https://example.com/tags/diffusers/</guid>
         <description></description>
         </item>
         <item>
