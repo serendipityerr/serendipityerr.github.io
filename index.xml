@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Serendipity&#39;s Blog</title>
-        <link>https://example.com/</link>
+        <link>http://localhost:1313/</link>
         <description>Recent content on Serendipity&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator>
-        <language>en</language>
-        <lastBuildDate>Mon, 17 Feb 2025 18:57:48 +0800</lastBuildDate><atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" /><item>
+        <language>en-us</language>
+        <lastBuildDate>Mon, 17 Feb 2025 18:57:48 +0800</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Update Hugo To Hugo-extended</title>
-        <link>https://example.com/p/update-hugo-to-hugo-extended/</link>
+        <link>http://localhost:1313/p/update-hugo-to-hugo-extended/</link>
         <pubDate>Mon, 17 Feb 2025 18:57:48 +0800</pubDate>
         
-        <guid>https://example.com/p/update-hugo-to-hugo-extended/</guid>
-        <description>&lt;img src="https://example.com/hugo-logo-wide.png" alt="Featured image of post Update Hugo To Hugo-extended" /&gt;&lt;h2 id=&#34;update-hugo-to-hugo-extended&#34;&gt;Update Hugo To Hugo-extended
+        <guid>http://localhost:1313/p/update-hugo-to-hugo-extended/</guid>
+        <description>&lt;img src="http://localhost:1313/hugo-logo-wide.png" alt="Featured image of post Update Hugo To Hugo-extended" /&gt;&lt;h2 id=&#34;update-hugo-to-hugo-extended&#34;&gt;Update Hugo To Hugo-extended
 &lt;/h2&gt;&lt;p&gt;Why not Hugo but Hugo-extended?&lt;/p&gt;
 &lt;p&gt;Some themes use &lt;code&gt;SCSS&lt;/code&gt; and &lt;code&gt;TypeScript&lt;/code&gt;, that&amp;rsquo;s why Hugo extended version is required. If you are using a non-extended Hugo installation, you will get the following error:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -68,10 +68,10 @@
         </item>
         <item>
         <title>Some Skills on Exporting Latex in Markdown as pdf</title>
-        <link>https://example.com/p/some-skills-on-exporting-latex-in-markdown-as-pdf/</link>
+        <link>http://localhost:1313/p/some-skills-on-exporting-latex-in-markdown-as-pdf/</link>
         <pubDate>Mon, 09 Dec 2024 18:50:29 +0800</pubDate>
         
-        <guid>https://example.com/p/some-skills-on-exporting-latex-in-markdown-as-pdf/</guid>
+        <guid>http://localhost:1313/p/some-skills-on-exporting-latex-in-markdown-as-pdf/</guid>
         <description>&lt;h2 id=&#34;solve-the-problem-of-export-latex-code-in-markdown-as-pdf&#34;&gt;Solve the problem of export latex code in Markdown as pdf
 &lt;/h2&gt;&lt;p&gt;First, download VSCode and the &lt;code&gt;Markdown All in One&lt;/code&gt; extension.&lt;/p&gt;
 &lt;p&gt;Second, &lt;code&gt;Ctrl + Shift + P&lt;/code&gt; and input &lt;code&gt;Print current document to HTML&lt;/code&gt;.&lt;/p&gt;
@@ -80,10 +80,10 @@
         </item>
         <item>
         <title>Some Skills on Modifying Pip Mirror Source and Installing Cuda in Conda</title>
-        <link>https://example.com/p/some-skills-on-modifying-pip-mirror-source-and-installing-cuda-in-conda/</link>
+        <link>http://localhost:1313/p/some-skills-on-modifying-pip-mirror-source-and-installing-cuda-in-conda/</link>
         <pubDate>Fri, 18 Oct 2024 15:28:15 +0800</pubDate>
         
-        <guid>https://example.com/p/some-skills-on-modifying-pip-mirror-source-and-installing-cuda-in-conda/</guid>
+        <guid>http://localhost:1313/p/some-skills-on-modifying-pip-mirror-source-and-installing-cuda-in-conda/</guid>
         <description>&lt;h2 id=&#34;python-permanently-modifies-pip-mirror-source&#34;&gt;Python permanently modifies pip mirror source
 &lt;/h2&gt;&lt;p&gt;If change the mirror source to Tsinghua Mirror Source, type the following code in the Terminal:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -149,10 +149,10 @@
         </item>
         <item>
         <title>Some Skills on Image Processing</title>
-        <link>https://example.com/p/some-skills-on-image-processing/</link>
+        <link>http://localhost:1313/p/some-skills-on-image-processing/</link>
         <pubDate>Wed, 28 Aug 2024 14:14:07 +0800</pubDate>
         
-        <guid>https://example.com/p/some-skills-on-image-processing/</guid>
+        <guid>http://localhost:1313/p/some-skills-on-image-processing/</guid>
         <description>&lt;h2 id=&#34;image-pre-processingtransformation&#34;&gt;Image Pre-processing/Transformation
 &lt;/h2&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -278,10 +278,10 @@
         </item>
         <item>
         <title>Diffusers</title>
-        <link>https://example.com/p/diffusers/</link>
+        <link>http://localhost:1313/p/diffusers/</link>
         <pubDate>Sun, 11 Aug 2024 12:09:12 +0800</pubDate>
         
-        <guid>https://example.com/p/diffusers/</guid>
+        <guid>http://localhost:1313/p/diffusers/</guid>
         <description>&lt;h2 id=&#34;learning-diffusers&#34;&gt;Learning &lt;code&gt;Diffusers&lt;/code&gt;
 &lt;/h2&gt;&lt;h3 id=&#34;installation&#34;&gt;Installation
 &lt;/h3&gt;&lt;p&gt;With &lt;code&gt;pip&lt;/code&gt;&lt;/p&gt;
@@ -790,10 +790,10 @@
         </item>
         <item>
         <title>2024.08.02</title>
-        <link>https://example.com/p/2024.08.02/</link>
+        <link>http://localhost:1313/p/2024.08.02/</link>
         <pubDate>Fri, 02 Aug 2024 11:22:51 +0800</pubDate>
         
-        <guid>https://example.com/p/2024.08.02/</guid>
+        <guid>http://localhost:1313/p/2024.08.02/</guid>
         <description>
   &lt;div class=&#34;heart-icon&#34; id=&#34;heart&#34;&gt;
     &lt;svg xmlns=&#34;&#34; viewBox=&#34;0 0 24 24&#34;&gt;
@@ -918,10 +918,10 @@
         </item>
         <item>
         <title>PCA and AutoEncoder</title>
-        <link>https://example.com/p/pca-and-autoencoder/</link>
+        <link>http://localhost:1313/p/pca-and-autoencoder/</link>
         <pubDate>Sat, 20 Jul 2024 14:13:42 +0800</pubDate>
         
-        <guid>https://example.com/p/pca-and-autoencoder/</guid>
+        <guid>http://localhost:1313/p/pca-and-autoencoder/</guid>
         <description>&lt;h2 id=&#34;difference-between-pca-and-autoencoder&#34;&gt;Difference Between PCA and AutoEncoder
 &lt;/h2&gt;&lt;h3 id=&#34;pca&#34;&gt;PCA
 &lt;/h3&gt;&lt;p&gt;Suppose there are m n-dimensional data, $ X_{n \times m} = [x_1, x_2,&amp;hellip;, x_m]$, where each $x$ is an n-dimensional column vector.&lt;/p&gt;
@@ -994,10 +994,10 @@
         </item>
         <item>
         <title>2024.07.18</title>
-        <link>https://example.com/p/2024.07.18/</link>
+        <link>http://localhost:1313/p/2024.07.18/</link>
         <pubDate>Thu, 18 Jul 2024 23:45:09 +0800</pubDate>
         
-        <guid>https://example.com/p/2024.07.18/</guid>
+        <guid>http://localhost:1313/p/2024.07.18/</guid>
         <description>&lt;h2 id=&#34;study-on-score-based-generative-modeling&#34;&gt;Study on Score-Based Generative Modeling
 &lt;/h2&gt;&lt;p&gt;(●&amp;rsquo;◡&amp;rsquo;●)&lt;/p&gt;
 &lt;p&gt;About Score-Based Generative Modeling: the following article has given a clear explanation: &lt;a class=&#34;link&#34; href=&#34;https://kexue.fm/archives/9209#mjx-eqn-eq%3Abayes-dt&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -1008,10 +1008,10 @@
         </item>
         <item>
         <title>Starting from Scratch: Creating and Pushing Your Blog Posts with Hugo and Git</title>
-        <link>https://example.com/p/starting-from-scratch-creating-and-pushing-your-blog-posts-with-hugo-and-git/</link>
+        <link>http://localhost:1313/p/starting-from-scratch-creating-and-pushing-your-blog-posts-with-hugo-and-git/</link>
         <pubDate>Tue, 16 Jul 2024 14:16:38 +0800</pubDate>
         
-        <guid>https://example.com/p/starting-from-scratch-creating-and-pushing-your-blog-posts-with-hugo-and-git/</guid>
+        <guid>http://localhost:1313/p/starting-from-scratch-creating-and-pushing-your-blog-posts-with-hugo-and-git/</guid>
         <description>&lt;h2 id=&#34;build-a-github-repository&#34;&gt;Build A Github Repository
 &lt;/h2&gt;&lt;p&gt;ԅ(¯﹃¯ԅ)&lt;/p&gt;
 &lt;h3 id=&#34;initialize&#34;&gt;Initialize
@@ -1073,28 +1073,28 @@
         </item>
         <item>
         <title>My First Blog</title>
-        <link>https://example.com/p/my-first-blog/</link>
+        <link>http://localhost:1313/p/my-first-blog/</link>
         <pubDate>Tue, 16 Jul 2024 13:40:30 +0800</pubDate>
         
-        <guid>https://example.com/p/my-first-blog/</guid>
+        <guid>http://localhost:1313/p/my-first-blog/</guid>
         <description>&lt;h3 id=&#34;hello-serendpitys-blog&#34;&gt;Hello Serendpity&amp;rsquo;s Blog
 &lt;/h3&gt;&lt;p&gt;This is Serendpity&amp;rsquo;s first blog post. Love you all! ( •̀ ω •́ )y&lt;/p&gt;
 </description>
         </item>
         <item>
         <title>Archives</title>
-        <link>https://example.com/archives/</link>
+        <link>http://localhost:1313/archives/</link>
         <pubDate>Tue, 16 Jul 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://example.com/archives/</guid>
+        <guid>http://localhost:1313/archives/</guid>
         <description></description>
         </item>
         <item>
         <title>Search</title>
-        <link>https://example.com/search/</link>
+        <link>http://localhost:1313/search/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://example.com/search/</guid>
+        <guid>http://localhost:1313/search/</guid>
         <description></description>
         </item>
         
