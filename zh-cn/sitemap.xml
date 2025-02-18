@@ -14,18 +14,6 @@
                 href="https://example.com/zh-cn/categories/"
                 />
   </url><url>
-    <loc>https://example.com/zh-cn/tags/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://example.com/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://example.com/zh-cn/tags/"
-                />
-  </url><url>
     <loc>https://example.com/zh-cn/</loc>
     <xhtml:link
                 rel="alternate"
@@ -36,6 +24,18 @@
                 rel="alternate"
                 hreflang="zh-cn"
                 href="https://example.com/zh-cn/"
+                />
+  </url><url>
+    <loc>https://example.com/zh-cn/tags/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://example.com/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://example.com/zh-cn/tags/"
                 />
   </url>
 </urlset>
