@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-us" dir="ltr">
+<html lang="en" dir="ltr">
     <head><meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="Image Pre-processing/Transformation\r1 2 3 4 5 6 7 8 9 10 11 train_tfm = transforms.Compose([ # Resize the images into the fixed size transforms.Resize((128, 128)), &#39;&#39;&#39; Do some Image Enhancement &#39;&#39;&#39; # ToTensor() should be the last transformation transforms.ToTensor(), ]) Geometric Transformations\r1 2 3 4 5 6 7 8 9 10 11 12 13 14 # Rotation transform_rotate = transforms.RandomRotation(degrees=30) # Translation transform_translate = transforms.RandomAffine(degrees=0, translate=(0.1, 0.1)) # Flipping transform_flip = transforms.RandomHorizontalFlip(p=0.5) # Scaling transform_scale = transforms.RandomResizedCrop(size=224, scale=(0.8, 1.0)) # Shearing transform_shear = transforms.RandomAffine(degrees=0, shear=20) Color Transformations\r1 2 3 4 5 6 7 8 9 10 11 # Brightness Adjustment transform_brightness = transforms.ColorJitter(brightness=0.5) # Contrast Adjustment transform_contrast = transforms.ColorJitter(contrast=0.5) # Satuation Adjustment transform_saturation = transforms.ColorJitter(saturation=0.5) # Hue Adjustment transform_hue = transforms.ColorJitter(hue=0.2) Cropping and Padding\r1 2 3 4 5 # Random Cropping transform_random_crop = transforms.RandomCrop(size=224) # Padding transform_padding = transforms.Pad(padding=4) Image Enhancement\r1 2 # Random Erasing transform_random_erasing = transforms.RandomErasing(p=0.5, scale=(0.02, 0.33), ratio=(0.3, 3.3), value=0) ">
 <title>2024.08.28</title>
@@ -9,7 +9,7 @@
 <link rel="stylesheet" href="/scss/style.min.b9c8156d464c343bdacaf14a871581fb94cbbdb9dd5cbce4ba017361187cc930.css"><meta property='og:title' content="2024.08.28">
 <meta property='og:description' content="Image Pre-processing/Transformation\r1 2 3 4 5 6 7 8 9 10 11 train_tfm = transforms.Compose([ # Resize the images into the fixed size transforms.Resize((128, 128)), &#39;&#39;&#39; Do some Image Enhancement &#39;&#39;&#39; # ToTensor() should be the last transformation transforms.ToTensor(), ]) Geometric Transformations\r1 2 3 4 5 6 7 8 9 10 11 12 13 14 # Rotation transform_rotate = transforms.RandomRotation(degrees=30) # Translation transform_translate = transforms.RandomAffine(degrees=0, translate=(0.1, 0.1)) # Flipping transform_flip = transforms.RandomHorizontalFlip(p=0.5) # Scaling transform_scale = transforms.RandomResizedCrop(size=224, scale=(0.8, 1.0)) # Shearing transform_shear = transforms.RandomAffine(degrees=0, shear=20) Color Transformations\r1 2 3 4 5 6 7 8 9 10 11 # Brightness Adjustment transform_brightness = transforms.ColorJitter(brightness=0.5) # Contrast Adjustment transform_contrast = transforms.ColorJitter(contrast=0.5) # Satuation Adjustment transform_saturation = transforms.ColorJitter(saturation=0.5) # Hue Adjustment transform_hue = transforms.ColorJitter(hue=0.2) Cropping and Padding\r1 2 3 4 5 # Random Cropping transform_random_crop = transforms.RandomCrop(size=224) # Padding transform_padding = transforms.Pad(padding=4) Image Enhancement\r1 2 # Random Erasing transform_random_erasing = transforms.RandomErasing(p=0.5, scale=(0.02, 0.33), ratio=(0.3, 3.3), value=0) ">
 <meta property='og:url' content='https://example.com/p/2024.08.28/'>
-<meta property='og:site_name' content='Serendipity&#39;s Blog'>
+<meta property='og:site_name' content='Example Site'>
 <meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2024-08-28T14:14:07&#43;08:00'/><meta property='article:modified_time' content='2024-08-28T14:14:07&#43;08:00'/>
 <meta name="twitter:title" content="2024.08.28">
 <meta name="twitter:description" content="Image Pre-processing/Transformation\r1 2 3 4 5 6 7 8 9 10 11 train_tfm = transforms.Compose([ # Resize the images into the fixed size transforms.Resize((128, 128)), &#39;&#39;&#39; Do some Image Enhancement &#39;&#39;&#39; # ToTensor() should be the last transformation transforms.ToTensor(), ]) Geometric Transformations\r1 2 3 4 5 6 7 8 9 10 11 12 13 14 # Rotation transform_rotate = transforms.RandomRotation(degrees=30) # Translation transform_translate = transforms.RandomAffine(degrees=0, translate=(0.1, 0.1)) # Flipping transform_flip = transforms.RandomHorizontalFlip(p=0.5) # Scaling transform_scale = transforms.RandomResizedCrop(size=224, scale=(0.8, 1.0)) # Shearing transform_shear = transforms.RandomAffine(degrees=0, shear=20) Color Transformations\r1 2 3 4 5 6 7 8 9 10 11 # Brightness Adjustment transform_brightness = transforms.ColorJitter(brightness=0.5) # Contrast Adjustment transform_contrast = transforms.ColorJitter(contrast=0.5) # Satuation Adjustment transform_saturation = transforms.ColorJitter(saturation=0.5) # Hue Adjustment transform_hue = transforms.ColorJitter(hue=0.2) Cropping and Padding\r1 2 3 4 5 # Random Cropping transform_random_crop = transforms.RandomCrop(size=224) # Padding transform_padding = transforms.Pad(padding=4) Image Enhancement\r1 2 # Random Erasing transform_random_erasing = transforms.RandomErasing(p=0.5, scale=(0.02, 0.33), ratio=(0.3, 3.3), value=0) ">
@@ -65,8 +65,8 @@
         
         
         <div class="site-meta">
-            <h1 class="site-name"><a href="/">Serendipity&#39;s Blog</a></h1>
-            <h2 class="site-description">Katrina, will I ever know your heart?</h2>
+            <h1 class="site-name"><a href="/">Example Site</a></h1>
+            <h2 class="site-description">Example description</h2>
         </div>
     </header><ol class="menu-social">
             
@@ -187,6 +187,29 @@
         
         <li class="menu-bottom-section">
             <ol class="menu">
+                    
+                        <li id="i18n-switch">  
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-language" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M4 5h7" />
+  <path d="M9 3v2c0 4.418 -2.239 8 -5 8" />
+  <path d="M5 9c-.003 2.144 2.952 3.908 6.7 4" />
+  <path d="M12 20l4 -9l4 9" />
+  <path d="M19.1 18h-6.2" />
+</svg>
+
+
+
+                            <select name="language" title="language" onchange="window.location.href = this.selectedOptions[0].value">
+                                
+                                    <option value="https://example.com/" selected>English</option>
+                                
+                                    <option value="https://example.com/zh-cn/" >中文</option>
+                                
+                            </select>
+                        </li>
+                    
+                
 
                 
                     <li id="dark-mode-toggle">
@@ -503,7 +526,7 @@
         
             2024 - 
         
-        2025 Serendipity&#39;s Blog
+        2025 Example Site
     </section>
     
     <section class="powerby">
