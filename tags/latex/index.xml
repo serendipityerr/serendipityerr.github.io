@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Latex on Serendipity&#39;s Blog</title>
+        <link>https://example.com/tags/latex/</link>
+        <description>Recent content in Latex on Serendipity&#39;s Blog</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Mon, 09 Dec 2024 18:50:29 +0800</lastBuildDate><atom:link href="https://example.com/tags/latex/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>2024.12.09</title>
+        <link>https://example.com/p/2024.12.09/</link>
+        <pubDate>Mon, 09 Dec 2024 18:50:29 +0800</pubDate>
+        
+        <guid>https://example.com/p/2024.12.09/</guid>
+        <description>&lt;h2 id=&#34;solve-the-problem-of-export-latex-code-in-markdown-as-pdf&#34;&gt;Solve the problem of export latex code in Markdown as pdf
+&lt;/h2&gt;&lt;p&gt;First, download VSCode and the &lt;code&gt;Markdown All in One&lt;/code&gt; extension.&lt;/p&gt;
+&lt;p&gt;Second, &lt;code&gt;Ctrl + Shift + P&lt;/code&gt; and input &lt;code&gt;Print current document to HTML&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;A &lt;code&gt;html&lt;/code&gt; file is already created and with well-displayed latex equation.&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

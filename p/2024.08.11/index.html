@@ -10,7 +10,7 @@
 <meta property='og:description' content="Learning Diffusers\rInstallation\rWith pip\n1 pip install --upgrade diffusers[torch] With conda\n1 conda install -c conda-forge diffusers Use\rDirectly call the pretrained model uploaded in diffusers:\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 import torch from diffusers import DDPMPipeline device = torch.device(&#34;cuda&#34; if torch.cuda.is_available() else &#34;cpu&#34;) # Load the butterfly pipeline butterfly_pipeline = DDPMPipeline.from_pretrained( &#34;johnowhitaker/ddpm-butterflies-32px&#34; ).to(device) # Create 8 images images = butterfly_pipeline(batch_size=8).images # View the result make_grid(images) Example\rStep 0: Login and Initialize some useful functions\r1 2 3 4 # Login from huggingface_hub import notebook_login notebook_login() # copy the token in 1 2 3 4 5 6 7 8 9 10 11 12 13 import numpy as np import torch import torch.nn.functional as F from matplotlib import pyplot as plt from PIL import Image def show_images(x): &#34;&#34;&#34;Given a batch of images x, make a grid and convert to PIL&#34;&#34;&#34; x = x * 0.5 + 0.5 # Map from (-1, 1) back to (0, 1) grid = torchvision.utils.make_grid(x) grid_im = grid.detach().cpu().permute(1, 2, 0).clip(0, 1) * 255 grid_im = Image.fromarray(np.array(grid_im).astype(np.uint8)) return grid_im Step 1: Download a training dataset\rFor this example, we&rsquo;ll use a dataset of images from the Hugging Face Hub. Specifically, this collection of 1000 butterfly pictures.\n">
 <meta property='og:url' content='https://example.com/p/2024.08.11/'>
 <meta property='og:site_name' content='Serendipity&#39;s Blog'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2024-08-11T12:09:12&#43;08:00'/><meta property='article:modified_time' content='2024-08-11T12:09:12&#43;08:00'/>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Python' /><meta property='article:tag' content='Diffusers' /><meta property='article:published_time' content='2024-08-11T12:09:12&#43;08:00'/><meta property='article:modified_time' content='2024-08-11T12:09:12&#43;08:00'/>
 <meta name="twitter:title" content="2024.08.11">
 <meta name="twitter:description" content="Learning Diffusers\rInstallation\rWith pip\n1 pip install --upgrade diffusers[torch] With conda\n1 conda install -c conda-forge diffusers Use\rDirectly call the pretrained model uploaded in diffusers:\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 import torch from diffusers import DDPMPipeline device = torch.device(&#34;cuda&#34; if torch.cuda.is_available() else &#34;cpu&#34;) # Load the butterfly pipeline butterfly_pipeline = DDPMPipeline.from_pretrained( &#34;johnowhitaker/ddpm-butterflies-32px&#34; ).to(device) # Create 8 images images = butterfly_pipeline(batch_size=8).images # View the result make_grid(images) Example\rStep 0: Login and Initialize some useful functions\r1 2 3 4 # Login from huggingface_hub import notebook_login notebook_login() # copy the token in 1 2 3 4 5 6 7 8 9 10 11 12 13 import numpy as np import torch import torch.nn.functional as F from matplotlib import pyplot as plt from PIL import Image def show_images(x): &#34;&#34;&#34;Given a batch of images x, make a grid and convert to PIL&#34;&#34;&#34; x = x * 0.5 + 0.5 # Map from (-1, 1) back to (0, 1) grid = torchvision.utils.make_grid(x) grid_im = grid.detach().cpu().permute(1, 2, 0).clip(0, 1) * 255 grid_im = Image.fromarray(np.array(grid_im).astype(np.uint8)) return grid_im Step 1: Download a training dataset\rFor this example, we&rsquo;ll use a dataset of images from the Hugging Face Hub. Specifically, this collection of 1000 butterfly pictures.\n">
     <link rel="shortcut icon" href="/favicon.ico" />
@@ -237,13 +237,18 @@
         <div class="widget--toc">
             <nav id="TableOfContents">
   <ol>
-    <li>
+    <li><a href="#learning-diffusers">Learning <code>Diffusers</code></a>
       <ol>
-        <li><a href="#learning-diffusers">Learning <code>Diffusers</code></a>
+        <li><a href="#installation">Installation</a></li>
+        <li><a href="#use">Use</a></li>
+        <li><a href="#example">Example</a>
           <ol>
-            <li><a href="#installation">Installation</a></li>
-            <li><a href="#use">Use</a></li>
-            <li><a href="#example">Example</a></li>
+            <li><a href="#step-0-login-and-initialize-some-useful-functions">Step 0: Login and Initialize some useful functions</a></li>
+            <li><a href="#step-1-download-a-training-dataset">Step 1: Download a training dataset</a></li>
+            <li><a href="#step-2-define-the-scheduler">Step 2: Define the Scheduler</a></li>
+            <li><a href="#step-3-define-the-model">Step 3: Define the Model</a></li>
+            <li><a href="#step-4-training-create-a-training-loop">Step 4: Training: Create a Training Loop</a></li>
+            <li><a href="#step-5-generate-images">Step 5: Generate Images</a></li>
           </ol>
         </li>
       </ol>
@@ -263,6 +268,14 @@
     <header class="article-header">
 
     <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/coding/" >
+                Coding
+            </a>
+        
+    </header>
     
 
     <div class="article-title-wrapper">
@@ -319,9 +332,9 @@
     <section class="article-content">
     
     
-    <h3 id="learning-diffusers">Learning <code>Diffusers</code>
-</h3><h4 id="installation">Installation
-</h4><p>With <code>pip</code></p>
+    <h2 id="learning-diffusers">Learning <code>Diffusers</code>
+</h2><h3 id="installation">Installation
+</h3><p>With <code>pip</code></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -339,8 +352,8 @@
 <pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">conda install -c conda-forge diffusers
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h4 id="use">Use
-</h4><p>Directly call the pretrained model uploaded in <code>diffusers</code>:</p>
+</div><h3 id="use">Use
+</h3><p>Directly call the pretrained model uploaded in <code>diffusers</code>:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -377,9 +390,9 @@
 </span></span><span class="line"><span class="cl"><span class="n">make_grid</span><span class="p">(</span><span class="n">images</span><span class="p">)</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h4 id="example">Example
-</h4><h5 id="step-0-login-and-initialize-some-useful-functions">Step 0: Login and Initialize some useful functions
-</h5><div class="highlight"><div class="chroma">
+</div><h3 id="example">Example
+</h3><h4 id="step-0-login-and-initialize-some-useful-functions">Step 0: Login and Initialize some useful functions
+</h4><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -425,8 +438,8 @@
 </span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">grid_im</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h5 id="step-1-download-a-training-dataset">Step 1: Download a training dataset
-</h5><p>For this example, we&rsquo;ll use a dataset of images from the Hugging Face Hub. Specifically, <a class="link" href="https://huggingface.co/datasets/huggan/smithsonian_butterflies_subset"  target="_blank" rel="noopener"
+</div><h4 id="step-1-download-a-training-dataset">Step 1: Download a training dataset
+</h4><p>For this example, we&rsquo;ll use a dataset of images from the Hugging Face Hub. Specifically, <a class="link" href="https://huggingface.co/datasets/huggan/smithsonian_butterflies_subset"  target="_blank" rel="noopener"
     >this collection of 1000 butterfly pictures</a>.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -521,8 +534,8 @@
 </span></span><span class="line"><span class="cl"><span class="n">show_images</span><span class="p">(</span><span class="n">xb</span><span class="p">)</span><span class="o">.</span><span class="n">resize</span><span class="p">((</span><span class="mi">8</span> <span class="o">*</span> <span class="mi">64</span><span class="p">,</span> <span class="mi">64</span><span class="p">),</span> <span class="n">resample</span><span class="o">=</span><span class="n">Image</span><span class="o">.</span><span class="n">NEAREST</span><span class="p">)</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h5 id="step-2-define-the-scheduler">Step 2: Define the Scheduler
-</h5><p>Our plan for training is to take these input images and add noise to them, then feed the noisy images to the model. And during inference, we will use the model predictions to iteratively remove noise. In <code>diffusers</code>,  these processes are both handled by the <strong>scheduler</strong>.</p>
+</div><h4 id="step-2-define-the-scheduler">Step 2: Define the Scheduler
+</h4><p>Our plan for training is to take these input images and add noise to them, then feed the noisy images to the model. And during inference, we will use the model predictions to iteratively remove noise. In <code>diffusers</code>,  these processes are both handled by the <strong>scheduler</strong>.</p>
 <p>The noise schedule determines how much noise is added at different timesteps.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -556,8 +569,8 @@
 </span></span><span class="line"><span class="cl"><span class="n">show_images</span><span class="p">(</span><span class="n">noisy_xb</span><span class="p">)</span><span class="o">.</span><span class="n">resize</span><span class="p">((</span><span class="mi">8</span> <span class="o">*</span> <span class="mi">64</span><span class="p">,</span> <span class="mi">64</span><span class="p">),</span> <span class="n">resample</span><span class="o">=</span><span class="n">Image</span><span class="o">.</span><span class="n">NEAREST</span><span class="p">)</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h5 id="step-3-define-the-model">Step 3: Define the Model
-</h5><p>Most diffusion models use architectures that are some variant of a <strong>U-Net</strong> and that&rsquo;s what we&rsquo;ll use here.</p>
+</div><h4 id="step-3-define-the-model">Step 3: Define the Model
+</h4><p>Most diffusion models use architectures that are some variant of a <strong>U-Net</strong> and that&rsquo;s what we&rsquo;ll use here.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -625,8 +638,8 @@
 </span></span><span class="line"><span class="cl"><span class="n">model_prediction</span><span class="o">.</span><span class="n">shape</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h5 id="step-4-training-create-a-training-loop">Step 4: Training: Create a Training Loop
-</h5><p>For each batch of data, we</p>
+</div><h4 id="step-4-training-create-a-training-loop">Step 4: Training: Create a Training Loop
+</h4><p>For each batch of data, we</p>
 <ul>
 <li>Sample some random timesteps</li>
 <li>Noise the data accordingly</li>
@@ -746,8 +759,8 @@
 </span></span><span class="line"><span class="cl"><span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h5 id="step-5-generate-images">Step 5: Generate Images
-</h5><ul>
+</div><h4 id="step-5-generate-images">Step 5: Generate Images
+</h4><ul>
 <li>Method 1: Create a pipeline</li>
 </ul>
 <div class="highlight"><div class="chroma">
@@ -829,6 +842,14 @@
 
     <footer class="article-footer">
     
+    <section class="article-tags">
+        
+            <a href="/tags/python/">Python</a>
+        
+            <a href="/tags/diffusers/">Diffusers</a>
+        
+    </section>
+
 
     
     <section class="article-copyright">
@@ -851,6 +872,41 @@
     
 
     
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">Related content</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="">
+    <a href="/p/2024.12.09/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">2024.12.09</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/p/starting-from-scratch-creating-and-pushing-your-blog-posts-with-hugo-and-git/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Starting from Scratch: Creating and Pushing Your Blog Posts with Hugo and Git</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
 
      
     

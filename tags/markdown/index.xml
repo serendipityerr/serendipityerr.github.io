@@ -6,14 +6,17 @@
         <description>Recent content in Markdown on Serendipity&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Mon, 17 Feb 2025 18:57:48 +0800</lastBuildDate><atom:link href="https://example.com/tags/markdown/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>-_-</title>
-        <link>https://example.com/p/-_-/</link>
-        <pubDate>Mon, 17 Feb 2025 18:57:48 +0800</pubDate>
+        <lastBuildDate>Mon, 09 Dec 2024 18:50:29 +0800</lastBuildDate><atom:link href="https://example.com/tags/markdown/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>2024.12.09</title>
+        <link>https://example.com/p/2024.12.09/</link>
+        <pubDate>Mon, 09 Dec 2024 18:50:29 +0800</pubDate>
         
-        <guid>https://example.com/p/-_-/</guid>
-        <description>&lt;img src="https://example.com/cs.png" alt="Featured image of post -_-" /&gt;&lt;h3 id=&#34;test-for-new-themes&#34;&gt;Test for new themes
-&lt;/h3&gt;</description>
+        <guid>https://example.com/p/2024.12.09/</guid>
+        <description>&lt;h2 id=&#34;solve-the-problem-of-export-latex-code-in-markdown-as-pdf&#34;&gt;Solve the problem of export latex code in Markdown as pdf
+&lt;/h2&gt;&lt;p&gt;First, download VSCode and the &lt;code&gt;Markdown All in One&lt;/code&gt; extension.&lt;/p&gt;
+&lt;p&gt;Second, &lt;code&gt;Ctrl + Shift + P&lt;/code&gt; and input &lt;code&gt;Print current document to HTML&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;A &lt;code&gt;html&lt;/code&gt; file is already created and with well-displayed latex equation.&lt;/p&gt;
+</description>
         </item>
         
     </channel>

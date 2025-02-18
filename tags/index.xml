@@ -22,6 +22,110 @@
         <guid>https://example.com/tags/hugo-extended/</guid>
         <description></description>
         </item>
+        <item>
+        <title>Html</title>
+        <link>https://example.com/tags/html/</link>
+        <pubDate>Mon, 09 Dec 2024 18:50:29 +0800</pubDate>
+        
+        <guid>https://example.com/tags/html/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Latex</title>
+        <link>https://example.com/tags/latex/</link>
+        <pubDate>Mon, 09 Dec 2024 18:50:29 +0800</pubDate>
+        
+        <guid>https://example.com/tags/latex/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Markdown</title>
+        <link>https://example.com/tags/markdown/</link>
+        <pubDate>Mon, 09 Dec 2024 18:50:29 +0800</pubDate>
+        
+        <guid>https://example.com/tags/markdown/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Conda</title>
+        <link>https://example.com/tags/conda/</link>
+        <pubDate>Fri, 18 Oct 2024 15:28:15 +0800</pubDate>
+        
+        <guid>https://example.com/tags/conda/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Cuda</title>
+        <link>https://example.com/tags/cuda/</link>
+        <pubDate>Fri, 18 Oct 2024 15:28:15 +0800</pubDate>
+        
+        <guid>https://example.com/tags/cuda/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Python</title>
+        <link>https://example.com/tags/python/</link>
+        <pubDate>Fri, 18 Oct 2024 15:28:15 +0800</pubDate>
+        
+        <guid>https://example.com/tags/python/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Pytorch</title>
+        <link>https://example.com/tags/pytorch/</link>
+        <pubDate>Fri, 18 Oct 2024 15:28:15 +0800</pubDate>
+        
+        <guid>https://example.com/tags/pytorch/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Image Processing</title>
+        <link>https://example.com/tags/image-processing/</link>
+        <pubDate>Wed, 28 Aug 2024 14:14:07 +0800</pubDate>
+        
+        <guid>https://example.com/tags/image-processing/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Diffusers</title>
+        <link>https://example.com/tags/diffusers/</link>
+        <pubDate>Sun, 11 Aug 2024 12:09:12 +0800</pubDate>
+        
+        <guid>https://example.com/tags/diffusers/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>AutoEncoder</title>
+        <link>https://example.com/tags/autoencoder/</link>
+        <pubDate>Sat, 20 Jul 2024 14:13:42 +0800</pubDate>
+        
+        <guid>https://example.com/tags/autoencoder/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>PCA</title>
+        <link>https://example.com/tags/pca/</link>
+        <pubDate>Sat, 20 Jul 2024 14:13:42 +0800</pubDate>
+        
+        <guid>https://example.com/tags/pca/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Diffusion</title>
+        <link>https://example.com/tags/diffusion/</link>
+        <pubDate>Thu, 18 Jul 2024 23:45:09 +0800</pubDate>
+        
+        <guid>https://example.com/tags/diffusion/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Git</title>
+        <link>https://example.com/tags/git/</link>
+        <pubDate>Tue, 16 Jul 2024 14:16:38 +0800</pubDate>
+        
+        <guid>https://example.com/tags/git/</guid>
+        <description></description>
+        </item>
         
     </channel>
 </rss>
