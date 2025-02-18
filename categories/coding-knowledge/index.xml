@@ -63,7 +63,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    hugo v0.143.1-0270364a347b2ece97e0321782b21904db515ecc+extended windows/amd64 &lt;span class=&#34;nv&#34;&gt;BuildDate&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;2025-02-04T08:57:38Z &lt;span class=&#34;nv&#34;&gt;VendorInfo&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;gohugoio
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;After that, the origin hugo &lt;code&gt;D:/hugo_dir&lt;/code&gt; can be deprecated and all the commands e.g. &lt;code&gt;D:/hugo_dir/hugo&lt;/code&gt; are changed to &lt;code&gt;D:/hugo_extended/hugo&lt;/code&gt;. ✅&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;After that, the origin hugo &lt;code&gt;D:/hugo_dir&lt;/code&gt; can be deprecated and all the commands e.g. &lt;code&gt;D:/hugo_dir/hugo&lt;/code&gt; can be changed to &lt;code&gt;D:/hugo_extended/hugo&lt;/code&gt;. ✅&lt;/p&gt;
 </description>
         </item>
         <item>
