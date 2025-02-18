@@ -26,9 +26,6 @@
     <loc>https://example.com/p/update-hugo-to-hugo-extended/</loc>
     <lastmod>2025-02-17T18:57:48+08:00</lastmod>
   </url><url>
-    <loc>https://example.com/p/2024.12.09/</loc>
-    <lastmod>2024-12-09T18:50:29+08:00</lastmod>
-  </url><url>
     <loc>https://example.com/categories/coding/</loc>
     <lastmod>2024-12-09T18:50:29+08:00</lastmod>
   </url><url>
@@ -41,8 +38,8 @@
     <loc>https://example.com/tags/markdown/</loc>
     <lastmod>2024-12-09T18:50:29+08:00</lastmod>
   </url><url>
-    <loc>https://example.com/p/2024.10.18/</loc>
-    <lastmod>2024-10-18T15:28:15+08:00</lastmod>
+    <loc>https://example.com/p/some-skills-on-exporting-latex-in-markdown-as-pdf/</loc>
+    <lastmod>2024-12-09T18:50:29+08:00</lastmod>
   </url><url>
     <loc>https://example.com/tags/conda/</loc>
     <lastmod>2024-10-18T15:28:15+08:00</lastmod>
@@ -50,7 +47,7 @@
     <loc>https://example.com/tags/cuda/</loc>
     <lastmod>2024-10-18T15:28:15+08:00</lastmod>
   </url><url>
-    <loc>https://example.com/categories/deep-learning/</loc>
+    <loc>https://example.com/categories/machine-learning/</loc>
     <lastmod>2024-10-18T15:28:15+08:00</lastmod>
   </url><url>
     <loc>https://example.com/tags/python/</loc>
@@ -59,28 +56,25 @@
     <loc>https://example.com/tags/pytorch/</loc>
     <lastmod>2024-10-18T15:28:15+08:00</lastmod>
   </url><url>
-    <loc>https://example.com/p/2024.08.28/</loc>
-    <lastmod>2024-08-28T14:14:07+08:00</lastmod>
-  </url><url>
-    <loc>https://example.com/categories/computer-vision/</loc>
-    <lastmod>2024-08-28T14:14:07+08:00</lastmod>
+    <loc>https://example.com/p/some-skills-on-modifying-pip-mirror-source-and-installing-cuda-in-conda/</loc>
+    <lastmod>2024-10-18T15:28:15+08:00</lastmod>
   </url><url>
     <loc>https://example.com/tags/image-processing/</loc>
     <lastmod>2024-08-28T14:14:07+08:00</lastmod>
   </url><url>
-    <loc>https://example.com/p/2024.08.11/</loc>
-    <lastmod>2024-08-11T12:09:12+08:00</lastmod>
+    <loc>https://example.com/p/some-skills-on-image-processing/</loc>
+    <lastmod>2024-08-28T14:14:07+08:00</lastmod>
   </url><url>
     <loc>https://example.com/tags/diffusers/</loc>
+    <lastmod>2024-08-11T12:09:12+08:00</lastmod>
+  </url><url>
+    <loc>https://example.com/p/diffusers/</loc>
     <lastmod>2024-08-11T12:09:12+08:00</lastmod>
   </url><url>
     <loc>https://example.com/p/2024.08.02/</loc>
     <lastmod>2024-08-02T11:22:51+08:00</lastmod>
   </url><url>
     <loc>https://example.com/tags/autoencoder/</loc>
-    <lastmod>2024-07-20T14:13:42+08:00</lastmod>
-  </url><url>
-    <loc>https://example.com/categories/machine-learning/</loc>
     <lastmod>2024-07-20T14:13:42+08:00</lastmod>
   </url><url>
     <loc>https://example.com/tags/pca/</loc>
@@ -93,9 +87,6 @@
     <lastmod>2024-07-18T23:45:09+08:00</lastmod>
   </url><url>
     <loc>https://example.com/tags/diffusion/</loc>
-    <lastmod>2024-07-18T23:45:09+08:00</lastmod>
-  </url><url>
-    <loc>https://example.com/categories/diffusion/</loc>
     <lastmod>2024-07-18T23:45:09+08:00</lastmod>
   </url><url>
     <loc>https://example.com/tags/git/</loc>

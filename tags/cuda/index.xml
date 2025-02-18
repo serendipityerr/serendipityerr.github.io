@@ -7,11 +7,11 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <lastBuildDate>Fri, 18 Oct 2024 15:28:15 +0800</lastBuildDate><atom:link href="https://example.com/tags/cuda/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>2024.10.18</title>
-        <link>https://example.com/p/2024.10.18/</link>
+        <title>Some Skills on Modifying Pip Mirror Source and Installing Cuda in Conda</title>
+        <link>https://example.com/p/some-skills-on-modifying-pip-mirror-source-and-installing-cuda-in-conda/</link>
         <pubDate>Fri, 18 Oct 2024 15:28:15 +0800</pubDate>
         
-        <guid>https://example.com/p/2024.10.18/</guid>
+        <guid>https://example.com/p/some-skills-on-modifying-pip-mirror-source-and-installing-cuda-in-conda/</guid>
         <description>&lt;h2 id=&#34;python-permanently-modifies-pip-mirror-source&#34;&gt;Python permanently modifies pip mirror source
 &lt;/h2&gt;&lt;p&gt;If change the mirror source to Tsinghua Mirror Source, type the following code in the Terminal:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;

@@ -23,35 +23,11 @@
         <description></description>
         </item>
         <item>
-        <title>Deep Learning</title>
-        <link>https://example.com/categories/deep-learning/</link>
-        <pubDate>Fri, 18 Oct 2024 15:28:15 +0800</pubDate>
-        
-        <guid>https://example.com/categories/deep-learning/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>Computer Vision</title>
-        <link>https://example.com/categories/computer-vision/</link>
-        <pubDate>Wed, 28 Aug 2024 14:14:07 +0800</pubDate>
-        
-        <guid>https://example.com/categories/computer-vision/</guid>
-        <description></description>
-        </item>
-        <item>
         <title>Machine Learning</title>
         <link>https://example.com/categories/machine-learning/</link>
-        <pubDate>Sat, 20 Jul 2024 14:13:42 +0800</pubDate>
+        <pubDate>Fri, 18 Oct 2024 15:28:15 +0800</pubDate>
         
         <guid>https://example.com/categories/machine-learning/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>Diffusion</title>
-        <link>https://example.com/categories/diffusion/</link>
-        <pubDate>Thu, 18 Jul 2024 23:45:09 +0800</pubDate>
-        
-        <guid>https://example.com/categories/diffusion/</guid>
         <description></description>
         </item>
         
