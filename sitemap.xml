@@ -2,13 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://example.com/p/-_-/</loc>
-    <lastmod>2025-02-17T18:57:48+08:00</lastmod>
-  </url><url>
     <loc>https://example.com/categories/</loc>
     <lastmod>2025-02-17T18:57:48+08:00</lastmod>
   </url><url>
-    <loc>https://example.com/tags/markdown/</loc>
+    <loc>https://example.com/tags/hugo/</loc>
+    <lastmod>2025-02-17T18:57:48+08:00</lastmod>
+  </url><url>
+    <loc>https://example.com/categories/hugo/</loc>
+    <lastmod>2025-02-17T18:57:48+08:00</lastmod>
+  </url><url>
+    <loc>https://example.com/tags/hugo-extended/</loc>
     <lastmod>2025-02-17T18:57:48+08:00</lastmod>
   </url><url>
     <loc>https://example.com/post/</loc>
@@ -20,10 +23,7 @@
     <loc>https://example.com/tags/</loc>
     <lastmod>2025-02-17T18:57:48+08:00</lastmod>
   </url><url>
-    <loc>https://example.com/categories/test/</loc>
-    <lastmod>2025-02-17T18:57:48+08:00</lastmod>
-  </url><url>
-    <loc>https://example.com/tags/text/</loc>
+    <loc>https://example.com/p/update-hugo-to-hugo-extended/</loc>
     <lastmod>2025-02-17T18:57:48+08:00</lastmod>
   </url><url>
     <loc>https://example.com/p/2024.12.09/</loc>
