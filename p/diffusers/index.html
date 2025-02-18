@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://example.com/p/diffusers/'>
 
-<link rel="stylesheet" href="/scss/style.min.2d2f01bd5a7ba6ae86a2e2fe86a465ce294f7c26d5cefc97a6a4268ae4dded05.css"><meta property='og:title' content="Diffusers">
+<link rel="stylesheet" href="/scss/style.min.b9c8156d464c343bdacaf14a871581fb94cbbdb9dd5cbce4ba017361187cc930.css"><meta property='og:title' content="Diffusers">
 <meta property='og:description' content="Learning Diffusers\rInstallation\rWith pip\n1 pip install --upgrade diffusers[torch] With conda\n1 conda install -c conda-forge diffusers Use\rDirectly call the pretrained model uploaded in diffusers:\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 import torch from diffusers import DDPMPipeline device = torch.device(&#34;cuda&#34; if torch.cuda.is_available() else &#34;cpu&#34;) # Load the butterfly pipeline butterfly_pipeline = DDPMPipeline.from_pretrained( &#34;johnowhitaker/ddpm-butterflies-32px&#34; ).to(device) # Create 8 images images = butterfly_pipeline(batch_size=8).images # View the result make_grid(images) Example\rStep 0: Login and Initialize some useful functions\r1 2 3 4 # Login from huggingface_hub import notebook_login notebook_login() # copy the token in 1 2 3 4 5 6 7 8 9 10 11 12 13 import numpy as np import torch import torch.nn.functional as F from matplotlib import pyplot as plt from PIL import Image def show_images(x): &#34;&#34;&#34;Given a batch of images x, make a grid and convert to PIL&#34;&#34;&#34; x = x * 0.5 + 0.5 # Map from (-1, 1) back to (0, 1) grid = torchvision.utils.make_grid(x) grid_im = grid.detach().cpu().permute(1, 2, 0).clip(0, 1) * 255 grid_im = Image.fromarray(np.array(grid_im).astype(np.uint8)) return grid_im Step 1: Download a training dataset\rFor this example, we&rsquo;ll use a dataset of images from the Hugging Face Hub. Specifically, this collection of 1000 butterfly pictures.\n">
 <meta property='og:url' content='https://example.com/p/diffusers/'>
 <meta property='og:site_name' content='Serendipity&#39;s Blog'>
@@ -271,7 +271,7 @@
     
     <header class="article-category">
         
-            <a href="/categories/coding-knowledge/" >
+            <a href="/categories/coding-knowledge/" style="background-color: #2a9d8f; color: #fff;">
                 Coding Knowledge
             </a>
         
