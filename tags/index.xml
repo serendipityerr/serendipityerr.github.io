@@ -55,27 +55,11 @@
         <description></description>
         </item>
         <item>
-        <title>AutoEncoder</title>
-        <link>https://example.com/tags/autoencoder/</link>
-        <pubDate>Sat, 20 Jul 2024 14:13:42 +0800</pubDate>
+        <title>Machine Learning</title>
+        <link>https://example.com/tags/machine-learning/</link>
+        <pubDate>Wed, 28 Aug 2024 14:14:07 +0800</pubDate>
         
-        <guid>https://example.com/tags/autoencoder/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>PCA</title>
-        <link>https://example.com/tags/pca/</link>
-        <pubDate>Sat, 20 Jul 2024 14:13:42 +0800</pubDate>
-        
-        <guid>https://example.com/tags/pca/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>Diffusion</title>
-        <link>https://example.com/tags/diffusion/</link>
-        <pubDate>Thu, 18 Jul 2024 23:45:09 +0800</pubDate>
-        
-        <guid>https://example.com/tags/diffusion/</guid>
+        <guid>https://example.com/tags/machine-learning/</guid>
         <description></description>
         </item>
         

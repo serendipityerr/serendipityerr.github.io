@@ -7,19 +7,27 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <lastBuildDate>Thu, 20 Feb 2025 11:14:33 +0800</lastBuildDate><atom:link href="https://example.com/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Technical Tutorials</title>
+        <link>https://example.com/categories/technical-tutorials/</link>
+        <pubDate>Thu, 20 Feb 2025 11:14:33 +0800</pubDate>
+        
+        <guid>https://example.com/categories/technical-tutorials/</guid>
+        <description></description>
+        </item>
+        <item>
         <title>Coding Knowledge</title>
         <link>https://example.com/categories/coding-knowledge/</link>
-        <pubDate>Thu, 20 Feb 2025 11:14:33 +0800</pubDate>
+        <pubDate>Tue, 18 Feb 2025 22:42:40 +0800</pubDate>
         
         <guid>https://example.com/categories/coding-knowledge/</guid>
         <description></description>
         </item>
         <item>
-        <title>Tutorials</title>
-        <link>https://example.com/categories/tutorials/</link>
+        <title>Written Knowledge</title>
+        <link>https://example.com/categories/written-knowledge/</link>
         <pubDate>Sat, 20 Jul 2024 14:13:42 +0800</pubDate>
         
-        <guid>https://example.com/categories/tutorials/</guid>
+        <guid>https://example.com/categories/written-knowledge/</guid>
         <description></description>
         </item>
         
