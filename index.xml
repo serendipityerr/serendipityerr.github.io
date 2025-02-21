@@ -6,7 +6,120 @@
         <description>Recent content on Serendipity&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Thu, 20 Feb 2025 11:14:33 +0800</lastBuildDate><atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Fri, 21 Feb 2025 21:58:39 +0800</lastBuildDate><atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Replace Google CDN</title>
+        <link>https://example.com/p/replace-google-cdn/</link>
+        <pubDate>Fri, 21 Feb 2025 21:58:39 +0800</pubDate>
+        
+        <guid>https://example.com/p/replace-google-cdn/</guid>
+        <description>&lt;h2 id=&#34;缘起&#34;&gt;缘起
+&lt;/h2&gt;&lt;p&gt;很多网站，尤其是国外网站，为了加快网站的速度，都使用了 Google 的 CDN。但是在天朝，由于某些原因，导致全球最快的 CDN 变成了全球最慢的。&lt;/p&gt;
+&lt;h2 id=&#34;替换&#34;&gt;替换
+&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;序号&lt;/th&gt;
+          &lt;th&gt;原地址&lt;/th&gt;
+          &lt;th&gt;替换后的地址&lt;/th&gt;
+          &lt;th&gt;简述&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;ajax.googleapis.com&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;ajax.loli.net&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;前端公共库&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;2&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;fonts.googleapis.com&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;fonts.googleapis.cn&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;免费字体库&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;3&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;themes.googleusercontent.com&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;themes.loli.net&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;fonts 资源引用&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;4&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;fonts.gstatic.com&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;fonts.googleapis.cn&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;免费字体库&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;5&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;www.google.com/recaptcha&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;www.recaptcha.net/recaptcha&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;Google 图像验证库&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;6&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;secure.gravatar.com&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;gravatar.loli.net&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;gravatar 头像&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;7&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;maxcdn.bootstrapcdn.com/bootstrap&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;lib.baomitu.com/twitter-bootstrap/&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;bootstrap 框架使用的 CDN&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;8&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;code.jquery.com/jquery-(version)(suffix)&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;https://fastly.jsdelivr.net/npm/jquery@$verson/dist/jquery$suffix&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;jquery 框架使用的 CDN&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;9&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;cdnjs.cloudflare.com&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;cdnjs.loli.net&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;-&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;10&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;cdn.jsdelivr.net&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;fastly.jsdelivr.net&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;-&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;11&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;developers.google.com&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;developers.google.cn&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;-&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;12&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;developer.android.com&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;developer.android.google.cn&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;-&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;13&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;source.android.com&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;source.android.google.cn&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;-&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;14&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;www.gstatic.com&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;www.gstatic.cn&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;-&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;15&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;cdn.sstatic.net&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;sstatic.net&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;-&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+        </item>
+        <item>
         <title>Add a Funny Snake Animation to Your GitHub Profile Page</title>
         <link>https://example.com/p/add-a-funny-snake-animation-to-your-github-profile-page/</link>
         <pubDate>Thu, 20 Feb 2025 11:14:33 +0800</pubDate>
