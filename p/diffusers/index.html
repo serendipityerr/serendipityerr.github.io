@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr">
-    <head><meta charset='utf-8'>
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="Learning Diffusers\rInstallation\rWith pip\n1 pip install --upgrade diffusers[torch] With conda\n1 conda install -c conda-forge diffusers Use\rDirectly call the pretrained model uploaded in diffusers:\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 import torch from diffusers import DDPMPipeline device = torch.device(&#34;cuda&#34; if torch.cuda.is_available() else &#34;cpu&#34;) # Load the butterfly pipeline butterfly_pipeline = DDPMPipeline.from_pretrained( &#34;johnowhitaker/ddpm-butterflies-32px&#34; ).to(device) # Create 8 images images = butterfly_pipeline(batch_size=8).images # View the result make_grid(images) Example\rStep 0: Login and Initialize some useful functions\r1 2 3 4 # Login from huggingface_hub import notebook_login notebook_login() # copy the token in 1 2 3 4 5 6 7 8 9 10 11 12 13 import numpy as np import torch import torch.nn.functional as F from matplotlib import pyplot as plt from PIL import Image def show_images(x): &#34;&#34;&#34;Given a batch of images x, make a grid and convert to PIL&#34;&#34;&#34; x = x * 0.5 + 0.5 # Map from (-1, 1) back to (0, 1) grid = torchvision.utils.make_grid(x) grid_im = grid.detach().cpu().permute(1, 2, 0).clip(0, 1) * 255 grid_im = Image.fromarray(np.array(grid_im).astype(np.uint8)) return grid_im Step 1: Download a training dataset\rFor this example, we&rsquo;ll use a dataset of images from the Hugging Face Hub. Specifically, this collection of 1000 butterfly pictures.\n">
 <title>Diffusers</title>
 
-<link rel='canonical' href='https://example.com/p/diffusers/'>
+<link rel='canonical' href='http://localhost:1313/p/diffusers/'>
 
 <link rel="stylesheet" href="/scss/style.min.b9c8156d464c343bdacaf14a871581fb94cbbdb9dd5cbce4ba017361187cc930.css"><meta property='og:title' content="Diffusers">
 <meta property='og:description' content="Learning Diffusers\rInstallation\rWith pip\n1 pip install --upgrade diffusers[torch] With conda\n1 conda install -c conda-forge diffusers Use\rDirectly call the pretrained model uploaded in diffusers:\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 import torch from diffusers import DDPMPipeline device = torch.device(&#34;cuda&#34; if torch.cuda.is_available() else &#34;cpu&#34;) # Load the butterfly pipeline butterfly_pipeline = DDPMPipeline.from_pretrained( &#34;johnowhitaker/ddpm-butterflies-32px&#34; ).to(device) # Create 8 images images = butterfly_pipeline(batch_size=8).images # View the result make_grid(images) Example\rStep 0: Login and Initialize some useful functions\r1 2 3 4 # Login from huggingface_hub import notebook_login notebook_login() # copy the token in 1 2 3 4 5 6 7 8 9 10 11 12 13 import numpy as np import torch import torch.nn.functional as F from matplotlib import pyplot as plt from PIL import Image def show_images(x): &#34;&#34;&#34;Given a batch of images x, make a grid and convert to PIL&#34;&#34;&#34; x = x * 0.5 + 0.5 # Map from (-1, 1) back to (0, 1) grid = torchvision.utils.make_grid(x) grid_im = grid.detach().cpu().permute(1, 2, 0).clip(0, 1) * 255 grid_im = Image.fromarray(np.array(grid_im).astype(np.uint8)) return grid_im Step 1: Download a training dataset\rFor this example, we&rsquo;ll use a dataset of images from the Hugging Face Hub. Specifically, this collection of 1000 butterfly pictures.\n">
-<meta property='og:url' content='https://example.com/p/diffusers/'>
+<meta property='og:url' content='http://localhost:1313/p/diffusers/'>
 <meta property='og:site_name' content='Serendipity&#39;s Blog'>
 <meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Machine Learning' /><meta property='article:tag' content='Python' /><meta property='article:published_time' content='2024-08-11T12:09:12&#43;08:00'/><meta property='article:modified_time' content='2024-08-11T12:09:12&#43;08:00'/>
 <meta name="twitter:title" content="Diffusers">
@@ -1068,7 +1068,7 @@
                 src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
                 
                 >
-            </script><script type="text/javascript" src="/ts/main.1e9a3bafd846ced4c345d084b355fb8c7bae75701c338f8a1f8a82c780137826.js" defer></script>
+            </script><script type="text/javascript" src="/ts/main.cb61ca303c9051148a468e900a2e2c68da573d5620ed2eb7c9156795d8f4efe8.js" defer></script>
 <script>
     (function () {
         const customFont = document.createElement('link');

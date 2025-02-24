@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Technical Tutorials on Serendipity&#39;s Blog</title>
-        <link>https://example.com/categories/technical-tutorials/</link>
+        <link>http://localhost:1313/categories/technical-tutorials/</link>
         <description>Recent content in Technical Tutorials on Serendipity&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Fri, 21 Feb 2025 21:58:39 +0800</lastBuildDate><atom:link href="https://example.com/categories/technical-tutorials/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Fri, 21 Feb 2025 21:58:39 +0800</lastBuildDate><atom:link href="http://localhost:1313/categories/technical-tutorials/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Replace Google CDN</title>
-        <link>https://example.com/p/replace-google-cdn/</link>
+        <link>http://localhost:1313/p/replace-google-cdn/</link>
         <pubDate>Fri, 21 Feb 2025 21:58:39 +0800</pubDate>
         
-        <guid>https://example.com/p/replace-google-cdn/</guid>
+        <guid>http://localhost:1313/p/replace-google-cdn/</guid>
         <description>&lt;h2 id=&#34;缘起&#34;&gt;缘起
 &lt;/h2&gt;&lt;p&gt;很多网站，尤其是国外网站，为了加快网站的速度，都使用了 Google 的 CDN。但是在天朝，由于某些原因，导致全球最快的 CDN 变成了全球最慢的。&lt;/p&gt;
 &lt;h2 id=&#34;替换&#34;&gt;替换
@@ -123,10 +123,10 @@
         </item>
         <item>
         <title>Add a Funny Snake Animation to Your GitHub Profile Page</title>
-        <link>https://example.com/p/add-a-funny-snake-animation-to-your-github-profile-page/</link>
+        <link>http://localhost:1313/p/add-a-funny-snake-animation-to-your-github-profile-page/</link>
         <pubDate>Thu, 20 Feb 2025 11:14:33 +0800</pubDate>
         
-        <guid>https://example.com/p/add-a-funny-snake-animation-to-your-github-profile-page/</guid>
+        <guid>http://localhost:1313/p/add-a-funny-snake-animation-to-your-github-profile-page/</guid>
         <description>&lt;img src="https://raw.githubusercontent.com/serendipityerr/serendipityerr/output/github-contribution-grid-snake.svg" alt="Featured image of post Add a Funny Snake Animation to Your GitHub Profile Page" /&gt;&lt;h2 id=&#34;introduction&#34;&gt;Introduction
 &lt;/h2&gt;&lt;p&gt;A GitHub personal home page, officially called a profile, is a personal GitHub presentation master page written in &lt;code&gt;Markdown&lt;/code&gt;. In this article, we&amp;rsquo;ll demonstrate how to add a funny snake animation to the GitHub profile page.&lt;/p&gt;
 &lt;p&gt;The Snake animation is actually a kind of “heat map”, each small grid corresponds to each day, the grid is gray by default, where the green grid means we submitted code on that day, the darker the color of the grid, the more times we committed code on that day.&lt;/p&gt;
@@ -421,11 +421,11 @@
         </item>
         <item>
         <title>Update Hugo To Hugo-extended</title>
-        <link>https://example.com/p/update-hugo-to-hugo-extended/</link>
+        <link>http://localhost:1313/p/update-hugo-to-hugo-extended/</link>
         <pubDate>Mon, 17 Feb 2025 18:57:48 +0800</pubDate>
         
-        <guid>https://example.com/p/update-hugo-to-hugo-extended/</guid>
-        <description>&lt;img src="https://example.com/hugo-logo-wide.png" alt="Featured image of post Update Hugo To Hugo-extended" /&gt;&lt;h2 id=&#34;update-hugo-to-hugo-extended&#34;&gt;Update Hugo To Hugo-extended
+        <guid>http://localhost:1313/p/update-hugo-to-hugo-extended/</guid>
+        <description>&lt;img src="http://localhost:1313/hugo-logo-wide.png" alt="Featured image of post Update Hugo To Hugo-extended" /&gt;&lt;h2 id=&#34;update-hugo-to-hugo-extended&#34;&gt;Update Hugo To Hugo-extended
 &lt;/h2&gt;&lt;p&gt;Why not Hugo but Hugo-extended?&lt;/p&gt;
 &lt;p&gt;Some themes use &lt;code&gt;SCSS&lt;/code&gt; and &lt;code&gt;TypeScript&lt;/code&gt;, that&amp;rsquo;s why Hugo extended version is required. If you are using a non-extended Hugo installation, you will get the following error:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -481,10 +481,10 @@
         </item>
         <item>
         <title>Some Skills on Exporting Latex in Markdown as pdf</title>
-        <link>https://example.com/p/some-skills-on-exporting-latex-in-markdown-as-pdf/</link>
+        <link>http://localhost:1313/p/some-skills-on-exporting-latex-in-markdown-as-pdf/</link>
         <pubDate>Mon, 09 Dec 2024 18:50:29 +0800</pubDate>
         
-        <guid>https://example.com/p/some-skills-on-exporting-latex-in-markdown-as-pdf/</guid>
+        <guid>http://localhost:1313/p/some-skills-on-exporting-latex-in-markdown-as-pdf/</guid>
         <description>&lt;h2 id=&#34;solve-the-problem-of-export-latex-code-in-markdown-as-pdf&#34;&gt;Solve the problem of export latex code in Markdown as pdf
 &lt;/h2&gt;&lt;p&gt;First, download VSCode and the &lt;code&gt;Markdown All in One&lt;/code&gt; extension.&lt;/p&gt;
 &lt;p&gt;Second, &lt;code&gt;Ctrl + Shift + P&lt;/code&gt; and input &lt;code&gt;Print current document to HTML&lt;/code&gt;.&lt;/p&gt;
@@ -493,10 +493,10 @@
         </item>
         <item>
         <title>Some Skills on Modifying Pip Mirror Source and Installing Cuda in Conda</title>
-        <link>https://example.com/p/some-skills-on-modifying-pip-mirror-source-and-installing-cuda-in-conda/</link>
+        <link>http://localhost:1313/p/some-skills-on-modifying-pip-mirror-source-and-installing-cuda-in-conda/</link>
         <pubDate>Fri, 18 Oct 2024 15:28:15 +0800</pubDate>
         
-        <guid>https://example.com/p/some-skills-on-modifying-pip-mirror-source-and-installing-cuda-in-conda/</guid>
+        <guid>http://localhost:1313/p/some-skills-on-modifying-pip-mirror-source-and-installing-cuda-in-conda/</guid>
         <description>&lt;h2 id=&#34;python-permanently-modifies-pip-mirror-source&#34;&gt;Python permanently modifies pip mirror source
 &lt;/h2&gt;&lt;p&gt;If change the mirror source to Tsinghua Mirror Source, type the following code in the Terminal:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -562,10 +562,10 @@
         </item>
         <item>
         <title>Starting from Scratch: Creating and Pushing Your Blog Posts with Hugo and Git</title>
-        <link>https://example.com/p/starting-from-scratch-creating-and-pushing-your-blog-posts-with-hugo-and-git/</link>
+        <link>http://localhost:1313/p/starting-from-scratch-creating-and-pushing-your-blog-posts-with-hugo-and-git/</link>
         <pubDate>Tue, 16 Jul 2024 14:16:38 +0800</pubDate>
         
-        <guid>https://example.com/p/starting-from-scratch-creating-and-pushing-your-blog-posts-with-hugo-and-git/</guid>
+        <guid>http://localhost:1313/p/starting-from-scratch-creating-and-pushing-your-blog-posts-with-hugo-and-git/</guid>
         <description>&lt;h2 id=&#34;build-a-github-repository&#34;&gt;Build A Github Repository
 &lt;/h2&gt;&lt;p&gt;ԅ(¯﹃¯ԅ)&lt;/p&gt;
 &lt;h3 id=&#34;initialize&#34;&gt;Initialize
