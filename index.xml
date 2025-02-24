@@ -714,7 +714,7 @@
         <pubDate>Tue, 18 Feb 2025 22:42:40 +0800</pubDate>
         
         <guid>http://localhost:1313/p/notes-on-html/</guid>
-        <description>&lt;img src="http://localhost:1313/html-logo.png" alt="Featured image of post Notes on HTML" /&gt;&lt;h2 id=&#34;html入门&#34;&gt;HTML入门
+        <description>&lt;img src="http://localhost:1313/post_img/2025-02-18/html-logo.png" alt="Featured image of post Notes on HTML" /&gt;&lt;h2 id=&#34;html入门&#34;&gt;HTML入门
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;HTML(Hyper Text Markup Language)：超文本标记语言，用来描述网页的语言。&lt;/p&gt;
@@ -1487,7 +1487,7 @@ e.g.&lt;/p&gt;
         <pubDate>Mon, 17 Feb 2025 18:57:48 +0800</pubDate>
         
         <guid>http://localhost:1313/p/update-hugo-to-hugo-extended/</guid>
-        <description>&lt;img src="http://localhost:1313/hugo-logo-wide.png" alt="Featured image of post Update Hugo To Hugo-extended" /&gt;&lt;h2 id=&#34;update-hugo-to-hugo-extended&#34;&gt;Update Hugo To Hugo-extended
+        <description>&lt;img src="http://localhost:1313/post_img/2025-02-17/hugo-logo-wide.png" alt="Featured image of post Update Hugo To Hugo-extended" /&gt;&lt;h2 id=&#34;update-hugo-to-hugo-extended&#34;&gt;Update Hugo To Hugo-extended
 &lt;/h2&gt;&lt;p&gt;Why not Hugo but Hugo-extended?&lt;/p&gt;
 &lt;p&gt;Some themes use &lt;code&gt;SCSS&lt;/code&gt; and &lt;code&gt;TypeScript&lt;/code&gt;, that&amp;rsquo;s why Hugo extended version is required. If you are using a non-extended Hugo installation, you will get the following error:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
