@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Python on Serendipity&#39;s Blog</title>
-        <link>https://example.com/tags/python/</link>
+        <link>http://localhost:1313/tags/python/</link>
         <description>Recent content in Python on Serendipity&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Fri, 18 Oct 2024 15:28:15 +0800</lastBuildDate><atom:link href="https://example.com/tags/python/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Fri, 18 Oct 2024 15:28:15 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/python/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Some Skills on Modifying Pip Mirror Source and Installing Cuda in Conda</title>
-        <link>https://example.com/p/some-skills-on-modifying-pip-mirror-source-and-installing-cuda-in-conda/</link>
+        <link>http://localhost:1313/p/some-skills-on-modifying-pip-mirror-source-and-installing-cuda-in-conda/</link>
         <pubDate>Fri, 18 Oct 2024 15:28:15 +0800</pubDate>
         
-        <guid>https://example.com/p/some-skills-on-modifying-pip-mirror-source-and-installing-cuda-in-conda/</guid>
+        <guid>http://localhost:1313/p/some-skills-on-modifying-pip-mirror-source-and-installing-cuda-in-conda/</guid>
         <description>&lt;h2 id=&#34;python-permanently-modifies-pip-mirror-source&#34;&gt;Python permanently modifies pip mirror source
 &lt;/h2&gt;&lt;p&gt;If change the mirror source to Tsinghua Mirror Source, type the following code in the Terminal:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -77,10 +77,10 @@
         </item>
         <item>
         <title>Some Skills on Image Processing</title>
-        <link>https://example.com/p/some-skills-on-image-processing/</link>
+        <link>http://localhost:1313/p/some-skills-on-image-processing/</link>
         <pubDate>Wed, 28 Aug 2024 14:14:07 +0800</pubDate>
         
-        <guid>https://example.com/p/some-skills-on-image-processing/</guid>
+        <guid>http://localhost:1313/p/some-skills-on-image-processing/</guid>
         <description>&lt;h2 id=&#34;image-pre-processingtransformation&#34;&gt;Image Pre-processing/Transformation
 &lt;/h2&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -206,10 +206,10 @@
         </item>
         <item>
         <title>Diffusers</title>
-        <link>https://example.com/p/diffusers/</link>
+        <link>http://localhost:1313/p/diffusers/</link>
         <pubDate>Sun, 11 Aug 2024 12:09:12 +0800</pubDate>
         
-        <guid>https://example.com/p/diffusers/</guid>
+        <guid>http://localhost:1313/p/diffusers/</guid>
         <description>&lt;h2 id=&#34;learning-diffusers&#34;&gt;Learning &lt;code&gt;Diffusers&lt;/code&gt;
 &lt;/h2&gt;&lt;h3 id=&#34;installation&#34;&gt;Installation
 &lt;/h3&gt;&lt;p&gt;With &lt;code&gt;pip&lt;/code&gt;&lt;/p&gt;
