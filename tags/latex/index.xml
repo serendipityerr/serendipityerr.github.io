@@ -12,8 +12,7 @@
         <pubDate>Tue, 25 Feb 2025 11:44:28 +0800</pubDate>
         
         <guid>https://example.com/p/notes-on-latex-math-symbols/</guid>
-        <description>&lt;img src="https://example.com/post_img/2025-02-25/latex-logo.png" alt="Featured image of post Notes on Latex Math Symbols" /&gt;&lt;h2 id=&#34;introduction&#34;&gt;Introduction
-&lt;/h2&gt;&lt;p&gt;The following tables are extracted from &lt;em&gt;The Not So Short Introduction to LaTeX2e&lt;/em&gt;, aka. &lt;em&gt;LaTeX2e in 90 minutes&lt;/em&gt;, by Tobias Oetiker, Hubert Partl, Irene Hyna, and Elisabeth Schlegl. It can be located &lt;a class=&#34;link&#34; href=&#34;https://github.com/CTeX-org/lshort-zh-cn&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+        <description>&lt;img src="https://example.com/post_img/2025-02-25/latex-logo.png" alt="Featured image of post Notes on Latex Math Symbols" /&gt;&lt;p&gt;The following tables are extracted from &lt;em&gt;The Not So Short Introduction to LaTeX2e&lt;/em&gt;, aka. &lt;em&gt;LaTeX2e in 90 minutes&lt;/em&gt;, by Tobias Oetiker, Hubert Partl, Irene Hyna, and Elisabeth Schlegl. It can be located &lt;a class=&#34;link&#34; href=&#34;https://github.com/CTeX-org/lshort-zh-cn&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;table-math-mode-accents&#34;&gt;Table: Math Mode Accents
 &lt;/h2&gt;&lt;!-- 
@@ -221,675 +220,269 @@
 &lt;/div&gt;
 &lt;/div&gt;&lt;hr&gt;
 &lt;h2 id=&#34;table-arrows&#34;&gt;Table: Arrows
-&lt;/h2&gt;&lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th&gt;Symbol&lt;/th&gt;
-          &lt;th&gt;Command&lt;/th&gt;
-          &lt;th&gt;Symbol&lt;/th&gt;
-          &lt;th&gt;Command&lt;/th&gt;
-          &lt;th&gt;Symbol&lt;/th&gt;
-          &lt;th&gt;Command&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td&gt;$\leftarrow$&lt;/td&gt;
-          &lt;td&gt;\leftarrow or \gets&lt;/td&gt;
-          &lt;td&gt;$\longleftarrow$&lt;/td&gt;
-          &lt;td&gt;\longleftarrow&lt;/td&gt;
-          &lt;td&gt;$\uparrow$&lt;/td&gt;
-          &lt;td&gt;\uparrow&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;$\rightarrow$&lt;/td&gt;
-          &lt;td&gt;\rightarrow or \to&lt;/td&gt;
-          &lt;td&gt;$\longrightarrow$&lt;/td&gt;
-          &lt;td&gt;\longrightarrow&lt;/td&gt;
-          &lt;td&gt;$\downarrow$&lt;/td&gt;
-          &lt;td&gt;\downarrow&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;$\leftrightarrow$&lt;/td&gt;
-          &lt;td&gt;\leftrightarrow&lt;/td&gt;
-          &lt;td&gt;$\longleftrightarrow$&lt;/td&gt;
-          &lt;td&gt;\longleftrightarrow&lt;/td&gt;
-          &lt;td&gt;$\updownarrow$&lt;/td&gt;
-          &lt;td&gt;\updownarrow&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;$\Leftarrow$&lt;/td&gt;
-          &lt;td&gt;\Leftarrow&lt;/td&gt;
-          &lt;td&gt;$\Longleftarrow$&lt;/td&gt;
-          &lt;td&gt;\Longleftarrow&lt;/td&gt;
-          &lt;td&gt;$\Uparrow$&lt;/td&gt;
-          &lt;td&gt;\Uparrow&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;$\Rightarrow$&lt;/td&gt;
-          &lt;td&gt;\Rightarrow&lt;/td&gt;
-          &lt;td&gt;$\Longrightarrow$&lt;/td&gt;
-          &lt;td&gt;\Longrightarrow&lt;/td&gt;
-          &lt;td&gt;$\Downarrow$&lt;/td&gt;
-          &lt;td&gt;\Downarrow&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;$\Leftrightarrow$&lt;/td&gt;
-          &lt;td&gt;\Leftrightarrow&lt;/td&gt;
-          &lt;td&gt;$\Longleftrightarrow$&lt;/td&gt;
-          &lt;td&gt;\Longleftrightarrow&lt;/td&gt;
-          &lt;td&gt;$\Updownarrow$&lt;/td&gt;
-          &lt;td&gt;\Downarrow&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;$\mapsto$&lt;/td&gt;
-          &lt;td&gt;\mapsto&lt;/td&gt;
-          &lt;td&gt;$\longmapsto$&lt;/td&gt;
-          &lt;td&gt;\longmapsto&lt;/td&gt;
-          &lt;td&gt;$\nearrow$&lt;/td&gt;
-          &lt;td&gt;\nearrow&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;$\hookleftarrow$&lt;/td&gt;
-          &lt;td&gt;\hookleftarrow&lt;/td&gt;
-          &lt;td&gt;$\hookrightarrow$&lt;/td&gt;
-          &lt;td&gt;\hookrightarrow&lt;/td&gt;
-          &lt;td&gt;$\searrow$&lt;/td&gt;
-          &lt;td&gt;\searrow&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;$\leftharpoonup$&lt;/td&gt;
-          &lt;td&gt;\leftharpoonup&lt;/td&gt;
-          &lt;td&gt;$\rightharpoonup$&lt;/td&gt;
-          &lt;td&gt;\rightharpoonup&lt;/td&gt;
-          &lt;td&gt;$\swarrow$&lt;/td&gt;
-          &lt;td&gt;\swarrow&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;$\leftharpoondown$&lt;/td&gt;
-          &lt;td&gt;\leftharpoondown&lt;/td&gt;
-          &lt;td&gt;$\rightharpoondown$&lt;/td&gt;
-          &lt;td&gt;\rightharpoondown&lt;/td&gt;
-          &lt;td&gt;$\nwarrow$&lt;/td&gt;
-          &lt;td&gt;\nwarrow&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;$\rightleftharpoons$&lt;/td&gt;
-          &lt;td&gt;\rightleftharpoons&lt;/td&gt;
-          &lt;td&gt;$\iff$&lt;/td&gt;
-          &lt;td&gt;\iff (bigger spaces)&lt;/td&gt;
-          &lt;td&gt;$\leadsto$&lt;/td&gt;
-          &lt;td&gt;\Leadsto $^{a}$&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+&lt;/h2&gt;&lt;!-- | Symbol | Command | Symbol | Command | Symbol | Command |
+| --- | --- | --- | --- | --- | --- |
+| $\leftarrow$ | \leftarrow or \gets | $\longleftarrow$ | \longleftarrow | $\uparrow$ | \uparrow |
+| $\rightarrow$ | \rightarrow or \to | $\longrightarrow$ | \longrightarrow | $\downarrow$ | \downarrow |
+| $\leftrightarrow$ | \leftrightarrow | $\longleftrightarrow$ | \longleftrightarrow | $\updownarrow$ | \updownarrow |
+| $\Leftarrow$ | \Leftarrow | $\Longleftarrow$ | \Longleftarrow | $\Uparrow$ | \Uparrow |
+| $\Rightarrow$ | \Rightarrow | $\Longrightarrow$ | \Longrightarrow | $\Downarrow$ | \Downarrow |
+| $\Leftrightarrow$ | \Leftrightarrow | $\Longleftrightarrow$ | \Longleftrightarrow | $\Updownarrow$ | \Updownarrow |
+| $\mapsto$ | \mapsto | $\longmapsto$ | \longmapsto | $\nearrow$ | \nearrow |
+| $\hookleftarrow$ | \hookleftarrow | $\hookrightarrow$ | \hookrightarrow | $\searrow$ | \searrow |
+| $\leftharpoonup$ | \leftharpoonup | $\rightharpoonup$ | \rightharpoonup | $\swarrow$ | \swarrow |
+| $\leftharpoondown$ | \leftharpoondown | $\rightharpoondown$ | \rightharpoondown | $\nwarrow$ | \nwarrow |
+| $\rightleftharpoons$ | \rightleftharpoons | $\iff$ | \iff (bigger spaces) | $\leadsto$ | \Leadsto $^{a}$ | --&gt;
 &lt;img src=&#34;https://example.com/post_img/2025-02-25/table7.png&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-latex&#34; data-lang=&#34;latex&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;       &lt;span class=&#34;k&#34;&gt;\leftarrow&lt;/span&gt; or &lt;span class=&#34;k&#34;&gt;\gets&lt;/span&gt;         &lt;span class=&#34;k&#34;&gt;\longleftarrow&lt;/span&gt;              &lt;span class=&#34;k&#34;&gt;\uparrow&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;       &lt;span class=&#34;k&#34;&gt;\rightarrow&lt;/span&gt; or &lt;span class=&#34;k&#34;&gt;\to&lt;/span&gt;          &lt;span class=&#34;k&#34;&gt;\longleftrightarrow&lt;/span&gt;         &lt;span class=&#34;k&#34;&gt;\downarrow&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;       &lt;span class=&#34;k&#34;&gt;\leftrightarrow&lt;/span&gt;             &lt;span class=&#34;k&#34;&gt;\longleftrightarrow&lt;/span&gt;         &lt;span class=&#34;k&#34;&gt;\updownarrow&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;       &lt;span class=&#34;k&#34;&gt;\Leftarrow&lt;/span&gt;                  &lt;span class=&#34;k&#34;&gt;\Longleftarrow&lt;/span&gt;              &lt;span class=&#34;k&#34;&gt;\Uparrow&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;       &lt;span class=&#34;k&#34;&gt;\Rightarrow&lt;/span&gt;                 &lt;span class=&#34;k&#34;&gt;\Longrightarrow&lt;/span&gt;             &lt;span class=&#34;k&#34;&gt;\Downarrow&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;       &lt;span class=&#34;k&#34;&gt;\Leftrightarrow&lt;/span&gt;             &lt;span class=&#34;k&#34;&gt;\Longleftrightarrow&lt;/span&gt;         &lt;span class=&#34;k&#34;&gt;\Updownarrow&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;       &lt;span class=&#34;k&#34;&gt;\mapsto&lt;/span&gt;                     &lt;span class=&#34;k&#34;&gt;\longmapsto&lt;/span&gt;                 &lt;span class=&#34;k&#34;&gt;\nearrow&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;       &lt;span class=&#34;k&#34;&gt;\hookleftarrow&lt;/span&gt;              &lt;span class=&#34;k&#34;&gt;\hookrightarrow&lt;/span&gt;             &lt;span class=&#34;k&#34;&gt;\searrow&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;       &lt;span class=&#34;k&#34;&gt;\leftharpoonup&lt;/span&gt;              &lt;span class=&#34;k&#34;&gt;\rightharpoonup&lt;/span&gt;             &lt;span class=&#34;k&#34;&gt;\swarrow&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;       &lt;span class=&#34;k&#34;&gt;\leftharpoondown&lt;/span&gt;            &lt;span class=&#34;k&#34;&gt;\rightharpoondown&lt;/span&gt;           &lt;span class=&#34;k&#34;&gt;\nwarrow&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;       &lt;span class=&#34;k&#34;&gt;\rightleftharpoons&lt;/span&gt;          &lt;span class=&#34;k&#34;&gt;\iff&lt;/span&gt;                        &lt;span class=&#34;k&#34;&gt;\Leadsto&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;strong&gt;$^a$ Use the &lt;code&gt;latexsym&lt;/code&gt; package to access this symbol&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;table-delimiters&#34;&gt;Table: Delimiters
+&lt;/h2&gt;&lt;!-- | Symbol | Command | Symbol | Command | Symbol | Command | Symbol | Command |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| $($ | \lparen | $)$ | \rparen | $\uparrow$ | \uparrow | $\Uparrow$ | \Uparrow |
+| $[$ | [ or \lbrack | $]$ | ] or \rbrack | $\downarrow$ | \downarrow | $\Downarrow$ | \Downarrow |
+| { | \\{ or \lbrace | } | \\} or \rbrace  |$\updownarrow$ | \updownarrow | $\Updownarrow$ | \Updownarrow |
+| $\langle$ | \langle | $\rangle$ | \rangle | $\vert$ | \| or \vert | $\Vert$ | \\\| or \Vert |
+| $\lfloor$ | \lfloor | $\rfloor$ | \rfloor | $\lceil$ | \lceil | $\rceil$ | \rceil |
+| $/$ | / | $\backslash$ | \backslash |  --&gt;
+&lt;img src=&#34;https://example.com/post_img/2025-02-25/table8.png&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-latex&#34; data-lang=&#34;latex&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;\leftarrow&lt;/span&gt; or &lt;span class=&#34;k&#34;&gt;\gets&lt;/span&gt;                 &lt;span class=&#34;k&#34;&gt;\longleftarrow&lt;/span&gt;             &lt;span class=&#34;k&#34;&gt;\uparrow&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;\rightarrow&lt;/span&gt; or &lt;span class=&#34;k&#34;&gt;\to&lt;/span&gt;                &lt;span class=&#34;k&#34;&gt;\longleftrightarrow&lt;/span&gt;             &lt;span class=&#34;k&#34;&gt;\downarrow&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;\leftrightarrow&lt;/span&gt;              &lt;span class=&#34;k&#34;&gt;\longleftrightarrow&lt;/span&gt;  &lt;span class=&#34;k&#34;&gt;\updownarrow&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;\int&lt;/span&gt;                 &lt;span class=&#34;k&#34;&gt;\oint&lt;/span&gt;                                   &lt;span class=&#34;k&#34;&gt;\biguplus&lt;/span&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-latex&#34; data-lang=&#34;latex&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;       &lt;span class=&#34;k&#34;&gt;\lparen&lt;/span&gt;            &lt;span class=&#34;k&#34;&gt;\rparen&lt;/span&gt;            &lt;span class=&#34;k&#34;&gt;\uparrow&lt;/span&gt;              &lt;span class=&#34;k&#34;&gt;\Uparrow&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;       [ or &lt;span class=&#34;k&#34;&gt;\lbrack&lt;/span&gt;       ] or &lt;span class=&#34;k&#34;&gt;\rbrack&lt;/span&gt;       &lt;span class=&#34;k&#34;&gt;\downarrow&lt;/span&gt;            &lt;span class=&#34;k&#34;&gt;\Downarrow&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;       &lt;span class=&#34;k&#34;&gt;\{&lt;/span&gt; or &lt;span class=&#34;k&#34;&gt;\lbrace&lt;/span&gt;      &lt;span class=&#34;k&#34;&gt;\}&lt;/span&gt; or &lt;span class=&#34;k&#34;&gt;\rbrace&lt;/span&gt;      &lt;span class=&#34;k&#34;&gt;\updownarrow&lt;/span&gt;          &lt;span class=&#34;k&#34;&gt;\Updownarrow&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;       &lt;span class=&#34;k&#34;&gt;\langle&lt;/span&gt;            &lt;span class=&#34;k&#34;&gt;\rangle&lt;/span&gt;            | or &lt;span class=&#34;k&#34;&gt;\vert&lt;/span&gt;            &lt;span class=&#34;k&#34;&gt;\|&lt;/span&gt; or &lt;span class=&#34;k&#34;&gt;\Vert&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;       &lt;span class=&#34;k&#34;&gt;\lfloor&lt;/span&gt;            &lt;span class=&#34;k&#34;&gt;\rfloor&lt;/span&gt;            &lt;span class=&#34;k&#34;&gt;\lceil&lt;/span&gt;                &lt;span class=&#34;k&#34;&gt;\rceil&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;       /                  &lt;span class=&#34;k&#34;&gt;\backslash&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;hr&gt;
+&lt;h2 id=&#34;table-miscellaneous-symbols&#34;&gt;Table: Miscellaneous Symbols
+&lt;/h2&gt;&lt;!-- | Symbol | Command | Symbol | Command | Symbol | Command | Symbol | Command |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| $\dots$ | \dots | $\cdots$ | \cdots | $\vdots$ | \vdots | $\ddots$ | \ddots |
+| $\hbar$ | \hbar | $\imath$ | \imath | $\jmath$ | \jmath | $\ell$ | \ell |
+| $\Re$ | \Re | $\Im$ | \Im | $\aleph$ | \aleph | $\wp$ | \wp |
+| $\forall$ | \forall | $\exists$ | \exists | $\mho$ | \mho $^a$ | $\partial$ | \partial |
+| $&#39;$ | &#39; | $&#39;$ | \prime | $\emptyset$ | \emptyset | $\infty$ | \infty |
+| $\nabla$ | \nabla | $\triangle$ | \triangle | $\Box$ | \Box $^a$ | $\Diamond$ | \Diamond $^a$ |
+| $\bot$ | \bot | $\top$ | \top | $\angle$ | \angle | $\surd$ | \surd |
+| $\diamondsuit$ | \diamondsuit | $\heartsuit$ | \heartsuit | $\clubsuit$ | \clubsuit | $\spadesuit$ | \spadesuit |
+| $\neg$ | \neg or \lnot | $\flat$ | \flat | $\natural$ | \natural | $\sharp$ | \sharp | --&gt;
+&lt;img src=&#34;https://example.com/post_img/2025-02-25/table9.png&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;8
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-latex&#34; data-lang=&#34;latex&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;\dots&lt;/span&gt;                &lt;span class=&#34;k&#34;&gt;\cdots&lt;/span&gt;             &lt;span class=&#34;k&#34;&gt;\vdots&lt;/span&gt;             &lt;span class=&#34;k&#34;&gt;\ddots&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;\hbar&lt;/span&gt;                &lt;span class=&#34;k&#34;&gt;\imath&lt;/span&gt;             &lt;span class=&#34;k&#34;&gt;\jmath&lt;/span&gt;             &lt;span class=&#34;k&#34;&gt;\ell&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;\Re&lt;/span&gt;                  &lt;span class=&#34;k&#34;&gt;\Im&lt;/span&gt;                &lt;span class=&#34;k&#34;&gt;\aleph&lt;/span&gt;             &lt;span class=&#34;k&#34;&gt;\wp&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;\forall&lt;/span&gt;              &lt;span class=&#34;k&#34;&gt;\exists&lt;/span&gt;            &lt;span class=&#34;k&#34;&gt;\mho&lt;/span&gt;               &lt;span class=&#34;k&#34;&gt;\partial&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;\nabla&lt;/span&gt;               &lt;span class=&#34;k&#34;&gt;\triangle&lt;/span&gt;          &lt;span class=&#34;k&#34;&gt;\Box&lt;/span&gt;               &lt;span class=&#34;k&#34;&gt;\Diamond&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;\bot&lt;/span&gt;                 &lt;span class=&#34;k&#34;&gt;\top&lt;/span&gt;               &lt;span class=&#34;k&#34;&gt;\angle&lt;/span&gt;             &lt;span class=&#34;k&#34;&gt;\surd&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;\diamondsuit&lt;/span&gt;         &lt;span class=&#34;k&#34;&gt;\heartsuit&lt;/span&gt;         &lt;span class=&#34;k&#34;&gt;\clubsuit&lt;/span&gt;          &lt;span class=&#34;k&#34;&gt;\spadesuit&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;\neg&lt;/span&gt; or &lt;span class=&#34;k&#34;&gt;\lnot&lt;/span&gt;        &lt;span class=&#34;k&#34;&gt;\flat&lt;/span&gt;              &lt;span class=&#34;k&#34;&gt;\natural&lt;/span&gt;           &lt;span class=&#34;k&#34;&gt;\sharp&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;&lt;strong&gt;$^a$ Use the &lt;code&gt;latexsym&lt;/code&gt; package to access this symbol&lt;/strong&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;table-delimiters&#34;&gt;Table: Delimiters
-&lt;/h2&gt;&lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th&gt;Symbol&lt;/th&gt;
-          &lt;th&gt;Command&lt;/th&gt;
-          &lt;th&gt;Symbol&lt;/th&gt;
-          &lt;th&gt;Command&lt;/th&gt;
-          &lt;th&gt;Symbol&lt;/th&gt;
-          &lt;th&gt;Command&lt;/th&gt;
-          &lt;th&gt;Symbol&lt;/th&gt;
-          &lt;th&gt;Command&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td&gt;$($&lt;/td&gt;
-          &lt;td&gt;\lparen&lt;/td&gt;
-          &lt;td&gt;$)$&lt;/td&gt;
-          &lt;td&gt;\rparen&lt;/td&gt;
-          &lt;td&gt;$\uparrow$&lt;/td&gt;
-          &lt;td&gt;\uparrow&lt;/td&gt;
-          &lt;td&gt;$\Uparrow$&lt;/td&gt;
-          &lt;td&gt;\Uparrow&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;$[$&lt;/td&gt;
-          &lt;td&gt;[ or \lbrack&lt;/td&gt;
-          &lt;td&gt;$]$&lt;/td&gt;
-          &lt;td&gt;] or \rbrack&lt;/td&gt;
-          &lt;td&gt;$\downarrow$&lt;/td&gt;
-          &lt;td&gt;\downarrow&lt;/td&gt;
-          &lt;td&gt;$\Downarrow$&lt;/td&gt;
-          &lt;td&gt;\Downarrow&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;{&lt;/td&gt;
-          &lt;td&gt;\{ or \lbrace&lt;/td&gt;
-          &lt;td&gt;}&lt;/td&gt;
-          &lt;td&gt;\} or \rbrace&lt;/td&gt;
-          &lt;td&gt;$\updownarrow$&lt;/td&gt;
-          &lt;td&gt;\updownarrow&lt;/td&gt;
-          &lt;td&gt;$\Updownarrow$&lt;/td&gt;
-          &lt;td&gt;\Updownarrow&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;$\langle$&lt;/td&gt;
-          &lt;td&gt;\langle&lt;/td&gt;
-          &lt;td&gt;$\rangle$&lt;/td&gt;
-          &lt;td&gt;\rangle&lt;/td&gt;
-          &lt;td&gt;$\vert$&lt;/td&gt;
-          &lt;td&gt;| or \vert&lt;/td&gt;
-          &lt;td&gt;$\Vert$&lt;/td&gt;
-          &lt;td&gt;\| or \Vert&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;$\lfloor$&lt;/td&gt;
-          &lt;td&gt;\lfloor&lt;/td&gt;
-          &lt;td&gt;$\rfloor$&lt;/td&gt;
-          &lt;td&gt;\rfloor&lt;/td&gt;
-          &lt;td&gt;$\lceil$&lt;/td&gt;
-          &lt;td&gt;\lceil&lt;/td&gt;
-          &lt;td&gt;$\rceil$&lt;/td&gt;
-          &lt;td&gt;\rceil&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;$/$&lt;/td&gt;
-          &lt;td&gt;/&lt;/td&gt;
-          &lt;td&gt;$\backslash$&lt;/td&gt;
-          &lt;td&gt;\backslash&lt;/td&gt;
-          &lt;td&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-&lt;img src=&#34;https://example.com/post_img/2025-02-25/table8.png&#34;&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;table-miscellaneous-symbols&#34;&gt;Table: Miscellaneous Symbols
-&lt;/h2&gt;&lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th&gt;Symbol&lt;/th&gt;
-          &lt;th&gt;Command&lt;/th&gt;
-          &lt;th&gt;Symbol&lt;/th&gt;
-          &lt;th&gt;Command&lt;/th&gt;
-          &lt;th&gt;Symbol&lt;/th&gt;
-          &lt;th&gt;Command&lt;/th&gt;
-          &lt;th&gt;Symbol&lt;/th&gt;
-          &lt;th&gt;Command&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td&gt;$\dots$&lt;/td&gt;
-          &lt;td&gt;\dots&lt;/td&gt;
-          &lt;td&gt;$\cdots$&lt;/td&gt;
-          &lt;td&gt;\cdots&lt;/td&gt;
-          &lt;td&gt;$\vdots$&lt;/td&gt;
-          &lt;td&gt;\vdots&lt;/td&gt;
-          &lt;td&gt;$\ddots$&lt;/td&gt;
-          &lt;td&gt;\ddots&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;$\hbar$&lt;/td&gt;
-          &lt;td&gt;\hbar&lt;/td&gt;
-          &lt;td&gt;$\imath$&lt;/td&gt;
-          &lt;td&gt;\imath&lt;/td&gt;
-          &lt;td&gt;$\jmath$&lt;/td&gt;
-          &lt;td&gt;\jmath&lt;/td&gt;
-          &lt;td&gt;$\ell$&lt;/td&gt;
-          &lt;td&gt;\ell&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;$\Re$&lt;/td&gt;
-          &lt;td&gt;\Re&lt;/td&gt;
-          &lt;td&gt;$\Im$&lt;/td&gt;
-          &lt;td&gt;\Im&lt;/td&gt;
-          &lt;td&gt;$\aleph$&lt;/td&gt;
-          &lt;td&gt;\aleph&lt;/td&gt;
-          &lt;td&gt;$\wp$&lt;/td&gt;
-          &lt;td&gt;\wp&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;$\forall$&lt;/td&gt;
-          &lt;td&gt;\forall&lt;/td&gt;
-          &lt;td&gt;$\exists$&lt;/td&gt;
-          &lt;td&gt;\exists&lt;/td&gt;
-          &lt;td&gt;$\mho$&lt;/td&gt;
-          &lt;td&gt;\mho $^a$&lt;/td&gt;
-          &lt;td&gt;$\partial$&lt;/td&gt;
-          &lt;td&gt;\partial&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;$&#39;$&lt;/td&gt;
-          &lt;td&gt;&#39;&lt;/td&gt;
-          &lt;td&gt;$&#39;$&lt;/td&gt;
-          &lt;td&gt;\prime&lt;/td&gt;
-          &lt;td&gt;$\emptyset$&lt;/td&gt;
-          &lt;td&gt;\emptyset&lt;/td&gt;
-          &lt;td&gt;$\infty$&lt;/td&gt;
-          &lt;td&gt;\infty&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;$\nabla$&lt;/td&gt;
-          &lt;td&gt;\nabla&lt;/td&gt;
-          &lt;td&gt;$\triangle$&lt;/td&gt;
-          &lt;td&gt;\triangle&lt;/td&gt;
-          &lt;td&gt;$\Box$&lt;/td&gt;
-          &lt;td&gt;\Box $^a$&lt;/td&gt;
-          &lt;td&gt;$\Diamond$&lt;/td&gt;
-          &lt;td&gt;\Diamond $^a$&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;$\bot$&lt;/td&gt;
-          &lt;td&gt;\bot&lt;/td&gt;
-          &lt;td&gt;$\top$&lt;/td&gt;
-          &lt;td&gt;\top&lt;/td&gt;
-          &lt;td&gt;$\angle$&lt;/td&gt;
-          &lt;td&gt;\angle&lt;/td&gt;
-          &lt;td&gt;$\surd$&lt;/td&gt;
-          &lt;td&gt;\surd&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;$\diamondsuit$&lt;/td&gt;
-          &lt;td&gt;\diamondsuit&lt;/td&gt;
-          &lt;td&gt;$\heartsuit$&lt;/td&gt;
-          &lt;td&gt;\heartsuit&lt;/td&gt;
-          &lt;td&gt;$\clubsuit$&lt;/td&gt;
-          &lt;td&gt;\clubsuit&lt;/td&gt;
-          &lt;td&gt;$\spadesuit$&lt;/td&gt;
-          &lt;td&gt;\spadesuit&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;$\neg$&lt;/td&gt;
-          &lt;td&gt;\neg or \lnot&lt;/td&gt;
-          &lt;td&gt;$\flat$&lt;/td&gt;
-          &lt;td&gt;\flat&lt;/td&gt;
-          &lt;td&gt;$\natural$&lt;/td&gt;
-          &lt;td&gt;\natural&lt;/td&gt;
-          &lt;td&gt;$\sharp$&lt;/td&gt;
-          &lt;td&gt;\sharp&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-&lt;img src=&#34;https://example.com/post_img/2025-02-25/table9.png&#34;&gt;
-&lt;p&gt;&lt;strong&gt;$^a$ Use the &lt;code&gt;latexsym&lt;/code&gt; package to access this symbol&lt;/strong&gt;&lt;/p&gt;
-&lt;hr&gt;
 &lt;h2 id=&#34;table-non-mathematical-symbols&#34;&gt;Table: Non-Mathematical Symbols
 &lt;/h2&gt;&lt;p&gt;These symbols can also be used in text mode.&lt;/p&gt;
-&lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th&gt;Symbol&lt;/th&gt;
-          &lt;th&gt;Command&lt;/th&gt;
-          &lt;th&gt;Symbol&lt;/th&gt;
-          &lt;th&gt;Command&lt;/th&gt;
-          &lt;th&gt;Symbol&lt;/th&gt;
-          &lt;th&gt;Command&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td&gt;$\dagger$&lt;/td&gt;
-          &lt;td&gt;\dagger&lt;/td&gt;
-          &lt;td&gt;$\S$&lt;/td&gt;
-          &lt;td&gt;\S&lt;/td&gt;
-          &lt;td&gt;$\copyright$&lt;/td&gt;
-          &lt;td&gt;\copyright&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;$\ddag$&lt;/td&gt;
-          &lt;td&gt;\ddag&lt;/td&gt;
-          &lt;td&gt;$\P$&lt;/td&gt;
-          &lt;td&gt;\P&lt;/td&gt;
-          &lt;td&gt;$\pounds$&lt;/td&gt;
-          &lt;td&gt;\pounds&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+&lt;!-- | Symbol | Command | Symbol | Command | Symbol | Command |
+| --- | --- | --- | --- | --- | --- |
+| $\dagger$ | \dagger | $\S$ | \S | $\copyright$ | \copyright |
+| $\ddag$ | \ddag | $\P$ | \P | $\pounds$ | \pounds | --&gt;
 &lt;img src=&#34;https://example.com/post_img/2025-02-25/table10.png&#34;&gt;
-&lt;hr&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-latex&#34; data-lang=&#34;latex&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;k&#34;&gt;\dagger&lt;/span&gt;                    &lt;span class=&#34;k&#34;&gt;\S&lt;/span&gt;                        &lt;span class=&#34;k&#34;&gt;\copyright&lt;/span&gt;             
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;k&#34;&gt;\ddag&lt;/span&gt;                      &lt;span class=&#34;k&#34;&gt;\P&lt;/span&gt;                        &lt;span class=&#34;k&#34;&gt;\pounds&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;hr&gt;
 &lt;h2 id=&#34;table-ams-delimiters&#34;&gt;Table: AMS Delimiters
-&lt;/h2&gt;&lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th&gt;Symbol&lt;/th&gt;
-          &lt;th&gt;Command&lt;/th&gt;
-          &lt;th&gt;Symbol&lt;/th&gt;
-          &lt;th&gt;Command&lt;/th&gt;
-          &lt;th&gt;Symbol&lt;/th&gt;
-          &lt;th&gt;Command&lt;/th&gt;
-          &lt;th&gt;Symbol&lt;/th&gt;
-          &lt;th&gt;Command&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td&gt;$\ulcorner$&lt;/td&gt;
-          &lt;td&gt;\ulcorner&lt;/td&gt;
-          &lt;td&gt;$\urcorner$&lt;/td&gt;
-          &lt;td&gt;\urcorner&lt;/td&gt;
-          &lt;td&gt;$\llcorner$&lt;/td&gt;
-          &lt;td&gt;\llcorner&lt;/td&gt;
-          &lt;td&gt;$\lrcorner$&lt;/td&gt;
-          &lt;td&gt;\lrcorner&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+&lt;/h2&gt;&lt;!-- | Symbol | Command | Symbol | Command | Symbol | Command | Symbol | Command |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| $\ulcorner$ | \ulcorner | $\urcorner$ | \urcorner | $\llcorner$ | \llcorner | $\lrcorner$ | \lrcorner | --&gt;
 &lt;img src=&#34;https://example.com/post_img/2025-02-25/table11.png&#34;&gt;
-&lt;hr&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-latex&#34; data-lang=&#34;latex&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;\ulcorner&lt;/span&gt;            &lt;span class=&#34;k&#34;&gt;\urcorner&lt;/span&gt;           &lt;span class=&#34;k&#34;&gt;\llcorner&lt;/span&gt;            &lt;span class=&#34;k&#34;&gt;\lrcorner&lt;/span&gt;             
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;hr&gt;
 &lt;h2 id=&#34;table-ams-binary-relations&#34;&gt;Table: AMS Binary Relations
-&lt;/h2&gt;&lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th&gt;Symbol&lt;/th&gt;
-          &lt;th&gt;Command&lt;/th&gt;
-          &lt;th&gt;Symbol&lt;/th&gt;
-          &lt;th&gt;Command&lt;/th&gt;
-          &lt;th&gt;Symbol&lt;/th&gt;
-          &lt;th&gt;Command&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td&gt;$\lessdot$&lt;/td&gt;
-          &lt;td&gt;\lessdot&lt;/td&gt;
-          &lt;td&gt;$\gtrdot$&lt;/td&gt;
-          &lt;td&gt;\gtrdot&lt;/td&gt;
-          &lt;td&gt;$\doteqdot$&lt;/td&gt;
-          &lt;td&gt;\doteqdot or \Doteq&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;$\leqslant$&lt;/td&gt;
-          &lt;td&gt;\leqslant&lt;/td&gt;
-          &lt;td&gt;$\geqslant$&lt;/td&gt;
-          &lt;td&gt;\geqslant&lt;/td&gt;
-          &lt;td&gt;$\risingdotseq$&lt;/td&gt;
-          &lt;td&gt;\risingdotseq&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;$\eqslantless$&lt;/td&gt;
-          &lt;td&gt;\eqslantless&lt;/td&gt;
-          &lt;td&gt;$\eqslantgtr$&lt;/td&gt;
-          &lt;td&gt;\eqslantgtr&lt;/td&gt;
-          &lt;td&gt;$\fallingdotseq$&lt;/td&gt;
-          &lt;td&gt;\fallingdotseq&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;$\leqq$&lt;/td&gt;
-          &lt;td&gt;\leqq&lt;/td&gt;
-          &lt;td&gt;$\geqq$&lt;/td&gt;
-          &lt;td&gt;\geqq&lt;/td&gt;
-          &lt;td&gt;$\eqcirc$&lt;/td&gt;
-          &lt;td&gt;\eqcirc&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;$\lll$&lt;/td&gt;
-          &lt;td&gt;\lll or \llless&lt;/td&gt;
-          &lt;td&gt;$\ggg$&lt;/td&gt;
-          &lt;td&gt;\ggg or \gggtr&lt;/td&gt;
-          &lt;td&gt;$\circeq$&lt;/td&gt;
-          &lt;td&gt;\circeq&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;$\lesssim$&lt;/td&gt;
-          &lt;td&gt;\lesssim&lt;/td&gt;
-          &lt;td&gt;$\gtrsim$&lt;/td&gt;
-          &lt;td&gt;\gtrsim&lt;/td&gt;
-          &lt;td&gt;$\triangleq$&lt;/td&gt;
-          &lt;td&gt;\triangleq&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;$\lessapprox$&lt;/td&gt;
-          &lt;td&gt;\lessapprox&lt;/td&gt;
-          &lt;td&gt;$\gtrapprox$&lt;/td&gt;
-          &lt;td&gt;\gtrapprox&lt;/td&gt;
-          &lt;td&gt;$\bumpeq$&lt;/td&gt;
-          &lt;td&gt;\bumpeq&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;$\lessgtr$&lt;/td&gt;
-          &lt;td&gt;\lessgtr&lt;/td&gt;
-          &lt;td&gt;$\gtrless$&lt;/td&gt;
-          &lt;td&gt;\gtrless&lt;/td&gt;
-          &lt;td&gt;$\Bumpeq$&lt;/td&gt;
-          &lt;td&gt;\Bumpeq&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;$\lesseqgtr$&lt;/td&gt;
-          &lt;td&gt;\lesseqgtr&lt;/td&gt;
-          &lt;td&gt;$\gtreqless$&lt;/td&gt;
-          &lt;td&gt;\gtreqless&lt;/td&gt;
-          &lt;td&gt;$\thicksim$&lt;/td&gt;
-          &lt;td&gt;\thicksim&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;$\lesseqqgtr$&lt;/td&gt;
-          &lt;td&gt;\lesseqqgtr&lt;/td&gt;
-          &lt;td&gt;$\gtreqqless$&lt;/td&gt;
-          &lt;td&gt;\gtreqqless&lt;/td&gt;
-          &lt;td&gt;$\thickapprox$&lt;/td&gt;
-          &lt;td&gt;\thickapprox&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;$\preccurlyeq$&lt;/td&gt;
-          &lt;td&gt;\preccurlyeq&lt;/td&gt;
-          &lt;td&gt;$\succcurlyeq$&lt;/td&gt;
-          &lt;td&gt;\succcurlyeq&lt;/td&gt;
-          &lt;td&gt;$\approxeq$&lt;/td&gt;
-          &lt;td&gt;\approxeq&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;$\curlyeqprec$&lt;/td&gt;
-          &lt;td&gt;\curlyeqprec&lt;/td&gt;
-          &lt;td&gt;$\curlyeqsucc$&lt;/td&gt;
-          &lt;td&gt;\curlyeqsucc&lt;/td&gt;
-          &lt;td&gt;$\backsim$&lt;/td&gt;
-          &lt;td&gt;\backsim&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;$\precsim$&lt;/td&gt;
-          &lt;td&gt;\precsim&lt;/td&gt;
-          &lt;td&gt;$\succsim$&lt;/td&gt;
-          &lt;td&gt;\succsim&lt;/td&gt;
-          &lt;td&gt;$\backsimeq$&lt;/td&gt;
-          &lt;td&gt;\backsimeq&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;$\precapprox$&lt;/td&gt;
-          &lt;td&gt;\precapprox&lt;/td&gt;
-          &lt;td&gt;$\succapprox$&lt;/td&gt;
-          &lt;td&gt;\succapprox&lt;/td&gt;
-          &lt;td&gt;$\vDash$&lt;/td&gt;
-          &lt;td&gt;\vDash&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;$\subseteqq$&lt;/td&gt;
-          &lt;td&gt;\subseteqq&lt;/td&gt;
-          &lt;td&gt;$\supseteqq$&lt;/td&gt;
-          &lt;td&gt;\supseteqq&lt;/td&gt;
-          &lt;td&gt;$\Vdash$&lt;/td&gt;
-          &lt;td&gt;\Vdash&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;$\Subset$&lt;/td&gt;
-          &lt;td&gt;\Subset&lt;/td&gt;
-          &lt;td&gt;$\Supset$&lt;/td&gt;
-          &lt;td&gt;\Supset&lt;/td&gt;
-          &lt;td&gt;$\Vvdash$&lt;/td&gt;
-          &lt;td&gt;\Vvdash&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;$\sqsubset$&lt;/td&gt;
-          &lt;td&gt;\sqsubset&lt;/td&gt;
-          &lt;td&gt;$\sqsupset$&lt;/td&gt;
-          &lt;td&gt;\sqsupset&lt;/td&gt;
-          &lt;td&gt;$\backepsilon$&lt;/td&gt;
-          &lt;td&gt;\backepsilon&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;$\therefore$&lt;/td&gt;
-          &lt;td&gt;\therefore&lt;/td&gt;
-          &lt;td&gt;$\because$&lt;/td&gt;
-          &lt;td&gt;\because&lt;/td&gt;
-          &lt;td&gt;$\varpropto$&lt;/td&gt;
-          &lt;td&gt;\varpropto&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;$\shortmid$&lt;/td&gt;
-          &lt;td&gt;\shortmid&lt;/td&gt;
-          &lt;td&gt;$\shortparallel$&lt;/td&gt;
-          &lt;td&gt;\shortparallel&lt;/td&gt;
-          &lt;td&gt;$\between$&lt;/td&gt;
-          &lt;td&gt;\between&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;$\smallsmile$&lt;/td&gt;
-          &lt;td&gt;\smallsmile&lt;/td&gt;
-          &lt;td&gt;$\smallfrown$&lt;/td&gt;
-          &lt;td&gt;\smallfrown&lt;/td&gt;
-          &lt;td&gt;$\pitchfork$&lt;/td&gt;
-          &lt;td&gt;\pitchfork&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;$\vartriangleleft$&lt;/td&gt;
-          &lt;td&gt;\vartriangleleft&lt;/td&gt;
-          &lt;td&gt;$\vartriangleright$&lt;/td&gt;
-          &lt;td&gt;\vartriangleright&lt;/td&gt;
-          &lt;td&gt;$\blacktriangleleft$&lt;/td&gt;
-          &lt;td&gt;\blacktriangleleft&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;$\trianglelefteq$&lt;/td&gt;
-          &lt;td&gt;\trianglelefteq&lt;/td&gt;
-          &lt;td&gt;$\trianglerighteq$&lt;/td&gt;
-          &lt;td&gt;\trianglerighteq&lt;/td&gt;
-          &lt;td&gt;$\blacktriangleright$&lt;/td&gt;
-          &lt;td&gt;\blacktriangleright&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+&lt;/h2&gt;&lt;!-- | Symbol | Command | Symbol | Command | Symbol | Command |
+| --- | --- | --- | --- | --- | --- |
+| $\lessdot$ | \lessdot | $\gtrdot$ | \gtrdot | $\doteqdot$ | \doteqdot or \Doteq |
+| $\leqslant$ | \leqslant | $\geqslant$ | \geqslant | $\risingdotseq$ | \risingdotseq |
+| $\eqslantless$ | \eqslantless | $\eqslantgtr$ | \eqslantgtr | $\fallingdotseq$ | \fallingdotseq |
+| $\leqq$ | \leqq | $\geqq$ | \geqq | $\eqcirc$ | \eqcirc |
+| $\lll$ | \lll or \llless | $\ggg$ | \ggg or \gggtr | $\circeq$ | \circeq |
+| $\lesssim$ | \lesssim | $\gtrsim$ | \gtrsim | $\triangleq$ | \triangleq |
+| $\lessapprox$ | \lessapprox | $\gtrapprox$ | \gtrapprox | $\bumpeq$ | \bumpeq |
+| $\lessgtr$ | \lessgtr | $\gtrless$ | \gtrless | $\Bumpeq$ | \Bumpeq | 
+| $\lesseqgtr$ | \lesseqgtr | $\gtreqless$ | \gtreqless | $\thicksim$ | \thicksim |
+| $\lesseqqgtr$ | \lesseqqgtr | $\gtreqqless$ | \gtreqqless | $\thickapprox$ | \thickapprox |
+| $\preccurlyeq$ | \preccurlyeq | $\succcurlyeq$ | \succcurlyeq | $\approxeq$ | \approxeq |
+| $\curlyeqprec$ | \curlyeqprec | $\curlyeqsucc$ | \curlyeqsucc | $\backsim$ | \backsim |
+| $\precsim$ | \precsim | $\succsim$ | \succsim | $\backsimeq$ | \backsimeq | 
+| $\precapprox$ | \precapprox | $\succapprox$ | \succapprox | $\vDash$ | \vDash | 
+| $\subseteqq$ | \subseteqq | $\supseteqq$ | \supseteqq | $\Vdash$ | \Vdash |
+| $\Subset$ | \Subset | $\Supset$ | \Supset | $\Vvdash$ | \Vvdash |
+| $\sqsubset$ | \sqsubset | $\sqsupset$ | \sqsupset | $\backepsilon$ | \backepsilon |
+| $\therefore$ | \therefore | $\because$ | \because | $\varpropto$ | \varpropto |
+| $\shortmid$ | \shortmid | $\shortparallel$ | \shortparallel | $\between$ | \between | 
+| $\smallsmile$ | \smallsmile | $\smallfrown$ | \smallfrown | $\pitchfork$ | \pitchfork |
+| $\vartriangleleft$ | \vartriangleleft | $\vartriangleright$ | \vartriangleright | $\blacktriangleleft$ | \blacktriangleleft |
+| $\trianglelefteq$ | \trianglelefteq | $\trianglerighteq$ | \trianglerighteq | $\blacktriangleright$ | \blacktriangleright | --&gt;
 &lt;img src=&#34;https://example.com/post_img/2025-02-25/table12.png&#34;&gt;
-&lt;hr&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;19
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;20
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;21
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;22
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-latex&#34; data-lang=&#34;latex&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;k&#34;&gt;\lessdot&lt;/span&gt;                 &lt;span class=&#34;k&#34;&gt;\gtrdot&lt;/span&gt;                  &lt;span class=&#34;k&#34;&gt;\doteqdot&lt;/span&gt; or &lt;span class=&#34;k&#34;&gt;\Doteq&lt;/span&gt;             
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;k&#34;&gt;\leqslant&lt;/span&gt;                &lt;span class=&#34;k&#34;&gt;\geqslant&lt;/span&gt;                &lt;span class=&#34;k&#34;&gt;\risingdotseq&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;k&#34;&gt;\eqslantless&lt;/span&gt;             &lt;span class=&#34;k&#34;&gt;\eqslantgtr&lt;/span&gt;              &lt;span class=&#34;k&#34;&gt;\fallingdotseq&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;k&#34;&gt;\leqq&lt;/span&gt;                    &lt;span class=&#34;k&#34;&gt;\geqq&lt;/span&gt;                    &lt;span class=&#34;k&#34;&gt;\eqcirc&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;k&#34;&gt;\lll&lt;/span&gt; or &lt;span class=&#34;k&#34;&gt;\llless&lt;/span&gt;          &lt;span class=&#34;k&#34;&gt;\ggg&lt;/span&gt; or &lt;span class=&#34;k&#34;&gt;\gggtr&lt;/span&gt;           &lt;span class=&#34;k&#34;&gt;\circeq&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;k&#34;&gt;\lesssim&lt;/span&gt;                 &lt;span class=&#34;k&#34;&gt;\gtrsim&lt;/span&gt;                  &lt;span class=&#34;k&#34;&gt;\triangleq&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;k&#34;&gt;\lessapprox&lt;/span&gt;              &lt;span class=&#34;k&#34;&gt;\gtrapprox&lt;/span&gt;               &lt;span class=&#34;k&#34;&gt;\bumpeq&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;k&#34;&gt;\lessgtr&lt;/span&gt;                 &lt;span class=&#34;k&#34;&gt;\gtrless&lt;/span&gt;                 &lt;span class=&#34;k&#34;&gt;\Bumpeq&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;k&#34;&gt;\lesseqgtr&lt;/span&gt;               &lt;span class=&#34;k&#34;&gt;\gtreqless&lt;/span&gt;               &lt;span class=&#34;k&#34;&gt;\thicksim&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;k&#34;&gt;\lesseqqgtr&lt;/span&gt;              &lt;span class=&#34;k&#34;&gt;\gtreqqless&lt;/span&gt;              &lt;span class=&#34;k&#34;&gt;\thickapprox&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;k&#34;&gt;\preccurlyeq&lt;/span&gt;             &lt;span class=&#34;k&#34;&gt;\succcurlyeq&lt;/span&gt;             &lt;span class=&#34;k&#34;&gt;\approxeq&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;k&#34;&gt;\curlyeqprec&lt;/span&gt;             &lt;span class=&#34;k&#34;&gt;\curlyeqsucc&lt;/span&gt;             &lt;span class=&#34;k&#34;&gt;\backsim&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;k&#34;&gt;\precsim&lt;/span&gt;                 &lt;span class=&#34;k&#34;&gt;\succsim&lt;/span&gt;                 &lt;span class=&#34;k&#34;&gt;\backsimeq&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;k&#34;&gt;\precapprox&lt;/span&gt;              &lt;span class=&#34;k&#34;&gt;\succapprox&lt;/span&gt;              &lt;span class=&#34;k&#34;&gt;\vDash&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;k&#34;&gt;\subseteqq&lt;/span&gt;               &lt;span class=&#34;k&#34;&gt;\supseteqq&lt;/span&gt;               &lt;span class=&#34;k&#34;&gt;\Vdash&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;k&#34;&gt;\Subset&lt;/span&gt;                  &lt;span class=&#34;k&#34;&gt;\Supset&lt;/span&gt;                  &lt;span class=&#34;k&#34;&gt;\Vvdash&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;k&#34;&gt;\sqsubset&lt;/span&gt;                &lt;span class=&#34;k&#34;&gt;\sqsupset&lt;/span&gt;                &lt;span class=&#34;k&#34;&gt;\backepsilon&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;k&#34;&gt;\therefore&lt;/span&gt;               &lt;span class=&#34;k&#34;&gt;\because&lt;/span&gt;                 &lt;span class=&#34;k&#34;&gt;\varpropto&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;k&#34;&gt;\shortmid&lt;/span&gt;                &lt;span class=&#34;k&#34;&gt;\shortparallel&lt;/span&gt;           &lt;span class=&#34;k&#34;&gt;\between&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;k&#34;&gt;\smallsmile&lt;/span&gt;              &lt;span class=&#34;k&#34;&gt;\smallfrown&lt;/span&gt;              &lt;span class=&#34;k&#34;&gt;\pitchfork&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;k&#34;&gt;\vartriangleleft&lt;/span&gt;         &lt;span class=&#34;k&#34;&gt;\vartriangleright&lt;/span&gt;        &lt;span class=&#34;k&#34;&gt;\blacktriangleleft&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;k&#34;&gt;\trianglelefteq&lt;/span&gt;          &lt;span class=&#34;k&#34;&gt;\trianglerighteq&lt;/span&gt;         &lt;span class=&#34;k&#34;&gt;\blacktriangleright&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;hr&gt;
 &lt;h2 id=&#34;table-ams-arrows&#34;&gt;Table: AMS Arrows
-&lt;/h2&gt;&lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th&gt;Symbol&lt;/th&gt;
-          &lt;th&gt;Command&lt;/th&gt;
-          &lt;th&gt;Symbol&lt;/th&gt;
-          &lt;th&gt;Command&lt;/th&gt;
-          &lt;th&gt;Symbol&lt;/th&gt;
-          &lt;th&gt;Command&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td&gt;$\dashleftarrow$&lt;/td&gt;
-          &lt;td&gt;\dashleftarrow&lt;/td&gt;
-          &lt;td&gt;$\dashrightarrow$&lt;/td&gt;
-          &lt;td&gt;\dashrightarrow&lt;/td&gt;
-          &lt;td&gt;$\multimap$&lt;/td&gt;
-          &lt;td&gt;\multimap&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;$\leftleftarrows$&lt;/td&gt;
-          &lt;td&gt;\leftleftarrows&lt;/td&gt;
-          &lt;td&gt;$\rightrightarrows$&lt;/td&gt;
-          &lt;td&gt;\rightrightarrows&lt;/td&gt;
-          &lt;td&gt;$\upuparrows$&lt;/td&gt;
-          &lt;td&gt;\upuparrows&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;$\leftrightarrows$&lt;/td&gt;
-          &lt;td&gt;\leftrightarrows&lt;/td&gt;
-          &lt;td&gt;$\rightleftarrows$&lt;/td&gt;
-          &lt;td&gt;\rightleftarrows&lt;/td&gt;
-          &lt;td&gt;$\downdownarrows$&lt;/td&gt;
-          &lt;td&gt;\downdownarrows&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;$\Lleftarrow$&lt;/td&gt;
-          &lt;td&gt;\Lleftarrow&lt;/td&gt;
-          &lt;td&gt;$\Rrightarrow$&lt;/td&gt;
-          &lt;td&gt;\Rrightarrow&lt;/td&gt;
-          &lt;td&gt;$\upharpoonleft$&lt;/td&gt;
-          &lt;td&gt;\upharpoonleft&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;$\twoheadleftarrow$&lt;/td&gt;
-          &lt;td&gt;\twoheadleftarrow&lt;/td&gt;
-          &lt;td&gt;$\twoheadrightarrow$&lt;/td&gt;
-          &lt;td&gt;\twoheadrightarrow&lt;/td&gt;
-          &lt;td&gt;$\upharpoonright$&lt;/td&gt;
-          &lt;td&gt;\upharpoonright&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;$\leftarrowtail$&lt;/td&gt;
-          &lt;td&gt;\leftarrowtail&lt;/td&gt;
-          &lt;td&gt;$\rightarrowtail$&lt;/td&gt;
-          &lt;td&gt;\rightarrowtail&lt;/td&gt;
-          &lt;td&gt;$\downharpoonleft$&lt;/td&gt;
-          &lt;td&gt;\downharpoonleft&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;$\leftrightharpoons$&lt;/td&gt;
-          &lt;td&gt;\leftrightharpoons&lt;/td&gt;
-          &lt;td&gt;$\rightleftharpoons$&lt;/td&gt;
-          &lt;td&gt;\rightleftharpoons&lt;/td&gt;
-          &lt;td&gt;$\downharpoonright$&lt;/td&gt;
-          &lt;td&gt;\downharpoonright&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;$\Lsh$&lt;/td&gt;
-          &lt;td&gt;\Lsh&lt;/td&gt;
-          &lt;td&gt;$\Rsh$&lt;/td&gt;
-          &lt;td&gt;\Rsh&lt;/td&gt;
-          &lt;td&gt;$\rightsquigarrow$&lt;/td&gt;
-          &lt;td&gt;\rightsquigarrow&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;$\looparrowleft$&lt;/td&gt;
-          &lt;td&gt;\looparrowleft&lt;/td&gt;
-          &lt;td&gt;$\looparrowright$&lt;/td&gt;
-          &lt;td&gt;\looparrowright&lt;/td&gt;
-          &lt;td&gt;$\leftrightsquigarrow$&lt;/td&gt;
-          &lt;td&gt;\leftrightsquigarrow&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;$\curvearrowleft$&lt;/td&gt;
-          &lt;td&gt;\curvearrowleft&lt;/td&gt;
-          &lt;td&gt;$\curvearrowright$&lt;/td&gt;
-          &lt;td&gt;\curvearrowright&lt;/td&gt;
-          &lt;td&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;$\circlearrowleft$&lt;/td&gt;
-          &lt;td&gt;\circlearrowleft&lt;/td&gt;
-          &lt;td&gt;$\circlearrowright$&lt;/td&gt;
-          &lt;td&gt;\circlearrowright&lt;/td&gt;
-          &lt;td&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+&lt;/h2&gt;&lt;!-- | Symbol | Command | Symbol | Command | Symbol | Command |
+| --- | --- | --- | --- | --- | --- |
+| $\dashleftarrow$ | \dashleftarrow | $\dashrightarrow$ | \dashrightarrow | $\multimap$ | \multimap |
+| $\leftleftarrows$ | \leftleftarrows | $\rightrightarrows$ | \rightrightarrows | $\upuparrows$ | \upuparrows |
+| $\leftrightarrows$ | \leftrightarrows | $\rightleftarrows$ | \rightleftarrows | $\downdownarrows$ | \downdownarrows |
+| $\Lleftarrow$ | \Lleftarrow | $\Rrightarrow$ | \Rrightarrow | $\upharpoonleft$ | \upharpoonleft |
+| $\twoheadleftarrow$ | \twoheadleftarrow | $\twoheadrightarrow$ | \twoheadrightarrow | $\upharpoonright$ | \upharpoonright |
+| $\leftarrowtail$ | \leftarrowtail | $\rightarrowtail$ | \rightarrowtail | $\downharpoonleft$ | \downharpoonleft |
+| $\leftrightharpoons$ | \leftrightharpoons | $\rightleftharpoons$ | \rightleftharpoons | $\downharpoonright$ | \downharpoonright |
+| $\Lsh$ | \Lsh | $\Rsh$ | \Rsh | $\rightsquigarrow$ | \rightsquigarrow |
+| $\looparrowleft$ | \looparrowleft | $\looparrowright$ | \looparrowright | $\leftrightsquigarrow$ | \leftrightsquigarrow |
+| $\curvearrowleft$ | \curvearrowleft | $\curvearrowright$ | \curvearrowright |  |  |
+| $\circlearrowleft$ | \circlearrowleft | $\circlearrowright$ | \circlearrowright |  |  | --&gt;
 &lt;img src=&#34;https://example.com/post_img/2025-02-25/table13.png&#34;&gt;
-&lt;hr&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-latex&#34; data-lang=&#34;latex&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;\dashleftarrow&lt;/span&gt;           &lt;span class=&#34;k&#34;&gt;\dashrightarrow&lt;/span&gt;            &lt;span class=&#34;k&#34;&gt;\multimap&lt;/span&gt;            
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;\leftleftarrows&lt;/span&gt;          &lt;span class=&#34;k&#34;&gt;\rightrightarrows&lt;/span&gt;          &lt;span class=&#34;k&#34;&gt;\upuparrows&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;\leftrightarrows&lt;/span&gt;         &lt;span class=&#34;k&#34;&gt;\rightleftarrows&lt;/span&gt;           &lt;span class=&#34;k&#34;&gt;\downdownarrows&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;\Lleftarrow&lt;/span&gt;              &lt;span class=&#34;k&#34;&gt;\Rrightarrow&lt;/span&gt;               &lt;span class=&#34;k&#34;&gt;\upharpoonleft&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;\twoheadleftarrow&lt;/span&gt;        &lt;span class=&#34;k&#34;&gt;\twoheadrightarrow&lt;/span&gt;         &lt;span class=&#34;k&#34;&gt;\upharpoonright&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;\leftarrowtail&lt;/span&gt;           &lt;span class=&#34;k&#34;&gt;\rightarrowtail&lt;/span&gt;            &lt;span class=&#34;k&#34;&gt;\downharpoonleft&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;\leftrightharpoons&lt;/span&gt;       &lt;span class=&#34;k&#34;&gt;\rightleftharpoons&lt;/span&gt;         &lt;span class=&#34;k&#34;&gt;\downharpoonright&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;\Lsh&lt;/span&gt;                     &lt;span class=&#34;k&#34;&gt;\Rsh&lt;/span&gt;                       &lt;span class=&#34;k&#34;&gt;\rightsquigarrow&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;\looparrowleft&lt;/span&gt;           &lt;span class=&#34;k&#34;&gt;\looparrowright&lt;/span&gt;            &lt;span class=&#34;k&#34;&gt;\leftrightsquigarrow&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;\curvearrowleft&lt;/span&gt;          &lt;span class=&#34;k&#34;&gt;\curvearrowright&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;\circlearrowleft&lt;/span&gt;         &lt;span class=&#34;k&#34;&gt;\circlearrowright&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;hr&gt;
 &lt;h2 id=&#34;table-ams-negated-binary-relations-and-arrows&#34;&gt;Table: AMS Negated Binary Relations and Arrows
 &lt;/h2&gt;&lt;table&gt;
   &lt;thead&gt;
@@ -1066,7 +659,53 @@
   &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;img src=&#34;https://example.com/post_img/2025-02-25/table14.png&#34;&gt;
-&lt;hr&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;19
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;20
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-latex&#34; data-lang=&#34;latex&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;k&#34;&gt;\nless&lt;/span&gt;                   &lt;span class=&#34;k&#34;&gt;\ngtr&lt;/span&gt;                     &lt;span class=&#34;k&#34;&gt;\varsubsetneqq&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;k&#34;&gt;\lneq&lt;/span&gt;                    &lt;span class=&#34;k&#34;&gt;\gneq&lt;/span&gt;                     &lt;span class=&#34;k&#34;&gt;\varsupsetneqq&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;k&#34;&gt;\nleq&lt;/span&gt;                    &lt;span class=&#34;k&#34;&gt;\ngeq&lt;/span&gt;                     &lt;span class=&#34;k&#34;&gt;\nsubseteqq&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;k&#34;&gt;\nleqslant&lt;/span&gt;               &lt;span class=&#34;k&#34;&gt;\ngeqslant&lt;/span&gt;                &lt;span class=&#34;k&#34;&gt;\nsupseteq&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;k&#34;&gt;\lneqq&lt;/span&gt;                   &lt;span class=&#34;k&#34;&gt;\gneqq&lt;/span&gt;                    &lt;span class=&#34;k&#34;&gt;\nmid&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;k&#34;&gt;\lvertneqq&lt;/span&gt;               &lt;span class=&#34;k&#34;&gt;\gvertneqq&lt;/span&gt;                &lt;span class=&#34;k&#34;&gt;\nparallel&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;k&#34;&gt;\nleqq&lt;/span&gt;                   &lt;span class=&#34;k&#34;&gt;\ngeqq&lt;/span&gt;                    &lt;span class=&#34;k&#34;&gt;\nshortmid&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;k&#34;&gt;\lnsim&lt;/span&gt;                   &lt;span class=&#34;k&#34;&gt;\gnsim&lt;/span&gt;                    &lt;span class=&#34;k&#34;&gt;\nshortparallel&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;k&#34;&gt;\lnapprox&lt;/span&gt;                &lt;span class=&#34;k&#34;&gt;\gnapprox&lt;/span&gt;                 &lt;span class=&#34;k&#34;&gt;\nsim&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;k&#34;&gt;\nprec&lt;/span&gt;                   &lt;span class=&#34;k&#34;&gt;\nsucc&lt;/span&gt;                    &lt;span class=&#34;k&#34;&gt;\ncong&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;k&#34;&gt;\npreceq&lt;/span&gt;                 &lt;span class=&#34;k&#34;&gt;\nsucceq&lt;/span&gt;                  &lt;span class=&#34;k&#34;&gt;\nvdash&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;k&#34;&gt;\precneqq&lt;/span&gt;                &lt;span class=&#34;k&#34;&gt;\succneqq&lt;/span&gt;                 &lt;span class=&#34;k&#34;&gt;\nvDash&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;k&#34;&gt;\precnsim&lt;/span&gt;                &lt;span class=&#34;k&#34;&gt;\succnsim&lt;/span&gt;                 &lt;span class=&#34;k&#34;&gt;\nVdash&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;k&#34;&gt;\precnapprox&lt;/span&gt;             &lt;span class=&#34;k&#34;&gt;\succnapprox&lt;/span&gt;              &lt;span class=&#34;k&#34;&gt;\nVDash&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;k&#34;&gt;\subsetneq&lt;/span&gt;               &lt;span class=&#34;k&#34;&gt;\supsetneq&lt;/span&gt;                &lt;span class=&#34;k&#34;&gt;\ntriangleleft&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;k&#34;&gt;\varsubsetneq&lt;/span&gt;            &lt;span class=&#34;k&#34;&gt;\varsupsetneq&lt;/span&gt;             &lt;span class=&#34;k&#34;&gt;\ntriangleright&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;k&#34;&gt;\nsubseteq&lt;/span&gt;               &lt;span class=&#34;k&#34;&gt;\nsupseteq&lt;/span&gt;                &lt;span class=&#34;k&#34;&gt;\ntrianglelefteq&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;k&#34;&gt;\subsetneqq&lt;/span&gt;              &lt;span class=&#34;k&#34;&gt;\supsetneqq&lt;/span&gt;               &lt;span class=&#34;k&#34;&gt;\ntrianglerighteq&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;k&#34;&gt;\nleftarrow&lt;/span&gt;              &lt;span class=&#34;k&#34;&gt;\nrightarrow&lt;/span&gt;              &lt;span class=&#34;k&#34;&gt;\nleftrightarrow&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;k&#34;&gt;\nLeftarrow&lt;/span&gt;              &lt;span class=&#34;k&#34;&gt;\nRightarrow&lt;/span&gt;              &lt;span class=&#34;k&#34;&gt;\nLeftrightarrow&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;hr&gt;
 &lt;h2 id=&#34;table-ams-binary-operators&#34;&gt;Table: AMS Binary Operators
 &lt;/h2&gt;&lt;table&gt;
   &lt;thead&gt;
@@ -1147,7 +786,29 @@
   &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;img src=&#34;https://example.com/post_img/2025-02-25/table15.png&#34;&gt;
-&lt;hr&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;8
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-latex&#34; data-lang=&#34;latex&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;k&#34;&gt;\dotplu&lt;/span&gt;                    &lt;span class=&#34;k&#34;&gt;\centerdot&lt;/span&gt;                 &lt;span class=&#34;k&#34;&gt;\intercal&lt;/span&gt;  
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;k&#34;&gt;\ltimes&lt;/span&gt;                    &lt;span class=&#34;k&#34;&gt;\rtimes&lt;/span&gt;                    &lt;span class=&#34;k&#34;&gt;\divideontimes&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;k&#34;&gt;\Cup&lt;/span&gt; or &lt;span class=&#34;k&#34;&gt;\doublecup&lt;/span&gt;         &lt;span class=&#34;k&#34;&gt;\Cap&lt;/span&gt; or &lt;span class=&#34;k&#34;&gt;\doublecap&lt;/span&gt;         &lt;span class=&#34;k&#34;&gt;\smallsetminus&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;k&#34;&gt;\veebar&lt;/span&gt;                    &lt;span class=&#34;k&#34;&gt;\barwedge&lt;/span&gt;                  &lt;span class=&#34;k&#34;&gt;\doublebarwedge&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;k&#34;&gt;\boxplus&lt;/span&gt;                   &lt;span class=&#34;k&#34;&gt;\boxminus&lt;/span&gt;                  &lt;span class=&#34;k&#34;&gt;\circleddash&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;k&#34;&gt;\boxtimes&lt;/span&gt;                  &lt;span class=&#34;k&#34;&gt;\boxdot&lt;/span&gt;                    &lt;span class=&#34;k&#34;&gt;\circledcirc&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;k&#34;&gt;\leftthreetimes&lt;/span&gt;            &lt;span class=&#34;k&#34;&gt;\rightthreetimes&lt;/span&gt;           &lt;span class=&#34;k&#34;&gt;\circledast&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;k&#34;&gt;\curlyvee&lt;/span&gt;                  &lt;span class=&#34;k&#34;&gt;\curlywedge&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;hr&gt;
 &lt;h2 id=&#34;table-ams-miscellaneous&#34;&gt;Table: AMS Miscellaneous
 &lt;/h2&gt;&lt;table&gt;
   &lt;thead&gt;
@@ -1236,7 +897,31 @@
   &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;img src=&#34;https://example.com/post_img/2025-02-25/table16.png&#34;&gt;
-&lt;hr&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;9
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-latex&#34; data-lang=&#34;latex&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;          &lt;span class=&#34;k&#34;&gt;\hbar&lt;/span&gt;                   &lt;span class=&#34;k&#34;&gt;\hslash&lt;/span&gt;                      &lt;span class=&#34;k&#34;&gt;\Bbbk&lt;/span&gt;    
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;          &lt;span class=&#34;k&#34;&gt;\square&lt;/span&gt;                 &lt;span class=&#34;k&#34;&gt;\blacksquare&lt;/span&gt;                 &lt;span class=&#34;k&#34;&gt;\circledS&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;          &lt;span class=&#34;k&#34;&gt;\vartriangle&lt;/span&gt;            &lt;span class=&#34;k&#34;&gt;\blacktriangle&lt;/span&gt;               &lt;span class=&#34;k&#34;&gt;\complement&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;          &lt;span class=&#34;k&#34;&gt;\triangledown&lt;/span&gt;           &lt;span class=&#34;k&#34;&gt;\blacktriangledown&lt;/span&gt;           &lt;span class=&#34;k&#34;&gt;\Game&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;          &lt;span class=&#34;k&#34;&gt;\lozenge&lt;/span&gt;                &lt;span class=&#34;k&#34;&gt;\blacklozenge&lt;/span&gt;                &lt;span class=&#34;k&#34;&gt;\bigstar&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;          &lt;span class=&#34;k&#34;&gt;\angle&lt;/span&gt;                  &lt;span class=&#34;k&#34;&gt;\measuredangle&lt;/span&gt;               &lt;span class=&#34;k&#34;&gt;\sphericalangle&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;          &lt;span class=&#34;k&#34;&gt;\diagup&lt;/span&gt;                 &lt;span class=&#34;k&#34;&gt;\diagdown&lt;/span&gt;                    &lt;span class=&#34;k&#34;&gt;\backprime&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;          &lt;span class=&#34;k&#34;&gt;\nexists&lt;/span&gt;                &lt;span class=&#34;k&#34;&gt;\Finv&lt;/span&gt;                        &lt;span class=&#34;k&#34;&gt;\varnothing&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;          &lt;span class=&#34;k&#34;&gt;\eth&lt;/span&gt;                    &lt;span class=&#34;k&#34;&gt;\mho&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;hr&gt;
 &lt;h2 id=&#34;table-math-alphabets&#34;&gt;Table: Math Alphabets
 &lt;/h2&gt;&lt;table&gt;
   &lt;thead&gt;
@@ -1290,7 +975,29 @@
   &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;img src=&#34;https://example.com/post_img/2025-02-25/table17.png&#34;&gt;
-&lt;p&gt;&lt;em&gt;Reprinted with permission from &lt;a class=&#34;link&#34; href=&#34;https://www.math.uci.edu/~xiangwen/pdf/LaTeX-Math-Symbols.pdf&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;8
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-latex&#34; data-lang=&#34;latex&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;               &lt;span class=&#34;k&#34;&gt;\mathrm&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;               &lt;span class=&#34;k&#34;&gt;\mathit&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;               &lt;span class=&#34;k&#34;&gt;\mathnormal&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;               &lt;span class=&#34;k&#34;&gt;\mathcal&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;               &lt;span class=&#34;k&#34;&gt;\mathcal&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{}&lt;/span&gt;                 eucal
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;               &lt;span class=&#34;k&#34;&gt;\mathscr&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{}&lt;/span&gt;                 eucal
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;               &lt;span class=&#34;k&#34;&gt;\mathfrak&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{}&lt;/span&gt;                eufrak
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;               &lt;span class=&#34;k&#34;&gt;\mathbb&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{}&lt;/span&gt;                  amsfonts or amssymb
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;em&gt;Reprinted with permission from &lt;a class=&#34;link&#34; href=&#34;https://www.math.uci.edu/~xiangwen/pdf/LaTeX-Math-Symbols.pdf&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;LaTeX Math Symbols&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 </description>
         </item>
