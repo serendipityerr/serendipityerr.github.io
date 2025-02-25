@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Latex on Serendipity&#39;s Blog</title>
-        <link>https://example.com/tags/latex/</link>
+        <link>http://localhost:1313/tags/latex/</link>
         <description>Recent content in Latex on Serendipity&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Tue, 25 Feb 2025 11:44:28 +0800</lastBuildDate><atom:link href="https://example.com/tags/latex/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 25 Feb 2025 11:44:28 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/latex/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Notes on Latex Math Symbols</title>
-        <link>https://example.com/p/notes-on-latex-math-symbols/</link>
+        <link>http://localhost:1313/p/notes-on-latex-math-symbols/</link>
         <pubDate>Tue, 25 Feb 2025 11:44:28 +0800</pubDate>
         
-        <guid>https://example.com/p/notes-on-latex-math-symbols/</guid>
-        <description>&lt;img src="https://example.com/post_img/2025-02-25/latex-logo.png" alt="Featured image of post Notes on Latex Math Symbols" /&gt;&lt;p&gt;The following tables are extracted from &lt;em&gt;The Not So Short Introduction to LaTeX2e&lt;/em&gt;, aka. &lt;em&gt;LaTeX2e in 90 minutes&lt;/em&gt;, by Tobias Oetiker, Hubert Partl, Irene Hyna, and Elisabeth Schlegl. It can be located &lt;a class=&#34;link&#34; href=&#34;https://github.com/CTeX-org/lshort-zh-cn&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+        <guid>http://localhost:1313/p/notes-on-latex-math-symbols/</guid>
+        <description>&lt;img src="http://localhost:1313/post_img/2025-02-25/latex-logo.png" alt="Featured image of post Notes on Latex Math Symbols" /&gt;&lt;p&gt;The following tables are extracted from &lt;em&gt;The Not So Short Introduction to LaTeX2e&lt;/em&gt;, aka. &lt;em&gt;LaTeX2e in 90 minutes&lt;/em&gt;, by Tobias Oetiker, Hubert Partl, Irene Hyna, and Elisabeth Schlegl. It can be located &lt;a class=&#34;link&#34; href=&#34;https://github.com/CTeX-org/lshort-zh-cn&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;table-math-mode-accents&#34;&gt;Table: Math Mode Accents
 &lt;/h2&gt;&lt;!-- 
@@ -21,7 +21,7 @@
 | $\hat{a}$ | \hat{a} | $\check{a}$ | \check{a} | $\tilde{a}$ | \tilde{a} | $\acute{a}$ | \acute{a} |
 | $\grave{a}$ | \grave{a} | $\dot{a}$ | \dot{a} | $\ddot{a}$ | \ddot{a} | $\breve{a}$ | \breve{a} |
 | $\bar{a}$ | \bar{a} | $\vec{a}$ | \vec{a} | $\widehat{A}$ | \widehat{A} | $\widetilde{A}$ | \widetilde{A} | --&gt;
-&lt;img src=&#34;https://example.com/post_img/2025-02-25/table1.png&#34;&gt;
+&lt;img src=&#34;http://localhost:1313/post_img/2025-02-25/table1.png&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -46,7 +46,7 @@
 | $\varepsilon$ | \varepsilon | $\mu$ | \mu | $\sigma$ | \sigma | $\omega$ | \omega |
 | $\zeta$ | \zeta | $\nu$ | \nu | $\varsigma$ | \varsigma |
 | $\eta$ | \eta | $\xi$ | \xi | $\tau$ | \tau | --&gt;
-&lt;img src=&#34;https://example.com/post_img/2025-02-25/table2.png&#34;&gt;
+&lt;img src=&#34;http://localhost:1313/post_img/2025-02-25/table2.png&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -76,7 +76,7 @@
 | $\Gamma$ | \Gamma | $\Lambda$ | \Lambda | $\Sigma$ | \Sigma | $\Psi$ | \Psi |
 | $\Delta$ | \Delta | $\Xi$ | \Xi | $\Upsilon$ | \Upsilon | $\Omega$ | \Omega |
 | $\Theta$ | \Theta | $\Pi$ | \Pi | $\Phi$ | \Phi | --&gt;
-&lt;img src=&#34;https://example.com/post_img/2025-02-25/table3.png&#34;&gt;
+&lt;img src=&#34;http://localhost:1313/post_img/2025-02-25/table3.png&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -108,7 +108,7 @@
 | $\mid$ | \mid | $\parallel$ | \parallel | $\perp$ | \perp |
 | $\smile$ | \smile | $\frown$ | \frown | $\asymp$ | \asymp |
 | $:$ | : | $\notin$ | \notin | $\neq$ | \neq or \ne | --&gt;
-&lt;img src=&#34;https://example.com/post_img/2025-02-25/table4.png&#34;&gt;
+&lt;img src=&#34;http://localhost:1313/post_img/2025-02-25/table4.png&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -161,7 +161,7 @@
 | $\bigtriangleup$ | \bigtriangleup | $\bigtriangledown$ | \bigtriangledown | $\dagger$ | \dagger |
 | $\lhd$ | \lhd $^{a}$ | $\rhd$ | \rhd $^{a}$ | $\ddagger$ | \ddagger |
 | $\unlhd$ | \unlhd $^{a}$ | $\unrhd$ | \unrhd $^{a}$ | $\wr$ | \wr | --&gt;
-&lt;img src=&#34;https://example.com/post_img/2025-02-25/table5.png&#34;&gt;
+&lt;img src=&#34;http://localhost:1313/post_img/2025-02-25/table5.png&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -203,7 +203,7 @@
 | $\prod$ | \prod | $\bigcap$ | \bigcap | $\bigwedge$ | \bigwedge | $\bigotimes$ | \bigotimes |
 | $\coprod$ | \coprod | $\bigsqcup$ | \bigsqcup | | |$\bigodot$ | \bigodot |
 | $\int$ | \int | $\oint$ | \oint | | | $\biguplus$ | \biguplus | --&gt;
-&lt;img src=&#34;https://example.com/post_img/2025-02-25/table6.png&#34;&gt;
+&lt;img src=&#34;http://localhost:1313/post_img/2025-02-25/table6.png&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -233,7 +233,7 @@
 | $\leftharpoonup$ | \leftharpoonup | $\rightharpoonup$ | \rightharpoonup | $\swarrow$ | \swarrow |
 | $\leftharpoondown$ | \leftharpoondown | $\rightharpoondown$ | \rightharpoondown | $\nwarrow$ | \nwarrow |
 | $\rightleftharpoons$ | \rightleftharpoons | $\iff$ | \iff (bigger spaces) | $\leadsto$ | \Leadsto $^{a}$ | --&gt;
-&lt;img src=&#34;https://example.com/post_img/2025-02-25/table7.png&#34;&gt;
+&lt;img src=&#34;http://localhost:1313/post_img/2025-02-25/table7.png&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -273,7 +273,7 @@
 | $\langle$ | \langle | $\rangle$ | \rangle | $\vert$ | \| or \vert | $\Vert$ | \\\| or \Vert |
 | $\lfloor$ | \lfloor | $\rfloor$ | \rfloor | $\lceil$ | \lceil | $\rceil$ | \rceil |
 | $/$ | / | $\backslash$ | \backslash |  --&gt;
-&lt;img src=&#34;https://example.com/post_img/2025-02-25/table8.png&#34;&gt;
+&lt;img src=&#34;http://localhost:1313/post_img/2025-02-25/table8.png&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -305,7 +305,7 @@
 | $\bot$ | \bot | $\top$ | \top | $\angle$ | \angle | $\surd$ | \surd |
 | $\diamondsuit$ | \diamondsuit | $\heartsuit$ | \heartsuit | $\clubsuit$ | \clubsuit | $\spadesuit$ | \spadesuit |
 | $\neg$ | \neg or \lnot | $\flat$ | \flat | $\natural$ | \natural | $\sharp$ | \sharp | --&gt;
-&lt;img src=&#34;https://example.com/post_img/2025-02-25/table9.png&#34;&gt;
+&lt;img src=&#34;http://localhost:1313/post_img/2025-02-25/table9.png&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -336,14 +336,14 @@
 | --- | --- | --- | --- | --- | --- |
 | $\dagger$ | \dagger | $\S$ | \S | $\copyright$ | \copyright |
 | $\ddag$ | \ddag | $\P$ | \P | $\pounds$ | \pounds | --&gt;
-&lt;img src=&#34;https://example.com/post_img/2025-02-25/table10.png&#34;&gt;
+&lt;img src=&#34;http://localhost:1313/post_img/2025-02-25/table10.png&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-latex&#34; data-lang=&#34;latex&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;k&#34;&gt;\dagger&lt;/span&gt;                    &lt;span class=&#34;k&#34;&gt;\S&lt;/span&gt;                        &lt;span class=&#34;k&#34;&gt;\copyright&lt;/span&gt;             
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-latex&#34; data-lang=&#34;latex&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;k&#34;&gt;\dagger&lt;/span&gt;                    &lt;span class=&#34;k&#34;&gt;\S&lt;/span&gt;                        &lt;span class=&#34;k&#34;&gt;\copyright&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;k&#34;&gt;\ddag&lt;/span&gt;                      &lt;span class=&#34;k&#34;&gt;\P&lt;/span&gt;                        &lt;span class=&#34;k&#34;&gt;\pounds&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
@@ -352,13 +352,13 @@
 &lt;/h2&gt;&lt;!-- | Symbol | Command | Symbol | Command | Symbol | Command | Symbol | Command |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | $\ulcorner$ | \ulcorner | $\urcorner$ | \urcorner | $\llcorner$ | \llcorner | $\lrcorner$ | \lrcorner | --&gt;
-&lt;img src=&#34;https://example.com/post_img/2025-02-25/table11.png&#34;&gt;
+&lt;img src=&#34;http://localhost:1313/post_img/2025-02-25/table11.png&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-latex&#34; data-lang=&#34;latex&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;\ulcorner&lt;/span&gt;            &lt;span class=&#34;k&#34;&gt;\urcorner&lt;/span&gt;           &lt;span class=&#34;k&#34;&gt;\llcorner&lt;/span&gt;            &lt;span class=&#34;k&#34;&gt;\lrcorner&lt;/span&gt;             
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-latex&#34; data-lang=&#34;latex&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;\ulcorner&lt;/span&gt;            &lt;span class=&#34;k&#34;&gt;\urcorner&lt;/span&gt;           &lt;span class=&#34;k&#34;&gt;\llcorner&lt;/span&gt;            &lt;span class=&#34;k&#34;&gt;\lrcorner&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;hr&gt;
@@ -387,7 +387,7 @@
 | $\smallsmile$ | \smallsmile | $\smallfrown$ | \smallfrown | $\pitchfork$ | \pitchfork |
 | $\vartriangleleft$ | \vartriangleleft | $\vartriangleright$ | \vartriangleright | $\blacktriangleleft$ | \blacktriangleleft |
 | $\trianglelefteq$ | \trianglelefteq | $\trianglerighteq$ | \trianglerighteq | $\blacktriangleright$ | \blacktriangleright | --&gt;
-&lt;img src=&#34;https://example.com/post_img/2025-02-25/table12.png&#34;&gt;
+&lt;img src=&#34;http://localhost:1313/post_img/2025-02-25/table12.png&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -414,7 +414,7 @@
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;22
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-latex&#34; data-lang=&#34;latex&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;k&#34;&gt;\lessdot&lt;/span&gt;                 &lt;span class=&#34;k&#34;&gt;\gtrdot&lt;/span&gt;                  &lt;span class=&#34;k&#34;&gt;\doteqdot&lt;/span&gt; or &lt;span class=&#34;k&#34;&gt;\Doteq&lt;/span&gt;             
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-latex&#34; data-lang=&#34;latex&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;k&#34;&gt;\lessdot&lt;/span&gt;                 &lt;span class=&#34;k&#34;&gt;\gtrdot&lt;/span&gt;                  &lt;span class=&#34;k&#34;&gt;\doteqdot&lt;/span&gt; or &lt;span class=&#34;k&#34;&gt;\Doteq&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;k&#34;&gt;\leqslant&lt;/span&gt;                &lt;span class=&#34;k&#34;&gt;\geqslant&lt;/span&gt;                &lt;span class=&#34;k&#34;&gt;\risingdotseq&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;k&#34;&gt;\eqslantless&lt;/span&gt;             &lt;span class=&#34;k&#34;&gt;\eqslantgtr&lt;/span&gt;              &lt;span class=&#34;k&#34;&gt;\fallingdotseq&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;k&#34;&gt;\leqq&lt;/span&gt;                    &lt;span class=&#34;k&#34;&gt;\geqq&lt;/span&gt;                    &lt;span class=&#34;k&#34;&gt;\eqcirc&lt;/span&gt;
@@ -435,7 +435,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;k&#34;&gt;\shortmid&lt;/span&gt;                &lt;span class=&#34;k&#34;&gt;\shortparallel&lt;/span&gt;           &lt;span class=&#34;k&#34;&gt;\between&lt;/span&gt; 
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;k&#34;&gt;\smallsmile&lt;/span&gt;              &lt;span class=&#34;k&#34;&gt;\smallfrown&lt;/span&gt;              &lt;span class=&#34;k&#34;&gt;\pitchfork&lt;/span&gt; 
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;k&#34;&gt;\vartriangleleft&lt;/span&gt;         &lt;span class=&#34;k&#34;&gt;\vartriangleright&lt;/span&gt;        &lt;span class=&#34;k&#34;&gt;\blacktriangleleft&lt;/span&gt; 
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;k&#34;&gt;\trianglelefteq&lt;/span&gt;          &lt;span class=&#34;k&#34;&gt;\trianglerighteq&lt;/span&gt;         &lt;span class=&#34;k&#34;&gt;\blacktriangleright&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;k&#34;&gt;\trianglelefteq&lt;/span&gt;          &lt;span class=&#34;k&#34;&gt;\trianglerighteq&lt;/span&gt;         &lt;span class=&#34;k&#34;&gt;\blacktriangleright&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;hr&gt;
@@ -453,7 +453,7 @@
 | $\looparrowleft$ | \looparrowleft | $\looparrowright$ | \looparrowright | $\leftrightsquigarrow$ | \leftrightsquigarrow |
 | $\curvearrowleft$ | \curvearrowleft | $\curvearrowright$ | \curvearrowright |  |  |
 | $\circlearrowleft$ | \circlearrowleft | $\circlearrowright$ | \circlearrowright |  |  | --&gt;
-&lt;img src=&#34;https://example.com/post_img/2025-02-25/table13.png&#34;&gt;
+&lt;img src=&#34;http://localhost:1313/post_img/2025-02-25/table13.png&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -469,7 +469,7 @@
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-latex&#34; data-lang=&#34;latex&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;\dashleftarrow&lt;/span&gt;           &lt;span class=&#34;k&#34;&gt;\dashrightarrow&lt;/span&gt;            &lt;span class=&#34;k&#34;&gt;\multimap&lt;/span&gt;            
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-latex&#34; data-lang=&#34;latex&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;\dashleftarrow&lt;/span&gt;           &lt;span class=&#34;k&#34;&gt;\dashrightarrow&lt;/span&gt;            &lt;span class=&#34;k&#34;&gt;\multimap&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;\leftleftarrows&lt;/span&gt;          &lt;span class=&#34;k&#34;&gt;\rightrightarrows&lt;/span&gt;          &lt;span class=&#34;k&#34;&gt;\upuparrows&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;\leftrightarrows&lt;/span&gt;         &lt;span class=&#34;k&#34;&gt;\rightleftarrows&lt;/span&gt;           &lt;span class=&#34;k&#34;&gt;\downdownarrows&lt;/span&gt; 
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;\Lleftarrow&lt;/span&gt;              &lt;span class=&#34;k&#34;&gt;\Rrightarrow&lt;/span&gt;               &lt;span class=&#34;k&#34;&gt;\upharpoonleft&lt;/span&gt; 
@@ -477,7 +477,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;\leftarrowtail&lt;/span&gt;           &lt;span class=&#34;k&#34;&gt;\rightarrowtail&lt;/span&gt;            &lt;span class=&#34;k&#34;&gt;\downharpoonleft&lt;/span&gt; 
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;\leftrightharpoons&lt;/span&gt;       &lt;span class=&#34;k&#34;&gt;\rightleftharpoons&lt;/span&gt;         &lt;span class=&#34;k&#34;&gt;\downharpoonright&lt;/span&gt; 
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;\Lsh&lt;/span&gt;                     &lt;span class=&#34;k&#34;&gt;\Rsh&lt;/span&gt;                       &lt;span class=&#34;k&#34;&gt;\rightsquigarrow&lt;/span&gt; 
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;\looparrowleft&lt;/span&gt;           &lt;span class=&#34;k&#34;&gt;\looparrowright&lt;/span&gt;            &lt;span class=&#34;k&#34;&gt;\leftrightsquigarrow&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;\looparrowleft&lt;/span&gt;           &lt;span class=&#34;k&#34;&gt;\looparrowright&lt;/span&gt;            &lt;span class=&#34;k&#34;&gt;\leftrightsquigarrow&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;\curvearrowleft&lt;/span&gt;          &lt;span class=&#34;k&#34;&gt;\curvearrowright&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;\circlearrowleft&lt;/span&gt;         &lt;span class=&#34;k&#34;&gt;\circlearrowright&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
@@ -506,7 +506,7 @@
 | $\subsetneqq$ | \subsetneqq | $\supsetneqq$ | \supsetneqq | $\ntrianglerighteq$ | \ntrianglerighteq |
 | $\nleftarrow$ | \nleftarrow | $\nrightarrow$ | \nrightarrow | $\nleftrightarrow$ | \nleftrightarrow |
 | $\nLeftarrow$ | \nLeftarrow | $\nRightarrow$ | \nRightarrow | $\nLeftrightarrow$ | \nLeftrightarrow | --&gt;
-&lt;img src=&#34;https://example.com/post_img/2025-02-25/table14.png&#34;&gt;
+&lt;img src=&#34;http://localhost:1313/post_img/2025-02-25/table14.png&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -538,7 +538,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;k&#34;&gt;\lneqq&lt;/span&gt;                   &lt;span class=&#34;k&#34;&gt;\gneqq&lt;/span&gt;                    &lt;span class=&#34;k&#34;&gt;\nmid&lt;/span&gt; 
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;k&#34;&gt;\lvertneqq&lt;/span&gt;               &lt;span class=&#34;k&#34;&gt;\gvertneqq&lt;/span&gt;                &lt;span class=&#34;k&#34;&gt;\nparallel&lt;/span&gt; 
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;k&#34;&gt;\nleqq&lt;/span&gt;                   &lt;span class=&#34;k&#34;&gt;\ngeqq&lt;/span&gt;                    &lt;span class=&#34;k&#34;&gt;\nshortmid&lt;/span&gt; 
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;k&#34;&gt;\lnsim&lt;/span&gt;                   &lt;span class=&#34;k&#34;&gt;\gnsim&lt;/span&gt;                    &lt;span class=&#34;k&#34;&gt;\nshortparallel&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;k&#34;&gt;\lnsim&lt;/span&gt;                   &lt;span class=&#34;k&#34;&gt;\gnsim&lt;/span&gt;                    &lt;span class=&#34;k&#34;&gt;\nshortparallel&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;k&#34;&gt;\lnapprox&lt;/span&gt;                &lt;span class=&#34;k&#34;&gt;\gnapprox&lt;/span&gt;                 &lt;span class=&#34;k&#34;&gt;\nsim&lt;/span&gt; 
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;k&#34;&gt;\nprec&lt;/span&gt;                   &lt;span class=&#34;k&#34;&gt;\nsucc&lt;/span&gt;                    &lt;span class=&#34;k&#34;&gt;\ncong&lt;/span&gt; 
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;k&#34;&gt;\npreceq&lt;/span&gt;                 &lt;span class=&#34;k&#34;&gt;\nsucceq&lt;/span&gt;                  &lt;span class=&#34;k&#34;&gt;\nvdash&lt;/span&gt; 
@@ -548,9 +548,9 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;k&#34;&gt;\subsetneq&lt;/span&gt;               &lt;span class=&#34;k&#34;&gt;\supsetneq&lt;/span&gt;                &lt;span class=&#34;k&#34;&gt;\ntriangleleft&lt;/span&gt; 
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;k&#34;&gt;\varsubsetneq&lt;/span&gt;            &lt;span class=&#34;k&#34;&gt;\varsupsetneq&lt;/span&gt;             &lt;span class=&#34;k&#34;&gt;\ntriangleright&lt;/span&gt; 
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;k&#34;&gt;\nsubseteq&lt;/span&gt;               &lt;span class=&#34;k&#34;&gt;\nsupseteq&lt;/span&gt;                &lt;span class=&#34;k&#34;&gt;\ntrianglelefteq&lt;/span&gt; 
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;k&#34;&gt;\subsetneqq&lt;/span&gt;              &lt;span class=&#34;k&#34;&gt;\supsetneqq&lt;/span&gt;               &lt;span class=&#34;k&#34;&gt;\ntrianglerighteq&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;k&#34;&gt;\subsetneqq&lt;/span&gt;              &lt;span class=&#34;k&#34;&gt;\supsetneqq&lt;/span&gt;               &lt;span class=&#34;k&#34;&gt;\ntrianglerighteq&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;k&#34;&gt;\nleftarrow&lt;/span&gt;              &lt;span class=&#34;k&#34;&gt;\nrightarrow&lt;/span&gt;              &lt;span class=&#34;k&#34;&gt;\nleftrightarrow&lt;/span&gt; 
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;k&#34;&gt;\nLeftarrow&lt;/span&gt;              &lt;span class=&#34;k&#34;&gt;\nRightarrow&lt;/span&gt;              &lt;span class=&#34;k&#34;&gt;\nLeftrightarrow&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;k&#34;&gt;\nLeftarrow&lt;/span&gt;              &lt;span class=&#34;k&#34;&gt;\nRightarrow&lt;/span&gt;              &lt;span class=&#34;k&#34;&gt;\nLeftrightarrow&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;hr&gt;
@@ -565,7 +565,7 @@
 | $\boxtimes$ | \boxtimes | $\boxdot$ | \boxdot | $\circledcirc$ | \circledcirc |
 | $\leftthreetimes$ | \leftthreetimes | $\rightthreetimes$ | \rightthreetimes | $\circledast$ | \circledast |
 | $\curlyvee$ | \curlyvee | $\curlywedge$ | \curlywedge |  |  | --&gt;
-&lt;img src=&#34;https://example.com/post_img/2025-02-25/table15.png&#34;&gt;
+&lt;img src=&#34;http://localhost:1313/post_img/2025-02-25/table15.png&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -578,13 +578,13 @@
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;8
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-latex&#34; data-lang=&#34;latex&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;k&#34;&gt;\dotplu&lt;/span&gt;                    &lt;span class=&#34;k&#34;&gt;\centerdot&lt;/span&gt;                 &lt;span class=&#34;k&#34;&gt;\intercal&lt;/span&gt;  
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;k&#34;&gt;\ltimes&lt;/span&gt;                    &lt;span class=&#34;k&#34;&gt;\rtimes&lt;/span&gt;                    &lt;span class=&#34;k&#34;&gt;\divideontimes&lt;/span&gt; 
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;k&#34;&gt;\Cup&lt;/span&gt; or &lt;span class=&#34;k&#34;&gt;\doublecup&lt;/span&gt;         &lt;span class=&#34;k&#34;&gt;\Cap&lt;/span&gt; or &lt;span class=&#34;k&#34;&gt;\doublecap&lt;/span&gt;         &lt;span class=&#34;k&#34;&gt;\smallsetminus&lt;/span&gt; 
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;k&#34;&gt;\veebar&lt;/span&gt;                    &lt;span class=&#34;k&#34;&gt;\barwedge&lt;/span&gt;                  &lt;span class=&#34;k&#34;&gt;\doublebarwedge&lt;/span&gt; 
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-latex&#34; data-lang=&#34;latex&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;k&#34;&gt;\dotplu&lt;/span&gt;                    &lt;span class=&#34;k&#34;&gt;\centerdot&lt;/span&gt;                 &lt;span class=&#34;k&#34;&gt;\intercal&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;k&#34;&gt;\ltimes&lt;/span&gt;                    &lt;span class=&#34;k&#34;&gt;\rtimes&lt;/span&gt;                    &lt;span class=&#34;k&#34;&gt;\divideontimes&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;k&#34;&gt;\Cup&lt;/span&gt; or &lt;span class=&#34;k&#34;&gt;\doublecup&lt;/span&gt;         &lt;span class=&#34;k&#34;&gt;\Cap&lt;/span&gt; or &lt;span class=&#34;k&#34;&gt;\doublecap&lt;/span&gt;         &lt;span class=&#34;k&#34;&gt;\smallsetminus&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;k&#34;&gt;\veebar&lt;/span&gt;                    &lt;span class=&#34;k&#34;&gt;\barwedge&lt;/span&gt;                  &lt;span class=&#34;k&#34;&gt;\doublebarwedge&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;k&#34;&gt;\boxplus&lt;/span&gt;                   &lt;span class=&#34;k&#34;&gt;\boxminus&lt;/span&gt;                  &lt;span class=&#34;k&#34;&gt;\circleddash&lt;/span&gt; 
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;k&#34;&gt;\boxtimes&lt;/span&gt;                  &lt;span class=&#34;k&#34;&gt;\boxdot&lt;/span&gt;                    &lt;span class=&#34;k&#34;&gt;\circledcirc&lt;/span&gt; 
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;k&#34;&gt;\leftthreetimes&lt;/span&gt;            &lt;span class=&#34;k&#34;&gt;\rightthreetimes&lt;/span&gt;           &lt;span class=&#34;k&#34;&gt;\circledast&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;k&#34;&gt;\boxtimes&lt;/span&gt;                  &lt;span class=&#34;k&#34;&gt;\boxdot&lt;/span&gt;                    &lt;span class=&#34;k&#34;&gt;\circledcirc&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;k&#34;&gt;\leftthreetimes&lt;/span&gt;            &lt;span class=&#34;k&#34;&gt;\rightthreetimes&lt;/span&gt;           &lt;span class=&#34;k&#34;&gt;\circledast&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;k&#34;&gt;\curlyvee&lt;/span&gt;                  &lt;span class=&#34;k&#34;&gt;\curlywedge&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
@@ -601,7 +601,7 @@
 | $\diagup$ | \diagup | $\diagdown$ | \diagdown | $\backprime$ | \backprime |
 | $\nexists$ | \nexists | $\Finv$ | \Finv | $\varnothing$ | \varnothing |
 | $\eth$ | \eth | $\mho$ | \mho |  |  | --&gt;
-&lt;img src=&#34;https://example.com/post_img/2025-02-25/table16.png&#34;&gt;
+&lt;img src=&#34;http://localhost:1313/post_img/2025-02-25/table16.png&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -620,9 +620,9 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;          &lt;span class=&#34;k&#34;&gt;\vartriangle&lt;/span&gt;            &lt;span class=&#34;k&#34;&gt;\blacktriangle&lt;/span&gt;               &lt;span class=&#34;k&#34;&gt;\complement&lt;/span&gt; 
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;          &lt;span class=&#34;k&#34;&gt;\triangledown&lt;/span&gt;           &lt;span class=&#34;k&#34;&gt;\blacktriangledown&lt;/span&gt;           &lt;span class=&#34;k&#34;&gt;\Game&lt;/span&gt; 
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;          &lt;span class=&#34;k&#34;&gt;\lozenge&lt;/span&gt;                &lt;span class=&#34;k&#34;&gt;\blacklozenge&lt;/span&gt;                &lt;span class=&#34;k&#34;&gt;\bigstar&lt;/span&gt; 
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;          &lt;span class=&#34;k&#34;&gt;\angle&lt;/span&gt;                  &lt;span class=&#34;k&#34;&gt;\measuredangle&lt;/span&gt;               &lt;span class=&#34;k&#34;&gt;\sphericalangle&lt;/span&gt; 
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;          &lt;span class=&#34;k&#34;&gt;\diagup&lt;/span&gt;                 &lt;span class=&#34;k&#34;&gt;\diagdown&lt;/span&gt;                    &lt;span class=&#34;k&#34;&gt;\backprime&lt;/span&gt; 
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;          &lt;span class=&#34;k&#34;&gt;\nexists&lt;/span&gt;                &lt;span class=&#34;k&#34;&gt;\Finv&lt;/span&gt;                        &lt;span class=&#34;k&#34;&gt;\varnothing&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;          &lt;span class=&#34;k&#34;&gt;\angle&lt;/span&gt;                  &lt;span class=&#34;k&#34;&gt;\measuredangle&lt;/span&gt;               &lt;span class=&#34;k&#34;&gt;\sphericalangle&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;          &lt;span class=&#34;k&#34;&gt;\diagup&lt;/span&gt;                 &lt;span class=&#34;k&#34;&gt;\diagdown&lt;/span&gt;                    &lt;span class=&#34;k&#34;&gt;\backprime&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;          &lt;span class=&#34;k&#34;&gt;\nexists&lt;/span&gt;                &lt;span class=&#34;k&#34;&gt;\Finv&lt;/span&gt;                        &lt;span class=&#34;k&#34;&gt;\varnothing&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;          &lt;span class=&#34;k&#34;&gt;\eth&lt;/span&gt;                    &lt;span class=&#34;k&#34;&gt;\mho&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
@@ -638,7 +638,7 @@
 |  | \mathscr{ABC} | or `eucal` with option: \mathscr |
 | $\mathfrak{ABCdef}$ | \mathfrak{ABCdef} | `eufrak` |
 | $\mathbb{ABC}$ | \mathbb{ABC} | `amsfonts` or `amssymb` | --&gt;
-&lt;img src=&#34;https://example.com/post_img/2025-02-25/table17.png&#34;&gt;
+&lt;img src=&#34;http://localhost:1313/post_img/2025-02-25/table17.png&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -667,10 +667,10 @@
         </item>
         <item>
         <title>Some Skills on Exporting Latex in Markdown as pdf</title>
-        <link>https://example.com/p/some-skills-on-exporting-latex-in-markdown-as-pdf/</link>
+        <link>http://localhost:1313/p/some-skills-on-exporting-latex-in-markdown-as-pdf/</link>
         <pubDate>Mon, 09 Dec 2024 18:50:29 +0800</pubDate>
         
-        <guid>https://example.com/p/some-skills-on-exporting-latex-in-markdown-as-pdf/</guid>
+        <guid>http://localhost:1313/p/some-skills-on-exporting-latex-in-markdown-as-pdf/</guid>
         <description>&lt;h2 id=&#34;solve-the-problem-of-export-latex-code-in-markdown-as-pdf&#34;&gt;Solve the problem of export latex code in Markdown as pdf
 &lt;/h2&gt;&lt;p&gt;First, download VSCode and the &lt;code&gt;Markdown All in One&lt;/code&gt; extension.&lt;/p&gt;
 &lt;p&gt;Second, &lt;code&gt;Ctrl + Shift + P&lt;/code&gt; and input &lt;code&gt;Print current document to HTML&lt;/code&gt;.&lt;/p&gt;
