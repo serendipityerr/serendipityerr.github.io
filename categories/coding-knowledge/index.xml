@@ -12,7 +12,7 @@
         <pubDate>Tue, 25 Feb 2025 11:44:28 +0800</pubDate>
         
         <guid>http://localhost:1313/p/notes-on-latex-math-symbols/</guid>
-        <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction
+        <description>&lt;img src="http://localhost:1313/post_img/2025-02-25/latex-logo.png" alt="Featured image of post Notes on Latex Math Symbols" /&gt;&lt;h2 id=&#34;introduction&#34;&gt;Introduction
 &lt;/h2&gt;&lt;p&gt;The following tables are extracted from &lt;em&gt;The Not So Short Introduction to LaTeX2e&lt;/em&gt;, aka. &lt;em&gt;LaTeX2e in 90 minutes&lt;/em&gt;, by Tobias Oetiker, Hubert Partl, Irene Hyna, and Elisabeth Schlegl. It can be located &lt;a class=&#34;link&#34; href=&#34;https://github.com/CTeX-org/lshort-zh-cn&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;table-math-mode-accents&#34;&gt;Table: Math Mode Accents
@@ -460,7 +460,7 @@
 &lt;/table&gt;
 &lt;p&gt;&lt;strong&gt;$^a$ Use the &lt;code&gt;latexsym&lt;/code&gt; package to access this symbol&lt;/strong&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;table-36-big-operators&#34;&gt;Table 3.6: BIG Operators
+&lt;h2 id=&#34;table-big-operators&#34;&gt;Table: BIG Operators
 &lt;/h2&gt;&lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;

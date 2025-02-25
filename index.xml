@@ -16,52 +16,13 @@
 &lt;/h2&gt;&lt;p&gt;The following tables are extracted from &lt;em&gt;The Not So Short Introduction to LaTeX2e&lt;/em&gt;, aka. &lt;em&gt;LaTeX2e in 90 minutes&lt;/em&gt;, by Tobias Oetiker, Hubert Partl, Irene Hyna, and Elisabeth Schlegl. It can be located &lt;a class=&#34;link&#34; href=&#34;https://github.com/CTeX-org/lshort-zh-cn&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;table-math-mode-accents&#34;&gt;Table: Math Mode Accents
-&lt;/h2&gt;&lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th&gt;Symbol&lt;/th&gt;
-          &lt;th&gt;Command&lt;/th&gt;
-          &lt;th&gt;Symbol&lt;/th&gt;
-          &lt;th&gt;Command&lt;/th&gt;
-          &lt;th&gt;Symbol&lt;/th&gt;
-          &lt;th&gt;Command&lt;/th&gt;
-          &lt;th&gt;Symbol&lt;/th&gt;
-          &lt;th&gt;Command&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td&gt;$\hat{a}$&lt;/td&gt;
-          &lt;td&gt;\hat{a}&lt;/td&gt;
-          &lt;td&gt;$\check{a}$&lt;/td&gt;
-          &lt;td&gt;\check{a}&lt;/td&gt;
-          &lt;td&gt;$\tilde{a}$&lt;/td&gt;
-          &lt;td&gt;\tilde{a}&lt;/td&gt;
-          &lt;td&gt;$\acute{a}$&lt;/td&gt;
-          &lt;td&gt;\acute{a}&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;$\grave{a}$&lt;/td&gt;
-          &lt;td&gt;\grave{a}&lt;/td&gt;
-          &lt;td&gt;$\dot{a}$&lt;/td&gt;
-          &lt;td&gt;\dot{a}&lt;/td&gt;
-          &lt;td&gt;$\ddot{a}$&lt;/td&gt;
-          &lt;td&gt;\ddot{a}&lt;/td&gt;
-          &lt;td&gt;$\breve{a}$&lt;/td&gt;
-          &lt;td&gt;\breve{a}&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;$\bar{a}$&lt;/td&gt;
-          &lt;td&gt;\bar{a}&lt;/td&gt;
-          &lt;td&gt;$\vec{a}$&lt;/td&gt;
-          &lt;td&gt;\vec{a}&lt;/td&gt;
-          &lt;td&gt;$\widehat{A}$&lt;/td&gt;
-          &lt;td&gt;\widehat{A}&lt;/td&gt;
-          &lt;td&gt;$\widetilde{A}$&lt;/td&gt;
-          &lt;td&gt;\widetilde{A}&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+&lt;/h2&gt;&lt;!-- 
+| Symbol | Command | Symbol | Command | Symbol | Command | Symbol | Command |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| $\hat{a}$ | \hat{a} | $\check{a}$ | \check{a} | $\tilde{a}$ | \tilde{a} | $\acute{a}$ | \acute{a} |
+| $\grave{a}$ | \grave{a} | $\dot{a}$ | \dot{a} | $\ddot{a}$ | \ddot{a} | $\breve{a}$ | \breve{a} |
+| $\bar{a}$ | \bar{a} | $\vec{a}$ | \vec{a} | $\widehat{A}$ | \widehat{A} | $\widetilde{A}$ | \widetilde{A} | --&gt;
+&lt;img src=&#34;http://localhost:1313/post_img/2025-02-25/table1.png&#34;&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;table-lowercase-greek-letters&#34;&gt;Table: Lowercase Greek Letters
 &lt;/h2&gt;&lt;table&gt;
