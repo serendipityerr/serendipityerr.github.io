@@ -2,522 +2,224 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Posts on Serendipity&#39;s Blog</title>
-        <link>http://localhost:1313/post/</link>
+        <link>https://example.com/post/</link>
         <description>Recent content in Posts on Serendipity&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Tue, 25 Feb 2025 11:44:28 +0800</lastBuildDate><atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 25 Feb 2025 11:44:28 +0800</lastBuildDate><atom:link href="https://example.com/post/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Notes on Latex Math Symbols</title>
-        <link>http://localhost:1313/p/notes-on-latex-math-symbols/</link>
+        <link>https://example.com/p/notes-on-latex-math-symbols/</link>
         <pubDate>Tue, 25 Feb 2025 11:44:28 +0800</pubDate>
         
-        <guid>http://localhost:1313/p/notes-on-latex-math-symbols/</guid>
-        <description>&lt;img src="http://localhost:1313/post_img/2025-02-25/latex-logo.png" alt="Featured image of post Notes on Latex Math Symbols" /&gt;&lt;h2 id=&#34;introduction&#34;&gt;Introduction
+        <guid>https://example.com/p/notes-on-latex-math-symbols/</guid>
+        <description>&lt;img src="https://example.com/post_img/2025-02-25/latex-logo.png" alt="Featured image of post Notes on Latex Math Symbols" /&gt;&lt;h2 id=&#34;introduction&#34;&gt;Introduction
 &lt;/h2&gt;&lt;p&gt;The following tables are extracted from &lt;em&gt;The Not So Short Introduction to LaTeX2e&lt;/em&gt;, aka. &lt;em&gt;LaTeX2e in 90 minutes&lt;/em&gt;, by Tobias Oetiker, Hubert Partl, Irene Hyna, and Elisabeth Schlegl. It can be located &lt;a class=&#34;link&#34; href=&#34;https://github.com/CTeX-org/lshort-zh-cn&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;table-math-mode-accents&#34;&gt;Table: Math Mode Accents
-&lt;/h2&gt;&lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th&gt;Symbol&lt;/th&gt;
-          &lt;th&gt;Command&lt;/th&gt;
-          &lt;th&gt;Symbol&lt;/th&gt;
-          &lt;th&gt;Command&lt;/th&gt;
-          &lt;th&gt;Symbol&lt;/th&gt;
-          &lt;th&gt;Command&lt;/th&gt;
-          &lt;th&gt;Symbol&lt;/th&gt;
-          &lt;th&gt;Command&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td&gt;$\hat{a}$&lt;/td&gt;
-          &lt;td&gt;\hat{a}&lt;/td&gt;
-          &lt;td&gt;$\check{a}$&lt;/td&gt;
-          &lt;td&gt;\check{a}&lt;/td&gt;
-          &lt;td&gt;$\tilde{a}$&lt;/td&gt;
-          &lt;td&gt;\tilde{a}&lt;/td&gt;
-          &lt;td&gt;$\acute{a}$&lt;/td&gt;
-          &lt;td&gt;\acute{a}&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;$\grave{a}$&lt;/td&gt;
-          &lt;td&gt;\grave{a}&lt;/td&gt;
-          &lt;td&gt;$\dot{a}$&lt;/td&gt;
-          &lt;td&gt;\dot{a}&lt;/td&gt;
-          &lt;td&gt;$\ddot{a}$&lt;/td&gt;
-          &lt;td&gt;\ddot{a}&lt;/td&gt;
-          &lt;td&gt;$\breve{a}$&lt;/td&gt;
-          &lt;td&gt;\breve{a}&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;$\bar{a}$&lt;/td&gt;
-          &lt;td&gt;\bar{a}&lt;/td&gt;
-          &lt;td&gt;$\vec{a}$&lt;/td&gt;
-          &lt;td&gt;\vec{a}&lt;/td&gt;
-          &lt;td&gt;$\widehat{A}$&lt;/td&gt;
-          &lt;td&gt;\widehat{A}&lt;/td&gt;
-          &lt;td&gt;$\widetilde{A}$&lt;/td&gt;
-          &lt;td&gt;\widetilde{A}&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-&lt;hr&gt;
+&lt;/h2&gt;&lt;!-- 
+| Symbol | Command | Symbol | Command | Symbol | Command | Symbol | Command |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| $\hat{a}$ | \hat{a} | $\check{a}$ | \check{a} | $\tilde{a}$ | \tilde{a} | $\acute{a}$ | \acute{a} |
+| $\grave{a}$ | \grave{a} | $\dot{a}$ | \dot{a} | $\ddot{a}$ | \ddot{a} | $\breve{a}$ | \breve{a} |
+| $\bar{a}$ | \bar{a} | $\vec{a}$ | \vec{a} | $\widehat{A}$ | \widehat{A} | $\widetilde{A}$ | \widetilde{A} | --&gt;
+&lt;img src=&#34;https://example.com/post_img/2025-02-25/table1.png&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-latex&#34; data-lang=&#34;latex&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;\hat&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{}&lt;/span&gt;              &lt;span class=&#34;k&#34;&gt;\check&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{}&lt;/span&gt;            &lt;span class=&#34;k&#34;&gt;\tilde&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{}&lt;/span&gt;            &lt;span class=&#34;k&#34;&gt;\acute&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;\grave&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{}&lt;/span&gt;            &lt;span class=&#34;k&#34;&gt;\dot&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{}&lt;/span&gt;              &lt;span class=&#34;k&#34;&gt;\ddot&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{}&lt;/span&gt;             &lt;span class=&#34;k&#34;&gt;\breve&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;\bar&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{}&lt;/span&gt;              &lt;span class=&#34;k&#34;&gt;\vec&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{}&lt;/span&gt;              &lt;span class=&#34;k&#34;&gt;\widehat&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{}&lt;/span&gt;          &lt;span class=&#34;k&#34;&gt;\widetilde&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;hr&gt;
 &lt;h2 id=&#34;table-lowercase-greek-letters&#34;&gt;Table: Lowercase Greek Letters
-&lt;/h2&gt;&lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th&gt;Symbol&lt;/th&gt;
-          &lt;th&gt;Command&lt;/th&gt;
-          &lt;th&gt;Symbol&lt;/th&gt;
-          &lt;th&gt;Command&lt;/th&gt;
-          &lt;th&gt;Symbol&lt;/th&gt;
-          &lt;th&gt;Command&lt;/th&gt;
-          &lt;th&gt;Symbol&lt;/th&gt;
-          &lt;th&gt;Command&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td&gt;$\alpha$&lt;/td&gt;
-          &lt;td&gt;\alpha&lt;/td&gt;
-          &lt;td&gt;$\theta$&lt;/td&gt;
-          &lt;td&gt;\theta&lt;/td&gt;
-          &lt;td&gt;$o$&lt;/td&gt;
-          &lt;td&gt;o&lt;/td&gt;
-          &lt;td&gt;$\upsilon$&lt;/td&gt;
-          &lt;td&gt;\upsilon&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;$\beta$&lt;/td&gt;
-          &lt;td&gt;\beta&lt;/td&gt;
-          &lt;td&gt;$\vartheta$&lt;/td&gt;
-          &lt;td&gt;\vartheta&lt;/td&gt;
-          &lt;td&gt;$\pi$&lt;/td&gt;
-          &lt;td&gt;\pi&lt;/td&gt;
-          &lt;td&gt;$\phi$&lt;/td&gt;
-          &lt;td&gt;\phi&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;$\gamma$&lt;/td&gt;
-          &lt;td&gt;\gamma&lt;/td&gt;
-          &lt;td&gt;$\iota$&lt;/td&gt;
-          &lt;td&gt;\iota&lt;/td&gt;
-          &lt;td&gt;$\varpi$&lt;/td&gt;
-          &lt;td&gt;\varpi&lt;/td&gt;
-          &lt;td&gt;$\varphi$&lt;/td&gt;
-          &lt;td&gt;\varphi&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;$\delta$&lt;/td&gt;
-          &lt;td&gt;\delta&lt;/td&gt;
-          &lt;td&gt;$\kappa$&lt;/td&gt;
-          &lt;td&gt;\kappa&lt;/td&gt;
-          &lt;td&gt;$\rho$&lt;/td&gt;
-          &lt;td&gt;\rho&lt;/td&gt;
-          &lt;td&gt;$\chi$&lt;/td&gt;
-          &lt;td&gt;\chi&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;$\epsilon$&lt;/td&gt;
-          &lt;td&gt;\epsilon&lt;/td&gt;
-          &lt;td&gt;$\lambda$&lt;/td&gt;
-          &lt;td&gt;\lambda&lt;/td&gt;
-          &lt;td&gt;$\varrho$&lt;/td&gt;
-          &lt;td&gt;\varrho&lt;/td&gt;
-          &lt;td&gt;$\psi$&lt;/td&gt;
-          &lt;td&gt;\psi&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;$\varepsilon$&lt;/td&gt;
-          &lt;td&gt;\varepsilon&lt;/td&gt;
-          &lt;td&gt;$\mu$&lt;/td&gt;
-          &lt;td&gt;\mu&lt;/td&gt;
-          &lt;td&gt;$\sigma$&lt;/td&gt;
-          &lt;td&gt;\sigma&lt;/td&gt;
-          &lt;td&gt;$\omega$&lt;/td&gt;
-          &lt;td&gt;\omega&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;$\zeta$&lt;/td&gt;
-          &lt;td&gt;\zeta&lt;/td&gt;
-          &lt;td&gt;$\nu$&lt;/td&gt;
-          &lt;td&gt;\nu&lt;/td&gt;
-          &lt;td&gt;$\varsigma$&lt;/td&gt;
-          &lt;td&gt;\varsigma&lt;/td&gt;
-          &lt;td&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;$\eta$&lt;/td&gt;
-          &lt;td&gt;\eta&lt;/td&gt;
-          &lt;td&gt;$\xi$&lt;/td&gt;
-          &lt;td&gt;\xi&lt;/td&gt;
-          &lt;td&gt;$\tau$&lt;/td&gt;
-          &lt;td&gt;\tau&lt;/td&gt;
-          &lt;td&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-&lt;hr&gt;
+&lt;/h2&gt;&lt;!-- | Symbol | Command | Symbol | Command | Symbol | Command | Symbol | Command |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| $\alpha$ | \alpha | $\theta$ | \theta | $o$ | o | $\upsilon$ | \upsilon |
+| $\beta$ | \beta | $\vartheta$ | \vartheta | $\pi$ | \pi | $\phi$ | \phi |
+| $\gamma$ | \gamma | $\iota$ | \iota | $\varpi$ | \varpi | $\varphi$ | \varphi |
+| $\delta$ | \delta | $\kappa$ | \kappa | $\rho$ | \rho | $\chi$ | \chi |
+| $\epsilon$ | \epsilon | $\lambda$ | \lambda | $\varrho$ | \varrho | $\psi$ | \psi |
+| $\varepsilon$ | \varepsilon | $\mu$ | \mu | $\sigma$ | \sigma | $\omega$ | \omega |
+| $\zeta$ | \zeta | $\nu$ | \nu | $\varsigma$ | \varsigma |
+| $\eta$ | \eta | $\xi$ | \xi | $\tau$ | \tau | --&gt;
+&lt;img src=&#34;https://example.com/post_img/2025-02-25/table2.png&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;8
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-latex&#34; data-lang=&#34;latex&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;\alpha&lt;/span&gt;              &lt;span class=&#34;k&#34;&gt;\theta&lt;/span&gt;              o                   &lt;span class=&#34;k&#34;&gt;\upsilon&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;\beta&lt;/span&gt;               &lt;span class=&#34;k&#34;&gt;\vartheta&lt;/span&gt;           &lt;span class=&#34;k&#34;&gt;\pi&lt;/span&gt;                 &lt;span class=&#34;k&#34;&gt;\phi&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;\gamma&lt;/span&gt;              &lt;span class=&#34;k&#34;&gt;\iota&lt;/span&gt;               &lt;span class=&#34;k&#34;&gt;\varpi&lt;/span&gt;              &lt;span class=&#34;k&#34;&gt;\varphi&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;\delta&lt;/span&gt;              &lt;span class=&#34;k&#34;&gt;\kappa&lt;/span&gt;              &lt;span class=&#34;k&#34;&gt;\rho&lt;/span&gt;                &lt;span class=&#34;k&#34;&gt;\chi&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;\epsilon&lt;/span&gt;            &lt;span class=&#34;k&#34;&gt;\lambda&lt;/span&gt;             &lt;span class=&#34;k&#34;&gt;\varrho&lt;/span&gt;             &lt;span class=&#34;k&#34;&gt;\psi&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;\varepsilon&lt;/span&gt;         &lt;span class=&#34;k&#34;&gt;\mu&lt;/span&gt;                 &lt;span class=&#34;k&#34;&gt;\sigma&lt;/span&gt;              &lt;span class=&#34;k&#34;&gt;\omega&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;\zeta&lt;/span&gt;               &lt;span class=&#34;k&#34;&gt;\nu&lt;/span&gt;                 &lt;span class=&#34;k&#34;&gt;\varsigma&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;\eta&lt;/span&gt;                &lt;span class=&#34;k&#34;&gt;\xi&lt;/span&gt;                 &lt;span class=&#34;k&#34;&gt;\tau&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;hr&gt;
 &lt;h2 id=&#34;table-uppercase-greek-letters&#34;&gt;Table: Uppercase Greek Letters
-&lt;/h2&gt;&lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th&gt;Symbol&lt;/th&gt;
-          &lt;th&gt;Command&lt;/th&gt;
-          &lt;th&gt;Symbol&lt;/th&gt;
-          &lt;th&gt;Command&lt;/th&gt;
-          &lt;th&gt;Symbol&lt;/th&gt;
-          &lt;th&gt;Command&lt;/th&gt;
-          &lt;th&gt;Symbol&lt;/th&gt;
-          &lt;th&gt;Command&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td&gt;$\Gamma$&lt;/td&gt;
-          &lt;td&gt;\Gamma&lt;/td&gt;
-          &lt;td&gt;$\Lambda$&lt;/td&gt;
-          &lt;td&gt;\Lambda&lt;/td&gt;
-          &lt;td&gt;$\Sigma$&lt;/td&gt;
-          &lt;td&gt;\Sigma&lt;/td&gt;
-          &lt;td&gt;$\Psi$&lt;/td&gt;
-          &lt;td&gt;\Psi&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;$\Delta$&lt;/td&gt;
-          &lt;td&gt;\Delta&lt;/td&gt;
-          &lt;td&gt;$\Xi$&lt;/td&gt;
-          &lt;td&gt;\Xi&lt;/td&gt;
-          &lt;td&gt;$\Upsilon$&lt;/td&gt;
-          &lt;td&gt;\Upsilon&lt;/td&gt;
-          &lt;td&gt;$\Omega$&lt;/td&gt;
-          &lt;td&gt;\Omega&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;$\Theta$&lt;/td&gt;
-          &lt;td&gt;\Theta&lt;/td&gt;
-          &lt;td&gt;$\Pi$&lt;/td&gt;
-          &lt;td&gt;\Pi&lt;/td&gt;
-          &lt;td&gt;$\Phi$&lt;/td&gt;
-          &lt;td&gt;\Phi&lt;/td&gt;
-          &lt;td&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-&lt;hr&gt;
+&lt;/h2&gt;&lt;!-- | Symbol | Command | Symbol | Command | Symbol | Command | Symbol | Command |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| $\Gamma$ | \Gamma | $\Lambda$ | \Lambda | $\Sigma$ | \Sigma | $\Psi$ | \Psi |
+| $\Delta$ | \Delta | $\Xi$ | \Xi | $\Upsilon$ | \Upsilon | $\Omega$ | \Omega |
+| $\Theta$ | \Theta | $\Pi$ | \Pi | $\Phi$ | \Phi | --&gt;
+&lt;img src=&#34;https://example.com/post_img/2025-02-25/table3.png&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-latex&#34; data-lang=&#34;latex&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;\Gamma&lt;/span&gt;              &lt;span class=&#34;k&#34;&gt;\Lambda&lt;/span&gt;              &lt;span class=&#34;k&#34;&gt;\Sigma&lt;/span&gt;              &lt;span class=&#34;k&#34;&gt;\Psi&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;\Delta&lt;/span&gt;              &lt;span class=&#34;k&#34;&gt;\Xi&lt;/span&gt;                  &lt;span class=&#34;k&#34;&gt;\Upsilon&lt;/span&gt;            &lt;span class=&#34;k&#34;&gt;\Omega&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;\Theta&lt;/span&gt;              &lt;span class=&#34;k&#34;&gt;\Pi&lt;/span&gt;                  &lt;span class=&#34;k&#34;&gt;\Phi&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;hr&gt;
 &lt;h2 id=&#34;table-binary-relations&#34;&gt;Table: Binary Relations
 &lt;/h2&gt;&lt;p&gt;You can produce corresponding negations by adding a \not command as prefix to the following symbols.&lt;/p&gt;
-&lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th&gt;Symbol&lt;/th&gt;
-          &lt;th&gt;Command&lt;/th&gt;
-          &lt;th&gt;Symbol&lt;/th&gt;
-          &lt;th&gt;Command&lt;/th&gt;
-          &lt;th&gt;Symbol&lt;/th&gt;
-          &lt;th&gt;Command&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td&gt;$&amp;lt;$&lt;/td&gt;
-          &lt;td&gt;&amp;lt;&lt;/td&gt;
-          &lt;td&gt;$&amp;gt;$&lt;/td&gt;
-          &lt;td&gt;&amp;gt;&lt;/td&gt;
-          &lt;td&gt;$=$&lt;/td&gt;
-          &lt;td&gt;=&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;$\leq$&lt;/td&gt;
-          &lt;td&gt;\leq or \le&lt;/td&gt;
-          &lt;td&gt;$\geq$&lt;/td&gt;
-          &lt;td&gt;\geq or \ge&lt;/td&gt;
-          &lt;td&gt;$\equiv$&lt;/td&gt;
-          &lt;td&gt;\equiv&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;$\ll$&lt;/td&gt;
-          &lt;td&gt;\ll&lt;/td&gt;
-          &lt;td&gt;$\gg$&lt;/td&gt;
-          &lt;td&gt;\gg&lt;/td&gt;
-          &lt;td&gt;$\doteq$&lt;/td&gt;
-          &lt;td&gt;\doteq&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;$\prec$&lt;/td&gt;
-          &lt;td&gt;\prec&lt;/td&gt;
-          &lt;td&gt;$\succ$&lt;/td&gt;
-          &lt;td&gt;\succ&lt;/td&gt;
-          &lt;td&gt;$\sim$&lt;/td&gt;
-          &lt;td&gt;\sim&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;$\preceq$&lt;/td&gt;
-          &lt;td&gt;\preceq&lt;/td&gt;
-          &lt;td&gt;$\succeq$&lt;/td&gt;
-          &lt;td&gt;\succeq&lt;/td&gt;
-          &lt;td&gt;$\simeq$&lt;/td&gt;
-          &lt;td&gt;\simeq&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;$\subset$&lt;/td&gt;
-          &lt;td&gt;\subset&lt;/td&gt;
-          &lt;td&gt;$\supset$&lt;/td&gt;
-          &lt;td&gt;\supset&lt;/td&gt;
-          &lt;td&gt;$\approx$&lt;/td&gt;
-          &lt;td&gt;\approx&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;$\subseteq$&lt;/td&gt;
-          &lt;td&gt;\subseteq&lt;/td&gt;
-          &lt;td&gt;$\supseteq$&lt;/td&gt;
-          &lt;td&gt;\supseteq&lt;/td&gt;
-          &lt;td&gt;$\cong$&lt;/td&gt;
-          &lt;td&gt;\cong&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;$\sqsubset$&lt;/td&gt;
-          &lt;td&gt;\sqsubset $^a$&lt;/td&gt;
-          &lt;td&gt;$\sqsupset$&lt;/td&gt;
-          &lt;td&gt;\sqsupset $^a$&lt;/td&gt;
-          &lt;td&gt;$\Join$&lt;/td&gt;
-          &lt;td&gt;\Join $^a$&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;$\sqsubseteq$&lt;/td&gt;
-          &lt;td&gt;\sqsubseteq&lt;/td&gt;
-          &lt;td&gt;$\sqsupseteq$&lt;/td&gt;
-          &lt;td&gt;\sqsupseteq&lt;/td&gt;
-          &lt;td&gt;$\bowtie$&lt;/td&gt;
-          &lt;td&gt;\bowtie&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;$\in$&lt;/td&gt;
-          &lt;td&gt;\in&lt;/td&gt;
-          &lt;td&gt;$\ni$&lt;/td&gt;
-          &lt;td&gt;\ni or \owns&lt;/td&gt;
-          &lt;td&gt;$\propto$&lt;/td&gt;
-          &lt;td&gt;\propto&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;$\vdash$&lt;/td&gt;
-          &lt;td&gt;\vdash&lt;/td&gt;
-          &lt;td&gt;$\dashv$&lt;/td&gt;
-          &lt;td&gt;\dashv&lt;/td&gt;
-          &lt;td&gt;$\models$&lt;/td&gt;
-          &lt;td&gt;\models&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;$\mid$&lt;/td&gt;
-          &lt;td&gt;\mid&lt;/td&gt;
-          &lt;td&gt;$\parallel$&lt;/td&gt;
-          &lt;td&gt;\parallel&lt;/td&gt;
-          &lt;td&gt;$\perp$&lt;/td&gt;
-          &lt;td&gt;\perp&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;$\smile$&lt;/td&gt;
-          &lt;td&gt;\smile&lt;/td&gt;
-          &lt;td&gt;$\frown$&lt;/td&gt;
-          &lt;td&gt;\frown&lt;/td&gt;
-          &lt;td&gt;$\asymp$&lt;/td&gt;
-          &lt;td&gt;\asymp&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;$:$&lt;/td&gt;
-          &lt;td&gt;:&lt;/td&gt;
-          &lt;td&gt;$\notin$&lt;/td&gt;
-          &lt;td&gt;\notin&lt;/td&gt;
-          &lt;td&gt;$\neq$&lt;/td&gt;
-          &lt;td&gt;\neq or \ne&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;&lt;strong&gt;$^a$ Use the &lt;code&gt;latexsym&lt;/code&gt; package to access this symbol&lt;/strong&gt;&lt;/p&gt;
+&lt;!-- | Symbol | Command | Symbol | Command | Symbol | Command |
+| --- | --- | --- | --- | --- | --- |
+| $&lt;$ | &lt; | $&gt;$ | &gt; | $=$ | = |
+| $\leq$ | \leq or \le | $\geq$ | \geq or \ge | $\equiv$ | \equiv |
+| $\ll$ | \ll | $\gg$ | \gg | $\doteq$ | \doteq |
+| $\prec$ | \prec | $\succ$ | \succ | $\sim$ | \sim |
+| $\preceq$ | \preceq | $\succeq$ | \succeq | $\simeq$ | \simeq |
+| $\subset$ | \subset | $\supset$ | \supset | $\approx$ | \approx |
+| $\subseteq$ | \subseteq | $\supseteq$ | \supseteq | $\cong$ | \cong |
+| $\sqsubset$ | \sqsubset $^a$ | $\sqsupset$ | \sqsupset $^a$ | $\Join$ | \Join $^a$ |
+| $\sqsubseteq$ | \sqsubseteq | $\sqsupseteq$ | \sqsupseteq | $\bowtie$ | \bowtie |
+| $\in$ | \in | $\ni$ | \ni or \owns | $\propto$ | \propto |
+| $\vdash$ | \vdash | $\dashv$ | \dashv | $\models$ | \models |
+| $\mid$ | \mid | $\parallel$ | \parallel | $\perp$ | \perp |
+| $\smile$ | \smile | $\frown$ | \frown | $\asymp$ | \asymp |
+| $:$ | : | $\notin$ | \notin | $\neq$ | \neq or \ne | --&gt;
+&lt;img src=&#34;https://example.com/post_img/2025-02-25/table4.png&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-latex&#34; data-lang=&#34;latex&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;          &amp;lt;                          &amp;gt;                         =
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;          &lt;span class=&#34;k&#34;&gt;\leq&lt;/span&gt; or &lt;span class=&#34;k&#34;&gt;\le&lt;/span&gt;                &lt;span class=&#34;k&#34;&gt;\geq&lt;/span&gt; or &lt;span class=&#34;k&#34;&gt;\ge&lt;/span&gt;               &lt;span class=&#34;k&#34;&gt;\equiv&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;          &lt;span class=&#34;k&#34;&gt;\ll&lt;/span&gt;                        &lt;span class=&#34;k&#34;&gt;\gg&lt;/span&gt;                       &lt;span class=&#34;k&#34;&gt;\doteq&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;          &lt;span class=&#34;k&#34;&gt;\prec&lt;/span&gt;                      &lt;span class=&#34;k&#34;&gt;\succ&lt;/span&gt;                     &lt;span class=&#34;k&#34;&gt;\sim&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;          &lt;span class=&#34;k&#34;&gt;\preceq&lt;/span&gt;                    &lt;span class=&#34;k&#34;&gt;\succeq&lt;/span&gt;                   &lt;span class=&#34;k&#34;&gt;\simeq&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;          &lt;span class=&#34;k&#34;&gt;\subset&lt;/span&gt;                    &lt;span class=&#34;k&#34;&gt;\supset&lt;/span&gt;                   &lt;span class=&#34;k&#34;&gt;\approx&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;          &lt;span class=&#34;k&#34;&gt;\subseteq&lt;/span&gt;                  &lt;span class=&#34;k&#34;&gt;\supseteq&lt;/span&gt;                 &lt;span class=&#34;k&#34;&gt;\cong&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;          &lt;span class=&#34;k&#34;&gt;\sqsubset&lt;/span&gt;                  &lt;span class=&#34;k&#34;&gt;\sqsupset&lt;/span&gt;                 &lt;span class=&#34;k&#34;&gt;\Join&lt;/span&gt;  
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;          &lt;span class=&#34;k&#34;&gt;\sqsubseteq&lt;/span&gt;                &lt;span class=&#34;k&#34;&gt;\sqsupseteq&lt;/span&gt;               &lt;span class=&#34;k&#34;&gt;\bowtie&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;          &lt;span class=&#34;k&#34;&gt;\in&lt;/span&gt;                        &lt;span class=&#34;k&#34;&gt;\ni&lt;/span&gt; or &lt;span class=&#34;k&#34;&gt;\owns&lt;/span&gt;              &lt;span class=&#34;k&#34;&gt;\propto&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;          &lt;span class=&#34;k&#34;&gt;\vdash&lt;/span&gt;                     &lt;span class=&#34;k&#34;&gt;\dashv&lt;/span&gt;                    &lt;span class=&#34;k&#34;&gt;\models&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;          &lt;span class=&#34;k&#34;&gt;\mid&lt;/span&gt;                       &lt;span class=&#34;k&#34;&gt;\parallel&lt;/span&gt;                 &lt;span class=&#34;k&#34;&gt;\perp&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;          &lt;span class=&#34;k&#34;&gt;\smile&lt;/span&gt;                     &lt;span class=&#34;k&#34;&gt;\frown&lt;/span&gt;                    &lt;span class=&#34;k&#34;&gt;\asymp&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;          :                          &lt;span class=&#34;k&#34;&gt;\notin&lt;/span&gt;                    &lt;span class=&#34;k&#34;&gt;\neq&lt;/span&gt; or &lt;span class=&#34;k&#34;&gt;\ne&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;strong&gt;$^a$ Use the &lt;code&gt;latexsym&lt;/code&gt; package to access this symbol&lt;/strong&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;table-binary-operators&#34;&gt;Table: Binary Operators
-&lt;/h2&gt;&lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th&gt;Symbol&lt;/th&gt;
-          &lt;th&gt;Command&lt;/th&gt;
-          &lt;th&gt;Symbol&lt;/th&gt;
-          &lt;th&gt;Command&lt;/th&gt;
-          &lt;th&gt;Symbol&lt;/th&gt;
-          &lt;th&gt;Command&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td&gt;$+$&lt;/td&gt;
-          &lt;td&gt;+&lt;/td&gt;
-          &lt;td&gt;$-$&lt;/td&gt;
-          &lt;td&gt;-&lt;/td&gt;
-          &lt;td&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;$\pm$&lt;/td&gt;
-          &lt;td&gt;\pm&lt;/td&gt;
-          &lt;td&gt;$\mp$&lt;/td&gt;
-          &lt;td&gt;\mp&lt;/td&gt;
-          &lt;td&gt;$\triangleleft$&lt;/td&gt;
-          &lt;td&gt;\triangleleft&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;$\cdot$&lt;/td&gt;
-          &lt;td&gt;\cdot&lt;/td&gt;
-          &lt;td&gt;$\div$&lt;/td&gt;
-          &lt;td&gt;\div&lt;/td&gt;
-          &lt;td&gt;$\triangleright$&lt;/td&gt;
-          &lt;td&gt;\triangleright&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;$\times$&lt;/td&gt;
-          &lt;td&gt;\times&lt;/td&gt;
-          &lt;td&gt;$\setminus$&lt;/td&gt;
-          &lt;td&gt;\setminus&lt;/td&gt;
-          &lt;td&gt;$\star$&lt;/td&gt;
-          &lt;td&gt;\star&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;$\cup$&lt;/td&gt;
-          &lt;td&gt;\cup&lt;/td&gt;
-          &lt;td&gt;$\cap$&lt;/td&gt;
-          &lt;td&gt;\cap&lt;/td&gt;
-          &lt;td&gt;$\ast$&lt;/td&gt;
-          &lt;td&gt;\ast&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;$\sqcup$&lt;/td&gt;
-          &lt;td&gt;\sqcup&lt;/td&gt;
-          &lt;td&gt;$\sqcap$&lt;/td&gt;
-          &lt;td&gt;\sqcap&lt;/td&gt;
-          &lt;td&gt;$\circ$&lt;/td&gt;
-          &lt;td&gt;\circ&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;$\vee$&lt;/td&gt;
-          &lt;td&gt;\vee or \lor&lt;/td&gt;
-          &lt;td&gt;$\wedge$&lt;/td&gt;
-          &lt;td&gt;\wedge or \land&lt;/td&gt;
-          &lt;td&gt;$\bullet$&lt;/td&gt;
-          &lt;td&gt;\bullet&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;$\oplus$&lt;/td&gt;
-          &lt;td&gt;\oplus&lt;/td&gt;
-          &lt;td&gt;$\ominus$&lt;/td&gt;
-          &lt;td&gt;\ominus&lt;/td&gt;
-          &lt;td&gt;$\diamond$&lt;/td&gt;
-          &lt;td&gt;\diamond&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;$\odot$&lt;/td&gt;
-          &lt;td&gt;\odot&lt;/td&gt;
-          &lt;td&gt;$\oslash$&lt;/td&gt;
-          &lt;td&gt;\oslash&lt;/td&gt;
-          &lt;td&gt;$\uplus$&lt;/td&gt;
-          &lt;td&gt;\uplus&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;$\otimes$&lt;/td&gt;
-          &lt;td&gt;\otimes&lt;/td&gt;
-          &lt;td&gt;$\bigcirc$&lt;/td&gt;
-          &lt;td&gt;\bigcirc&lt;/td&gt;
-          &lt;td&gt;$\amalg$&lt;/td&gt;
-          &lt;td&gt;\amalg&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;$\bigtriangleup$&lt;/td&gt;
-          &lt;td&gt;\bigtriangleup&lt;/td&gt;
-          &lt;td&gt;$\bigtriangledown$&lt;/td&gt;
-          &lt;td&gt;\bigtriangledown&lt;/td&gt;
-          &lt;td&gt;$\dagger$&lt;/td&gt;
-          &lt;td&gt;\dagger&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;$\lhd$&lt;/td&gt;
-          &lt;td&gt;\lhd $^{a}$&lt;/td&gt;
-          &lt;td&gt;$\rhd$&lt;/td&gt;
-          &lt;td&gt;\rhd $^{a}$&lt;/td&gt;
-          &lt;td&gt;$\ddagger$&lt;/td&gt;
-          &lt;td&gt;\ddagger&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;$\unlhd$&lt;/td&gt;
-          &lt;td&gt;\unlhd $^{a}$&lt;/td&gt;
-          &lt;td&gt;$\unrhd$&lt;/td&gt;
-          &lt;td&gt;\unrhd $^{a}$&lt;/td&gt;
-          &lt;td&gt;$\wr$&lt;/td&gt;
-          &lt;td&gt;\wr&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;&lt;strong&gt;$^a$ Use the &lt;code&gt;latexsym&lt;/code&gt; package to access this symbol&lt;/strong&gt;&lt;/p&gt;
+&lt;/h2&gt;&lt;!-- | Symbol | Command | Symbol | Command | Symbol | Command |
+| --- | --- | --- | --- | --- | --- |
+| $+$ | + | $-$ | - |
+| $\pm$ | \pm | $\mp$ | \mp | $\triangleleft$ | \triangleleft |
+| $\cdot$ | \cdot | $\div$ | \div | $\triangleright$ | \triangleright |
+| $\times$ | \times | $\setminus$ | \setminus | $\star$ | \star |
+| $\cup$ | \cup | $\cap$ | \cap | $\ast$ | \ast |
+| $\sqcup$ | \sqcup | $\sqcap$ | \sqcap | $\circ$ | \circ |
+| $\vee$ | \vee or \lor | $\wedge$ | \wedge or \land | $\bullet$ | \bullet |
+| $\oplus$ | \oplus | $\ominus$ | \ominus | $\diamond$ | \diamond |
+| $\odot$ | \odot | $\oslash$ | \oslash | $\uplus$ | \uplus |
+| $\otimes$ | \otimes | $\bigcirc$ | \bigcirc | $\amalg$ | \amalg |
+| $\bigtriangleup$ | \bigtriangleup | $\bigtriangledown$ | \bigtriangledown | $\dagger$ | \dagger |
+| $\lhd$ | \lhd $^{a}$ | $\rhd$ | \rhd $^{a}$ | $\ddagger$ | \ddagger |
+| $\unlhd$ | \unlhd $^{a}$ | $\unrhd$ | \unrhd $^{a}$ | $\wr$ | \wr | --&gt;
+&lt;img src=&#34;https://example.com/post_img/2025-02-25/table5.png&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-latex&#34; data-lang=&#34;latex&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         +                         -
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;k&#34;&gt;\pm&lt;/span&gt;                       &lt;span class=&#34;k&#34;&gt;\mp&lt;/span&gt;                          &lt;span class=&#34;k&#34;&gt;\triangleleft&lt;/span&gt;             
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;k&#34;&gt;\cdot&lt;/span&gt;                     &lt;span class=&#34;k&#34;&gt;\div&lt;/span&gt;                         &lt;span class=&#34;k&#34;&gt;\triangleright&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;k&#34;&gt;\times&lt;/span&gt;                    &lt;span class=&#34;k&#34;&gt;\setminus&lt;/span&gt;                    &lt;span class=&#34;k&#34;&gt;\star&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;k&#34;&gt;\cup&lt;/span&gt;                      &lt;span class=&#34;k&#34;&gt;\cap&lt;/span&gt;                         &lt;span class=&#34;k&#34;&gt;\ast&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;k&#34;&gt;\sqcup&lt;/span&gt;                    &lt;span class=&#34;k&#34;&gt;\sqcap&lt;/span&gt;                       &lt;span class=&#34;k&#34;&gt;\circ&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;k&#34;&gt;\vee&lt;/span&gt; or &lt;span class=&#34;k&#34;&gt;\lor&lt;/span&gt;              &lt;span class=&#34;k&#34;&gt;\wedge&lt;/span&gt; or &lt;span class=&#34;k&#34;&gt;\land&lt;/span&gt;              &lt;span class=&#34;k&#34;&gt;\bullet&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;k&#34;&gt;\oplus&lt;/span&gt;                    &lt;span class=&#34;k&#34;&gt;\ominus&lt;/span&gt;                      &lt;span class=&#34;k&#34;&gt;\diamond&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;k&#34;&gt;\odot&lt;/span&gt;                     &lt;span class=&#34;k&#34;&gt;\oslash&lt;/span&gt;                      &lt;span class=&#34;k&#34;&gt;\uplus&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;k&#34;&gt;\otimes&lt;/span&gt;                   &lt;span class=&#34;k&#34;&gt;\bigcirc&lt;/span&gt;                     &lt;span class=&#34;k&#34;&gt;\amalg&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;k&#34;&gt;\bigtriangleup&lt;/span&gt;            &lt;span class=&#34;k&#34;&gt;\bigtriangledown&lt;/span&gt;             &lt;span class=&#34;k&#34;&gt;\dagger&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;k&#34;&gt;\lhd&lt;/span&gt;                      &lt;span class=&#34;k&#34;&gt;\rhd&lt;/span&gt;                         &lt;span class=&#34;k&#34;&gt;\ddagger&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;k&#34;&gt;\unlhd&lt;/span&gt;                    &lt;span class=&#34;k&#34;&gt;\unrhd&lt;/span&gt;                       &lt;span class=&#34;k&#34;&gt;\wr&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;strong&gt;$^a$ Use the &lt;code&gt;latexsym&lt;/code&gt; package to access this symbol&lt;/strong&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;table-big-operators&#34;&gt;Table: BIG Operators
-&lt;/h2&gt;&lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th&gt;Symbol&lt;/th&gt;
-          &lt;th&gt;Command&lt;/th&gt;
-          &lt;th&gt;Symbol&lt;/th&gt;
-          &lt;th&gt;Command&lt;/th&gt;
-          &lt;th&gt;Symbol&lt;/th&gt;
-          &lt;th&gt;Command&lt;/th&gt;
-          &lt;th&gt;Symbol&lt;/th&gt;
-          &lt;th&gt;Command&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td&gt;$\sum$&lt;/td&gt;
-          &lt;td&gt;\sum&lt;/td&gt;
-          &lt;td&gt;$\bigcup$&lt;/td&gt;
-          &lt;td&gt;\bigcup&lt;/td&gt;
-          &lt;td&gt;$\bigvee$&lt;/td&gt;
-          &lt;td&gt;\bigvee&lt;/td&gt;
-          &lt;td&gt;$\bigoplus$&lt;/td&gt;
-          &lt;td&gt;\bigoplus&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;$\prod$&lt;/td&gt;
-          &lt;td&gt;\prod&lt;/td&gt;
-          &lt;td&gt;$\bigcap$&lt;/td&gt;
-          &lt;td&gt;\bigcap&lt;/td&gt;
-          &lt;td&gt;$\bigwedge$&lt;/td&gt;
-          &lt;td&gt;\bigwedge&lt;/td&gt;
-          &lt;td&gt;$\bigotimes$&lt;/td&gt;
-          &lt;td&gt;\bigotimes&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;$\coprod$&lt;/td&gt;
-          &lt;td&gt;\coprod&lt;/td&gt;
-          &lt;td&gt;$\bigsqcup$&lt;/td&gt;
-          &lt;td&gt;\bigsqcup&lt;/td&gt;
-          &lt;td&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;/td&gt;
-          &lt;td&gt;$\bigodot$&lt;/td&gt;
-          &lt;td&gt;\bigodot&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;$\int$&lt;/td&gt;
-          &lt;td&gt;\int&lt;/td&gt;
-          &lt;td&gt;$\oint$&lt;/td&gt;
-          &lt;td&gt;\oint&lt;/td&gt;
-          &lt;td&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;/td&gt;
-          &lt;td&gt;$\biguplus$&lt;/td&gt;
-          &lt;td&gt;\biguplus&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-&lt;hr&gt;
+&lt;/h2&gt;&lt;!-- | Symbol | Command | Symbol | Command | Symbol | Command | Symbol | Command |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| $\sum$ | \sum | $\bigcup$ | \bigcup | $\bigvee$ | \bigvee | $\bigoplus$ | \bigoplus |
+| $\prod$ | \prod | $\bigcap$ | \bigcap | $\bigwedge$ | \bigwedge | $\bigotimes$ | \bigotimes |
+| $\coprod$ | \coprod | $\bigsqcup$ | \bigsqcup | | |$\bigodot$ | \bigodot |
+| $\int$ | \int | $\oint$ | \oint | | | $\biguplus$ | \biguplus | --&gt;
+&lt;img src=&#34;https://example.com/post_img/2025-02-25/table6.png&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-latex&#34; data-lang=&#34;latex&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;\sum&lt;/span&gt;                 &lt;span class=&#34;k&#34;&gt;\bigcup&lt;/span&gt;             &lt;span class=&#34;k&#34;&gt;\bigvee&lt;/span&gt;             &lt;span class=&#34;k&#34;&gt;\bigoplus&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;\prod&lt;/span&gt;                &lt;span class=&#34;k&#34;&gt;\bigcap&lt;/span&gt;             &lt;span class=&#34;k&#34;&gt;\bigwedge&lt;/span&gt;           &lt;span class=&#34;k&#34;&gt;\bigotimes&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;\coprod&lt;/span&gt;              &lt;span class=&#34;k&#34;&gt;\bigsqcup&lt;/span&gt;                               &lt;span class=&#34;k&#34;&gt;\bigodot&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;\int&lt;/span&gt;                 &lt;span class=&#34;k&#34;&gt;\oint&lt;/span&gt;                                   &lt;span class=&#34;k&#34;&gt;\biguplus&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;hr&gt;
 &lt;h2 id=&#34;table-arrows&#34;&gt;Table: Arrows
 &lt;/h2&gt;&lt;table&gt;
   &lt;thead&gt;
@@ -534,7 +236,7 @@
       &lt;tr&gt;
           &lt;td&gt;$\leftarrow$&lt;/td&gt;
           &lt;td&gt;\leftarrow or \gets&lt;/td&gt;
-          &lt;td&gt;$\longrightarrow$&lt;/td&gt;
+          &lt;td&gt;$\longleftarrow$&lt;/td&gt;
           &lt;td&gt;\longleftarrow&lt;/td&gt;
           &lt;td&gt;$\uparrow$&lt;/td&gt;
           &lt;td&gt;\uparrow&lt;/td&gt;
@@ -558,8 +260,8 @@
       &lt;tr&gt;
           &lt;td&gt;$\Leftarrow$&lt;/td&gt;
           &lt;td&gt;\Leftarrow&lt;/td&gt;
-          &lt;td&gt;$\Leftarrow$&lt;/td&gt;
-          &lt;td&gt;\Leftarrow&lt;/td&gt;
+          &lt;td&gt;$\Longleftarrow$&lt;/td&gt;
+          &lt;td&gt;\Longleftarrow&lt;/td&gt;
           &lt;td&gt;$\Uparrow$&lt;/td&gt;
           &lt;td&gt;\Uparrow&lt;/td&gt;
       &lt;/tr&gt;
@@ -574,8 +276,8 @@
       &lt;tr&gt;
           &lt;td&gt;$\Leftrightarrow$&lt;/td&gt;
           &lt;td&gt;\Leftrightarrow&lt;/td&gt;
-          &lt;td&gt;$\Leftrightarrow$&lt;/td&gt;
-          &lt;td&gt;\Leftrightarrow&lt;/td&gt;
+          &lt;td&gt;$\Longleftrightarrow$&lt;/td&gt;
+          &lt;td&gt;\Longleftrightarrow&lt;/td&gt;
           &lt;td&gt;$\Updownarrow$&lt;/td&gt;
           &lt;td&gt;\Downarrow&lt;/td&gt;
       &lt;/tr&gt;
@@ -621,7 +323,22 @@
       &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;&lt;strong&gt;$^a$ Use the &lt;code&gt;latexsym&lt;/code&gt; package to access this symbol&lt;/strong&gt;&lt;/p&gt;
+&lt;img src=&#34;https://example.com/post_img/2025-02-25/table7.png&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-latex&#34; data-lang=&#34;latex&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;\leftarrow&lt;/span&gt; or &lt;span class=&#34;k&#34;&gt;\gets&lt;/span&gt;                 &lt;span class=&#34;k&#34;&gt;\longleftarrow&lt;/span&gt;             &lt;span class=&#34;k&#34;&gt;\uparrow&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;\rightarrow&lt;/span&gt; or &lt;span class=&#34;k&#34;&gt;\to&lt;/span&gt;                &lt;span class=&#34;k&#34;&gt;\longleftrightarrow&lt;/span&gt;             &lt;span class=&#34;k&#34;&gt;\downarrow&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;\leftrightarrow&lt;/span&gt;              &lt;span class=&#34;k&#34;&gt;\longleftrightarrow&lt;/span&gt;  &lt;span class=&#34;k&#34;&gt;\updownarrow&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;\int&lt;/span&gt;                 &lt;span class=&#34;k&#34;&gt;\oint&lt;/span&gt;                                   &lt;span class=&#34;k&#34;&gt;\biguplus&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;strong&gt;$^a$ Use the &lt;code&gt;latexsym&lt;/code&gt; package to access this symbol&lt;/strong&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;table-delimiters&#34;&gt;Table: Delimiters
 &lt;/h2&gt;&lt;table&gt;
@@ -700,6 +417,7 @@
       &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
+&lt;img src=&#34;https://example.com/post_img/2025-02-25/table8.png&#34;&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;table-miscellaneous-symbols&#34;&gt;Table: Miscellaneous Symbols
 &lt;/h2&gt;&lt;table&gt;
@@ -808,6 +526,7 @@
       &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
+&lt;img src=&#34;https://example.com/post_img/2025-02-25/table9.png&#34;&gt;
 &lt;p&gt;&lt;strong&gt;$^a$ Use the &lt;code&gt;latexsym&lt;/code&gt; package to access this symbol&lt;/strong&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;table-non-mathematical-symbols&#34;&gt;Table: Non-Mathematical Symbols
@@ -842,6 +561,7 @@
       &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
+&lt;img src=&#34;https://example.com/post_img/2025-02-25/table10.png&#34;&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;table-ams-delimiters&#34;&gt;Table: AMS Delimiters
 &lt;/h2&gt;&lt;table&gt;
@@ -870,6 +590,7 @@
       &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
+&lt;img src=&#34;https://example.com/post_img/2025-02-25/table11.png&#34;&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;table-ams-binary-relations&#34;&gt;Table: AMS Binary Relations
 &lt;/h2&gt;&lt;table&gt;
@@ -1062,6 +783,7 @@
       &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
+&lt;img src=&#34;https://example.com/post_img/2025-02-25/table12.png&#34;&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;table-ams-arrows&#34;&gt;Table: AMS Arrows
 &lt;/h2&gt;&lt;table&gt;
@@ -1166,6 +888,7 @@
       &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
+&lt;img src=&#34;https://example.com/post_img/2025-02-25/table13.png&#34;&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;table-ams-negated-binary-relations-and-arrows&#34;&gt;Table: AMS Negated Binary Relations and Arrows
 &lt;/h2&gt;&lt;table&gt;
@@ -1342,6 +1065,7 @@
       &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
+&lt;img src=&#34;https://example.com/post_img/2025-02-25/table14.png&#34;&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;table-ams-binary-operators&#34;&gt;Table: AMS Binary Operators
 &lt;/h2&gt;&lt;table&gt;
@@ -1422,6 +1146,7 @@
       &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
+&lt;img src=&#34;https://example.com/post_img/2025-02-25/table15.png&#34;&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;table-ams-miscellaneous&#34;&gt;Table: AMS Miscellaneous
 &lt;/h2&gt;&lt;table&gt;
@@ -1510,6 +1235,7 @@
       &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
+&lt;img src=&#34;https://example.com/post_img/2025-02-25/table16.png&#34;&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;table-math-alphabets&#34;&gt;Table: Math Alphabets
 &lt;/h2&gt;&lt;table&gt;
@@ -1563,16 +1289,17 @@
       &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
+&lt;img src=&#34;https://example.com/post_img/2025-02-25/table17.png&#34;&gt;
 &lt;p&gt;&lt;em&gt;Reprinted with permission from &lt;a class=&#34;link&#34; href=&#34;https://www.math.uci.edu/~xiangwen/pdf/LaTeX-Math-Symbols.pdf&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;LaTeX Math Symbols&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 </description>
         </item>
         <item>
         <title>Notes on DataBase</title>
-        <link>http://localhost:1313/p/notes-on-database/</link>
+        <link>https://example.com/p/notes-on-database/</link>
         <pubDate>Mon, 24 Feb 2025 19:06:28 +0800</pubDate>
         
-        <guid>http://localhost:1313/p/notes-on-database/</guid>
+        <guid>https://example.com/p/notes-on-database/</guid>
         <description>&lt;h2 id=&#34;绪论&#34;&gt;绪论
 &lt;/h2&gt;&lt;h3 id=&#34;四个基本概念&#34;&gt;四个基本概念
 &lt;/h3&gt;&lt;ol&gt;
@@ -1640,7 +1367,7 @@
 &lt;/ol&gt;
 &lt;h4 id=&#34;er图&#34;&gt;ER图
 &lt;/h4&gt;&lt;p&gt;ER图分为实体、属性和关系三个部分。实体用长方形，属性是椭圆形，关系是菱形。&lt;strong&gt;唯一的标识：主键。&lt;/strong&gt;
-&lt;img src=&#34;http://localhost:1313/post_img/2025-02-24/er.png&#34;&gt;&lt;/p&gt;
+&lt;img src=&#34;https://example.com/post_img/2025-02-24/er.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;联系：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;实体之间的联系通常是指不同实体集之间的联系。实体之间的联系有一对一、一对多和多对多等多种联系。&lt;/li&gt;
@@ -1655,7 +1382,7 @@
 &lt;li&gt;有且只有一个结点没有双亲结点，这个结点称为根结点。&lt;/li&gt;
 &lt;li&gt;根以外的其他结点有且只有一个双亲结点。&lt;/li&gt;
 &lt;/ol&gt;
-  &lt;img src=&#34;http://localhost:1313/post_img/2025-02-24/ccmodel.png&#34;&gt;
+  &lt;img src=&#34;https://example.com/post_img/2025-02-24/ccmodel.png&#34;&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;网状模型：&lt;/p&gt;
@@ -1663,7 +1390,7 @@
 &lt;li&gt;允许一个以上的结点无双亲&lt;/li&gt;
 &lt;li&gt;一个结点可以有多于一个双亲&lt;/li&gt;
 &lt;/ol&gt;
-  &lt;img src=&#34;http://localhost:1313/post_img/2025-02-24/wmodel.png&#34;&gt;
+  &lt;img src=&#34;https://example.com/post_img/2025-02-24/wmodel.png&#34;&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;关系模型：对应一张表&lt;/p&gt;
@@ -1674,7 +1401,7 @@
 &lt;li&gt;域：是一组具有相同数据类型的值的集合。&lt;/li&gt;
 &lt;li&gt;分量：元组中的一个属性。&lt;/li&gt;
 &lt;/ol&gt;
-  &lt;img src=&#34;http://localhost:1313/post_img/2025-02-24/remodel.png&#34;&gt;
+  &lt;img src=&#34;https://example.com/post_img/2025-02-24/remodel.png&#34;&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;数据库系统的结构&#34;&gt;数据库系统的结构
@@ -1693,7 +1420,7 @@
 &lt;p&gt;内模式：也称存储模式，一个数据库只有一个内模式。它是数据物理结构和存储方式的描述，是数据在数据库内部的组织方式。&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
- &lt;img src=&#34;http://localhost:1313/post_img/2025-02-24/model.png&#34;&gt;
+ &lt;img src=&#34;https://example.com/post_img/2025-02-24/model.png&#34;&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;二级映像：
@@ -1757,7 +1484,7 @@
 &lt;li&gt;行数：$k_1 \times k_2$&lt;/li&gt;
 &lt;li&gt;当 R 和 S 中有重名属性 A 时，则采用 R.A 和 S.A 分别命名对应的属性列&lt;/li&gt;
 &lt;/ul&gt;
-  &lt;img src=&#34;http://localhost:1313/post_img/2025-02-24/product.png&#34;&gt;
+  &lt;img src=&#34;https://example.com/post_img/2025-02-24/product.png&#34;&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;$\sigma_C$(R)：选择 (selection)：&lt;/p&gt;
@@ -1796,7 +1523,7 @@
 &lt;/ol&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-  &lt;img src=&#34;http://localhost:1313/post_img/2025-02-24/selection.png&#34;&gt;
+  &lt;img src=&#34;https://example.com/post_img/2025-02-24/selection.png&#34;&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;$\Pi_L$(R)：投影 (projection)&lt;/p&gt;
@@ -1806,7 +1533,7 @@
 &lt;li&gt;结果为只包含R中某些列的新的关系&lt;/li&gt;
 &lt;li&gt;结果要去掉重复元组&lt;/li&gt;
 &lt;/ul&gt;
-  &lt;img src=&#34;http://localhost:1313/post_img/2025-02-24/projection.png&#34;&gt;
+  &lt;img src=&#34;https://example.com/post_img/2025-02-24/projection.png&#34;&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;R $\Join$ S：连接 (Join)&lt;/p&gt;
@@ -1829,7 +1556,7 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-  &lt;img src=&#34;http://localhost:1313/post_img/2025-02-24/join.png&#34;&gt;
+  &lt;img src=&#34;https://example.com/post_img/2025-02-24/join.png&#34;&gt;
 &lt;ul&gt;
 &lt;li&gt;悬浮元组(Dangling tuple)：两个关系 R 和 S 在做自然连接时，关系 R 中某些元组有可能在 S 中不存在公共属性上值相等的元组，从而造成 R 中这些元组在操作时被舍弃了，这些被舍弃的元组称为悬浮元组。&lt;/li&gt;
 &lt;li&gt;外连接(Outer Join)：如果把悬浮元组也保存在结果关系中，而在其他属性上填空值(Null)，就叫做外连接。&lt;/li&gt;
@@ -1839,7 +1566,7 @@
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;R $\div$ S：保留 R 中满足 S 的，而且 R 中的列去掉 S 的列。
-&lt;img src=&#34;http://localhost:1313/post_img/2025-02-24/divide.png&#34;&gt;&lt;/p&gt;
+&lt;img src=&#34;https://example.com/post_img/2025-02-24/divide.png&#34;&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
@@ -1858,10 +1585,10 @@
         </item>
         <item>
         <title>Replace Google CDN</title>
-        <link>http://localhost:1313/p/replace-google-cdn/</link>
+        <link>https://example.com/p/replace-google-cdn/</link>
         <pubDate>Fri, 21 Feb 2025 21:58:39 +0800</pubDate>
         
-        <guid>http://localhost:1313/p/replace-google-cdn/</guid>
+        <guid>https://example.com/p/replace-google-cdn/</guid>
         <description>&lt;h2 id=&#34;缘起&#34;&gt;缘起
 &lt;/h2&gt;&lt;p&gt;很多网站，尤其是国外网站，为了加快网站的速度，都使用了 Google 的 CDN。但是在天朝，由于某些原因，导致全球最快的 CDN 变成了全球最慢的。&lt;/p&gt;
 &lt;h2 id=&#34;替换&#34;&gt;替换
@@ -1973,10 +1700,10 @@
         </item>
         <item>
         <title>Add a Funny Snake Animation to Your GitHub Profile Page</title>
-        <link>http://localhost:1313/p/add-a-funny-snake-animation-to-your-github-profile-page/</link>
+        <link>https://example.com/p/add-a-funny-snake-animation-to-your-github-profile-page/</link>
         <pubDate>Thu, 20 Feb 2025 11:14:33 +0800</pubDate>
         
-        <guid>http://localhost:1313/p/add-a-funny-snake-animation-to-your-github-profile-page/</guid>
+        <guid>https://example.com/p/add-a-funny-snake-animation-to-your-github-profile-page/</guid>
         <description>&lt;img src="https://raw.githubusercontent.com/serendipityerr/serendipityerr/output/github-contribution-grid-snake.svg" alt="Featured image of post Add a Funny Snake Animation to Your GitHub Profile Page" /&gt;&lt;h2 id=&#34;introduction&#34;&gt;Introduction
 &lt;/h2&gt;&lt;p&gt;A GitHub personal home page, officially called a profile, is a personal GitHub presentation master page written in &lt;code&gt;Markdown&lt;/code&gt;. In this article, we&amp;rsquo;ll demonstrate how to add a funny snake animation to the GitHub profile page.&lt;/p&gt;
 &lt;p&gt;The Snake animation is actually a kind of “heat map”, each small grid corresponds to each day, the grid is gray by default, where the green grid means we submitted code on that day, the darker the color of the grid, the more times we committed code on that day.&lt;/p&gt;
@@ -2271,11 +1998,11 @@
         </item>
         <item>
         <title>Notes on HTML</title>
-        <link>http://localhost:1313/p/notes-on-html/</link>
+        <link>https://example.com/p/notes-on-html/</link>
         <pubDate>Tue, 18 Feb 2025 22:42:40 +0800</pubDate>
         
-        <guid>http://localhost:1313/p/notes-on-html/</guid>
-        <description>&lt;img src="http://localhost:1313/post_img/2025-02-18/html-logo.png" alt="Featured image of post Notes on HTML" /&gt;&lt;h2 id=&#34;html入门&#34;&gt;HTML入门
+        <guid>https://example.com/p/notes-on-html/</guid>
+        <description>&lt;img src="https://example.com/post_img/2025-02-18/html-logo.png" alt="Featured image of post Notes on HTML" /&gt;&lt;h2 id=&#34;html入门&#34;&gt;HTML入门
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;HTML(Hyper Text Markup Language)：超文本标记语言，用来描述网页的语言。&lt;/p&gt;
@@ -2732,7 +2459,7 @@ e.g.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;特殊字符&lt;/p&gt;
-  &lt;img src=&#34;http://localhost:1313/post_img/2025-02-18/character.png&#34; width=&#34;500px&#34;&gt;
+  &lt;img src=&#34;https://example.com/post_img/2025-02-18/character.png&#34; width=&#34;500px&#34;&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
@@ -2818,7 +2545,7 @@ e.g.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;跨行合并：&lt;code&gt;rowspan=&amp;quot;合并单元格个数&amp;quot;&lt;/code&gt;。最上侧单元格为目标单元格，在此单元格中写合并代码。&lt;/li&gt;
 &lt;li&gt;跨列合并：&lt;code&gt;colspan=&amp;quot;合并单元格个数&amp;quot;&lt;/code&gt;。最左侧单元格为目标单元格，在此单元格中写合并代码。
-&lt;img src=&#34;http://localhost:1313/post_img/2025-02-18/row_col.png&#34; width=&#34;600px&#34;&gt;&lt;/li&gt;
+&lt;img src=&#34;https://example.com/post_img/2025-02-18/row_col.png&#34; width=&#34;600px&#34;&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;ul&gt;
 &lt;li&gt;操作步骤：&lt;/li&gt;
@@ -3044,11 +2771,11 @@ e.g.&lt;/p&gt;
         </item>
         <item>
         <title>Update Hugo To Hugo-extended</title>
-        <link>http://localhost:1313/p/update-hugo-to-hugo-extended/</link>
+        <link>https://example.com/p/update-hugo-to-hugo-extended/</link>
         <pubDate>Mon, 17 Feb 2025 18:57:48 +0800</pubDate>
         
-        <guid>http://localhost:1313/p/update-hugo-to-hugo-extended/</guid>
-        <description>&lt;img src="http://localhost:1313/post_img/2025-02-17/hugo-logo-wide.png" alt="Featured image of post Update Hugo To Hugo-extended" /&gt;&lt;h2 id=&#34;update-hugo-to-hugo-extended&#34;&gt;Update Hugo To Hugo-extended
+        <guid>https://example.com/p/update-hugo-to-hugo-extended/</guid>
+        <description>&lt;img src="https://example.com/post_img/2025-02-17/hugo-logo-wide.png" alt="Featured image of post Update Hugo To Hugo-extended" /&gt;&lt;h2 id=&#34;update-hugo-to-hugo-extended&#34;&gt;Update Hugo To Hugo-extended
 &lt;/h2&gt;&lt;p&gt;Why not Hugo but Hugo-extended?&lt;/p&gt;
 &lt;p&gt;Some themes use &lt;code&gt;SCSS&lt;/code&gt; and &lt;code&gt;TypeScript&lt;/code&gt;, that&amp;rsquo;s why Hugo extended version is required. If you are using a non-extended Hugo installation, you will get the following error:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -3104,10 +2831,10 @@ e.g.&lt;/p&gt;
         </item>
         <item>
         <title>Some Skills on Exporting Latex in Markdown as pdf</title>
-        <link>http://localhost:1313/p/some-skills-on-exporting-latex-in-markdown-as-pdf/</link>
+        <link>https://example.com/p/some-skills-on-exporting-latex-in-markdown-as-pdf/</link>
         <pubDate>Mon, 09 Dec 2024 18:50:29 +0800</pubDate>
         
-        <guid>http://localhost:1313/p/some-skills-on-exporting-latex-in-markdown-as-pdf/</guid>
+        <guid>https://example.com/p/some-skills-on-exporting-latex-in-markdown-as-pdf/</guid>
         <description>&lt;h2 id=&#34;solve-the-problem-of-export-latex-code-in-markdown-as-pdf&#34;&gt;Solve the problem of export latex code in Markdown as pdf
 &lt;/h2&gt;&lt;p&gt;First, download VSCode and the &lt;code&gt;Markdown All in One&lt;/code&gt; extension.&lt;/p&gt;
 &lt;p&gt;Second, &lt;code&gt;Ctrl + Shift + P&lt;/code&gt; and input &lt;code&gt;Print current document to HTML&lt;/code&gt;.&lt;/p&gt;
@@ -3116,10 +2843,10 @@ e.g.&lt;/p&gt;
         </item>
         <item>
         <title>Some Skills on Modifying Pip Mirror Source and Installing Cuda in Conda</title>
-        <link>http://localhost:1313/p/some-skills-on-modifying-pip-mirror-source-and-installing-cuda-in-conda/</link>
+        <link>https://example.com/p/some-skills-on-modifying-pip-mirror-source-and-installing-cuda-in-conda/</link>
         <pubDate>Fri, 18 Oct 2024 15:28:15 +0800</pubDate>
         
-        <guid>http://localhost:1313/p/some-skills-on-modifying-pip-mirror-source-and-installing-cuda-in-conda/</guid>
+        <guid>https://example.com/p/some-skills-on-modifying-pip-mirror-source-and-installing-cuda-in-conda/</guid>
         <description>&lt;h2 id=&#34;python-permanently-modifies-pip-mirror-source&#34;&gt;Python permanently modifies pip mirror source
 &lt;/h2&gt;&lt;p&gt;If change the mirror source to Tsinghua Mirror Source, type the following code in the Terminal:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -3185,10 +2912,10 @@ e.g.&lt;/p&gt;
         </item>
         <item>
         <title>Some Skills on Image Processing</title>
-        <link>http://localhost:1313/p/some-skills-on-image-processing/</link>
+        <link>https://example.com/p/some-skills-on-image-processing/</link>
         <pubDate>Wed, 28 Aug 2024 14:14:07 +0800</pubDate>
         
-        <guid>http://localhost:1313/p/some-skills-on-image-processing/</guid>
+        <guid>https://example.com/p/some-skills-on-image-processing/</guid>
         <description>&lt;h2 id=&#34;image-pre-processingtransformation&#34;&gt;Image Pre-processing/Transformation
 &lt;/h2&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -3314,10 +3041,10 @@ e.g.&lt;/p&gt;
         </item>
         <item>
         <title>Diffusers</title>
-        <link>http://localhost:1313/p/diffusers/</link>
+        <link>https://example.com/p/diffusers/</link>
         <pubDate>Sun, 11 Aug 2024 12:09:12 +0800</pubDate>
         
-        <guid>http://localhost:1313/p/diffusers/</guid>
+        <guid>https://example.com/p/diffusers/</guid>
         <description>&lt;h2 id=&#34;learning-diffusers&#34;&gt;Learning &lt;code&gt;Diffusers&lt;/code&gt;
 &lt;/h2&gt;&lt;h3 id=&#34;installation&#34;&gt;Installation
 &lt;/h3&gt;&lt;p&gt;With &lt;code&gt;pip&lt;/code&gt;&lt;/p&gt;
@@ -3826,10 +3553,10 @@ e.g.&lt;/p&gt;
         </item>
         <item>
         <title>2024.08.02</title>
-        <link>http://localhost:1313/p/2024.08.02/</link>
+        <link>https://example.com/p/2024.08.02/</link>
         <pubDate>Fri, 02 Aug 2024 11:22:51 +0800</pubDate>
         
-        <guid>http://localhost:1313/p/2024.08.02/</guid>
+        <guid>https://example.com/p/2024.08.02/</guid>
         <description>
   &lt;div class=&#34;heart-icon&#34; id=&#34;heart&#34;&gt;
     &lt;svg xmlns=&#34;&#34; viewBox=&#34;0 0 24 24&#34;&gt;
@@ -3954,10 +3681,10 @@ e.g.&lt;/p&gt;
         </item>
         <item>
         <title>PCA and AutoEncoder</title>
-        <link>http://localhost:1313/p/pca-and-autoencoder/</link>
+        <link>https://example.com/p/pca-and-autoencoder/</link>
         <pubDate>Sat, 20 Jul 2024 14:13:42 +0800</pubDate>
         
-        <guid>http://localhost:1313/p/pca-and-autoencoder/</guid>
+        <guid>https://example.com/p/pca-and-autoencoder/</guid>
         <description>&lt;h2 id=&#34;difference-between-pca-and-autoencoder&#34;&gt;Difference Between PCA and AutoEncoder
 &lt;/h2&gt;&lt;h3 id=&#34;pca&#34;&gt;PCA
 &lt;/h3&gt;&lt;p&gt;Suppose there are m n-dimensional data, $ X_{n \times m} = [x_1, x_2,&amp;hellip;, x_m]$, where each $x$ is an n-dimensional column vector.&lt;/p&gt;
@@ -4030,10 +3757,10 @@ e.g.&lt;/p&gt;
         </item>
         <item>
         <title>2024.07.18</title>
-        <link>http://localhost:1313/p/2024.07.18/</link>
+        <link>https://example.com/p/2024.07.18/</link>
         <pubDate>Thu, 18 Jul 2024 23:45:09 +0800</pubDate>
         
-        <guid>http://localhost:1313/p/2024.07.18/</guid>
+        <guid>https://example.com/p/2024.07.18/</guid>
         <description>&lt;h2 id=&#34;study-on-score-based-generative-modeling&#34;&gt;Study on Score-Based Generative Modeling
 &lt;/h2&gt;&lt;p&gt;(●&amp;rsquo;◡&amp;rsquo;●)&lt;/p&gt;
 &lt;p&gt;About Score-Based Generative Modeling: the following article has given a clear explanation: &lt;a class=&#34;link&#34; href=&#34;https://kexue.fm/archives/9209#mjx-eqn-eq%3Abayes-dt&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -4044,10 +3771,10 @@ e.g.&lt;/p&gt;
         </item>
         <item>
         <title>Starting from Scratch: Creating and Pushing Your Blog Posts with Hugo and Git</title>
-        <link>http://localhost:1313/p/starting-from-scratch-creating-and-pushing-your-blog-posts-with-hugo-and-git/</link>
+        <link>https://example.com/p/starting-from-scratch-creating-and-pushing-your-blog-posts-with-hugo-and-git/</link>
         <pubDate>Tue, 16 Jul 2024 14:16:38 +0800</pubDate>
         
-        <guid>http://localhost:1313/p/starting-from-scratch-creating-and-pushing-your-blog-posts-with-hugo-and-git/</guid>
+        <guid>https://example.com/p/starting-from-scratch-creating-and-pushing-your-blog-posts-with-hugo-and-git/</guid>
         <description>&lt;h2 id=&#34;build-a-github-repository&#34;&gt;Build A Github Repository
 &lt;/h2&gt;&lt;p&gt;ԅ(¯﹃¯ԅ)&lt;/p&gt;
 &lt;h3 id=&#34;initialize&#34;&gt;Initialize
@@ -4166,10 +3893,10 @@ e.g.&lt;/p&gt;
         </item>
         <item>
         <title>My First Blog</title>
-        <link>http://localhost:1313/p/my-first-blog/</link>
+        <link>https://example.com/p/my-first-blog/</link>
         <pubDate>Tue, 16 Jul 2024 13:40:30 +0800</pubDate>
         
-        <guid>http://localhost:1313/p/my-first-blog/</guid>
+        <guid>https://example.com/p/my-first-blog/</guid>
         <description>&lt;h3 id=&#34;hello-serendpitys-blog&#34;&gt;Hello Serendpity&amp;rsquo;s Blog
 &lt;/h3&gt;&lt;p&gt;This is Serendpity&amp;rsquo;s first blog post. Love you all! ( •̀ ω •́ )y&lt;/p&gt;
 </description>
