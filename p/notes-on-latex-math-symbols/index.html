@@ -1,0 +1,2156 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="Introduction\rThe following tables are extracted from The Not So Short Introduction to LaTeX2e, aka. LaTeX2e in 90 minutes, by Tobias Oetiker, Hubert Partl, Irene Hyna, and Elisabeth Schlegl. It can be located here.\nTable: Math Mode Accents\rSymbol Command Symbol Command Symbol Command Symbol Command $\\hat{a}$ \\hat{a} $\\check{a}$ \\check{a} $\\tilde{a}$ \\tilde{a} $\\acute{a}$ \\acute{a} $\\grave{a}$ \\grave{a} $\\dot{a}$ \\dot{a} $\\ddot{a}$ \\ddot{a} $\\breve{a}$ \\breve{a} $\\bar{a}$ \\bar{a} $\\vec{a}$ \\vec{a} $\\widehat{A}$ \\widehat{A} $\\widetilde{A}$ \\widetilde{A} Table: Lowercase Greek Letters\rSymbol Command Symbol Command Symbol Command Symbol Command $\\alpha$ \\alpha $\\theta$ \\theta $o$ o $\\upsilon$ \\upsilon $\\beta$ \\beta $\\vartheta$ \\vartheta $\\pi$ \\pi $\\phi$ \\phi $\\gamma$ \\gamma $\\iota$ \\iota $\\varpi$ \\varpi $\\varphi$ \\varphi $\\delta$ \\delta $\\kappa$ \\kappa $\\rho$ \\rho $\\chi$ \\chi $\\epsilon$ \\epsilon $\\lambda$ \\lambda $\\varrho$ \\varrho $\\psi$ \\psi $\\varepsilon$ \\varepsilon $\\mu$ \\mu $\\sigma$ \\sigma $\\omega$ \\omega $\\zeta$ \\zeta $\\nu$ \\nu $\\varsigma$ \\varsigma $\\eta$ \\eta $\\xi$ \\xi $\\tau$ \\tau Table: Uppercase Greek Letters\rSymbol Command Symbol Command Symbol Command Symbol Command $\\Gamma$ \\Gamma $\\Lambda$ \\Lambda $\\Sigma$ \\Sigma $\\Psi$ \\Psi $\\Delta$ \\Delta $\\Xi$ \\Xi $\\Upsilon$ \\Upsilon $\\Omega$ \\Omega $\\Theta$ \\Theta $\\Pi$ \\Pi $\\Phi$ \\Phi Table: Binary Relations\rYou can produce corresponding negations by adding a \\not command as prefix to the following symbols.\n">
+<title>Notes on Latex Math Symbols</title>
+
+<link rel='canonical' href='http://localhost:1313/p/notes-on-latex-math-symbols/'>
+
+<link rel="stylesheet" href="/scss/style.min.b9c8156d464c343bdacaf14a871581fb94cbbdb9dd5cbce4ba017361187cc930.css"><meta property='og:title' content="Notes on Latex Math Symbols">
+<meta property='og:description' content="Introduction\rThe following tables are extracted from The Not So Short Introduction to LaTeX2e, aka. LaTeX2e in 90 minutes, by Tobias Oetiker, Hubert Partl, Irene Hyna, and Elisabeth Schlegl. It can be located here.\nTable: Math Mode Accents\rSymbol Command Symbol Command Symbol Command Symbol Command $\\hat{a}$ \\hat{a} $\\check{a}$ \\check{a} $\\tilde{a}$ \\tilde{a} $\\acute{a}$ \\acute{a} $\\grave{a}$ \\grave{a} $\\dot{a}$ \\dot{a} $\\ddot{a}$ \\ddot{a} $\\breve{a}$ \\breve{a} $\\bar{a}$ \\bar{a} $\\vec{a}$ \\vec{a} $\\widehat{A}$ \\widehat{A} $\\widetilde{A}$ \\widetilde{A} Table: Lowercase Greek Letters\rSymbol Command Symbol Command Symbol Command Symbol Command $\\alpha$ \\alpha $\\theta$ \\theta $o$ o $\\upsilon$ \\upsilon $\\beta$ \\beta $\\vartheta$ \\vartheta $\\pi$ \\pi $\\phi$ \\phi $\\gamma$ \\gamma $\\iota$ \\iota $\\varpi$ \\varpi $\\varphi$ \\varphi $\\delta$ \\delta $\\kappa$ \\kappa $\\rho$ \\rho $\\chi$ \\chi $\\epsilon$ \\epsilon $\\lambda$ \\lambda $\\varrho$ \\varrho $\\psi$ \\psi $\\varepsilon$ \\varepsilon $\\mu$ \\mu $\\sigma$ \\sigma $\\omega$ \\omega $\\zeta$ \\zeta $\\nu$ \\nu $\\varsigma$ \\varsigma $\\eta$ \\eta $\\xi$ \\xi $\\tau$ \\tau Table: Uppercase Greek Letters\rSymbol Command Symbol Command Symbol Command Symbol Command $\\Gamma$ \\Gamma $\\Lambda$ \\Lambda $\\Sigma$ \\Sigma $\\Psi$ \\Psi $\\Delta$ \\Delta $\\Xi$ \\Xi $\\Upsilon$ \\Upsilon $\\Omega$ \\Omega $\\Theta$ \\Theta $\\Pi$ \\Pi $\\Phi$ \\Phi Table: Binary Relations\rYou can produce corresponding negations by adding a \\not command as prefix to the following symbols.\n">
+<meta property='og:url' content='http://localhost:1313/p/notes-on-latex-math-symbols/'>
+<meta property='og:site_name' content='Serendipity&#39;s Blog'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Latex' /><meta property='article:published_time' content='2025-02-25T11:44:28&#43;08:00'/><meta property='article:modified_time' content='2025-02-25T11:44:28&#43;08:00'/><meta property='og:image' content='http://localhost:1313/post_img/2025-02-25/latex-logo.png' />
+<meta name="twitter:title" content="Notes on Latex Math Symbols">
+<meta name="twitter:description" content="Introduction\rThe following tables are extracted from The Not So Short Introduction to LaTeX2e, aka. LaTeX2e in 90 minutes, by Tobias Oetiker, Hubert Partl, Irene Hyna, and Elisabeth Schlegl. It can be located here.\nTable: Math Mode Accents\rSymbol Command Symbol Command Symbol Command Symbol Command $\\hat{a}$ \\hat{a} $\\check{a}$ \\check{a} $\\tilde{a}$ \\tilde{a} $\\acute{a}$ \\acute{a} $\\grave{a}$ \\grave{a} $\\dot{a}$ \\dot{a} $\\ddot{a}$ \\ddot{a} $\\breve{a}$ \\breve{a} $\\bar{a}$ \\bar{a} $\\vec{a}$ \\vec{a} $\\widehat{A}$ \\widehat{A} $\\widetilde{A}$ \\widetilde{A} Table: Lowercase Greek Letters\rSymbol Command Symbol Command Symbol Command Symbol Command $\\alpha$ \\alpha $\\theta$ \\theta $o$ o $\\upsilon$ \\upsilon $\\beta$ \\beta $\\vartheta$ \\vartheta $\\pi$ \\pi $\\phi$ \\phi $\\gamma$ \\gamma $\\iota$ \\iota $\\varpi$ \\varpi $\\varphi$ \\varphi $\\delta$ \\delta $\\kappa$ \\kappa $\\rho$ \\rho $\\chi$ \\chi $\\epsilon$ \\epsilon $\\lambda$ \\lambda $\\varrho$ \\varrho $\\psi$ \\psi $\\varepsilon$ \\varepsilon $\\mu$ \\mu $\\sigma$ \\sigma $\\omega$ \\omega $\\zeta$ \\zeta $\\nu$ \\nu $\\varsigma$ \\varsigma $\\eta$ \\eta $\\xi$ \\xi $\\tau$ \\tau Table: Uppercase Greek Letters\rSymbol Command Symbol Command Symbol Command Symbol Command $\\Gamma$ \\Gamma $\\Lambda$ \\Lambda $\\Sigma$ \\Sigma $\\Psi$ \\Psi $\\Delta$ \\Delta $\\Xi$ \\Xi $\\Upsilon$ \\Upsilon $\\Omega$ \\Omega $\\Theta$ \\Theta $\\Pi$ \\Pi $\\Phi$ \\Phi Table: Binary Relations\rYou can produce corresponding negations by adding a \\not command as prefix to the following symbols.\n"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='http://localhost:1313/post_img/2025-02-25/latex-logo.png' />
+    <link rel="shortcut icon" href="/favicon.ico" />
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    <img src="/avatar.png" width="300" height="300" class="site-logo" loading="lazy" alt="Avatar">
+                
+                </a>
+                
+                    <span class="emoji">🩷</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">Serendipity&#39;s Blog</a></h1>
+            <h2 class="site-description">Katrina, will I ever know your heart?</h2>
+        </div>
+    </header><ol class="menu-social">
+            
+                <li>
+                    <a 
+                        href='mailto:panmk@shanghaitech.edu.cn'
+                        target="_blank"
+                        title="Email"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="24" height="24" stroke-width="2"> <path d="M12 12m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0"></path> <path d="M16 12v1.5a2.5 2.5 0 0 0 5 0v-1.5a9 9 0 1 0 -5.5 8.28"></path> </svg> 
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://github.com/serendipityerr'
+                        target="_blank"
+                        title="serendipityerr"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://twitter.com'
+                        target="_blank"
+                        title="Twitter"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/page/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>Dark Mode</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">Table of contents</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#table-math-mode-accents">Table: Math Mode Accents</a></li>
+    <li><a href="#table-lowercase-greek-letters">Table: Lowercase Greek Letters</a></li>
+    <li><a href="#table-uppercase-greek-letters">Table: Uppercase Greek Letters</a></li>
+    <li><a href="#table-binary-relations">Table: Binary Relations</a></li>
+    <li><a href="#table-binary-operators">Table: Binary Operators</a></li>
+    <li><a href="#table-big-operators">Table: BIG Operators</a></li>
+    <li><a href="#table-arrows">Table: Arrows</a></li>
+    <li><a href="#table-delimiters">Table: Delimiters</a></li>
+    <li><a href="#table-miscellaneous-symbols">Table: Miscellaneous Symbols</a></li>
+    <li><a href="#table-non-mathematical-symbols">Table: Non-Mathematical Symbols</a></li>
+    <li><a href="#table-ams-delimiters">Table: AMS Delimiters</a></li>
+    <li><a href="#table-ams-binary-relations">Table: AMS Binary Relations</a></li>
+    <li><a href="#table-ams-arrows">Table: AMS Arrows</a></li>
+    <li><a href="#table-ams-negated-binary-relations-and-arrows">Table: AMS Negated Binary Relations and Arrows</a></li>
+    <li><a href="#table-ams-binary-operators">Table: AMS Binary Operators</a></li>
+    <li><a href="#table-ams-miscellaneous">Table: AMS Miscellaneous</a></li>
+    <li><a href="#table-math-alphabets">Table: Math Alphabets</a></li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/p/notes-on-latex-math-symbols/">
+                
+                    <img src="/post_img/2025-02-25/latex-logo.png" loading="lazy" alt="Featured image of post Notes on Latex Math Symbols" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/coding-knowledge/" style="background-color: #2a9d8f; color: #fff;">
+                Coding Knowledge
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/notes-on-latex-math-symbols/">Notes on Latex Math Symbols</a>
+        </h2>
+    
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Feb 25, 2025</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    6 minute read
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <h2 id="introduction">Introduction
+</h2><p>The following tables are extracted from <em>The Not So Short Introduction to LaTeX2e</em>, aka. <em>LaTeX2e in 90 minutes</em>, by Tobias Oetiker, Hubert Partl, Irene Hyna, and Elisabeth Schlegl. It can be located <a class="link" href="https://github.com/CTeX-org/lshort-zh-cn"  target="_blank" rel="noopener"
+    >here</a>.</p>
+<h2 id="table-math-mode-accents">Table: Math Mode Accents
+</h2><div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>Symbol</th>
+          <th>Command</th>
+          <th>Symbol</th>
+          <th>Command</th>
+          <th>Symbol</th>
+          <th>Command</th>
+          <th>Symbol</th>
+          <th>Command</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>$\hat{a}$</td>
+          <td>\hat{a}</td>
+          <td>$\check{a}$</td>
+          <td>\check{a}</td>
+          <td>$\tilde{a}$</td>
+          <td>\tilde{a}</td>
+          <td>$\acute{a}$</td>
+          <td>\acute{a}</td>
+      </tr>
+      <tr>
+          <td>$\grave{a}$</td>
+          <td>\grave{a}</td>
+          <td>$\dot{a}$</td>
+          <td>\dot{a}</td>
+          <td>$\ddot{a}$</td>
+          <td>\ddot{a}</td>
+          <td>$\breve{a}$</td>
+          <td>\breve{a}</td>
+      </tr>
+      <tr>
+          <td>$\bar{a}$</td>
+          <td>\bar{a}</td>
+          <td>$\vec{a}$</td>
+          <td>\vec{a}</td>
+          <td>$\widehat{A}$</td>
+          <td>\widehat{A}</td>
+          <td>$\widetilde{A}$</td>
+          <td>\widetilde{A}</td>
+      </tr>
+  </tbody>
+</table></div>
+<hr>
+<h2 id="table-lowercase-greek-letters">Table: Lowercase Greek Letters
+</h2><div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>Symbol</th>
+          <th>Command</th>
+          <th>Symbol</th>
+          <th>Command</th>
+          <th>Symbol</th>
+          <th>Command</th>
+          <th>Symbol</th>
+          <th>Command</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>$\alpha$</td>
+          <td>\alpha</td>
+          <td>$\theta$</td>
+          <td>\theta</td>
+          <td>$o$</td>
+          <td>o</td>
+          <td>$\upsilon$</td>
+          <td>\upsilon</td>
+      </tr>
+      <tr>
+          <td>$\beta$</td>
+          <td>\beta</td>
+          <td>$\vartheta$</td>
+          <td>\vartheta</td>
+          <td>$\pi$</td>
+          <td>\pi</td>
+          <td>$\phi$</td>
+          <td>\phi</td>
+      </tr>
+      <tr>
+          <td>$\gamma$</td>
+          <td>\gamma</td>
+          <td>$\iota$</td>
+          <td>\iota</td>
+          <td>$\varpi$</td>
+          <td>\varpi</td>
+          <td>$\varphi$</td>
+          <td>\varphi</td>
+      </tr>
+      <tr>
+          <td>$\delta$</td>
+          <td>\delta</td>
+          <td>$\kappa$</td>
+          <td>\kappa</td>
+          <td>$\rho$</td>
+          <td>\rho</td>
+          <td>$\chi$</td>
+          <td>\chi</td>
+      </tr>
+      <tr>
+          <td>$\epsilon$</td>
+          <td>\epsilon</td>
+          <td>$\lambda$</td>
+          <td>\lambda</td>
+          <td>$\varrho$</td>
+          <td>\varrho</td>
+          <td>$\psi$</td>
+          <td>\psi</td>
+      </tr>
+      <tr>
+          <td>$\varepsilon$</td>
+          <td>\varepsilon</td>
+          <td>$\mu$</td>
+          <td>\mu</td>
+          <td>$\sigma$</td>
+          <td>\sigma</td>
+          <td>$\omega$</td>
+          <td>\omega</td>
+      </tr>
+      <tr>
+          <td>$\zeta$</td>
+          <td>\zeta</td>
+          <td>$\nu$</td>
+          <td>\nu</td>
+          <td>$\varsigma$</td>
+          <td>\varsigma</td>
+          <td></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>$\eta$</td>
+          <td>\eta</td>
+          <td>$\xi$</td>
+          <td>\xi</td>
+          <td>$\tau$</td>
+          <td>\tau</td>
+          <td></td>
+          <td></td>
+      </tr>
+  </tbody>
+</table></div>
+<hr>
+<h2 id="table-uppercase-greek-letters">Table: Uppercase Greek Letters
+</h2><div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>Symbol</th>
+          <th>Command</th>
+          <th>Symbol</th>
+          <th>Command</th>
+          <th>Symbol</th>
+          <th>Command</th>
+          <th>Symbol</th>
+          <th>Command</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>$\Gamma$</td>
+          <td>\Gamma</td>
+          <td>$\Lambda$</td>
+          <td>\Lambda</td>
+          <td>$\Sigma$</td>
+          <td>\Sigma</td>
+          <td>$\Psi$</td>
+          <td>\Psi</td>
+      </tr>
+      <tr>
+          <td>$\Delta$</td>
+          <td>\Delta</td>
+          <td>$\Xi$</td>
+          <td>\Xi</td>
+          <td>$\Upsilon$</td>
+          <td>\Upsilon</td>
+          <td>$\Omega$</td>
+          <td>\Omega</td>
+      </tr>
+      <tr>
+          <td>$\Theta$</td>
+          <td>\Theta</td>
+          <td>$\Pi$</td>
+          <td>\Pi</td>
+          <td>$\Phi$</td>
+          <td>\Phi</td>
+          <td></td>
+          <td></td>
+      </tr>
+  </tbody>
+</table></div>
+<hr>
+<h2 id="table-binary-relations">Table: Binary Relations
+</h2><p>You can produce corresponding negations by adding a \not command as prefix to the following symbols.</p>
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>Symbol</th>
+          <th>Command</th>
+          <th>Symbol</th>
+          <th>Command</th>
+          <th>Symbol</th>
+          <th>Command</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>$&lt;$</td>
+          <td>&lt;</td>
+          <td>$&gt;$</td>
+          <td>&gt;</td>
+          <td>$=$</td>
+          <td>=</td>
+      </tr>
+      <tr>
+          <td>$\leq$</td>
+          <td>\leq or \le</td>
+          <td>$\geq$</td>
+          <td>\geq or \ge</td>
+          <td>$\equiv$</td>
+          <td>\equiv</td>
+      </tr>
+      <tr>
+          <td>$\ll$</td>
+          <td>\ll</td>
+          <td>$\gg$</td>
+          <td>\gg</td>
+          <td>$\doteq$</td>
+          <td>\doteq</td>
+      </tr>
+      <tr>
+          <td>$\prec$</td>
+          <td>\prec</td>
+          <td>$\succ$</td>
+          <td>\succ</td>
+          <td>$\sim$</td>
+          <td>\sim</td>
+      </tr>
+      <tr>
+          <td>$\preceq$</td>
+          <td>\preceq</td>
+          <td>$\succeq$</td>
+          <td>\succeq</td>
+          <td>$\simeq$</td>
+          <td>\simeq</td>
+      </tr>
+      <tr>
+          <td>$\subset$</td>
+          <td>\subset</td>
+          <td>$\supset$</td>
+          <td>\supset</td>
+          <td>$\approx$</td>
+          <td>\approx</td>
+      </tr>
+      <tr>
+          <td>$\subseteq$</td>
+          <td>\subseteq</td>
+          <td>$\supseteq$</td>
+          <td>\supseteq</td>
+          <td>$\cong$</td>
+          <td>\cong</td>
+      </tr>
+      <tr>
+          <td>$\sqsubset$</td>
+          <td>\sqsubset $^a$</td>
+          <td>$\sqsupset$</td>
+          <td>\sqsupset $^a$</td>
+          <td>$\Join$</td>
+          <td>\Join $^a$</td>
+      </tr>
+      <tr>
+          <td>$\sqsubseteq$</td>
+          <td>\sqsubseteq</td>
+          <td>$\sqsupseteq$</td>
+          <td>\sqsupseteq</td>
+          <td>$\bowtie$</td>
+          <td>\bowtie</td>
+      </tr>
+      <tr>
+          <td>$\in$</td>
+          <td>\in</td>
+          <td>$\ni$</td>
+          <td>\ni or \owns</td>
+          <td>$\propto$</td>
+          <td>\propto</td>
+      </tr>
+      <tr>
+          <td>$\vdash$</td>
+          <td>\vdash</td>
+          <td>$\dashv$</td>
+          <td>\dashv</td>
+          <td>$\models$</td>
+          <td>\models</td>
+      </tr>
+      <tr>
+          <td>$\mid$</td>
+          <td>\mid</td>
+          <td>$\parallel$</td>
+          <td>\parallel</td>
+          <td>$\perp$</td>
+          <td>\perp</td>
+      </tr>
+      <tr>
+          <td>$\smile$</td>
+          <td>\smile</td>
+          <td>$\frown$</td>
+          <td>\frown</td>
+          <td>$\asymp$</td>
+          <td>\asymp</td>
+      </tr>
+      <tr>
+          <td>$:$</td>
+          <td>:</td>
+          <td>$\notin$</td>
+          <td>\notin</td>
+          <td>$\neq$</td>
+          <td>\neq or \ne</td>
+      </tr>
+  </tbody>
+</table></div>
+<p><strong>$^a$ Use the <code>latexsym</code> package to access this symbol</strong></p>
+<hr>
+<h2 id="table-binary-operators">Table: Binary Operators
+</h2><div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>Symbol</th>
+          <th>Command</th>
+          <th>Symbol</th>
+          <th>Command</th>
+          <th>Symbol</th>
+          <th>Command</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>$+$</td>
+          <td>+</td>
+          <td>$-$</td>
+          <td>-</td>
+          <td></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>$\pm$</td>
+          <td>\pm</td>
+          <td>$\mp$</td>
+          <td>\mp</td>
+          <td>$\triangleleft$</td>
+          <td>\triangleleft</td>
+      </tr>
+      <tr>
+          <td>$\cdot$</td>
+          <td>\cdot</td>
+          <td>$\div$</td>
+          <td>\div</td>
+          <td>$\triangleright$</td>
+          <td>\triangleright</td>
+      </tr>
+      <tr>
+          <td>$\times$</td>
+          <td>\times</td>
+          <td>$\setminus$</td>
+          <td>\setminus</td>
+          <td>$\star$</td>
+          <td>\star</td>
+      </tr>
+      <tr>
+          <td>$\cup$</td>
+          <td>\cup</td>
+          <td>$\cap$</td>
+          <td>\cap</td>
+          <td>$\ast$</td>
+          <td>\ast</td>
+      </tr>
+      <tr>
+          <td>$\sqcup$</td>
+          <td>\sqcup</td>
+          <td>$\sqcap$</td>
+          <td>\sqcap</td>
+          <td>$\circ$</td>
+          <td>\circ</td>
+      </tr>
+      <tr>
+          <td>$\vee$</td>
+          <td>\vee or \lor</td>
+          <td>$\wedge$</td>
+          <td>\wedge or \land</td>
+          <td>$\bullet$</td>
+          <td>\bullet</td>
+      </tr>
+      <tr>
+          <td>$\oplus$</td>
+          <td>\oplus</td>
+          <td>$\ominus$</td>
+          <td>\ominus</td>
+          <td>$\diamond$</td>
+          <td>\diamond</td>
+      </tr>
+      <tr>
+          <td>$\odot$</td>
+          <td>\odot</td>
+          <td>$\oslash$</td>
+          <td>\oslash</td>
+          <td>$\uplus$</td>
+          <td>\uplus</td>
+      </tr>
+      <tr>
+          <td>$\otimes$</td>
+          <td>\otimes</td>
+          <td>$\bigcirc$</td>
+          <td>\bigcirc</td>
+          <td>$\amalg$</td>
+          <td>\amalg</td>
+      </tr>
+      <tr>
+          <td>$\bigtriangleup$</td>
+          <td>\bigtriangleup</td>
+          <td>$\bigtriangledown$</td>
+          <td>\bigtriangledown</td>
+          <td>$\dagger$</td>
+          <td>\dagger</td>
+      </tr>
+      <tr>
+          <td>$\lhd$</td>
+          <td>\lhd $^{a}$</td>
+          <td>$\rhd$</td>
+          <td>\rhd $^{a}$</td>
+          <td>$\ddagger$</td>
+          <td>\ddagger</td>
+      </tr>
+      <tr>
+          <td>$\unlhd$</td>
+          <td>\unlhd $^{a}$</td>
+          <td>$\unrhd$</td>
+          <td>\unrhd $^{a}$</td>
+          <td>$\wr$</td>
+          <td>\wr</td>
+      </tr>
+  </tbody>
+</table></div>
+<p><strong>$^a$ Use the <code>latexsym</code> package to access this symbol</strong></p>
+<hr>
+<h2 id="table-big-operators">Table: BIG Operators
+</h2><div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>Symbol</th>
+          <th>Command</th>
+          <th>Symbol</th>
+          <th>Command</th>
+          <th>Symbol</th>
+          <th>Command</th>
+          <th>Symbol</th>
+          <th>Command</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>$\sum$</td>
+          <td>\sum</td>
+          <td>$\bigcup$</td>
+          <td>\bigcup</td>
+          <td>$\bigvee$</td>
+          <td>\bigvee</td>
+          <td>$\bigoplus$</td>
+          <td>\bigoplus</td>
+      </tr>
+      <tr>
+          <td>$\prod$</td>
+          <td>\prod</td>
+          <td>$\bigcap$</td>
+          <td>\bigcap</td>
+          <td>$\bigwedge$</td>
+          <td>\bigwedge</td>
+          <td>$\bigotimes$</td>
+          <td>\bigotimes</td>
+      </tr>
+      <tr>
+          <td>$\coprod$</td>
+          <td>\coprod</td>
+          <td>$\bigsqcup$</td>
+          <td>\bigsqcup</td>
+          <td></td>
+          <td></td>
+          <td>$\bigodot$</td>
+          <td>\bigodot</td>
+      </tr>
+      <tr>
+          <td>$\int$</td>
+          <td>\int</td>
+          <td>$\oint$</td>
+          <td>\oint</td>
+          <td></td>
+          <td></td>
+          <td>$\biguplus$</td>
+          <td>\biguplus</td>
+      </tr>
+  </tbody>
+</table></div>
+<hr>
+<h2 id="table-arrows">Table: Arrows
+</h2><div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>Symbol</th>
+          <th>Command</th>
+          <th>Symbol</th>
+          <th>Command</th>
+          <th>Symbol</th>
+          <th>Command</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>$\leftarrow$</td>
+          <td>\leftarrow or \gets</td>
+          <td>$\longrightarrow$</td>
+          <td>\longleftarrow</td>
+          <td>$\uparrow$</td>
+          <td>\uparrow</td>
+      </tr>
+      <tr>
+          <td>$\rightarrow$</td>
+          <td>\rightarrow or \to</td>
+          <td>$\longrightarrow$</td>
+          <td>\longrightarrow</td>
+          <td>$\downarrow$</td>
+          <td>\downarrow</td>
+      </tr>
+      <tr>
+          <td>$\leftrightarrow$</td>
+          <td>\leftrightarrow</td>
+          <td>$\longleftrightarrow$</td>
+          <td>\longleftrightarrow</td>
+          <td>$\updownarrow$</td>
+          <td>\updownarrow</td>
+      </tr>
+      <tr>
+          <td>$\Leftarrow$</td>
+          <td>\Leftarrow</td>
+          <td>$\Leftarrow$</td>
+          <td>\Leftarrow</td>
+          <td>$\Uparrow$</td>
+          <td>\Uparrow</td>
+      </tr>
+      <tr>
+          <td>$\Rightarrow$</td>
+          <td>\Rightarrow</td>
+          <td>$\Longrightarrow$</td>
+          <td>\Longrightarrow</td>
+          <td>$\Downarrow$</td>
+          <td>\Downarrow</td>
+      </tr>
+      <tr>
+          <td>$\Leftrightarrow$</td>
+          <td>\Leftrightarrow</td>
+          <td>$\Leftrightarrow$</td>
+          <td>\Leftrightarrow</td>
+          <td>$\Updownarrow$</td>
+          <td>\Downarrow</td>
+      </tr>
+      <tr>
+          <td>$\mapsto$</td>
+          <td>\mapsto</td>
+          <td>$\longmapsto$</td>
+          <td>\longmapsto</td>
+          <td>$\nearrow$</td>
+          <td>\nearrow</td>
+      </tr>
+      <tr>
+          <td>$\hookleftarrow$</td>
+          <td>\hookleftarrow</td>
+          <td>$\hookrightarrow$</td>
+          <td>\hookrightarrow</td>
+          <td>$\searrow$</td>
+          <td>\searrow</td>
+      </tr>
+      <tr>
+          <td>$\leftharpoonup$</td>
+          <td>\leftharpoonup</td>
+          <td>$\rightharpoonup$</td>
+          <td>\rightharpoonup</td>
+          <td>$\swarrow$</td>
+          <td>\swarrow</td>
+      </tr>
+      <tr>
+          <td>$\leftharpoondown$</td>
+          <td>\leftharpoondown</td>
+          <td>$\rightharpoondown$</td>
+          <td>\rightharpoondown</td>
+          <td>$\nwarrow$</td>
+          <td>\nwarrow</td>
+      </tr>
+      <tr>
+          <td>$\rightleftharpoons$</td>
+          <td>\rightleftharpoons</td>
+          <td>$\iff$</td>
+          <td>\iff (bigger spaces)</td>
+          <td>$\leadsto$</td>
+          <td>\Leadsto $^{a}$</td>
+      </tr>
+  </tbody>
+</table></div>
+<p><strong>$^a$ Use the <code>latexsym</code> package to access this symbol</strong></p>
+<hr>
+<h2 id="table-delimiters">Table: Delimiters
+</h2><div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>Symbol</th>
+          <th>Command</th>
+          <th>Symbol</th>
+          <th>Command</th>
+          <th>Symbol</th>
+          <th>Command</th>
+          <th>Symbol</th>
+          <th>Command</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>$($</td>
+          <td>\lparen</td>
+          <td>$)$</td>
+          <td>\rparen</td>
+          <td>$\uparrow$</td>
+          <td>\uparrow</td>
+          <td>$\Uparrow$</td>
+          <td>\Uparrow</td>
+      </tr>
+      <tr>
+          <td>$[$</td>
+          <td>[ or \lbrack</td>
+          <td>$]$</td>
+          <td>] or \rbrack</td>
+          <td>$\downarrow$</td>
+          <td>\downarrow</td>
+          <td>$\Downarrow$</td>
+          <td>\Downarrow</td>
+      </tr>
+      <tr>
+          <td>{</td>
+          <td>\{ or \lbrace</td>
+          <td>}</td>
+          <td>\} or \rbrace</td>
+          <td>$\updownarrow$</td>
+          <td>\updownarrow</td>
+          <td>$\Updownarrow$</td>
+          <td>\Updownarrow</td>
+      </tr>
+      <tr>
+          <td>$\langle$</td>
+          <td>\langle</td>
+          <td>$\rangle$</td>
+          <td>\rangle</td>
+          <td>$\vert$</td>
+          <td>| or \vert</td>
+          <td>$\Vert$</td>
+          <td>\| or \Vert</td>
+      </tr>
+      <tr>
+          <td>$\lfloor$</td>
+          <td>\lfloor</td>
+          <td>$\rfloor$</td>
+          <td>\rfloor</td>
+          <td>$\lceil$</td>
+          <td>\lceil</td>
+          <td>$\rceil$</td>
+          <td>\rceil</td>
+      </tr>
+      <tr>
+          <td>$/$</td>
+          <td>/</td>
+          <td>$\backslash$</td>
+          <td>\backslash</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+      </tr>
+  </tbody>
+</table></div>
+<hr>
+<h2 id="table-miscellaneous-symbols">Table: Miscellaneous Symbols
+</h2><div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>Symbol</th>
+          <th>Command</th>
+          <th>Symbol</th>
+          <th>Command</th>
+          <th>Symbol</th>
+          <th>Command</th>
+          <th>Symbol</th>
+          <th>Command</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>$\dots$</td>
+          <td>\dots</td>
+          <td>$\cdots$</td>
+          <td>\cdots</td>
+          <td>$\vdots$</td>
+          <td>\vdots</td>
+          <td>$\ddots$</td>
+          <td>\ddots</td>
+      </tr>
+      <tr>
+          <td>$\hbar$</td>
+          <td>\hbar</td>
+          <td>$\imath$</td>
+          <td>\imath</td>
+          <td>$\jmath$</td>
+          <td>\jmath</td>
+          <td>$\ell$</td>
+          <td>\ell</td>
+      </tr>
+      <tr>
+          <td>$\Re$</td>
+          <td>\Re</td>
+          <td>$\Im$</td>
+          <td>\Im</td>
+          <td>$\aleph$</td>
+          <td>\aleph</td>
+          <td>$\wp$</td>
+          <td>\wp</td>
+      </tr>
+      <tr>
+          <td>$\forall$</td>
+          <td>\forall</td>
+          <td>$\exists$</td>
+          <td>\exists</td>
+          <td>$\mho$</td>
+          <td>\mho $^a$</td>
+          <td>$\partial$</td>
+          <td>\partial</td>
+      </tr>
+      <tr>
+          <td>$'$</td>
+          <td>'</td>
+          <td>$'$</td>
+          <td>\prime</td>
+          <td>$\emptyset$</td>
+          <td>\emptyset</td>
+          <td>$\infty$</td>
+          <td>\infty</td>
+      </tr>
+      <tr>
+          <td>$\nabla$</td>
+          <td>\nabla</td>
+          <td>$\triangle$</td>
+          <td>\triangle</td>
+          <td>$\Box$</td>
+          <td>\Box $^a$</td>
+          <td>$\Diamond$</td>
+          <td>\Diamond $^a$</td>
+      </tr>
+      <tr>
+          <td>$\bot$</td>
+          <td>\bot</td>
+          <td>$\top$</td>
+          <td>\top</td>
+          <td>$\angle$</td>
+          <td>\angle</td>
+          <td>$\surd$</td>
+          <td>\surd</td>
+      </tr>
+      <tr>
+          <td>$\diamondsuit$</td>
+          <td>\diamondsuit</td>
+          <td>$\heartsuit$</td>
+          <td>\heartsuit</td>
+          <td>$\clubsuit$</td>
+          <td>\clubsuit</td>
+          <td>$\spadesuit$</td>
+          <td>\spadesuit</td>
+      </tr>
+      <tr>
+          <td>$\neg$</td>
+          <td>\neg or \lnot</td>
+          <td>$\flat$</td>
+          <td>\flat</td>
+          <td>$\natural$</td>
+          <td>\natural</td>
+          <td>$\sharp$</td>
+          <td>\sharp</td>
+      </tr>
+  </tbody>
+</table></div>
+<p><strong>$^a$ Use the <code>latexsym</code> package to access this symbol</strong></p>
+<hr>
+<h2 id="table-non-mathematical-symbols">Table: Non-Mathematical Symbols
+</h2><p>These symbols can also be used in text mode.</p>
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>Symbol</th>
+          <th>Command</th>
+          <th>Symbol</th>
+          <th>Command</th>
+          <th>Symbol</th>
+          <th>Command</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>$\dagger$</td>
+          <td>\dagger</td>
+          <td>$\S$</td>
+          <td>\S</td>
+          <td>$\copyright$</td>
+          <td>\copyright</td>
+      </tr>
+      <tr>
+          <td>$\ddag$</td>
+          <td>\ddag</td>
+          <td>$\P$</td>
+          <td>\P</td>
+          <td>$\pounds$</td>
+          <td>\pounds</td>
+      </tr>
+  </tbody>
+</table></div>
+<hr>
+<h2 id="table-ams-delimiters">Table: AMS Delimiters
+</h2><div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>Symbol</th>
+          <th>Command</th>
+          <th>Symbol</th>
+          <th>Command</th>
+          <th>Symbol</th>
+          <th>Command</th>
+          <th>Symbol</th>
+          <th>Command</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>$\ulcorner$</td>
+          <td>\ulcorner</td>
+          <td>$\urcorner$</td>
+          <td>\urcorner</td>
+          <td>$\llcorner$</td>
+          <td>\llcorner</td>
+          <td>$\lrcorner$</td>
+          <td>\lrcorner</td>
+      </tr>
+  </tbody>
+</table></div>
+<hr>
+<h2 id="table-ams-binary-relations">Table: AMS Binary Relations
+</h2><div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>Symbol</th>
+          <th>Command</th>
+          <th>Symbol</th>
+          <th>Command</th>
+          <th>Symbol</th>
+          <th>Command</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>$\lessdot$</td>
+          <td>\lessdot</td>
+          <td>$\gtrdot$</td>
+          <td>\gtrdot</td>
+          <td>$\doteqdot$</td>
+          <td>\doteqdot or \Doteq</td>
+      </tr>
+      <tr>
+          <td>$\leqslant$</td>
+          <td>\leqslant</td>
+          <td>$\geqslant$</td>
+          <td>\geqslant</td>
+          <td>$\risingdotseq$</td>
+          <td>\risingdotseq</td>
+      </tr>
+      <tr>
+          <td>$\eqslantless$</td>
+          <td>\eqslantless</td>
+          <td>$\eqslantgtr$</td>
+          <td>\eqslantgtr</td>
+          <td>$\fallingdotseq$</td>
+          <td>\fallingdotseq</td>
+      </tr>
+      <tr>
+          <td>$\leqq$</td>
+          <td>\leqq</td>
+          <td>$\geqq$</td>
+          <td>\geqq</td>
+          <td>$\eqcirc$</td>
+          <td>\eqcirc</td>
+      </tr>
+      <tr>
+          <td>$\lll$</td>
+          <td>\lll or \llless</td>
+          <td>$\ggg$</td>
+          <td>\ggg or \gggtr</td>
+          <td>$\circeq$</td>
+          <td>\circeq</td>
+      </tr>
+      <tr>
+          <td>$\lesssim$</td>
+          <td>\lesssim</td>
+          <td>$\gtrsim$</td>
+          <td>\gtrsim</td>
+          <td>$\triangleq$</td>
+          <td>\triangleq</td>
+      </tr>
+      <tr>
+          <td>$\lessapprox$</td>
+          <td>\lessapprox</td>
+          <td>$\gtrapprox$</td>
+          <td>\gtrapprox</td>
+          <td>$\bumpeq$</td>
+          <td>\bumpeq</td>
+      </tr>
+      <tr>
+          <td>$\lessgtr$</td>
+          <td>\lessgtr</td>
+          <td>$\gtrless$</td>
+          <td>\gtrless</td>
+          <td>$\Bumpeq$</td>
+          <td>\Bumpeq</td>
+      </tr>
+      <tr>
+          <td>$\lesseqgtr$</td>
+          <td>\lesseqgtr</td>
+          <td>$\gtreqless$</td>
+          <td>\gtreqless</td>
+          <td>$\thicksim$</td>
+          <td>\thicksim</td>
+      </tr>
+      <tr>
+          <td>$\lesseqqgtr$</td>
+          <td>\lesseqqgtr</td>
+          <td>$\gtreqqless$</td>
+          <td>\gtreqqless</td>
+          <td>$\thickapprox$</td>
+          <td>\thickapprox</td>
+      </tr>
+      <tr>
+          <td>$\preccurlyeq$</td>
+          <td>\preccurlyeq</td>
+          <td>$\succcurlyeq$</td>
+          <td>\succcurlyeq</td>
+          <td>$\approxeq$</td>
+          <td>\approxeq</td>
+      </tr>
+      <tr>
+          <td>$\curlyeqprec$</td>
+          <td>\curlyeqprec</td>
+          <td>$\curlyeqsucc$</td>
+          <td>\curlyeqsucc</td>
+          <td>$\backsim$</td>
+          <td>\backsim</td>
+      </tr>
+      <tr>
+          <td>$\precsim$</td>
+          <td>\precsim</td>
+          <td>$\succsim$</td>
+          <td>\succsim</td>
+          <td>$\backsimeq$</td>
+          <td>\backsimeq</td>
+      </tr>
+      <tr>
+          <td>$\precapprox$</td>
+          <td>\precapprox</td>
+          <td>$\succapprox$</td>
+          <td>\succapprox</td>
+          <td>$\vDash$</td>
+          <td>\vDash</td>
+      </tr>
+      <tr>
+          <td>$\subseteqq$</td>
+          <td>\subseteqq</td>
+          <td>$\supseteqq$</td>
+          <td>\supseteqq</td>
+          <td>$\Vdash$</td>
+          <td>\Vdash</td>
+      </tr>
+      <tr>
+          <td>$\Subset$</td>
+          <td>\Subset</td>
+          <td>$\Supset$</td>
+          <td>\Supset</td>
+          <td>$\Vvdash$</td>
+          <td>\Vvdash</td>
+      </tr>
+      <tr>
+          <td>$\sqsubset$</td>
+          <td>\sqsubset</td>
+          <td>$\sqsupset$</td>
+          <td>\sqsupset</td>
+          <td>$\backepsilon$</td>
+          <td>\backepsilon</td>
+      </tr>
+      <tr>
+          <td>$\therefore$</td>
+          <td>\therefore</td>
+          <td>$\because$</td>
+          <td>\because</td>
+          <td>$\varpropto$</td>
+          <td>\varpropto</td>
+      </tr>
+      <tr>
+          <td>$\shortmid$</td>
+          <td>\shortmid</td>
+          <td>$\shortparallel$</td>
+          <td>\shortparallel</td>
+          <td>$\between$</td>
+          <td>\between</td>
+      </tr>
+      <tr>
+          <td>$\smallsmile$</td>
+          <td>\smallsmile</td>
+          <td>$\smallfrown$</td>
+          <td>\smallfrown</td>
+          <td>$\pitchfork$</td>
+          <td>\pitchfork</td>
+      </tr>
+      <tr>
+          <td>$\vartriangleleft$</td>
+          <td>\vartriangleleft</td>
+          <td>$\vartriangleright$</td>
+          <td>\vartriangleright</td>
+          <td>$\blacktriangleleft$</td>
+          <td>\blacktriangleleft</td>
+      </tr>
+      <tr>
+          <td>$\trianglelefteq$</td>
+          <td>\trianglelefteq</td>
+          <td>$\trianglerighteq$</td>
+          <td>\trianglerighteq</td>
+          <td>$\blacktriangleright$</td>
+          <td>\blacktriangleright</td>
+      </tr>
+  </tbody>
+</table></div>
+<hr>
+<h2 id="table-ams-arrows">Table: AMS Arrows
+</h2><div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>Symbol</th>
+          <th>Command</th>
+          <th>Symbol</th>
+          <th>Command</th>
+          <th>Symbol</th>
+          <th>Command</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>$\dashleftarrow$</td>
+          <td>\dashleftarrow</td>
+          <td>$\dashrightarrow$</td>
+          <td>\dashrightarrow</td>
+          <td>$\multimap$</td>
+          <td>\multimap</td>
+      </tr>
+      <tr>
+          <td>$\leftleftarrows$</td>
+          <td>\leftleftarrows</td>
+          <td>$\rightrightarrows$</td>
+          <td>\rightrightarrows</td>
+          <td>$\upuparrows$</td>
+          <td>\upuparrows</td>
+      </tr>
+      <tr>
+          <td>$\leftrightarrows$</td>
+          <td>\leftrightarrows</td>
+          <td>$\rightleftarrows$</td>
+          <td>\rightleftarrows</td>
+          <td>$\downdownarrows$</td>
+          <td>\downdownarrows</td>
+      </tr>
+      <tr>
+          <td>$\Lleftarrow$</td>
+          <td>\Lleftarrow</td>
+          <td>$\Rrightarrow$</td>
+          <td>\Rrightarrow</td>
+          <td>$\upharpoonleft$</td>
+          <td>\upharpoonleft</td>
+      </tr>
+      <tr>
+          <td>$\twoheadleftarrow$</td>
+          <td>\twoheadleftarrow</td>
+          <td>$\twoheadrightarrow$</td>
+          <td>\twoheadrightarrow</td>
+          <td>$\upharpoonright$</td>
+          <td>\upharpoonright</td>
+      </tr>
+      <tr>
+          <td>$\leftarrowtail$</td>
+          <td>\leftarrowtail</td>
+          <td>$\rightarrowtail$</td>
+          <td>\rightarrowtail</td>
+          <td>$\downharpoonleft$</td>
+          <td>\downharpoonleft</td>
+      </tr>
+      <tr>
+          <td>$\leftrightharpoons$</td>
+          <td>\leftrightharpoons</td>
+          <td>$\rightleftharpoons$</td>
+          <td>\rightleftharpoons</td>
+          <td>$\downharpoonright$</td>
+          <td>\downharpoonright</td>
+      </tr>
+      <tr>
+          <td>$\Lsh$</td>
+          <td>\Lsh</td>
+          <td>$\Rsh$</td>
+          <td>\Rsh</td>
+          <td>$\rightsquigarrow$</td>
+          <td>\rightsquigarrow</td>
+      </tr>
+      <tr>
+          <td>$\looparrowleft$</td>
+          <td>\looparrowleft</td>
+          <td>$\looparrowright$</td>
+          <td>\looparrowright</td>
+          <td>$\leftrightsquigarrow$</td>
+          <td>\leftrightsquigarrow</td>
+      </tr>
+      <tr>
+          <td>$\curvearrowleft$</td>
+          <td>\curvearrowleft</td>
+          <td>$\curvearrowright$</td>
+          <td>\curvearrowright</td>
+          <td></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>$\circlearrowleft$</td>
+          <td>\circlearrowleft</td>
+          <td>$\circlearrowright$</td>
+          <td>\circlearrowright</td>
+          <td></td>
+          <td></td>
+      </tr>
+  </tbody>
+</table></div>
+<hr>
+<h2 id="table-ams-negated-binary-relations-and-arrows">Table: AMS Negated Binary Relations and Arrows
+</h2><div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>Symbol</th>
+          <th>Command</th>
+          <th>Symbol</th>
+          <th>Command</th>
+          <th>Symbol</th>
+          <th>Command</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>$\nless$</td>
+          <td>\nless</td>
+          <td>$\ngtr$</td>
+          <td>\ngtr</td>
+          <td>$\varsubsetneqq$</td>
+          <td>\varsubsetneqq</td>
+      </tr>
+      <tr>
+          <td>$\lneq$</td>
+          <td>\lneq</td>
+          <td>$\gneq$</td>
+          <td>\gneq</td>
+          <td>$\varsupsetneqq$</td>
+          <td>\varsupsetneqq</td>
+      </tr>
+      <tr>
+          <td>$\nleq$</td>
+          <td>\nleq</td>
+          <td>$\ngeq$</td>
+          <td>\ngeq</td>
+          <td>$\nsubseteqq$</td>
+          <td>\nsubseteqq</td>
+      </tr>
+      <tr>
+          <td>$\nleqslant$</td>
+          <td>\nleqslant</td>
+          <td>$\ngeqslant$</td>
+          <td>\ngeqslant</td>
+          <td>$\nsupseteq$</td>
+          <td>\nsupseteq</td>
+      </tr>
+      <tr>
+          <td>$\lneqq$</td>
+          <td>\lneqq</td>
+          <td>$\gneqq$</td>
+          <td>\gneqq</td>
+          <td>$\nmid$</td>
+          <td>\nmid</td>
+      </tr>
+      <tr>
+          <td>$\lvertneqq$</td>
+          <td>\lvertneqq</td>
+          <td>$\gvertneqq$</td>
+          <td>\gvertneqq</td>
+          <td>$\nparallel$</td>
+          <td>\nparallel</td>
+      </tr>
+      <tr>
+          <td>$\nleqq$</td>
+          <td>\nleqq</td>
+          <td>$\ngeqq$</td>
+          <td>\ngeqq</td>
+          <td>$\nshortmid$</td>
+          <td>\nshortmid</td>
+      </tr>
+      <tr>
+          <td>$\lnsim$</td>
+          <td>\lnsim</td>
+          <td>$\gnsim$</td>
+          <td>\gnsim</td>
+          <td>$\nshortparallel$</td>
+          <td>\nshortparallel</td>
+      </tr>
+      <tr>
+          <td>$\lnapprox$</td>
+          <td>\lnapprox</td>
+          <td>$\gnapprox$</td>
+          <td>\gnapprox</td>
+          <td>$\nsim$</td>
+          <td>\nsim</td>
+      </tr>
+      <tr>
+          <td>$\nprec$</td>
+          <td>\nprec</td>
+          <td>$\nsucc$</td>
+          <td>\nsucc</td>
+          <td>$\ncong$</td>
+          <td>\ncong</td>
+      </tr>
+      <tr>
+          <td>$\npreceq$</td>
+          <td>\npreceq</td>
+          <td>$\nsucceq$</td>
+          <td>\nsucceq</td>
+          <td>$\nvdash$</td>
+          <td>\nvdash</td>
+      </tr>
+      <tr>
+          <td>$\precneqq$</td>
+          <td>\precneqq</td>
+          <td>$\succneqq$</td>
+          <td>\succneqq</td>
+          <td>$\nvDash$</td>
+          <td>\nvDash</td>
+      </tr>
+      <tr>
+          <td>$\precnsim$</td>
+          <td>\precnsim</td>
+          <td>$\succnsim$</td>
+          <td>\succnsim</td>
+          <td>$\nVdash$</td>
+          <td>\nVdash</td>
+      </tr>
+      <tr>
+          <td>$\precnapprox$</td>
+          <td>\precnapprox</td>
+          <td>$\succnapprox$</td>
+          <td>\succnapprox</td>
+          <td>$\nVDash$</td>
+          <td>\nVDash</td>
+      </tr>
+      <tr>
+          <td>$\subsetneq$</td>
+          <td>\subsetneq</td>
+          <td>$\supsetneq$</td>
+          <td>\supsetneq</td>
+          <td>$\ntriangleleft$</td>
+          <td>\ntriangleleft</td>
+      </tr>
+      <tr>
+          <td>$\varsubsetneq$</td>
+          <td>\varsubsetneq</td>
+          <td>$\varsupsetneq$</td>
+          <td>\varsupsetneq</td>
+          <td>$\ntriangleright$</td>
+          <td>\ntriangleright</td>
+      </tr>
+      <tr>
+          <td>$\nsubseteq$</td>
+          <td>\nsubseteq</td>
+          <td>$\nsupseteq$</td>
+          <td>\nsupseteq</td>
+          <td>$\ntrianglelefteq$</td>
+          <td>\ntrianglelefteq</td>
+      </tr>
+      <tr>
+          <td>$\subsetneqq$</td>
+          <td>\subsetneqq</td>
+          <td>$\supsetneqq$</td>
+          <td>\supsetneqq</td>
+          <td>$\ntrianglerighteq$</td>
+          <td>\ntrianglerighteq</td>
+      </tr>
+      <tr>
+          <td>$\nleftarrow$</td>
+          <td>\nleftarrow</td>
+          <td>$\nrightarrow$</td>
+          <td>\nrightarrow</td>
+          <td>$\nleftrightarrow$</td>
+          <td>\nleftrightarrow</td>
+      </tr>
+      <tr>
+          <td>$\nLeftarrow$</td>
+          <td>\nLeftarrow</td>
+          <td>$\nRightarrow$</td>
+          <td>\nRightarrow</td>
+          <td>$\nLeftrightarrow$</td>
+          <td>\nLeftrightarrow</td>
+      </tr>
+  </tbody>
+</table></div>
+<hr>
+<h2 id="table-ams-binary-operators">Table: AMS Binary Operators
+</h2><div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>Symbol</th>
+          <th>Command</th>
+          <th>Symbol</th>
+          <th>Command</th>
+          <th>Symbol</th>
+          <th>Command</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>$\dotplus$</td>
+          <td>\dotplus</td>
+          <td>$\centerdot$</td>
+          <td>\centerdot</td>
+          <td>$\intercal$</td>
+          <td>\intercal</td>
+      </tr>
+      <tr>
+          <td>$\ltimes$</td>
+          <td>\ltimes</td>
+          <td>$\rtimes$</td>
+          <td>\rtimes</td>
+          <td>$\divideontimes$</td>
+          <td>\divideontimes</td>
+      </tr>
+      <tr>
+          <td>$\Cup$</td>
+          <td>\Cup or \doublecup</td>
+          <td>$\Cap$</td>
+          <td>\Cap or \doublecap</td>
+          <td>$\smallsetminus$</td>
+          <td>\smallsetminus</td>
+      </tr>
+      <tr>
+          <td>$\veebar$</td>
+          <td>\veebar</td>
+          <td>$\barwedge$</td>
+          <td>\barwedge</td>
+          <td>$\doublebarwedge$</td>
+          <td>\doublebarwedge</td>
+      </tr>
+      <tr>
+          <td>$\boxplus$</td>
+          <td>\boxplus</td>
+          <td>$\boxminus$</td>
+          <td>\boxminus</td>
+          <td>$\circleddash$</td>
+          <td>\circleddash</td>
+      </tr>
+      <tr>
+          <td>$\boxtimes$</td>
+          <td>\boxtimes</td>
+          <td>$\boxdot$</td>
+          <td>\boxdot</td>
+          <td>$\circledcirc$</td>
+          <td>\circledcirc</td>
+      </tr>
+      <tr>
+          <td>$\leftthreetimes$</td>
+          <td>\leftthreetimes</td>
+          <td>$\rightthreetimes$</td>
+          <td>\rightthreetimes</td>
+          <td>$\circledast$</td>
+          <td>\circledast</td>
+      </tr>
+      <tr>
+          <td>$\curlyvee$</td>
+          <td>\curlyvee</td>
+          <td>$\curlywedge$</td>
+          <td>\curlywedge</td>
+          <td></td>
+          <td></td>
+      </tr>
+  </tbody>
+</table></div>
+<hr>
+<h2 id="table-ams-miscellaneous">Table: AMS Miscellaneous
+</h2><div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>Symbol</th>
+          <th>Command</th>
+          <th>Symbol</th>
+          <th>Command</th>
+          <th>Symbol</th>
+          <th>Command</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>$\hbar$</td>
+          <td>\hbar</td>
+          <td>$\hslash$</td>
+          <td>\hslash</td>
+          <td>$\Bbbk$</td>
+          <td>\Bbbk</td>
+      </tr>
+      <tr>
+          <td>$\square$</td>
+          <td>\square</td>
+          <td>$\blacksquare$</td>
+          <td>\blacksquare</td>
+          <td>$\circledS$</td>
+          <td>\circledS</td>
+      </tr>
+      <tr>
+          <td>$\vartriangle$</td>
+          <td>\vartriangle</td>
+          <td>$\blacktriangle$</td>
+          <td>\blacktriangle</td>
+          <td>$\complement$</td>
+          <td>\complement</td>
+      </tr>
+      <tr>
+          <td>$\triangledown$</td>
+          <td>\triangledown</td>
+          <td>$\blacktriangledown$</td>
+          <td>\blacktriangledown</td>
+          <td>$\Game$</td>
+          <td>\Game</td>
+      </tr>
+      <tr>
+          <td>$\lozenge$</td>
+          <td>\lozenge</td>
+          <td>$\blacklozenge$</td>
+          <td>\blacklozenge</td>
+          <td>$\bigstar$</td>
+          <td>\bigstar</td>
+      </tr>
+      <tr>
+          <td>$\angle$</td>
+          <td>\angle</td>
+          <td>$\measuredangle$</td>
+          <td>\measuredangle</td>
+          <td>$\sphericalangle$</td>
+          <td>\sphericalangle</td>
+      </tr>
+      <tr>
+          <td>$\diagup$</td>
+          <td>\diagup</td>
+          <td>$\diagdown$</td>
+          <td>\diagdown</td>
+          <td>$\backprime$</td>
+          <td>\backprime</td>
+      </tr>
+      <tr>
+          <td>$\nexists$</td>
+          <td>\nexists</td>
+          <td>$\Finv$</td>
+          <td>\Finv</td>
+          <td>$\varnothing$</td>
+          <td>\varnothing</td>
+      </tr>
+      <tr>
+          <td>$\eth$</td>
+          <td>\eth</td>
+          <td>$\mho$</td>
+          <td>\mho</td>
+          <td></td>
+          <td></td>
+      </tr>
+  </tbody>
+</table></div>
+<hr>
+<h2 id="table-math-alphabets">Table: Math Alphabets
+</h2><div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>Example</th>
+          <th>Command</th>
+          <th>Required package</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>$\mathrm{ABCdef}$</td>
+          <td>\mathrm{ABCdef}</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>$\mathit{ABCdef}$</td>
+          <td>\mathit{ABCdef}</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>$\mathnormal{ABCdef}$</td>
+          <td>\mathnormal{ABCdef}</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>$\mathcal{ABC}$</td>
+          <td>\mathcal{ABC}</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>$\mathscr{ABC}$</td>
+          <td>\mathcal{ABC}</td>
+          <td><code>eucal</code> with option: \mathcal</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td>\mathscr{ABC}</td>
+          <td>or <code>eucal</code> with option: \mathscr</td>
+      </tr>
+      <tr>
+          <td>$\mathfrak{ABCdef}$</td>
+          <td>\mathfrak{ABCdef}</td>
+          <td><code>eufrak</code></td>
+      </tr>
+      <tr>
+          <td>$\mathbb{ABC}$</td>
+          <td>\mathbb{ABC}</td>
+          <td><code>amsfonts</code> or <code>amssymb</code></td>
+      </tr>
+  </tbody>
+</table></div>
+<p><em>Reprinted with permission from <a class="link" href="https://www.math.uci.edu/~xiangwen/pdf/LaTeX-Math-Symbols.pdf"  target="_blank" rel="noopener"
+    >LaTeX Math Symbols</a></em></p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/latex/">Latex</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>All Rights Reserved</span>
+    </section>
+    </footer>
+
+
+    
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI&#43;WdtXRGWt2kTvGFasHpSy3SV"crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG&#43;vnGctmUb0ZY0l8"crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"integrity="sha384-&#43;VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4&#43;/RRE05"crossorigin="anonymous"
+                defer
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+	const mainArticleElement = document.querySelector(".main-article");
+        renderMathInElement(mainArticleElement, {
+            delimiters: [
+                { left: "$$", right: "$$", display: true },
+                { left: "$", right: "$", display: false },
+                { left: "\\(", right: "\\)", display: false },
+                { left: "\\[", right: "\\]", display: true }
+            ],
+            ignoredClasses: ["gist"]
+        });})
+</script>
+
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">Related content</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="has-image">
+    <a href="/p/notes-on-html/">
+        
+        
+            <div class="article-image">
+                
+                    <img src="/post_img/2025-02-18/html-logo.png" loading="lazy" data-key="" data-hash="/post_img/2025-02-18/html-logo.png"/>
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Notes on HTML</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/p/some-skills-on-image-processing/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Some Skills on Image Processing</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/p/diffusers/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Diffusers</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    <div class="disqus-container">
+    
+</div>
+
+<style>
+    .disqus-container {
+        background-color: var(--card-background);
+        border-radius: var(--card-border-radius);
+        box-shadow: var(--shadow-l1);
+        padding: var(--card-padding);
+    }
+</style>
+
+<script>
+    window.addEventListener('onColorSchemeChange', (e) => {
+        if (typeof DISQUS == 'object') {
+            DISQUS.reset({
+                reload: true
+            });
+        }
+    })
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2024 - 
+        
+        2025 Serendipity&#39;s Blog
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.30.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.cb61ca303c9051148a468e900a2e2c68da573d5620ed2eb7c9156795d8f4efe8.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

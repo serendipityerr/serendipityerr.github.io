@@ -3,7 +3,25 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2025-02-24T19:06:28+08:00</lastmod>
+    <lastmod>2025-02-25T11:44:28+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/coding-knowledge/</loc>
+    <lastmod>2025-02-25T11:44:28+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/latex/</loc>
+    <lastmod>2025-02-25T11:44:28+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/p/notes-on-latex-math-symbols/</loc>
+    <lastmod>2025-02-25T11:44:28+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/</loc>
+    <lastmod>2025-02-25T11:44:28+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2025-02-25T11:44:28+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2025-02-25T11:44:28+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/database/</loc>
     <lastmod>2025-02-24T19:06:28+08:00</lastmod>
@@ -11,16 +29,7 @@
     <loc>http://localhost:1313/p/notes-on-database/</loc>
     <lastmod>2025-02-24T19:06:28+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/post/</loc>
-    <lastmod>2025-02-24T19:06:28+08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2025-02-24T19:06:28+08:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/categories/study-notes/</loc>
-    <lastmod>2025-02-24T19:06:28+08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2025-02-24T19:06:28+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/html/</loc>
@@ -38,9 +47,6 @@
     <loc>http://localhost:1313/tags/git/</loc>
     <lastmod>2025-02-20T11:14:33+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/coding-knowledge/</loc>
-    <lastmod>2025-02-18T22:42:40+08:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/p/notes-on-html/</loc>
     <lastmod>2025-02-18T22:42:40+08:00</lastmod>
   </url><url>
@@ -49,9 +55,6 @@
   </url><url>
     <loc>http://localhost:1313/p/update-hugo-to-hugo-extended/</loc>
     <lastmod>2025-02-17T18:57:48+08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/latex/</loc>
-    <lastmod>2024-12-09T18:50:29+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/markdown/</loc>
     <lastmod>2024-12-09T18:50:29+08:00</lastmod>

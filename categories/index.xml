@@ -6,7 +6,15 @@
         <description>Recent content in Categories on Serendipity&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Mon, 24 Feb 2025 19:06:28 +0800</lastBuildDate><atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 25 Feb 2025 11:44:28 +0800</lastBuildDate><atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Coding Knowledge</title>
+        <link>http://localhost:1313/categories/coding-knowledge/</link>
+        <pubDate>Tue, 25 Feb 2025 11:44:28 +0800</pubDate>
+        
+        <guid>http://localhost:1313/categories/coding-knowledge/</guid>
+        <description></description>
+        </item>
+        <item>
         <title>Study Notes</title>
         <link>http://localhost:1313/categories/study-notes/</link>
         <pubDate>Mon, 24 Feb 2025 19:06:28 +0800</pubDate>
@@ -20,14 +28,6 @@
         <pubDate>Fri, 21 Feb 2025 21:58:39 +0800</pubDate>
         
         <guid>http://localhost:1313/categories/technical-tutorials/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>Coding Knowledge</title>
-        <link>http://localhost:1313/categories/coding-knowledge/</link>
-        <pubDate>Tue, 18 Feb 2025 22:42:40 +0800</pubDate>
-        
-        <guid>http://localhost:1313/categories/coding-knowledge/</guid>
         <description></description>
         </item>
         
