@@ -12,7 +12,8 @@
         <pubDate>Fri, 07 Mar 2025 00:00:00 +0000</pubDate>
         
         <guid>https://example.com/homepage/</guid>
-        <description>&lt;!-- Please &lt;a href=&#34;&#34;&gt;click&lt;/a&gt; here to my Homepage. --&gt;</description>
+        <description>&lt;p&gt;Please click &lt;a href=&#34;https://serendipityerr.github.io/Homepage/&#34;&gt;here&lt;/a&gt; to my Homepage.&lt;/p&gt;
+</description>
         </item>
         <item>
         <title>Archives</title>
