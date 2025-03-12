@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Markdown on Serendipity&#39;s Blog</title>
-        <link>https://example.com/tags/markdown/</link>
+        <link>http://localhost:1313/tags/markdown/</link>
         <description>Recent content in Markdown on Serendipity&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Mon, 09 Dec 2024 18:50:29 +0800</lastBuildDate><atom:link href="https://example.com/tags/markdown/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 09 Dec 2024 18:50:29 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/markdown/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Some Skills on Exporting Latex in Markdown as pdf</title>
-        <link>https://example.com/p/some-skills-on-exporting-latex-in-markdown-as-pdf/</link>
+        <link>http://localhost:1313/p/some-skills-on-exporting-latex-in-markdown-as-pdf/</link>
         <pubDate>Mon, 09 Dec 2024 18:50:29 +0800</pubDate>
         
-        <guid>https://example.com/p/some-skills-on-exporting-latex-in-markdown-as-pdf/</guid>
+        <guid>http://localhost:1313/p/some-skills-on-exporting-latex-in-markdown-as-pdf/</guid>
         <description>&lt;h2 id=&#34;solve-the-problem-of-export-latex-code-in-markdown-as-pdf&#34;&gt;Solve the problem of export latex code in Markdown as pdf
 &lt;/h2&gt;&lt;p&gt;First, download VSCode and the &lt;code&gt;Markdown All in One&lt;/code&gt; extension.&lt;/p&gt;
 &lt;p&gt;Second, &lt;code&gt;Ctrl + Shift + P&lt;/code&gt; and input &lt;code&gt;Print current document to HTML&lt;/code&gt;.&lt;/p&gt;
