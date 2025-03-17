@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Study Notes on Serendipity&#39;s Blog</title>
-        <link>https://example.com/categories/study-notes/</link>
+        <link>http://localhost:1313/categories/study-notes/</link>
         <description>Recent content in Study Notes on Serendipity&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Mon, 24 Feb 2025 19:06:28 +0800</lastBuildDate><atom:link href="https://example.com/categories/study-notes/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 24 Feb 2025 19:06:28 +0800</lastBuildDate><atom:link href="http://localhost:1313/categories/study-notes/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Notes on DataBase</title>
-        <link>https://example.com/p/notes-on-database/</link>
+        <link>http://localhost:1313/p/notes-on-database/</link>
         <pubDate>Mon, 24 Feb 2025 19:06:28 +0800</pubDate>
         
-        <guid>https://example.com/p/notes-on-database/</guid>
+        <guid>http://localhost:1313/p/notes-on-database/</guid>
         <description>&lt;h2 id=&#34;绪论&#34;&gt;绪论
 &lt;/h2&gt;&lt;h3 id=&#34;四个基本概念&#34;&gt;四个基本概念
 &lt;/h3&gt;&lt;ol&gt;
@@ -79,7 +79,7 @@
 &lt;/ol&gt;
 &lt;h4 id=&#34;er图&#34;&gt;ER图
 &lt;/h4&gt;&lt;p&gt;ER图分为实体、属性和关系三个部分。实体用长方形，属性是椭圆形，关系是菱形。&lt;strong&gt;唯一的标识：主键。&lt;/strong&gt;
-&lt;img src=&#34;https://example.com/post_img/2025-02-24/er.png&#34;&gt;&lt;/p&gt;
+&lt;img src=&#34;http://localhost:1313/post_img/2025-02-24/er.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;联系：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;实体之间的联系通常是指不同实体集之间的联系。实体之间的联系有一对一、一对多和多对多等多种联系。&lt;/li&gt;
@@ -94,7 +94,7 @@
 &lt;li&gt;有且只有一个结点没有双亲结点，这个结点称为根结点。&lt;/li&gt;
 &lt;li&gt;根以外的其他结点有且只有一个双亲结点。&lt;/li&gt;
 &lt;/ol&gt;
-  &lt;img src=&#34;https://example.com/post_img/2025-02-24/ccmodel.png&#34;&gt;
+  &lt;img src=&#34;http://localhost:1313/post_img/2025-02-24/ccmodel.png&#34;&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;网状模型：&lt;/p&gt;
@@ -102,7 +102,7 @@
 &lt;li&gt;允许一个以上的结点无双亲&lt;/li&gt;
 &lt;li&gt;一个结点可以有多于一个双亲&lt;/li&gt;
 &lt;/ol&gt;
-  &lt;img src=&#34;https://example.com/post_img/2025-02-24/wmodel.png&#34;&gt;
+  &lt;img src=&#34;http://localhost:1313/post_img/2025-02-24/wmodel.png&#34;&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;关系模型：对应一张表&lt;/p&gt;
@@ -113,7 +113,7 @@
 &lt;li&gt;域：是一组具有相同数据类型的值的集合。&lt;/li&gt;
 &lt;li&gt;分量：元组中的一个属性。&lt;/li&gt;
 &lt;/ol&gt;
-  &lt;img src=&#34;https://example.com/post_img/2025-02-24/remodel.png&#34;&gt;
+  &lt;img src=&#34;http://localhost:1313/post_img/2025-02-24/remodel.png&#34;&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;数据库系统的结构&#34;&gt;数据库系统的结构
@@ -132,7 +132,7 @@
 &lt;p&gt;内模式：也称存储模式，一个数据库只有一个内模式。它是数据物理结构和存储方式的描述，是数据在数据库内部的组织方式。&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
- &lt;img src=&#34;https://example.com/post_img/2025-02-24/model.png&#34;&gt;
+ &lt;img src=&#34;http://localhost:1313/post_img/2025-02-24/model.png&#34;&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;二级映像：
@@ -196,7 +196,7 @@
 &lt;li&gt;行数：$k_1 \times k_2$&lt;/li&gt;
 &lt;li&gt;当 R 和 S 中有重名属性 A 时，则采用 R.A 和 S.A 分别命名对应的属性列&lt;/li&gt;
 &lt;/ul&gt;
-  &lt;img src=&#34;https://example.com/post_img/2025-02-24/product.png&#34;&gt;
+  &lt;img src=&#34;http://localhost:1313/post_img/2025-02-24/product.png&#34;&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;$\sigma_C$(R)：选择 (selection)：&lt;/p&gt;
@@ -235,7 +235,7 @@
 &lt;/ol&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-  &lt;img src=&#34;https://example.com/post_img/2025-02-24/selection.png&#34;&gt;
+  &lt;img src=&#34;http://localhost:1313/post_img/2025-02-24/selection.png&#34;&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;$\Pi_L$(R)：投影 (projection)&lt;/p&gt;
@@ -245,7 +245,7 @@
 &lt;li&gt;结果为只包含R中某些列的新的关系&lt;/li&gt;
 &lt;li&gt;结果要去掉重复元组&lt;/li&gt;
 &lt;/ul&gt;
-  &lt;img src=&#34;https://example.com/post_img/2025-02-24/projection.png&#34;&gt;
+  &lt;img src=&#34;http://localhost:1313/post_img/2025-02-24/projection.png&#34;&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;R $\Join$ S：连接 (Join)&lt;/p&gt;
@@ -268,7 +268,7 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-  &lt;img src=&#34;https://example.com/post_img/2025-02-24/join.png&#34;&gt;
+  &lt;img src=&#34;http://localhost:1313/post_img/2025-02-24/join.png&#34;&gt;
 &lt;ul&gt;
 &lt;li&gt;悬浮元组(Dangling tuple)：两个关系 R 和 S 在做自然连接时，关系 R 中某些元组有可能在 S 中不存在公共属性上值相等的元组，从而造成 R 中这些元组在操作时被舍弃了，这些被舍弃的元组称为悬浮元组。&lt;/li&gt;
 &lt;li&gt;外连接(Outer Join)：如果把悬浮元组也保存在结果关系中，而在其他属性上填空值(Null)，就叫做外连接。&lt;/li&gt;
@@ -278,7 +278,7 @@
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;R $\div$ S：保留 R 中满足 S 的，而且 R 中的列去掉 S 的列。
-&lt;img src=&#34;https://example.com/post_img/2025-02-24/divide.png&#34;&gt;&lt;/p&gt;
+&lt;img src=&#34;http://localhost:1313/post_img/2025-02-24/divide.png&#34;&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
@@ -293,14 +293,27 @@
 &lt;/li&gt;
 &lt;li&gt;用户定义完整性(User-defined Integrity)：是针对特定应用领域定义的数据约束条件。它包括字段的值域、数据类型和有效性规则等。这些约束条件反映了特定应用所涉及的数据必须满足的应用语义要求，例如，一个年龄字段可能被限制只能包含正整数。&lt;/li&gt;
 &lt;/ol&gt;
-</description>
+&lt;div class=&#34;typed-text-container&#34;&gt;
+  &lt;span id=&#34;typed-text&#34;&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;script src=&#34;https://cdn.jsdelivr.net/npm/typed.js@2.0.12/typed.min.js&#34;&gt;&lt;/script&gt;
+&lt;script&gt;
+  document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
+    var typed = new Typed(&#34;#typed-text&#34;, {
+      strings: [&#34;to be continued...&#34;],
+      typeSpeed: 50,
+      backSpeed: 20,
+      loop: true
+    });
+  });
+&lt;/script&gt;</description>
         </item>
         <item>
         <title>PCA and AutoEncoder</title>
-        <link>https://example.com/p/pca-and-autoencoder/</link>
+        <link>http://localhost:1313/p/pca-and-autoencoder/</link>
         <pubDate>Sat, 20 Jul 2024 14:13:42 +0800</pubDate>
         
-        <guid>https://example.com/p/pca-and-autoencoder/</guid>
+        <guid>http://localhost:1313/p/pca-and-autoencoder/</guid>
         <description>&lt;h2 id=&#34;difference-between-pca-and-autoencoder&#34;&gt;Difference Between PCA and AutoEncoder
 &lt;/h2&gt;&lt;h3 id=&#34;pca&#34;&gt;PCA
 &lt;/h3&gt;&lt;p&gt;Suppose there are m n-dimensional data, $ X_{n \times m} = [x_1, x_2,&amp;hellip;, x_m]$, where each $x$ is an n-dimensional column vector.&lt;/p&gt;
@@ -373,10 +386,10 @@
         </item>
         <item>
         <title>2024.07.18</title>
-        <link>https://example.com/p/2024.07.18/</link>
+        <link>http://localhost:1313/p/2024.07.18/</link>
         <pubDate>Thu, 18 Jul 2024 23:45:09 +0800</pubDate>
         
-        <guid>https://example.com/p/2024.07.18/</guid>
+        <guid>http://localhost:1313/p/2024.07.18/</guid>
         <description>&lt;h2 id=&#34;study-on-score-based-generative-modeling&#34;&gt;Study on Score-Based Generative Modeling
 &lt;/h2&gt;&lt;p&gt;(●&amp;rsquo;◡&amp;rsquo;●)&lt;/p&gt;
 &lt;p&gt;About Score-Based Generative Modeling: the following article has given a clear explanation: &lt;a class=&#34;link&#34; href=&#34;https://kexue.fm/archives/9209#mjx-eqn-eq%3Abayes-dt&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
