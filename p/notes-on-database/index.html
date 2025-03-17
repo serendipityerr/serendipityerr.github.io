@@ -276,6 +276,38 @@
         </li>
       </ol>
     </li>
+    <li><a href="#sql">SQL</a>
+      <ol>
+        <li><a href="#sql基本概念">SQL基本概念</a></li>
+        <li><a href="#sql语言分类">SQL语言分类</a></li>
+        <li><a href="#sql语言特点">SQL语言特点</a></li>
+        <li><a href="#数据类型及含义">数据类型及含义</a></li>
+        <li><a href="#模式定义">模式定义</a></li>
+        <li><a href="#模式删除">模式删除</a></li>
+        <li><a href="#表的定义删除修改">表的定义删除修改</a>
+          <ol>
+            <li><a href="#定义">定义</a></li>
+            <li><a href="#删除">删除</a></li>
+            <li><a href="#修改">修改</a></li>
+          </ol>
+        </li>
+        <li><a href="#索引的定义删除修改">索引的定义删除修改</a>
+          <ol>
+            <li><a href="#定义-1">定义</a></li>
+            <li><a href="#修改-1">修改</a></li>
+            <li><a href="#删除-1">删除</a></li>
+          </ol>
+        </li>
+        <li><a href="#查询">查询</a>
+          <ol>
+            <li><a href="#查询所有">查询所有</a></li>
+            <li><a href="#查询部分起别名">查询部分+起别名</a></li>
+            <li><a href="#查询结果去重">查询结果去重</a></li>
+            <li><a href="#查询结果加条件">查询结果加条件</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
   </ol>
 </nav>
         </div>
@@ -340,7 +372,7 @@
 
 
                 <time class="article-time--reading">
-                    2 minute read
+                    4 minute read
                 </time>
             </div>
         
@@ -636,20 +668,318 @@
 </li>
 <li>用户定义完整性(User-defined Integrity)：是针对特定应用领域定义的数据约束条件。它包括字段的值域、数据类型和有效性规则等。这些约束条件反映了特定应用所涉及的数据必须满足的应用语义要求，例如，一个年龄字段可能被限制只能包含正整数。</li>
 </ol>
-<div class="typed-text-container">
-  <span id="typed-text"></span>
+<h2 id="sql">SQL
+</h2><h3 id="sql基本概念">SQL基本概念
+</h3><p>SQL是<code>Structured Query Language</code>的缩写，意思是结构化查询语言，是一种在数据库管理系统中查询或对数据库里面的数据进行更改的语言。</p>
+<p>常见的数据库管理系统：</p>
+<ul>
+<li>关系型：<a href="https://www.mysql.com/"> MySQL </a>, <a href="https://www.oracle.com/"> Oracle </a>, <a href="https://www.postgresql.org/"> PostgreSQL </a>, <a href="https://www.microsoft.com/en-us/sql-server"> Mycrosoft SQL Server </a></li>
+<li>非关系型：<a href="https://redis.io/"> Redis </a>, <a href="https://www.mongodb.com/"> MongoDB </a></li>
+</ul>
+<h3 id="sql语言分类">SQL语言分类
+</h3><ol>
+<li>数据定义语言DDL (Data Ddefinition Language): SQL数据定义语言主要用来定义逻辑结构，包括定义基表，视图和索引。删除表，定义表，修改表。</li>
+<li>数据查询语言DQL (Data Query Language): SQL的数据查询语言主要用来对数据库中的各种数据对象进行查询。</li>
+<li>数据操纵语言DML (Data Manipulation Language): SQL的数据操纵语言，用于改变数据库中的数据，包括插入，删除，修改</li>
+<li>数据控制功能DCL (Data Control Language): SQL的数据控制语言，对表和视图的授权，完整性规则的描述以及事务开始和结束等控制语句。</li>
+</ol>
+<h3 id="sql语言特点">SQL语言特点
+</h3><p>1.综合统一（独立完成数据库生命周期中的全部活动，包括定义关系模式、录入数据、建立数据库、查询、更新、维护、数据库重构、数据库安全）
+2.高度非过程化（用户只需提出&quot;做什么&quot;，而不必指明&quot;怎么做&quot;。）
+3.面向集合的操作方式（SQL采用集合操作方式）
+4.以同一种语法结构提供两种使用方式（SQL既是自含式语言，又是嵌入式语言。SQL语句能够嵌入到高级语言程序中）
+5.语言简洁，易学易用（SQL语言语法简单，接近英语口语，因此容易学习也容易使用。）</p>
+<h3 id="数据类型及含义">数据类型及含义
+</h3><ul>
+<li>CHAR($n$), CHARACTER($n$)：长度为n的定长字符串</li>
+<li>VARCHAR($n$), CHARACTERVARYING($n$)：最大长度为n的变长字符串</li>
+<li>CLOB：字符串大对象</li>
+<li>BLOB：二进制大对象</li>
+<li>INT, INTEGER：长整数（4字节）</li>
+<li>SMALLINT：短整数（2字节）</li>
+<li>BIGINT：大整数（8字节）</li>
+<li>NUMERIC($p,d$)：定点数，由一共 $p$ 位数字（不包括符号、小数点）组成，小数点后面有 $d$ 位数字 （整数位有 $p - d$ 位数字）</li>
+<li>DECIMAL($p,d$), DEC(p, d)：同NUMERIC （MySQL）</li>
+<li>REAL：取决于机器精度的单精度浮点数</li>
+<li>DOUBLE PRECISION：
+取决于机器精度的双精度浮点数</li>
+<li>FLOAT($n$)：
+可选精度的浮点数，精度至少为n位数字</li>
+<li>BOOLEAN：逻辑布尔量</li>
+<li>DATE：日期，包含年、月、日，格式为YYYY-MM-DD</li>
+<li>TIME：时间，包含一日的时、分、秒，格式为HH:MM:SS</li>
+<li>TIMESTAMP：时间戳类型</li>
+<li>INTERVAL：时间间隔类型</li>
+</ul>
+<h3 id="模式定义">模式定义
+</h3><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">CREATE</span><span class="w"> </span><span class="k">SCHEMA</span><span class="w"> </span><span class="o">&lt;</span><span class="err">模式名</span><span class="o">&gt;</span><span class="w"> </span><span class="k">AUTHORIZATION</span><span class="w"> </span><span class="o">&lt;</span><span class="err">模式名</span><span class="o">&gt;</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
 </div>
-<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/typed.min.js"></script>
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    var typed = new Typed("#typed-text", {
-      strings: ["to be continued..."],
-      typeSpeed: 50,
-      backSpeed: 20,
-      loop: true
-    });
-  });
-</script>
+</div><p>e.g.
+为用户 WANG 定义一个 学生-课程 模式 S-T。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">CREATE</span><span class="w"> </span><span class="k">SCHEMA</span><span class="w"> </span><span class="s2">&#34;S-T&#34;</span><span class="w"> </span><span class="k">AUTHORIZATION</span><span class="w"> </span><span class="n">WANG</span><span class="p">;</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="模式删除">模式删除
+</h3><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">DROP</span><span class="w"> </span><span class="k">SCHEMA</span><span class="w"> </span><span class="err">模式名</span><span class="w"> </span><span class="k">CASCADE</span><span class="o">/</span><span class="k">RESTRICT</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>删除模式，其中<code>CASCADE</code>和<code>RESTRICT</code>必须二选一</p>
+<ul>
+<li>CASCADE（级联）：删除模式的同时也把该模式的所有数据库对象删除。</li>
+<li>RESTRICT（限制）：如果该模式下有下属对象，就拒绝这个删除语句的执行。</li>
+</ul>
+<h3 id="表的定义删除修改">表的定义删除修改
+</h3><h4 id="定义">定义
+</h4><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">create</span><span class="w"> </span><span class="k">table</span><span class="w"> </span><span class="err">表名</span><span class="w"> </span><span class="p">(</span><span class="err">字段名</span><span class="w"> </span><span class="err">类型</span><span class="w"> </span><span class="err">字段约束</span><span class="p">,</span><span class="w"> </span><span class="err">字段名</span><span class="w"> </span><span class="err">类型</span><span class="w"> </span><span class="err">字段约束</span><span class="p">,</span><span class="w"> </span><span class="err">字段名</span><span class="w"> </span><span class="err">类型</span><span class="w"> </span><span class="err">字段约束</span><span class="p">);</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>e.g.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">create</span><span class="w"> </span><span class="k">table</span><span class="w"> </span><span class="k">user</span><span class="w"> </span><span class="p">(</span><span class="n">name</span><span class="w"> </span><span class="nb">varchar</span><span class="p">(</span><span class="mi">20</span><span class="p">),</span><span class="w"> </span><span class="n">age</span><span class="w"> </span><span class="nb">int</span><span class="p">,</span><span class="w"> </span><span class="n">sex</span><span class="w"> </span><span class="nb">char</span><span class="p">(</span><span class="mi">1</span><span class="p">));</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="删除">删除
+</h4><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">drop</span><span class="w"> </span><span class="k">table</span><span class="w"> </span><span class="err">表名</span><span class="w"> </span><span class="k">CASCADE</span><span class="o">/</span><span class="k">RESTRICT</span><span class="p">;</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>CASCADE: 如果表有外键，视图，触发器的话也会强行删除。</li>
+<li>RESTRICT: 如果表有外键，视图，触发器的话不会删除。</li>
+</ul>
+<h4 id="修改">修改
+</h4><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">alter</span><span class="w"> </span><span class="k">table</span><span class="w"> </span><span class="err">表名</span><span class="w"> </span><span class="k">ADD</span><span class="w"> </span><span class="err">新列名</span><span class="w"> </span><span class="err">数据类型</span><span class="w"> </span><span class="p">[</span><span class="err">完整性约束</span><span class="p">];</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">alter</span><span class="w"> </span><span class="k">table</span><span class="w"> </span><span class="err">表名</span><span class="w"> </span><span class="k">ADD</span><span class="w"> </span><span class="p">[</span><span class="err">表级完整性约束</span><span class="p">];</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>e.g. 向Student表增加&quot;入学时间&quot;列，其数据类型为日期型。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">alter</span><span class="w"> </span><span class="k">table</span><span class="w"> </span><span class="n">Student</span><span class="w"> </span><span class="k">ADD</span><span class="w"> </span><span class="n">S_entrance</span><span class="w"> </span><span class="nb">DATE</span><span class="p">;</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>e.g. 将Student表中年龄的数据类型由字符型（假设原来的数据类型是字符型）改为整数。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">alter</span><span class="w"> </span><span class="k">table</span><span class="w"> </span><span class="n">Student</span><span class="w"> </span><span class="k">ALTER</span><span class="w"> </span><span class="k">COLUMN</span><span class="w"> </span><span class="n">Sage</span><span class="w"> </span><span class="nb">INT</span><span class="p">;</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="索引的定义删除修改">索引的定义删除修改
+</h3><p>数据量大的时候，查询耗时长，定义索引可以有效减少消耗时间，索引可以建立在一列或多列上，索引是独一无二的。</p>
+<h4 id="定义-1">定义
+</h4><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">create</span><span class="w"> </span><span class="k">UNIQUE</span><span class="o">/</span><span class="k">CLUSTER</span><span class="w"> </span><span class="k">INDEX</span><span class="w"> </span><span class="err">索引名</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="err">表名</span><span class="p">(</span><span class="err">列名，列名，</span><span class="p">...);</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>UNIQUE: 唯一索引</li>
+<li>CLUSTER: 聚簇索引：物理顺序与索引顺序相同</li>
+</ul>
+<p>e.g.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">create</span><span class="w"> </span><span class="k">UNIQUE</span><span class="w"> </span><span class="k">INDEX</span><span class="w"> </span><span class="n">Stusno</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="n">Student</span><span class="p">(</span><span class="n">Sno</span><span class="p">);</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="修改-1">修改
+</h4><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">alter</span><span class="w"> </span><span class="k">INDEX</span><span class="w"> </span><span class="err">旧索引名</span><span class="w"> </span><span class="k">RENAME</span><span class="w"> </span><span class="k">TO</span><span class="w"> </span><span class="err">新索引名</span><span class="p">;</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>e.g.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">alter</span><span class="w"> </span><span class="k">INDEX</span><span class="w"> </span><span class="n">SCno</span><span class="w"> </span><span class="k">RENAME</span><span class="w"> </span><span class="k">TO</span><span class="w"> </span><span class="n">SCSno</span><span class="p">;</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="删除-1">删除
+</h4><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">drop</span><span class="w"> </span><span class="k">INDEX</span><span class="w"> </span><span class="err">索引名</span><span class="p">;</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>e.g.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">drop</span><span class="w"> </span><span class="k">INDEX</span><span class="w"> </span><span class="n">Stusname</span><span class="p">;</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="查询">查询
+</h3><h4 id="查询所有">查询所有
+</h4><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">select</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="err">表名</span><span class="p">;</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="查询部分起别名">查询部分+起别名
+</h4><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">select</span><span class="w"> </span><span class="err">列名</span><span class="mi">1</span><span class="w"> </span><span class="p">(</span><span class="k">as</span><span class="p">)</span><span class="w"> </span><span class="err">别名</span><span class="mi">1</span><span class="p">,</span><span class="err">列名</span><span class="mi">2</span><span class="w"> </span><span class="p">(</span><span class="k">as</span><span class="p">)</span><span class="w"> </span><span class="err">别名</span><span class="mi">2</span><span class="p">,...</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="err">表名</span><span class="w"> </span><span class="p">(</span><span class="k">as</span><span class="p">)</span><span class="w"> </span><span class="err">别名</span><span class="p">;</span><span class="w"> </span><span class="c1">-- as 可以省略
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>假设起别名的时候别名有空格：<code>select a b c from 表名;</code></p>
+<ul>
+<li>不符合语法，会编译报错。</li>
+<li>解决方案：<code>select a 'b c' from 表名;</code> 或者 <code>select a &quot;b c&quot; from 表名;</code></li>
+</ul>
+<h4 id="查询结果去重">查询结果去重
+</h4><p><code>distinct</code>关键词</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">select</span><span class="w"> </span><span class="k">distinct</span><span class="w"> </span><span class="err">列名</span><span class="mi">1</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="err">表名</span><span class="p">;</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="查询结果加条件">查询结果加条件
+</h4><p>查询符号：</p>
+<ul>
+<li>比较：=, &gt;, &lt;, &gt;=, &lt;=, != (&lt;&gt;), not+上述比较运算符
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">select</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="err">表名</span><span class="w"> </span><span class="k">where</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">select</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="err">表名</span><span class="w"> </span><span class="k">where</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">&lt;&gt;</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"> </span><span class="c1">--(select a from 表名 where b != 1;)
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">select</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="err">表名</span><span class="w"> </span><span class="k">where</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>确定范围：BETWEEN a AND b, NOT BETWEEN a AND b.
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">select</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="err">表名</span><span class="w"> </span><span class="k">where</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="k">between</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="k">and</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>确定集合（不是区间，是列表/集合，相当于多个or连接）：IN, NOT IN
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="o">-</span><span class="w"> </span><span class="k">select</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="err">表名</span><span class="w"> </span><span class="k">where</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="k">in</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">);</span><span class="w"> 
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>字符匹配（模糊查询，支持%（匹配任意个字符）和下划线（一个下划线只匹配一个字符）匹配）：LIKE, NOT LIKE
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">select</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="err">表名</span><span class="w"> </span><span class="k">where</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="k">like</span><span class="w"> </span><span class="s1">&#39;%o%&#39;</span><span class="w"> </span><span class="c1">-- a中有o的
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">select</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="err">表名</span><span class="w"> </span><span class="k">where</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="k">like</span><span class="w"> </span><span class="s1">&#39;%M&#39;</span><span class="w"> </span><span class="c1">-- a中以M结尾的
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">select</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="err">表名</span><span class="w"> </span><span class="k">where</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="k">like</span><span class="w"> </span><span class="s1">&#39;K%&#39;</span><span class="w"> </span><span class="c1">-- a中以K开始的
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">select</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="err">表名</span><span class="w"> </span><span class="k">where</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="k">like</span><span class="w"> </span><span class="s1">&#39;_T%&#39;</span><span class="w"> </span><span class="c1">-- a中第二个字母是T的
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">select</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="err">表名</span><span class="w"> </span><span class="k">where</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="k">like</span><span class="w"> </span><span class="s1">&#39;__R%&#39;</span><span class="w"> </span><span class="c1">-- a中第三个字母是R的
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">select</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="err">表名</span><span class="w"> </span><span class="k">where</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="k">like</span><span class="w"> </span><span class="s1">&#39;%\_%&#39;</span><span class="w"> </span><span class="c1">-- a中有_的 (\是转义字符)
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>空值（判断是否为null）：IS NULL, IS NOT NULL
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">select</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="err">表名</span><span class="w"> </span><span class="k">where</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="k">is</span><span class="w"> </span><span class="k">null</span><span class="p">;</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>多重条件（逻辑运算）：AND, OR, NOT （优先级 not &gt; and &gt; or）
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">select</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="err">表名</span><span class="w"> </span><span class="k">where</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="k">and</span><span class="w"> </span><span class="k">c</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">select</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="err">表名</span><span class="w"> </span><span class="k">where</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="k">or</span><span class="w"> </span><span class="k">c</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+</ul>
+
 </section>
 
 
