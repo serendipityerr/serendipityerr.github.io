@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr">
     <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="Study on Score-Based Generative Modeling\r(●&rsquo;◡&rsquo;●)\nAbout Score-Based Generative Modeling: the following article has given a clear explanation: Diffusion Model: SDE\nA simple conclusion of the Score-Based Generative Modeling through Stochastic Differential Equations: Generalization of discrete models such as DDPM to continuous SDE forms, through predictor-corrector samplers to correct the solution of a numerical SDE solver.\n">
-<title>2024.07.18</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="">
+<title>Notes on Optimal Transport</title>
 
-<link rel='canonical' href='http://localhost:1313/p/2024.07.18/'>
+<link rel='canonical' href='http://localhost:1313/p/https/serendipityerr.github.io/post_img/2025-03-23/notes_on_optimal_transport.pdf/'>
 
-<link rel="stylesheet" href="/scss/style.min.b9c8156d464c343bdacaf14a871581fb94cbbdb9dd5cbce4ba017361187cc930.css"><meta property='og:title' content="2024.07.18">
-<meta property='og:description' content="Study on Score-Based Generative Modeling\r(●&rsquo;◡&rsquo;●)\nAbout Score-Based Generative Modeling: the following article has given a clear explanation: Diffusion Model: SDE\nA simple conclusion of the Score-Based Generative Modeling through Stochastic Differential Equations: Generalization of discrete models such as DDPM to continuous SDE forms, through predictor-corrector samplers to correct the solution of a numerical SDE solver.\n">
-<meta property='og:url' content='http://localhost:1313/p/2024.07.18/'>
+<link rel="stylesheet" href="/scss/style.min.b9c8156d464c343bdacaf14a871581fb94cbbdb9dd5cbce4ba017361187cc930.css"><meta property='og:title' content="Notes on Optimal Transport">
+<meta property='og:description' content="">
+<meta property='og:url' content='http://localhost:1313/p/https/serendipityerr.github.io/post_img/2025-03-23/notes_on_optimal_transport.pdf/'>
 <meta property='og:site_name' content='Serendipity&#39;s Blog'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Machine Learning' /><meta property='article:published_time' content='2024-07-18T23:45:09&#43;08:00'/><meta property='article:modified_time' content='2024-07-18T23:45:09&#43;08:00'/>
-<meta name="twitter:title" content="2024.07.18">
-<meta name="twitter:description" content="Study on Score-Based Generative Modeling\r(●&rsquo;◡&rsquo;●)\nAbout Score-Based Generative Modeling: the following article has given a clear explanation: Diffusion Model: SDE\nA simple conclusion of the Score-Based Generative Modeling through Stochastic Differential Equations: Generalization of discrete models such as DDPM to continuous SDE forms, through predictor-corrector samplers to correct the solution of a numerical SDE solver.\n">
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2025-03-23T19:12:10&#43;08:00'/><meta property='article:modified_time' content='2025-03-23T19:12:10&#43;08:00'/>
+<meta name="twitter:title" content="Notes on Optimal Transport">
+<meta name="twitter:description" content="">
     <link rel="shortcut icon" href="/favicon.ico" />
 
     </head>
@@ -234,38 +234,7 @@
     </ol>
 </aside>
 
-    <aside class="sidebar right-sidebar sticky">
-        
-            
-                
-    <section class="widget archives">
-        <div class="widget-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <line x1="5" y1="9" x2="19" y2="9" />
-  <line x1="5" y1="15" x2="19" y2="15" />
-  <line x1="11" y1="4" x2="7" y2="20" />
-  <line x1="17" y1="4" x2="13" y2="20" />
-</svg>
-
-
-
-        </div>
-        <h2 class="widget-title section-title">Table of contents</h2>
-        
-        <div class="widget--toc">
-            <nav id="TableOfContents">
-  <ol>
-    <li><a href="#study-on-score-based-generative-modeling">Study on Score-Based Generative Modeling</a></li>
-  </ol>
-</nav>
-        </div>
-    </section>
-
-            
-        
-    </aside>
-
+    
 
             <main class="main full-width">
     <article class="main-article">
@@ -284,7 +253,7 @@
 
     <div class="article-title-wrapper">
         <h2 class="article-title">
-            <a href="/p/2024.07.18/">2024.07.18</a>
+            <a href="/p/https/serendipityerr.github.io/post_img/2025-03-23/notes_on_optimal_transport.pdf/">Notes on Optimal Transport</a>
         </h2>
     
         
@@ -306,7 +275,7 @@
   <path d="M3 11h16" />
   <path d="M18 16.496v1.504l1 1" />
 </svg>
-                <time class="article-time--published">Jul 18, 2024</time>
+                <time class="article-time--published">Mar 23, 2025</time>
             </div>
         
 
@@ -321,7 +290,7 @@
 
 
                 <time class="article-time--reading">
-                    1 minute read
+                    0 minute read
                 </time>
             </div>
         
@@ -336,24 +305,13 @@
     <section class="article-content">
     
     
-    <h2 id="study-on-score-based-generative-modeling">Study on Score-Based Generative Modeling
-</h2><p>(●&rsquo;◡&rsquo;●)</p>
-<p>About Score-Based Generative Modeling: the following article has given a clear explanation: <a class="link" href="https://kexue.fm/archives/9209#mjx-eqn-eq%3Abayes-dt"  target="_blank" rel="noopener"
-    >Diffusion Model: SDE</a></p>
-<p>A simple conclusion of the <a class="link" href="https://arxiv.org/pdf/2011.13456"  target="_blank" rel="noopener"
-    >Score-Based Generative Modeling through Stochastic Differential Equations</a>: Generalization of discrete models such as DDPM to continuous SDE forms, through predictor-corrector samplers to correct the solution of a numerical SDE solver.</p>
+    <iframe src="/post_img/2025-03-23/notes_on_optimal_transport.pdf" width="100%" height="2880px"></iframe>
 
 </section>
 
 
     <footer class="article-footer">
     
-    <section class="article-tags">
-        
-            <a href="/tags/machine-learning/">Machine Learning</a>
-        
-    </section>
-
 
     
     <section class="article-copyright">
@@ -410,6 +368,19 @@
             
                 
 <article class="">
+    <a href="/p/notes-on-database/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Notes on DataBase</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
     <a href="/p/pca-and-autoencoder/">
         
         
@@ -423,25 +394,12 @@
             
                 
 <article class="">
-    <a href="/p/https/serendipityerr.github.io/post_img/2025-03-23/notes_on_optimal_transport.pdf/">
+    <a href="/p/2024.07.18/">
         
         
 
         <div class="article-details">
-            <h2 class="article-title">Notes on Optimal Transport</h2>
-        </div>
-    </a>
-</article>
-
-            
-                
-<article class="">
-    <a href="/p/notes-on-database/">
-        
-        
-
-        <div class="article-details">
-            <h2 class="article-title">Notes on DataBase</h2>
+            <h2 class="article-title">2024.07.18</h2>
         </div>
     </a>
 </article>
