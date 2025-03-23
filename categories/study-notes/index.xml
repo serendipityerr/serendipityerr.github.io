@@ -2,16 +2,116 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Study Notes on Serendipity&#39;s Blog</title>
-        <link>https://example.com/categories/study-notes/</link>
+        <link>http://localhost:1313/categories/study-notes/</link>
         <description>Recent content in Study Notes on Serendipity&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Mon, 24 Feb 2025 19:06:28 +0800</lastBuildDate><atom:link href="https://example.com/categories/study-notes/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 23 Mar 2025 15:25:20 +0800</lastBuildDate><atom:link href="http://localhost:1313/categories/study-notes/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Notes on Optimal Transport</title>
+        <link>http://localhost:1313/p/notes-on-optimal-transport/</link>
+        <pubDate>Sun, 23 Mar 2025 15:25:20 +0800</pubDate>
+        
+        <guid>http://localhost:1313/p/notes-on-optimal-transport/</guid>
+        <description>&lt;h2 id=&#34;最优传输问题&#34;&gt;最优传输问题
+&lt;/h2&gt;&lt;p&gt;最优运输问题的目标就是以&lt;strong&gt;最小的成本&lt;/strong&gt;将&lt;strong&gt;一个概率分布&lt;/strong&gt;转换为&lt;strong&gt;另一个概率分布&lt;/strong&gt;。即把概率分布 $\mathbf{c}$ 以最小的成本转换到概率分布 $\mathbf{r}$，此时就要获得一个分配方案 $P \in \mathbb{R}^{n \times m}_{&amp;gt;0}$，满足 $P \mathbf{1}_m = \mathbf{c}$和$P^T \mathbf{1}&lt;em&gt;n = \mathbf{r}$。同时又要考虑运输成本，定义一个已知的成本矩阵(cost matrix) $M$。于是最优传输问题可以表示为：
+$$
+d_M(\mathbf{r}, \mathbf{c}) = \min_{P \in U(\mathbf{r}, \mathbf{c})} \sum_{i,j} P_{i,j} M_{i,j}
+$$
+这里 $U(\mathbf{r}, \mathbf{c}) \triangleq { P \in \mathbb{R}^{n \times m}&lt;/em&gt;{&amp;gt;0} | P \mathbf{1}_m = \mathbf{c}, P^T \mathbf{1}_n = \mathbf{r} }$。&lt;/p&gt;
+&lt;p&gt;此时 $d_M(\mathbf{r}, \mathbf{c})$ 被称为 &lt;code&gt;Wasserstein metric&lt;/code&gt; 或者为 &lt;code&gt;earth mover distance&lt;/code&gt; (EMD) 代价函数。&lt;/p&gt;
+&lt;h2 id=&#34;sinkhorn-距离和-sinkhorn-算法&#34;&gt;Sinkhorn 距离和 Sinkhorn 算法
+&lt;/h2&gt;$$
+d^{\lambda}_M(\mathbf{r}, \mathbf{c}) = \min_{P \in U(\mathbf{r}, \mathbf{c})} \left( \sum_{i,j} P_{i,j} M_{i,j} - \frac{1}{\lambda} h(P) \right)
+$$&lt;p&gt;
+这里 $h(P) = -\sum_{i,j} P_{i,j} \log P_{i,j}$ 是P的信息熵，$\lambda$ 是正则项对应的超参。&lt;/p&gt;
+$$
+\mathcal{L} = \sum_{i,j} P_{i,j} M_{i,j} + \frac{1}{\lambda} \sum_{i,j} P_{i,j} \log P_{i,j}
+$$$$
+0 = \frac{\partial \mathcal{L}}{\partial P_{i,j}} = M_{ij} + \frac{1}{\lambda} (P_{i,j} + 1)
+$$$$
+P_{i,j} = e^{-\lambda M_{ij} - 1}
+$$$$
+P_{i,j} = \alpha_{i} \beta_{j} e^{-\lambda M_{ij}}
+$$&lt;p&gt;
+最终的满足约束的 $P$ 的解可以通过下面这个算法获得：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;19
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;20
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;21
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;22
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;23
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;24
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;25
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;26
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;27
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;28
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;29
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;30
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;compute_optimal_transport&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;M&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;r&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;c&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;lam&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;epsilon&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;mf&#34;&gt;1e-8&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;):&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;s2&#34;&gt;&amp;#34;&amp;#34;&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;    Computes the optimal transport matrix and Slinkhorn distance using the
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;    Sinkhorn-Knopp algorithm
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;    Inputs:
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;        - M : cost matrix (n x m)
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;        - r : vector of marginals (n, )
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;        - c : vector of marginals (m, )
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;        - lam : strength of the entropic regularization
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;        - epsilon : convergence parameter
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;    Outputs:
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;        - P : optimal transport matrix (n x m)
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;        - dist : Sinkhorn distance
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;    &amp;#34;&amp;#34;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;n&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;m&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;M&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;shape&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;c1&#34;&gt;# initialize: P = e^{-\lambda * M} (P_{ij} = e^{-\lambda * M_{ij}})&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;P&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;np&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;exp&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;lam&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;M&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;P&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;/=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;P&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;sum&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;u&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;np&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;zeros&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;n&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;c1&#34;&gt;# normalize this matrix&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;while&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;np&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;max&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;np&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;abs&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;u&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;P&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;sum&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)))&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;epsilon&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;c1&#34;&gt;# scale the rows such that the row sums match r&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;n&#34;&gt;u&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;P&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;sum&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;n&#34;&gt;P&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;r&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;/&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;u&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;reshape&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;((&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;))&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;c1&#34;&gt;# scale the columns such that the column sums match c&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;n&#34;&gt;P&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;c&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;/&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;P&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;sum&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;))&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;reshape&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;((&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;))&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;P&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;np&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;sum&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;P&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;M&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;几何解释&#34;&gt;几何解释
+&lt;/h2&gt;&lt;p&gt;最优传输问题，无论有没有熵正则化，都有一个漂亮的几何解释。&lt;/p&gt;
+&lt;img src=&#34;http://localhost:1313/post_img/2025-03-23/geometric.png&#34;&gt;
+&lt;p&gt;成本矩阵决定了分布的优劣方向。集合 $U(\mathbf{r}, \mathbf{c})$ 包含所有可行的分布。在未正则化的情况下，最优 $P^{\star}$ 通常在这样一个集合的某个角上。在添加熵正则因子时，我们将自己限制在熵最小的分布上，即位于平滑的红色曲线内。由于我们不必再处理 $U(\mathbf{r}, \mathbf{c})$ 的尖角，因此更容易找到最优值。特殊情况下，当 $\lambda \rightarrow \infty$ 时，$P_{\lambda}^{\star}$ 将变得越来越接近 $P^{\star}$（直到算法遇到数值困难）。另一方面，对于 $\lambda \rightarrow 0$ 的情况，只考虑熵项，$P_{\lambda}^{\star} = \mathbf{r} \mathbf{c}^T$（这是一种均匀分布，均匀分布信息熵最小）。&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>Notes on DataBase</title>
-        <link>https://example.com/p/notes-on-database/</link>
+        <link>http://localhost:1313/p/notes-on-database/</link>
         <pubDate>Mon, 24 Feb 2025 19:06:28 +0800</pubDate>
         
-        <guid>https://example.com/p/notes-on-database/</guid>
+        <guid>http://localhost:1313/p/notes-on-database/</guid>
         <description>&lt;h2 id=&#34;绪论&#34;&gt;绪论
 &lt;/h2&gt;&lt;h3 id=&#34;四个基本概念&#34;&gt;四个基本概念
 &lt;/h3&gt;&lt;ol&gt;
@@ -79,7 +179,7 @@
 &lt;/ol&gt;
 &lt;h4 id=&#34;er图&#34;&gt;ER图
 &lt;/h4&gt;&lt;p&gt;ER图分为实体、属性和关系三个部分。实体用长方形，属性是椭圆形，关系是菱形。&lt;strong&gt;唯一的标识：主键。&lt;/strong&gt;
-&lt;img src=&#34;https://example.com/post_img/2025-02-24/er.png&#34;&gt;&lt;/p&gt;
+&lt;img src=&#34;http://localhost:1313/post_img/2025-02-24/er.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;联系：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;实体之间的联系通常是指不同实体集之间的联系。实体之间的联系有一对一、一对多和多对多等多种联系。&lt;/li&gt;
@@ -94,7 +194,7 @@
 &lt;li&gt;有且只有一个结点没有双亲结点，这个结点称为根结点。&lt;/li&gt;
 &lt;li&gt;根以外的其他结点有且只有一个双亲结点。&lt;/li&gt;
 &lt;/ol&gt;
-  &lt;img src=&#34;https://example.com/post_img/2025-02-24/ccmodel.png&#34;&gt;
+  &lt;img src=&#34;http://localhost:1313/post_img/2025-02-24/ccmodel.png&#34;&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;网状模型：&lt;/p&gt;
@@ -102,7 +202,7 @@
 &lt;li&gt;允许一个以上的结点无双亲&lt;/li&gt;
 &lt;li&gt;一个结点可以有多于一个双亲&lt;/li&gt;
 &lt;/ol&gt;
-  &lt;img src=&#34;https://example.com/post_img/2025-02-24/wmodel.png&#34;&gt;
+  &lt;img src=&#34;http://localhost:1313/post_img/2025-02-24/wmodel.png&#34;&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;关系模型：对应一张表&lt;/p&gt;
@@ -113,7 +213,7 @@
 &lt;li&gt;域：是一组具有相同数据类型的值的集合。&lt;/li&gt;
 &lt;li&gt;分量：元组中的一个属性。&lt;/li&gt;
 &lt;/ol&gt;
-  &lt;img src=&#34;https://example.com/post_img/2025-02-24/remodel.png&#34;&gt;
+  &lt;img src=&#34;http://localhost:1313/post_img/2025-02-24/remodel.png&#34;&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;数据库系统的结构&#34;&gt;数据库系统的结构
@@ -132,7 +232,7 @@
 &lt;p&gt;内模式：也称存储模式，一个数据库只有一个内模式。它是数据物理结构和存储方式的描述，是数据在数据库内部的组织方式。&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
- &lt;img src=&#34;https://example.com/post_img/2025-02-24/model.png&#34;&gt;
+ &lt;img src=&#34;http://localhost:1313/post_img/2025-02-24/model.png&#34;&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;二级映像：
@@ -196,7 +296,7 @@
 &lt;li&gt;行数：$k_1 \times k_2$&lt;/li&gt;
 &lt;li&gt;当 R 和 S 中有重名属性 A 时，则采用 R.A 和 S.A 分别命名对应的属性列&lt;/li&gt;
 &lt;/ul&gt;
-  &lt;img src=&#34;https://example.com/post_img/2025-02-24/product.png&#34;&gt;
+  &lt;img src=&#34;http://localhost:1313/post_img/2025-02-24/product.png&#34;&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;$\sigma_C$(R)：选择 (selection)：&lt;/p&gt;
@@ -235,7 +335,7 @@
 &lt;/ol&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-  &lt;img src=&#34;https://example.com/post_img/2025-02-24/selection.png&#34;&gt;
+  &lt;img src=&#34;http://localhost:1313/post_img/2025-02-24/selection.png&#34;&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;$\Pi_L$(R)：投影 (projection)&lt;/p&gt;
@@ -245,7 +345,7 @@
 &lt;li&gt;结果为只包含R中某些列的新的关系&lt;/li&gt;
 &lt;li&gt;结果要去掉重复元组&lt;/li&gt;
 &lt;/ul&gt;
-  &lt;img src=&#34;https://example.com/post_img/2025-02-24/projection.png&#34;&gt;
+  &lt;img src=&#34;http://localhost:1313/post_img/2025-02-24/projection.png&#34;&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;R $\Join$ S：连接 (Join)&lt;/p&gt;
@@ -268,7 +368,7 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-  &lt;img src=&#34;https://example.com/post_img/2025-02-24/join.png&#34;&gt;
+  &lt;img src=&#34;http://localhost:1313/post_img/2025-02-24/join.png&#34;&gt;
 &lt;ul&gt;
 &lt;li&gt;悬浮元组(Dangling tuple)：两个关系 R 和 S 在做自然连接时，关系 R 中某些元组有可能在 S 中不存在公共属性上值相等的元组，从而造成 R 中这些元组在操作时被舍弃了，这些被舍弃的元组称为悬浮元组。&lt;/li&gt;
 &lt;li&gt;外连接(Outer Join)：如果把悬浮元组也保存在结果关系中，而在其他属性上填空值(Null)，就叫做外连接。&lt;/li&gt;
@@ -278,7 +378,7 @@
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;R $\div$ S：保留 R 中满足 S 的，而且 R 中的列去掉 S 的列。
-&lt;img src=&#34;https://example.com/post_img/2025-02-24/divide.png&#34;&gt;&lt;/p&gt;
+&lt;img src=&#34;http://localhost:1313/post_img/2025-02-24/divide.png&#34;&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
@@ -850,10 +950,10 @@
         </item>
         <item>
         <title>PCA and AutoEncoder</title>
-        <link>https://example.com/p/pca-and-autoencoder/</link>
+        <link>http://localhost:1313/p/pca-and-autoencoder/</link>
         <pubDate>Sat, 20 Jul 2024 14:13:42 +0800</pubDate>
         
-        <guid>https://example.com/p/pca-and-autoencoder/</guid>
+        <guid>http://localhost:1313/p/pca-and-autoencoder/</guid>
         <description>&lt;h2 id=&#34;difference-between-pca-and-autoencoder&#34;&gt;Difference Between PCA and AutoEncoder
 &lt;/h2&gt;&lt;h3 id=&#34;pca&#34;&gt;PCA
 &lt;/h3&gt;&lt;p&gt;Suppose there are m n-dimensional data, $ X_{n \times m} = [x_1, x_2,&amp;hellip;, x_m]$, where each $x$ is an n-dimensional column vector.&lt;/p&gt;
@@ -926,10 +1026,10 @@
         </item>
         <item>
         <title>2024.07.18</title>
-        <link>https://example.com/p/2024.07.18/</link>
+        <link>http://localhost:1313/p/2024.07.18/</link>
         <pubDate>Thu, 18 Jul 2024 23:45:09 +0800</pubDate>
         
-        <guid>https://example.com/p/2024.07.18/</guid>
+        <guid>http://localhost:1313/p/2024.07.18/</guid>
         <description>&lt;h2 id=&#34;study-on-score-based-generative-modeling&#34;&gt;Study on Score-Based Generative Modeling
 &lt;/h2&gt;&lt;p&gt;(●&amp;rsquo;◡&amp;rsquo;●)&lt;/p&gt;
 &lt;p&gt;About Score-Based Generative Modeling: the following article has given a clear explanation: &lt;a class=&#34;link&#34; href=&#34;https://kexue.fm/archives/9209#mjx-eqn-eq%3Abayes-dt&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;

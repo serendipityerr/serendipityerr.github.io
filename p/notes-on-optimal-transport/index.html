@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr">
     <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="\r">
-<title>2024.08.02</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="最优传输问题\r最优运输问题的目标就是以最小的成本将一个概率分布转换为另一个概率分布。即把概率分布 $\\mathbf{c}$ 以最小的成本转换到概率分布 $\\mathbf{r}$，此时就要获得一个分配方案 $P \\in \\mathbb{R}^{n \\times m}_{&gt;0}$，满足 $P \\mathbf{1}_m = \\mathbf{c}$和$P^T \\mathbf{1}n = \\mathbf{r}$。同时又要考虑运输成本，定义一个已知的成本矩阵(cost matrix) $M$。于是最优传输问题可以表示为： $$ d_M(\\mathbf{r}, \\mathbf{c}) = \\min_{P \\in U(\\mathbf{r}, \\mathbf{c})} \\sum_{i,j} P_{i,j} M_{i,j} $$ 这里 $U(\\mathbf{r}, \\mathbf{c}) \\triangleq { P \\in \\mathbb{R}^{n \\times m}{&gt;0} | P \\mathbf{1}_m = \\mathbf{c}, P^T \\mathbf{1}_n = \\mathbf{r} }$。\n此时 $d_M(\\mathbf{r}, \\mathbf{c})$ 被称为 Wasserstein metric 或者为 earth mover distance (EMD) 代价函数。\nSinkhorn 距离和 Sinkhorn 算法\r$$ d^{\\lambda}_M(\\mathbf{r}, \\mathbf{c}) = \\min_{P \\in U(\\mathbf{r}, \\mathbf{c})} \\left( \\sum_{i,j} P_{i,j} M_{i,j} - \\frac{1}{\\lambda} h(P) \\right) $$ 这里 $h(P) = -\\sum_{i,j} P_{i,j} \\log P_{i,j}$ 是P的信息熵，$\\lambda$ 是正则项对应的超参。\n">
+<title>Notes on Optimal Transport</title>
 
-<link rel='canonical' href='http://localhost:1313/p/2024.08.02/'>
+<link rel='canonical' href='http://localhost:1313/p/notes-on-optimal-transport/'>
 
-<link rel="stylesheet" href="/scss/style.min.b9c8156d464c343bdacaf14a871581fb94cbbdb9dd5cbce4ba017361187cc930.css"><meta property='og:title' content="2024.08.02">
-<meta property='og:description' content="\r">
-<meta property='og:url' content='http://localhost:1313/p/2024.08.02/'>
+<link rel="stylesheet" href="/scss/style.min.b9c8156d464c343bdacaf14a871581fb94cbbdb9dd5cbce4ba017361187cc930.css"><meta property='og:title' content="Notes on Optimal Transport">
+<meta property='og:description' content="最优传输问题\r最优运输问题的目标就是以最小的成本将一个概率分布转换为另一个概率分布。即把概率分布 $\\mathbf{c}$ 以最小的成本转换到概率分布 $\\mathbf{r}$，此时就要获得一个分配方案 $P \\in \\mathbb{R}^{n \\times m}_{&gt;0}$，满足 $P \\mathbf{1}_m = \\mathbf{c}$和$P^T \\mathbf{1}n = \\mathbf{r}$。同时又要考虑运输成本，定义一个已知的成本矩阵(cost matrix) $M$。于是最优传输问题可以表示为： $$ d_M(\\mathbf{r}, \\mathbf{c}) = \\min_{P \\in U(\\mathbf{r}, \\mathbf{c})} \\sum_{i,j} P_{i,j} M_{i,j} $$ 这里 $U(\\mathbf{r}, \\mathbf{c}) \\triangleq { P \\in \\mathbb{R}^{n \\times m}{&gt;0} | P \\mathbf{1}_m = \\mathbf{c}, P^T \\mathbf{1}_n = \\mathbf{r} }$。\n此时 $d_M(\\mathbf{r}, \\mathbf{c})$ 被称为 Wasserstein metric 或者为 earth mover distance (EMD) 代价函数。\nSinkhorn 距离和 Sinkhorn 算法\r$$ d^{\\lambda}_M(\\mathbf{r}, \\mathbf{c}) = \\min_{P \\in U(\\mathbf{r}, \\mathbf{c})} \\left( \\sum_{i,j} P_{i,j} M_{i,j} - \\frac{1}{\\lambda} h(P) \\right) $$ 这里 $h(P) = -\\sum_{i,j} P_{i,j} \\log P_{i,j}$ 是P的信息熵，$\\lambda$ 是正则项对应的超参。\n">
+<meta property='og:url' content='http://localhost:1313/p/notes-on-optimal-transport/'>
 <meta property='og:site_name' content='Serendipity&#39;s Blog'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2024-08-02T11:22:51&#43;08:00'/><meta property='article:modified_time' content='2024-08-02T11:22:51&#43;08:00'/>
-<meta name="twitter:title" content="2024.08.02">
-<meta name="twitter:description" content="\r">
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2025-03-23T15:25:20&#43;08:00'/><meta property='article:modified_time' content='2025-03-23T15:25:20&#43;08:00'/>
+<meta name="twitter:title" content="Notes on Optimal Transport">
+<meta name="twitter:description" content="最优传输问题\r最优运输问题的目标就是以最小的成本将一个概率分布转换为另一个概率分布。即把概率分布 $\\mathbf{c}$ 以最小的成本转换到概率分布 $\\mathbf{r}$，此时就要获得一个分配方案 $P \\in \\mathbb{R}^{n \\times m}_{&gt;0}$，满足 $P \\mathbf{1}_m = \\mathbf{c}$和$P^T \\mathbf{1}n = \\mathbf{r}$。同时又要考虑运输成本，定义一个已知的成本矩阵(cost matrix) $M$。于是最优传输问题可以表示为： $$ d_M(\\mathbf{r}, \\mathbf{c}) = \\min_{P \\in U(\\mathbf{r}, \\mathbf{c})} \\sum_{i,j} P_{i,j} M_{i,j} $$ 这里 $U(\\mathbf{r}, \\mathbf{c}) \\triangleq { P \\in \\mathbb{R}^{n \\times m}{&gt;0} | P \\mathbf{1}_m = \\mathbf{c}, P^T \\mathbf{1}_n = \\mathbf{r} }$。\n此时 $d_M(\\mathbf{r}, \\mathbf{c})$ 被称为 Wasserstein metric 或者为 earth mover distance (EMD) 代价函数。\nSinkhorn 距离和 Sinkhorn 算法\r$$ d^{\\lambda}_M(\\mathbf{r}, \\mathbf{c}) = \\min_{P \\in U(\\mathbf{r}, \\mathbf{c})} \\left( \\sum_{i,j} P_{i,j} M_{i,j} - \\frac{1}{\\lambda} h(P) \\right) $$ 这里 $h(P) = -\\sum_{i,j} P_{i,j} \\log P_{i,j}$ 是P的信息熵，$\\lambda$ 是正则项对应的超参。\n">
     <link rel="shortcut icon" href="/favicon.ico" />
 
     </head>
@@ -234,7 +234,40 @@
     </ol>
 </aside>
 
-    
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">Table of contents</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#最优传输问题">最优传输问题</a></li>
+    <li><a href="#sinkhorn-距离和-sinkhorn-算法">Sinkhorn 距离和 Sinkhorn 算法</a></li>
+    <li><a href="#几何解释">几何解释</a></li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
 
             <main class="main full-width">
     <article class="main-article">
@@ -242,10 +275,18 @@
 
     <div class="article-details">
     
+    <header class="article-category">
+        
+            <a href="/categories/study-notes/" style="background-color: #5de2e7; color: #fff;">
+                Study Notes
+            </a>
+        
+    </header>
+    
 
     <div class="article-title-wrapper">
         <h2 class="article-title">
-            <a href="/p/2024.08.02/">2024.08.02</a>
+            <a href="/p/notes-on-optimal-transport/">Notes on Optimal Transport</a>
         </h2>
     
         
@@ -267,7 +308,7 @@
   <path d="M3 11h16" />
   <path d="M18 16.496v1.504l1 1" />
 </svg>
-                <time class="article-time--published">Aug 02, 2024</time>
+                <time class="article-time--published">Mar 23, 2025</time>
             </div>
         
 
@@ -282,7 +323,7 @@
 
 
                 <time class="article-time--reading">
-                    0 minute read
+                    2 minute read
                 </time>
             </div>
         
@@ -297,126 +338,100 @@
     <section class="article-content">
     
     
-    
-  <div class="heart-icon" id="heart">
-    <svg xmlns="" viewBox="0 0 24 24">
-      <path
-        d="M12.39 20.87a.696.696 0 0 1-.78 0C9.764 19.637 2 14.15 2 8.973c0-6.68 7.85-7.75 10-3.25 2.15-4.5 10-3.43 10 3.25 0 5.178-7.764 10.664-9.61 11.895z"
-      /></svg>
-    <svg xmlns="" viewBox="0 0 24 24">
-      <path
-        d="M12.39 20.87a.696.696 0 0 1-.78 0C9.764 19.637 2 14.15 2 8.973c0-6.68 7.85-7.75 10-3.25 2.15-4.5 10-3.43 10 3.25 0 5.178-7.764 10.664-9.61 11.895z"
-      /></svg>
-    <svg xmlns="" viewBox="0 0 24 24">
-      <path
-        d="M12.39 20.87a.696.696 0 0 1-.78 0C9.764 19.637 2 14.15 2 8.973c0-6.68 7.85-7.75 10-3.25 2.15-4.5 10-3.43 10 3.25 0 5.178-7.764 10.664-9.61 11.895z"
-      /></svg>
-    <svg xmlns="" viewBox="0 0 24 24">
-      <path
-        d="M12.39 20.87a.696.696 0 0 1-.78 0C9.764 19.637 2 14.15 2 8.973c0-6.68 7.85-7.75 10-3.25 2.15-4.5 10-3.43 10 3.25 0 5.178-7.764 10.664-9.61 11.895z"
-      /></svg>
-    <svg xmlns="" viewBox="0 0 24 24">
-      <path
-        d="M12.39 20.87a.696.696 0 0 1-.78 0C9.764 19.637 2 14.15 2 8.973c0-6.68 7.85-7.75 10-3.25 2.15-4.5 10-3.43 10 3.25 0 5.178-7.764 10.664-9.61 11.895z"
-      /></svg>
-    <svg xmlns="" viewBox="0 0 24 24">
-      <path
-        d="M12.39 20.87a.696.696 0 0 1-.78 0C9.764 19.637 2 14.15 2 8.973c0-6.68 7.85-7.75 10-3.25 2.15-4.5 10-3.43 10 3.25 0 5.178-7.764 10.664-9.61 11.895z"
-      /></svg>
-  </div>
-
-  <script>
-    let heartButton = document.getElementById('heart');
-    let hearts = Array.from(heartButton.children);
-    hearts.reverse();
-    heartButton.addEventListener('click', function () {
-      let heartIndex = 0;
-      for (let heart of hearts) {
-        animateLeap(heartIndex++);
-      }
-      hearts.reverse();
-    });
-    function animateLeap(heartIndex) {
-      hearts[heartIndex].classList.remove('leap');
-      hearts[heartIndex].offsetWidth;
-      setTimeout(() => {
-        hearts[heartIndex].classList.add('leap');
-        setTimeout(() => {
-          hearts[heartIndex].style.zIndex = heartIndex;
-          hearts[heartIndex].style.strokeWidth = heartIndex / 4 + 'px';
-        }, 200);
-      }, 5 * (heartIndex * 10));
-    }
-  </script>
-  <style>
-    :root {
-      --heart-color-1: #FFC0CB;
-      --heart-color-2: #24ffbe;
-      --heart-color-3: #72ff24;
-      --heart-color-4: #ffe024;
-      --heart-color-5: #ff7124;
-      --heart-color-6: #FFC0CB;
-    }
-    .heart-icon {
-      position: relative;
-      cursor: pointer;
-      width: 50px;
-      height: 50px;
-    }
-    .heart-icon svg {
-      position: absolute;
-      top: 0;
-      left: 0;
-    }
-    .heart-icon svg:nth-of-type(1) {
-      z-index: 6;
-      fill: var(--heart-color-1);
-      stroke: var(--heart-color-1);
-    }
-    .heart-icon svg:nth-of-type(2) {
-      z-index: 5;
-      fill: var(--heart-color-2);
-      stroke: var(--heart-color-2);
-    }
-    .heart-icon svg:nth-of-type(3) {
-      z-index: 4;
-      fill: var(--heart-color-3);
-      stroke: var(--heart-color-3);
-    }
-    .heart-icon svg:nth-of-type(4) {
-      z-index: 3;
-      fill: var(--heart-color-4);
-      stroke: var(--heart-color-4);
-    }
-    .heart-icon svg:nth-of-type(5) {
-      z-index: 2;
-      fill: var(--heart-color-5);
-      stroke: var(--heart-color-5);
-    }
-    .heart-icon svg:nth-of-type(6) {
-      z-index: 1;
-      fill: var(--heart-color-6);
-      stroke: var(--heart-color-6);
-    }
-    .leap {
-      animation: leap 0.8s;
-      transition-timing-function: cubic-bezier(0, 1, 1, 1);
-      animation-fill-mode: forwards;
-    }
-    @keyframes leap {
-      50% {
-        transform: translateY(-150px);
-      }
-      90% {
-        transform: translateY(2px);
-      }
-      100% {
-        transform: translateY(0);
-      }
-    }
-  </style>
-
-
+    <h2 id="最优传输问题">最优传输问题
+</h2><p>最优运输问题的目标就是以<strong>最小的成本</strong>将<strong>一个概率分布</strong>转换为<strong>另一个概率分布</strong>。即把概率分布 $\mathbf{c}$ 以最小的成本转换到概率分布 $\mathbf{r}$，此时就要获得一个分配方案 $P \in \mathbb{R}^{n \times m}_{&gt;0}$，满足 $P \mathbf{1}_m = \mathbf{c}$和$P^T \mathbf{1}<em>n = \mathbf{r}$。同时又要考虑运输成本，定义一个已知的成本矩阵(cost matrix) $M$。于是最优传输问题可以表示为：
+$$
+d_M(\mathbf{r}, \mathbf{c}) = \min_{P \in U(\mathbf{r}, \mathbf{c})} \sum_{i,j} P_{i,j} M_{i,j}
+$$
+这里 $U(\mathbf{r}, \mathbf{c}) \triangleq { P \in \mathbb{R}^{n \times m}</em>{&gt;0} | P \mathbf{1}_m = \mathbf{c}, P^T \mathbf{1}_n = \mathbf{r} }$。</p>
+<p>此时 $d_M(\mathbf{r}, \mathbf{c})$ 被称为 <code>Wasserstein metric</code> 或者为 <code>earth mover distance</code> (EMD) 代价函数。</p>
+<h2 id="sinkhorn-距离和-sinkhorn-算法">Sinkhorn 距离和 Sinkhorn 算法
+</h2>$$
+d^{\lambda}_M(\mathbf{r}, \mathbf{c}) = \min_{P \in U(\mathbf{r}, \mathbf{c})} \left( \sum_{i,j} P_{i,j} M_{i,j} - \frac{1}{\lambda} h(P) \right)
+$$<p>
+这里 $h(P) = -\sum_{i,j} P_{i,j} \log P_{i,j}$ 是P的信息熵，$\lambda$ 是正则项对应的超参。</p>
+$$
+\mathcal{L} = \sum_{i,j} P_{i,j} M_{i,j} + \frac{1}{\lambda} \sum_{i,j} P_{i,j} \log P_{i,j}
+$$$$
+0 = \frac{\partial \mathcal{L}}{\partial P_{i,j}} = M_{ij} + \frac{1}{\lambda} (P_{i,j} + 1)
+$$$$
+P_{i,j} = e^{-\lambda M_{ij} - 1}
+$$$$
+P_{i,j} = \alpha_{i} \beta_{j} e^{-\lambda M_{ij}}
+$$<p>
+最终的满足约束的 $P$ 的解可以通过下面这个算法获得：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">compute_optimal_transport</span><span class="p">(</span><span class="n">M</span><span class="p">,</span> <span class="n">r</span><span class="p">,</span> <span class="n">c</span><span class="p">,</span> <span class="n">lam</span><span class="p">,</span> <span class="n">epsilon</span><span class="o">=</span><span class="mf">1e-8</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;&#34;&#34;
+</span></span></span><span class="line"><span class="cl"><span class="s2">    Computes the optimal transport matrix and Slinkhorn distance using the
+</span></span></span><span class="line"><span class="cl"><span class="s2">    Sinkhorn-Knopp algorithm
+</span></span></span><span class="line"><span class="cl"><span class="s2">
+</span></span></span><span class="line"><span class="cl"><span class="s2">    Inputs:
+</span></span></span><span class="line"><span class="cl"><span class="s2">        - M : cost matrix (n x m)
+</span></span></span><span class="line"><span class="cl"><span class="s2">        - r : vector of marginals (n, )
+</span></span></span><span class="line"><span class="cl"><span class="s2">        - c : vector of marginals (m, )
+</span></span></span><span class="line"><span class="cl"><span class="s2">        - lam : strength of the entropic regularization
+</span></span></span><span class="line"><span class="cl"><span class="s2">        - epsilon : convergence parameter
+</span></span></span><span class="line"><span class="cl"><span class="s2">
+</span></span></span><span class="line"><span class="cl"><span class="s2">    Outputs:
+</span></span></span><span class="line"><span class="cl"><span class="s2">        - P : optimal transport matrix (n x m)
+</span></span></span><span class="line"><span class="cl"><span class="s2">        - dist : Sinkhorn distance
+</span></span></span><span class="line"><span class="cl"><span class="s2">    &#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">n</span><span class="p">,</span> <span class="n">m</span> <span class="o">=</span> <span class="n">M</span><span class="o">.</span><span class="n">shape</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># initialize: P = e^{-\lambda * M} (P_{ij} = e^{-\lambda * M_{ij}})</span>
+</span></span><span class="line"><span class="cl">    <span class="n">P</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span> <span class="n">lam</span> <span class="o">*</span> <span class="n">M</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">P</span> <span class="o">/=</span> <span class="n">P</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="n">u</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># normalize this matrix</span>
+</span></span><span class="line"><span class="cl">    <span class="k">while</span> <span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">u</span> <span class="o">-</span> <span class="n">P</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="mi">1</span><span class="p">)))</span> <span class="o">&gt;</span> <span class="n">epsilon</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="c1"># scale the rows such that the row sums match r</span>
+</span></span><span class="line"><span class="cl">        <span class="n">u</span> <span class="o">=</span> <span class="n">P</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">P</span> <span class="o">*=</span> <span class="p">(</span><span class="n">r</span> <span class="o">/</span> <span class="n">u</span><span class="p">)</span><span class="o">.</span><span class="n">reshape</span><span class="p">((</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span> 
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c1"># scale the columns such that the column sums match c</span>
+</span></span><span class="line"><span class="cl">        <span class="n">P</span> <span class="o">*=</span> <span class="p">(</span><span class="n">c</span> <span class="o">/</span> <span class="n">P</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="mi">0</span><span class="p">))</span><span class="o">.</span><span class="n">reshape</span><span class="p">((</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">P</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">P</span> <span class="o">*</span> <span class="n">M</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="几何解释">几何解释
+</h2><p>最优传输问题，无论有没有熵正则化，都有一个漂亮的几何解释。</p>
+<div align="center">
+    <img src="/post_img/2025-03-23/geometric.png">
+</div>
+<p>成本矩阵决定了分布的优劣方向。集合 $U(\mathbf{r}, \mathbf{c})$ 包含所有可行的分布。在未正则化的情况下，最优 $P^{\star}$ 通常在这样一个集合的某个角上。在添加熵正则因子时，我们将自己限制在熵最小的分布上，即位于平滑的红色曲线内。由于我们不必再处理 $U(\mathbf{r}, \mathbf{c})$ 的尖角，因此更容易找到最优值。特殊情况下，当 $\lambda \rightarrow \infty$ 时，$P_{\lambda}^{\star}$ 将变得越来越接近 $P^{\star}$（直到算法遇到数值困难）。另一方面，对于 $\lambda \rightarrow 0$ 的情况，只考虑熵项，$P_{\lambda}^{\star} = \mathbf{r} \mathbf{c}^T$（这是一种均匀分布，均匀分布信息熵最小）。</p>
 
 </section>
 
@@ -471,6 +486,54 @@
     
 
     
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">Related content</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="">
+    <a href="/p/notes-on-database/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Notes on DataBase</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/p/pca-and-autoencoder/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">PCA and AutoEncoder</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/p/2024.07.18/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">2024.07.18</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
 
      
     
