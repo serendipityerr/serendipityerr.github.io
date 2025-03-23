@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Coding Knowledge on Serendipity&#39;s Blog</title>
-        <link>http://localhost:1313/categories/coding-knowledge/</link>
+        <link>https://example.com/categories/coding-knowledge/</link>
         <description>Recent content in Coding Knowledge on Serendipity&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Tue, 25 Feb 2025 11:44:28 +0800</lastBuildDate><atom:link href="http://localhost:1313/categories/coding-knowledge/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 25 Feb 2025 11:44:28 +0800</lastBuildDate><atom:link href="https://example.com/categories/coding-knowledge/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Notes on Latex Math Symbols</title>
-        <link>http://localhost:1313/p/notes-on-latex-math-symbols/</link>
+        <link>https://example.com/p/notes-on-latex-math-symbols/</link>
         <pubDate>Tue, 25 Feb 2025 11:44:28 +0800</pubDate>
         
-        <guid>http://localhost:1313/p/notes-on-latex-math-symbols/</guid>
-        <description>&lt;img src="http://localhost:1313/post_img/2025-02-25/latex-logo.png" alt="Featured image of post Notes on Latex Math Symbols" /&gt;&lt;p&gt;ng&amp;quot;&amp;gt;&lt;/p&gt;
+        <guid>https://example.com/p/notes-on-latex-math-symbols/</guid>
+        <description>&lt;img src="https://example.com/post_img/2025-02-25/latex-logo.png" alt="Featured image of post Notes on Latex Math Symbols" /&gt;&lt;p&gt;ng&amp;quot;&amp;gt;&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -137,7 +137,7 @@
 | $\mid$ | \mid | $\parallel$ | \parallel | $\perp$ | \perp |
 | $\smile$ | \smile | $\frown$ | \frown | $\asymp$ | \asymp |
 | $:$ | : | $\notin$ | \notin | $\neq$ | \neq or \ne | --&gt;
-&lt;img src=&#34;http://localhost:1313/post_img/2025-02-25/table4.png&#34;&gt;
+&lt;img src=&#34;https://example.com/post_img/2025-02-25/table4.png&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -190,7 +190,7 @@
 | $\bigtriangleup$ | \bigtriangleup | $\bigtriangledown$ | \bigtriangledown | $\dagger$ | \dagger |
 | $\lhd$ | \lhd $^{a}$ | $\rhd$ | \rhd $^{a}$ | $\ddagger$ | \ddagger |
 | $\unlhd$ | \unlhd $^{a}$ | $\unrhd$ | \unrhd $^{a}$ | $\wr$ | \wr | --&gt;
-&lt;img src=&#34;http://localhost:1313/post_img/2025-02-25/table5.png&#34;&gt;
+&lt;img src=&#34;https://example.com/post_img/2025-02-25/table5.png&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -232,7 +232,7 @@
 | $\prod$ | \prod | $\bigcap$ | \bigcap | $\bigwedge$ | \bigwedge | $\bigotimes$ | \bigotimes |
 | $\coprod$ | \coprod | $\bigsqcup$ | \bigsqcup | | |$\bigodot$ | \bigodot |
 | $\int$ | \int | $\oint$ | \oint | | | $\biguplus$ | \biguplus | --&gt;
-&lt;img src=&#34;http://localhost:1313/post_img/2025-02-25/table6.png&#34;&gt;
+&lt;img src=&#34;https://example.com/post_img/2025-02-25/table6.png&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -262,7 +262,7 @@
 | $\leftharpoonup$ | \leftharpoonup | $\rightharpoonup$ | \rightharpoonup | $\swarrow$ | \swarrow |
 | $\leftharpoondown$ | \leftharpoondown | $\rightharpoondown$ | \rightharpoondown | $\nwarrow$ | \nwarrow |
 | $\rightleftharpoons$ | \rightleftharpoons | $\iff$ | \iff (bigger spaces) | $\leadsto$ | \Leadsto $^{a}$ | --&gt;
-&lt;img src=&#34;http://localhost:1313/post_img/2025-02-25/table7.png&#34;&gt;
+&lt;img src=&#34;https://example.com/post_img/2025-02-25/table7.png&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -302,7 +302,7 @@
 | $\langle$ | \langle | $\rangle$ | \rangle | $\vert$ | \| or \vert | $\Vert$ | \\\| or \Vert |
 | $\lfloor$ | \lfloor | $\rfloor$ | \rfloor | $\lceil$ | \lceil | $\rceil$ | \rceil |
 | $/$ | / | $\backslash$ | \backslash |  --&gt;
-&lt;img src=&#34;http://localhost:1313/post_img/2025-02-25/table8.png&#34;&gt;
+&lt;img src=&#34;https://example.com/post_img/2025-02-25/table8.png&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -334,7 +334,7 @@
 | $\bot$ | \bot | $\top$ | \top | $\angle$ | \angle | $\surd$ | \surd |
 | $\diamondsuit$ | \diamondsuit | $\heartsuit$ | \heartsuit | $\clubsuit$ | \clubsuit | $\spadesuit$ | \spadesuit |
 | $\neg$ | \neg or \lnot | $\flat$ | \flat | $\natural$ | \natural | $\sharp$ | \sharp | --&gt;
-&lt;img src=&#34;http://localhost:1313/post_img/2025-02-25/table9.png&#34;&gt;
+&lt;img src=&#34;https://example.com/post_img/2025-02-25/table9.png&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -365,7 +365,7 @@
 | --- | --- | --- | --- | --- | --- |
 | $\dagger$ | \dagger | $\S$ | \S | $\copyright$ | \copyright |
 | $\ddag$ | \ddag | $\P$ | \P | $\pounds$ | \pounds | --&gt;
-&lt;img src=&#34;http://localhost:1313/post_img/2025-02-25/table10.png&#34;&gt;
+&lt;img src=&#34;https://example.com/post_img/2025-02-25/table10.png&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -381,7 +381,7 @@
 &lt;/h2&gt;&lt;!-- | Symbol | Command | Symbol | Command | Symbol | Command | Symbol | Command |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | $\ulcorner$ | \ulcorner | $\urcorner$ | \urcorner | $\llcorner$ | \llcorner | $\lrcorner$ | \lrcorner | --&gt;
-&lt;img src=&#34;http://localhost:1313/post_img/2025-02-25/table11.png&#34;&gt;
+&lt;img src=&#34;https://example.com/post_img/2025-02-25/table11.png&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -416,7 +416,7 @@
 | $\smallsmile$ | \smallsmile | $\smallfrown$ | \smallfrown | $\pitchfork$ | \pitchfork |
 | $\vartriangleleft$ | \vartriangleleft | $\vartriangleright$ | \vartriangleright | $\blacktriangleleft$ | \blacktriangleleft |
 | $\trianglelefteq$ | \trianglelefteq | $\trianglerighteq$ | \trianglerighteq | $\blacktriangleright$ | \blacktriangleright | --&gt;
-&lt;img src=&#34;http://localhost:1313/post_img/2025-02-25/table12.png&#34;&gt;
+&lt;img src=&#34;https://example.com/post_img/2025-02-25/table12.png&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -482,7 +482,7 @@
 | $\looparrowleft$ | \looparrowleft | $\looparrowright$ | \looparrowright | $\leftrightsquigarrow$ | \leftrightsquigarrow |
 | $\curvearrowleft$ | \curvearrowleft | $\curvearrowright$ | \curvearrowright |  |  |
 | $\circlearrowleft$ | \circlearrowleft | $\circlearrowright$ | \circlearrowright |  |  | --&gt;
-&lt;img src=&#34;http://localhost:1313/post_img/2025-02-25/table13.png&#34;&gt;
+&lt;img src=&#34;https://example.com/post_img/2025-02-25/table13.png&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -535,7 +535,7 @@
 | $\subsetneqq$ | \subsetneqq | $\supsetneqq$ | \supsetneqq | $\ntrianglerighteq$ | \ntrianglerighteq |
 | $\nleftarrow$ | \nleftarrow | $\nrightarrow$ | \nrightarrow | $\nleftrightarrow$ | \nleftrightarrow |
 | $\nLeftarrow$ | \nLeftarrow | $\nRightarrow$ | \nRightarrow | $\nLeftrightarrow$ | \nLeftrightarrow | --&gt;
-&lt;img src=&#34;http://localhost:1313/post_img/2025-02-25/table14.png&#34;&gt;
+&lt;img src=&#34;https://example.com/post_img/2025-02-25/table14.png&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -594,7 +594,7 @@
 | $\boxtimes$ | \boxtimes | $\boxdot$ | \boxdot | $\circledcirc$ | \circledcirc |
 | $\leftthreetimes$ | \leftthreetimes | $\rightthreetimes$ | \rightthreetimes | $\circledast$ | \circledast |
 | $\curlyvee$ | \curlyvee | $\curlywedge$ | \curlywedge |  |  | --&gt;
-&lt;img src=&#34;http://localhost:1313/post_img/2025-02-25/table15.png&#34;&gt;
+&lt;img src=&#34;https://example.com/post_img/2025-02-25/table15.png&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -630,7 +630,7 @@
 | $\diagup$ | \diagup | $\diagdown$ | \diagdown | $\backprime$ | \backprime |
 | $\nexists$ | \nexists | $\Finv$ | \Finv | $\varnothing$ | \varnothing |
 | $\eth$ | \eth | $\mho$ | \mho |  |  | --&gt;
-&lt;img src=&#34;http://localhost:1313/post_img/2025-02-25/table16.png&#34;&gt;
+&lt;img src=&#34;https://example.com/post_img/2025-02-25/table16.png&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -667,7 +667,7 @@
 |  | \mathscr{ABC} | or `eucal` with option: \mathscr |
 | $\mathfrak{ABCdef}$ | \mathfrak{ABCdef} | `eufrak` |
 | $\mathbb{ABC}$ | \mathbb{ABC} | `amsfonts` or `amssymb` | --&gt;
-&lt;img src=&#34;http://localhost:1313/post_img/2025-02-25/table17.png&#34;&gt;
+&lt;img src=&#34;https://example.com/post_img/2025-02-25/table17.png&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -696,11 +696,11 @@
         </item>
         <item>
         <title>Notes on HTML</title>
-        <link>http://localhost:1313/p/notes-on-html/</link>
+        <link>https://example.com/p/notes-on-html/</link>
         <pubDate>Tue, 18 Feb 2025 22:42:40 +0800</pubDate>
         
-        <guid>http://localhost:1313/p/notes-on-html/</guid>
-        <description>&lt;img src="http://localhost:1313/post_img/2025-02-18/html-logo.png" alt="Featured image of post Notes on HTML" /&gt;&lt;h2 id=&#34;html入门&#34;&gt;HTML入门
+        <guid>https://example.com/p/notes-on-html/</guid>
+        <description>&lt;img src="https://example.com/post_img/2025-02-18/html-logo.png" alt="Featured image of post Notes on HTML" /&gt;&lt;h2 id=&#34;html入门&#34;&gt;HTML入门
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;HTML(Hyper Text Markup Language)：超文本标记语言，用来描述网页的语言。&lt;/p&gt;
@@ -1157,7 +1157,7 @@ e.g.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;特殊字符&lt;/p&gt;
-  &lt;img src=&#34;http://localhost:1313/post_img/2025-02-18/character.png&#34; width=&#34;500px&#34;&gt;
+  &lt;img src=&#34;https://example.com/post_img/2025-02-18/character.png&#34; width=&#34;500px&#34;&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
@@ -1243,7 +1243,7 @@ e.g.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;跨行合并：&lt;code&gt;rowspan=&amp;quot;合并单元格个数&amp;quot;&lt;/code&gt;。最上侧单元格为目标单元格，在此单元格中写合并代码。&lt;/li&gt;
 &lt;li&gt;跨列合并：&lt;code&gt;colspan=&amp;quot;合并单元格个数&amp;quot;&lt;/code&gt;。最左侧单元格为目标单元格，在此单元格中写合并代码。
-&lt;img src=&#34;http://localhost:1313/post_img/2025-02-18/row_col.png&#34; width=&#34;600px&#34;&gt;&lt;/li&gt;
+&lt;img src=&#34;https://example.com/post_img/2025-02-18/row_col.png&#34; width=&#34;600px&#34;&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;ul&gt;
 &lt;li&gt;操作步骤：&lt;/li&gt;
@@ -1469,10 +1469,10 @@ e.g.&lt;/p&gt;
         </item>
         <item>
         <title>Some Skills on Image Processing</title>
-        <link>http://localhost:1313/p/some-skills-on-image-processing/</link>
+        <link>https://example.com/p/some-skills-on-image-processing/</link>
         <pubDate>Wed, 28 Aug 2024 14:14:07 +0800</pubDate>
         
-        <guid>http://localhost:1313/p/some-skills-on-image-processing/</guid>
+        <guid>https://example.com/p/some-skills-on-image-processing/</guid>
         <description>&lt;h2 id=&#34;image-pre-processingtransformation&#34;&gt;Image Pre-processing/Transformation
 &lt;/h2&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -1598,10 +1598,10 @@ e.g.&lt;/p&gt;
         </item>
         <item>
         <title>Diffusers</title>
-        <link>http://localhost:1313/p/diffusers/</link>
+        <link>https://example.com/p/diffusers/</link>
         <pubDate>Sun, 11 Aug 2024 12:09:12 +0800</pubDate>
         
-        <guid>http://localhost:1313/p/diffusers/</guid>
+        <guid>https://example.com/p/diffusers/</guid>
         <description>&lt;h2 id=&#34;learning-diffusers&#34;&gt;Learning &lt;code&gt;Diffusers&lt;/code&gt;
 &lt;/h2&gt;&lt;h3 id=&#34;installation&#34;&gt;Installation
 &lt;/h3&gt;&lt;p&gt;With &lt;code&gt;pip&lt;/code&gt;&lt;/p&gt;
