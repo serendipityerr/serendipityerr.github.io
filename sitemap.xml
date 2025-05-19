@@ -3,15 +3,27 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://example.com/categories/</loc>
-    <lastmod>2025-03-23T19:12:10+08:00</lastmod>
+    <lastmod>2025-05-19T23:10:50+08:00</lastmod>
   </url><url>
-    <loc>https://example.com/p/notes-on-optimal-transport/</loc>
-    <lastmod>2025-03-23T19:12:10+08:00</lastmod>
+    <loc>https://example.com/tags/git/</loc>
+    <lastmod>2025-05-19T23:10:50+08:00</lastmod>
+  </url><url>
+    <loc>https://example.com/p/git-and-ssh/</loc>
+    <lastmod>2025-05-19T23:10:50+08:00</lastmod>
   </url><url>
     <loc>https://example.com/post/</loc>
-    <lastmod>2025-03-23T19:12:10+08:00</lastmod>
+    <lastmod>2025-05-19T23:10:50+08:00</lastmod>
   </url><url>
     <loc>https://example.com/</loc>
+    <lastmod>2025-05-19T23:10:50+08:00</lastmod>
+  </url><url>
+    <loc>https://example.com/tags/</loc>
+    <lastmod>2025-05-19T23:10:50+08:00</lastmod>
+  </url><url>
+    <loc>https://example.com/categories/technical-tutorials/</loc>
+    <lastmod>2025-05-19T23:10:50+08:00</lastmod>
+  </url><url>
+    <loc>https://example.com/p/notes-on-optimal-transport/</loc>
     <lastmod>2025-03-23T19:12:10+08:00</lastmod>
   </url><url>
     <loc>https://example.com/categories/study-notes/</loc>
@@ -29,9 +41,6 @@
     <loc>https://example.com/p/notes-on-latex-math-symbols/</loc>
     <lastmod>2025-02-25T11:44:28+08:00</lastmod>
   </url><url>
-    <loc>https://example.com/tags/</loc>
-    <lastmod>2025-02-25T11:44:28+08:00</lastmod>
-  </url><url>
     <loc>https://example.com/tags/database/</loc>
     <lastmod>2025-02-24T19:06:28+08:00</lastmod>
   </url><url>
@@ -44,13 +53,7 @@
     <loc>https://example.com/p/replace-google-cdn/</loc>
     <lastmod>2025-02-21T21:58:39+08:00</lastmod>
   </url><url>
-    <loc>https://example.com/categories/technical-tutorials/</loc>
-    <lastmod>2025-02-21T21:58:39+08:00</lastmod>
-  </url><url>
     <loc>https://example.com/p/add-a-funny-snake-animation-to-your-github-profile-page/</loc>
-    <lastmod>2025-02-20T11:14:33+08:00</lastmod>
-  </url><url>
-    <loc>https://example.com/tags/git/</loc>
     <lastmod>2025-02-20T11:14:33+08:00</lastmod>
   </url><url>
     <loc>https://example.com/p/notes-on-html/</loc>
