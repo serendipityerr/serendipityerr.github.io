@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Git on Serendipity&#39;s Blog</title>
-        <link>https://example.com/tags/git/</link>
+        <link>http://localhost:1313/tags/git/</link>
         <description>Recent content in Git on Serendipity&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Mon, 19 May 2025 23:10:50 +0800</lastBuildDate><atom:link href="https://example.com/tags/git/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 19 May 2025 23:10:50 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/git/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Git and SSH</title>
-        <link>https://example.com/p/git-and-ssh/</link>
+        <link>http://localhost:1313/p/git-and-ssh/</link>
         <pubDate>Mon, 19 May 2025 23:10:50 +0800</pubDate>
         
-        <guid>https://example.com/p/git-and-ssh/</guid>
+        <guid>http://localhost:1313/p/git-and-ssh/</guid>
         <description>&lt;h2 id=&#34;use-ssh-on-github&#34;&gt;Use SSH on GitHub
 &lt;/h2&gt;&lt;p&gt;Below are the detailed step-by-step instructions for configuring and using SSH on GitHub from scratch:&lt;/p&gt;
 &lt;h3 id=&#34;check-for-an-existing-ssh-key&#34;&gt;Check for an existing SSH Key
@@ -107,10 +107,10 @@
         </item>
         <item>
         <title>Add a Funny Snake Animation to Your GitHub Profile Page</title>
-        <link>https://example.com/p/add-a-funny-snake-animation-to-your-github-profile-page/</link>
+        <link>http://localhost:1313/p/add-a-funny-snake-animation-to-your-github-profile-page/</link>
         <pubDate>Thu, 20 Feb 2025 11:14:33 +0800</pubDate>
         
-        <guid>https://example.com/p/add-a-funny-snake-animation-to-your-github-profile-page/</guid>
+        <guid>http://localhost:1313/p/add-a-funny-snake-animation-to-your-github-profile-page/</guid>
         <description>&lt;img src="https://raw.githubusercontent.com/serendipityerr/serendipityerr/output/github-contribution-grid-snake.svg" alt="Featured image of post Add a Funny Snake Animation to Your GitHub Profile Page" /&gt;&lt;h2 id=&#34;introduction&#34;&gt;Introduction
 &lt;/h2&gt;&lt;p&gt;A GitHub personal home page, officially called a profile, is a personal GitHub presentation master page written in &lt;code&gt;Markdown&lt;/code&gt;. In this article, we&amp;rsquo;ll demonstrate how to add a funny snake animation to the GitHub profile page.&lt;/p&gt;
 &lt;p&gt;The Snake animation is actually a kind of “heat map”, each small grid corresponds to each day, the grid is gray by default, where the green grid means we submitted code on that day, the darker the color of the grid, the more times we committed code on that day.&lt;/p&gt;
@@ -405,10 +405,10 @@
         </item>
         <item>
         <title>Starting from Scratch: Creating and Pushing Your Blog Posts with Hugo and Git</title>
-        <link>https://example.com/p/starting-from-scratch-creating-and-pushing-your-blog-posts-with-hugo-and-git/</link>
+        <link>http://localhost:1313/p/starting-from-scratch-creating-and-pushing-your-blog-posts-with-hugo-and-git/</link>
         <pubDate>Tue, 16 Jul 2024 14:16:38 +0800</pubDate>
         
-        <guid>https://example.com/p/starting-from-scratch-creating-and-pushing-your-blog-posts-with-hugo-and-git/</guid>
+        <guid>http://localhost:1313/p/starting-from-scratch-creating-and-pushing-your-blog-posts-with-hugo-and-git/</guid>
         <description>&lt;h2 id=&#34;build-a-github-repository&#34;&gt;Build A Github Repository
 &lt;/h2&gt;&lt;p&gt;ԅ(¯﹃¯ԅ)&lt;/p&gt;
 &lt;h3 id=&#34;initialize&#34;&gt;Initialize
