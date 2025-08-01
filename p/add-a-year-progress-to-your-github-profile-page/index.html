@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="Introduction\rA GitHub personal home page, officially called a profile, is a personal GitHub presentation master page written in\u00a0Markdown. In this article, we’ll demonstrate how to add a year progress (automatically updated every day) to the GitHub profile page—so it looks like this:\n1 2 3 4 5 ⏳ Year progress { █████████████████▁▁▁▁▁▁▁▁▁▁▁▁▁ } 58.11 % --- ⏰ Updated on Fri, 01 Aug 2025 02:10:41 GMT Pre-Conditions\rGitHub Accounts A GitHub Repository with the same name as your GitHub username (see my another blog post Add a Funny Snake Animation to Your GitHub Profile Page for tutorials) Implementation Steps\rWe need to add two files to the repository (we mentioned above): one is the workflows file that implements automatic updating of the year progress bar, and the other is the index.js file that sets the style of the generated year progress bar.\n">
+<title>Add a Year Progress to Your GitHub Profile Page</title>
+
+<link rel='canonical' href='https://example.com/p/add-a-year-progress-to-your-github-profile-page/'>
+
+<link rel="stylesheet" href="/scss/style.min.b9c8156d464c343bdacaf14a871581fb94cbbdb9dd5cbce4ba017361187cc930.css"><meta property='og:title' content="Add a Year Progress to Your GitHub Profile Page">
+<meta property='og:description' content="Introduction\rA GitHub personal home page, officially called a profile, is a personal GitHub presentation master page written in\u00a0Markdown. In this article, we’ll demonstrate how to add a year progress (automatically updated every day) to the GitHub profile page—so it looks like this:\n1 2 3 4 5 ⏳ Year progress { █████████████████▁▁▁▁▁▁▁▁▁▁▁▁▁ } 58.11 % --- ⏰ Updated on Fri, 01 Aug 2025 02:10:41 GMT Pre-Conditions\rGitHub Accounts A GitHub Repository with the same name as your GitHub username (see my another blog post Add a Funny Snake Animation to Your GitHub Profile Page for tutorials) Implementation Steps\rWe need to add two files to the repository (we mentioned above): one is the workflows file that implements automatic updating of the year progress bar, and the other is the index.js file that sets the style of the generated year progress bar.\n">
+<meta property='og:url' content='https://example.com/p/add-a-year-progress-to-your-github-profile-page/'>
+<meta property='og:site_name' content='Serendipity&#39;s Blog'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Git' /><meta property='article:published_time' content='2025-08-01T16:47:05&#43;08:00'/><meta property='article:modified_time' content='2025-08-01T16:47:05&#43;08:00'/>
+<meta name="twitter:title" content="Add a Year Progress to Your GitHub Profile Page">
+<meta name="twitter:description" content="Introduction\rA GitHub personal home page, officially called a profile, is a personal GitHub presentation master page written in\u00a0Markdown. In this article, we’ll demonstrate how to add a year progress (automatically updated every day) to the GitHub profile page—so it looks like this:\n1 2 3 4 5 ⏳ Year progress { █████████████████▁▁▁▁▁▁▁▁▁▁▁▁▁ } 58.11 % --- ⏰ Updated on Fri, 01 Aug 2025 02:10:41 GMT Pre-Conditions\rGitHub Accounts A GitHub Repository with the same name as your GitHub username (see my another blog post Add a Funny Snake Animation to Your GitHub Profile Page for tutorials) Implementation Steps\rWe need to add two files to the repository (we mentioned above): one is the workflows file that implements automatic updating of the year progress bar, and the other is the index.js file that sets the style of the generated year progress bar.\n">
+    <link rel="shortcut icon" href="/favicon.ico" />
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    <img src="/avatar.png" width="300" height="300" class="site-logo" loading="lazy" alt="Avatar">
+                
+                </a>
+                
+                    <span class="emoji">🩷</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">Serendipity&#39;s Blog</a></h1>
+            <h2 class="site-description">Katrina, will I ever know your heart?</h2>
+        </div>
+    </header><ol class="menu-social">
+            
+                <li>
+                    <a 
+                        href='mailto:panmk@shanghaitech.edu.cn'
+                        target="_blank"
+                        title="Email"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="24" height="24" stroke-width="2"> <path d="M12 12m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0"></path> <path d="M16 12v1.5a2.5 2.5 0 0 0 5 0v-1.5a9 9 0 1 0 -5.5 8.28"></path> </svg> 
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://github.com/serendipityerr'
+                        target="_blank"
+                        title="serendipityerr"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://twitter.com'
+                        target="_blank"
+                        title="Twitter"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/page/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/homepage/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>Homepage</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>Dark Mode</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">Table of contents</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#pre-conditions">Pre-Conditions</a></li>
+    <li><a href="#implementation-steps">Implementation Steps</a>
+      <ol>
+        <li><a href="#step-0-find-github-email-prefix">Step 0: Find GitHub Email Prefix</a></li>
+        <li><a href="#step-1-create-workflows">Step 1: Create Workflows</a></li>
+        <li><a href="#step-2-create-workflows">Step 2: Create Workflows</a></li>
+        <li><a href="#debugging-for-the-potential-problems">Debugging for the Potential Problems</a>
+          <ol>
+            <li><a href="#failed-at-commit-change--push">Failed at <code>Commit change &amp; Push</code></a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+    <li><a href="#copyright-notice">Copyright Notice</a></li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/technical-tutorials/" style="background-color: #df7988; color: #fff;">
+                Technical Tutorials
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/add-a-year-progress-to-your-github-profile-page/">Add a Year Progress to Your GitHub Profile Page</a>
+        </h2>
+    
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Aug 01, 2025</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    5 minute read
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <h2 id="introduction">Introduction
+</h2><p>A GitHub personal home page, officially called a profile, is a personal GitHub presentation master page written in <code>Markdown</code>. In this article, we’ll demonstrate how to add a year progress (automatically updated every day) to the GitHub profile page—so it looks like this:</p>
+<div align="center"><img src="/post_img/2025-08-01/result.png"></div>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-md" data-lang="md"><span class="line"><span class="cl">⏳ Year progress { █████████████████▁▁▁▁▁▁▁▁▁▁▁▁▁ } 58.11 %
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">---
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">⏰ Updated on Fri, 01 Aug 2025 02:10:41 GMT
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="pre-conditions">Pre-Conditions
+</h2><ol>
+<li>GitHub Accounts</li>
+<li>A GitHub Repository with the same name as your GitHub username (see my another blog post <a class="link" href="https://serendipityerr.github.io/p/add-a-funny-snake-animation-to-your-github-profile-page/#implementation-steps"  target="_blank" rel="noopener"
+    >Add a Funny Snake Animation to Your GitHub Profile Page</a> for tutorials)</li>
+</ol>
+<h2 id="implementation-steps">Implementation Steps
+</h2><p>We need to add <strong>two files</strong> to the repository (we mentioned above): one is <strong>the workflows file that implements automatic updating of the year progress bar</strong>, and the other is <strong>the index.js file that sets the style of the generated year progress bar</strong>.</p>
+<h3 id="step-0-find-github-email-prefix">Step 0: Find GitHub Email Prefix
+</h3><p>Before implementing the year progress bar, you&rsquo;ll first need to locate your GitHub email prefix - we&rsquo;ll use this in the following steps.</p>
+<ol>
+<li>Log in to your GitHub account.</li>
+<li>Click on your avatar in the top-right corner → “Settings” → “Emails”.</li>
+<li>Under “Keep my email addresses private,” locate the noreply email address formatted as <strong>[numeric ID]+[username]@users.noreply.github.com</strong>.</li>
+<li>The [numeric ID] (e.g., 12345678) is your GitHub email prefix.</li>
+</ol>
+<p>After finding the GitHub email prefix, let&rsquo;s start the implementations of year progress bar.</p>
+<h3 id="step-1-create-workflows">Step 1: Create Workflows
+</h3><p>Firstly, let&rsquo;s focus on the <strong>workflows file</strong>.</p>
+<ol>
+<li>Click the <code>Add file</code> button in the repository and select <code>Create new file</code> to create a new file.</li>
+<li>Name the newly created file by entering <code>.github/workflows/main.yml</code> (the file name includes the path where the file is located).</li>
+<li>Add the following code to the <code>yml</code> file:</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-yml" data-lang="yml"><span class="line"><span class="cl"><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Progress Bar CI </span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">on</span><span class="p">:</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">workflow_dispatch</span><span class="p">:</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">schedule</span><span class="p">:</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span>- <span class="nt">cron</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;0 */6 * * *&#39;</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">jobs</span><span class="p">:</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">build</span><span class="p">:</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="nt">runs-on</span><span class="p">:</span><span class="w"> </span><span class="l">ubuntu-latest </span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">steps</span><span class="p">:</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l">actions/checkout@v2 </span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Use Node.js </span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l">actions/setup-node@v1 </span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="nt">with</span><span class="p">:</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w">	  </span><span class="nt">node-version</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;14.x&#39;</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Update README.md </span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l">node index.js &gt; README.md </span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Commit change &amp; Push </span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l">| </span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="l">git config user.name &#39;github-actions[bot]&#39; </span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="l">git config user.email &#39;YOUR_ID+github-actions[bot]@users.noreply.github.com&#39; </span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="l">git commit -am &#34;bot: update README.md automatically&#34; </span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="l">git push</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><ol start="4">
+<li>Replace the GitHub email prefix <strong>YOUR_ID</strong> in line 24 of the code <code>git config user.email 'YOUR_ID+github-actions[bot]@users.noreply.github.com'</code> with your own GitHub email prefix derived in [[#Step 0 Find GitHub Email Prefix]].</li>
+</ol>
+<h3 id="step-2-create-workflows">Step 2: Create Workflows
+</h3><p>Secondly, let&rsquo;s focus on the <strong>index.js file</strong>.</p>
+<ol>
+<li>Create another file in the repository named <code>index.js</code> (the same directory as <code>README.md</code>).</li>
+<li>Add the following code into the file:</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">thisYear</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">().</span><span class="nx">getFullYear</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">startTimeOfThisYear</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">(</span><span class="sb">`</span><span class="si">${</span><span class="nx">thisYear</span><span class="si">}</span><span class="sb">-01-01T00:00:00+00:00`</span><span class="p">).</span><span class="nx">getTime</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">endTimeOfThisYear</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">(</span><span class="sb">`</span><span class="si">${</span><span class="nx">thisYear</span><span class="si">}</span><span class="sb">-12-31T23:59:59+00:00`</span><span class="p">).</span><span class="nx">getTime</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">progressOfThisYear</span> <span class="o">=</span> <span class="p">(</span><span class="nb">Date</span><span class="p">.</span><span class="nx">now</span><span class="p">()</span> <span class="o">-</span> <span class="nx">startTimeOfThisYear</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="nx">endTimeOfThisYear</span> <span class="o">-</span> <span class="nx">startTimeOfThisYear</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">progressBarOfThisYear</span> <span class="o">=</span> <span class="nx">generateProgressBar</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">function</span> <span class="nx">generateProgressBar</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kr">const</span> <span class="nx">progressBarCapacity</span> <span class="o">=</span> <span class="mi">30</span>
+</span></span><span class="line"><span class="cl">    <span class="kr">const</span> <span class="nx">passedProgressBarIndex</span> <span class="o">=</span> <span class="nb">parseInt</span><span class="p">(</span><span class="nx">progressOfThisYear</span> <span class="o">*</span> <span class="nx">progressBarCapacity</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="kr">const</span> <span class="nx">progressBar</span> <span class="o">=</span>
+</span></span><span class="line"><span class="cl">      <span class="s1">&#39;█&#39;</span><span class="p">.</span><span class="nx">repeat</span><span class="p">(</span><span class="nx">passedProgressBarIndex</span><span class="p">)</span> <span class="o">+</span>
+</span></span><span class="line"><span class="cl">      <span class="s1">&#39;▁&#39;</span><span class="p">.</span><span class="nx">repeat</span><span class="p">(</span><span class="nx">progressBarCapacity</span> <span class="o">-</span> <span class="nx">passedProgressBarIndex</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="sb">`{ </span><span class="si">${</span><span class="nx">progressBar</span><span class="si">}</span><span class="sb"> }`</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">readme</span> <span class="o">=</span> <span class="sb">`\
+</span></span></span><span class="line"><span class="cl"><span class="sb">### Hi there 👋
+</span></span></span><span class="line"><span class="cl"><span class="sb">
+</span></span></span><span class="line"><span class="cl"><span class="sb">/*
+</span></span></span><span class="line"><span class="cl"><span class="sb">Add something originally in the README.md file.
+</span></span></span><span class="line"><span class="cl"><span class="sb">*/
+</span></span></span><span class="line"><span class="cl"><span class="sb">
+</span></span></span><span class="line"><span class="cl"><span class="sb">⏳ Year progress </span><span class="si">${</span><span class="nx">progressBarOfThisYear</span><span class="si">}</span><span class="sb"> </span><span class="si">${</span><span class="p">(</span><span class="nx">progressOfThisYear</span> <span class="o">*</span> <span class="mi">100</span><span class="p">).</span><span class="nx">toFixed</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="si">}</span><span class="sb"> %
+</span></span></span><span class="line"><span class="cl"><span class="sb">
+</span></span></span><span class="line"><span class="cl"><span class="sb">---
+</span></span></span><span class="line"><span class="cl"><span class="sb">
+</span></span></span><span class="line"><span class="cl"><span class="sb">⏰ Updated on </span><span class="si">${</span><span class="k">new</span> <span class="nb">Date</span><span class="p">().</span><span class="nx">toUTCString</span><span class="p">()</span><span class="si">}</span><span class="sb">
+</span></span></span><span class="line"><span class="cl"><span class="sb">
+</span></span></span><span class="line"><span class="cl"><span class="sb">/*
+</span></span></span><span class="line"><span class="cl"><span class="sb">Add something originally in the README.md file.
+</span></span></span><span class="line"><span class="cl"><span class="sb">*/
+</span></span></span><span class="line"><span class="cl"><span class="sb">
+</span></span></span><span class="line"><span class="cl"><span class="sb">`</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">readme</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ol start="3">
+<li>Please note the line <code>const readme = </code>! Here <strong>const readme</strong> will fully covers <code>README.md</code>. Therefore, please <strong>concatenate the original contents in README.md in index.js (at &ldquo;/* Add something originally in the README.md file. */ &ldquo;), rather than just the progress bar</strong>.</li>
+<li>Click on <code>Actions</code> button in the repository, Test the <code>Progress Bar CI</code> workflows, and Check whether implemented successfully.</li>
+</ol>
+<h3 id="debugging-for-the-potential-problems">Debugging for the Potential Problems
+</h3><h4 id="failed-at-commit-change--push">Failed at <code>Commit change &amp; Push</code>
+</h4><p>When I attempted to run the <code>Progress Bar CI</code> workflows, I found an error, in detail:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">▼ Run git config user.name &#39;github-actions[bot]&#34;
+</span></span><span class="line"><span class="cl">	git config user.name &#39;github-actions[bot]&#39;
+</span></span><span class="line"><span class="cl">	git config user.email&#39;YOUR_ID+github-actions[bot]@users.noreply.github.com&#39;
+</span></span><span class="line"><span class="cl">	git commit -am&#34;bot: update README.md automatically&#34;
+</span></span><span class="line"><span class="cl">	git push
+</span></span><span class="line"><span class="cl">	shell:/usr/bin/bash -e {0}
+</span></span><span class="line"><span class="cl">	env:
+</span></span><span class="line"><span class="cl">		GITHUB_TOKEN:***
+</span></span><span class="line"><span class="cl">[main 38a8a8d] bot: update README.md automatically
+</span></span><span class="line"><span class="cl">1 file changed,4 insertions(+)，25 deletions(-)
+</span></span><span class="line"><span class="cl">remote: Permission to serendipityerr/serendipityerr.git denied to github-actions[bot].
+</span></span><span class="line"><span class="cl">fatal:unable to access&#39;https://github.com/serendipityerr/serendipityerr/&#39;:The requested URL returned error:403
+</span></span><span class="line"><span class="cl">Error: Process completed with exit code 128.
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>Solutions</strong></p>
+<ol>
+<li>Add the following codes in <code>.github/workflows/main.yml</code> (add a write-enabled permission configuration to the workflows):</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-yml" data-lang="yml"><span class="line"><span class="cl"><span class="nt">permissions</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">contents</span><span class="p">:</span><span class="w"> </span><span class="l">write</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><ol start="2">
+<li>The updated <code>yml</code> would be:</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-yml" data-lang="yml"><span class="line"><span class="cl"><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Progress Bar CI </span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">on</span><span class="p">:</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">workflow_dispatch</span><span class="p">:</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">schedule</span><span class="p">:</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span>- <span class="nt">cron</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;0 */6 * * *&#39;</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">permissions</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">contents</span><span class="p">:</span><span class="w"> </span><span class="l">write</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">jobs</span><span class="p">:</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">build</span><span class="p">:</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="nt">runs-on</span><span class="p">:</span><span class="w"> </span><span class="l">ubuntu-latest </span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">steps</span><span class="p">:</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l">actions/checkout@v2 </span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Use Node.js </span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l">actions/setup-node@v1 </span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="nt">with</span><span class="p">:</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w">	  </span><span class="nt">node-version</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;14.x&#39;</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Update README.md </span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l">node index.js &gt; README.md </span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Commit change &amp; Push </span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l">| </span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="l">git config user.name &#39;github-actions[bot]&#39; </span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="l">git config user.email &#39;YOUR_ID+github-actions[bot]@users.noreply.github.com&#39; </span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="l">git commit -am &#34;bot: update README.md automatically&#34; </span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="l">git push</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><ol start="3">
+<li>Then run the <code>Progress Bar CI</code> workflows again and check. I find the problem solved.</li>
+</ol>
+<h2 id="copyright-notice">Copyright Notice
+</h2><p>The original code was developed by GitHub user 👉👉 <a class="link" href="https://github.com/liununu"  target="_blank" rel="noopener"
+    >@liununu</a>. All credits go to the author.</p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/git/">Git</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>All Rights Reserved</span>
+    </section>
+    </footer>
+
+
+    
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI&#43;WdtXRGWt2kTvGFasHpSy3SV"crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG&#43;vnGctmUb0ZY0l8"crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"integrity="sha384-&#43;VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4&#43;/RRE05"crossorigin="anonymous"
+                defer
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+	const mainArticleElement = document.querySelector(".main-article");
+        renderMathInElement(mainArticleElement, {
+            delimiters: [
+                { left: "$$", right: "$$", display: true },
+                { left: "$", right: "$", display: false },
+                { left: "\\(", right: "\\)", display: false },
+                { left: "\\[", right: "\\]", display: true }
+            ],
+            ignoredClasses: ["gist"]
+        });})
+</script>
+
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">Related content</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="">
+    <a href="/p/git-and-ssh/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Git and SSH</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/add-a-funny-snake-animation-to-your-github-profile-page/">
+        
+        
+            <div class="article-image">
+                
+                    <img src="https://raw.githubusercontent.com/serendipityerr/serendipityerr/output/github-contribution-grid-snake.svg" loading="lazy" data-key="" data-hash="https://raw.githubusercontent.com/serendipityerr/serendipityerr/output/github-contribution-grid-snake.svg"/>
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Add a Funny Snake Animation to Your GitHub Profile Page</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/p/starting-from-scratch-creating-and-pushing-your-blog-posts-with-hugo-and-git/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Starting from Scratch: Creating and Pushing Your Blog Posts with Hugo and Git</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/p/replace-google-cdn/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Replace Google CDN</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/update-hugo-to-hugo-extended/">
+        
+        
+            <div class="article-image">
+                
+                    <img src="/post_img/2025-02-17/hugo-logo-wide.png" loading="lazy" data-key="" data-hash="/post_img/2025-02-17/hugo-logo-wide.png"/>
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Update Hugo To Hugo-extended</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    <script
+    src="https://giscus.app/client.js"
+    data-repo="serendipityerr/serendipityerr.github.io"
+    data-repo-id="R_kgDOMW0Z9w"
+    data-category="Announcements"
+    data-category-id="DIC_kwDOMW0Z984CoGnx"
+    data-mapping="pathname"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="top"
+    data-theme="light"
+    data-lang="en"
+    data-loading=""
+    crossorigin="anonymous"
+    async
+></script>
+<script>
+    function setGiscusTheme(theme) {
+        let giscus = document.querySelector("iframe.giscus-frame");
+        if (giscus) {
+            giscus.contentWindow.postMessage(
+                {
+                    giscus: {
+                        setConfig: {
+                            theme: theme,
+                        },
+                    },
+                },
+                "https://giscus.app"
+            );
+        }
+    }
+
+    (function () {
+        addEventListener("message", (e) => {
+            if (event.origin !== "https://giscus.app") return;
+            handler();
+        });
+        window.addEventListener("onColorSchemeChange", handler);
+
+        function handler() {
+            if (document.documentElement.dataset.scheme === "light") {
+                setGiscusTheme('light');
+            } else {
+                setGiscusTheme('dark_dimmed');
+            }
+        }
+    })();
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2024 - 
+        
+        2025 Serendipity&#39;s Blog
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.30.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.1e9a3bafd846ced4c345d084b355fb8c7bae75701c338f8a1f8a82c780137826.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>
