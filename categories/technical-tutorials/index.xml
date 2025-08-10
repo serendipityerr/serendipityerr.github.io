@@ -12,7 +12,7 @@
         <pubDate>Fri, 01 Aug 2025 16:47:05 +0800</pubDate>
         
         <guid>https://example.com/p/add-a-year-progress-to-your-github-profile-page/</guid>
-        <description>&lt;img src="https://example.com/post_img/2025-08-01/year_progress_example_1.png" alt="Featured image of post Add a Year Progress to Your GitHub Profile Page" /&gt;&lt;h2 id=&#34;introduction&#34;&gt;Introduction
+        <description>&lt;img src="https://example.com/post_img/2025-08-01/year_progress_example_2.png" alt="Featured image of post Add a Year Progress to Your GitHub Profile Page" /&gt;&lt;h2 id=&#34;introduction&#34;&gt;Introduction
 &lt;/h2&gt;&lt;p&gt;A GitHub personal home page, officially called a profile, is a personal GitHub presentation master page written in &lt;code&gt;Markdown&lt;/code&gt;. In this article, we’ll demonstrate how to add a year progress (automatically updated every day) to the GitHub profile page—so it looks like this:&lt;/p&gt;
 &lt;div align=&#34;center&#34;&gt;&lt;img src=&#34;https://example.com/post_img/2025-08-01/result.png&#34;&gt;&lt;/div&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
