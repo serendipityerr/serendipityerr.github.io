@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="Study on Score-Based Generative Modeling\r(●&rsquo;◡&rsquo;●)\nAbout Score-Based Generative Modeling: the following article has given a clear explanation: Diffusion Model: SDE\nA simple conclusion of the Score-Based Generative Modeling through Stochastic Differential Equations: Generalization of discrete models such as DDPM to continuous SDE forms, through predictor-corrector samplers to correct the solution of a numerical SDE solver.\n">
-<title>2024.07.18</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="Introduction\r终于有机会开了个新坑。其实在大概一年以前就记过一些相关笔记，但是没有时间/机会整理，感谢@Dorisgua同学的大力支持。^O^/\nStudy Notes on Diffusion Models\r由于网页配置Latex不顺T_T，不能直接把各种公式展示出来，这里就放整理好的pdf版本了，具体的Markdown版本可以请见我的GitHub仓库Learning-Notes。现在，让我们开始探索Diffusion吧！\nDenoising Diffusion Probabilistic Models (DDPMs)\r以后慢慢更新&hellip;To Be Continued&hellip;\n">
+<title>Study Notes on Diffusion</title>
 
-<link rel='canonical' href='https://example.com/p/2024.07.18/'>
+<link rel='canonical' href='https://example.com/p/study-notes-on-diffusion/'>
 
-<link rel="stylesheet" href="/scss/style.min.b9c8156d464c343bdacaf14a871581fb94cbbdb9dd5cbce4ba017361187cc930.css"><meta property='og:title' content="2024.07.18">
-<meta property='og:description' content="Study on Score-Based Generative Modeling\r(●&rsquo;◡&rsquo;●)\nAbout Score-Based Generative Modeling: the following article has given a clear explanation: Diffusion Model: SDE\nA simple conclusion of the Score-Based Generative Modeling through Stochastic Differential Equations: Generalization of discrete models such as DDPM to continuous SDE forms, through predictor-corrector samplers to correct the solution of a numerical SDE solver.\n">
-<meta property='og:url' content='https://example.com/p/2024.07.18/'>
+<link rel="stylesheet" href="/scss/style.min.b9c8156d464c343bdacaf14a871581fb94cbbdb9dd5cbce4ba017361187cc930.css"><meta property='og:title' content="Study Notes on Diffusion">
+<meta property='og:description' content="Introduction\r终于有机会开了个新坑。其实在大概一年以前就记过一些相关笔记，但是没有时间/机会整理，感谢@Dorisgua同学的大力支持。^O^/\nStudy Notes on Diffusion Models\r由于网页配置Latex不顺T_T，不能直接把各种公式展示出来，这里就放整理好的pdf版本了，具体的Markdown版本可以请见我的GitHub仓库Learning-Notes。现在，让我们开始探索Diffusion吧！\nDenoising Diffusion Probabilistic Models (DDPMs)\r以后慢慢更新&hellip;To Be Continued&hellip;\n">
+<meta property='og:url' content='https://example.com/p/study-notes-on-diffusion/'>
 <meta property='og:site_name' content='Serendipity&#39;s Blog'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Machine Learning' /><meta property='article:published_time' content='2024-07-18T23:45:09&#43;08:00'/><meta property='article:modified_time' content='2024-07-18T23:45:09&#43;08:00'/>
-<meta name="twitter:title" content="2024.07.18">
-<meta name="twitter:description" content="Study on Score-Based Generative Modeling\r(●&rsquo;◡&rsquo;●)\nAbout Score-Based Generative Modeling: the following article has given a clear explanation: Diffusion Model: SDE\nA simple conclusion of the Score-Based Generative Modeling through Stochastic Differential Equations: Generalization of discrete models such as DDPM to continuous SDE forms, through predictor-corrector samplers to correct the solution of a numerical SDE solver.\n">
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Machine Learning' /><meta property='article:published_time' content='2025-08-16T23:21:40&#43;08:00'/><meta property='article:modified_time' content='2025-08-16T23:21:40&#43;08:00'/>
+<meta name="twitter:title" content="Study Notes on Diffusion">
+<meta name="twitter:description" content="Introduction\r终于有机会开了个新坑。其实在大概一年以前就记过一些相关笔记，但是没有时间/机会整理，感谢@Dorisgua同学的大力支持。^O^/\nStudy Notes on Diffusion Models\r由于网页配置Latex不顺T_T，不能直接把各种公式展示出来，这里就放整理好的pdf版本了，具体的Markdown版本可以请见我的GitHub仓库Learning-Notes。现在，让我们开始探索Diffusion吧！\nDenoising Diffusion Probabilistic Models (DDPMs)\r以后慢慢更新&hellip;To Be Continued&hellip;\n">
     <link rel="shortcut icon" href="/favicon.ico" />
 
     </head>
@@ -256,7 +256,12 @@
         <div class="widget--toc">
             <nav id="TableOfContents">
   <ol>
-    <li><a href="#study-on-score-based-generative-modeling">Study on Score-Based Generative Modeling</a></li>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#study-notes-on-diffusion-models">Study Notes on Diffusion Models</a>
+      <ol>
+        <li><a href="#denoising-diffusion-probabilistic-models-ddpms">Denoising Diffusion Probabilistic Models (DDPMs)</a></li>
+      </ol>
+    </li>
   </ol>
 </nav>
         </div>
@@ -284,7 +289,7 @@
 
     <div class="article-title-wrapper">
         <h2 class="article-title">
-            <a href="/p/2024.07.18/">2024.07.18</a>
+            <a href="/p/study-notes-on-diffusion/">Study Notes on Diffusion</a>
         </h2>
     
         
@@ -306,7 +311,7 @@
   <path d="M3 11h16" />
   <path d="M18 16.496v1.504l1 1" />
 </svg>
-                <time class="article-time--published">Jul 18, 2024</time>
+                <time class="article-time--published">Aug 16, 2025</time>
             </div>
         
 
@@ -336,12 +341,15 @@
     <section class="article-content">
     
     
-    <h2 id="study-on-score-based-generative-modeling">Study on Score-Based Generative Modeling
-</h2><p>(●&rsquo;◡&rsquo;●)</p>
-<p>About Score-Based Generative Modeling: the following article has given a clear explanation: <a class="link" href="https://kexue.fm/archives/9209#mjx-eqn-eq%3Abayes-dt"  target="_blank" rel="noopener"
-    >Diffusion Model: SDE</a></p>
-<p>A simple conclusion of the <a class="link" href="https://arxiv.org/pdf/2011.13456"  target="_blank" rel="noopener"
-    >Score-Based Generative Modeling through Stochastic Differential Equations</a>: Generalization of discrete models such as DDPM to continuous SDE forms, through predictor-corrector samplers to correct the solution of a numerical SDE solver.</p>
+    <h2 id="introduction">Introduction
+</h2><p>终于有机会开了个新坑。其实在大概一年以前就记过一些相关笔记，但是没有时间/机会整理，感谢<a class="link" href="https://github.com/Dorisgua"  target="_blank" rel="noopener"
+    >@Dorisgua</a>同学的大力支持。^O^/</p>
+<h2 id="study-notes-on-diffusion-models">Study Notes on Diffusion Models
+</h2><p>由于网页配置Latex不顺T_T，不能直接把各种公式展示出来，这里就放整理好的pdf版本了，具体的Markdown版本可以请见我的GitHub仓库<a class="link" href="https://github.com/serendipityerr/Learning-Notes"  target="_blank" rel="noopener"
+    >Learning-Notes</a>。现在，让我们开始探索Diffusion吧！</p>
+<h3 id="denoising-diffusion-probabilistic-models-ddpms">Denoising Diffusion Probabilistic Models (DDPMs)
+</h3><iframe src="/post_img/2025-08-16/Denoising Diffusion Probabilistic Models (DDPMs).pdf" width="100%" height="1000px"></iframe>
+<p>以后慢慢更新&hellip;To Be Continued&hellip;</p>
 
 </section>
 
@@ -410,12 +418,12 @@
             
                 
 <article class="">
-    <a href="/p/study-notes-on-diffusion/">
+    <a href="/p/pca-and-autoencoder/">
         
         
 
         <div class="article-details">
-            <h2 class="article-title">Study Notes on Diffusion</h2>
+            <h2 class="article-title">PCA and AutoEncoder</h2>
         </div>
     </a>
 </article>
@@ -423,12 +431,12 @@
             
                 
 <article class="">
-    <a href="/p/pca-and-autoencoder/">
+    <a href="/p/2024.07.18/">
         
         
 
         <div class="article-details">
-            <h2 class="article-title">PCA and AutoEncoder</h2>
+            <h2 class="article-title">2024.07.18</h2>
         </div>
     </a>
 </article>

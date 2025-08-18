@@ -6,7 +6,24 @@
         <description>Recent content in Machine Learning on Serendipity&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Wed, 28 Aug 2024 14:14:07 +0800</lastBuildDate><atom:link href="https://example.com/tags/machine-learning/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 16 Aug 2025 23:21:40 +0800</lastBuildDate><atom:link href="https://example.com/tags/machine-learning/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Study Notes on Diffusion</title>
+        <link>https://example.com/p/study-notes-on-diffusion/</link>
+        <pubDate>Sat, 16 Aug 2025 23:21:40 +0800</pubDate>
+        
+        <guid>https://example.com/p/study-notes-on-diffusion/</guid>
+        <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction
+&lt;/h2&gt;&lt;p&gt;终于有机会开了个新坑。其实在大概一年以前就记过一些相关笔记，但是没有时间/机会整理，感谢&lt;a class=&#34;link&#34; href=&#34;https://github.com/Dorisgua&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;@Dorisgua&lt;/a&gt;同学的大力支持。^O^/&lt;/p&gt;
+&lt;h2 id=&#34;study-notes-on-diffusion-models&#34;&gt;Study Notes on Diffusion Models
+&lt;/h2&gt;&lt;p&gt;由于网页配置Latex不顺T_T，不能直接把各种公式展示出来，这里就放整理好的pdf版本了，具体的Markdown版本可以请见我的GitHub仓库&lt;a class=&#34;link&#34; href=&#34;https://github.com/serendipityerr/Learning-Notes&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Learning-Notes&lt;/a&gt;。现在，让我们开始探索Diffusion吧！&lt;/p&gt;
+&lt;h3 id=&#34;denoising-diffusion-probabilistic-models-ddpms&#34;&gt;Denoising Diffusion Probabilistic Models (DDPMs)
+&lt;/h3&gt;&lt;iframe src=&#34;https://example.com/post_img/2025-08-16/Denoising Diffusion Probabilistic Models (DDPMs).pdf&#34; width=&#34;100%&#34; height=&#34;1000px&#34;&gt;&lt;/iframe&gt;
+&lt;p&gt;以后慢慢更新&amp;hellip;To Be Continued&amp;hellip;&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>Some Skills on Image Processing</title>
         <link>https://example.com/p/some-skills-on-image-processing/</link>
         <pubDate>Wed, 28 Aug 2024 14:14:07 +0800</pubDate>

@@ -2,22 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://example.com/categories/</loc>
+    <lastmod>2025-08-16T23:21:40+08:00</lastmod>
+  </url><url>
+    <loc>https://example.com/tags/machine-learning/</loc>
+    <lastmod>2025-08-16T23:21:40+08:00</lastmod>
+  </url><url>
+    <loc>https://example.com/post/</loc>
+    <lastmod>2025-08-16T23:21:40+08:00</lastmod>
+  </url><url>
+    <loc>https://example.com/</loc>
+    <lastmod>2025-08-16T23:21:40+08:00</lastmod>
+  </url><url>
+    <loc>https://example.com/categories/study-notes/</loc>
+    <lastmod>2025-08-16T23:21:40+08:00</lastmod>
+  </url><url>
+    <loc>https://example.com/p/study-notes-on-diffusion/</loc>
+    <lastmod>2025-08-16T23:21:40+08:00</lastmod>
+  </url><url>
+    <loc>https://example.com/tags/</loc>
+    <lastmod>2025-08-16T23:21:40+08:00</lastmod>
+  </url><url>
     <loc>https://example.com/p/add-a-year-progress-to-your-github-profile-page/</loc>
     <lastmod>2025-08-01T16:47:05+08:00</lastmod>
   </url><url>
-    <loc>https://example.com/categories/</loc>
-    <lastmod>2025-08-01T16:47:05+08:00</lastmod>
-  </url><url>
     <loc>https://example.com/tags/git/</loc>
-    <lastmod>2025-08-01T16:47:05+08:00</lastmod>
-  </url><url>
-    <loc>https://example.com/post/</loc>
-    <lastmod>2025-08-01T16:47:05+08:00</lastmod>
-  </url><url>
-    <loc>https://example.com/</loc>
-    <lastmod>2025-08-01T16:47:05+08:00</lastmod>
-  </url><url>
-    <loc>https://example.com/tags/</loc>
     <lastmod>2025-08-01T16:47:05+08:00</lastmod>
   </url><url>
     <loc>https://example.com/categories/technical-tutorials/</loc>
@@ -27,9 +36,6 @@
     <lastmod>2025-05-19T23:10:50+08:00</lastmod>
   </url><url>
     <loc>https://example.com/p/notes-on-optimal-transport/</loc>
-    <lastmod>2025-03-23T19:12:10+08:00</lastmod>
-  </url><url>
-    <loc>https://example.com/categories/study-notes/</loc>
     <lastmod>2025-03-23T19:12:10+08:00</lastmod>
   </url><url>
     <loc>https://example.com/homepage/</loc>
@@ -79,9 +85,6 @@
   </url><url>
     <loc>https://example.com/p/some-skills-on-modifying-pip-mirror-source-and-installing-cuda-in-conda/</loc>
     <lastmod>2024-10-18T15:28:15+08:00</lastmod>
-  </url><url>
-    <loc>https://example.com/tags/machine-learning/</loc>
-    <lastmod>2024-08-28T14:14:07+08:00</lastmod>
   </url><url>
     <loc>https://example.com/p/some-skills-on-image-processing/</loc>
     <lastmod>2024-08-28T14:14:07+08:00</lastmod>
