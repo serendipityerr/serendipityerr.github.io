@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Obsidian on Serendipity&#39;s Blog</title>
+        <link>http://localhost:1313/tags/obsidian/</link>
+        <description>Recent content in Obsidian on Serendipity&#39;s Blog</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Wed, 27 Aug 2025 20:34:29 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/obsidian/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Obsidian Plugin Math Booster</title>
+        <link>http://localhost:1313/p/obsidian-plugin-math-booster/</link>
+        <pubDate>Wed, 27 Aug 2025 20:34:29 +0800</pubDate>
+        
+        <guid>http://localhost:1313/p/obsidian-plugin-math-booster/</guid>
+        <description>&lt;img src="http://localhost:1313/post_img/2025-08-27/obsidian-logo.png" alt="Featured image of post Obsidian Plugin Math Booster" /&gt;&lt;h2 id=&#34;introduction&#34;&gt;Introduction
+&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;LaTeX-like Theorem &amp;amp; Equation Referencer (Math Booster since version 2.1.4)&lt;/strong&gt; is an Obsidian plugin that provides a powerful indexing &amp;amp; referencing system for theorems &amp;amp; equations in your vault, bringing LaTeX-like workflow into Obsidian.&lt;/p&gt;
+&lt;h2 id=&#34;pre-conditions&#34;&gt;Pre-Conditions
+&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;Obsidian&lt;/li&gt;
+&lt;li&gt;Some other plugins:
+&lt;ol&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/zhaoshenzhai/obsidian-mathlinks&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;MathLinks&lt;/a&gt; Version $\ge$ 0.5.3&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/blacksmithgu/obsidian-dataview&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Dataview&lt;/a&gt; Version $\ge$ 0.5.56&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;installation&#34;&gt;Installation
+&lt;/h2&gt;&lt;h3 id=&#34;install-pre-conditioned-plugins&#34;&gt;Install Pre-Conditioned Plugins
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;To install Community Plugins, you need to disable Safe Mode under &lt;code&gt;Settings -&amp;gt; Community Plugins -&amp;gt; Safe Mode&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Click &lt;strong&gt;Settings&lt;/strong&gt; button in the left corner, choose &lt;strong&gt;Community Plugins&lt;/strong&gt;, enter in &lt;strong&gt;Community Plugin Market&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Search for &lt;code&gt;MathLinks&lt;/code&gt; and &lt;code&gt;Dataview&lt;/code&gt; plugins and install them.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;install-math-booster&#34;&gt;Install Math Booster
+&lt;/h3&gt;&lt;p&gt;Now let&amp;rsquo;s stall Math Booster! You can install this plugin via &lt;a class=&#34;link&#34; href=&#34;https://github.com/TfTHacker/obsidian42-brat&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;BRAT&lt;/a&gt; (Beta Reviewers Auto-update Tester):&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Install BRAT and enable it.&lt;/li&gt;
+&lt;li&gt;Go to &lt;strong&gt;Options&lt;/strong&gt;. In the &lt;strong&gt;Beta Plugin List&lt;/strong&gt; section, click on the &lt;strong&gt;Add Beta plugin&lt;/strong&gt; button.&lt;/li&gt;
+&lt;li&gt;Copy and paste &lt;code&gt;https://github.com/RyotaUshio/obsidian-math-booster&lt;/code&gt; in the pop-up prompt, &lt;strong&gt;choose version 2.1.4&lt;/strong&gt; (tested successfully) and click on &lt;strong&gt;Add Plugin&lt;/strong&gt;. (vpn REQUIRED!!!)&lt;/li&gt;
+&lt;li&gt;Go to &lt;strong&gt;Community plugins &amp;gt; Installed plugins&lt;/strong&gt;. You will find &amp;ldquo;Math Booster&amp;rdquo; in the list. Click on the toggle button to enable it.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;docs&#34;&gt;Docs
+&lt;/h2&gt;&lt;h3 id=&#34;theorem-callouts&#34;&gt;Theorem Callouts
+&lt;/h3&gt;&lt;p&gt;The plugin offers &lt;strong&gt;theorem callouts&lt;/strong&gt;. They are designed for creating theorem environments (theorem, definition, lemma, &amp;hellip;) in Obsidian as LaTeX-like as possible.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;&amp;gt; &lt;/span&gt;&lt;span class=&#34;ge&#34;&gt;[!theorem] Title
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;ge&#34;&gt;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;&amp;gt; &lt;/span&gt;&lt;span class=&#34;ge&#34;&gt;Content
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;ge&#34;&gt;&lt;/span&gt;&lt;span class=&#34;c&#34;&gt;&amp;lt;!-- or aliases version --&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;&amp;gt; &lt;/span&gt;&lt;span class=&#34;ge&#34;&gt;[!thm] Title
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;ge&#34;&gt;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;&amp;gt; &lt;/span&gt;&lt;span class=&#34;ge&#34;&gt;Content
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;It will be rendered as below.&lt;/p&gt;
+&lt;div align=&#34;center&#34;&gt;&lt;img src=&#34;http://localhost:1313/post_img/2025-08-27/math_booster_theorem.png&#34; height=100&gt;&lt;/div&gt;
+&lt;p&gt;Here&amp;rsquo;s the complete list of available envionments and aliases:&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Environment name&lt;/th&gt;
+          &lt;th&gt;Alias&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;axiom&lt;/td&gt;
+          &lt;td&gt;axm&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;definition&lt;/td&gt;
+          &lt;td&gt;def&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;lemma&lt;/td&gt;
+          &lt;td&gt;lem&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;proposition&lt;/td&gt;
+          &lt;td&gt;prp&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;theorem&lt;/td&gt;
+          &lt;td&gt;thm&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;corollary&lt;/td&gt;
+          &lt;td&gt;cor&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;claim&lt;/td&gt;
+          &lt;td&gt;clm&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;assumption&lt;/td&gt;
+          &lt;td&gt;asm&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;example&lt;/td&gt;
+          &lt;td&gt;exm&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;exercise&lt;/td&gt;
+          &lt;td&gt;exr&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;conjecture&lt;/td&gt;
+          &lt;td&gt;cnj&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;hypothesis&lt;/td&gt;
+          &lt;td&gt;hyp&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;remark&lt;/td&gt;
+          &lt;td&gt;rmk&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;unnumbered-theorem-callouts&#34;&gt;Unnumbered Theorem Callouts
+&lt;/h3&gt;&lt;p&gt;Similarly to the LaTeX syntax (e.g. &lt;code&gt;\begin{theorem*}&lt;/code&gt;), the following will create an unnumbered theorem callout.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;gt; [!lemma|*] Title
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;gt; Content
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;It will be rendered as below.&lt;/p&gt;
+&lt;div align=&#34;center&#34;&gt;&lt;img src=&#34;http://localhost:1313/post_img/2025-08-27/math_booster_lemma.png&#34; height=100&gt;&lt;/div&gt;
+&lt;h3 id=&#34;manually-numbered-theorem-callouts&#34;&gt;Manually Numbered Theorem Callouts
+&lt;/h3&gt;&lt;p&gt;It is also possible to explicitly specify the theorem number by yourself.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;gt; [!def|A.1] Title
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;gt; Content
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;It will be rendered as below.&lt;/p&gt;
+&lt;div align=&#34;center&#34;&gt;&lt;img src=&#34;http://localhost:1313/post_img/2025-08-27/math_booster_def.png&#34; height=100&gt;&lt;/div&gt;
+&lt;h3 id=&#34;equations&#34;&gt;Equations
+&lt;/h3&gt;&lt;p&gt;By default, the plugin only numbers equations with backlinks (i.e. the ones that are referenced elsewhere). Alternatively, you can number all equations by turning off the option &lt;code&gt;Equations - numbering &amp;gt; Number only referenced equations&lt;/code&gt;.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$$
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;f(x)
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$$
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$$
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;g(x) \tag{$\ast$}
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$$
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$$
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;h(x)
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$$
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;^934f5c
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Link to $h(x)$: [[#^934f5c]]
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;It will be rendered as below.&lt;/p&gt;
+&lt;div align=&#34;center&#34;&gt;&lt;img src=&#34;http://localhost:1313/post_img/2025-08-27/math_booster_equation_reference.png&#34; height=200&gt;&lt;/div&gt;
+&lt;h3 id=&#34;custom-link-autocomplete&#34;&gt;Custom Link Autocomplete
+&lt;/h3&gt;&lt;p&gt;In the editor, type &lt;code&gt;\ref&lt;/code&gt; (by default). Then, live suggestions for all theorem callouts &amp;amp; equation blocks in the entire vault show up.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Enter&lt;/code&gt;: insert a link to the selected item.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Shift&lt;/code&gt;+&lt;code&gt;Enter&lt;/code&gt;: insert a link to the note containing the selected item.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Cmd&lt;/code&gt;+&lt;code&gt;Enter&lt;/code&gt; on Mac/&lt;code&gt;Ctrl&lt;/code&gt;+&lt;code&gt;Enter&lt;/code&gt; on Windows: jump to the selected item by pressing.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Use &lt;code&gt;\tref&lt;/code&gt; or &lt;code&gt;\eqref&lt;/code&gt; (by default) instead of &lt;code&gt;\ref&lt;/code&gt; to suggest only theorems or only equations.&lt;/p&gt;
+&lt;p&gt;Use &lt;code&gt;\ref:r&lt;/code&gt; or &lt;code&gt;\tref:r&lt;/code&gt; or &lt;code&gt;\eqref:r&lt;/code&gt; (by default) to search only within recently opened notes.&lt;/p&gt;
+&lt;p&gt;Use &lt;code&gt;\ref:a&lt;/code&gt; or &lt;code&gt;\tref:a&lt;/code&gt; or &lt;code&gt;\eqref:a&lt;/code&gt; (by default) to search only within active note.&lt;/p&gt;
+&lt;p&gt;It will be rendered as below.&lt;/p&gt;
+&lt;div align=&#34;center&#34;&gt;&lt;img src=&#34;http://localhost:1313/post_img/2025-08-27/math_booster_reference.png&#34; height=360&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Caution&lt;/strong&gt;: Requiring the &lt;code&gt;Include theorem callout label for search target&lt;/code&gt; option to be turned on!&lt;/p&gt;
+&lt;h3 id=&#34;proof-environment&#34;&gt;Proof environment
+&lt;/h3&gt;&lt;p&gt;The plugin supports LaTeX-like proof environments.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;`\begin{proof}`
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, ...
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;`\end{proof}`
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;It will be rendered as below.&lt;/p&gt;
+&lt;div align=&#34;center&#34;&gt;&lt;img src=&#34;http://localhost:1313/post_img/2025-08-27/math_booster_proof.png&#34; height=75&gt;&lt;/div&gt;
+&lt;p&gt;Use the following syntax to print custom text.&lt;br&gt;
+Any inline markdown syntax can be used, but inline formulas will render with flickering in the live preview.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;`\begin{proof}[Solution.]`
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, ...
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;`\end{proof}`
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;It will be rendered as below.&lt;/p&gt;
+&lt;div align=&#34;center&#34;&gt;&lt;img src=&#34;http://localhost:1313/post_img/2025-08-27/math_booster_proof_custom_text.png&#34; height=75&gt;&lt;/div&gt;
+&lt;p&gt;Suppose that you have a theorem like below and it has a block ID &lt;code&gt;123456&lt;/code&gt;.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;&amp;gt; &lt;/span&gt;&lt;span class=&#34;ge&#34;&gt;[!thm] Title
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;ge&#34;&gt;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;&amp;gt; &lt;/span&gt;&lt;span class=&#34;ge&#34;&gt;Content
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;The following will be printed as &amp;ldquo;&lt;em&gt;Proof of Theorem 1 (Title).&lt;/em&gt;&amp;rdquo; by default.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;`\begin{proof}`@[[#^123456]]
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, ...
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;`\end{proof}`
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;It will be rendered as below.&lt;/p&gt;
+&lt;div align=&#34;center&#34;&gt;&lt;img src=&#34;http://localhost:1313/post_img/2025-08-27/math_booster_proof_linked.png&#34; height=75&gt;&lt;/div&gt;
+&lt;h2 id=&#34;reference&#34;&gt;Reference
+&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;[&lt;a class=&#34;link&#34; href=&#34;https://ryotaushio.github.io/obsidian-latex-theorem-equation-referencer/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;official documents&lt;/a&gt;]&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>
