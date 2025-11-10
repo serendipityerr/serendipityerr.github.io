@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr">
     <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="Use SSH on GitHub\rBelow are the detailed step-by-step instructions for configuring and using SSH on GitHub from scratch:\nCheck for an existing SSH Key\rFirst, check if you have an existing SSH key locally:\n1 2 cd ~/.ssh ls If the id_rsa and id_rsa.pub files exist, an SSH Key already exists and you can skip the generation step.\nGenerate an SSH Key\rIf you do not have an SSH Key, you can generate one using the following command:\n">
-<title>Git and SSH</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="What is BibTeX and .bib file?\rBibTeX\rBibTeX is a tool and file format for managing and formatting bibliographic references, typically used in conjunction with the LaTeX document typesetting system.\n.bib file\rA .bib file is a plain-text database file where you can store all the bibliographic information for the sources you cite. Its core principle is to separate the content (data) of the bibliographic entries from their display format (style) within the document.\n">
+<title>BibTeX .bib and .bbl</title>
 
-<link rel='canonical' href='http://localhost:1313/p/git-and-ssh/'>
+<link rel='canonical' href='http://localhost:1313/p/bibtex-.bib-and-.bbl/'>
 
-<link rel="stylesheet" href="/scss/style.min.b9c8156d464c343bdacaf14a871581fb94cbbdb9dd5cbce4ba017361187cc930.css"><meta property='og:title' content="Git and SSH">
-<meta property='og:description' content="Use SSH on GitHub\rBelow are the detailed step-by-step instructions for configuring and using SSH on GitHub from scratch:\nCheck for an existing SSH Key\rFirst, check if you have an existing SSH key locally:\n1 2 cd ~/.ssh ls If the id_rsa and id_rsa.pub files exist, an SSH Key already exists and you can skip the generation step.\nGenerate an SSH Key\rIf you do not have an SSH Key, you can generate one using the following command:\n">
-<meta property='og:url' content='http://localhost:1313/p/git-and-ssh/'>
+<link rel="stylesheet" href="/scss/style.min.b9c8156d464c343bdacaf14a871581fb94cbbdb9dd5cbce4ba017361187cc930.css"><meta property='og:title' content="BibTeX .bib and .bbl">
+<meta property='og:description' content="What is BibTeX and .bib file?\rBibTeX\rBibTeX is a tool and file format for managing and formatting bibliographic references, typically used in conjunction with the LaTeX document typesetting system.\n.bib file\rA .bib file is a plain-text database file where you can store all the bibliographic information for the sources you cite. Its core principle is to separate the content (data) of the bibliographic entries from their display format (style) within the document.\n">
+<meta property='og:url' content='http://localhost:1313/p/bibtex-.bib-and-.bbl/'>
 <meta property='og:site_name' content='Serendipity&#39;s Blog'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Git' /><meta property='article:published_time' content='2025-05-19T23:10:50&#43;08:00'/><meta property='article:modified_time' content='2025-05-19T23:10:50&#43;08:00'/>
-<meta name="twitter:title" content="Git and SSH">
-<meta name="twitter:description" content="Use SSH on GitHub\rBelow are the detailed step-by-step instructions for configuring and using SSH on GitHub from scratch:\nCheck for an existing SSH Key\rFirst, check if you have an existing SSH key locally:\n1 2 cd ~/.ssh ls If the id_rsa and id_rsa.pub files exist, an SSH Key already exists and you can skip the generation step.\nGenerate an SSH Key\rIf you do not have an SSH Key, you can generate one using the following command:\n">
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Latex' /><meta property='article:published_time' content='2025-11-10T22:50:18&#43;08:00'/><meta property='article:modified_time' content='2025-11-10T22:50:18&#43;08:00'/>
+<meta name="twitter:title" content="BibTeX .bib and .bbl">
+<meta name="twitter:description" content="What is BibTeX and .bib file?\rBibTeX\rBibTeX is a tool and file format for managing and formatting bibliographic references, typically used in conjunction with the LaTeX document typesetting system.\n.bib file\rA .bib file is a plain-text database file where you can store all the bibliographic information for the sources you cite. Its core principle is to separate the content (data) of the bibliographic entries from their display format (style) within the document.\n">
     <link rel="shortcut icon" href="/favicon.ico" />
 
     </head>
@@ -256,14 +256,18 @@
         <div class="widget--toc">
             <nav id="TableOfContents">
   <ol>
-    <li><a href="#use-ssh-on-github">Use SSH on GitHub</a>
+    <li><a href="#what-is-bibtex-and-bib-file">What is BibTeX and .bib file?</a>
       <ol>
-        <li><a href="#check-for-an-existing-ssh-key">Check for an existing SSH Key</a></li>
-        <li><a href="#generate-an-ssh-key">Generate an SSH Key</a></li>
-        <li><a href="#get-ssh-public-key-content">Get SSH Public Key Content</a></li>
-        <li><a href="#add-the-public-key-on-github">Add the Public Key on GitHub</a></li>
-        <li><a href="#verify-the-ssh-configuration">Verify the SSH Configuration</a></li>
-        <li><a href="#clone-and-push-code">Clone and Push Code</a></li>
+        <li><a href="#bibtex">BibTeX</a></li>
+        <li><a href="#bib-file">.bib file</a></li>
+      </ol>
+    </li>
+    <li><a href="#how-to-use-bib-files-in-latex">How to Use .bib Files in LaTeX?</a></li>
+    <li><a href="#what-is-bbl-file">What is .bbl file?</a></li>
+    <li><a href="#generating-bbl-file-from-bib-file-on-overleaf">Generating .bbl file from .bib file on Overleaf</a>
+      <ol>
+        <li><a href="#why">Why?</a></li>
+        <li><a href="#implementation-steps">Implementation Steps</a></li>
       </ol>
     </li>
   </ol>
@@ -293,7 +297,7 @@
 
     <div class="article-title-wrapper">
         <h2 class="article-title">
-            <a href="/p/git-and-ssh/">Git and SSH</a>
+            <a href="/p/bibtex-.bib-and-.bbl/">BibTeX .bib and .bbl</a>
         </h2>
     
         
@@ -315,7 +319,7 @@
   <path d="M3 11h16" />
   <path d="M18 16.496v1.504l1 1" />
 </svg>
-                <time class="article-time--published">May 19, 2025</time>
+                <time class="article-time--published">Nov 10, 2025</time>
             </div>
         
 
@@ -330,7 +334,7 @@
 
 
                 <time class="article-time--reading">
-                    2 minute read
+                    3 minute read
                 </time>
             </div>
         
@@ -345,82 +349,80 @@
     <section class="article-content">
     
     
-    <h2 id="use-ssh-on-github">Use SSH on GitHub
-</h2><p>Below are the detailed step-by-step instructions for configuring and using SSH on GitHub from scratch:</p>
-<h3 id="check-for-an-existing-ssh-key">Check for an existing SSH Key
-</h3><p>First, check if you have an existing SSH key locally:</p>
+    <h2 id="what-is-bibtex-and-bib-file">What is BibTeX and .bib file?
+</h2><h3 id="bibtex">BibTeX
+</h3><p><code>BibTeX</code> is a tool and file format for managing and formatting bibliographic references, typically used in conjunction with the <code>LaTeX</code> document typesetting system.</p>
+<h3 id="bib-file">.bib file
+</h3><p>A <code>.bib</code> file is a plain-text database file where you can store all the bibliographic information for the sources you cite. Its core principle is to separate the content (data) of the bibliographic entries from their display format (style) within the document.</p>
+<p>For example, each bibliographic entry contains three parts: '</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">cd</span> ~/.ssh
-</span></span><span class="line"><span class="cl">ls
+<pre tabindex="0" class="chroma"><code class="language-bib" data-lang="bib"><span class="line"><span class="cl"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">DDPM</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="na">title</span><span class="p">=</span><span class="s">{{D}enoising {D}iffusion {P}robabilistic {M}odels}</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="na">author</span><span class="p">=</span><span class="s">{Ho, Jonathan and Jain, Ajay and Abbeel, Pieter}</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="na">journal</span><span class="p">=</span><span class="s">{Advances in Neural Information Processing Systems}</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="na">volume</span><span class="p">=</span><span class="s">{33}</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="na">pages</span><span class="p">=</span><span class="s">{6840--6851}</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="na">year</span><span class="p">=</span><span class="s">{2020}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>If the <code>id_rsa</code> and <code>id_rsa.pub</code> files exist, an SSH Key already exists and you can skip the generation step.</p>
-<h3 id="generate-an-ssh-key">Generate an SSH Key
-</h3><p>If you do not have an SSH Key, you can generate one using the following command:</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ssh-keygen -t rsa -C <span class="s2">&#34;your_email@example.com&#34;</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>Press <code>Enter</code> to use the default settings.</p>
-<h3 id="get-ssh-public-key-content">Get SSH Public Key Content
-</h3><p>After generating the SSH Key, get the content of the public key in one of the two ways:</p>
+</div><ol>
+<li><strong>Entry Type</strong>: Preceded by the @ symbol, indicating the document type, such as <code>@article</code> (journal article), <code>@book</code> (book), <code>@inproceedings</code> (conference paper), etc.</li>
+<li><strong>Citation Key</strong>: Appears in curly braces immediately after the entry type. This is the unique identifier used when referencing the source in your <code>LaTeX</code> document. Here <code>DDPM</code> is the Citation Key. When you want to cite it in a LaTeX document, simply type <code>\cite{DDPM}</code>.</li>
+<li><strong>Fields</strong>: Contain specific details about the source, such as <code>author</code>, <code>title</code>, <code>year</code>, <code>publisher</code>, etc. Each field follows the format <code>field_name = {content}</code>, with fields separated by commas.</li>
+</ol>
+<h2 id="how-to-use-bib-files-in-latex">How to Use .bib Files in LaTeX?
+</h2><p>A basic workflow is as follows:</p>
 <ol>
-<li>run the following command:</li>
+<li>Create your <code>LaTeX</code> main file (e.g., <code>main.tex</code>).</li>
+<li>Create your <code>bibliography</code> database file (e.g., <code>references.bib</code>).</li>
+<li>In the <code>LaTeX</code> file, specify the reference style (<code>.bst</code> file) using the <code>\bibliographystyle</code> command and designate the <code>.bib</code> file using the <code>\bibliography</code> command. An example of <code>main.tex</code> is as follows,</li>
 </ol>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">cat ~/.ssh/id_rsa.pub
+<pre tabindex="0" class="chroma"><code class="language-LaTeX" data-lang="LaTeX"><span class="line"><span class="cl"><span class="k">\documentclass</span><span class="nb">{</span>article<span class="nb">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">\begin</span><span class="nb">{</span>document<span class="nb">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">balabalabalabala
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">\bibliographystyle</span><span class="nb">{</span>plain<span class="nb">}</span> <span class="c">% Specify the style, such as plain, unsrt, alpha, etc.
+</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="k">\bibliography</span><span class="nb">{</span>references<span class="nb">}</span> <span class="c">% Specify your .bib file (without the .bib extension)
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>
+</span></span><span class="line"><span class="cl"><span class="k">\end</span><span class="nb">{</span>document<span class="nb">}</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><ol start="2">
-<li>open <code>id_rsa.pub</code> file in <code>txt</code></li>
-</ol>
-<p>Copy the contents.</p>
-<h3 id="add-the-public-key-on-github">Add the Public Key on GitHub
-</h3><p>→ Log in to GitHub
-→ Go to <code>Settings</code>
-→ Select <code>SSH and GPG keys</code>
-→ Click <code>New SSH key</code>
-→ Paste the copied contents of the public key into the <code>Key</code> text box
-→ Click <code>Add SSH key</code></p>
-<h3 id="verify-the-ssh-configuration">Verify the SSH Configuration
-</h3><p>Verify that the configuration was successful using the following command in the terminal:</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ssh -T git@github.com
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>If it says <code>Hi username! You've successfully authenticated, but GitHub does not provide shell access</code>, then the configuration was successful.</p>
-<h3 id="clone-and-push-code">Clone and Push Code
-</h3><p>After successful configuration, you can clone and push code using SSH URLs.</p>
-<ol>
-<li>Clone the repository:</li>
-</ol>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git clone git@github.com:username/repository.git
-</span></span></code></pre></td></tr></table>
-</div>
-</div><ol start="2">
-<li>Push the code:</li>
+</div><h2 id="what-is-bbl-file">What is .bbl file?
+</h2><p>The <code>.bbl</code> file is the output file generated by <code>BibTeX</code> processing. When you run the <code>bibtex</code> command, it reads your <code>.aux</code> file and <code>.bib</code> files, then generates a formatted bibliography list based on the <code>.bst</code> style file you specified. This formatted list is written into the <code>.bbl</code> file. During the subsequent <code>pdflatex</code> compilation, <code>LaTeX</code> directly inserts the contents from the <code>.bbl</code> file to generate the final bibliography list.</p>
+<h2 id="generating-bbl-file-from-bib-file-on-overleaf">Generating .bbl file from .bib file on Overleaf
+</h2><h3 id="why">Why?
+</h3><p>When submitting paper in <code>arXiv</code>, <code>arXiv</code> requires both the <code>.bbl</code> file and <code>.bib</code> file.</p>
+<h3 id="implementation-steps">Implementation Steps
+</h3><ol>
+<li>Construct the transformation <code>LaTeX</code> code as</li>
 </ol>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -428,15 +430,28 @@
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">cd</span> repository name
-</span></span><span class="line"><span class="cl">git add
-</span></span><span class="line"><span class="cl">git commit -m <span class="s2">&#34;first-commit&#34;</span>
-</span></span><span class="line"><span class="cl">git push origin main
+<pre tabindex="0" class="chroma"><code class="language-LaTeX" data-lang="LaTeX"><span class="line"><span class="cl"><span class="k">\documentclass</span><span class="nb">{</span>article<span class="nb">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">\begin</span><span class="nb">{</span>document<span class="nb">}</span>
+</span></span><span class="line"><span class="cl">	<span class="k">\nocite</span><span class="nb">{</span>*<span class="nb">}</span>
+</span></span><span class="line"><span class="cl">	<span class="k">\bibliography</span><span class="nb">{</span>references.bib<span class="nb">}</span> <span class="c">% name of .bib file
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>	<span class="k">\bibliographystyle</span><span class="nb">{</span>IEEEtran<span class="nb">}</span> <span class="c">% .bst style
+</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="k">\end</span><span class="nb">{</span>document<span class="nb">}</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div>
+</div><ol start="2">
+<li>Compile.</li>
+<li>Click <code>Logs and output file</code> in the right hand of <code>Recompile</code> and left hand of <code>Download PDF</code></li>
+</ol>
+<div align="center"><img src="/post_img/2025-11-10/bib2bbl-1.png" height=350></div>
+4. Click `Other logs and files` at the right bottom corner.
+<div align="center"><img src="/post_img/2025-11-10/bib2bbl-2.png" height=350></div>
+5. Choose and download `output.bbl` at the top.
+<div align="center"><img src="/post_img/2025-11-10/bib2bbl-3.png" height=350></div>
+
 </section>
 
 
@@ -444,7 +459,7 @@
     
     <section class="article-tags">
         
-            <a href="/tags/git/">Git</a>
+            <a href="/tags/latex/">Latex</a>
         
     </section>
 
@@ -503,64 +518,13 @@
         <div class="flex article-list--tile">
             
                 
-<article class="has-image">
-    <a href="/p/add-a-year-progress-to-your-github-profile-page/">
-        
-        
-            <div class="article-image">
-                
-                    <img src="/post_img/2025-08-01/year_progress_example.png" loading="lazy" data-key="" data-hash="/post_img/2025-08-01/year_progress_example.png"/>
-                
-            </div>
-        
-
-        <div class="article-details">
-            <h2 class="article-title">Add a Year Progress to Your GitHub Profile Page</h2>
-        </div>
-    </a>
-</article>
-
-            
-                
-<article class="has-image">
-    <a href="/p/add-a-funny-snake-animation-to-your-github-profile-page/">
-        
-        
-            <div class="article-image">
-                
-                    <img src="https://raw.githubusercontent.com/serendipityerr/serendipityerr/output/github-contribution-grid-snake.svg" loading="lazy" data-key="" data-hash="https://raw.githubusercontent.com/serendipityerr/serendipityerr/output/github-contribution-grid-snake.svg"/>
-                
-            </div>
-        
-
-        <div class="article-details">
-            <h2 class="article-title">Add a Funny Snake Animation to Your GitHub Profile Page</h2>
-        </div>
-    </a>
-</article>
-
-            
-                
 <article class="">
-    <a href="/p/starting-from-scratch-creating-and-pushing-your-blog-posts-with-hugo-and-git/">
+    <a href="/p/some-skills-on-exporting-latex-in-markdown-as-pdf/">
         
         
 
         <div class="article-details">
-            <h2 class="article-title">Starting from Scratch: Creating and Pushing Your Blog Posts with Hugo and Git</h2>
-        </div>
-    </a>
-</article>
-
-            
-                
-<article class="">
-    <a href="/p/">
-        
-        
-
-        <div class="article-details">
-            <h2 class="article-title"></h2>
+            <h2 class="article-title">Some Skills on Exporting Latex in Markdown as pdf</h2>
         </div>
     </a>
 </article>
@@ -580,6 +544,51 @@
 
         <div class="article-details">
             <h2 class="article-title">Obsidian Plugin Math Booster</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/add-a-year-progress-to-your-github-profile-page/">
+        
+        
+            <div class="article-image">
+                
+                    <img src="/post_img/2025-08-01/year_progress_example.png" loading="lazy" data-key="" data-hash="/post_img/2025-08-01/year_progress_example.png"/>
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Add a Year Progress to Your GitHub Profile Page</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/p/git-and-ssh/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Git and SSH</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/p/replace-google-cdn/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Replace Google CDN</h2>
         </div>
     </a>
 </article>
