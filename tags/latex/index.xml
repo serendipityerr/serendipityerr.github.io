@@ -7,12 +7,12 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <lastBuildDate>Mon, 10 Nov 2025 22:50:18 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/latex/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title></title>
-        <link>http://localhost:1313/p/</link>
+        <title>BibTeX .bib and .bbl</title>
+        <link>http://localhost:1313/p/bibtex-.bib-and-.bbl/</link>
         <pubDate>Mon, 10 Nov 2025 22:50:18 +0800</pubDate>
         
-        <guid>http://localhost:1313/p/</guid>
-        <description>&lt;h2 id=&#34;what-is-bibtex-and-bib-file&#34;&gt;What is BibTeX and .bib file?
+        <guid>http://localhost:1313/p/bibtex-.bib-and-.bbl/</guid>
+        <description>&lt;img src="http://localhost:1313/post_img/2025-11-10/latex-logo.png" alt="Featured image of post BibTeX .bib and .bbl" /&gt;&lt;h2 id=&#34;what-is-bibtex-and-bib-file&#34;&gt;What is BibTeX and .bib file?
 &lt;/h2&gt;&lt;h3 id=&#34;bibtex&#34;&gt;BibTeX
 &lt;/h3&gt;&lt;p&gt;&lt;code&gt;BibTeX&lt;/code&gt; is a tool and file format for managing and formatting bibliographic references, typically used in conjunction with the &lt;code&gt;LaTeX&lt;/code&gt; document typesetting system.&lt;/p&gt;
 &lt;h3 id=&#34;bib-file&#34;&gt;.bib file
