@@ -107,12 +107,16 @@
 &lt;/div&gt;
 &lt;/div&gt;&lt;ol start=&#34;2&#34;&gt;
 &lt;li&gt;Compile.&lt;/li&gt;
-&lt;li&gt;Click &lt;code&gt;Logs and output file&lt;/code&gt; in the right hand of &lt;code&gt;Recompile&lt;/code&gt; and left hand of &lt;code&gt;Download PDF&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Click &lt;code&gt;Logs and output file&lt;/code&gt; in the right hand of &lt;code&gt;Recompile&lt;/code&gt; and left hand of &lt;code&gt;Download PDF&lt;/code&gt;.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;div align=&#34;center&#34;&gt;&lt;img src=&#34;http://localhost:1313/post_img/2025-11-10/bib2bbl-1.png&#34; height=350&gt;&lt;/div&gt;
-4. Click `Other logs and files` at the right bottom corner.
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;Click &lt;code&gt;Other logs and files&lt;/code&gt; at the right bottom corner.&lt;/li&gt;
+&lt;/ol&gt;
 &lt;div align=&#34;center&#34;&gt;&lt;img src=&#34;http://localhost:1313/post_img/2025-11-10/bib2bbl-2.png&#34; height=350&gt;&lt;/div&gt;
-5. Choose and download `output.bbl` at the top.
+&lt;ol start=&#34;5&#34;&gt;
+&lt;li&gt;Choose and download &lt;code&gt;output.bbl&lt;/code&gt; at the top.&lt;/li&gt;
+&lt;/ol&gt;
 &lt;div align=&#34;center&#34;&gt;&lt;img src=&#34;http://localhost:1313/post_img/2025-11-10/bib2bbl-3.png&#34; height=350&gt;&lt;/div&gt;
 </description>
         </item>
