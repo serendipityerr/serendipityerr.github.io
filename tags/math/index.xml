@@ -12,93 +12,103 @@
         <pubDate>Sat, 06 Dec 2025 00:19:33 +0800</pubDate>
         
         <guid>http://localhost:1313/p/stochastic-optimal-control/</guid>
-        <description>&lt;h2 id=&#34;stochastic-optimal-control-theory&#34;&gt;Stochastic Optimal Control Theory
-&lt;/h2&gt;&lt;p&gt;Control theory is a mathematical description of how to act optimally to gain future rewards.&lt;/p&gt;
-&lt;h3 id=&#34;deterministic-discrete-time-control&#34;&gt;Deterministic Discrete Time Control
-&lt;/h3&gt;&lt;p&gt;We start by discussing the most simple control case, which is the finite horizon discrete time deterministic control problem.&lt;/p&gt;
+        <description>&lt;p&gt;Control theory is a mathematical description of how to act optimally to gain future rewards.&lt;/p&gt;
+&lt;h2 id=&#34;deterministic-discrete-time-control&#34;&gt;Deterministic Discrete Time Control
+&lt;/h2&gt;&lt;p&gt;We start by discussing the most simple control case, which is the finite horizon discrete time deterministic control problem.&lt;/p&gt;
+&lt;p&gt;Consider the control of a discrete time dynamical system:&lt;/p&gt;
 $$
 x_{t+1} = x_{t} + f(t, x_t, u_t), \quad t=0,1,\cdots,T-1
-$$&lt;p&gt;
-where $x_t$ is an $n$-dimensional vector describing the &lt;em&gt;state&lt;/em&gt; of the system and $u_t$ is an $m$-dimensional vector that specifies the &lt;em&gt;control&lt;/em&gt; or &lt;em&gt;action&lt;/em&gt; at time $t$. If we specify $x_0$ at $t = 0$ and we specify a sequence of controls $u_{0:T−1} = u_0, u_1, \cdots , u_{T−1}$, we can compute future states of the system $x_{1:T}$ recursively.&lt;/p&gt;
+$$&lt;p&gt;where $x_t$ is an $n$-dimensional vector describing the &lt;strong&gt;state&lt;/strong&gt; of the system and $u_t$ is an $m$-dimensional vector that specifies the &lt;strong&gt;control&lt;/strong&gt; or &lt;strong&gt;action&lt;/strong&gt; at time $t$. If we specify $x_0$ at $t = 0$ and we specify a sequence of controls $u_{0:T−1} = u_0, u_1, \cdots , u_{T−1}$, we can compute future states of the system $x_{1:T}$ recursively.&lt;/p&gt;
+&lt;p&gt;Define the cost function $\mathcal{C}$ as:&lt;/p&gt;
 $$
 \mathcal{C}(x_0, u_{0:T-1}) = \sum_{t=0}^{T-1} R (x_t, u_t, t) + \phi(x_T) 
-$$$$
+$$&lt;p&gt;where $R (t, x_t, u_t)$ is the cost that is associated with taking action $u_t$ at time $t$ in state $x_t$ (trajectory cost), and $\phi(x_T)$ is the cost associated with ending up in state $x_T$ at time $T$ (terminal cost). The problem of optimal control is to find the sequence $u_{0:T−1}$ that minimizes $\mathcal{C}(x_0, u_{0:T−1})$:&lt;/p&gt;
+$$
 \begin{gathered}
 \min_{u_{0:T−1}} \mathcal{C}(x_0, u_{0:T−1}) \\
 x_{t+1} = x_{t} + f(x_t, u_t, t), \ t=0,1,\cdots,T-1, \ x_{0} = x_{0}
 \end{gathered}
-$$$$
+$$&lt;p&gt;Now, we introduce the optimal &lt;strong&gt;cost to go&lt;/strong&gt; function $J$:&lt;/p&gt;
+$$
 J(x_t, t) = \min_{u_{t:T−1}} \left( \sum_{s=t}^{T-1} R (x_s, u_s, s) + \phi(x_T) \right)
-$$$$
+$$&lt;p&gt;which solves the optimal control problem from an intermediate time $t$ until the fixed end time $T$ , starting at an arbitrary location $x_t$. We have&lt;/p&gt;
+$$
 \begin{gathered}
 J(x_0, 0) = \min_{u_{0:T−1}} \mathcal{C}(x_0, u_{0:T−1})\\
 J(x_T, T) = \phi(x_T) 
 \end{gathered}
-$$$$
+$$&lt;p&gt;Consider recursively computing $J(x_t, t)$ as&lt;/p&gt;
+$$
 \begin{aligned}
 J(x_t, t) &amp;= \min_{u_{t:T−1}} \left( \sum_{s=t}^{T-1} R (x_s, u_s, s) + \phi(x_T) \right) \\
 &amp;= \min_{u_{t}} \left[ R (x_t, u_t, t) + \min_{u_{t+1:T−1}} \left( \sum_{s=t+1}^{T-1} R (x_s, u_s, s) + \phi(x_T) \right) \right] \\
 &amp;= \min_{u_{t}} \left[ R (x_t, u_t, t) + J(x_{t+1}, t+1) \right] \\
 &amp;= \min_{u_{t}} \left[ R (x_t, u_t, t) + J(x_{t} + f(x_t, u_t, t), t+1) \right] 
 \end{aligned}
-$$&lt;p&gt;
-&lt;strong&gt;Note:&lt;/strong&gt; the minimization over the whole path $u_{t:T−1}$ has reduced to a sequence of minimizations over $u_t$. This simplification is due to the &lt;strong&gt;Markovian&lt;/strong&gt; nature of the problem: the future depends on the past and vise versa only through the present. The algorithm to compute the optimal control $u^&lt;em&gt;_{0:T−1}$, the optimal trajectory  $x^&lt;/em&gt;_{1:T}$ and the optimal cost is given by&lt;/p&gt;
+$$&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; the minimization over the whole path $u_{t:T−1}$ has reduced to a sequence of minimizations over $u_t$. This simplification is due to the &lt;strong&gt;Markovian&lt;/strong&gt; nature of the problem: the future depends on the past and vise versa only through the present. The algorithm to compute the optimal control $u_{0:T−1}^{\ast}$, the optimal trajectory $x_{1:T}^{\ast}$ and the optimal cost is given by&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Initialize $J(x_T, T) = \phi(x_T)$&lt;/li&gt;
-&lt;li&gt;Backwards: For $t=T-1, \cdots, 1, 0$, and For all $x_t$, compute
+&lt;li&gt;Backwards: For $t=T-1, \cdots, 1, 0$, and For all $x_t$, compute&lt;/li&gt;
+&lt;/ol&gt;
 $$
 \begin{gathered}
 u^*_t(x_t) = \arg\min_u \{ R(x_t, u, t) + J(t+1, x_t + f(x_t, u, t)) \} \\
 J(t, x_t) = R(x_t, u^*_t(x_t), t) + J(t+1, x_t + f(x_t, u^*_t(x_t), t)
 \end{gathered}
-$$&lt;/li&gt;
-&lt;li&gt;Forwards: For $t=T-1, \cdots, 1, 0$ compute
+$$&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;Forwards: For $t=T-1, \cdots, 1, 0$ compute&lt;/li&gt;
+&lt;/ol&gt;
 $$
 x^*_{t+1} = x^*_{t} + f(x^*_{t}, u^*_{t}, t), \quad x^*_0 = x_0
-$$&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;This is just like &lt;strong&gt;Dynamic Programming (DP)&lt;/strong&gt; algorithm. It is linear in the horizon time $T$ and linear in the size of the state and action spaces.&lt;/p&gt;
-&lt;h3 id=&#34;deterministic-continuous-time-control&#34;&gt;Deterministic Continuous Time Control
-&lt;/h3&gt;$$
+$$&lt;p&gt;This is just like &lt;strong&gt;Dynamic Programming (DP)&lt;/strong&gt; algorithm. It is linear in the horizon time $T$ and linear in the size of the state and action spaces.&lt;/p&gt;
+&lt;h2 id=&#34;deterministic-continuous-time-control&#34;&gt;Deterministic Continuous Time Control
+&lt;/h2&gt;&lt;p&gt;Now, consider the optimal control problem in continuous time:&lt;/p&gt;
+$$
 x_{t+\mathrm{d}t} = x_{t} + f(x_t, u_t, t)\mathrm{d}t, \quad \mathrm{d}x_t = f(x_t, u_t, t)\mathrm{d}t
-$$&lt;p&gt;
-We have two methods for solving the optimal control problem: 1) Pontryagin Minimum Principle (PMP) (a pair of ordinary differential equations); 2) Hamilton-Jacobi-Bellman (HJB) equation (a partial differential equation).&lt;/p&gt;
-&lt;h4 id=&#34;hamilton-jacobi-bellman-equation&#34;&gt;Hamilton-Jacobi-Bellman Equation
-&lt;/h4&gt;$$
+$$&lt;p&gt;We have two methods for solving the optimal control problem: 1) Pontryagin Minimum Principle (PMP) (a pair of ordinary differential equations); 2) Hamilton-Jacobi-Bellman (HJB) equation (a partial differential equation).&lt;/p&gt;
+&lt;h3 id=&#34;hamilton-jacobi-bellman-equation&#34;&gt;Hamilton-Jacobi-Bellman Equation
+&lt;/h3&gt;&lt;p&gt;The initial state is fixed: $x_0 = x_0$ and the final state is free. The problem is to find a control signal $u_t, 0 &amp;lt; t &amp;lt; T$ , which we denote as $u(0 \rightarrow T)$, such that minimizing&lt;/p&gt;
+$$
 C(x_0, u(0 \rightarrow T)) = \int_0^T R(x_t, u_t, t) \mathrm{d} t + \phi(x_T)
-$$$$
+$$&lt;p&gt;Then, the &lt;em&gt;cost to go&lt;/em&gt; function can be extended into&lt;/p&gt;
+$$
 J(x_t, t) = \min_{u_{t \rightarrow T}} \left( \int_{t}^{T} R (x_z, u_z, z) \mathrm{d} z + \phi(x_T) \right) 
-$$$$
+$$&lt;p&gt;Again consider recursively computing $J(x_t, t)$ as&lt;/p&gt;
+$$
 \begin{aligned}
 J(x_t, t) &amp;= \min_{u_{t}} \left( R (x_t, u_t, t) \mathrm{d} t + \min_{u_{t+\mathrm{d}t \rightarrow T}} \left( \int_{t+\mathrm{d} t}^{T} R (x_z, u_z, z) \mathrm{d} z + \phi(x_T)\right) \right) \\
 &amp;= \min_{u_{t}} \left( R (x_t, u_t, t) \mathrm{d} t + J(x_{t+\mathrm{d}t}, t+\mathrm{d}t) \right)  \\
 &amp;\approx \min_{u_{t}} \left( R (x_t, u_t, t) \mathrm{d} t + J(x_t, t) + \partial_t J(x_{t}, t) \mathrm{d} t + \partial_{x_t}J(x_{t}, t)f(x_t, u_t, t) \mathrm{d} t \right) 
 \end{aligned}
-$$$$
+$$&lt;p&gt;which implies&lt;/p&gt;
+$$
 -\partial_t J(x_{t}, t) = \min_{u_{t}} \left( R (x_t, u_t, t) + f(x_t, u_t, t) \partial_{x_t}J(x_{t}, t) \right)
-$$&lt;p&gt;
-which is a partial differential equation, known as the &lt;em&gt;Hamilton-Jacobi-Bellman (HJB)&lt;/em&gt; equation that describes the evolution of $J$ as a function of $x$ and $t$ and must be solved with boundary condition $J(x_T, T) = \phi(x)$. $\partial_t$ and $\partial_x$ denote partial derivatives with respect to $t$ and $x$, respectively.&lt;/p&gt;
+$$&lt;p&gt;which is a partial differential equation, known as the &lt;strong&gt;Hamilton-Jacobi-Bellman (HJB)&lt;/strong&gt; equation that describes the evolution of $J$ as a function of $x$ and $t$ and must be solved with boundary condition $J(x_T, T) = \phi(x)$. $\partial_t$ and $\partial_x$ denote partial derivatives with respect to $t$ and $x$, respectively.&lt;/p&gt;
+&lt;p&gt;The optimal control $u_t(x_t)$ at the current $x_t$, $t$ is given by&lt;/p&gt;
 $$
 u_t(x_t) = \arg \min_{u} \left( R(x_t, u, t) + \partial_{x_t}J(x_{t}, t) f(x_t, u, t) \right)
-$$&lt;p&gt;
-&lt;strong&gt;Note:&lt;/strong&gt; in order to compute the optimal control at the initial state $x_0$ at $t = 0$, one must compute $J(x_t, t)$ for all values of $x_t$ and $t$.&lt;/p&gt;
-&lt;h4 id=&#34;pontryagin-minimum-principle&#34;&gt;Pontryagin Minimum Principle
-&lt;/h4&gt;$$
+$$&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; in order to compute the optimal control at the initial state $x_0$ at $t = 0$, one must compute $J(x_t, t)$ for all values of $x_t$ and $t$.&lt;/p&gt;
+&lt;h3 id=&#34;pontryagin-minimum-principle&#34;&gt;Pontryagin Minimum Principle
+&lt;/h3&gt;&lt;p&gt;An alternative approach is a variational method that directly finds the optimal trajectory and optimal control and bypasses the expensive computation of the cost-to-go. We can write the optimal control problem as a constrained optimization problem:&lt;/p&gt;
+$$
 \begin{gathered}
 \min_{u_t} \int_0^T R(x_t, u_t, t) \mathrm{d} t + \phi(x_T) \\
 \text{s.t.} \ \mathrm{d} x_t = f(x_t, u_t, t) \mathrm{d} t, \ x_0 = x_0
 \end{gathered}
-$$$$
+$$&lt;p&gt;We can solve the constraint optimization problem by introducing the Lagrange multiplier function $\lambda_t$ that ensures the ODE constraint for all $t$:&lt;/p&gt;
+$$
 \begin{aligned}
 \mathcal{C} &amp;= \int_0^T \left[R(x_t, u_t, t) - \lambda_t \left(f(x_t, u_t, t) - \frac{\mathrm{d} x_t}{\mathrm{d} t} \right) \right] \mathrm{d} t + \phi(x_T) \\
 &amp;= \int_0^T \left[-H(x_t, u_t, \lambda_t, t) + \lambda_t \frac{\mathrm{d} x_t}{\mathrm{d} t} \right] \mathrm{d} t + \phi(x_T) \\
 \end{aligned}
-$$$$
+$$&lt;p&gt;where we defined $H(x_t, u_t, \lambda_t, t) = -R(x_t, u_t, t) + \lambda_t f(x_t, u_t, t)$. The solution is found by extremizing $\mathcal{C}$. We can find the extremal solution if we compute the change $\delta \mathcal{C}$ in $\mathcal{C}$ that results from independent variation of $x_t$, $u_t$, and $\lambda_t$ at all times $t$ between $0$ and $T$. We denote these variations by $\delta x_t$, $\delta u_t$, and $\delta \lambda_t$, respectively. We have:&lt;/p&gt;
+$$
 \delta \mathcal{C} = \int_0^T \left[-\partial_{x_t} H \delta x_t - \partial_{u_t} H \delta u_t + \left(-\partial_{\lambda_t} H + \frac{\mathrm{d} x_t}{\mathrm{d} t}\right) \delta \lambda_t + \lambda_t \delta \frac{\mathrm{d} x_t}{\mathrm{d} t} \right] \mathrm{d} t + \partial_{x_T} \phi(x_T) \delta \phi(x_T) 
-$$$$
+$$&lt;p&gt;Take partial integration:&lt;/p&gt;
+$$
 \int_0^T \lambda_t \delta \frac{\mathrm{d} x_t}{\mathrm{d} t} \mathrm{d} t = \int_0^T \lambda_t \frac{\mathrm{d}\delta x_t}{\mathrm{d} t} \mathrm{d} t = -\int_0^T \delta x_t \frac{\mathrm{d} \lambda_t}{\mathrm{d} t} \mathrm{d} t + \lambda_T \delta x_T - \lambda_0 \delta x_0
-$$&lt;p&gt;
-and $\delta x_0 = 0$ as $x_0$ is given.&lt;/p&gt;
+$$&lt;p&gt;and $\delta x_0 = 0$ as $x_0$ is given.&lt;/p&gt;
+&lt;p&gt;The stationary solution $\delta \mathcal{C} = 0$ is obtained when the coefficients of the independent variations $\delta x_t$, $\delta u_t$, $\delta \lambda_t$, and $\delta x_T$ are zero. Thus,&lt;/p&gt;
 $$
 \begin{aligned}
 0 &amp;= \partial_{u_t} H(x_t, u_t, \lambda_t, t) \\
@@ -106,50 +116,41 @@ $$
 \frac{\mathrm{d} x_t}{\mathrm{d} t} &amp;= \partial_{\lambda_t} H(x_t, u_t, \lambda_t, t) \\
 \lambda_T &amp;= - \partial_{x_T} \phi(x_T)
 \end{aligned}
-$$$$
+$$&lt;p&gt;The first ODE implies the optimal controller $u_t^*(x_t, \lambda_t, t)$. The remaining ODEs are:&lt;/p&gt;
+$$
 \begin{aligned}
 \frac{\mathrm{d} \lambda_t}{\mathrm{d} t} &amp;= - \partial_{x_t} H(x_t, u_t^*, \lambda_t, t) \\
 \frac{\mathrm{d} x_t}{\mathrm{d} t} &amp;= \partial_{\lambda_t} H(x_t, u_t^*, \lambda_t, t)
 \end{aligned}
-$$&lt;p&gt;
-with the boundary conditions $x_0 = x_0$ and $\lambda_T = - \partial_{x_T} \phi(x_T)$. There remains two coupled ODEs that describe the dynamics of $x_t$ and $\lambda_t$ over time with boundary conditions.&lt;/p&gt;
-&lt;blockquote&gt;
-$$
-&gt; \begin{gathered}
-&gt; \min_{u_t} \int_0^T \frac{1}{2} \|\mathbf{u}_t\|_2^2 \mathrm{d} t + \frac{\gamma}{2}\| \boldsymbol{x}_T - x_T \|_2^2 \\
-&gt; \text{s.t.} \ \mathrm{d} x_t = \left( f_t \boldsymbol{x}_t + h_t \mathbf{m} + g_t \mathbf{u}_t \right) \mathrm{d} t, \ \boldsymbol{x}_0 = x_0,
-&gt; \end{gathered}
-&gt; $$$$
-&gt; \mathbf{u}_{t, \gamma}^{*} = g_t e^{\bar{f}_{t:T}} \frac{x_{T} - e^{\bar{f}_{t:T}} \mathbf{x}_t - \mathbf{m} e^{\bar{f}_{T}} \bar{h}_{t:T}}{d_{t, \gamma}}.
-&gt; $$&lt;/blockquote&gt;
-&lt;p&gt;&lt;code&gt;\begin{proof}&lt;/code&gt;
-Please refer to Theorem 4.1 in &lt;a class=&#34;link&#34; href=&#34;https://arxiv.org/pdf/2502.05749&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;UniDB&lt;/a&gt; for detailed proof.
-&lt;code&gt;\end{proof}&lt;/code&gt;&lt;/p&gt;
-&lt;h3 id=&#34;stochastic-optimal-control&#34;&gt;Stochastic Optimal Control
-&lt;/h3&gt;&lt;p&gt;In this section, we consider the extension of the continuous control problem to the case that the dynamics is subject to noise and is given by a Stochastic Differential Equation (SDE).&lt;/p&gt;
+$$&lt;p&gt;with the boundary conditions $x_0 = x_0$ and $\lambda_T = - \partial_{x_T} \phi(x_T)$. There remains two coupled ODEs that describe the dynamics of $x_t$ and $\lambda_t$ over time with boundary conditions.&lt;/p&gt;
+&lt;h2 id=&#34;stochastic-optimal-control&#34;&gt;Stochastic Optimal Control
+&lt;/h2&gt;&lt;p&gt;In this section, we consider the extension of the continuous control problem to the case that the dynamics is subject to noise and is given by a Stochastic Differential Equation (SDE).&lt;/p&gt;
+&lt;p&gt;Consider the following controlled SDE:&lt;/p&gt;
 $$
 \mathrm{d}x_t = f(x_t, u_t, t) \mathrm{d} t + g_t \mathrm{d}w_t,
-$$&lt;p&gt;
-where $f: \mathbb{R}^d \times \mathbb{R}^d \times [0, T] \rightarrow \mathbb{R}^d$ is the vector-valued drift function, $g:[0, T] \rightarrow \mathbb{R}$ signifies the scalar-valued diffusion coefficient and $w_t \in \mathbb{R}^d$ is the standard Wiener process, also known as Brownian motion.&lt;/p&gt;
+$$&lt;p&gt;where $f: \mathbb{R}^d \times \mathbb{R}^d \times [0, T] \rightarrow \mathbb{R}^d$ is the vector-valued drift function, $g:[0, T] \rightarrow \mathbb{R}$ signifies the scalar-valued diffusion coefficient and $w_t \in \mathbb{R}^d$ is the standard Wiener process, also known as Brownian motion.&lt;/p&gt;
+&lt;p&gt;Since the dynamics is stochastic, it is no longer the case that when $x$ at time $t$ and the full control path $u(t \rightarrow T)$ are given, we know the future path $x(t \rightarrow T)$. Therefore, we could only hope to be able to minimize its expectation value over all possible future realizations of the Wiener process:&lt;/p&gt;
 $$
 \mathcal{C}(x_0, u(0 \rightarrow T)) = \mathbb{E}_{x_0} \left[ \int_0^T R(x_t, u_t, t) \mathrm{d} t + \phi(x_T) \right]
-$$$$
+$$&lt;p&gt;where the subscript $x_0$ on the expectation value is to remind us that the expectation is over all stochastic trajectories that start in $x_0$. The solution of the control problem proceeds very similar as in the deterministic case: the &lt;em&gt;cost to go&lt;/em&gt; function can be extended into&lt;/p&gt;
+$$
 J(x_t, t) = \min_{u_{t \rightarrow T}} \mathbb{E}_{x_t} \left[ \int_{t}^{T} R (x_z, u_z, z) \mathrm{d} z + \phi(x_T) \right] 
-$$$$
+$$&lt;p&gt;Again consider recursively computing $J(x_t, t)$ as&lt;/p&gt;
+$$
 \begin{aligned}
 J(x_t, t) &amp;= \min_{u_{t}} \mathbb{E}_{x_t} \left[ R (x_t, u_t, t) \mathrm{d} t + \min_{u_{t+\mathrm{d}t \rightarrow T}} \left( \int_{t+\mathrm{d} t}^{T} R (x_z, u_z, z) \mathrm{d} z  + \phi(x_T)\right) \right] \\
 &amp;= \min_{u_{t}} \left( R (x_t, u_t, t) \mathrm{d} t + \mathbb{E}_{x_t} \left[ J(x_{t+\mathrm{d}t}, t+\mathrm{d}t) \right] \right)
 \end{aligned}
-$$$$
+$$&lt;p&gt;Again make a Taylor expansion:&lt;/p&gt;
+$$
 \begin{aligned}
 \mathbb{E}_{x_t} \left[ J(x_{t+\mathrm{d}t}, t+\mathrm{d}t) \right] &amp;= \int \mathcal{N}(x_{t+\mathrm{d}t} \mid x_t) J(x_{t+\mathrm{d}t}, t+\mathrm{d}t) \mathrm{d} x_{t+\mathrm{d}t} \\
 &amp;\approx J(x_{t}, t) + \partial_t J(x_{t}, t) \mathrm{d}t + \partial_{x_t} J(x_{t}, t) \langle \mathrm{d}x_t \rangle + \frac{1}{2} \partial^2_{x_t} J(x_{t}, t) \langle \mathrm{d}x_t^2 \rangle \\
 \end{aligned}
-$$$$
+$$&lt;p&gt;where we have $\langle \mathrm{d}x_t \rangle = f(x_t, u_t, t) \mathrm{d} t$ and $\langle \mathrm{d}x_t^2 \rangle = g_t \mathrm{d} t$. Therefore,&lt;/p&gt;
+$$
 -\partial_t J(x_t, t) = \min_{u_{t}} \left( R (x_t, u_t, t) + f(x_t, u_t, t) \partial_{x_t}J(x_{t}, t) + \frac{g_t^2}{2} \partial^2_{x_t} J(x_{t}, t) \right)
-$$&lt;p&gt;
-We can easily find that when $g_t \rightarrow 0$, the equation above would degrade to the deterministic one as we discussed in the section above (Deterministic Continuous Time Control).&lt;/p&gt;
+$$&lt;p&gt;We can easily find that when $g_t \rightarrow 0$, the equation above would degrade to the deterministic one as we discussed in the &lt;a class=&#34;link&#34; href=&#34;#deterministic-continuous-time-control&#34; &gt;Section&lt;/a&gt; above (Deterministic Continuous Time Control).&lt;/p&gt;
 </description>
         </item>
         
