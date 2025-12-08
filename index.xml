@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Serendipity&#39;s Blog</title>
-        <link>http://localhost:1313/</link>
+        <link>https://example.com/</link>
         <description>Recent content on Serendipity&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Mon, 08 Dec 2025 22:49:21 +0800</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 08 Dec 2025 22:49:21 +0800</lastBuildDate><atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Study Notes on Stochastic Differential Equations</title>
-        <link>http://localhost:1313/p/study-notes-on-stochastic-differential-equations/</link>
+        <link>https://example.com/p/study-notes-on-stochastic-differential-equations/</link>
         <pubDate>Mon, 08 Dec 2025 22:49:21 +0800</pubDate>
         
-        <guid>http://localhost:1313/p/study-notes-on-stochastic-differential-equations/</guid>
+        <guid>https://example.com/p/study-notes-on-stochastic-differential-equations/</guid>
         <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction
 &lt;/h2&gt;&lt;p&gt;This blog would introduce some mathemetical tricks on Stochastic Differential Equations (SDEs).&lt;/p&gt;
 &lt;h2 id=&#34;lamperti-transform&#34;&gt;Lamperti Transform
@@ -42,10 +42,10 @@ $$&lt;p&gt;More generally the transformation does not have a simple formula, but
         </item>
         <item>
         <title>Stochastic Optimal Control</title>
-        <link>http://localhost:1313/p/stochastic-optimal-control/</link>
+        <link>https://example.com/p/stochastic-optimal-control/</link>
         <pubDate>Sat, 06 Dec 2025 00:19:33 +0800</pubDate>
         
-        <guid>http://localhost:1313/p/stochastic-optimal-control/</guid>
+        <guid>https://example.com/p/stochastic-optimal-control/</guid>
         <description>&lt;p&gt;Control theory is a mathematical description of how to act optimally to gain future rewards.&lt;/p&gt;
 &lt;h2 id=&#34;deterministic-discrete-time-control&#34;&gt;Deterministic Discrete Time Control
 &lt;/h2&gt;&lt;p&gt;We start by discussing the most simple control case, which is the finite horizon discrete time deterministic control problem.&lt;/p&gt;
@@ -189,11 +189,11 @@ $$&lt;p&gt;We can easily find that when $g_t \rightarrow 0$, the equation above 
         </item>
         <item>
         <title>BibTeX .bib and .bbl</title>
-        <link>http://localhost:1313/p/bibtex-.bib-and-.bbl/</link>
+        <link>https://example.com/p/bibtex-.bib-and-.bbl/</link>
         <pubDate>Mon, 10 Nov 2025 22:50:18 +0800</pubDate>
         
-        <guid>http://localhost:1313/p/bibtex-.bib-and-.bbl/</guid>
-        <description>&lt;img src="http://localhost:1313/post_img/2025-11-10/latex-logo.png" alt="Featured image of post BibTeX .bib and .bbl" /&gt;&lt;h2 id=&#34;what-is-bibtex-and-bib-file&#34;&gt;What is BibTeX and .bib file?
+        <guid>https://example.com/p/bibtex-.bib-and-.bbl/</guid>
+        <description>&lt;img src="https://example.com/post_img/2025-11-10/latex-logo.png" alt="Featured image of post BibTeX .bib and .bbl" /&gt;&lt;h2 id=&#34;what-is-bibtex-and-bib-file&#34;&gt;What is BibTeX and .bib file?
 &lt;/h2&gt;&lt;h3 id=&#34;bibtex&#34;&gt;BibTeX
 &lt;/h3&gt;&lt;p&gt;&lt;code&gt;BibTeX&lt;/code&gt; is a tool and file format for managing and formatting bibliographic references, typically used in conjunction with the &lt;code&gt;LaTeX&lt;/code&gt; document typesetting system.&lt;/p&gt;
 &lt;h3 id=&#34;bib-file&#34;&gt;.bib file
@@ -290,24 +290,24 @@ $$&lt;p&gt;We can easily find that when $g_t \rightarrow 0$, the equation above 
 &lt;li&gt;Compile.&lt;/li&gt;
 &lt;li&gt;Click &lt;code&gt;Logs and output files&lt;/code&gt; (between &lt;code&gt;Recompile&lt;/code&gt; and &lt;code&gt;Download PDF&lt;/code&gt;).&lt;/li&gt;
 &lt;/ol&gt;
-&lt;div align=&#34;center&#34;&gt;&lt;img src=&#34;http://localhost:1313/post_img/2025-11-10/bib2bbl-1.png&#34; height=350&gt;&lt;/div&gt;
+&lt;div align=&#34;center&#34;&gt;&lt;img src=&#34;https://example.com/post_img/2025-11-10/bib2bbl-1.png&#34; height=350&gt;&lt;/div&gt;
 &lt;ol start=&#34;4&#34;&gt;
 &lt;li&gt;Click &lt;code&gt;Other logs and files&lt;/code&gt; at the right bottom corner.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;div align=&#34;center&#34;&gt;&lt;img src=&#34;http://localhost:1313/post_img/2025-11-10/bib2bbl-2.png&#34; height=350&gt;&lt;/div&gt;
+&lt;div align=&#34;center&#34;&gt;&lt;img src=&#34;https://example.com/post_img/2025-11-10/bib2bbl-2.png&#34; height=350&gt;&lt;/div&gt;
 &lt;ol start=&#34;5&#34;&gt;
 &lt;li&gt;Choose and download &lt;code&gt;output.bbl&lt;/code&gt; at the top.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;div align=&#34;center&#34;&gt;&lt;img src=&#34;http://localhost:1313/post_img/2025-11-10/bib2bbl-3.png&#34; height=350&gt;&lt;/div&gt;
+&lt;div align=&#34;center&#34;&gt;&lt;img src=&#34;https://example.com/post_img/2025-11-10/bib2bbl-3.png&#34; height=350&gt;&lt;/div&gt;
 </description>
         </item>
         <item>
         <title>Obsidian Plugin Math Booster</title>
-        <link>http://localhost:1313/p/obsidian-plugin-math-booster/</link>
+        <link>https://example.com/p/obsidian-plugin-math-booster/</link>
         <pubDate>Wed, 27 Aug 2025 20:34:29 +0800</pubDate>
         
-        <guid>http://localhost:1313/p/obsidian-plugin-math-booster/</guid>
-        <description>&lt;img src="http://localhost:1313/post_img/2025-08-27/obsidian-logo.png" alt="Featured image of post Obsidian Plugin Math Booster" /&gt;&lt;h2 id=&#34;introduction&#34;&gt;Introduction
+        <guid>https://example.com/p/obsidian-plugin-math-booster/</guid>
+        <description>&lt;img src="https://example.com/post_img/2025-08-27/obsidian-logo.png" alt="Featured image of post Obsidian Plugin Math Booster" /&gt;&lt;h2 id=&#34;introduction&#34;&gt;Introduction
 &lt;/h2&gt;&lt;p&gt;&lt;strong&gt;LaTeX-like Theorem &amp;amp; Equation Referencer (Math Booster since version 2.1.4)&lt;/strong&gt; is an Obsidian plugin that provides a powerful indexing &amp;amp; referencing system for theorems &amp;amp; equations in your vault, bringing LaTeX-like workflow into Obsidian.&lt;/p&gt;
 &lt;h2 id=&#34;pre-conditions&#34;&gt;Pre-Conditions
 &lt;/h2&gt;&lt;ol&gt;
@@ -357,7 +357,7 @@ $$&lt;p&gt;We can easily find that when $g_t \rightarrow 0$, the equation above 
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;It will be rendered as below.&lt;/p&gt;
-&lt;div align=&#34;center&#34;&gt;&lt;img src=&#34;http://localhost:1313/post_img/2025-08-27/math_booster_theorem.png&#34; height=100&gt;&lt;/div&gt;
+&lt;div align=&#34;center&#34;&gt;&lt;img src=&#34;https://example.com/post_img/2025-08-27/math_booster_theorem.png&#34; height=100&gt;&lt;/div&gt;
 &lt;p&gt;Here&amp;rsquo;s the complete list of available envionments and aliases:&lt;/p&gt;
 &lt;table&gt;
   &lt;thead&gt;
@@ -434,7 +434,7 @@ $$&lt;p&gt;We can easily find that when $g_t \rightarrow 0$, the equation above 
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;It will be rendered as below.&lt;/p&gt;
-&lt;div align=&#34;center&#34;&gt;&lt;img src=&#34;http://localhost:1313/post_img/2025-08-27/math_booster_lemma.png&#34; height=100&gt;&lt;/div&gt;
+&lt;div align=&#34;center&#34;&gt;&lt;img src=&#34;https://example.com/post_img/2025-08-27/math_booster_lemma.png&#34; height=100&gt;&lt;/div&gt;
 &lt;h4 id=&#34;manually-numbered-theorem-callouts&#34;&gt;Manually Numbered Theorem Callouts
 &lt;/h4&gt;&lt;p&gt;It is also possible to explicitly specify the theorem number by yourself.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -448,7 +448,7 @@ $$&lt;p&gt;We can easily find that when $g_t \rightarrow 0$, the equation above 
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;It will be rendered as below.&lt;/p&gt;
-&lt;div align=&#34;center&#34;&gt;&lt;img src=&#34;http://localhost:1313/post_img/2025-08-27/math_booster_def.png&#34; height=100&gt;&lt;/div&gt;
+&lt;div align=&#34;center&#34;&gt;&lt;img src=&#34;https://example.com/post_img/2025-08-27/math_booster_def.png&#34; height=100&gt;&lt;/div&gt;
 &lt;h3 id=&#34;equations&#34;&gt;Equations
 &lt;/h3&gt;&lt;p&gt;By default, the plugin only numbers equations with backlinks (i.e. the ones that are referenced elsewhere). Alternatively, you can number all equations by turning off the option &lt;code&gt;Equations - numbering &amp;gt; Number only referenced equations&lt;/code&gt;.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -486,7 +486,7 @@ $$&lt;p&gt;We can easily find that when $g_t \rightarrow 0$, the equation above 
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;It will be rendered as below.&lt;/p&gt;
-&lt;div align=&#34;center&#34;&gt;&lt;img src=&#34;http://localhost:1313/post_img/2025-08-27/math_booster_equation_reference.png&#34; height=200&gt;&lt;/div&gt;
+&lt;div align=&#34;center&#34;&gt;&lt;img src=&#34;https://example.com/post_img/2025-08-27/math_booster_equation_reference.png&#34; height=200&gt;&lt;/div&gt;
 &lt;h3 id=&#34;custom-link-autocomplete&#34;&gt;Custom Link Autocomplete
 &lt;/h3&gt;&lt;p&gt;In the editor, type &lt;code&gt;\ref&lt;/code&gt; (by default). Then, live suggestions for all theorem callouts &amp;amp; equation blocks in the entire vault show up.&lt;/p&gt;
 &lt;ul&gt;
@@ -498,7 +498,7 @@ $$&lt;p&gt;We can easily find that when $g_t \rightarrow 0$, the equation above 
 &lt;p&gt;Use &lt;code&gt;\ref:r&lt;/code&gt; or &lt;code&gt;\tref:r&lt;/code&gt; or &lt;code&gt;\eqref:r&lt;/code&gt; (by default) to search only within recently opened notes.&lt;/p&gt;
 &lt;p&gt;Use &lt;code&gt;\ref:a&lt;/code&gt; or &lt;code&gt;\tref:a&lt;/code&gt; or &lt;code&gt;\eqref:a&lt;/code&gt; (by default) to search only within active note.&lt;/p&gt;
 &lt;p&gt;It will be rendered as below.&lt;/p&gt;
-&lt;div align=&#34;center&#34;&gt;&lt;img src=&#34;http://localhost:1313/post_img/2025-08-27/math_booster_reference.png&#34; height=360&gt;&lt;/div&gt;
+&lt;div align=&#34;center&#34;&gt;&lt;img src=&#34;https://example.com/post_img/2025-08-27/math_booster_reference.png&#34; height=360&gt;&lt;/div&gt;
 &lt;p&gt;&lt;strong&gt;Caution&lt;/strong&gt;: Requiring the &lt;code&gt;Include theorem callout label for search target&lt;/code&gt; option to be turned on!&lt;/p&gt;
 &lt;h3 id=&#34;proof-environment&#34;&gt;Proof environment
 &lt;/h3&gt;&lt;p&gt;The plugin supports LaTeX-like proof environments.&lt;/p&gt;
@@ -515,7 +515,7 @@ $$&lt;p&gt;We can easily find that when $g_t \rightarrow 0$, the equation above 
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;It will be rendered as below.&lt;/p&gt;
-&lt;div align=&#34;center&#34;&gt;&lt;img src=&#34;http://localhost:1313/post_img/2025-08-27/math_booster_proof.png&#34; height=75&gt;&lt;/div&gt;
+&lt;div align=&#34;center&#34;&gt;&lt;img src=&#34;https://example.com/post_img/2025-08-27/math_booster_proof.png&#34; height=75&gt;&lt;/div&gt;
 &lt;p&gt;Use the following syntax to print custom text.&lt;br&gt;
 Any inline markdown syntax can be used, but inline formulas will render with flickering in the live preview.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -531,7 +531,7 @@ Any inline markdown syntax can be used, but inline formulas will render with fli
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;It will be rendered as below.&lt;/p&gt;
-&lt;div align=&#34;center&#34;&gt;&lt;img src=&#34;http://localhost:1313/post_img/2025-08-27/math_booster_proof_custom_text.png&#34; height=75&gt;&lt;/div&gt;
+&lt;div align=&#34;center&#34;&gt;&lt;img src=&#34;https://example.com/post_img/2025-08-27/math_booster_proof_custom_text.png&#34; height=75&gt;&lt;/div&gt;
 &lt;p&gt;Suppose that you have a theorem like below and it has a block ID &lt;code&gt;123456&lt;/code&gt;.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -557,7 +557,7 @@ Any inline markdown syntax can be used, but inline formulas will render with fli
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;It will be rendered as below.&lt;/p&gt;
-&lt;div align=&#34;center&#34;&gt;&lt;img src=&#34;http://localhost:1313/post_img/2025-08-27/math_booster_proof_linked.png&#34; height=75&gt;&lt;/div&gt;
+&lt;div align=&#34;center&#34;&gt;&lt;img src=&#34;https://example.com/post_img/2025-08-27/math_booster_proof_linked.png&#34; height=75&gt;&lt;/div&gt;
 &lt;h2 id=&#34;reference&#34;&gt;Reference
 &lt;/h2&gt;&lt;ol&gt;
 &lt;li&gt;[&lt;a class=&#34;link&#34; href=&#34;https://ryotaushio.github.io/obsidian-latex-theorem-equation-referencer/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -567,20 +567,20 @@ Any inline markdown syntax can be used, but inline formulas will render with fli
         </item>
         <item>
         <title>Study Notes on Diffusion</title>
-        <link>http://localhost:1313/p/study-notes-on-diffusion/</link>
+        <link>https://example.com/p/study-notes-on-diffusion/</link>
         <pubDate>Sat, 16 Aug 2025 23:21:40 +0800</pubDate>
         
-        <guid>http://localhost:1313/p/study-notes-on-diffusion/</guid>
+        <guid>https://example.com/p/study-notes-on-diffusion/</guid>
         <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction
 &lt;/h2&gt;&lt;p&gt;终于有机会开了个新坑。其实在大概一年以前就记过一些相关笔记，但是没有时间/机会整理，感谢&lt;a class=&#34;link&#34; href=&#34;https://github.com/Dorisgua&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;@Dorisgua&lt;/a&gt;同学的大力支持。^O^/&lt;/p&gt;
 &lt;h2 id=&#34;study-notes-on-diffusion-models&#34;&gt;Study Notes on Diffusion Models
 &lt;/h2&gt;&lt;h3 id=&#34;denoising-diffusion-probabilistic-models-ddpms&#34;&gt;Denoising Diffusion Probabilistic Models (DDPMs)
-&lt;/h3&gt;&lt;!-- &lt;iframe src=&#34;http://localhost:1313/post_img/2025-08-16/Denoising Diffusion Probabilistic Models (DDPMs).pdf&#34; width=&#34;100%&#34; height=&#34;1000px&#34;&gt;&lt;/iframe&gt; --&gt;
+&lt;/h3&gt;&lt;!-- &lt;iframe src=&#34;https://example.com/post_img/2025-08-16/Denoising Diffusion Probabilistic Models (DDPMs).pdf&#34; width=&#34;100%&#34; height=&#34;1000px&#34;&gt;&lt;/iframe&gt; --&gt;
 &lt;p&gt;目的：从随机噪声（标准正态分布）中生成数据样本（e.g., 一张猫猫的图片）。&lt;/p&gt;
 $$
 z \sim \mathcal{N}(0, I) \longrightarrow x \sim q_{\text{data}}(x)
-$$&lt;div align=&#34;center&#34;&gt;&lt;img src=&#34;http://localhost:1313/post_img/2025-08-16/main.png&#34; width=&#34;600px&#34;/&gt;&lt;/div&gt;
+$$&lt;div align=&#34;center&#34;&gt;&lt;img src=&#34;https://example.com/post_img/2025-08-16/main.png&#34; width=&#34;600px&#34;/&gt;&lt;/div&gt;
 &lt;h4 id=&#34;前向过程-forward-process&#34;&gt;前向过程 Forward Process
 &lt;/h4&gt;&lt;p&gt;很明显，直接从随机噪声中生成一个数据样本是非常困难的。那么如果反过来呢？考虑先把数据样本 $x_0$ 破坏成噪声 $x_T$，这里假设需要 $T$ 时间步。把这个过程用数学表示出来（我们约定前向过程用概率分布 $q$ 来表示）：&lt;/p&gt;
 $$
@@ -796,7 +796,7 @@ $$&lt;p&gt;其中 $t \sim U(1, T)$。$t=1$ 的情况对应于$L_0$，就是离�
 &lt;li&gt;把 $x_t$ 和 $t$ 输入神经网络并返回预测的噪声 $\varepsilon_\theta$。&lt;/li&gt;
 &lt;li&gt;计算Loss $\mathcal{L}$并对 $\theta$ 进行梯度下降进行优化，直到收敛。&lt;/li&gt;
 &lt;/ol&gt;
-&lt;div align=&#34;center&#34;&gt;&lt;img src=&#34;http://localhost:1313/post_img/2025-08-16/training_algorithm.png&#34; width=&#34;400px&#34;/&gt;&lt;/div&gt;
+&lt;div align=&#34;center&#34;&gt;&lt;img src=&#34;https://example.com/post_img/2025-08-16/training_algorithm.png&#34; width=&#34;400px&#34;/&gt;&lt;/div&gt;
 &lt;h4 id=&#34;采样算法-samplinginference-algorithm&#34;&gt;采样算法 Sampling/Inference Algorithm
 &lt;/h4&gt;&lt;p&gt;假设我们已经获得了训练好的噪声神经网络 $\varepsilon_\theta(x_t, t)$ ，接下来我们来分析采样/推理（sampling/inference）过程。&lt;/p&gt;
 &lt;p&gt;这里就比较简单了，因为我们已有 $\varepsilon_\theta(x_t, t)$，所以可以通过我们先前建模的概率分布 $p_\theta(x_{t-1} | x_t)$ 来进行采样/推理，从随机噪声 $x_T \sim \mathcal{N}(0, I)$ 开始生成一张图像。具体来说：&lt;/p&gt;
@@ -812,7 +812,7 @@ $$&lt;p&gt;所以在有当前时间步下的 $x_t$，就可以根据上述公式
 &lt;li&gt;$t$ 到 $t-1$ 往前更新一步：$x_{t-1} \leftarrow \left( x_t, \varepsilon_\theta(x_t, t), z \right)$&lt;/li&gt;
 &lt;li&gt;循环 $T$ 步，最终返回生成的 $\hat{x}_0$。&lt;/li&gt;
 &lt;/ol&gt;
-&lt;div align=&#34;center&#34;&gt;&lt;img src=&#34;http://localhost:1313/post_img/2025-08-16/sampling_algorithm.png&#34; width=&#34;400px&#34;/&gt;&lt;/div&gt;
+&lt;div align=&#34;center&#34;&gt;&lt;img src=&#34;https://example.com/post_img/2025-08-16/sampling_algorithm.png&#34; width=&#34;400px&#34;/&gt;&lt;/div&gt;
 &lt;p&gt;需要特别注意的细节是，最后一步要区分训练与生成：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;为了计算损失 $L_0$（训练时）：我们使用先前定义的、复杂的积分解码器来计算离散数据的精确对数似然。&lt;/li&gt;
@@ -844,13 +844,13 @@ $$&lt;p&gt;代入 $T=1000$, $\beta_1 = 10^{-4}$ 和 $\beta_T = 0.02$，因此，
         </item>
         <item>
         <title>Add a Year Progress to Your GitHub Profile Page</title>
-        <link>http://localhost:1313/p/add-a-year-progress-to-your-github-profile-page/</link>
+        <link>https://example.com/p/add-a-year-progress-to-your-github-profile-page/</link>
         <pubDate>Fri, 01 Aug 2025 16:47:05 +0800</pubDate>
         
-        <guid>http://localhost:1313/p/add-a-year-progress-to-your-github-profile-page/</guid>
-        <description>&lt;img src="http://localhost:1313/post_img/2025-08-01/year_progress_example.png" alt="Featured image of post Add a Year Progress to Your GitHub Profile Page" /&gt;&lt;h2 id=&#34;introduction&#34;&gt;Introduction
+        <guid>https://example.com/p/add-a-year-progress-to-your-github-profile-page/</guid>
+        <description>&lt;img src="https://example.com/post_img/2025-08-01/year_progress_example.png" alt="Featured image of post Add a Year Progress to Your GitHub Profile Page" /&gt;&lt;h2 id=&#34;introduction&#34;&gt;Introduction
 &lt;/h2&gt;&lt;p&gt;A GitHub personal home page, officially called a profile, is a personal GitHub presentation master page written in &lt;code&gt;Markdown&lt;/code&gt;. In this article, we’ll demonstrate how to add a year progress (automatically updated every day) to the GitHub profile page—so it looks like this:&lt;/p&gt;
-&lt;div align=&#34;center&#34;&gt;&lt;img src=&#34;http://localhost:1313/post_img/2025-08-01/result.png&#34;&gt;&lt;/div&gt;
+&lt;div align=&#34;center&#34;&gt;&lt;img src=&#34;https://example.com/post_img/2025-08-01/result.png&#34;&gt;&lt;/div&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -1148,10 +1148,10 @@ $$&lt;p&gt;代入 $T=1000$, $\beta_1 = 10^{-4}$ 和 $\beta_T = 0.02$，因此，
         </item>
         <item>
         <title>Git and SSH</title>
-        <link>http://localhost:1313/p/git-and-ssh/</link>
+        <link>https://example.com/p/git-and-ssh/</link>
         <pubDate>Mon, 19 May 2025 23:10:50 +0800</pubDate>
         
-        <guid>http://localhost:1313/p/git-and-ssh/</guid>
+        <guid>https://example.com/p/git-and-ssh/</guid>
         <description>&lt;h2 id=&#34;use-ssh-on-github&#34;&gt;Use SSH on GitHub
 &lt;/h2&gt;&lt;p&gt;Below are the detailed step-by-step instructions for configuring and using SSH on GitHub from scratch:&lt;/p&gt;
 &lt;h3 id=&#34;check-for-an-existing-ssh-key&#34;&gt;Check for an existing SSH Key
@@ -1247,29 +1247,29 @@ $$&lt;p&gt;代入 $T=1000$, $\beta_1 = 10^{-4}$ 和 $\beta_T = 0.02$，因此，
         </item>
         <item>
         <title>Notes on Optimal Transport</title>
-        <link>http://localhost:1313/p/notes-on-optimal-transport/</link>
+        <link>https://example.com/p/notes-on-optimal-transport/</link>
         <pubDate>Sun, 23 Mar 2025 19:12:10 +0800</pubDate>
         
-        <guid>http://localhost:1313/p/notes-on-optimal-transport/</guid>
-        <description>&lt;iframe src=&#34;http://localhost:1313/post_img/2025-03-23/notes_on_optimal_transport.pdf&#34; width=&#34;100%&#34; height=&#34;3300px&#34;&gt;&lt;/iframe&gt;
+        <guid>https://example.com/p/notes-on-optimal-transport/</guid>
+        <description>&lt;iframe src=&#34;https://example.com/post_img/2025-03-23/notes_on_optimal_transport.pdf&#34; width=&#34;100%&#34; height=&#34;3300px&#34;&gt;&lt;/iframe&gt;
 </description>
         </item>
         <item>
         <title>Homepage</title>
-        <link>http://localhost:1313/homepage/</link>
+        <link>https://example.com/homepage/</link>
         <pubDate>Fri, 07 Mar 2025 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/homepage/</guid>
+        <guid>https://example.com/homepage/</guid>
         <description>&lt;p&gt;Please click &lt;a href=&#34;https://serendipityerr.github.io/Homepage/&#34; style=&#34;color:pink;&#34;&gt;here&lt;/a&gt; to my Homepage.&lt;/p&gt;
 </description>
         </item>
         <item>
         <title>Notes on Latex Math Symbols</title>
-        <link>http://localhost:1313/p/notes-on-latex-math-symbols/</link>
+        <link>https://example.com/p/notes-on-latex-math-symbols/</link>
         <pubDate>Tue, 25 Feb 2025 11:44:28 +0800</pubDate>
         
-        <guid>http://localhost:1313/p/notes-on-latex-math-symbols/</guid>
-        <description>&lt;img src="http://localhost:1313/post_img/2025-02-25/latex-logo.png" alt="Featured image of post Notes on Latex Math Symbols" /&gt;&lt;p&gt;The following tables are extracted from &lt;em&gt;The Not So Short Introduction to LaTeX2e&lt;/em&gt;, aka. &lt;em&gt;LaTeX2e in 90 minutes&lt;/em&gt;, by Tobias Oetiker, Hubert Partl, Irene Hyna, and Elisabeth Schlegl. It can be located &lt;a class=&#34;link&#34; href=&#34;https://github.com/CTeX-org/lshort-zh-cn&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+        <guid>https://example.com/p/notes-on-latex-math-symbols/</guid>
+        <description>&lt;img src="https://example.com/post_img/2025-02-25/latex-logo.png" alt="Featured image of post Notes on Latex Math Symbols" /&gt;&lt;p&gt;The following tables are extracted from &lt;em&gt;The Not So Short Introduction to LaTeX2e&lt;/em&gt;, aka. &lt;em&gt;LaTeX2e in 90 minutes&lt;/em&gt;, by Tobias Oetiker, Hubert Partl, Irene Hyna, and Elisabeth Schlegl. It can be located &lt;a class=&#34;link&#34; href=&#34;https://github.com/CTeX-org/lshort-zh-cn&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;table-math-mode-accents&#34;&gt;Table: Math Mode Accents
 &lt;/h2&gt;&lt;!-- 
@@ -1278,7 +1278,7 @@ $$&lt;p&gt;代入 $T=1000$, $\beta_1 = 10^{-4}$ 和 $\beta_T = 0.02$，因此，
 | $\hat{a}$ | \hat{a} | $\check{a}$ | \check{a} | $\tilde{a}$ | \tilde{a} | $\acute{a}$ | \acute{a} |
 | $\grave{a}$ | \grave{a} | $\dot{a}$ | \dot{a} | $\ddot{a}$ | \ddot{a} | $\breve{a}$ | \breve{a} |
 | $\bar{a}$ | \bar{a} | $\vec{a}$ | \vec{a} | $\widehat{A}$ | \widehat{A} | $\widetilde{A}$ | \widetilde{A} | --&gt;
-&lt;img src=&#34;http://localhost:1313/post_img/2025-02-25/table1.png&#34;&gt;
+&lt;img src=&#34;https://example.com/post_img/2025-02-25/table1.png&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -1303,7 +1303,7 @@ $$&lt;p&gt;代入 $T=1000$, $\beta_1 = 10^{-4}$ 和 $\beta_T = 0.02$，因此，
 | $\varepsilon$ | \varepsilon | $\mu$ | \mu | $\sigma$ | \sigma | $\omega$ | \omega |
 | $\zeta$ | \zeta | $\nu$ | \nu | $\varsigma$ | \varsigma |
 | $\eta$ | \eta | $\xi$ | \xi | $\tau$ | \tau | --&gt;
-&lt;img src=&#34;http://localhost:1313/post_img/2025-02-25/table2.png&#34;&gt;
+&lt;img src=&#34;https://example.com/post_img/2025-02-25/table2.png&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -1333,7 +1333,7 @@ $$&lt;p&gt;代入 $T=1000$, $\beta_1 = 10^{-4}$ 和 $\beta_T = 0.02$，因此，
 | $\Gamma$ | \Gamma | $\Lambda$ | \Lambda | $\Sigma$ | \Sigma | $\Psi$ | \Psi |
 | $\Delta$ | \Delta | $\Xi$ | \Xi | $\Upsilon$ | \Upsilon | $\Omega$ | \Omega |
 | $\Theta$ | \Theta | $\Pi$ | \Pi | $\Phi$ | \Phi | --&gt;
-&lt;img src=&#34;http://localhost:1313/post_img/2025-02-25/table3.png&#34;&gt;
+&lt;img src=&#34;https://example.com/post_img/2025-02-25/table3.png&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -1365,7 +1365,7 @@ $$&lt;p&gt;代入 $T=1000$, $\beta_1 = 10^{-4}$ 和 $\beta_T = 0.02$，因此，
 | $\mid$ | \mid | $\parallel$ | \parallel | $\perp$ | \perp |
 | $\smile$ | \smile | $\frown$ | \frown | $\asymp$ | \asymp |
 | $:$ | : | $\notin$ | \notin | $\neq$ | \neq or \ne | --&gt;
-&lt;img src=&#34;http://localhost:1313/post_img/2025-02-25/table4.png&#34;&gt;
+&lt;img src=&#34;https://example.com/post_img/2025-02-25/table4.png&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -1418,7 +1418,7 @@ $$&lt;p&gt;代入 $T=1000$, $\beta_1 = 10^{-4}$ 和 $\beta_T = 0.02$，因此，
 | $\bigtriangleup$ | \bigtriangleup | $\bigtriangledown$ | \bigtriangledown | $\dagger$ | \dagger |
 | $\lhd$ | \lhd $^{a}$ | $\rhd$ | \rhd $^{a}$ | $\ddagger$ | \ddagger |
 | $\unlhd$ | \unlhd $^{a}$ | $\unrhd$ | \unrhd $^{a}$ | $\wr$ | \wr | --&gt;
-&lt;img src=&#34;http://localhost:1313/post_img/2025-02-25/table5.png&#34;&gt;
+&lt;img src=&#34;https://example.com/post_img/2025-02-25/table5.png&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -1460,7 +1460,7 @@ $$&lt;p&gt;代入 $T=1000$, $\beta_1 = 10^{-4}$ 和 $\beta_T = 0.02$，因此，
 | $\prod$ | \prod | $\bigcap$ | \bigcap | $\bigwedge$ | \bigwedge | $\bigotimes$ | \bigotimes |
 | $\coprod$ | \coprod | $\bigsqcup$ | \bigsqcup | | |$\bigodot$ | \bigodot |
 | $\int$ | \int | $\oint$ | \oint | | | $\biguplus$ | \biguplus | --&gt;
-&lt;img src=&#34;http://localhost:1313/post_img/2025-02-25/table6.png&#34;&gt;
+&lt;img src=&#34;https://example.com/post_img/2025-02-25/table6.png&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -1490,7 +1490,7 @@ $$&lt;p&gt;代入 $T=1000$, $\beta_1 = 10^{-4}$ 和 $\beta_T = 0.02$，因此，
 | $\leftharpoonup$ | \leftharpoonup | $\rightharpoonup$ | \rightharpoonup | $\swarrow$ | \swarrow |
 | $\leftharpoondown$ | \leftharpoondown | $\rightharpoondown$ | \rightharpoondown | $\nwarrow$ | \nwarrow |
 | $\rightleftharpoons$ | \rightleftharpoons | $\iff$ | \iff (bigger spaces) | $\leadsto$ | \Leadsto $^{a}$ | --&gt;
-&lt;img src=&#34;http://localhost:1313/post_img/2025-02-25/table7.png&#34;&gt;
+&lt;img src=&#34;https://example.com/post_img/2025-02-25/table7.png&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -1530,7 +1530,7 @@ $$&lt;p&gt;代入 $T=1000$, $\beta_1 = 10^{-4}$ 和 $\beta_T = 0.02$，因此，
 | $\langle$ | \langle | $\rangle$ | \rangle | $\vert$ | \| or \vert | $\Vert$ | \\\| or \Vert |
 | $\lfloor$ | \lfloor | $\rfloor$ | \rfloor | $\lceil$ | \lceil | $\rceil$ | \rceil |
 | $/$ | / | $\backslash$ | \backslash |  --&gt;
-&lt;img src=&#34;http://localhost:1313/post_img/2025-02-25/table8.png&#34;&gt;
+&lt;img src=&#34;https://example.com/post_img/2025-02-25/table8.png&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -1562,7 +1562,7 @@ $$&lt;p&gt;代入 $T=1000$, $\beta_1 = 10^{-4}$ 和 $\beta_T = 0.02$，因此，
 | $\bot$ | \bot | $\top$ | \top | $\angle$ | \angle | $\surd$ | \surd |
 | $\diamondsuit$ | \diamondsuit | $\heartsuit$ | \heartsuit | $\clubsuit$ | \clubsuit | $\spadesuit$ | \spadesuit |
 | $\neg$ | \neg or \lnot | $\flat$ | \flat | $\natural$ | \natural | $\sharp$ | \sharp | --&gt;
-&lt;img src=&#34;http://localhost:1313/post_img/2025-02-25/table9.png&#34;&gt;
+&lt;img src=&#34;https://example.com/post_img/2025-02-25/table9.png&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -1593,7 +1593,7 @@ $$&lt;p&gt;代入 $T=1000$, $\beta_1 = 10^{-4}$ 和 $\beta_T = 0.02$，因此，
 | --- | --- | --- | --- | --- | --- |
 | $\dagger$ | \dagger | $\S$ | \S | $\copyright$ | \copyright |
 | $\ddag$ | \ddag | $\P$ | \P | $\pounds$ | \pounds | --&gt;
-&lt;img src=&#34;http://localhost:1313/post_img/2025-02-25/table10.png&#34;&gt;
+&lt;img src=&#34;https://example.com/post_img/2025-02-25/table10.png&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -1609,7 +1609,7 @@ $$&lt;p&gt;代入 $T=1000$, $\beta_1 = 10^{-4}$ 和 $\beta_T = 0.02$，因此，
 &lt;/h2&gt;&lt;!-- | Symbol | Command | Symbol | Command | Symbol | Command | Symbol | Command |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | $\ulcorner$ | \ulcorner | $\urcorner$ | \urcorner | $\llcorner$ | \llcorner | $\lrcorner$ | \lrcorner | --&gt;
-&lt;img src=&#34;http://localhost:1313/post_img/2025-02-25/table11.png&#34;&gt;
+&lt;img src=&#34;https://example.com/post_img/2025-02-25/table11.png&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -1644,7 +1644,7 @@ $$&lt;p&gt;代入 $T=1000$, $\beta_1 = 10^{-4}$ 和 $\beta_T = 0.02$，因此，
 | $\smallsmile$ | \smallsmile | $\smallfrown$ | \smallfrown | $\pitchfork$ | \pitchfork |
 | $\vartriangleleft$ | \vartriangleleft | $\vartriangleright$ | \vartriangleright | $\blacktriangleleft$ | \blacktriangleleft |
 | $\trianglelefteq$ | \trianglelefteq | $\trianglerighteq$ | \trianglerighteq | $\blacktriangleright$ | \blacktriangleright | --&gt;
-&lt;img src=&#34;http://localhost:1313/post_img/2025-02-25/table12.png&#34;&gt;
+&lt;img src=&#34;https://example.com/post_img/2025-02-25/table12.png&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -1710,7 +1710,7 @@ $$&lt;p&gt;代入 $T=1000$, $\beta_1 = 10^{-4}$ 和 $\beta_T = 0.02$，因此，
 | $\looparrowleft$ | \looparrowleft | $\looparrowright$ | \looparrowright | $\leftrightsquigarrow$ | \leftrightsquigarrow |
 | $\curvearrowleft$ | \curvearrowleft | $\curvearrowright$ | \curvearrowright |  |  |
 | $\circlearrowleft$ | \circlearrowleft | $\circlearrowright$ | \circlearrowright |  |  | --&gt;
-&lt;img src=&#34;http://localhost:1313/post_img/2025-02-25/table13.png&#34;&gt;
+&lt;img src=&#34;https://example.com/post_img/2025-02-25/table13.png&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -1763,7 +1763,7 @@ $$&lt;p&gt;代入 $T=1000$, $\beta_1 = 10^{-4}$ 和 $\beta_T = 0.02$，因此，
 | $\subsetneqq$ | \subsetneqq | $\supsetneqq$ | \supsetneqq | $\ntrianglerighteq$ | \ntrianglerighteq |
 | $\nleftarrow$ | \nleftarrow | $\nrightarrow$ | \nrightarrow | $\nleftrightarrow$ | \nleftrightarrow |
 | $\nLeftarrow$ | \nLeftarrow | $\nRightarrow$ | \nRightarrow | $\nLeftrightarrow$ | \nLeftrightarrow | --&gt;
-&lt;img src=&#34;http://localhost:1313/post_img/2025-02-25/table14.png&#34;&gt;
+&lt;img src=&#34;https://example.com/post_img/2025-02-25/table14.png&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -1822,7 +1822,7 @@ $$&lt;p&gt;代入 $T=1000$, $\beta_1 = 10^{-4}$ 和 $\beta_T = 0.02$，因此，
 | $\boxtimes$ | \boxtimes | $\boxdot$ | \boxdot | $\circledcirc$ | \circledcirc |
 | $\leftthreetimes$ | \leftthreetimes | $\rightthreetimes$ | \rightthreetimes | $\circledast$ | \circledast |
 | $\curlyvee$ | \curlyvee | $\curlywedge$ | \curlywedge |  |  | --&gt;
-&lt;img src=&#34;http://localhost:1313/post_img/2025-02-25/table15.png&#34;&gt;
+&lt;img src=&#34;https://example.com/post_img/2025-02-25/table15.png&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -1858,7 +1858,7 @@ $$&lt;p&gt;代入 $T=1000$, $\beta_1 = 10^{-4}$ 和 $\beta_T = 0.02$，因此，
 | $\diagup$ | \diagup | $\diagdown$ | \diagdown | $\backprime$ | \backprime |
 | $\nexists$ | \nexists | $\Finv$ | \Finv | $\varnothing$ | \varnothing |
 | $\eth$ | \eth | $\mho$ | \mho |  |  | --&gt;
-&lt;img src=&#34;http://localhost:1313/post_img/2025-02-25/table16.png&#34;&gt;
+&lt;img src=&#34;https://example.com/post_img/2025-02-25/table16.png&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -1895,7 +1895,7 @@ $$&lt;p&gt;代入 $T=1000$, $\beta_1 = 10^{-4}$ 和 $\beta_T = 0.02$，因此，
 |  | \mathscr{ABC} | or `eucal` with option: \mathscr |
 | $\mathfrak{ABCdef}$ | \mathfrak{ABCdef} | `eufrak` |
 | $\mathbb{ABC}$ | \mathbb{ABC} | `amsfonts` or `amssymb` | --&gt;
-&lt;img src=&#34;http://localhost:1313/post_img/2025-02-25/table17.png&#34;&gt;
+&lt;img src=&#34;https://example.com/post_img/2025-02-25/table17.png&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -1924,10 +1924,10 @@ $$&lt;p&gt;代入 $T=1000$, $\beta_1 = 10^{-4}$ 和 $\beta_T = 0.02$，因此，
         </item>
         <item>
         <title>Notes on DataBase</title>
-        <link>http://localhost:1313/p/notes-on-database/</link>
+        <link>https://example.com/p/notes-on-database/</link>
         <pubDate>Mon, 24 Feb 2025 19:06:28 +0800</pubDate>
         
-        <guid>http://localhost:1313/p/notes-on-database/</guid>
+        <guid>https://example.com/p/notes-on-database/</guid>
         <description>&lt;h2 id=&#34;绪论&#34;&gt;绪论
 &lt;/h2&gt;&lt;h3 id=&#34;四个基本概念&#34;&gt;四个基本概念
 &lt;/h3&gt;&lt;ol&gt;
@@ -1995,7 +1995,7 @@ $$&lt;p&gt;代入 $T=1000$, $\beta_1 = 10^{-4}$ 和 $\beta_T = 0.02$，因此，
 &lt;/ol&gt;
 &lt;h4 id=&#34;er图&#34;&gt;ER图
 &lt;/h4&gt;&lt;p&gt;ER图分为实体、属性和关系三个部分。实体用长方形，属性是椭圆形，关系是菱形。&lt;strong&gt;唯一的标识：主键。&lt;/strong&gt;
-&lt;img src=&#34;http://localhost:1313/post_img/2025-02-24/er.png&#34;&gt;&lt;/p&gt;
+&lt;img src=&#34;https://example.com/post_img/2025-02-24/er.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;联系：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;实体之间的联系通常是指不同实体集之间的联系。实体之间的联系有一对一、一对多和多对多等多种联系。&lt;/li&gt;
@@ -2010,7 +2010,7 @@ $$&lt;p&gt;代入 $T=1000$, $\beta_1 = 10^{-4}$ 和 $\beta_T = 0.02$，因此，
 &lt;li&gt;有且只有一个结点没有双亲结点，这个结点称为根结点。&lt;/li&gt;
 &lt;li&gt;根以外的其他结点有且只有一个双亲结点。&lt;/li&gt;
 &lt;/ol&gt;
-  &lt;img src=&#34;http://localhost:1313/post_img/2025-02-24/ccmodel.png&#34;&gt;
+  &lt;img src=&#34;https://example.com/post_img/2025-02-24/ccmodel.png&#34;&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;网状模型：&lt;/p&gt;
@@ -2018,7 +2018,7 @@ $$&lt;p&gt;代入 $T=1000$, $\beta_1 = 10^{-4}$ 和 $\beta_T = 0.02$，因此，
 &lt;li&gt;允许一个以上的结点无双亲&lt;/li&gt;
 &lt;li&gt;一个结点可以有多于一个双亲&lt;/li&gt;
 &lt;/ol&gt;
-  &lt;img src=&#34;http://localhost:1313/post_img/2025-02-24/wmodel.png&#34;&gt;
+  &lt;img src=&#34;https://example.com/post_img/2025-02-24/wmodel.png&#34;&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;关系模型：对应一张表&lt;/p&gt;
@@ -2029,7 +2029,7 @@ $$&lt;p&gt;代入 $T=1000$, $\beta_1 = 10^{-4}$ 和 $\beta_T = 0.02$，因此，
 &lt;li&gt;域：是一组具有相同数据类型的值的集合。&lt;/li&gt;
 &lt;li&gt;分量：元组中的一个属性。&lt;/li&gt;
 &lt;/ol&gt;
-  &lt;img src=&#34;http://localhost:1313/post_img/2025-02-24/remodel.png&#34;&gt;
+  &lt;img src=&#34;https://example.com/post_img/2025-02-24/remodel.png&#34;&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;数据库系统的结构&#34;&gt;数据库系统的结构
@@ -2048,7 +2048,7 @@ $$&lt;p&gt;代入 $T=1000$, $\beta_1 = 10^{-4}$ 和 $\beta_T = 0.02$，因此，
 &lt;p&gt;内模式：也称存储模式，一个数据库只有一个内模式。它是数据物理结构和存储方式的描述，是数据在数据库内部的组织方式。&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
- &lt;img src=&#34;http://localhost:1313/post_img/2025-02-24/model.png&#34;&gt;
+ &lt;img src=&#34;https://example.com/post_img/2025-02-24/model.png&#34;&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;二级映像：
@@ -2112,7 +2112,7 @@ $$&lt;p&gt;代入 $T=1000$, $\beta_1 = 10^{-4}$ 和 $\beta_T = 0.02$，因此，
 &lt;li&gt;行数：$k_1 \times k_2$&lt;/li&gt;
 &lt;li&gt;当 R 和 S 中有重名属性 A 时，则采用 R.A 和 S.A 分别命名对应的属性列&lt;/li&gt;
 &lt;/ul&gt;
-  &lt;img src=&#34;http://localhost:1313/post_img/2025-02-24/product.png&#34;&gt;
+  &lt;img src=&#34;https://example.com/post_img/2025-02-24/product.png&#34;&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;$\sigma_C$(R)：选择 (selection)：&lt;/p&gt;
@@ -2151,7 +2151,7 @@ $$&lt;p&gt;代入 $T=1000$, $\beta_1 = 10^{-4}$ 和 $\beta_T = 0.02$，因此，
 &lt;/ol&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-  &lt;img src=&#34;http://localhost:1313/post_img/2025-02-24/selection.png&#34;&gt;
+  &lt;img src=&#34;https://example.com/post_img/2025-02-24/selection.png&#34;&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;$\Pi_L$(R)：投影 (projection)&lt;/p&gt;
@@ -2161,7 +2161,7 @@ $$&lt;p&gt;代入 $T=1000$, $\beta_1 = 10^{-4}$ 和 $\beta_T = 0.02$，因此，
 &lt;li&gt;结果为只包含R中某些列的新的关系&lt;/li&gt;
 &lt;li&gt;结果要去掉重复元组&lt;/li&gt;
 &lt;/ul&gt;
-  &lt;img src=&#34;http://localhost:1313/post_img/2025-02-24/projection.png&#34;&gt;
+  &lt;img src=&#34;https://example.com/post_img/2025-02-24/projection.png&#34;&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;R $\Join$ S：连接 (Join)&lt;/p&gt;
@@ -2184,7 +2184,7 @@ $$&lt;p&gt;代入 $T=1000$, $\beta_1 = 10^{-4}$ 和 $\beta_T = 0.02$，因此，
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-  &lt;img src=&#34;http://localhost:1313/post_img/2025-02-24/join.png&#34;&gt;
+  &lt;img src=&#34;https://example.com/post_img/2025-02-24/join.png&#34;&gt;
 &lt;ul&gt;
 &lt;li&gt;悬浮元组(Dangling tuple)：两个关系 R 和 S 在做自然连接时，关系 R 中某些元组有可能在 S 中不存在公共属性上值相等的元组，从而造成 R 中这些元组在操作时被舍弃了，这些被舍弃的元组称为悬浮元组。&lt;/li&gt;
 &lt;li&gt;外连接(Outer Join)：如果把悬浮元组也保存在结果关系中，而在其他属性上填空值(Null)，就叫做外连接。&lt;/li&gt;
@@ -2194,7 +2194,7 @@ $$&lt;p&gt;代入 $T=1000$, $\beta_1 = 10^{-4}$ 和 $\beta_T = 0.02$，因此，
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;R $\div$ S：保留 R 中满足 S 的，而且 R 中的列去掉 S 的列。
-&lt;img src=&#34;http://localhost:1313/post_img/2025-02-24/divide.png&#34;&gt;&lt;/p&gt;
+&lt;img src=&#34;https://example.com/post_img/2025-02-24/divide.png&#34;&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
@@ -2766,10 +2766,10 @@ $$&lt;p&gt;代入 $T=1000$, $\beta_1 = 10^{-4}$ 和 $\beta_T = 0.02$，因此，
         </item>
         <item>
         <title>Replace Google CDN</title>
-        <link>http://localhost:1313/p/replace-google-cdn/</link>
+        <link>https://example.com/p/replace-google-cdn/</link>
         <pubDate>Fri, 21 Feb 2025 21:58:39 +0800</pubDate>
         
-        <guid>http://localhost:1313/p/replace-google-cdn/</guid>
+        <guid>https://example.com/p/replace-google-cdn/</guid>
         <description>&lt;h2 id=&#34;缘起&#34;&gt;缘起
 &lt;/h2&gt;&lt;p&gt;很多网站，尤其是国外网站，为了加快网站的速度，都使用了 Google 的 CDN。但是在天朝，由于某些原因，导致全球最快的 CDN 变成了全球最慢的。&lt;/p&gt;
 &lt;h2 id=&#34;替换&#34;&gt;替换
@@ -2881,10 +2881,10 @@ $$&lt;p&gt;代入 $T=1000$, $\beta_1 = 10^{-4}$ 和 $\beta_T = 0.02$，因此，
         </item>
         <item>
         <title>Add a Funny Snake Animation to Your GitHub Profile Page</title>
-        <link>http://localhost:1313/p/add-a-funny-snake-animation-to-your-github-profile-page/</link>
+        <link>https://example.com/p/add-a-funny-snake-animation-to-your-github-profile-page/</link>
         <pubDate>Thu, 20 Feb 2025 11:14:33 +0800</pubDate>
         
-        <guid>http://localhost:1313/p/add-a-funny-snake-animation-to-your-github-profile-page/</guid>
+        <guid>https://example.com/p/add-a-funny-snake-animation-to-your-github-profile-page/</guid>
         <description>&lt;img src="https://raw.githubusercontent.com/serendipityerr/serendipityerr/output/github-contribution-grid-snake.svg" alt="Featured image of post Add a Funny Snake Animation to Your GitHub Profile Page" /&gt;&lt;h2 id=&#34;introduction&#34;&gt;Introduction
 &lt;/h2&gt;&lt;p&gt;A GitHub personal home page, officially called a profile, is a personal GitHub presentation master page written in &lt;code&gt;Markdown&lt;/code&gt;. In this article, we&amp;rsquo;ll demonstrate how to add a funny snake animation to the GitHub profile page.&lt;/p&gt;
 &lt;p&gt;The Snake animation is actually a kind of “heat map”, each small grid corresponds to each day, the grid is gray by default, where the green grid means we submitted code on that day, the darker the color of the grid, the more times we committed code on that day.&lt;/p&gt;
@@ -3179,11 +3179,11 @@ $$&lt;p&gt;代入 $T=1000$, $\beta_1 = 10^{-4}$ 和 $\beta_T = 0.02$，因此，
         </item>
         <item>
         <title>Notes on HTML</title>
-        <link>http://localhost:1313/p/notes-on-html/</link>
+        <link>https://example.com/p/notes-on-html/</link>
         <pubDate>Tue, 18 Feb 2025 22:42:40 +0800</pubDate>
         
-        <guid>http://localhost:1313/p/notes-on-html/</guid>
-        <description>&lt;img src="http://localhost:1313/post_img/2025-02-18/html-logo.png" alt="Featured image of post Notes on HTML" /&gt;&lt;h2 id=&#34;html入门&#34;&gt;HTML入门
+        <guid>https://example.com/p/notes-on-html/</guid>
+        <description>&lt;img src="https://example.com/post_img/2025-02-18/html-logo.png" alt="Featured image of post Notes on HTML" /&gt;&lt;h2 id=&#34;html入门&#34;&gt;HTML入门
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;HTML(Hyper Text Markup Language)：超文本标记语言，用来描述网页的语言。&lt;/p&gt;
@@ -3640,7 +3640,7 @@ e.g.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;特殊字符&lt;/p&gt;
-  &lt;img src=&#34;http://localhost:1313/post_img/2025-02-18/character.png&#34; width=&#34;500px&#34;&gt;
+  &lt;img src=&#34;https://example.com/post_img/2025-02-18/character.png&#34; width=&#34;500px&#34;&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
@@ -3726,7 +3726,7 @@ e.g.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;跨行合并：&lt;code&gt;rowspan=&amp;quot;合并单元格个数&amp;quot;&lt;/code&gt;。最上侧单元格为目标单元格，在此单元格中写合并代码。&lt;/li&gt;
 &lt;li&gt;跨列合并：&lt;code&gt;colspan=&amp;quot;合并单元格个数&amp;quot;&lt;/code&gt;。最左侧单元格为目标单元格，在此单元格中写合并代码。
-&lt;img src=&#34;http://localhost:1313/post_img/2025-02-18/row_col.png&#34; width=&#34;600px&#34;&gt;&lt;/li&gt;
+&lt;img src=&#34;https://example.com/post_img/2025-02-18/row_col.png&#34; width=&#34;600px&#34;&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;ul&gt;
 &lt;li&gt;操作步骤：&lt;/li&gt;
@@ -3967,11 +3967,11 @@ e.g.&lt;/p&gt;
         </item>
         <item>
         <title>Update Hugo To Hugo-extended</title>
-        <link>http://localhost:1313/p/update-hugo-to-hugo-extended/</link>
+        <link>https://example.com/p/update-hugo-to-hugo-extended/</link>
         <pubDate>Mon, 17 Feb 2025 18:57:48 +0800</pubDate>
         
-        <guid>http://localhost:1313/p/update-hugo-to-hugo-extended/</guid>
-        <description>&lt;img src="http://localhost:1313/post_img/2025-02-17/hugo-logo-wide.png" alt="Featured image of post Update Hugo To Hugo-extended" /&gt;&lt;h2 id=&#34;update-hugo-to-hugo-extended&#34;&gt;Update Hugo To Hugo-extended
+        <guid>https://example.com/p/update-hugo-to-hugo-extended/</guid>
+        <description>&lt;img src="https://example.com/post_img/2025-02-17/hugo-logo-wide.png" alt="Featured image of post Update Hugo To Hugo-extended" /&gt;&lt;h2 id=&#34;update-hugo-to-hugo-extended&#34;&gt;Update Hugo To Hugo-extended
 &lt;/h2&gt;&lt;p&gt;Why not Hugo but Hugo-extended?&lt;/p&gt;
 &lt;p&gt;Some themes use &lt;code&gt;SCSS&lt;/code&gt; and &lt;code&gt;TypeScript&lt;/code&gt;, that&amp;rsquo;s why Hugo extended version is required. If you are using a non-extended Hugo installation, you will get the following error:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -4027,10 +4027,10 @@ e.g.&lt;/p&gt;
         </item>
         <item>
         <title>Some Skills on Exporting Latex in Markdown as pdf</title>
-        <link>http://localhost:1313/p/some-skills-on-exporting-latex-in-markdown-as-pdf/</link>
+        <link>https://example.com/p/some-skills-on-exporting-latex-in-markdown-as-pdf/</link>
         <pubDate>Mon, 09 Dec 2024 18:50:29 +0800</pubDate>
         
-        <guid>http://localhost:1313/p/some-skills-on-exporting-latex-in-markdown-as-pdf/</guid>
+        <guid>https://example.com/p/some-skills-on-exporting-latex-in-markdown-as-pdf/</guid>
         <description>&lt;h2 id=&#34;solve-the-problem-of-export-latex-code-in-markdown-as-pdf&#34;&gt;Solve the problem of export latex code in Markdown as pdf
 &lt;/h2&gt;&lt;p&gt;First, download VSCode and the &lt;code&gt;Markdown All in One&lt;/code&gt; extension.&lt;/p&gt;
 &lt;p&gt;Second, &lt;code&gt;Ctrl + Shift + P&lt;/code&gt; and input &lt;code&gt;Print current document to HTML&lt;/code&gt;.&lt;/p&gt;
@@ -4039,10 +4039,10 @@ e.g.&lt;/p&gt;
         </item>
         <item>
         <title>Some Skills on Modifying Pip Mirror Source and Installing Cuda in Conda</title>
-        <link>http://localhost:1313/p/some-skills-on-modifying-pip-mirror-source-and-installing-cuda-in-conda/</link>
+        <link>https://example.com/p/some-skills-on-modifying-pip-mirror-source-and-installing-cuda-in-conda/</link>
         <pubDate>Fri, 18 Oct 2024 15:28:15 +0800</pubDate>
         
-        <guid>http://localhost:1313/p/some-skills-on-modifying-pip-mirror-source-and-installing-cuda-in-conda/</guid>
+        <guid>https://example.com/p/some-skills-on-modifying-pip-mirror-source-and-installing-cuda-in-conda/</guid>
         <description>&lt;h2 id=&#34;python-permanently-modifies-pip-mirror-source&#34;&gt;Python permanently modifies pip mirror source
 &lt;/h2&gt;&lt;p&gt;If change the mirror source to Tsinghua Mirror Source, type the following code in the Terminal:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -4108,10 +4108,10 @@ e.g.&lt;/p&gt;
         </item>
         <item>
         <title>Some Skills on Image Processing</title>
-        <link>http://localhost:1313/p/some-skills-on-image-processing/</link>
+        <link>https://example.com/p/some-skills-on-image-processing/</link>
         <pubDate>Wed, 28 Aug 2024 14:14:07 +0800</pubDate>
         
-        <guid>http://localhost:1313/p/some-skills-on-image-processing/</guid>
+        <guid>https://example.com/p/some-skills-on-image-processing/</guid>
         <description>&lt;h2 id=&#34;image-pre-processingtransformation&#34;&gt;Image Pre-processing/Transformation
 &lt;/h2&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -4237,10 +4237,10 @@ e.g.&lt;/p&gt;
         </item>
         <item>
         <title>Diffusers</title>
-        <link>http://localhost:1313/p/diffusers/</link>
+        <link>https://example.com/p/diffusers/</link>
         <pubDate>Sun, 11 Aug 2024 12:09:12 +0800</pubDate>
         
-        <guid>http://localhost:1313/p/diffusers/</guid>
+        <guid>https://example.com/p/diffusers/</guid>
         <description>&lt;h2 id=&#34;learning-diffusers&#34;&gt;Learning &lt;code&gt;Diffusers&lt;/code&gt;
 &lt;/h2&gt;&lt;h3 id=&#34;installation&#34;&gt;Installation
 &lt;/h3&gt;&lt;p&gt;With &lt;code&gt;pip&lt;/code&gt;&lt;/p&gt;
@@ -4749,10 +4749,10 @@ e.g.&lt;/p&gt;
         </item>
         <item>
         <title>2024.08.02</title>
-        <link>http://localhost:1313/p/2024.08.02/</link>
+        <link>https://example.com/p/2024.08.02/</link>
         <pubDate>Fri, 02 Aug 2024 11:22:51 +0800</pubDate>
         
-        <guid>http://localhost:1313/p/2024.08.02/</guid>
+        <guid>https://example.com/p/2024.08.02/</guid>
         <description>
   &lt;div class=&#34;heart-icon&#34; id=&#34;heart&#34;&gt;
     &lt;svg xmlns=&#34;&#34; viewBox=&#34;0 0 24 24&#34;&gt;
@@ -4877,10 +4877,10 @@ e.g.&lt;/p&gt;
         </item>
         <item>
         <title>PCA and AutoEncoder</title>
-        <link>http://localhost:1313/p/pca-and-autoencoder/</link>
+        <link>https://example.com/p/pca-and-autoencoder/</link>
         <pubDate>Sat, 20 Jul 2024 14:13:42 +0800</pubDate>
         
-        <guid>http://localhost:1313/p/pca-and-autoencoder/</guid>
+        <guid>https://example.com/p/pca-and-autoencoder/</guid>
         <description>&lt;h2 id=&#34;difference-between-pca-and-autoencoder&#34;&gt;Difference Between PCA and AutoEncoder
 &lt;/h2&gt;&lt;h3 id=&#34;pca&#34;&gt;PCA
 &lt;/h3&gt;&lt;p&gt;Suppose there are m n-dimensional data, $ X_{n \times m} = [x_1, x_2,&amp;hellip;, x_m]$, where each $x$ is an n-dimensional column vector.&lt;/p&gt;
@@ -4953,10 +4953,10 @@ e.g.&lt;/p&gt;
         </item>
         <item>
         <title>2024.07.18</title>
-        <link>http://localhost:1313/p/2024.07.18/</link>
+        <link>https://example.com/p/2024.07.18/</link>
         <pubDate>Thu, 18 Jul 2024 23:45:09 +0800</pubDate>
         
-        <guid>http://localhost:1313/p/2024.07.18/</guid>
+        <guid>https://example.com/p/2024.07.18/</guid>
         <description>&lt;h2 id=&#34;study-on-score-based-generative-modeling&#34;&gt;Study on Score-Based Generative Modeling
 &lt;/h2&gt;&lt;p&gt;(●&amp;rsquo;◡&amp;rsquo;●)&lt;/p&gt;
 &lt;p&gt;About Score-Based Generative Modeling: the following article has given a clear explanation: &lt;a class=&#34;link&#34; href=&#34;https://kexue.fm/archives/9209#mjx-eqn-eq%3Abayes-dt&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -4967,10 +4967,10 @@ e.g.&lt;/p&gt;
         </item>
         <item>
         <title>Starting from Scratch: Creating and Pushing Your Blog Posts with Hugo and Git</title>
-        <link>http://localhost:1313/p/starting-from-scratch-creating-and-pushing-your-blog-posts-with-hugo-and-git/</link>
+        <link>https://example.com/p/starting-from-scratch-creating-and-pushing-your-blog-posts-with-hugo-and-git/</link>
         <pubDate>Tue, 16 Jul 2024 14:16:38 +0800</pubDate>
         
-        <guid>http://localhost:1313/p/starting-from-scratch-creating-and-pushing-your-blog-posts-with-hugo-and-git/</guid>
+        <guid>https://example.com/p/starting-from-scratch-creating-and-pushing-your-blog-posts-with-hugo-and-git/</guid>
         <description>&lt;h2 id=&#34;build-a-github-repository&#34;&gt;Build A Github Repository
 &lt;/h2&gt;&lt;p&gt;ԅ(¯﹃¯ԅ)&lt;/p&gt;
 &lt;h3 id=&#34;initialize&#34;&gt;Initialize
@@ -5066,6 +5066,25 @@ e.g.&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;D:/hugo_extended/hugo new post/fileName.md
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;push-to-github&#34;&gt;Push to Github
+&lt;/h3&gt;&lt;p&gt;(｡･ω･｡)ﾉ♡&lt;/p&gt;
+&lt;p&gt;Run the code in order in the PowerShell:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;D:/hugo_extended/hugo
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;cd&lt;/span&gt; public
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git add .
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git commit -m &lt;span class=&#34;s2&#34;&gt;&amp;#34;test&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git push origin main
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
 &lt;/div&gt;&lt;h2 id=&#34;hugo-latex-configuration&#34;&gt;Hugo: LaTeX Configuration
 &lt;/h2&gt;&lt;p&gt;(ง๑ •̀_•́)ง&lt;/p&gt;
 &lt;p&gt;To render mathematical formulas in blog posts, you need to include the &lt;strong&gt;KATEX&lt;/strong&gt; stylesheet. Specifically, create a &lt;code&gt;math.html&lt;/code&gt; file in the &lt;code&gt;&amp;lt;your_hugo_site&amp;gt;/layouts/partials/&lt;/code&gt; folder and add the following content:&lt;/p&gt;
@@ -5145,51 +5164,32 @@ e.g.&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nx&#34;&gt;math&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;true&lt;/span&gt; &lt;span class=&#34;c&#34;&gt;# Add LaTeX support&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;push-to-github&#34;&gt;Push to Github
-&lt;/h3&gt;&lt;p&gt;(｡･ω･｡)ﾉ♡&lt;/p&gt;
-&lt;p&gt;Run the code in order in the PowerShell:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;D:/hugo_extended/hugo
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;cd&lt;/span&gt; public
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git add .
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git commit -m &lt;span class=&#34;s2&#34;&gt;&amp;#34;test&amp;#34;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git push origin main
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
 &lt;/div&gt;</description>
         </item>
         <item>
         <title>My First Blog</title>
-        <link>http://localhost:1313/p/my-first-blog/</link>
+        <link>https://example.com/p/my-first-blog/</link>
         <pubDate>Tue, 16 Jul 2024 13:40:30 +0800</pubDate>
         
-        <guid>http://localhost:1313/p/my-first-blog/</guid>
+        <guid>https://example.com/p/my-first-blog/</guid>
         <description>&lt;h2 id=&#34;hello-serendipitys-blog&#34;&gt;Hello Serendipity&amp;rsquo;s Blog
 &lt;/h2&gt;&lt;p&gt;This is Serendipity&amp;rsquo;s first blog post. Love you all! ( •̀ ω •́ )y&lt;/p&gt;
 </description>
         </item>
         <item>
         <title>Archives</title>
-        <link>http://localhost:1313/archives/</link>
+        <link>https://example.com/archives/</link>
         <pubDate>Tue, 16 Jul 2024 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/archives/</guid>
+        <guid>https://example.com/archives/</guid>
         <description></description>
         </item>
         <item>
         <title>Search</title>
-        <link>http://localhost:1313/search/</link>
+        <link>https://example.com/search/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/search/</guid>
+        <guid>https://example.com/search/</guid>
         <description></description>
         </item>
         

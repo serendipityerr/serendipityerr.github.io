@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr">
-    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
+    <head><meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="Introduction\r终于有机会开了个新坑。其实在大概一年以前就记过一些相关笔记，但是没有时间/机会整理，感谢@Dorisgua同学的大力支持。^O^/\nStudy Notes on Diffusion Models\rDenoising Diffusion Probabilistic Models (DDPMs)\r目的：从随机噪声（标准正态分布）中生成数据样本（e.g., 一张猫猫的图片）。\n$$ z \\sim \\mathcal{N}(0, I) \\longrightarrow x \\sim q_{\\text{data}}(x) $$ 前向过程 Forward Process\r很明显，直接从随机噪声中生成一个数据样本是非常困难的。那么如果反过来呢？考虑先把数据样本 $x_0$ 破坏成噪声 $x_T$，这里假设需要 $T$ 时间步。把这个过程用数学表示出来（我们约定前向过程用概率分布 $q$ 来表示）：\n$$ x_0 \\sim q_{\\text{data}} \\rightarrow x_1 \\rightarrow \\cdots \\rightarrow x_T \\sim \\mathcal{N}(0, I) $$更具体的，DDPMs将其定义为（已知的）前向加噪过程(Forward Process)，他是一个Markov过程：\n$$ q(x_{1:T} \\mid x_0) = \\prod_{t=1}^{T} q(x_{t} \\mid x_{t-1}) \\quad \\text{with} \\quad q(x_{t} \\mid x_{t-1}) = \\mathcal{N}(x_{t}; \\sqrt{1-\\beta_t} x_{t-1}, \\beta_t I) $$其中 $\\beta_t$ 也是已知的，预定义好的一个数列，满足 $\\beta_1 &lt; \\beta_2 &lt; \\cdots &lt; \\beta_T$，可以是linear schedule, cosine schedule等等&hellip;\n">
 <title>Study Notes on Diffusion</title>
 
-<link rel='canonical' href='http://localhost:1313/p/study-notes-on-diffusion/'>
+<link rel='canonical' href='https://example.com/p/study-notes-on-diffusion/'>
 
 <link rel="stylesheet" href="/scss/style.min.b9c8156d464c343bdacaf14a871581fb94cbbdb9dd5cbce4ba017361187cc930.css"><meta property='og:title' content="Study Notes on Diffusion">
 <meta property='og:description' content="Introduction\r终于有机会开了个新坑。其实在大概一年以前就记过一些相关笔记，但是没有时间/机会整理，感谢@Dorisgua同学的大力支持。^O^/\nStudy Notes on Diffusion Models\rDenoising Diffusion Probabilistic Models (DDPMs)\r目的：从随机噪声（标准正态分布）中生成数据样本（e.g., 一张猫猫的图片）。\n$$ z \\sim \\mathcal{N}(0, I) \\longrightarrow x \\sim q_{\\text{data}}(x) $$ 前向过程 Forward Process\r很明显，直接从随机噪声中生成一个数据样本是非常困难的。那么如果反过来呢？考虑先把数据样本 $x_0$ 破坏成噪声 $x_T$，这里假设需要 $T$ 时间步。把这个过程用数学表示出来（我们约定前向过程用概率分布 $q$ 来表示）：\n$$ x_0 \\sim q_{\\text{data}} \\rightarrow x_1 \\rightarrow \\cdots \\rightarrow x_T \\sim \\mathcal{N}(0, I) $$更具体的，DDPMs将其定义为（已知的）前向加噪过程(Forward Process)，他是一个Markov过程：\n$$ q(x_{1:T} \\mid x_0) = \\prod_{t=1}^{T} q(x_{t} \\mid x_{t-1}) \\quad \\text{with} \\quad q(x_{t} \\mid x_{t-1}) = \\mathcal{N}(x_{t}; \\sqrt{1-\\beta_t} x_{t-1}, \\beta_t I) $$其中 $\\beta_t$ 也是已知的，预定义好的一个数列，满足 $\\beta_1 &lt; \\beta_2 &lt; \\cdots &lt; \\beta_T$，可以是linear schedule, cosine schedule等等&hellip;\n">
-<meta property='og:url' content='http://localhost:1313/p/study-notes-on-diffusion/'>
+<meta property='og:url' content='https://example.com/p/study-notes-on-diffusion/'>
 <meta property='og:site_name' content='Serendipity&#39;s Blog'>
 <meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Machine Learning' /><meta property='article:published_time' content='2025-08-16T23:21:40&#43;08:00'/><meta property='article:modified_time' content='2025-08-16T23:21:40&#43;08:00'/>
 <meta name="twitter:title" content="Study Notes on Diffusion">
@@ -912,7 +912,7 @@ $$<p>代入 $T=1000$, $\beta_1 = 10^{-4}$ 和 $\beta_T = 0.02$，因此，$\sqrt
                 src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
                 
                 >
-            </script><script type="text/javascript" src="/ts/main.cb61ca303c9051148a468e900a2e2c68da573d5620ed2eb7c9156795d8f4efe8.js" defer></script>
+            </script><script type="text/javascript" src="/ts/main.1e9a3bafd846ced4c345d084b355fb8c7bae75701c338f8a1f8a82c780137826.js" defer></script>
 <script>
     (function () {
         const customFont = document.createElement('link');

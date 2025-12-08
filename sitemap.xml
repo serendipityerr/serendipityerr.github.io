@@ -2,135 +2,135 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://example.com/categories/</loc>
     <lastmod>2025-12-08T22:49:21+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/machine-learning/</loc>
+    <loc>https://example.com/tags/machine-learning/</loc>
     <lastmod>2025-12-08T22:49:21+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/post/</loc>
+    <loc>https://example.com/post/</loc>
     <lastmod>2025-12-08T22:49:21+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://example.com/</loc>
     <lastmod>2025-12-08T22:49:21+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/study-notes/</loc>
+    <loc>https://example.com/categories/study-notes/</loc>
     <lastmod>2025-12-08T22:49:21+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/p/study-notes-on-stochastic-differential-equations/</loc>
+    <loc>https://example.com/p/study-notes-on-stochastic-differential-equations/</loc>
     <lastmod>2025-12-08T22:49:21+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://example.com/tags/</loc>
     <lastmod>2025-12-08T22:49:21+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/math/</loc>
+    <loc>https://example.com/tags/math/</loc>
     <lastmod>2025-12-06T00:19:33+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/p/stochastic-optimal-control/</loc>
+    <loc>https://example.com/p/stochastic-optimal-control/</loc>
     <lastmod>2025-12-06T00:19:33+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/p/bibtex-.bib-and-.bbl/</loc>
+    <loc>https://example.com/p/bibtex-.bib-and-.bbl/</loc>
     <lastmod>2025-11-10T22:50:18+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/latex/</loc>
+    <loc>https://example.com/tags/latex/</loc>
     <lastmod>2025-11-10T22:50:18+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/technical-tutorials/</loc>
+    <loc>https://example.com/categories/technical-tutorials/</loc>
     <lastmod>2025-11-10T22:50:18+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/obsidian/</loc>
+    <loc>https://example.com/tags/obsidian/</loc>
     <lastmod>2025-08-27T20:34:29+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/p/obsidian-plugin-math-booster/</loc>
+    <loc>https://example.com/p/obsidian-plugin-math-booster/</loc>
     <lastmod>2025-08-27T20:34:29+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/p/study-notes-on-diffusion/</loc>
+    <loc>https://example.com/p/study-notes-on-diffusion/</loc>
     <lastmod>2025-08-16T23:21:40+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/p/add-a-year-progress-to-your-github-profile-page/</loc>
+    <loc>https://example.com/p/add-a-year-progress-to-your-github-profile-page/</loc>
     <lastmod>2025-08-01T16:47:05+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/git/</loc>
+    <loc>https://example.com/tags/git/</loc>
     <lastmod>2025-08-01T16:47:05+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/p/git-and-ssh/</loc>
+    <loc>https://example.com/p/git-and-ssh/</loc>
     <lastmod>2025-05-19T23:10:50+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/p/notes-on-optimal-transport/</loc>
+    <loc>https://example.com/p/notes-on-optimal-transport/</loc>
     <lastmod>2025-03-23T19:12:10+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/homepage/</loc>
+    <loc>https://example.com/homepage/</loc>
     <lastmod>2025-03-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/coding-knowledge/</loc>
+    <loc>https://example.com/categories/coding-knowledge/</loc>
     <lastmod>2025-02-25T11:44:28+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/p/notes-on-latex-math-symbols/</loc>
+    <loc>https://example.com/p/notes-on-latex-math-symbols/</loc>
     <lastmod>2025-02-25T11:44:28+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/database/</loc>
+    <loc>https://example.com/tags/database/</loc>
     <lastmod>2025-02-24T19:06:28+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/p/notes-on-database/</loc>
+    <loc>https://example.com/p/notes-on-database/</loc>
     <lastmod>2025-02-24T19:06:28+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/html/</loc>
+    <loc>https://example.com/tags/html/</loc>
     <lastmod>2025-02-21T21:58:39+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/p/replace-google-cdn/</loc>
+    <loc>https://example.com/p/replace-google-cdn/</loc>
     <lastmod>2025-02-21T21:58:39+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/p/add-a-funny-snake-animation-to-your-github-profile-page/</loc>
+    <loc>https://example.com/p/add-a-funny-snake-animation-to-your-github-profile-page/</loc>
     <lastmod>2025-02-20T11:14:33+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/p/notes-on-html/</loc>
+    <loc>https://example.com/p/notes-on-html/</loc>
     <lastmod>2025-02-18T22:42:40+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/hugo/</loc>
+    <loc>https://example.com/tags/hugo/</loc>
     <lastmod>2025-02-17T18:57:48+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/p/update-hugo-to-hugo-extended/</loc>
+    <loc>https://example.com/p/update-hugo-to-hugo-extended/</loc>
     <lastmod>2025-02-17T18:57:48+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/markdown/</loc>
+    <loc>https://example.com/tags/markdown/</loc>
     <lastmod>2024-12-09T18:50:29+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/p/some-skills-on-exporting-latex-in-markdown-as-pdf/</loc>
+    <loc>https://example.com/p/some-skills-on-exporting-latex-in-markdown-as-pdf/</loc>
     <lastmod>2024-12-09T18:50:29+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/python/</loc>
+    <loc>https://example.com/tags/python/</loc>
     <lastmod>2024-10-18T15:28:15+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/p/some-skills-on-modifying-pip-mirror-source-and-installing-cuda-in-conda/</loc>
+    <loc>https://example.com/p/some-skills-on-modifying-pip-mirror-source-and-installing-cuda-in-conda/</loc>
     <lastmod>2024-10-18T15:28:15+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/p/some-skills-on-image-processing/</loc>
+    <loc>https://example.com/p/some-skills-on-image-processing/</loc>
     <lastmod>2024-08-28T14:14:07+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/p/diffusers/</loc>
+    <loc>https://example.com/p/diffusers/</loc>
     <lastmod>2024-08-11T12:09:12+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/p/2024.08.02/</loc>
+    <loc>https://example.com/p/2024.08.02/</loc>
     <lastmod>2024-08-02T11:22:51+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/p/pca-and-autoencoder/</loc>
+    <loc>https://example.com/p/pca-and-autoencoder/</loc>
     <lastmod>2024-07-20T14:13:42+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/p/2024.07.18/</loc>
+    <loc>https://example.com/p/2024.07.18/</loc>
     <lastmod>2024-07-18T23:45:09+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/p/starting-from-scratch-creating-and-pushing-your-blog-posts-with-hugo-and-git/</loc>
+    <loc>https://example.com/p/starting-from-scratch-creating-and-pushing-your-blog-posts-with-hugo-and-git/</loc>
     <lastmod>2024-07-16T14:16:38+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/p/my-first-blog/</loc>
+    <loc>https://example.com/p/my-first-blog/</loc>
     <lastmod>2024-07-16T13:40:30+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/page/</loc>
+    <loc>https://example.com/page/</loc>
     <lastmod>2024-07-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/archives/</loc>
+    <loc>https://example.com/archives/</loc>
     <lastmod>2024-07-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/search/</loc>
+    <loc>https://example.com/search/</loc>
   </url>
 </urlset>

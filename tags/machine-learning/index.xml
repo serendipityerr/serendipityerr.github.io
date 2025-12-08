@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Machine Learning on Serendipity&#39;s Blog</title>
-        <link>http://localhost:1313/tags/machine-learning/</link>
+        <link>https://example.com/tags/machine-learning/</link>
         <description>Recent content in Machine Learning on Serendipity&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Mon, 08 Dec 2025 22:49:21 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/machine-learning/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 08 Dec 2025 22:49:21 +0800</lastBuildDate><atom:link href="https://example.com/tags/machine-learning/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Study Notes on Stochastic Differential Equations</title>
-        <link>http://localhost:1313/p/study-notes-on-stochastic-differential-equations/</link>
+        <link>https://example.com/p/study-notes-on-stochastic-differential-equations/</link>
         <pubDate>Mon, 08 Dec 2025 22:49:21 +0800</pubDate>
         
-        <guid>http://localhost:1313/p/study-notes-on-stochastic-differential-equations/</guid>
+        <guid>https://example.com/p/study-notes-on-stochastic-differential-equations/</guid>
         <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction
 &lt;/h2&gt;&lt;p&gt;This blog would introduce some mathemetical tricks on Stochastic Differential Equations (SDEs).&lt;/p&gt;
 &lt;h2 id=&#34;lamperti-transform&#34;&gt;Lamperti Transform
@@ -42,20 +42,20 @@ $$&lt;p&gt;More generally the transformation does not have a simple formula, but
         </item>
         <item>
         <title>Study Notes on Diffusion</title>
-        <link>http://localhost:1313/p/study-notes-on-diffusion/</link>
+        <link>https://example.com/p/study-notes-on-diffusion/</link>
         <pubDate>Sat, 16 Aug 2025 23:21:40 +0800</pubDate>
         
-        <guid>http://localhost:1313/p/study-notes-on-diffusion/</guid>
+        <guid>https://example.com/p/study-notes-on-diffusion/</guid>
         <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction
 &lt;/h2&gt;&lt;p&gt;终于有机会开了个新坑。其实在大概一年以前就记过一些相关笔记，但是没有时间/机会整理，感谢&lt;a class=&#34;link&#34; href=&#34;https://github.com/Dorisgua&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;@Dorisgua&lt;/a&gt;同学的大力支持。^O^/&lt;/p&gt;
 &lt;h2 id=&#34;study-notes-on-diffusion-models&#34;&gt;Study Notes on Diffusion Models
 &lt;/h2&gt;&lt;h3 id=&#34;denoising-diffusion-probabilistic-models-ddpms&#34;&gt;Denoising Diffusion Probabilistic Models (DDPMs)
-&lt;/h3&gt;&lt;!-- &lt;iframe src=&#34;http://localhost:1313/post_img/2025-08-16/Denoising Diffusion Probabilistic Models (DDPMs).pdf&#34; width=&#34;100%&#34; height=&#34;1000px&#34;&gt;&lt;/iframe&gt; --&gt;
+&lt;/h3&gt;&lt;!-- &lt;iframe src=&#34;https://example.com/post_img/2025-08-16/Denoising Diffusion Probabilistic Models (DDPMs).pdf&#34; width=&#34;100%&#34; height=&#34;1000px&#34;&gt;&lt;/iframe&gt; --&gt;
 &lt;p&gt;目的：从随机噪声（标准正态分布）中生成数据样本（e.g., 一张猫猫的图片）。&lt;/p&gt;
 $$
 z \sim \mathcal{N}(0, I) \longrightarrow x \sim q_{\text{data}}(x)
-$$&lt;div align=&#34;center&#34;&gt;&lt;img src=&#34;http://localhost:1313/post_img/2025-08-16/main.png&#34; width=&#34;600px&#34;/&gt;&lt;/div&gt;
+$$&lt;div align=&#34;center&#34;&gt;&lt;img src=&#34;https://example.com/post_img/2025-08-16/main.png&#34; width=&#34;600px&#34;/&gt;&lt;/div&gt;
 &lt;h4 id=&#34;前向过程-forward-process&#34;&gt;前向过程 Forward Process
 &lt;/h4&gt;&lt;p&gt;很明显，直接从随机噪声中生成一个数据样本是非常困难的。那么如果反过来呢？考虑先把数据样本 $x_0$ 破坏成噪声 $x_T$，这里假设需要 $T$ 时间步。把这个过程用数学表示出来（我们约定前向过程用概率分布 $q$ 来表示）：&lt;/p&gt;
 $$
@@ -271,7 +271,7 @@ $$&lt;p&gt;其中 $t \sim U(1, T)$。$t=1$ 的情况对应于$L_0$，就是离�
 &lt;li&gt;把 $x_t$ 和 $t$ 输入神经网络并返回预测的噪声 $\varepsilon_\theta$。&lt;/li&gt;
 &lt;li&gt;计算Loss $\mathcal{L}$并对 $\theta$ 进行梯度下降进行优化，直到收敛。&lt;/li&gt;
 &lt;/ol&gt;
-&lt;div align=&#34;center&#34;&gt;&lt;img src=&#34;http://localhost:1313/post_img/2025-08-16/training_algorithm.png&#34; width=&#34;400px&#34;/&gt;&lt;/div&gt;
+&lt;div align=&#34;center&#34;&gt;&lt;img src=&#34;https://example.com/post_img/2025-08-16/training_algorithm.png&#34; width=&#34;400px&#34;/&gt;&lt;/div&gt;
 &lt;h4 id=&#34;采样算法-samplinginference-algorithm&#34;&gt;采样算法 Sampling/Inference Algorithm
 &lt;/h4&gt;&lt;p&gt;假设我们已经获得了训练好的噪声神经网络 $\varepsilon_\theta(x_t, t)$ ，接下来我们来分析采样/推理（sampling/inference）过程。&lt;/p&gt;
 &lt;p&gt;这里就比较简单了，因为我们已有 $\varepsilon_\theta(x_t, t)$，所以可以通过我们先前建模的概率分布 $p_\theta(x_{t-1} | x_t)$ 来进行采样/推理，从随机噪声 $x_T \sim \mathcal{N}(0, I)$ 开始生成一张图像。具体来说：&lt;/p&gt;
@@ -287,7 +287,7 @@ $$&lt;p&gt;所以在有当前时间步下的 $x_t$，就可以根据上述公式
 &lt;li&gt;$t$ 到 $t-1$ 往前更新一步：$x_{t-1} \leftarrow \left( x_t, \varepsilon_\theta(x_t, t), z \right)$&lt;/li&gt;
 &lt;li&gt;循环 $T$ 步，最终返回生成的 $\hat{x}_0$。&lt;/li&gt;
 &lt;/ol&gt;
-&lt;div align=&#34;center&#34;&gt;&lt;img src=&#34;http://localhost:1313/post_img/2025-08-16/sampling_algorithm.png&#34; width=&#34;400px&#34;/&gt;&lt;/div&gt;
+&lt;div align=&#34;center&#34;&gt;&lt;img src=&#34;https://example.com/post_img/2025-08-16/sampling_algorithm.png&#34; width=&#34;400px&#34;/&gt;&lt;/div&gt;
 &lt;p&gt;需要特别注意的细节是，最后一步要区分训练与生成：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;为了计算损失 $L_0$（训练时）：我们使用先前定义的、复杂的积分解码器来计算离散数据的精确对数似然。&lt;/li&gt;
@@ -319,10 +319,10 @@ $$&lt;p&gt;代入 $T=1000$, $\beta_1 = 10^{-4}$ 和 $\beta_T = 0.02$，因此，
         </item>
         <item>
         <title>Some Skills on Image Processing</title>
-        <link>http://localhost:1313/p/some-skills-on-image-processing/</link>
+        <link>https://example.com/p/some-skills-on-image-processing/</link>
         <pubDate>Wed, 28 Aug 2024 14:14:07 +0800</pubDate>
         
-        <guid>http://localhost:1313/p/some-skills-on-image-processing/</guid>
+        <guid>https://example.com/p/some-skills-on-image-processing/</guid>
         <description>&lt;h2 id=&#34;image-pre-processingtransformation&#34;&gt;Image Pre-processing/Transformation
 &lt;/h2&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -448,10 +448,10 @@ $$&lt;p&gt;代入 $T=1000$, $\beta_1 = 10^{-4}$ 和 $\beta_T = 0.02$，因此，
         </item>
         <item>
         <title>Diffusers</title>
-        <link>http://localhost:1313/p/diffusers/</link>
+        <link>https://example.com/p/diffusers/</link>
         <pubDate>Sun, 11 Aug 2024 12:09:12 +0800</pubDate>
         
-        <guid>http://localhost:1313/p/diffusers/</guid>
+        <guid>https://example.com/p/diffusers/</guid>
         <description>&lt;h2 id=&#34;learning-diffusers&#34;&gt;Learning &lt;code&gt;Diffusers&lt;/code&gt;
 &lt;/h2&gt;&lt;h3 id=&#34;installation&#34;&gt;Installation
 &lt;/h3&gt;&lt;p&gt;With &lt;code&gt;pip&lt;/code&gt;&lt;/p&gt;
@@ -960,10 +960,10 @@ $$&lt;p&gt;代入 $T=1000$, $\beta_1 = 10^{-4}$ 和 $\beta_T = 0.02$，因此，
         </item>
         <item>
         <title>PCA and AutoEncoder</title>
-        <link>http://localhost:1313/p/pca-and-autoencoder/</link>
+        <link>https://example.com/p/pca-and-autoencoder/</link>
         <pubDate>Sat, 20 Jul 2024 14:13:42 +0800</pubDate>
         
-        <guid>http://localhost:1313/p/pca-and-autoencoder/</guid>
+        <guid>https://example.com/p/pca-and-autoencoder/</guid>
         <description>&lt;h2 id=&#34;difference-between-pca-and-autoencoder&#34;&gt;Difference Between PCA and AutoEncoder
 &lt;/h2&gt;&lt;h3 id=&#34;pca&#34;&gt;PCA
 &lt;/h3&gt;&lt;p&gt;Suppose there are m n-dimensional data, $ X_{n \times m} = [x_1, x_2,&amp;hellip;, x_m]$, where each $x$ is an n-dimensional column vector.&lt;/p&gt;
@@ -1036,10 +1036,10 @@ $$&lt;p&gt;代入 $T=1000$, $\beta_1 = 10^{-4}$ 和 $\beta_T = 0.02$，因此，
         </item>
         <item>
         <title>2024.07.18</title>
-        <link>http://localhost:1313/p/2024.07.18/</link>
+        <link>https://example.com/p/2024.07.18/</link>
         <pubDate>Thu, 18 Jul 2024 23:45:09 +0800</pubDate>
         
-        <guid>http://localhost:1313/p/2024.07.18/</guid>
+        <guid>https://example.com/p/2024.07.18/</guid>
         <description>&lt;h2 id=&#34;study-on-score-based-generative-modeling&#34;&gt;Study on Score-Based Generative Modeling
 &lt;/h2&gt;&lt;p&gt;(●&amp;rsquo;◡&amp;rsquo;●)&lt;/p&gt;
 &lt;p&gt;About Score-Based Generative Modeling: the following article has given a clear explanation: &lt;a class=&#34;link&#34; href=&#34;https://kexue.fm/archives/9209#mjx-eqn-eq%3Abayes-dt&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
