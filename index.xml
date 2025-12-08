@@ -6,7 +6,41 @@
         <description>Recent content on Serendipity&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Sat, 06 Dec 2025 00:19:33 +0800</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 08 Dec 2025 22:49:21 +0800</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Study Notes on Stochastic Differential Equations</title>
+        <link>http://localhost:1313/p/study-notes-on-stochastic-differential-equations/</link>
+        <pubDate>Mon, 08 Dec 2025 22:49:21 +0800</pubDate>
+        
+        <guid>http://localhost:1313/p/study-notes-on-stochastic-differential-equations/</guid>
+        <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction
+&lt;/h2&gt;&lt;p&gt;This blog would introduce some mathemetical tricks on Stochastic Differential Equations (SDEs).&lt;/p&gt;
+&lt;h2 id=&#34;lamperti-transform&#34;&gt;Lamperti Transform
+&lt;/h2&gt;&lt;p&gt;Consider the following standard SDE:&lt;/p&gt;
+$$
+\mathrm{d} x_t = f(x_t, t) \mathrm{d} t + L(x_t, t) \mathrm{d} w_t
+$$&lt;p&gt;&lt;strong&gt;The Lamperti transform&lt;/strong&gt; is to make the change-of-variable $y_t = h(x_t, t)$ in the SDE s.t. the SDE transforms into&lt;/p&gt;
+$$
+\mathrm{d} y_t = g(y_t, t) \mathrm{d} t + \mathrm{d} w_t
+$$&lt;p&gt;That is, the multiplicative noise is transformed into additive noise. Numerically solving an additive-noise SDE is usually easier than solving a general SDE of the form. To illustrate the idea of the Lamperti transform, we can define a transform (change-of-variable) as follows:&lt;/p&gt;
+$$
+y_t = h(x_t, t) = \int_{\xi}^{x_t} \frac{1}{L(u, t)} \mathrm{d} u
+$$&lt;p&gt;where $\xi$ is an arbitrary point. Applying the Itô&amp;rsquo;s formula on $h(x_t, t)$ gives&lt;/p&gt;
+$$
+\begin{aligned}
+\mathrm{d} y_t &amp;= \frac{\partial h(x_t, t)}{\partial t} \mathrm{d} t + \frac{\partial h(x_t, t)}{\partial x_t} \mathrm{d} x_t + \frac{1}{2} \frac{\partial^2 h(x_t, t)}{\partial x_t^2} (\mathrm{d} x_t)^2 \\
+&amp;= \left[ \frac{\partial}{\partial t} \int_{\xi}^{x_t} \frac{1}{L(u, t)} \mathrm{d} u \right] \mathrm{d} t + \frac{1}{L(x_t, t)} \left[ f(x_t, t) \mathrm{d} t + L(x_t, t) \mathrm{d} w_t \right] + \frac{1}{2} \left[ - \frac{1}{L^2(x_t, t)} \frac{\partial L(x_t, t)}{\partial x_t} \right] L^2(x_t, t) \mathrm{d} t \\
+&amp;= \left( \frac{\partial}{\partial t} \int_{\xi}^{x_t} \frac{1}{L(u, t)} \mathrm{d} u + \frac{f(x_t, t)}{L(x_t, t)} - \frac{1}{2} \frac{\partial L(x_t, t)}{\partial x_t} \right) \mathrm{d} t + \mathrm{d} w_t
+\end{aligned}
+$$&lt;p&gt;Provided that $x_t = h^{-1} (y_t, t)$ exists, we can express the SDE in termsa of $y_t$ by&lt;/p&gt;
+$$
+\begin{gathered}
+\mathrm{d} y_t = g(y_t, t) \mathrm{d} t + \mathrm{d} w_t \\
+g(y_t, t) = \left( \frac{\partial}{\partial t} \int_{\xi}^{x_t} \frac{1}{L(u, t)} \mathrm{d} u + \frac{f(x_t, t)}{L(x_t, t)} - \frac{1}{2} \frac{\partial L(x_t, t)}{\partial x_t} \right) \Bigg|_{x_t = h^{-1} (y_t, t)}
+\end{gathered}
+$$&lt;p&gt;More generally the transformation does not have a simple formula, but instead the transformation can only be defined as a solution to a system of partial differential equations (PDEs).&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>Stochastic Optimal Control</title>
         <link>http://localhost:1313/p/stochastic-optimal-control/</link>
         <pubDate>Sat, 06 Dec 2025 00:19:33 +0800</pubDate>

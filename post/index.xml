@@ -6,7 +6,45 @@
         <description>Recent content in Posts on Serendipity&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Sat, 06 Dec 2025 00:19:33 +0800</lastBuildDate><atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 08 Dec 2025 22:49:21 +0800</lastBuildDate><atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Study Notes on Stochastic Differential Equations</title>
+        <link>http://localhost:1313/p/study-notes-on-stochastic-differential-equations/</link>
+        <pubDate>Mon, 08 Dec 2025 22:49:21 +0800</pubDate>
+        
+        <guid>http://localhost:1313/p/study-notes-on-stochastic-differential-equations/</guid>
+        <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction
+&lt;/h2&gt;&lt;p&gt;This blog would introduce some mathemetical tricks on Stochastic Differential Equations (SDEs).&lt;/p&gt;
+&lt;h3 id=&#34;lamperti-transform&#34;&gt;Lamperti Transform
+&lt;/h3&gt;&lt;p&gt;Consider the following standard SDE:&lt;/p&gt;
+$$
+\mathrm{d} \boldsymbol{x}_t = f(\boldsymbol{x}_t, t) \mathrm{d} t + L(\boldsymbol{x}_t, t) \mathrm{d} \boldsymbol{w}_t
+$$&lt;p&gt;&lt;strong&gt;The Lamperti transform&lt;/strong&gt; is to make the change-of-variable $\boldsymbol{y}_t = h(\boldsymbol{x}_t, t)$ in the SDE s.t. the SDE transforms into&lt;/p&gt;
+$$
+\mathrm{d} \boldsymbol{y}_t = g(\boldsymbol{y}_t, t) \mathrm{d} t + \mathrm{d} \boldsymbol{w}_t
+$$&lt;p&gt;That is, the multiplicative noise is transformed into additive noise. Numerically solving an additive-noise SDE is usually easier than solving a general SDE of the form.&lt;/p&gt;
+&lt;p&gt;To illustrate the idea of the Lamperti transform, let us consider a standard scalar SDE:&lt;/p&gt;
+$$
+\mathrm{d} x_t = f(x_t, t) \mathrm{d} t + L(x_t, t) \mathrm{d} w_t
+$$&lt;p&gt;We can define a transform (change-of-variable) as follows:&lt;/p&gt;
+$$
+y_t = h(x_t, t) = \int_{\xi}^{x_t} \frac{1}{L(u, t)} \mathrm{d} u,
+$$&lt;p&gt;where $\xi$ is an arbitrary point. Applying the Itô formula on $h(x_t, t)$ gives&lt;/p&gt;
+$$
+\begin{aligned}
+\mathrm{d} y_t &amp;= \frac{\partial h(x_t, t)}{\partial t} \mathrm{d} t + \frac{\partial h(x_t, t)}{\partial x_t} \mathrm{d} x_t + \frac{1}{2} \frac{\partial^2 h(x_t, t)}{\partial x_t^2} (\mathrm{d} x_t)^2 \\
+&amp;= \left[ \frac{\partial}{\partial t} \int_{\xi}^{x_t} \frac{1}{L(u, t)} \mathrm{d} u \right] \mathrm{d} t + \frac{1}{L(x_t, t)} \left[ f(x_t, t) \mathrm{d} t + L(x_t, t) \mathrm{d} w_t \right] + \frac{1}{2} \left[ - \frac{1}{L^2(x_t, t)} \frac{\partial L(x_t, t)}{\partial x_t} \right] L^2(x_t, t) \mathrm{d} t \\
+&amp;= \left( \frac{\partial}{\partial t} \int_{\xi}^{x_t} \frac{1}{L(u, t)} \mathrm{d} u + \frac{f(x_t, t)}{L(x_t, t)} - \frac{1}{2} \frac{\partial L(x_t, t)}{\partial x_t} \right) \mathrm{d} t + \mathrm{d} w_t
+\end{aligned}
+$$&lt;p&gt;Provided that $x_t = h^{-1} (y_t, t)$ exists, we can express the SDE in termsa of $y_t$ by&lt;/p&gt;
+$$
+\begin{gathered}
+\mathrm{d} y_t = g(y_t, t) \mathrm{d} t + \mathrm{d} w_t \\
+g(y_t, t) = \left( \frac{\partial}{\partial t} \int_{\xi}^{x_t} \frac{1}{L(u, t)} \mathrm{d} u + \frac{f(x_t, t)}{L(x_t, t)} - \frac{1}{2} \frac{\partial L(x_t, t)}{\partial x_t} \right) \Bigg|_{x_t = h^{-1} (y_t, t)}
+\end{gathered}
+$$&lt;p&gt;The transformation generalizes to a multivariate setting if $L(\boldsymbol{x}&lt;em&gt;t, t)$ is diagonal such that each $L&lt;/em&gt;{ii}(\boldsymbol{x}_t, t)$  only depends on the component $x_i$. Then we can apply the Lamperti transform to each component separately. More generally the transformation does not have a simple formula, but instead the transformation can only be defined as a solution to a system of partial differential equations (PDEs).&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>Stochastic Optimal Control</title>
         <link>http://localhost:1313/p/stochastic-optimal-control/</link>
         <pubDate>Sat, 06 Dec 2025 00:19:33 +0800</pubDate>
@@ -574,8 +612,8 @@ x_t &amp;= \sqrt{1-\beta_t} x_{t-1} + \sqrt{\beta_t} \varepsilon_t \\
 $$&lt;p&gt;这里我们简记 $\alpha_t = 1 - \beta_t$，并且对随机噪声的合并中用到了正态分布的性质：$\mathcal{N}(\mu_1, \sigma_1^2 I) + \mathcal{N}(\mu_2, \sigma_2^2 I) = \mathcal{N}(\mu_1+\mu_2, (\sigma_1^2 + \sigma_2^2)I)$。如果再用概率来表示 $x_t$ 和 $x_0$ 之间的关系 $x_t = \sqrt{\bar{\alpha}_t} x_0 + \sqrt{1 - \bar{\alpha}_t} \varepsilon$，也就是下面这个条件概率：&lt;/p&gt;
 $$
 q(x_t \mid x_0) = \mathcal{N} (x_t; \sqrt{\bar{\alpha}_t} x_0, (1 - \bar{\alpha}_t)I)
-$$&lt;h3 id=&#34;反向过程-reverse-process&#34;&gt;反向过程 Reverse Process
-&lt;/h3&gt;&lt;p&gt;前向过程的性质就先挖到这里，接下来我们来考虑反向过程(Reverse Process)。约定反向过程中的未知概率分布用 $p$ 来表示（与前向过程已知的分布区分），我们希望能够反转上述（前向）过程，如果可以从 $p(x_{t-1} \mid x_t)$ 中采样，那么我们就可以在 $T$ 时刻从随机噪声（标准正态分布）中采样一个初始值 $x_T \sim \mathcal{N}(0, I)$，然后一步步去噪来还原，最终得到一个与真实图像分布（近似）一致的 $\hat{x}_0$。&lt;/p&gt;
+$$&lt;h4 id=&#34;反向过程-reverse-process&#34;&gt;反向过程 Reverse Process
+&lt;/h4&gt;&lt;p&gt;前向过程的性质就先挖到这里，接下来我们来考虑反向过程(Reverse Process)。约定反向过程中的未知概率分布用 $p$ 来表示（与前向过程已知的分布区分），我们希望能够反转上述（前向）过程，如果可以从 $p(x_{t-1} \mid x_t)$ 中采样，那么我们就可以在 $T$ 时刻从随机噪声（标准正态分布）中采样一个初始值 $x_T \sim \mathcal{N}(0, I)$，然后一步步去噪来还原，最终得到一个与真实图像分布（近似）一致的 $\hat{x}_0$。&lt;/p&gt;
 &lt;p&gt;但是我们并没有 $p(x_{t-1} \mid x_t)$ 的具体表达式，所以我们设计神经网络(Neural Network)来学习这个分布。&lt;/p&gt;
 &lt;p&gt;定义：$p_{\theta}(x_{t-1} \mid x_t) = \mathcal{N} (x_{t-1}; \mu_{\theta}(x_t, t), \Sigma_{\theta}(x_t, t)I)$，也即均值和方差分别为 $\mu_{\theta}(x_t, t)$ 和 $\Sigma_{\theta}(x_t, t)$ 这两个神经网络项。&lt;/p&gt;
 &lt;p&gt;我们先考虑如何设计Training Loss：DDPMs选择的是优化负对数似然(negative log-likelihood)，先上结论:&lt;/p&gt;
@@ -586,9 +624,6 @@ $$
 &amp;\triangleq \mathcal{L}
 \end{aligned}
 $$&lt;p&gt;接下来一点点来推导：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;ELBO: $-\log p_\theta(x_0) \leq \mathbb{E}&lt;em&gt;{q(x&lt;/em&gt;{1:T} | x_0)} \left[-\log\frac{p_\theta(x_{0:T})}{q(x_{1:T}|x_0)}\right]$&lt;/li&gt;
-&lt;/ol&gt;
 $$
 \begin{aligned}
 \log p_\theta(x_0) &amp;= \log \int p_\theta(x_{0:T})dx_{1:T} \\
@@ -756,9 +791,59 @@ $$&lt;p&gt;其中 $t \sim U(1, T)$。$t=1$ 的情况对应于$L_0$，就是离�
 &lt;ol start=&#34;3&#34;&gt;
 &lt;li&gt;最后一项 $L_T$：对Training loss $\mathcal{L}$ 来说是个常数（因为我们已知 $p_\theta(x_T) = p(x_T)$ 这个反向过程的起始分布就是标准正态分布）&lt;/li&gt;
 &lt;/ol&gt;
+&lt;h4 id=&#34;训练算法-training-algorithm&#34;&gt;训练算法 Training Algorithm
+&lt;/h4&gt;&lt;p&gt;用伪代码来总结一下整个的训练流程：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;从数据(Ground Truth)训练集中随机选取一个数据 $x_0$。&lt;/li&gt;
+&lt;li&gt;从1到 $T$ 中随机选取一个时间步 $t$。&lt;/li&gt;
+&lt;li&gt;从标准正态分布中随机选取一个噪声 $\varepsilon$，计算这个时间步下的 $x_t$。&lt;/li&gt;
+&lt;li&gt;把 $x_t$ 和 $t$ 输入神经网络并返回预测的噪声 $\varepsilon_\theta$。&lt;/li&gt;
+&lt;li&gt;计算Loss $\mathcal{L}$并对 $\theta$ 进行梯度下降进行优化，直到收敛。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div align=&#34;center&#34;&gt;&lt;img src=&#34;http://localhost:1313/post_img/2025-08-16/training_algorithm.png&#34; width=&#34;400px&#34;/&gt;&lt;/div&gt;
+&lt;h4 id=&#34;采样算法-samplinginference-algorithm&#34;&gt;采样算法 Sampling/Inference Algorithm
+&lt;/h4&gt;&lt;p&gt;假设我们已经获得了训练好的噪声神经网络 $\varepsilon_\theta(x_t, t)$ ，接下来我们来分析采样/推理（sampling/inference）过程。&lt;/p&gt;
+&lt;p&gt;这里就比较简单了，因为我们已有 $\varepsilon_\theta(x_t, t)$，所以可以通过我们先前建模的概率分布 $p_\theta(x_{t-1} | x_t)$ 来进行采样/推理，从随机噪声 $x_T \sim \mathcal{N}(0, I)$ 开始生成一张图像。具体来说：&lt;/p&gt;
+$$
+\begin{aligned}
+&amp; \ p_\theta(x_{t-1} | x_t) = \mathcal{N} \left(\frac{1}{\sqrt{\alpha_t}} \left( x_t - \frac{1 - \alpha_t}{\sqrt{1-\bar{\alpha}_{t}}} \varepsilon_\theta(x_t, t) \right), \frac{\beta_t(1-\bar{\alpha}_{t-1})}{1-\bar{\alpha}_t} I\right) \\
+\Leftrightarrow \ &amp; x_{t-1} = \frac{1}{\sqrt{\alpha_t}} \left( x_t - \frac{1 - \alpha_t}{\sqrt{1-\bar{\alpha}_{t}}} \varepsilon_\theta(x_t, t) \right) + \frac{\beta_t(1-\bar{\alpha}_{t-1})}{1-\bar{\alpha}_t} \varepsilon
+\end{aligned}
+$$&lt;p&gt;所以在有当前时间步下的 $x_t$，就可以根据上述公式往前递推一步。用伪代码来总结一下整个的采样/推理流程：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;从随机噪声中采样 $x_T \sim \mathcal{N}(0, I)$。&lt;/li&gt;
+&lt;li&gt;从随机噪声中采样 $z \sim \mathcal{N}(0, I)$。当 $t=1$ 也就是采样的最后一步生成 $\hat{x}_0$ 时，就不需要添加噪声了（这样生成最终的图像时不会引入额外的噪声）。&lt;/li&gt;
+&lt;li&gt;$t$ 到 $t-1$ 往前更新一步：$x_{t-1} \leftarrow \left( x_t, \varepsilon_\theta(x_t, t), z \right)$&lt;/li&gt;
+&lt;li&gt;循环 $T$ 步，最终返回生成的 $\hat{x}_0$。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div align=&#34;center&#34;&gt;&lt;img src=&#34;http://localhost:1313/post_img/2025-08-16/sampling_algorithm.png&#34; width=&#34;400px&#34;/&gt;&lt;/div&gt;
+&lt;p&gt;需要特别注意的细节是，最后一步要区分训练与生成：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;为了计算损失 $L_0$（训练时）：我们使用先前定义的、复杂的积分解码器来计算离散数据的精确对数似然。&lt;/li&gt;
+&lt;li&gt;为了生成图像（采样时）：我们并不执行前面提到的解码器这个积分过程。我们采用算法的确定性最后一步（上面提到的为了生成最终的图像时不引入额外的噪声），即 $x_0 = \mu_\theta(x_1, 1)$。这个结果是一个连续值（在 $[-1, 1]$ 内），我们直接将其缩放回 $[0, 255]$ 并取整，作为最终的生成图像来显示。这样做是为了获得视觉上最清晰、最平滑的图像。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;beta_t-的选取&#34;&gt;$\beta_t$ 的选取
+&lt;/h4&gt;&lt;p&gt;现在我们回过头来看 $\beta_t$ 应该如何选取：为了尽可能满足最终 $x_T \sim \mathcal{N}(0, I)$，我们希望 $\sqrt{\bar{\alpha}_T} \approx 0$。DDPMs原文中选取了总步长 $T=1000$，线性的 $\beta_t$ (linear schedule)，满足 $\beta_1 = 10^{-4}$ 和 $\beta_T = 0.02$ 单调递增，（也就是 $\beta_t = 10^{-4} + (t-1) \frac{0.02 - 10^{-4}}{T-1}$），对应的 $\alpha_t$ 就满足 $\alpha_1 = 1-10^{-4}$ 和 $\alpha_T = 1-0.02$ 单调递减（$\alpha_t = 1 - \beta_t$）。简单估算一下 $\bar{\alpha}_t$:&lt;/p&gt;
+$$
+\log \bar{\alpha}_t = \sum_{t=1}^T \log\alpha_t = \sum_{t=1}^T \log(1-\beta_t) &lt; -\sum_{t=1}^T \beta_t = -\frac{\beta_1 +\beta_T}{2} T
+$$&lt;p&gt;代入 $T=1000$, $\beta_1 = 10^{-4}$ 和 $\beta_T = 0.02$，因此，$\sqrt{\bar{\alpha}_t} \approx e^{-5}$ 可以近似于 $0$，所以这样的 $\beta_t$ 是符合标准的。&lt;/p&gt;
+&lt;h4 id=&#34;代码实现-code-implementations&#34;&gt;代码实现 Code Implementations
+&lt;/h4&gt;&lt;p&gt;emmmm这部分等我什么时候手撕了DDPMs再来更新（恨）&lt;/p&gt;
+&lt;p&gt;To Be Continued&amp;hellip;&lt;/p&gt;
 &lt;h2 id=&#34;open-source&#34;&gt;Open Source
 &lt;/h2&gt;&lt;p&gt;更多信息请见我的GitHub仓库&lt;a class=&#34;link&#34; href=&#34;https://github.com/serendipityerr/Learning-Notes&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Learning-Notes&lt;/a&gt;。以后慢慢更新&amp;hellip;To Be Continued&amp;hellip;&lt;/p&gt;
+&lt;h2 id=&#34;参考文献-reference&#34;&gt;参考文献 Reference
+&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Denoising Diffusion Probabilistic Models.&lt;/strong&gt;  [&lt;a class=&#34;link&#34; href=&#34;https://arxiv.org/pdf/2006.11239&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;pdf&lt;/a&gt;]&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Understanding Diffusion Models: A Unified Perspective.&lt;/strong&gt;  [&lt;a class=&#34;link&#34; href=&#34;https://arxiv.org/pdf/2208.11970&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;pdf&lt;/a&gt;]&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
 </description>
         </item>
         <item>
