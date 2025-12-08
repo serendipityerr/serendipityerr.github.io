@@ -266,6 +266,10 @@
     <li><a href="#hugo-write-a-post">Hugo: Write A Post</a>
       <ol>
         <li><a href="#new-a-post">New a post</a></li>
+      </ol>
+    </li>
+    <li><a href="#hugo-latex-configuration">Hugo: LaTeX Configuration</a>
+      <ol>
         <li><a href="#push-to-github">Push to Github</a></li>
       </ol>
     </li>
@@ -333,7 +337,7 @@
 
 
                 <time class="article-time--reading">
-                    2 minute read
+                    3 minute read
                 </time>
             </div>
         
@@ -441,6 +445,85 @@
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">cd</span> D:/html
 </span></span><span class="line"><span class="cl">D:/hugo_extended/hugo new post/fileName.md
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="hugo-latex-configuration">Hugo: LaTeX Configuration
+</h2><p>(ง๑ •̀_•́)ง</p>
+<p>To render mathematical formulas in blog posts, you need to include the <strong>KATEX</strong> stylesheet. Specifically, create a <code>math.html</code> file in the <code>&lt;your_hugo_site&gt;/layouts/partials/</code> folder and add the following content:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">link</span>
+</span></span><span class="line"><span class="cl">    <span class="na">rel</span><span class="o">=</span><span class="s">&#34;stylesheet&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="na">href</span><span class="o">=</span><span class="s">&#34;https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css&#34;</span> 
+</span></span><span class="line"><span class="cl">    <span class="na">integrity</span><span class="o">=</span><span class="s">&#34;sha384-wcIxkf4k558AjM3Yz3BBFQUbk/zgIYC2R0QpeeYb+TwlBVMrlgLqwRjRtGZiK7ww&#34;</span> 
+</span></span><span class="line"><span class="cl">    <span class="na">crossorigin</span><span class="o">=</span><span class="s">&#34;anonymous&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">script</span> <span class="na">defer</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.js&#34;</span> <span class="na">integrity</span><span class="o">=</span><span class="s">&#34;sha384-hIoBPJpTUs74ddyc4bFZSM1TVlQDA60VBbJS0oA934VSz82sBx1X7kSx2ATBDIyd&#34;</span> <span class="na">crossorigin</span><span class="o">=</span><span class="s">&#34;anonymous&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c">&lt;!-- To automatically render math in text elements, include the auto-render extension: --&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">script</span> <span class="na">defer</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/contrib/auto-render.min.js&#34;</span> <span class="na">integrity</span><span class="o">=</span><span class="s">&#34;sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk&#34;</span> <span class="na">crossorigin</span><span class="o">=</span><span class="s">&#34;anonymous&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="na">onload</span><span class="o">=</span><span class="s">&#34;
+</span></span></span><span class="line"><span class="cl"><span class="s">    window.addEventListener(&#39;DOMContentLoaded&#39;, function() {
+</span></span></span><span class="line"><span class="cl"><span class="s">        renderMathInElement(document.body, {
+</span></span></span><span class="line"><span class="cl"><span class="s">            delimiters: [
+</span></span></span><span class="line"><span class="cl"><span class="s">                {left: &#39;$$&#39;, right: &#39;$$&#39;, display: true},
+</span></span></span><span class="line"><span class="cl"><span class="s">                {left: &#39;$&#39;, right: &#39;$&#39;, display: false},
+</span></span></span><span class="line"><span class="cl"><span class="s">                {left: &#39;\\$$&#39;, right: &#39;\\\\$$&#39;, display: false},
+</span></span></span><span class="line"><span class="cl"><span class="s">                {left: &#39;\\$$&#39;, right: &#39;\\\\$$&#39;, display: true}
+</span></span></span><span class="line"><span class="cl"><span class="s">            ]
+</span></span></span><span class="line"><span class="cl"><span class="s">        });
+</span></span></span><span class="line"><span class="cl"><span class="s">    });
+</span></span></span><span class="line"><span class="cl"><span class="s">&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Then again create a <code>extend_head.html</code> file in the <code>&lt;your_hugo_site&gt;/layouts/partials/</code> folder and add the following content:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl">{{ if or .Params.math .Site.Params.math }}
+</span></span><span class="line"><span class="cl">{{ partial &#34;math.html&#34; . }}
+</span></span><span class="line"><span class="cl">{{ end }}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>At last, edit <code>theme.toml</code> or <code>config.toml</code> in the <code>themes/&lt;your_theme&gt;</code> folder and add the following content:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">params</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">math</span> <span class="p">=</span> <span class="kc">true</span> <span class="c"># Add LaTeX support</span>
 </span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="push-to-github">Push to Github

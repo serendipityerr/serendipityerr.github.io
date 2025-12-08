@@ -14,21 +14,17 @@
         <guid>http://localhost:1313/p/study-notes-on-stochastic-differential-equations/</guid>
         <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction
 &lt;/h2&gt;&lt;p&gt;This blog would introduce some mathemetical tricks on Stochastic Differential Equations (SDEs).&lt;/p&gt;
-&lt;h3 id=&#34;lamperti-transform&#34;&gt;Lamperti Transform
-&lt;/h3&gt;&lt;p&gt;Consider the following standard SDE:&lt;/p&gt;
-$$
-\mathrm{d} \boldsymbol{x}_t = f(\boldsymbol{x}_t, t) \mathrm{d} t + L(\boldsymbol{x}_t, t) \mathrm{d} \boldsymbol{w}_t
-$$&lt;p&gt;&lt;strong&gt;The Lamperti transform&lt;/strong&gt; is to make the change-of-variable $\boldsymbol{y}_t = h(\boldsymbol{x}_t, t)$ in the SDE s.t. the SDE transforms into&lt;/p&gt;
-$$
-\mathrm{d} \boldsymbol{y}_t = g(\boldsymbol{y}_t, t) \mathrm{d} t + \mathrm{d} \boldsymbol{w}_t
-$$&lt;p&gt;That is, the multiplicative noise is transformed into additive noise. Numerically solving an additive-noise SDE is usually easier than solving a general SDE of the form.&lt;/p&gt;
-&lt;p&gt;To illustrate the idea of the Lamperti transform, let us consider a standard scalar SDE:&lt;/p&gt;
+&lt;h2 id=&#34;lamperti-transform&#34;&gt;Lamperti Transform
+&lt;/h2&gt;&lt;p&gt;Consider the following standard SDE:&lt;/p&gt;
 $$
 \mathrm{d} x_t = f(x_t, t) \mathrm{d} t + L(x_t, t) \mathrm{d} w_t
-$$&lt;p&gt;We can define a transform (change-of-variable) as follows:&lt;/p&gt;
+$$&lt;p&gt;&lt;strong&gt;The Lamperti transform&lt;/strong&gt; is to make the change-of-variable $y_t = h(x_t, t)$ in the SDE s.t. the SDE transforms into&lt;/p&gt;
 $$
-y_t = h(x_t, t) = \int_{\xi}^{x_t} \frac{1}{L(u, t)} \mathrm{d} u,
-$$&lt;p&gt;where $\xi$ is an arbitrary point. Applying the Itô formula on $h(x_t, t)$ gives&lt;/p&gt;
+\mathrm{d} y_t = g(y_t, t) \mathrm{d} t + \mathrm{d} w_t
+$$&lt;p&gt;That is, the multiplicative noise is transformed into additive noise. Numerically solving an additive-noise SDE is usually easier than solving a general SDE of the form. To illustrate the idea of the Lamperti transform, we can define a transform (change-of-variable) as follows:&lt;/p&gt;
+$$
+y_t = h(x_t, t) = \int_{\xi}^{x_t} \frac{1}{L(u, t)} \mathrm{d} u
+$$&lt;p&gt;where $\xi$ is an arbitrary point. Applying the Itô&amp;rsquo;s formula on $h(x_t, t)$ gives&lt;/p&gt;
 $$
 \begin{aligned}
 \mathrm{d} y_t &amp;= \frac{\partial h(x_t, t)}{\partial t} \mathrm{d} t + \frac{\partial h(x_t, t)}{\partial x_t} \mathrm{d} x_t + \frac{1}{2} \frac{\partial^2 h(x_t, t)}{\partial x_t^2} (\mathrm{d} x_t)^2 \\
@@ -41,7 +37,7 @@ $$
 \mathrm{d} y_t = g(y_t, t) \mathrm{d} t + \mathrm{d} w_t \\
 g(y_t, t) = \left( \frac{\partial}{\partial t} \int_{\xi}^{x_t} \frac{1}{L(u, t)} \mathrm{d} u + \frac{f(x_t, t)}{L(x_t, t)} - \frac{1}{2} \frac{\partial L(x_t, t)}{\partial x_t} \right) \Bigg|_{x_t = h^{-1} (y_t, t)}
 \end{gathered}
-$$&lt;p&gt;The transformation generalizes to a multivariate setting if $L(\boldsymbol{x}&lt;em&gt;t, t)$ is diagonal such that each $L&lt;/em&gt;{ii}(\boldsymbol{x}_t, t)$  only depends on the component $x_i$. Then we can apply the Lamperti transform to each component separately. More generally the transformation does not have a simple formula, but instead the transformation can only be defined as a solution to a system of partial differential equations (PDEs).&lt;/p&gt;
+$$&lt;p&gt;More generally the transformation does not have a simple formula, but instead the transformation can only be defined as a solution to a system of partial differential equations (PDEs).&lt;/p&gt;
 </description>
         </item>
         <item>
