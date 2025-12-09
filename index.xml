@@ -37,7 +37,7 @@ $$
 \mathrm{d} y_t = g(y_t, t) \mathrm{d} t + \mathrm{d} w_t \\
 g(y_t, t) = \left( \frac{\partial}{\partial t} \int_{\xi}^{x_t} \frac{1}{L(u, t)} \mathrm{d} u + \frac{f(x_t, t)}{L(x_t, t)} - \frac{1}{2} \frac{\partial L(x_t, t)}{\partial x_t} \right) \Bigg|_{x_t = h^{-1} (y_t, t)}
 \end{gathered}
-$$&lt;p&gt;More generally the transformation does not have a simple formula, but instead the transformation can only be defined as a solution to a system of partial differential equations (PDEs).&lt;/p&gt;
+$$&lt;p&gt;More generally the transformation does not have a simple formula, but instead the transformation can only be defined as a solution to a system of partial differential equations (PDEs). To be continued&amp;hellip;&lt;/p&gt;
 </description>
         </item>
         <item>
