@@ -2,32 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Categories on Serendipity&#39;s Blog</title>
-        <link>http://localhost:1313/categories/</link>
+        <link>https://serendipityerr.github.io/categories/</link>
         <description>Recent content in Categories on Serendipity&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Mon, 08 Dec 2025 22:49:21 +0800</lastBuildDate><atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 08 Dec 2025 22:49:21 +0800</lastBuildDate><atom:link href="https://serendipityerr.github.io/categories/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Study Notes</title>
-        <link>http://localhost:1313/categories/study-notes/</link>
+        <link>https://serendipityerr.github.io/categories/study-notes/</link>
         <pubDate>Mon, 08 Dec 2025 22:49:21 +0800</pubDate>
         
-        <guid>http://localhost:1313/categories/study-notes/</guid>
+        <guid>https://serendipityerr.github.io/categories/study-notes/</guid>
         <description></description>
         </item>
         <item>
         <title>Technical Tutorials</title>
-        <link>http://localhost:1313/categories/technical-tutorials/</link>
+        <link>https://serendipityerr.github.io/categories/technical-tutorials/</link>
         <pubDate>Mon, 10 Nov 2025 22:50:18 +0800</pubDate>
         
-        <guid>http://localhost:1313/categories/technical-tutorials/</guid>
+        <guid>https://serendipityerr.github.io/categories/technical-tutorials/</guid>
         <description></description>
         </item>
         <item>
         <title>Coding Knowledge</title>
-        <link>http://localhost:1313/categories/coding-knowledge/</link>
+        <link>https://serendipityerr.github.io/categories/coding-knowledge/</link>
         <pubDate>Tue, 25 Feb 2025 11:44:28 +0800</pubDate>
         
-        <guid>http://localhost:1313/categories/coding-knowledge/</guid>
+        <guid>https://serendipityerr.github.io/categories/coding-knowledge/</guid>
         <description></description>
         </item>
         
