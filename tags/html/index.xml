@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Html on Serendipity&#39;s Blog</title>
-        <link>https://serendipityerr.github.io/tags/html/</link>
+        <link>http://localhost:1313/tags/html/</link>
         <description>Recent content in Html on Serendipity&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Fri, 21 Feb 2025 21:58:39 +0800</lastBuildDate><atom:link href="https://serendipityerr.github.io/tags/html/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Fri, 21 Feb 2025 21:58:39 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/html/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Replace Google CDN</title>
-        <link>https://serendipityerr.github.io/p/replace-google-cdn/</link>
+        <link>http://localhost:1313/p/replace-google-cdn/</link>
         <pubDate>Fri, 21 Feb 2025 21:58:39 +0800</pubDate>
         
-        <guid>https://serendipityerr.github.io/p/replace-google-cdn/</guid>
+        <guid>http://localhost:1313/p/replace-google-cdn/</guid>
         <description>&lt;h2 id=&#34;缘起&#34;&gt;缘起
 &lt;/h2&gt;&lt;p&gt;很多网站，尤其是国外网站，为了加快网站的速度，都使用了 Google 的 CDN。但是在天朝，由于某些原因，导致全球最快的 CDN 变成了全球最慢的。&lt;/p&gt;
 &lt;h2 id=&#34;替换&#34;&gt;替换
@@ -123,11 +123,11 @@
         </item>
         <item>
         <title>Notes on HTML</title>
-        <link>https://serendipityerr.github.io/p/notes-on-html/</link>
+        <link>http://localhost:1313/p/notes-on-html/</link>
         <pubDate>Tue, 18 Feb 2025 22:42:40 +0800</pubDate>
         
-        <guid>https://serendipityerr.github.io/p/notes-on-html/</guid>
-        <description>&lt;img src="https://serendipityerr.github.io/post_img/2025-02-18/html-logo.png" alt="Featured image of post Notes on HTML" /&gt;&lt;h2 id=&#34;html入门&#34;&gt;HTML入门
+        <guid>http://localhost:1313/p/notes-on-html/</guid>
+        <description>&lt;img src="http://localhost:1313/post_img/2025-02-18/html-logo.png" alt="Featured image of post Notes on HTML" /&gt;&lt;h2 id=&#34;html入门&#34;&gt;HTML入门
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;HTML(Hyper Text Markup Language)：超文本标记语言，用来描述网页的语言。&lt;/p&gt;
@@ -584,7 +584,7 @@ e.g.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;特殊字符&lt;/p&gt;
-  &lt;img src=&#34;https://serendipityerr.github.io/post_img/2025-02-18/character.png&#34; width=&#34;500px&#34;&gt;
+  &lt;img src=&#34;http://localhost:1313/post_img/2025-02-18/character.png&#34; width=&#34;500px&#34;&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
@@ -670,7 +670,7 @@ e.g.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;跨行合并：&lt;code&gt;rowspan=&amp;quot;合并单元格个数&amp;quot;&lt;/code&gt;。最上侧单元格为目标单元格，在此单元格中写合并代码。&lt;/li&gt;
 &lt;li&gt;跨列合并：&lt;code&gt;colspan=&amp;quot;合并单元格个数&amp;quot;&lt;/code&gt;。最左侧单元格为目标单元格，在此单元格中写合并代码。
-&lt;img src=&#34;https://serendipityerr.github.io/post_img/2025-02-18/row_col.png&#34; width=&#34;600px&#34;&gt;&lt;/li&gt;
+&lt;img src=&#34;http://localhost:1313/post_img/2025-02-18/row_col.png&#34; width=&#34;600px&#34;&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;ul&gt;
 &lt;li&gt;操作步骤：&lt;/li&gt;

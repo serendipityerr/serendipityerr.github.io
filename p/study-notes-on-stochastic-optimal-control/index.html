@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr">
-    <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="">
-<title>Notes on Optimal Transport</title>
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="Control theory is a mathematical description of how to act optimally to gain future rewards.\nDeterministic Discrete Time Control\rWe start by discussing the most simple control case, which is the finite horizon discrete time deterministic control problem.\nConsider the control of a discrete time dynamical system:\n$$ x_{t+1} = x_{t} + f(t, x_t, u_t), \\quad t=0,1,\\cdots,T-1 $$where $x_t$ is an $n$-dimensional vector describing the state of the system and $u_t$ is an $m$-dimensional vector that specifies the control or action at time $t$. If we specify $x_0$ at $t = 0$ and we specify a sequence of controls $u_{0:T−1} = u_0, u_1, \\cdots , u_{T−1}$, we can compute future states of the system $x_{1:T}$ recursively.\n">
+<title>Study Notes on Stochastic Optimal Control</title>
 
-<link rel='canonical' href='https://serendipityerr.github.io/p/notes-on-optimal-transport/'>
+<link rel='canonical' href='http://localhost:1313/p/study-notes-on-stochastic-optimal-control/'>
 
-<link rel="stylesheet" href="/scss/style.min.b9c8156d464c343bdacaf14a871581fb94cbbdb9dd5cbce4ba017361187cc930.css"><meta property='og:title' content="Notes on Optimal Transport">
-<meta property='og:description' content="">
-<meta property='og:url' content='https://serendipityerr.github.io/p/notes-on-optimal-transport/'>
+<link rel="stylesheet" href="/scss/style.min.b9c8156d464c343bdacaf14a871581fb94cbbdb9dd5cbce4ba017361187cc930.css"><meta property='og:title' content="Study Notes on Stochastic Optimal Control">
+<meta property='og:description' content="Control theory is a mathematical description of how to act optimally to gain future rewards.\nDeterministic Discrete Time Control\rWe start by discussing the most simple control case, which is the finite horizon discrete time deterministic control problem.\nConsider the control of a discrete time dynamical system:\n$$ x_{t+1} = x_{t} + f(t, x_t, u_t), \\quad t=0,1,\\cdots,T-1 $$where $x_t$ is an $n$-dimensional vector describing the state of the system and $u_t$ is an $m$-dimensional vector that specifies the control or action at time $t$. If we specify $x_0$ at $t = 0$ and we specify a sequence of controls $u_{0:T−1} = u_0, u_1, \\cdots , u_{T−1}$, we can compute future states of the system $x_{1:T}$ recursively.\n">
+<meta property='og:url' content='http://localhost:1313/p/study-notes-on-stochastic-optimal-control/'>
 <meta property='og:site_name' content='Serendipity&#39;s Blog'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2025-03-23T19:12:10&#43;08:00'/><meta property='article:modified_time' content='2025-03-23T19:12:10&#43;08:00'/>
-<meta name="twitter:title" content="Notes on Optimal Transport">
-<meta name="twitter:description" content="">
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Math' /><meta property='article:published_time' content='2025-12-06T00:19:33&#43;08:00'/><meta property='article:modified_time' content='2025-12-06T00:19:33&#43;08:00'/>
+<meta name="twitter:title" content="Study Notes on Stochastic Optimal Control">
+<meta name="twitter:description" content="Control theory is a mathematical description of how to act optimally to gain future rewards.\nDeterministic Discrete Time Control\rWe start by discussing the most simple control case, which is the finite horizon discrete time deterministic control problem.\nConsider the control of a discrete time dynamical system:\n$$ x_{t+1} = x_{t} + f(t, x_t, u_t), \\quad t=0,1,\\cdots,T-1 $$where $x_t$ is an $n$-dimensional vector describing the state of the system and $u_t$ is an $m$-dimensional vector that specifies the control or action at time $t$. If we specify $x_0$ at $t = 0$ and we specify a sequence of controls $u_{0:T−1} = u_0, u_1, \\cdots , u_{T−1}$, we can compute future states of the system $x_{1:T}$ recursively.\n">
     <link rel="shortcut icon" href="/favicon.ico" />
 
     </head>
@@ -234,7 +234,45 @@
     </ol>
 </aside>
 
-    
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">Table of contents</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#deterministic-discrete-time-control">Deterministic Discrete Time Control</a></li>
+    <li><a href="#deterministic-continuous-time-control">Deterministic Continuous Time Control</a>
+      <ol>
+        <li><a href="#hamilton-jacobi-bellman-equation">Hamilton-Jacobi-Bellman Equation</a></li>
+        <li><a href="#pontryagin-minimum-principle">Pontryagin Minimum Principle</a></li>
+      </ol>
+    </li>
+    <li><a href="#stochastic-optimal-control">Stochastic Optimal Control</a></li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
 
             <main class="main full-width">
     <article class="main-article">
@@ -253,7 +291,7 @@
 
     <div class="article-title-wrapper">
         <h2 class="article-title">
-            <a href="/p/notes-on-optimal-transport/">Notes on Optimal Transport</a>
+            <a href="/p/study-notes-on-stochastic-optimal-control/">Study Notes on Stochastic Optimal Control</a>
         </h2>
     
         
@@ -275,7 +313,7 @@
   <path d="M3 11h16" />
   <path d="M18 16.496v1.504l1 1" />
 </svg>
-                <time class="article-time--published">Mar 23, 2025</time>
+                <time class="article-time--published">Dec 06, 2025</time>
             </div>
         
 
@@ -290,7 +328,7 @@
 
 
                 <time class="article-time--reading">
-                    0 minute read
+                    8 minute read
                 </time>
             </div>
         
@@ -305,13 +343,157 @@
     <section class="article-content">
     
     
-    <iframe src="/post_img/2025-03-23/notes_on_optimal_transport.pdf" width="100%" height="3300px"></iframe>
+    <p>Control theory is a mathematical description of how to act optimally to gain future rewards.</p>
+<h2 id="deterministic-discrete-time-control">Deterministic Discrete Time Control
+</h2><p>We start by discussing the most simple control case, which is the finite horizon discrete time deterministic control problem.</p>
+<p>Consider the control of a discrete time dynamical system:</p>
+$$
+x_{t+1} = x_{t} + f(t, x_t, u_t), \quad t=0,1,\cdots,T-1
+$$<p>where $x_t$ is an $n$-dimensional vector describing the <strong>state</strong> of the system and $u_t$ is an $m$-dimensional vector that specifies the <strong>control</strong> or <strong>action</strong> at time $t$. If we specify $x_0$ at $t = 0$ and we specify a sequence of controls $u_{0:T−1} = u_0, u_1, \cdots , u_{T−1}$, we can compute future states of the system $x_{1:T}$ recursively.</p>
+<p>Define the cost function $\mathcal{C}$ as:</p>
+$$
+\mathcal{C}(x_0, u_{0:T-1}) = \sum_{t=0}^{T-1} R (x_t, u_t, t) + \phi(x_T) 
+$$<p>where $R (t, x_t, u_t)$ is the cost that is associated with taking action $u_t$ at time $t$ in state $x_t$ (trajectory cost), and $\phi(x_T)$ is the cost associated with ending up in state $x_T$ at time $T$ (terminal cost). The problem of optimal control is to find the sequence $u_{0:T−1}$ that minimizes $\mathcal{C}(x_0, u_{0:T−1})$:</p>
+$$
+\begin{gathered}
+\min_{u_{0:T−1}} \mathcal{C}(x_0, u_{0:T−1}) \\
+x_{t+1} = x_{t} + f(x_t, u_t, t), \ t=0,1,\cdots,T-1, \ x_{0} = x_{0}
+\end{gathered}
+$$<p>Now, we introduce the optimal <strong>cost to go</strong> function $J$:</p>
+$$
+J(x_t, t) = \min_{u_{t:T−1}} \left( \sum_{s=t}^{T-1} R (x_s, u_s, s) + \phi(x_T) \right)
+$$<p>which solves the optimal control problem from an intermediate time $t$ until the fixed end time $T$ , starting at an arbitrary location $x_t$. We have</p>
+$$
+\begin{gathered}
+J(x_0, 0) = \min_{u_{0:T−1}} \mathcal{C}(x_0, u_{0:T−1})\\
+J(x_T, T) = \phi(x_T) 
+\end{gathered}
+$$<p>Consider recursively computing $J(x_t, t)$ as</p>
+$$
+\begin{aligned}
+J(x_t, t) &= \min_{u_{t:T−1}} \left( \sum_{s=t}^{T-1} R (x_s, u_s, s) + \phi(x_T) \right) \\
+&= \min_{u_{t}} \left[ R (x_t, u_t, t) + \min_{u_{t+1:T−1}} \left( \sum_{s=t+1}^{T-1} R (x_s, u_s, s) + \phi(x_T) \right) \right] \\
+&= \min_{u_{t}} \left[ R (x_t, u_t, t) + J(x_{t+1}, t+1) \right] \\
+&= \min_{u_{t}} \left[ R (x_t, u_t, t) + J(x_{t} + f(x_t, u_t, t), t+1) \right] 
+\end{aligned}
+$$<p><strong>Note:</strong> the minimization over the whole path $u_{t:T−1}$ has reduced to a sequence of minimizations over $u_t$. This simplification is due to the <strong>Markovian</strong> nature of the problem: the future depends on the past and vise versa only through the present. The algorithm to compute the optimal control $u_{0:T−1}^{\ast}$, the optimal trajectory $x_{1:T}^{\ast}$ and the optimal cost is given by</p>
+<ol>
+<li>Initialize $J(x_T, T) = \phi(x_T)$</li>
+<li>Backwards: For $t=T-1, \cdots, 1, 0$, and For all $x_t$, compute</li>
+</ol>
+$$
+\begin{gathered}
+u^*_t(x_t) = \arg\min_u \{ R(x_t, u, t) + J(t+1, x_t + f(x_t, u, t)) \} \\
+J(t, x_t) = R(x_t, u^*_t(x_t), t) + J(t+1, x_t + f(x_t, u^*_t(x_t), t)
+\end{gathered}
+$$<ol start="3">
+<li>Forwards: For $t=T-1, \cdots, 1, 0$ compute</li>
+</ol>
+$$
+x^*_{t+1} = x^*_{t} + f(x^*_{t}, u^*_{t}, t), \quad x^*_0 = x_0
+$$<p>This is just like <strong>Dynamic Programming (DP)</strong> algorithm. It is linear in the horizon time $T$ and linear in the size of the state and action spaces.</p>
+<h2 id="deterministic-continuous-time-control">Deterministic Continuous Time Control
+</h2><p>Now, consider the optimal control problem in continuous time:</p>
+$$
+x_{t+\mathrm{d}t} = x_{t} + f(x_t, u_t, t)\mathrm{d}t, \quad \mathrm{d}x_t = f(x_t, u_t, t)\mathrm{d}t
+$$<p>We have two methods for solving the optimal control problem: 1) Pontryagin Minimum Principle (PMP) (a pair of ordinary differential equations); 2) Hamilton-Jacobi-Bellman (HJB) equation (a partial differential equation).</p>
+<h3 id="hamilton-jacobi-bellman-equation">Hamilton-Jacobi-Bellman Equation
+</h3><p>The initial state is fixed: $x_0 = x_0$ and the final state is free. The problem is to find a control signal $u_t, 0 &lt; t &lt; T$ , which we denote as $u(0 \rightarrow T)$, such that minimizing</p>
+$$
+C(x_0, u(0 \rightarrow T)) = \int_0^T R(x_t, u_t, t) \mathrm{d} t + \phi(x_T)
+$$<p>Then, the <em>cost to go</em> function can be extended into</p>
+$$
+J(x_t, t) = \min_{u_{t \rightarrow T}} \left( \int_{t}^{T} R (x_z, u_z, z) \mathrm{d} z + \phi(x_T) \right) 
+$$<p>Again consider recursively computing $J(x_t, t)$ as</p>
+$$
+\begin{aligned}
+J(x_t, t) &= \min_{u_{t}} \left( R (x_t, u_t, t) \mathrm{d} t + \min_{u_{t+\mathrm{d}t \rightarrow T}} \left( \int_{t+\mathrm{d} t}^{T} R (x_z, u_z, z) \mathrm{d} z + \phi(x_T)\right) \right) \\
+&= \min_{u_{t}} \left( R (x_t, u_t, t) \mathrm{d} t + J(x_{t+\mathrm{d}t}, t+\mathrm{d}t) \right)  \\
+&\approx \min_{u_{t}} \left( R (x_t, u_t, t) \mathrm{d} t + J(x_t, t) + \partial_t J(x_{t}, t) \mathrm{d} t + \partial_{x_t}J(x_{t}, t)f(x_t, u_t, t) \mathrm{d} t \right) 
+\end{aligned}
+$$<p>which implies</p>
+$$
+-\partial_t J(x_{t}, t) = \min_{u_{t}} \left( R (x_t, u_t, t) + f(x_t, u_t, t) \partial_{x_t}J(x_{t}, t) \right)
+$$<p>which is a partial differential equation, known as the <strong>Hamilton-Jacobi-Bellman (HJB)</strong> equation that describes the evolution of $J$ as a function of $x$ and $t$ and must be solved with boundary condition $J(x_T, T) = \phi(x)$. $\partial_t$ and $\partial_x$ denote partial derivatives with respect to $t$ and $x$, respectively.</p>
+<p>The optimal control $u_t(x_t)$ at the current $x_t$, $t$ is given by</p>
+$$
+u_t(x_t) = \arg \min_{u} \left( R(x_t, u, t) + \partial_{x_t}J(x_{t}, t) f(x_t, u, t) \right)
+$$<p><strong>Note:</strong> in order to compute the optimal control at the initial state $x_0$ at $t = 0$, one must compute $J(x_t, t)$ for all values of $x_t$ and $t$.</p>
+<h3 id="pontryagin-minimum-principle">Pontryagin Minimum Principle
+</h3><p>An alternative approach is a variational method that directly finds the optimal trajectory and optimal control and bypasses the expensive computation of the cost-to-go. We can write the optimal control problem as a constrained optimization problem:</p>
+$$
+\begin{gathered}
+\min_{u_t} \int_0^T R(x_t, u_t, t) \mathrm{d} t + \phi(x_T) \\
+\text{s.t.} \ \mathrm{d} x_t = f(x_t, u_t, t) \mathrm{d} t, \ x_0 = x_0
+\end{gathered}
+$$<p>We can solve the constraint optimization problem by introducing the Lagrange multiplier function $\lambda_t$ that ensures the ODE constraint for all $t$:</p>
+$$
+\begin{aligned}
+\mathcal{C} &= \int_0^T \left[R(x_t, u_t, t) - \lambda_t \left(f(x_t, u_t, t) - \frac{\mathrm{d} x_t}{\mathrm{d} t} \right) \right] \mathrm{d} t + \phi(x_T) \\
+&= \int_0^T \left[-H(x_t, u_t, \lambda_t, t) + \lambda_t \frac{\mathrm{d} x_t}{\mathrm{d} t} \right] \mathrm{d} t + \phi(x_T) \\
+\end{aligned}
+$$<p>where we defined $H(x_t, u_t, \lambda_t, t) = -R(x_t, u_t, t) + \lambda_t f(x_t, u_t, t)$. The solution is found by extremizing $\mathcal{C}$. We can find the extremal solution if we compute the change $\delta \mathcal{C}$ in $\mathcal{C}$ that results from independent variation of $x_t$, $u_t$, and $\lambda_t$ at all times $t$ between $0$ and $T$. We denote these variations by $\delta x_t$, $\delta u_t$, and $\delta \lambda_t$, respectively. We have:</p>
+$$
+\delta \mathcal{C} = \int_0^T \left[-\partial_{x_t} H \delta x_t - \partial_{u_t} H \delta u_t + \left(-\partial_{\lambda_t} H + \frac{\mathrm{d} x_t}{\mathrm{d} t}\right) \delta \lambda_t + \lambda_t \delta \frac{\mathrm{d} x_t}{\mathrm{d} t} \right] \mathrm{d} t + \partial_{x_T} \phi(x_T) \delta \phi(x_T) 
+$$<p>Take partial integration:</p>
+$$
+\int_0^T \lambda_t \delta \frac{\mathrm{d} x_t}{\mathrm{d} t} \mathrm{d} t = \int_0^T \lambda_t \frac{\mathrm{d}\delta x_t}{\mathrm{d} t} \mathrm{d} t = -\int_0^T \delta x_t \frac{\mathrm{d} \lambda_t}{\mathrm{d} t} \mathrm{d} t + \lambda_T \delta x_T - \lambda_0 \delta x_0
+$$<p>and $\delta x_0 = 0$ as $x_0$ is given.</p>
+<p>The stationary solution $\delta \mathcal{C} = 0$ is obtained when the coefficients of the independent variations $\delta x_t$, $\delta u_t$, $\delta \lambda_t$, and $\delta x_T$ are zero. Thus,</p>
+$$
+\begin{aligned}
+0 &= \partial_{u_t} H(x_t, u_t, \lambda_t, t) \\
+\frac{\mathrm{d} \lambda_t}{\mathrm{d} t} &= - \partial_{x_t} H(x_t, u_t, \lambda_t, t) \\
+\frac{\mathrm{d} x_t}{\mathrm{d} t} &= \partial_{\lambda_t} H(x_t, u_t, \lambda_t, t) \\
+\lambda_T &= - \partial_{x_T} \phi(x_T)
+\end{aligned}
+$$<p>The first ODE implies the optimal controller $u_t^*(x_t, \lambda_t, t)$. The remaining ODEs are:</p>
+$$
+\begin{aligned}
+\frac{\mathrm{d} \lambda_t}{\mathrm{d} t} &= - \partial_{x_t} H(x_t, u_t^*, \lambda_t, t) \\
+\frac{\mathrm{d} x_t}{\mathrm{d} t} &= \partial_{\lambda_t} H(x_t, u_t^*, \lambda_t, t)
+\end{aligned}
+$$<p>with the boundary conditions $x_0 = x_0$ and $\lambda_T = - \partial_{x_T} \phi(x_T)$. There remains two coupled ODEs that describe the dynamics of $x_t$ and $\lambda_t$ over time with boundary conditions.</p>
+<h2 id="stochastic-optimal-control">Stochastic Optimal Control
+</h2><p>In this section, we consider the extension of the continuous control problem to the case that the dynamics is subject to noise and is given by a Stochastic Differential Equation (SDE).</p>
+<p>Consider the following controlled SDE:</p>
+$$
+\mathrm{d}x_t = f(x_t, u_t, t) \mathrm{d} t + g_t \mathrm{d}w_t,
+$$<p>where $f: \mathbb{R}^d \times \mathbb{R}^d \times [0, T] \rightarrow \mathbb{R}^d$ is the vector-valued drift function, $g:[0, T] \rightarrow \mathbb{R}$ signifies the scalar-valued diffusion coefficient and $w_t \in \mathbb{R}^d$ is the standard Wiener process, also known as Brownian motion.</p>
+<p>Since the dynamics is stochastic, it is no longer the case that when $x$ at time $t$ and the full control path $u(t \rightarrow T)$ are given, we know the future path $x(t \rightarrow T)$. Therefore, we could only hope to be able to minimize its expectation value over all possible future realizations of the Wiener process:</p>
+$$
+\mathcal{C}(x_0, u(0 \rightarrow T)) = \mathbb{E}_{x_0} \left[ \int_0^T R(x_t, u_t, t) \mathrm{d} t + \phi(x_T) \right]
+$$<p>where the subscript $x_0$ on the expectation value is to remind us that the expectation is over all stochastic trajectories that start in $x_0$. The solution of the control problem proceeds very similar as in the deterministic case: the <em>cost to go</em> function can be extended into</p>
+$$
+J(x_t, t) = \min_{u_{t \rightarrow T}} \mathbb{E}_{x_t} \left[ \int_{t}^{T} R (x_z, u_z, z) \mathrm{d} z + \phi(x_T) \right] 
+$$<p>Again consider recursively computing $J(x_t, t)$ as</p>
+$$
+\begin{aligned}
+J(x_t, t) &= \min_{u_{t}} \mathbb{E}_{x_t} \left[ R (x_t, u_t, t) \mathrm{d} t + \min_{u_{t+\mathrm{d}t \rightarrow T}} \left( \int_{t+\mathrm{d} t}^{T} R (x_z, u_z, z) \mathrm{d} z  + \phi(x_T)\right) \right] \\
+&= \min_{u_{t}} \left( R (x_t, u_t, t) \mathrm{d} t + \mathbb{E}_{x_t} \left[ J(x_{t+\mathrm{d}t}, t+\mathrm{d}t) \right] \right)
+\end{aligned}
+$$<p>Again make a Taylor expansion:</p>
+$$
+\begin{aligned}
+\mathbb{E}_{x_t} \left[ J(x_{t+\mathrm{d}t}, t+\mathrm{d}t) \right] &= \int \mathcal{N}(x_{t+\mathrm{d}t} \mid x_t) J(x_{t+\mathrm{d}t}, t+\mathrm{d}t) \mathrm{d} x_{t+\mathrm{d}t} \\
+&\approx J(x_{t}, t) + \partial_t J(x_{t}, t) \mathrm{d}t + \partial_{x_t} J(x_{t}, t) \langle \mathrm{d}x_t \rangle + \frac{1}{2} \partial^2_{x_t} J(x_{t}, t) \langle \mathrm{d}x_t^2 \rangle \\
+\end{aligned}
+$$<p>where we have $\langle \mathrm{d}x_t \rangle = f(x_t, u_t, t) \mathrm{d} t$ and $\langle \mathrm{d}x_t^2 \rangle = g_t \mathrm{d} t$. Therefore,</p>
+$$
+-\partial_t J(x_t, t) = \min_{u_{t}} \left( R (x_t, u_t, t) + f(x_t, u_t, t) \partial_{x_t}J(x_{t}, t) + \frac{g_t^2}{2} \partial^2_{x_t} J(x_{t}, t) \right)
+$$<p>We can easily find that when $g_t \rightarrow 0$, the equation above would degrade to the deterministic one as we discussed in the <a class="link" href="#deterministic-continuous-time-control" >Section</a> above (Deterministic Continuous Time Control).</p>
 
 </section>
 
 
     <footer class="article-footer">
     
+    <section class="article-tags">
+        
+            <a href="/tags/math/">Math</a>
+        
+    </section>
+
 
     
     <section class="article-copyright">
@@ -381,12 +563,12 @@
             
                 
 <article class="">
-    <a href="/p/stochastic-optimal-control/">
+    <a href="/p/study-notes-on-diffusion/">
         
         
 
         <div class="article-details">
-            <h2 class="article-title">Stochastic Optimal Control</h2>
+            <h2 class="article-title">Study Notes on Diffusion</h2>
         </div>
     </a>
 </article>
@@ -394,12 +576,12 @@
             
                 
 <article class="">
-    <a href="/p/study-notes-on-diffusion/">
+    <a href="/p/study-notes-on-optimal-transport/">
         
         
 
         <div class="article-details">
-            <h2 class="article-title">Study Notes on Diffusion</h2>
+            <h2 class="article-title">Study Notes on Optimal Transport</h2>
         </div>
     </a>
 </article>
@@ -591,7 +773,7 @@
                 src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
                 
                 >
-            </script><script type="text/javascript" src="/ts/main.1e9a3bafd846ced4c345d084b355fb8c7bae75701c338f8a1f8a82c780137826.js" defer></script>
+            </script><script type="text/javascript" src="/ts/main.cb61ca303c9051148a468e900a2e2c68da573d5620ed2eb7c9156795d8f4efe8.js" defer></script>
 <script>
     (function () {
         const customFont = document.createElement('link');

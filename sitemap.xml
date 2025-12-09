@@ -2,135 +2,135 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://serendipityerr.github.io/categories/</loc>
+    <loc>http://localhost:1313/categories/</loc>
     <lastmod>2025-12-08T22:49:21+08:00</lastmod>
   </url><url>
-    <loc>https://serendipityerr.github.io/tags/machine-learning/</loc>
+    <loc>http://localhost:1313/tags/machine-learning/</loc>
     <lastmod>2025-12-08T22:49:21+08:00</lastmod>
   </url><url>
-    <loc>https://serendipityerr.github.io/post/</loc>
+    <loc>http://localhost:1313/post/</loc>
     <lastmod>2025-12-08T22:49:21+08:00</lastmod>
   </url><url>
-    <loc>https://serendipityerr.github.io/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2025-12-08T22:49:21+08:00</lastmod>
   </url><url>
-    <loc>https://serendipityerr.github.io/categories/study-notes/</loc>
+    <loc>http://localhost:1313/categories/study-notes/</loc>
     <lastmod>2025-12-08T22:49:21+08:00</lastmod>
   </url><url>
-    <loc>https://serendipityerr.github.io/p/study-notes-on-stochastic-differential-equations/</loc>
+    <loc>http://localhost:1313/p/study-notes-on-stochastic-differential-equations/</loc>
     <lastmod>2025-12-08T22:49:21+08:00</lastmod>
   </url><url>
-    <loc>https://serendipityerr.github.io/tags/</loc>
+    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2025-12-08T22:49:21+08:00</lastmod>
   </url><url>
-    <loc>https://serendipityerr.github.io/tags/math/</loc>
+    <loc>http://localhost:1313/tags/math/</loc>
     <lastmod>2025-12-06T00:19:33+08:00</lastmod>
   </url><url>
-    <loc>https://serendipityerr.github.io/p/stochastic-optimal-control/</loc>
+    <loc>http://localhost:1313/p/study-notes-on-stochastic-optimal-control/</loc>
     <lastmod>2025-12-06T00:19:33+08:00</lastmod>
   </url><url>
-    <loc>https://serendipityerr.github.io/p/bibtex-.bib-and-.bbl/</loc>
+    <loc>http://localhost:1313/p/bibtex-.bib-and-.bbl/</loc>
     <lastmod>2025-11-10T22:50:18+08:00</lastmod>
   </url><url>
-    <loc>https://serendipityerr.github.io/tags/latex/</loc>
+    <loc>http://localhost:1313/tags/latex/</loc>
     <lastmod>2025-11-10T22:50:18+08:00</lastmod>
   </url><url>
-    <loc>https://serendipityerr.github.io/categories/technical-tutorials/</loc>
+    <loc>http://localhost:1313/categories/technical-tutorials/</loc>
     <lastmod>2025-11-10T22:50:18+08:00</lastmod>
   </url><url>
-    <loc>https://serendipityerr.github.io/tags/obsidian/</loc>
+    <loc>http://localhost:1313/tags/obsidian/</loc>
     <lastmod>2025-08-27T20:34:29+08:00</lastmod>
   </url><url>
-    <loc>https://serendipityerr.github.io/p/obsidian-plugin-math-booster/</loc>
+    <loc>http://localhost:1313/p/obsidian-plugin-math-booster/</loc>
     <lastmod>2025-08-27T20:34:29+08:00</lastmod>
   </url><url>
-    <loc>https://serendipityerr.github.io/p/study-notes-on-diffusion/</loc>
+    <loc>http://localhost:1313/p/study-notes-on-diffusion/</loc>
     <lastmod>2025-08-16T23:21:40+08:00</lastmod>
   </url><url>
-    <loc>https://serendipityerr.github.io/p/add-a-year-progress-to-your-github-profile-page/</loc>
+    <loc>http://localhost:1313/p/add-a-year-progress-to-your-github-profile-page/</loc>
     <lastmod>2025-08-01T16:47:05+08:00</lastmod>
   </url><url>
-    <loc>https://serendipityerr.github.io/tags/git/</loc>
+    <loc>http://localhost:1313/tags/git/</loc>
     <lastmod>2025-08-01T16:47:05+08:00</lastmod>
   </url><url>
-    <loc>https://serendipityerr.github.io/p/git-and-ssh/</loc>
+    <loc>http://localhost:1313/p/git-and-ssh/</loc>
     <lastmod>2025-05-19T23:10:50+08:00</lastmod>
   </url><url>
-    <loc>https://serendipityerr.github.io/p/notes-on-optimal-transport/</loc>
+    <loc>http://localhost:1313/p/study-notes-on-optimal-transport/</loc>
     <lastmod>2025-03-23T19:12:10+08:00</lastmod>
   </url><url>
-    <loc>https://serendipityerr.github.io/homepage/</loc>
+    <loc>http://localhost:1313/homepage/</loc>
     <lastmod>2025-03-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://serendipityerr.github.io/categories/coding-knowledge/</loc>
+    <loc>http://localhost:1313/categories/coding-knowledge/</loc>
     <lastmod>2025-02-25T11:44:28+08:00</lastmod>
   </url><url>
-    <loc>https://serendipityerr.github.io/p/notes-on-latex-math-symbols/</loc>
+    <loc>http://localhost:1313/p/notes-on-latex-math-symbols/</loc>
     <lastmod>2025-02-25T11:44:28+08:00</lastmod>
   </url><url>
-    <loc>https://serendipityerr.github.io/tags/database/</loc>
+    <loc>http://localhost:1313/tags/database/</loc>
     <lastmod>2025-02-24T19:06:28+08:00</lastmod>
   </url><url>
-    <loc>https://serendipityerr.github.io/p/notes-on-database/</loc>
+    <loc>http://localhost:1313/p/notes-on-database/</loc>
     <lastmod>2025-02-24T19:06:28+08:00</lastmod>
   </url><url>
-    <loc>https://serendipityerr.github.io/tags/html/</loc>
+    <loc>http://localhost:1313/tags/html/</loc>
     <lastmod>2025-02-21T21:58:39+08:00</lastmod>
   </url><url>
-    <loc>https://serendipityerr.github.io/p/replace-google-cdn/</loc>
+    <loc>http://localhost:1313/p/replace-google-cdn/</loc>
     <lastmod>2025-02-21T21:58:39+08:00</lastmod>
   </url><url>
-    <loc>https://serendipityerr.github.io/p/add-a-funny-snake-animation-to-your-github-profile-page/</loc>
+    <loc>http://localhost:1313/p/add-a-funny-snake-animation-to-your-github-profile-page/</loc>
     <lastmod>2025-02-20T11:14:33+08:00</lastmod>
   </url><url>
-    <loc>https://serendipityerr.github.io/p/notes-on-html/</loc>
+    <loc>http://localhost:1313/p/notes-on-html/</loc>
     <lastmod>2025-02-18T22:42:40+08:00</lastmod>
   </url><url>
-    <loc>https://serendipityerr.github.io/tags/hugo/</loc>
+    <loc>http://localhost:1313/tags/hugo/</loc>
     <lastmod>2025-02-17T18:57:48+08:00</lastmod>
   </url><url>
-    <loc>https://serendipityerr.github.io/p/update-hugo-to-hugo-extended/</loc>
+    <loc>http://localhost:1313/p/update-hugo-to-hugo-extended/</loc>
     <lastmod>2025-02-17T18:57:48+08:00</lastmod>
   </url><url>
-    <loc>https://serendipityerr.github.io/tags/markdown/</loc>
+    <loc>http://localhost:1313/tags/markdown/</loc>
     <lastmod>2024-12-09T18:50:29+08:00</lastmod>
   </url><url>
-    <loc>https://serendipityerr.github.io/p/some-skills-on-exporting-latex-in-markdown-as-pdf/</loc>
+    <loc>http://localhost:1313/p/some-skills-on-exporting-latex-in-markdown-as-pdf/</loc>
     <lastmod>2024-12-09T18:50:29+08:00</lastmod>
   </url><url>
-    <loc>https://serendipityerr.github.io/tags/python/</loc>
+    <loc>http://localhost:1313/tags/python/</loc>
     <lastmod>2024-10-18T15:28:15+08:00</lastmod>
   </url><url>
-    <loc>https://serendipityerr.github.io/p/some-skills-on-modifying-pip-mirror-source-and-installing-cuda-in-conda/</loc>
+    <loc>http://localhost:1313/p/some-skills-on-modifying-pip-mirror-source-and-installing-cuda-in-conda/</loc>
     <lastmod>2024-10-18T15:28:15+08:00</lastmod>
   </url><url>
-    <loc>https://serendipityerr.github.io/p/some-skills-on-image-processing/</loc>
+    <loc>http://localhost:1313/p/some-skills-on-image-processing/</loc>
     <lastmod>2024-08-28T14:14:07+08:00</lastmod>
   </url><url>
-    <loc>https://serendipityerr.github.io/p/diffusers/</loc>
+    <loc>http://localhost:1313/p/diffusers/</loc>
     <lastmod>2024-08-11T12:09:12+08:00</lastmod>
   </url><url>
-    <loc>https://serendipityerr.github.io/p/2024.08.02/</loc>
+    <loc>http://localhost:1313/p/2024.08.02/</loc>
     <lastmod>2024-08-02T11:22:51+08:00</lastmod>
   </url><url>
-    <loc>https://serendipityerr.github.io/p/pca-and-autoencoder/</loc>
+    <loc>http://localhost:1313/p/pca-and-autoencoder/</loc>
     <lastmod>2024-07-20T14:13:42+08:00</lastmod>
   </url><url>
-    <loc>https://serendipityerr.github.io/p/2024.07.18/</loc>
+    <loc>http://localhost:1313/p/2024.07.18/</loc>
     <lastmod>2024-07-18T23:45:09+08:00</lastmod>
   </url><url>
-    <loc>https://serendipityerr.github.io/p/starting-from-scratch-creating-and-pushing-your-blog-posts-with-hugo-and-git/</loc>
+    <loc>http://localhost:1313/p/starting-from-scratch-creating-and-pushing-your-blog-posts-with-hugo-and-git/</loc>
     <lastmod>2024-07-16T14:16:38+08:00</lastmod>
   </url><url>
-    <loc>https://serendipityerr.github.io/p/my-first-blog/</loc>
+    <loc>http://localhost:1313/p/my-first-blog/</loc>
     <lastmod>2024-07-16T13:40:30+08:00</lastmod>
   </url><url>
-    <loc>https://serendipityerr.github.io/page/</loc>
+    <loc>http://localhost:1313/page/</loc>
     <lastmod>2024-07-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://serendipityerr.github.io/archives/</loc>
+    <loc>http://localhost:1313/archives/</loc>
     <lastmod>2024-07-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://serendipityerr.github.io/search/</loc>
+    <loc>http://localhost:1313/search/</loc>
   </url>
 </urlset>
