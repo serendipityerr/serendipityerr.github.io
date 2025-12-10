@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Obsidian on Serendipity&#39;s Blog</title>
-        <link>http://localhost:1313/tags/obsidian/</link>
+        <link>https://serendipityerr.github.io/tags/obsidian/</link>
         <description>Recent content in Obsidian on Serendipity&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Wed, 27 Aug 2025 20:34:29 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/obsidian/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 27 Aug 2025 20:34:29 +0800</lastBuildDate><atom:link href="https://serendipityerr.github.io/tags/obsidian/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Obsidian Plugin Math Booster</title>
-        <link>http://localhost:1313/p/obsidian-plugin-math-booster/</link>
+        <link>https://serendipityerr.github.io/p/obsidian-plugin-math-booster/</link>
         <pubDate>Wed, 27 Aug 2025 20:34:29 +0800</pubDate>
         
-        <guid>http://localhost:1313/p/obsidian-plugin-math-booster/</guid>
-        <description>&lt;img src="http://localhost:1313/post_img/2025-08-27/obsidian-logo.png" alt="Featured image of post Obsidian Plugin Math Booster" /&gt;&lt;h2 id=&#34;introduction&#34;&gt;Introduction
+        <guid>https://serendipityerr.github.io/p/obsidian-plugin-math-booster/</guid>
+        <description>&lt;img src="https://serendipityerr.github.io/post_img/2025-08-27/obsidian-logo.png" alt="Featured image of post Obsidian Plugin Math Booster" /&gt;&lt;h2 id=&#34;introduction&#34;&gt;Introduction
 &lt;/h2&gt;&lt;p&gt;&lt;strong&gt;LaTeX-like Theorem &amp;amp; Equation Referencer (Math Booster since version 2.1.4)&lt;/strong&gt; is an Obsidian plugin that provides a powerful indexing &amp;amp; referencing system for theorems &amp;amp; equations in your vault, bringing LaTeX-like workflow into Obsidian.&lt;/p&gt;
 &lt;h2 id=&#34;pre-conditions&#34;&gt;Pre-Conditions
 &lt;/h2&gt;&lt;ol&gt;
@@ -62,7 +62,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;It will be rendered as below.&lt;/p&gt;
-&lt;div align=&#34;center&#34;&gt;&lt;img src=&#34;http://localhost:1313/post_img/2025-08-27/math_booster_theorem.png&#34; height=100&gt;&lt;/div&gt;
+&lt;div align=&#34;center&#34;&gt;&lt;img src=&#34;https://serendipityerr.github.io/post_img/2025-08-27/math_booster_theorem.png&#34; height=100&gt;&lt;/div&gt;
 &lt;p&gt;Here&amp;rsquo;s the complete list of available envionments and aliases:&lt;/p&gt;
 &lt;table&gt;
   &lt;thead&gt;
@@ -139,7 +139,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;It will be rendered as below.&lt;/p&gt;
-&lt;div align=&#34;center&#34;&gt;&lt;img src=&#34;http://localhost:1313/post_img/2025-08-27/math_booster_lemma.png&#34; height=100&gt;&lt;/div&gt;
+&lt;div align=&#34;center&#34;&gt;&lt;img src=&#34;https://serendipityerr.github.io/post_img/2025-08-27/math_booster_lemma.png&#34; height=100&gt;&lt;/div&gt;
 &lt;h4 id=&#34;manually-numbered-theorem-callouts&#34;&gt;Manually Numbered Theorem Callouts
 &lt;/h4&gt;&lt;p&gt;It is also possible to explicitly specify the theorem number by yourself.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -153,7 +153,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;It will be rendered as below.&lt;/p&gt;
-&lt;div align=&#34;center&#34;&gt;&lt;img src=&#34;http://localhost:1313/post_img/2025-08-27/math_booster_def.png&#34; height=100&gt;&lt;/div&gt;
+&lt;div align=&#34;center&#34;&gt;&lt;img src=&#34;https://serendipityerr.github.io/post_img/2025-08-27/math_booster_def.png&#34; height=100&gt;&lt;/div&gt;
 &lt;h3 id=&#34;equations&#34;&gt;Equations
 &lt;/h3&gt;&lt;p&gt;By default, the plugin only numbers equations with backlinks (i.e. the ones that are referenced elsewhere). Alternatively, you can number all equations by turning off the option &lt;code&gt;Equations - numbering &amp;gt; Number only referenced equations&lt;/code&gt;.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -191,7 +191,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;It will be rendered as below.&lt;/p&gt;
-&lt;div align=&#34;center&#34;&gt;&lt;img src=&#34;http://localhost:1313/post_img/2025-08-27/math_booster_equation_reference.png&#34; height=200&gt;&lt;/div&gt;
+&lt;div align=&#34;center&#34;&gt;&lt;img src=&#34;https://serendipityerr.github.io/post_img/2025-08-27/math_booster_equation_reference.png&#34; height=200&gt;&lt;/div&gt;
 &lt;h3 id=&#34;custom-link-autocomplete&#34;&gt;Custom Link Autocomplete
 &lt;/h3&gt;&lt;p&gt;In the editor, type &lt;code&gt;\ref&lt;/code&gt; (by default). Then, live suggestions for all theorem callouts &amp;amp; equation blocks in the entire vault show up.&lt;/p&gt;
 &lt;ul&gt;
@@ -203,7 +203,7 @@
 &lt;p&gt;Use &lt;code&gt;\ref:r&lt;/code&gt; or &lt;code&gt;\tref:r&lt;/code&gt; or &lt;code&gt;\eqref:r&lt;/code&gt; (by default) to search only within recently opened notes.&lt;/p&gt;
 &lt;p&gt;Use &lt;code&gt;\ref:a&lt;/code&gt; or &lt;code&gt;\tref:a&lt;/code&gt; or &lt;code&gt;\eqref:a&lt;/code&gt; (by default) to search only within active note.&lt;/p&gt;
 &lt;p&gt;It will be rendered as below.&lt;/p&gt;
-&lt;div align=&#34;center&#34;&gt;&lt;img src=&#34;http://localhost:1313/post_img/2025-08-27/math_booster_reference.png&#34; height=360&gt;&lt;/div&gt;
+&lt;div align=&#34;center&#34;&gt;&lt;img src=&#34;https://serendipityerr.github.io/post_img/2025-08-27/math_booster_reference.png&#34; height=360&gt;&lt;/div&gt;
 &lt;p&gt;&lt;strong&gt;Caution&lt;/strong&gt;: Requiring the &lt;code&gt;Include theorem callout label for search target&lt;/code&gt; option to be turned on!&lt;/p&gt;
 &lt;h3 id=&#34;proof-environment&#34;&gt;Proof environment
 &lt;/h3&gt;&lt;p&gt;The plugin supports LaTeX-like proof environments.&lt;/p&gt;
@@ -220,7 +220,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;It will be rendered as below.&lt;/p&gt;
-&lt;div align=&#34;center&#34;&gt;&lt;img src=&#34;http://localhost:1313/post_img/2025-08-27/math_booster_proof.png&#34; height=75&gt;&lt;/div&gt;
+&lt;div align=&#34;center&#34;&gt;&lt;img src=&#34;https://serendipityerr.github.io/post_img/2025-08-27/math_booster_proof.png&#34; height=75&gt;&lt;/div&gt;
 &lt;p&gt;Use the following syntax to print custom text.&lt;br&gt;
 Any inline markdown syntax can be used, but inline formulas will render with flickering in the live preview.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -236,7 +236,7 @@ Any inline markdown syntax can be used, but inline formulas will render with fli
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;It will be rendered as below.&lt;/p&gt;
-&lt;div align=&#34;center&#34;&gt;&lt;img src=&#34;http://localhost:1313/post_img/2025-08-27/math_booster_proof_custom_text.png&#34; height=75&gt;&lt;/div&gt;
+&lt;div align=&#34;center&#34;&gt;&lt;img src=&#34;https://serendipityerr.github.io/post_img/2025-08-27/math_booster_proof_custom_text.png&#34; height=75&gt;&lt;/div&gt;
 &lt;p&gt;Suppose that you have a theorem like below and it has a block ID &lt;code&gt;123456&lt;/code&gt;.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -262,7 +262,7 @@ Any inline markdown syntax can be used, but inline formulas will render with fli
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;It will be rendered as below.&lt;/p&gt;
-&lt;div align=&#34;center&#34;&gt;&lt;img src=&#34;http://localhost:1313/post_img/2025-08-27/math_booster_proof_linked.png&#34; height=75&gt;&lt;/div&gt;
+&lt;div align=&#34;center&#34;&gt;&lt;img src=&#34;https://serendipityerr.github.io/post_img/2025-08-27/math_booster_proof_linked.png&#34; height=75&gt;&lt;/div&gt;
 &lt;h2 id=&#34;reference&#34;&gt;Reference
 &lt;/h2&gt;&lt;ol&gt;
 &lt;li&gt;[&lt;a class=&#34;link&#34; href=&#34;https://ryotaushio.github.io/obsidian-latex-theorem-equation-referencer/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;

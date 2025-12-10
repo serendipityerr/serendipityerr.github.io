@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Math on Serendipity&#39;s Blog</title>
-        <link>http://localhost:1313/tags/math/</link>
+        <link>https://serendipityerr.github.io/tags/math/</link>
         <description>Recent content in Math on Serendipity&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Sat, 06 Dec 2025 00:19:33 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/math/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 06 Dec 2025 00:19:33 +0800</lastBuildDate><atom:link href="https://serendipityerr.github.io/tags/math/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Study Notes on Stochastic Optimal Control</title>
-        <link>http://localhost:1313/p/study-notes-on-stochastic-optimal-control/</link>
+        <link>https://serendipityerr.github.io/p/study-notes-on-stochastic-optimal-control/</link>
         <pubDate>Sat, 06 Dec 2025 00:19:33 +0800</pubDate>
         
-        <guid>http://localhost:1313/p/study-notes-on-stochastic-optimal-control/</guid>
+        <guid>https://serendipityerr.github.io/p/study-notes-on-stochastic-optimal-control/</guid>
         <description>&lt;p&gt;Control theory is a mathematical description of how to act optimally to gain future rewards.&lt;/p&gt;
 &lt;h2 id=&#34;deterministic-discrete-time-control&#34;&gt;Deterministic Discrete Time Control
 &lt;/h2&gt;&lt;p&gt;We start by discussing the most simple control case, which is the finite horizon discrete time deterministic control problem.&lt;/p&gt;
