@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content=" 最优运输问题\r最优运输问题的目标就是以最小的成本将一个概率分布转换为另一个概率分布。即把概率分布 $\\mathbf{c}$ 以最小的成本转换到概率分布 $\\mathbf{r}$, 此时就要获得一个分配方案 $P \\in \\mathbb{R}^{n \\times m}_{&gt;0}$, 满足 $P \\mathbf{1}_m = \\mathbf{c}$ 和 $P^T \\mathbf{1}_n = \\mathbf{r}$。同时又要考虑运输成本：一个已知的成本矩阵$M$。于是最优传输问题可以表示为：\n$$ \\begin{gathered} d_M(\\mathbf{r}, \\mathbf{c}) = \\min_{P \\in U(\\mathbf{r}, \\mathbf{c})} \\sum_{i,j} P_{i,j} M_{i,j}, \\\\ U(\\mathbf{r}, \\mathbf{c}) = \\{ P \\in \\mathbb{R}^{n \\times m}_{>0} | P \\mathbf{1}_m = \\mathbf{c}, P^T \\mathbf{1}_n = \\mathbf{r}\\} \\end{gathered} $$此时 $d_M(\\mathbf{r}, \\mathbf{c})$ 被称为 Wasserstein metric 或者为 earth mover distance (EMD) 代价函数。\nSinkhorn 距离和 Sinkhorn 算法\rSinkhorn 距离是对前者 Wasserstein/EMD 距离的改进，引入了熵(Entropy)正则项：\n">
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="最优运输问题\r最优运输问题的目标就是以最小的成本将一个概率分布转换为另一个概率分布。即把概率分布 $\\mathbf{c}$ 以最小的成本转换到概率分布 $\\mathbf{r}$, 此时就要获得一个分配方案 $P \\in \\mathbb{R}^{n \\times m}_{&gt;0}$, 满足 $P \\mathbf{1}_m = \\mathbf{c}$ 和 $P^T \\mathbf{1}_n = \\mathbf{r}$。同时又要考虑运输成本：一个已知的成本矩阵$M$。于是最优传输问题可以表示为：\n$$ \\begin{gathered} d_M(\\mathbf{r}, \\mathbf{c}) = \\min_{P \\in U(\\mathbf{r}, \\mathbf{c})} \\sum_{i,j} P_{i,j} M_{i,j}, \\\\ U(\\mathbf{r}, \\mathbf{c}) = \\{ P \\in \\mathbb{R}^{n \\times m}_{>0} | P \\mathbf{1}_m = \\mathbf{c}, P^T \\mathbf{1}_n = \\mathbf{r}\\} \\end{gathered} $$此时 $d_M(\\mathbf{r}, \\mathbf{c})$ 被称为 Wasserstein metric 或者为 earth mover distance (EMD) 代价函数。\nSinkhorn 距离和 Sinkhorn 算法\rSinkhorn 距离是对前者 Wasserstein/EMD 距离的改进，引入了熵(Entropy)正则项：\n">
 <title>Study Notes on Optimal Transport</title>
 
 <link rel='canonical' href='https://serendipityerr.github.io/p/study-notes-on-optimal-transport/'>
 
 <link rel="stylesheet" href="/scss/style.min.b9c8156d464c343bdacaf14a871581fb94cbbdb9dd5cbce4ba017361187cc930.css"><meta property='og:title' content="Study Notes on Optimal Transport">
-<meta property='og:description' content=" 最优运输问题\r最优运输问题的目标就是以最小的成本将一个概率分布转换为另一个概率分布。即把概率分布 $\\mathbf{c}$ 以最小的成本转换到概率分布 $\\mathbf{r}$, 此时就要获得一个分配方案 $P \\in \\mathbb{R}^{n \\times m}_{&gt;0}$, 满足 $P \\mathbf{1}_m = \\mathbf{c}$ 和 $P^T \\mathbf{1}_n = \\mathbf{r}$。同时又要考虑运输成本：一个已知的成本矩阵$M$。于是最优传输问题可以表示为：\n$$ \\begin{gathered} d_M(\\mathbf{r}, \\mathbf{c}) = \\min_{P \\in U(\\mathbf{r}, \\mathbf{c})} \\sum_{i,j} P_{i,j} M_{i,j}, \\\\ U(\\mathbf{r}, \\mathbf{c}) = \\{ P \\in \\mathbb{R}^{n \\times m}_{>0} | P \\mathbf{1}_m = \\mathbf{c}, P^T \\mathbf{1}_n = \\mathbf{r}\\} \\end{gathered} $$此时 $d_M(\\mathbf{r}, \\mathbf{c})$ 被称为 Wasserstein metric 或者为 earth mover distance (EMD) 代价函数。\nSinkhorn 距离和 Sinkhorn 算法\rSinkhorn 距离是对前者 Wasserstein/EMD 距离的改进，引入了熵(Entropy)正则项：\n">
+<meta property='og:description' content="最优运输问题\r最优运输问题的目标就是以最小的成本将一个概率分布转换为另一个概率分布。即把概率分布 $\\mathbf{c}$ 以最小的成本转换到概率分布 $\\mathbf{r}$, 此时就要获得一个分配方案 $P \\in \\mathbb{R}^{n \\times m}_{&gt;0}$, 满足 $P \\mathbf{1}_m = \\mathbf{c}$ 和 $P^T \\mathbf{1}_n = \\mathbf{r}$。同时又要考虑运输成本：一个已知的成本矩阵$M$。于是最优传输问题可以表示为：\n$$ \\begin{gathered} d_M(\\mathbf{r}, \\mathbf{c}) = \\min_{P \\in U(\\mathbf{r}, \\mathbf{c})} \\sum_{i,j} P_{i,j} M_{i,j}, \\\\ U(\\mathbf{r}, \\mathbf{c}) = \\{ P \\in \\mathbb{R}^{n \\times m}_{>0} | P \\mathbf{1}_m = \\mathbf{c}, P^T \\mathbf{1}_n = \\mathbf{r}\\} \\end{gathered} $$此时 $d_M(\\mathbf{r}, \\mathbf{c})$ 被称为 Wasserstein metric 或者为 earth mover distance (EMD) 代价函数。\nSinkhorn 距离和 Sinkhorn 算法\rSinkhorn 距离是对前者 Wasserstein/EMD 距离的改进，引入了熵(Entropy)正则项：\n">
 <meta property='og:url' content='https://serendipityerr.github.io/p/study-notes-on-optimal-transport/'>
 <meta property='og:site_name' content='Serendipity&#39;s Blog'>
 <meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2025-03-23T19:12:10&#43;08:00'/><meta property='article:modified_time' content='2025-03-23T19:12:10&#43;08:00'/>
 <meta name="twitter:title" content="Study Notes on Optimal Transport">
-<meta name="twitter:description" content=" 最优运输问题\r最优运输问题的目标就是以最小的成本将一个概率分布转换为另一个概率分布。即把概率分布 $\\mathbf{c}$ 以最小的成本转换到概率分布 $\\mathbf{r}$, 此时就要获得一个分配方案 $P \\in \\mathbb{R}^{n \\times m}_{&gt;0}$, 满足 $P \\mathbf{1}_m = \\mathbf{c}$ 和 $P^T \\mathbf{1}_n = \\mathbf{r}$。同时又要考虑运输成本：一个已知的成本矩阵$M$。于是最优传输问题可以表示为：\n$$ \\begin{gathered} d_M(\\mathbf{r}, \\mathbf{c}) = \\min_{P \\in U(\\mathbf{r}, \\mathbf{c})} \\sum_{i,j} P_{i,j} M_{i,j}, \\\\ U(\\mathbf{r}, \\mathbf{c}) = \\{ P \\in \\mathbb{R}^{n \\times m}_{>0} | P \\mathbf{1}_m = \\mathbf{c}, P^T \\mathbf{1}_n = \\mathbf{r}\\} \\end{gathered} $$此时 $d_M(\\mathbf{r}, \\mathbf{c})$ 被称为 Wasserstein metric 或者为 earth mover distance (EMD) 代价函数。\nSinkhorn 距离和 Sinkhorn 算法\rSinkhorn 距离是对前者 Wasserstein/EMD 距离的改进，引入了熵(Entropy)正则项：\n">
+<meta name="twitter:description" content="最优运输问题\r最优运输问题的目标就是以最小的成本将一个概率分布转换为另一个概率分布。即把概率分布 $\\mathbf{c}$ 以最小的成本转换到概率分布 $\\mathbf{r}$, 此时就要获得一个分配方案 $P \\in \\mathbb{R}^{n \\times m}_{&gt;0}$, 满足 $P \\mathbf{1}_m = \\mathbf{c}$ 和 $P^T \\mathbf{1}_n = \\mathbf{r}$。同时又要考虑运输成本：一个已知的成本矩阵$M$。于是最优传输问题可以表示为：\n$$ \\begin{gathered} d_M(\\mathbf{r}, \\mathbf{c}) = \\min_{P \\in U(\\mathbf{r}, \\mathbf{c})} \\sum_{i,j} P_{i,j} M_{i,j}, \\\\ U(\\mathbf{r}, \\mathbf{c}) = \\{ P \\in \\mathbb{R}^{n \\times m}_{>0} | P \\mathbf{1}_m = \\mathbf{c}, P^T \\mathbf{1}_n = \\mathbf{r}\\} \\end{gathered} $$此时 $d_M(\\mathbf{r}, \\mathbf{c})$ 被称为 Wasserstein metric 或者为 earth mover distance (EMD) 代价函数。\nSinkhorn 距离和 Sinkhorn 算法\rSinkhorn 距离是对前者 Wasserstein/EMD 距离的改进，引入了熵(Entropy)正则项：\n">
     <link rel="shortcut icon" href="/favicon.ico" />
 
     </head>
@@ -338,8 +338,7 @@
     <section class="article-content">
     
     
-    <iframe src="/post_img/2025-03-23/notes_on_optimal_transport.pdf" width="100%" height="3300px"></iframe>
-<h2 id="最优运输问题">最优运输问题
+    <h2 id="最优运输问题">最优运输问题
 </h2><p>最优运输问题的目标就是以<strong>最小的成本</strong>将<strong>一个概率分布</strong>转换为<strong>另一个概率分布</strong>。即把概率分布 $\mathbf{c}$ 以最小的成本转换到概率分布 $\mathbf{r}$, 此时就要获得一个分配方案 $P \in \mathbb{R}^{n \times m}_{&gt;0}$, 满足 $P \mathbf{1}_m = \mathbf{c}$ 和 $P^T \mathbf{1}_n = \mathbf{r}$。同时又要考虑运输成本：一个已知的成本矩阵$M$。于是最优传输问题可以表示为：</p>
 $$
 \begin{gathered}
@@ -427,6 +426,7 @@ $$<p>最终的满足约束的 $P$ 的解可以通过下面这个伪代码和算�
 </h2><p>最优传输问题，无论有没有熵正则化，都有一个漂亮的几何解释。</p>
 <div align="center"><img src="/post_img/2025-03-23/geometric.png" width="500px"/></div>
 <p>成本矩阵决定了分布的优劣方向。集合 $U(\mathbf{r}, \mathbf{c})$ 包含所有可行的分布。在未正则化的情况下，最优 $P^{\star}$ 通常在这样一个集合的某个角上。在添加熵正则因子时，我们将自己限制在熵最小的分布上，即位于平滑的红色曲线内。由于我们不必再处理 $U(\mathbf{r}, \mathbf{c})$ 的尖角，因此更容易找到最优值。特殊情况下，当 $\lambda \rightarrow \infty$ 时，$P_{\lambda}^{\star}$ 将变得越来越接近 $P^{\star}$（直到算法遇到数值困难）。另一方面，对于 $\lambda \rightarrow 0$ 的情况，只考虑熵项，$P_{\lambda}^{\star} = \mathbf{r} \mathbf{c}^T$（这是一种均匀分布，均匀分布信息熵最小）。</p>
+<p>点击<a class="link" href="/post_img/2025-03-23/notes_on_optimal_transport.pdf" >此处</a>获取pdf版本。</p>
 
 </section>
 

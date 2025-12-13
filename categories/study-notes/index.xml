@@ -470,8 +470,7 @@ $$&lt;p&gt;代入 $T=1000$, $\beta_1 = 10^{-4}$ 和 $\beta_T = 0.02$，因此，
         <pubDate>Sun, 23 Mar 2025 19:12:10 +0800</pubDate>
         
         <guid>https://serendipityerr.github.io/p/study-notes-on-optimal-transport/</guid>
-        <description>&lt;iframe src=&#34;https://serendipityerr.github.io/post_img/2025-03-23/notes_on_optimal_transport.pdf&#34; width=&#34;100%&#34; height=&#34;3300px&#34;&gt;&lt;/iframe&gt;
-&lt;h2 id=&#34;最优运输问题&#34;&gt;最优运输问题
+        <description>&lt;h2 id=&#34;最优运输问题&#34;&gt;最优运输问题
 &lt;/h2&gt;&lt;p&gt;最优运输问题的目标就是以&lt;strong&gt;最小的成本&lt;/strong&gt;将&lt;strong&gt;一个概率分布&lt;/strong&gt;转换为&lt;strong&gt;另一个概率分布&lt;/strong&gt;。即把概率分布 $\mathbf{c}$ 以最小的成本转换到概率分布 $\mathbf{r}$, 此时就要获得一个分配方案 $P \in \mathbb{R}^{n \times m}_{&amp;gt;0}$, 满足 $P \mathbf{1}_m = \mathbf{c}$ 和 $P^T \mathbf{1}_n = \mathbf{r}$。同时又要考虑运输成本：一个已知的成本矩阵$M$。于是最优传输问题可以表示为：&lt;/p&gt;
 $$
 \begin{gathered}
@@ -559,6 +558,7 @@ $$&lt;p&gt;最终的满足约束的 $P$ 的解可以通过下面这个伪代码�
 &lt;/h2&gt;&lt;p&gt;最优传输问题，无论有没有熵正则化，都有一个漂亮的几何解释。&lt;/p&gt;
 &lt;div align=&#34;center&#34;&gt;&lt;img src=&#34;https://serendipityerr.github.io/post_img/2025-03-23/geometric.png&#34; width=&#34;500px&#34;/&gt;&lt;/div&gt;
 &lt;p&gt;成本矩阵决定了分布的优劣方向。集合 $U(\mathbf{r}, \mathbf{c})$ 包含所有可行的分布。在未正则化的情况下，最优 $P^{\star}$ 通常在这样一个集合的某个角上。在添加熵正则因子时，我们将自己限制在熵最小的分布上，即位于平滑的红色曲线内。由于我们不必再处理 $U(\mathbf{r}, \mathbf{c})$ 的尖角，因此更容易找到最优值。特殊情况下，当 $\lambda \rightarrow \infty$ 时，$P_{\lambda}^{\star}$ 将变得越来越接近 $P^{\star}$（直到算法遇到数值困难）。另一方面，对于 $\lambda \rightarrow 0$ 的情况，只考虑熵项，$P_{\lambda}^{\star} = \mathbf{r} \mathbf{c}^T$（这是一种均匀分布，均匀分布信息熵最小）。&lt;/p&gt;
+&lt;p&gt;点击&lt;a class=&#34;link&#34; href=&#34;https://serendipityerr.github.io/post_img/2025-03-23/notes_on_optimal_transport.pdf&#34; &gt;此处&lt;/a&gt;获取pdf版本。&lt;/p&gt;
 </description>
         </item>
         <item>
