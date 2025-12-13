@@ -121,12 +121,12 @@
 </description>
         </item>
         <item>
-        <title>Notes on Latex Math Symbols</title>
-        <link>https://serendipityerr.github.io/p/notes-on-latex-math-symbols/</link>
+        <title>Latex Math Symbols CheatSheet</title>
+        <link>https://serendipityerr.github.io/p/latex-math-symbols-cheatsheet/</link>
         <pubDate>Tue, 25 Feb 2025 11:44:28 +0800</pubDate>
         
-        <guid>https://serendipityerr.github.io/p/notes-on-latex-math-symbols/</guid>
-        <description>&lt;img src="https://serendipityerr.github.io/post_img/2025-02-25/latex-logo.png" alt="Featured image of post Notes on Latex Math Symbols" /&gt;&lt;p&gt;The following tables are extracted from &lt;em&gt;The Not So Short Introduction to LaTeX2e&lt;/em&gt;, aka. &lt;em&gt;LaTeX2e in 90 minutes&lt;/em&gt;, by Tobias Oetiker, Hubert Partl, Irene Hyna, and Elisabeth Schlegl. It can be located &lt;a class=&#34;link&#34; href=&#34;https://github.com/CTeX-org/lshort-zh-cn&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+        <guid>https://serendipityerr.github.io/p/latex-math-symbols-cheatsheet/</guid>
+        <description>&lt;img src="https://serendipityerr.github.io/post_img/2025-02-25/latex-logo.png" alt="Featured image of post Latex Math Symbols CheatSheet" /&gt;&lt;p&gt;The following tables are extracted from &lt;em&gt;The Not So Short Introduction to LaTeX2e&lt;/em&gt;, aka. &lt;em&gt;LaTeX2e in 90 minutes&lt;/em&gt;, by Tobias Oetiker, Hubert Partl, Irene Hyna, and Elisabeth Schlegl. It can be located &lt;a class=&#34;link&#34; href=&#34;https://github.com/CTeX-org/lshort-zh-cn&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;table-math-mode-accents&#34;&gt;Table: Math Mode Accents
 &lt;/h2&gt;&lt;!-- 

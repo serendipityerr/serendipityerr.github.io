@@ -1264,12 +1264,12 @@ $$&lt;p&gt;代入 $T=1000$, $\beta_1 = 10^{-4}$ 和 $\beta_T = 0.02$，因此，
 </description>
         </item>
         <item>
-        <title>Notes on Latex Math Symbols</title>
-        <link>https://serendipityerr.github.io/p/notes-on-latex-math-symbols/</link>
+        <title>Latex Math Symbols CheatSheet</title>
+        <link>https://serendipityerr.github.io/p/latex-math-symbols-cheatsheet/</link>
         <pubDate>Tue, 25 Feb 2025 11:44:28 +0800</pubDate>
         
-        <guid>https://serendipityerr.github.io/p/notes-on-latex-math-symbols/</guid>
-        <description>&lt;img src="https://serendipityerr.github.io/post_img/2025-02-25/latex-logo.png" alt="Featured image of post Notes on Latex Math Symbols" /&gt;&lt;p&gt;The following tables are extracted from &lt;em&gt;The Not So Short Introduction to LaTeX2e&lt;/em&gt;, aka. &lt;em&gt;LaTeX2e in 90 minutes&lt;/em&gt;, by Tobias Oetiker, Hubert Partl, Irene Hyna, and Elisabeth Schlegl. It can be located &lt;a class=&#34;link&#34; href=&#34;https://github.com/CTeX-org/lshort-zh-cn&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+        <guid>https://serendipityerr.github.io/p/latex-math-symbols-cheatsheet/</guid>
+        <description>&lt;img src="https://serendipityerr.github.io/post_img/2025-02-25/latex-logo.png" alt="Featured image of post Latex Math Symbols CheatSheet" /&gt;&lt;p&gt;The following tables are extracted from &lt;em&gt;The Not So Short Introduction to LaTeX2e&lt;/em&gt;, aka. &lt;em&gt;LaTeX2e in 90 minutes&lt;/em&gt;, by Tobias Oetiker, Hubert Partl, Irene Hyna, and Elisabeth Schlegl. It can be located &lt;a class=&#34;link&#34; href=&#34;https://github.com/CTeX-org/lshort-zh-cn&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;table-math-mode-accents&#34;&gt;Table: Math Mode Accents
 &lt;/h2&gt;&lt;!-- 
@@ -1923,11 +1923,11 @@ $$&lt;p&gt;代入 $T=1000$, $\beta_1 = 10^{-4}$ 和 $\beta_T = 0.02$，因此，
 </description>
         </item>
         <item>
-        <title>Notes on DataBase</title>
-        <link>https://serendipityerr.github.io/p/notes-on-database/</link>
+        <title>Study Notes on DataBase</title>
+        <link>https://serendipityerr.github.io/p/study-notes-on-database/</link>
         <pubDate>Mon, 24 Feb 2025 19:06:28 +0800</pubDate>
         
-        <guid>https://serendipityerr.github.io/p/notes-on-database/</guid>
+        <guid>https://serendipityerr.github.io/p/study-notes-on-database/</guid>
         <description>&lt;h2 id=&#34;绪论&#34;&gt;绪论
 &lt;/h2&gt;&lt;h3 id=&#34;四个基本概念&#34;&gt;四个基本概念
 &lt;/h3&gt;&lt;ol&gt;
@@ -3178,12 +3178,12 @@ $$&lt;p&gt;代入 $T=1000$, $\beta_1 = 10^{-4}$ 和 $\beta_T = 0.02$，因此，
 </description>
         </item>
         <item>
-        <title>Notes on HTML</title>
-        <link>https://serendipityerr.github.io/p/notes-on-html/</link>
+        <title>Study Notes on HTML</title>
+        <link>https://serendipityerr.github.io/p/study-notes-on-html/</link>
         <pubDate>Tue, 18 Feb 2025 22:42:40 +0800</pubDate>
         
-        <guid>https://serendipityerr.github.io/p/notes-on-html/</guid>
-        <description>&lt;img src="https://serendipityerr.github.io/post_img/2025-02-18/html-logo.png" alt="Featured image of post Notes on HTML" /&gt;&lt;h2 id=&#34;html入门&#34;&gt;HTML入门
+        <guid>https://serendipityerr.github.io/p/study-notes-on-html/</guid>
+        <description>&lt;img src="https://serendipityerr.github.io/post_img/2025-02-18/html-logo.png" alt="Featured image of post Study Notes on HTML" /&gt;&lt;h2 id=&#34;html入门&#34;&gt;HTML入门
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;HTML(Hyper Text Markup Language)：超文本标记语言，用来描述网页的语言。&lt;/p&gt;
