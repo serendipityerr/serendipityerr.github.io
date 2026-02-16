@@ -77,13 +77,12 @@
 &lt;/figure&gt;
 
 &lt;!-- &lt;div align=&#34;center&#34;&gt;&lt;img src=&#34;https://serendipityerr.github.io/post_img/2026-02-16/tomorrow.png&#34; width=&#34;450px&#34;/&gt;&lt;/div&gt; --&gt;
-&lt;figure&gt;&lt;img src=&#34;https://serendipityerr.github.io/post_img/2026-02-16/tomorrow.png&#34;
+&lt;!-- &lt;figure&gt;&lt;img src=&#34;https://serendipityerr.github.io/post_img/2026-02-16/tomorrow.png&#34;
     alt=&#34;图片描述&#34;&gt;&lt;figcaption&gt;
       &lt;h4&gt;图片标题&lt;/h4&gt;&lt;p&gt;图片描述&lt;/p&gt;
     &lt;/figcaption&gt;
 &lt;/figure&gt;
-
-</description>
+ --&gt;</description>
         </item>
         <item>
         <title>Study Notes on Stochastic Differential Equations</title>
