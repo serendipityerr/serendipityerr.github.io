@@ -25,10 +25,10 @@
 &lt;/h2&gt;&lt;p&gt;于是，欢迎来到2025，这是一个科研萌新在一年内循环了ML三大会的故事。&lt;/p&gt;
 &lt;p&gt;4月份UniDB出分了，拿到了还算不错的一个分数，熬过了一周的rebuttal后，非常非常非常幸运的所有reviewer都给出了Accept!真是现在做梦都会笑醒的程度&amp;hellip;同时期，我尝试扩展了一些paper reading的方向，不执著于纯的Diffusion Bridge理论工作，继续补了一些原本diffusion相关的一些后续工作，例如DPM-Solver和DPM-Solver++。这两篇文章给了我很多insight，好像正好可以用来解决UniDB中inference过程非常慢的问题。于是一不做二不休，直接上手开始暴力求解，初步的实验结果也差不多能验证这套理论，导师说可以试试5月份的NeurIPS，于是又跑实验跑实验跑实验&amp;hellip;但是很可惜的是，这是一篇非常非常非常A+B的工作，真正意义上的novelty确实是incremental的&amp;hellip;应该来说是只是更偏实用价值一点。Anyway，作为自己真正意义上的第一篇丢出去了。&lt;/p&gt;
 &lt;p&gt;累死累活的赶完了NeurIPS，紧接着毕业论文答辩归档balabala。6月初，抽空去成都（wiz 水龟龟&amp;amp;肖导）休息了几天，才算是让紧绷的弦放松了下来。看到中科路地铁站里&amp;rsquo;&amp;lsquo;祝贺2025届本科/研究生毕业&amp;rsquo;&amp;rsquo;，这时才感觉到了夏天独有的离别的味道。换上学士服，拍了毕业照，在患得患失的22岁遇到了最好的你们😎。&lt;/p&gt;
-&lt;div align=&#34;center&#34;&gt;&lt;img src=&#34;https://serendipityerr.github.io/post_img/2026-02-16/undergraduate.png&#34; width=&#34;450px&#34;/&gt;&lt;/div&gt;
+&lt;div align=&#34;center&#34;&gt;&lt;img src=&#34;https://serendipityerr.github.io/post_img/2026-02-16/undergraduate.png&#34; width=&#34;600px&#34;/&gt;&lt;/div&gt;
 &lt;p&gt;7月初，告别了大家伙，搬进了研究生宿舍。和水龟龟在淀山湖看日落，又偶然得知导师没时间去加拿大参加ICML，正好加签还没过期，直接起身前往。在Vancouver Convention Center的展厅里漫步，在自己的poster前，用很烂的口语对着poster指手画脚，讲了一个下午，还遇到了自己学校的学长，总之是很有成就感的，收起poster如释重负。后面几天在学校的CS群里又发现了另一个也在参加ICML开会的一个PhD学长，他带着我真正意义上的融入了学术会议，带我去展厅``打野&amp;rsquo;&amp;rsquo;，品尝当地的好吃的。最后两天还和讲poster时碰到的学长一起徒步Sea to Sky，看到了非常漂亮的景色。&lt;/p&gt;
 &lt;figure&gt;&lt;img src=&#34;https://serendipityerr.github.io/post_img/2026-02-16/vancouver.png&#34;
-    alt=&#34;Vancouver&#34; width=&#34;450px&#34;&gt;&lt;figcaption&gt;
+    alt=&#34;Vancouver&#34; width=&#34;600px&#34;&gt;&lt;figcaption&gt;
       &lt;p&gt;Vancouver&lt;/p&gt;
     &lt;/figcaption&gt;
 &lt;/figure&gt;
@@ -44,7 +44,7 @@
 &lt;!-- &lt;div align=&#34;center&#34;&gt;&lt;img src=&#34;https://serendipityerr.github.io/post_img/2026-02-16/gym.png&#34; width=&#34;450px&#34;/&gt;&lt;/div&gt; --&gt;
 &lt;p&gt;9月天气还是有点热，她想公车再不来就走一走路。和老庄&amp;amp;huyux重返初中叙旧，也迎来了Master的第一学期。和肖导一起把自行车从普陀骑到了张江，算是实现了每天学校往返宿舍自由。NeurIPS最终非常不幸（但也在意料之中）地以一个accept一个borderline accept和两个borderline reject被逮捕了，刷新openreview刷到了大大的reject，还是非常郁闷，收拾收拾心情又继续上路了。9月底迎来了ICLR，这次我同时帮两位学长打下手，第一次尝试了一次投两篇paper，不得不说的是，比之前的都累。这是一种什么感觉呢，有点像大三下上你科CS专业课，接近期末的时候，需要做几个final project，于是大脑每天在几个project之间来回切换。回到科研，特别是ddl的那一天，两个overleaf界面来回切换，不断地改主图&amp;amp;paper writing，真真切切地体会到&lt;strong&gt;一个人的精力是有限的&lt;/strong&gt;😇，更不敢想如果是两篇一作会是什么样子。注册了ICLR的审稿人，运气很好地真的当上了reviewer。&lt;/p&gt;
 &lt;figure&gt;&lt;img src=&#34;https://serendipityerr.github.io/post_img/2026-02-16/cloud.png&#34;
-    alt=&#34;暑假某一天的落日&#34; width=&#34;450px&#34;&gt;&lt;figcaption&gt;
+    alt=&#34;暑假某一天的落日&#34; width=&#34;600px&#34;&gt;&lt;figcaption&gt;
       &lt;p&gt;暑假某一天的落日&lt;/p&gt;
     &lt;/figcaption&gt;
 &lt;/figure&gt;
@@ -61,7 +61,7 @@
 &lt;p&gt;12月是打水漂的一个月。有一种非常强烈的愿望想独立地leader一个solid的project，但是非常可惜，怎么操作都是浓浓的A+B味。对理论做了一套可以算是比较漂亮的A+B改进，然而实验效果非常一般&amp;hellip;除了在写课程作业or准备课程的期末考试以外的所有时间都在跑实验，但是最终都化为了沉没成本（大概）。唯一的收获大概就是对UniDB的理解更加透彻了，而不仅仅是那个在ICML会场上讲paper的自己了。&lt;/p&gt;
 &lt;p&gt;1月是幸运的，也是不幸的。幸运的是感觉自己终于迈出了第一步，尝试了太多几年前根本没有胆量做的事。和考完研的骏&amp;amp;杨哥&amp;amp;在上班的pz相聚万岛，和龟龟city walk，和ZHIYU星，和Dorisgua田子坊散步，对了，还有已经十几年没下雪的上海突然飘雪，已经记不清上一次感到如此满足是什么时候了，所以是幸运的。不幸的是CVPR开分两个borderline reject，ICLR再一次又又又以（potentially）一个accept一个borderline accept和两个borderline reject被斩杀了（&amp;amp;@!#%&amp;hellip;😇）。于是乎，在一周内，帮应用的paper搞了一个theorem（神了），帮理论的paper改了改writing，继续备战ICML，这下真的轮回了。&lt;/p&gt;
 &lt;figure&gt;&lt;img src=&#34;https://serendipityerr.github.io/post_img/2026-02-16/boat.png&#34;
-    alt=&#34;千岛湖上的游船&#34; width=&#34;450px&#34;&gt;&lt;figcaption&gt;
+    alt=&#34;千岛湖上的游船&#34; width=&#34;600px&#34;&gt;&lt;figcaption&gt;
       &lt;p&gt;千岛湖上的游船&lt;/p&gt;
     &lt;/figcaption&gt;
 &lt;/figure&gt;
