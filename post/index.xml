@@ -6,7 +6,52 @@
         <description>Recent content in Posts on Serendipity&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Mon, 08 Dec 2025 22:49:21 +0800</lastBuildDate><atom:link href="https://serendipityerr.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 16 Feb 2026 11:12:04 +0800</lastBuildDate><atom:link href="https://serendipityerr.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>The Summary of 2025</title>
+        <link>https://serendipityerr.github.io/p/the-summary-of-2025/</link>
+        <pubDate>Mon, 16 Feb 2026 11:12:04 +0800</pubDate>
+        
+        <guid>https://serendipityerr.github.io/p/the-summary-of-2025/</guid>
+        <description>&lt;p&gt;已经2年没有写年终总结了，终于有时间回顾这（不）顺利的一年了。但是这一年故事要从更早一点说起&amp;hellip;&lt;/p&gt;
+&lt;h2 id=&#34;一些24年的前言&#34;&gt;一些24年的前言
+&lt;/h2&gt;&lt;p&gt;参与科研的第一年是24年。24年的暑假，10号楼的宿舍，一边准备保研的面试，一边学习Diffusion Models。有幸在霄哥的paper list里读到了Brownian Bridge Diffusion Models（BBDMs）, Denoising Diffusion Bridge Models（DDBMs）和Diffusion Bridge Implicit Models（DBIMs）这三篇文章，可以说是科研开始的地方。运气很好的是，锴臻学长也在读这些paper，于是乎，学长带着我开了块实验室的新的小方向：Diffusion Bridge。一个暑假对Diffusion的恶补（from Zhihu, bilibili, 各种blogs&amp;hellip;），差不多算是入门了吧😇（maybe）。&lt;/p&gt;
+&lt;p&gt;9月10月，学长带着我在他的宿舍用他的4090主机复现了一些代码，有了初步的一些Diffusion Bridge数学推导进行尝试。很神奇的是，11月参加了在上理参加了本科最后一次数学竞赛，那天清晨躺在床上时，想到了一些构造，于是在考场上的垃圾时间里进行了一些尝试，整个数学构造相比之前的推导居然变得漂亮了许多！后续就是和学长导师一直聊，不断地改进，不断地跑实验跑实验还是跑实验&amp;hellip;最终在25年的年初三，提交了[&lt;a class=&#34;link&#34; href=&#34;https://arxiv.org/pdf/2502.05749&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;UniDB&lt;/a&gt;]的final version。那时候我大四，学长研一，两个人对paper writing一无所知，好在导师不断地带着我们迭代和打磨，算是非常完整的参与了一次投稿。每天两点一线的作息，现在都能倒背如流，好在每天去实验室的路上都能rua一下宿舍楼下的两只猫猫，算是填补了一些这个寂寞的季节。非常感谢导师和学长给了我共一第二的位置，其实自己想的是有个二作投出去已经是非常荣幸的事情了（恩情还不完）。这次投稿在另一方面也帮我基本完成了毕业论文，所以25年春学期，也就是大四下，至少毕业没有很大的压力了。&lt;/p&gt;
+&lt;div align=&#34;center&#34;&gt;&lt;img src=&#34;https://serendipityerr.github.io/post_img/2026-02-16/2025.png&#34; width=&#34;450px&#34;/&gt;&lt;/div&gt;
+&lt;h2 id=&#34;完全科研的第一年&#34;&gt;完全科研的第一年
+&lt;/h2&gt;&lt;p&gt;于是，欢迎来到2025，这是一个科研萌新在一年内循环了ML三大会的故事。&lt;/p&gt;
+&lt;p&gt;4月份UniDB出分了，拿到了还算不错的一个分数，熬过了一周的rebuttal后，非常非常非常幸运的所有reviewer都给出了Accept!真是现在做梦都会笑醒的程度&amp;hellip;同时期，我尝试扩展了一些paper reading的方向，不执著于纯的Diffusion Bridge理论工作，继续补了一些原本diffusion相关的一些后续工作，例如DPM-Solver和DPM-Solver++。这两篇文章给了我很多insight，好像正好可以用来解决UniDB中inference过程非常慢的问题。于是一不做二不休，直接上手开始暴力求解，初步的实验结果也差不多能验证这套理论，导师说可以试试5月份的NeurIPS，于是又跑实验跑实验跑实验&amp;hellip;但是很可惜的是，这是一篇非常非常非常A+B的工作，真正意义上的novelty确实是incremental的&amp;hellip;应该来说是只是更偏实用价值一点。Anyway，作为自己真正意义上的第一篇丢出去了。&lt;/p&gt;
+&lt;p&gt;累死累活的赶完了NeurIPS，紧接着毕业论文答辩归档balabala。6月初，抽空去成都（wiz 水龟龟&amp;amp;肖导）休息了几天，才算是让紧绷的弦放松了下来。看到中科路地铁站里``祝贺2025届本科/研究生毕业&amp;rsquo;&amp;rsquo;，这时才感觉到了夏天独有的离别的味道。换上学士服，拍了毕业照，在患得患失的22岁遇到了最好的你们😎。&lt;/p&gt;
+&lt;div align=&#34;center&#34;&gt;&lt;img src=&#34;https://serendipityerr.github.io/post_img/2026-02-16/undergraduate.png&#34; width=&#34;450px&#34;/&gt;&lt;/div&gt;
+&lt;p&gt;7月初，告别了大家伙，搬进了研究生宿舍。和水龟龟在淀山湖看日落，又偶然得知导师没时间去加拿大参加ICML，正好加签还没过期，直接起身前往。在Vancouver Convention Center的展厅里漫步，在自己的poster前，用很烂的口语对着poster指手画脚，讲了一个下午，还遇到了自己学校的学长，总之是很有成就感的，收起poster如释重负。后面几天在学校的CS群里又发现了另一个也在参加ICML开会的一个PhD学长，他带着我真正意义上的融入了学术会议，带我去展厅``打野&amp;rsquo;&amp;rsquo;，品尝当地的好吃的。最后两天还和讲poster时碰到的学长一起徒步Sea to Sky，看到了非常漂亮的景色。&lt;/p&gt;
+&lt;div align=&#34;center&#34;&gt;&lt;img src=&#34;https://serendipityerr.github.io/post_img/2026-02-16/vancouver.png&#34; width=&#34;450px&#34;/&gt;&lt;/div&gt;
+&lt;p&gt;开完ICML后，马不停蹄地开始了NeurIPS的rebuttal。开出来了一个非常borderline抽奖的分，但还是尝试re了。这是一段相当黑暗的日子，每天都在想怎么rebuttal。甚至今年的NeurIPS还延长了一周的rebuttal时间，真是坐牢完了。熬过了暗淡无光的半个月，抽空去了上海书展，跟着keke和ll开始健身，告别了为了美签在黑暗小房间里等待了两个月的yuxinz&amp;hellip;&lt;/p&gt;
+&lt;div align=&#34;center&#34;&gt;&lt;img src=&#34;https://serendipityerr.github.io/post_img/2026-02-16/gym.png&#34; width=&#34;750px&#34;/&gt;&lt;/div&gt;
+&lt;p&gt;9月天气还是有点热，她想公车再不来就走一走路。和老庄&amp;amp;huyux重返初中叙旧，也迎来了Master的第一学期。和肖导一起把自行车从普陀骑到了张江，算是实现了每天学校往返宿舍自由。NeurIPS最终非常不幸（但也在意料之中）地以一个accept一个borderline accept和两个borderline reject被逮捕了，刷新openreview刷到了大大的reject，还是非常郁闷，收拾收拾心情又继续上路了。9月底迎来了ICLR，这次我同时帮两位学长打下手，第一次尝试了一次投两篇paper，不得不说的是，比之前的都累。这是一种什么感觉呢，有点像大三下上你科CS专业课，接近期末的时候，需要做几个final project，于是大脑每天在几个project之间来回切换。回到科研，特别是ddl的那一天，两个overleaf界面来回切换，不断地改主图&amp;amp;paper writing，真真切切地体会到&lt;strong&gt;一个人的精力是有限的&lt;/strong&gt;😇，更不敢想如果是两篇一作会是什么样子。注册了ICLR的审稿人，运气很好地真的当上了reviewer。&lt;/p&gt;
+&lt;div align=&#34;center&#34;&gt;&lt;img src=&#34;https://serendipityerr.github.io/post_img/2026-02-16/cloud.png&#34; width=&#34;450px&#34;/&gt;&lt;/div&gt;
+&lt;p&gt;时间的指针拨向11月，迎来了ICLR的出分。很遗憾的两篇paper分数都不太理想，做应用的直接withdraw继续完善出击CVPR，做理论的遇到了神奇的4个非常低confidence的reviewer（说明基本都不能get到paper在干什么）🙃。甚至还遇上了openreview网站史上最大的一次reviewer信息泄露（笑了真的）。赶完了CVPR和ICLR的rebuttal，总算是清闲下来了，开始清理课程作业，还收到了Dorisgua来自Singapore的问候！（阿里嘎多！）&lt;/p&gt;
+&lt;div align=&#34;center&#34;&gt;&lt;img src=&#34;https://serendipityerr.github.io/post_img/2026-02-16/card.png&#34; width=&#34;450px&#34;/&gt;&lt;/div&gt;
+&lt;p&gt;12月是打水漂的一个月。有一种非常强烈的愿望想独立地leader一个solid的project，但是非常可惜，怎么操作都是浓浓的A+B味。对理论做了一套可以算是比较漂亮的A+B改进，然而实验效果非常一般&amp;hellip;除了在写课程作业or准备课程的期末考试以外的所有时间都在跑实验，但是最终都化为了沉没成本（大概）。唯一的收获大概就是对UniDB的理解更加透彻了，而不仅仅是那个在ICML会场上讲paper的自己了。&lt;/p&gt;
+&lt;p&gt;1月是幸运的，也是不幸的。幸运的是感觉自己终于迈出了第一步，尝试了太多几年前根本没有胆量做的事。和考完研的骏&amp;amp;杨哥&amp;amp;在上班的pz相聚万岛，和龟龟city walk，和ZHIYU星，和Dorisgua田子坊散步，对了，还有已经十几年没下雪的上海突然飘雪，已经记不清上一次感到如此满足是什么时候了，所以是幸运的。不幸的是CVPR开分两个borderline reject，ICLR再一次又又又以（potentially）一个accept一个borderline accept和两个borderline reject被斩杀了（&amp;amp;@!#%&amp;hellip;😇）。于是乎，在一周内，帮应用的paper搞了一个theorem（神了），帮理论的paper改了改writing，继续备战ICML，这下真的轮回了。&lt;/p&gt;
+&lt;figure&gt;&lt;img src=&#34;https://serendipityerr.github.io/post_img/2026-02-16/boat.png&#34;
+    alt=&#34;千岛湖&#34;&gt;&lt;figcaption&gt;
+      &lt;p&gt;千岛湖&lt;/p&gt;
+    &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;!-- &lt;div align=&#34;center&#34;&gt;&lt;img src=&#34;https://serendipityerr.github.io/post_img/2026-02-16/boat.png&#34; width=&#34;450px&#34;/&gt;&lt;/div&gt; --&gt;
+&lt;p&gt;累死累活地进入2月，实验室哥几个再也忍受不了了，来了一场说走就走的旅行，两天的千岛湖度假虽然没有那么满足，但是也足够摆脱身上的大部分负担了（其实没有，连度假也不舒服，要问原因那你别管），而且发现了自己potential的摄影天赋。&lt;/p&gt;
+&lt;p&gt;之前听一个学长说Fibonacci投稿的时候，我还没有深刻的感觉，赶完ICML之后，发现一语成谶，哈哈，从去年ICML开始，三大会正好组成了1123的前4项Fibonacci数列😇。希望不要再和2025的下半年这样了，2026请对这个小男孩好一点，不要让他抬起头才发现，流眼泪的星星正在放弃他。&lt;/p&gt;
+&lt;p&gt;To live is to risk it all. 新的一年，也请再努力一下，为了想见的人，想做的事，和想成为的自己。&lt;/p&gt;
+&lt;div align=&#34;center&#34;&gt;&lt;img src=&#34;https://serendipityerr.github.io/post_img/2026-02-16/tomorrow.png&#34; width=&#34;450px&#34;/&gt;&lt;/div&gt;
+&lt;!-- &lt;figure&gt;&lt;img src=&#34;https://serendipityerr.github.io/post_img/2026-02-16/tomorrow.png&#34;
+    alt=&#34;图片描述&#34;&gt;&lt;figcaption&gt;
+      &lt;h4&gt;图片标题&lt;/h4&gt;&lt;p&gt;图片描述&lt;/p&gt;
+    &lt;/figcaption&gt;
+&lt;/figure&gt;
+ --&gt;</description>
+        </item>
+        <item>
         <title>Study Notes on Stochastic Differential Equations</title>
         <link>https://serendipityerr.github.io/p/study-notes-on-stochastic-differential-equations/</link>
         <pubDate>Mon, 08 Dec 2025 22:49:21 +0800</pubDate>
