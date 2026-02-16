@@ -24,9 +24,9 @@
 &lt;h2 id=&#34;完全科研的第一年&#34;&gt;完全科研的第一年
 &lt;/h2&gt;&lt;p&gt;于是，欢迎来到2025，这是一个科研萌新在一年内循环了ML三大会的故事。&lt;/p&gt;
 &lt;p&gt;4月份UniDB出分了，拿到了还算不错的一个分数，熬过了一周的rebuttal后，非常非常非常幸运的所有reviewer都给出了Accept!真是现在做梦都会笑醒的程度&amp;hellip;同时期，我尝试扩展了一些paper reading的方向，不执著于纯的Diffusion Bridge理论工作，继续补了一些原本diffusion相关的一些后续工作，例如DPM-Solver和DPM-Solver++。这两篇文章给了我很多insight，好像正好可以用来解决UniDB中inference过程非常慢的问题。于是一不做二不休，直接上手开始暴力求解，初步的实验结果也差不多能验证这套理论，导师说可以试试5月份的NeurIPS，于是又跑实验跑实验跑实验&amp;hellip;但是很可惜的是，这是一篇非常非常非常A+B的工作，真正意义上的novelty确实是incremental的&amp;hellip;应该来说是只是更偏实用价值一点。Anyway，作为自己真正意义上的第一篇丢出去了。&lt;/p&gt;
-&lt;p&gt;累死累活的赶完了NeurIPS，紧接着毕业论文答辩归档balabala。6月初，抽空去成都（wiz 水龟龟&amp;amp;肖导）休息了几天，才算是让紧绷的弦放松了下来。看到中科路地铁站里&amp;rsquo;&amp;lsquo;祝贺2025届本科/研究生毕业&amp;rsquo;&amp;rsquo;，这时才感觉到了夏天独有的离别的味道。换上学士服，拍了毕业照，在患得患失的22岁遇到了最好的你们😎。&lt;/p&gt;
+&lt;p&gt;累死累活的赶完了NeurIPS，紧接着毕业论文答辩归档balabala。6月初，抽空去成都（wiz 水龟龟&amp;amp;肖导）休息了几天，才算是让紧绷的弦放松了下来。看到中科路地铁站里“祝贺2025届本科/研究生毕业”，这时才感觉到了夏天独有的离别的味道。换上学士服，拍了毕业照，在患得患失的22岁遇到了最好的你们😎。&lt;/p&gt;
 &lt;div align=&#34;center&#34;&gt;&lt;img src=&#34;https://serendipityerr.github.io/post_img/2026-02-16/undergraduate.png&#34; width=&#34;600px&#34;/&gt;&lt;/div&gt;
-&lt;p&gt;7月初，告别了大家伙，搬进了研究生宿舍。和水龟龟在淀山湖看日落，又偶然得知导师没时间去加拿大参加ICML，正好加签还没过期，直接起身前往。在Vancouver Convention Center的展厅里漫步，在自己的poster前，用很烂的口语对着poster指手画脚，讲了一个下午，还遇到了自己学校的学长，总之是很有成就感的，收起poster如释重负。后面几天在学校的CS群里又发现了另一个也在参加ICML开会的一个PhD学长，他带着我真正意义上的融入了学术会议，带我去展厅``打野&amp;rsquo;&amp;rsquo;，品尝当地的好吃的。最后两天还和讲poster时碰到的学长一起徒步Sea to Sky，看到了非常漂亮的景色。&lt;/p&gt;
+&lt;p&gt;7月初，告别了大家伙，搬进了研究生宿舍。和水龟龟在淀山湖看日落，又偶然得知导师没时间去加拿大参加ICML，正好加签还没过期，直接起身前往。在Vancouver Convention Center的展厅里漫步，在自己的poster前，用很烂的口语对着poster指手画脚，讲了一个下午，还遇到了自己学校的学长，总之是很有成就感的，收起poster如释重负。后面几天在学校的CS群里又发现了另一个也在参加ICML开会的一个PhD学长，他带着我真正意义上的融入了学术会议，带我去展厅“打野”，品尝当地的好吃的。最后两天还和讲poster时碰到的学长一起徒步Sea to Sky，看到了非常漂亮的景色。&lt;/p&gt;
 &lt;figure&gt;&lt;img src=&#34;https://serendipityerr.github.io/post_img/2026-02-16/vancouver.png&#34;
     alt=&#34;Vancouver&#34; width=&#34;600px&#34;&gt;&lt;figcaption&gt;
       &lt;p&gt;Vancouver&lt;/p&gt;
@@ -5353,7 +5353,7 @@ e.g.&lt;/p&gt;
         <item>
         <title>Search</title>
         <link>https://serendipityerr.github.io/search/</link>
-        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        <pubDate>Tue, 16 Jul 2024 00:00:00 +0000</pubDate>
         
         <guid>https://serendipityerr.github.io/search/</guid>
         <description></description>
