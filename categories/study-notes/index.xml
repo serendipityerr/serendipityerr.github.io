@@ -185,6 +185,36 @@ $$&lt;p&gt;where we have $\langle \mathrm{d}x_t \rangle = f(x_t, u_t, t) \mathrm
 $$
 -\partial_t J(x_t, t) = \min_{u_{t}} \left( R (x_t, u_t, t) + f(x_t, u_t, t) \partial_{x_t}J(x_{t}, t) + \frac{g_t^2}{2} \partial^2_{x_t} J(x_{t}, t) \right)
 $$&lt;p&gt;We can easily find that when $g_t \rightarrow 0$, the equation above would degrade to the deterministic one as we discussed in the &lt;a class=&#34;link&#34; href=&#34;#deterministic-continuous-time-control&#34; &gt;Section&lt;/a&gt; above (Deterministic Continuous Time Control).&lt;/p&gt;
+&lt;h3 id=&#34;girsanov-theorem-and-measure-transformation&#34;&gt;Girsanov Theorem and Measure Transformation
+&lt;/h3&gt;&lt;p&gt;In this section, we consider the transformation of probability measures for continuous-time stochastic processes. This theorem provides the mathematical foundation for connecting uncontrolled random dynamics with controlled dynamics, which is crucial for Path Integral Control.&lt;/p&gt;
+&lt;p&gt;Consider a base stochastic dynamics (uncontrolled process) defined by a Stochastic Differential Equation (SDE) under the probability measure $\mathbb{P}$:&lt;/p&gt;
+$$
+\mathrm{d}x_t = f(x_t, t) \mathrm{d}t + g_t \mathrm{d}w_t^{\mathbb{P}},
+$$&lt;p&gt;where $w_t^{\mathbb{P}}$ is the standard Wiener process under measure $\mathbb{P}$.&lt;/p&gt;
+&lt;p&gt;Now, assume we apply an external control $u_t$ to the system, altering its drift. The controlled dynamics under a new target measure $\mathbb{Q}$ is given by:&lt;/p&gt;
+$$
+\mathrm{d}x_t = \left( f(x_t, t) + g_t u_t \right) \mathrm{d}t + g_t \mathrm{d}w_t^{\mathbb{Q}}
+$$&lt;p&gt;where $w_t^{\mathbb{Q}}$ is the standard Wiener process under the new measure $\mathbb{Q}$. Notice that the diffusion coefficient $g_t$ must remain identical for the two measures to be equivalent (mutually absolutely continuous).&lt;/p&gt;
+&lt;p&gt;Girsanov Theorem states that the Radon-Nikodym derivative (the probability density ratio of the path measures) between the controlled universe $\mathbb{Q}$ and the uncontrolled universe $\mathbb{P}$ over the time interval $[0, T]$ is given by:&lt;/p&gt;
+$$
+\frac{\mathrm{d}\mathbb{Q}}{\mathrm{d}\mathbb{P}} = \exp\left( \int_0^T u_t^\top \mathrm{d}w_t^{\mathbb{P}} - \frac{1}{2} \int_0^T \|u_t\|^2 \mathrm{d}t \right)
+$$&lt;p&gt;Since the path distributions are different, we are often interested in the information-theoretic distance between them, namely the Kullback-Leibler (KL) divergence. We evaluate the expectation of the log-likelihood ratio under the controlled measure $\mathbb{Q}$:&lt;/p&gt;
+$$
+D_{KL}(\mathbb{Q} \parallel \mathbb{P}) = \mathbb{E}_{\mathbb{Q}} \left[ \log \frac{\mathrm{d}\mathbb{Q}}{\mathrm{d}\mathbb{P}} \right]
+$$&lt;p&gt;To compute this, we first substitute the relationship between the Wiener processes under the two measures, $\mathrm{d}w_t^{\mathbb{P}} = \mathrm{d}w_t^{\mathbb{Q}} + u_t \mathrm{d}t$, into the integral:&lt;/p&gt;
+$$
+\begin{aligned}
+\mathbb{E}_{\mathbb{Q}} \left[ \log \frac{\mathrm{d}\mathbb{Q}}{\mathrm{d}\mathbb{P}} \right] &amp;= \mathbb{E}_{\mathbb{Q}} \left[ \int_0^T u_t^\top \left( \mathrm{d}w_t^{\mathbb{Q}} + u_t \mathrm{d}t \right) - \frac{1}{2} \int_0^T \|u_t\|^2 \mathrm{d}t \right] \\
+&amp;= \mathbb{E}_{\mathbb{Q}} \left[ \int_0^T u_t^\top \mathrm{d}w_t^{\mathbb{Q}} + \int_0^T \|u_t\|^2 \mathrm{d}t - \frac{1}{2} \int_0^T \|u_t\|^2 \mathrm{d}t \right] \\
+&amp;= \mathbb{E}_{\mathbb{Q}} \left[ \int_0^T u_t^\top \mathrm{d}w_t^{\mathbb{Q}} \right] + \mathbb{E}_{\mathbb{Q}} \left[ \int_0^T \frac{1}{2} \|u_t\|^2 \mathrm{d}t \right]
+\end{aligned}
+$$&lt;p&gt;A fundamental property of the Itô integral is that the integral with respect to Brownian motion $\int u_t^\top \mathrm{d}w_t^{\mathbb{Q}}$ is a martingale under the measure $\mathbb{Q}$, meaning its expectation evaluates to zero:&lt;/p&gt;
+$$
+\mathbb{E}_{\mathbb{Q}} \left[ \int_0^T u_t^\top \mathrm{d}w_t^{\mathbb{Q}} \right] = 0
+$$&lt;p&gt;Therefore, the equation elegantly simplifies to:&lt;/p&gt;
+$$
+D_{KL}(\mathbb{Q} \parallel \mathbb{P}) = \mathbb{E}_{\mathbb{Q}} \left[ \int_0^T \frac{1}{2} \|u_t\|^2 \mathrm{d}t \right].
+$$&lt;p&gt;We can easily find that the KL divergence (information-theoretic distance) between the controlled and uncontrolled path measures is exactly equivalent to the cumulative quadratic control cost. This perfectly explains why minimizing the control effort in Stochastic Optimal Control is mathematically equivalent to minimizing the discrepancy between probability distributions.&lt;/p&gt;
 </description>
         </item>
         <item>

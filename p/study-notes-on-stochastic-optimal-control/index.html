@@ -263,7 +263,11 @@
         <li><a href="#pontryagin-minimum-principle">Pontryagin Minimum Principle</a></li>
       </ol>
     </li>
-    <li><a href="#stochastic-optimal-control">Stochastic Optimal Control</a></li>
+    <li><a href="#stochastic-optimal-control">Stochastic Optimal Control</a>
+      <ol>
+        <li><a href="#girsanov-theorem-and-measure-transformation">Girsanov Theorem and Measure Transformation</a></li>
+      </ol>
+    </li>
   </ol>
 </nav>
         </div>
@@ -328,7 +332,7 @@
 
 
                 <time class="article-time--reading">
-                    8 minute read
+                    10 minute read
                 </time>
             </div>
         
@@ -482,6 +486,36 @@ $$<p>where we have $\langle \mathrm{d}x_t \rangle = f(x_t, u_t, t) \mathrm{d} t$
 $$
 -\partial_t J(x_t, t) = \min_{u_{t}} \left( R (x_t, u_t, t) + f(x_t, u_t, t) \partial_{x_t}J(x_{t}, t) + \frac{g_t^2}{2} \partial^2_{x_t} J(x_{t}, t) \right)
 $$<p>We can easily find that when $g_t \rightarrow 0$, the equation above would degrade to the deterministic one as we discussed in the <a class="link" href="#deterministic-continuous-time-control" >Section</a> above (Deterministic Continuous Time Control).</p>
+<h3 id="girsanov-theorem-and-measure-transformation">Girsanov Theorem and Measure Transformation
+</h3><p>In this section, we consider the transformation of probability measures for continuous-time stochastic processes. This theorem provides the mathematical foundation for connecting uncontrolled random dynamics with controlled dynamics, which is crucial for Path Integral Control.</p>
+<p>Consider a base stochastic dynamics (uncontrolled process) defined by a Stochastic Differential Equation (SDE) under the probability measure $\mathbb{P}$:</p>
+$$
+\mathrm{d}x_t = f(x_t, t) \mathrm{d}t + g_t \mathrm{d}w_t^{\mathbb{P}},
+$$<p>where $w_t^{\mathbb{P}}$ is the standard Wiener process under measure $\mathbb{P}$.</p>
+<p>Now, assume we apply an external control $u_t$ to the system, altering its drift. The controlled dynamics under a new target measure $\mathbb{Q}$ is given by:</p>
+$$
+\mathrm{d}x_t = \left( f(x_t, t) + g_t u_t \right) \mathrm{d}t + g_t \mathrm{d}w_t^{\mathbb{Q}}
+$$<p>where $w_t^{\mathbb{Q}}$ is the standard Wiener process under the new measure $\mathbb{Q}$. Notice that the diffusion coefficient $g_t$ must remain identical for the two measures to be equivalent (mutually absolutely continuous).</p>
+<p>Girsanov Theorem states that the Radon-Nikodym derivative (the probability density ratio of the path measures) between the controlled universe $\mathbb{Q}$ and the uncontrolled universe $\mathbb{P}$ over the time interval $[0, T]$ is given by:</p>
+$$
+\frac{\mathrm{d}\mathbb{Q}}{\mathrm{d}\mathbb{P}} = \exp\left( \int_0^T u_t^\top \mathrm{d}w_t^{\mathbb{P}} - \frac{1}{2} \int_0^T \|u_t\|^2 \mathrm{d}t \right)
+$$<p>Since the path distributions are different, we are often interested in the information-theoretic distance between them, namely the Kullback-Leibler (KL) divergence. We evaluate the expectation of the log-likelihood ratio under the controlled measure $\mathbb{Q}$:</p>
+$$
+D_{KL}(\mathbb{Q} \parallel \mathbb{P}) = \mathbb{E}_{\mathbb{Q}} \left[ \log \frac{\mathrm{d}\mathbb{Q}}{\mathrm{d}\mathbb{P}} \right]
+$$<p>To compute this, we first substitute the relationship between the Wiener processes under the two measures, $\mathrm{d}w_t^{\mathbb{P}} = \mathrm{d}w_t^{\mathbb{Q}} + u_t \mathrm{d}t$, into the integral:</p>
+$$
+\begin{aligned}
+\mathbb{E}_{\mathbb{Q}} \left[ \log \frac{\mathrm{d}\mathbb{Q}}{\mathrm{d}\mathbb{P}} \right] &= \mathbb{E}_{\mathbb{Q}} \left[ \int_0^T u_t^\top \left( \mathrm{d}w_t^{\mathbb{Q}} + u_t \mathrm{d}t \right) - \frac{1}{2} \int_0^T \|u_t\|^2 \mathrm{d}t \right] \\
+&= \mathbb{E}_{\mathbb{Q}} \left[ \int_0^T u_t^\top \mathrm{d}w_t^{\mathbb{Q}} + \int_0^T \|u_t\|^2 \mathrm{d}t - \frac{1}{2} \int_0^T \|u_t\|^2 \mathrm{d}t \right] \\
+&= \mathbb{E}_{\mathbb{Q}} \left[ \int_0^T u_t^\top \mathrm{d}w_t^{\mathbb{Q}} \right] + \mathbb{E}_{\mathbb{Q}} \left[ \int_0^T \frac{1}{2} \|u_t\|^2 \mathrm{d}t \right]
+\end{aligned}
+$$<p>A fundamental property of the Itô integral is that the integral with respect to Brownian motion $\int u_t^\top \mathrm{d}w_t^{\mathbb{Q}}$ is a martingale under the measure $\mathbb{Q}$, meaning its expectation evaluates to zero:</p>
+$$
+\mathbb{E}_{\mathbb{Q}} \left[ \int_0^T u_t^\top \mathrm{d}w_t^{\mathbb{Q}} \right] = 0
+$$<p>Therefore, the equation elegantly simplifies to:</p>
+$$
+D_{KL}(\mathbb{Q} \parallel \mathbb{P}) = \mathbb{E}_{\mathbb{Q}} \left[ \int_0^T \frac{1}{2} \|u_t\|^2 \mathrm{d}t \right].
+$$<p>We can easily find that the KL divergence (information-theoretic distance) between the controlled and uncontrolled path measures is exactly equivalent to the cumulative quadratic control cost. This perfectly explains why minimizing the control effort in Stochastic Optimal Control is mathematically equivalent to minimizing the discrepancy between probability distributions.</p>
 
 </section>
 
