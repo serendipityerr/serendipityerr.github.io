@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="Difference Between PCA and AutoEncoder\rPCA\rSuppose there are m n-dimensional data, $ X_{n \\times m} = [x_1, x_2,&hellip;, x_m]$, where each $x$ is an n-dimensional column vector.\nReduce Dimensionality\rDecentralize the data: $x_{i} = x_{i} - \\frac{1}{m} \\sum_{j=1}^{m} x_{j}$ and update $X$ Calculate the Covariance matrix: $C = \\frac{1}{m} XX^T$ Take eigenvalue decomposition of the Covariance matrix $C$ and get the eigenvector matrix (the eigenvector is arranged in columns from the related largest to smallest eigenvalues). Take the first $k$ columns to form the matrix $P_{n \\times k}$ Project the original data into the $P$ coordinate system to get the dimensionality reduced data: $Y_{k \\times m} = P_{n \\times k}^T \\times X_{n \\times m}$, which is a linear transformation. The dimension of the data after PCA is changed compared to the origin data. Data Reconstruction\rPCA is lossy, that is, the compressed data does not maintain all the information of the original data, so the compressed data can not be restored back to the original high-dimensional data, but the restored data can be regarded as an approximation of the original data: $X_{n \\times m}^{&rsquo;} = P_{n \\times k} Y_{k \\times m}$\n">
-<title>PCA and AutoEncoder</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="Introduction to KL Divergence\rDefinition\rKL divergence (also known as relative entropy) is used to measure the difference between two probability distributions $p(x)$ and $q(x)$.\n$$ D_{\\text{KL}}(P \\ \\Vert \\ Q) = \\sum_{x \\in \\mathcal{X}} P(x) \\log \\frac{P(x)}{Q(x)}. $$$$ D_{\\text{KL}}(p \\ \\Vert \\ q) = \\int_{\\mathcal{X}} p(x) \\log \\frac{p(x)}{q(x)} dx = \\mathbb{E}_{x \\sim p(x)} \\left[ \\log \\frac{p(x)}{q(x)} \\right]. $$In the following sections, we mainly focus on the continuous version.\nKey Properties\rNon-negativity (Gibbs&rsquo; Inequality): $D_{\\text{KL}}(p \\ \\Vert \\ q) \\geq 0$ iff $p(x) = q(x)$ (almost anywhere). Asymmetry: Generally, $D_{\\text{KL}}(p \\ \\Vert \\ q) \\neq D_{\\text{KL}}(q \\ \\Vert \\ p)$. Therefore, KL divergence is not a true distance metric. Forward KL vs. Reverse KL\rIn machine learning, we often aim to minimize the discrepancy between a true distribution $p(x)$ and a model distribution $q_\\theta(x)$. The optimization objective varies depending on which distribution is placed in the expectation operator. Define the two optimization objectives:\n">
+<title>Study Notes on Forward and Reverse KL Divergence</title>
 
-<link rel='canonical' href='https://serendipityerr.github.io/p/pca-and-autoencoder/'>
+<link rel='canonical' href='https://serendipityerr.github.io/p/study-notes-on-forward-and-reverse-kl-divergence/'>
 
-<link rel="stylesheet" href="/scss/style.min.b9c8156d464c343bdacaf14a871581fb94cbbdb9dd5cbce4ba017361187cc930.css"><meta property='og:title' content="PCA and AutoEncoder">
-<meta property='og:description' content="Difference Between PCA and AutoEncoder\rPCA\rSuppose there are m n-dimensional data, $ X_{n \\times m} = [x_1, x_2,&hellip;, x_m]$, where each $x$ is an n-dimensional column vector.\nReduce Dimensionality\rDecentralize the data: $x_{i} = x_{i} - \\frac{1}{m} \\sum_{j=1}^{m} x_{j}$ and update $X$ Calculate the Covariance matrix: $C = \\frac{1}{m} XX^T$ Take eigenvalue decomposition of the Covariance matrix $C$ and get the eigenvector matrix (the eigenvector is arranged in columns from the related largest to smallest eigenvalues). Take the first $k$ columns to form the matrix $P_{n \\times k}$ Project the original data into the $P$ coordinate system to get the dimensionality reduced data: $Y_{k \\times m} = P_{n \\times k}^T \\times X_{n \\times m}$, which is a linear transformation. The dimension of the data after PCA is changed compared to the origin data. Data Reconstruction\rPCA is lossy, that is, the compressed data does not maintain all the information of the original data, so the compressed data can not be restored back to the original high-dimensional data, but the restored data can be regarded as an approximation of the original data: $X_{n \\times m}^{&rsquo;} = P_{n \\times k} Y_{k \\times m}$\n">
-<meta property='og:url' content='https://serendipityerr.github.io/p/pca-and-autoencoder/'>
+<link rel="stylesheet" href="/scss/style.min.b9c8156d464c343bdacaf14a871581fb94cbbdb9dd5cbce4ba017361187cc930.css"><meta property='og:title' content="Study Notes on Forward and Reverse KL Divergence">
+<meta property='og:description' content="Introduction to KL Divergence\rDefinition\rKL divergence (also known as relative entropy) is used to measure the difference between two probability distributions $p(x)$ and $q(x)$.\n$$ D_{\\text{KL}}(P \\ \\Vert \\ Q) = \\sum_{x \\in \\mathcal{X}} P(x) \\log \\frac{P(x)}{Q(x)}. $$$$ D_{\\text{KL}}(p \\ \\Vert \\ q) = \\int_{\\mathcal{X}} p(x) \\log \\frac{p(x)}{q(x)} dx = \\mathbb{E}_{x \\sim p(x)} \\left[ \\log \\frac{p(x)}{q(x)} \\right]. $$In the following sections, we mainly focus on the continuous version.\nKey Properties\rNon-negativity (Gibbs&rsquo; Inequality): $D_{\\text{KL}}(p \\ \\Vert \\ q) \\geq 0$ iff $p(x) = q(x)$ (almost anywhere). Asymmetry: Generally, $D_{\\text{KL}}(p \\ \\Vert \\ q) \\neq D_{\\text{KL}}(q \\ \\Vert \\ p)$. Therefore, KL divergence is not a true distance metric. Forward KL vs. Reverse KL\rIn machine learning, we often aim to minimize the discrepancy between a true distribution $p(x)$ and a model distribution $q_\\theta(x)$. The optimization objective varies depending on which distribution is placed in the expectation operator. Define the two optimization objectives:\n">
+<meta property='og:url' content='https://serendipityerr.github.io/p/study-notes-on-forward-and-reverse-kl-divergence/'>
 <meta property='og:site_name' content='Serendipity&#39;s Blog'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Machine Learning' /><meta property='article:published_time' content='2024-07-20T14:13:42&#43;08:00'/><meta property='article:modified_time' content='2024-07-20T14:13:42&#43;08:00'/>
-<meta name="twitter:title" content="PCA and AutoEncoder">
-<meta name="twitter:description" content="Difference Between PCA and AutoEncoder\rPCA\rSuppose there are m n-dimensional data, $ X_{n \\times m} = [x_1, x_2,&hellip;, x_m]$, where each $x$ is an n-dimensional column vector.\nReduce Dimensionality\rDecentralize the data: $x_{i} = x_{i} - \\frac{1}{m} \\sum_{j=1}^{m} x_{j}$ and update $X$ Calculate the Covariance matrix: $C = \\frac{1}{m} XX^T$ Take eigenvalue decomposition of the Covariance matrix $C$ and get the eigenvector matrix (the eigenvector is arranged in columns from the related largest to smallest eigenvalues). Take the first $k$ columns to form the matrix $P_{n \\times k}$ Project the original data into the $P$ coordinate system to get the dimensionality reduced data: $Y_{k \\times m} = P_{n \\times k}^T \\times X_{n \\times m}$, which is a linear transformation. The dimension of the data after PCA is changed compared to the origin data. Data Reconstruction\rPCA is lossy, that is, the compressed data does not maintain all the information of the original data, so the compressed data can not be restored back to the original high-dimensional data, but the restored data can be regarded as an approximation of the original data: $X_{n \\times m}^{&rsquo;} = P_{n \\times k} Y_{k \\times m}$\n">
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Math' /><meta property='article:published_time' content='2026-07-17T23:02:04&#43;08:00'/><meta property='article:modified_time' content='2026-07-17T23:02:04&#43;08:00'/>
+<meta name="twitter:title" content="Study Notes on Forward and Reverse KL Divergence">
+<meta name="twitter:description" content="Introduction to KL Divergence\rDefinition\rKL divergence (also known as relative entropy) is used to measure the difference between two probability distributions $p(x)$ and $q(x)$.\n$$ D_{\\text{KL}}(P \\ \\Vert \\ Q) = \\sum_{x \\in \\mathcal{X}} P(x) \\log \\frac{P(x)}{Q(x)}. $$$$ D_{\\text{KL}}(p \\ \\Vert \\ q) = \\int_{\\mathcal{X}} p(x) \\log \\frac{p(x)}{q(x)} dx = \\mathbb{E}_{x \\sim p(x)} \\left[ \\log \\frac{p(x)}{q(x)} \\right]. $$In the following sections, we mainly focus on the continuous version.\nKey Properties\rNon-negativity (Gibbs&rsquo; Inequality): $D_{\\text{KL}}(p \\ \\Vert \\ q) \\geq 0$ iff $p(x) = q(x)$ (almost anywhere). Asymmetry: Generally, $D_{\\text{KL}}(p \\ \\Vert \\ q) \\neq D_{\\text{KL}}(q \\ \\Vert \\ p)$. Therefore, KL divergence is not a true distance metric. Forward KL vs. Reverse KL\rIn machine learning, we often aim to minimize the discrepancy between a true distribution $p(x)$ and a model distribution $q_\\theta(x)$. The optimization objective varies depending on which distribution is placed in the expectation operator. Define the two optimization objectives:\n">
     <link rel="shortcut icon" href="/favicon.ico" />
 
     </head>
@@ -256,20 +256,19 @@
         <div class="widget--toc">
             <nav id="TableOfContents">
   <ol>
-    <li><a href="#difference-between-pca-and-autoencoder">Difference Between PCA and AutoEncoder</a>
+    <li><a href="#introduction-to-kl-divergence">Introduction to KL Divergence</a>
       <ol>
-        <li><a href="#pca">PCA</a>
+        <li><a href="#definition">Definition</a></li>
+        <li><a href="#key-properties">Key Properties</a></li>
+      </ol>
+    </li>
+    <li><a href="#forward-kl-vs-reverse-kl">Forward KL vs. Reverse KL</a>
+      <ol>
+        <li><a href="#ideal-cases">Ideal Cases</a></li>
+        <li><a href="#practical-cases">Practical Cases</a>
           <ol>
-            <li><a href="#reduce-dimensionality">Reduce Dimensionality</a></li>
-            <li><a href="#data-reconstruction">Data Reconstruction</a></li>
-          </ol>
-        </li>
-        <li><a href="#autoencoder">AutoEncoder</a>
-          <ol>
-            <li><a href="#encoder">Encoder</a></li>
-            <li><a href="#decoder">Decoder</a></li>
-            <li><a href="#how-to-design-the-network">How to design the network</a></li>
-            <li><a href="#code-example">Code Example:</a></li>
+            <li><a href="#forward-kl-divergence">Forward KL Divergence</a></li>
+            <li><a href="#reverse-kl-divergence">Reverse KL Divergence</a></li>
           </ol>
         </li>
       </ol>
@@ -301,7 +300,7 @@
 
     <div class="article-title-wrapper">
         <h2 class="article-title">
-            <a href="/p/pca-and-autoencoder/">PCA and AutoEncoder</a>
+            <a href="/p/study-notes-on-forward-and-reverse-kl-divergence/">Study Notes on Forward and Reverse KL Divergence</a>
         </h2>
     
         
@@ -323,7 +322,7 @@
   <path d="M3 11h16" />
   <path d="M18 16.496v1.504l1 1" />
 </svg>
-                <time class="article-time--published">Jul 20, 2024</time>
+                <time class="article-time--published">Jul 17, 2026</time>
             </div>
         
 
@@ -338,7 +337,7 @@
 
 
                 <time class="article-time--reading">
-                    3 minute read
+                    4 minute read
                 </time>
             </div>
         
@@ -353,75 +352,56 @@
     <section class="article-content">
     
     
-    <h2 id="difference-between-pca-and-autoencoder">Difference Between PCA and AutoEncoder
-</h2><h3 id="pca">PCA
-</h3><p>Suppose there are m n-dimensional data, $ X_{n \times m} = [x_1, x_2,&hellip;, x_m]$, where each $x$ is an n-dimensional column vector.</p>
-<h4 id="reduce-dimensionality">Reduce Dimensionality
-</h4><ol>
-<li>Decentralize the data: $x_{i} = x_{i} - \frac{1}{m} \sum_{j=1}^{m} x_{j}$ and update $X$</li>
-<li>Calculate the Covariance matrix: $C = \frac{1}{m} XX^T$</li>
-<li>Take eigenvalue decomposition of the Covariance matrix $C$ and get the eigenvector matrix (the eigenvector is arranged in columns from the related largest to smallest eigenvalues). Take the first $k$ columns to form the matrix $P_{n \times k}$</li>
-<li>Project the original data into the $P$ coordinate system to get the dimensionality reduced data: $Y_{k \times m} = P_{n \times k}^T \times X_{n \times m}$, which is <strong>a linear transformation</strong>. <strong>The dimension of the data after PCA is changed compared to the origin data.</strong></li>
+    <h2 id="introduction-to-kl-divergence">Introduction to KL Divergence
+</h2><h3 id="definition">Definition
+</h3><p>KL divergence (also known as relative entropy) is used to measure the difference between two probability distributions $p(x)$ and $q(x)$.</p>
+$$
+D_{\text{KL}}(P \ \Vert \ Q) = \sum_{x \in \mathcal{X}} P(x) \log \frac{P(x)}{Q(x)}.
+$$$$
+D_{\text{KL}}(p \ \Vert \ q) = \int_{\mathcal{X}} p(x) \log \frac{p(x)}{q(x)} dx = \mathbb{E}_{x \sim p(x)} \left[ \log \frac{p(x)}{q(x)} \right].
+$$<p>In the following sections, we mainly focus on the continuous version.</p>
+<h3 id="key-properties">Key Properties
+</h3><ol>
+<li><strong>Non-negativity (Gibbs&rsquo; Inequality)</strong>: $D_{\text{KL}}(p \ \Vert \ q) \geq 0$ iff $p(x) = q(x)$ (almost anywhere).</li>
+<li><strong>Asymmetry</strong>: Generally, $D_{\text{KL}}(p \ \Vert \ q) \neq D_{\text{KL}}(q \ \Vert \ p)$. Therefore, KL divergence is <strong>not</strong> a true distance metric.</li>
 </ol>
-<h4 id="data-reconstruction">Data Reconstruction
-</h4><p>PCA is lossy, that is, the compressed data does not maintain all the information of the original data, so the compressed data can not be restored back to the original high-dimensional data, but the restored data can be regarded as an approximation of the original data: $X_{n \times m}^{&rsquo;} = P_{n \times k} Y_{k \times m}$</p>
-<h3 id="autoencoder">AutoEncoder
-</h3><h4 id="encoder">Encoder
-</h4><p>The original data $X$ is input, and then compressed according to the network model, the original high dimensional data $X$ is compressed into low dimensional data C, and these low dimensional data is usually customarily referred to as latent vector, the original data after the activation function operation of the <strong>nonlinear</strong> hidden layer, the original data will be transformed into a low dimensional space, this space is considered to be the high-feature space. After the original data is operated by the activation function of the nonlinear hidden layer, the original data will be transformed to a low-dimensional space, which is considered as the high-feature space. AutoEncoder is <strong>a non-linear transformation</strong>. <strong>The dimension of the data after Encoder is the same as the origin data.</strong></p>
-<h4 id="decoder">Decoder
-</h4><p>Convert the original implicit layer data back into the original data space.</p>
-<h4 id="how-to-design-the-network">How to design the network
-</h4><p>For simple datasets such as MNIST, a network with <strong>1-2</strong> hidden layers is usually sufficient. However, a network with 3 or more hidden layers can capture more complex features, but can also lead to overfitting.</p>
-<p>As for MNIST, the number of nodes in the hidden layer should decrease layer by layer, usually the number of nodes in the last layer of the encoder, i.e., the dimension of the potential space, can be chosen from <strong>32</strong> to <strong>128</strong>.</p>
-<h4 id="code-example">Code Example:
-</h4><p>AutoEncoder on MNIST dataset:</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
-</span><span class="lnt">8
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="bp">self</span><span class="o">.</span><span class="n">encoder</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">Sequential</span><span class="p">(</span>
-</span></span><span class="line"><span class="cl">               <span class="n">nn</span><span class="o">.</span><span class="n">Linear</span><span class="p">(</span><span class="mi">28</span> <span class="o">*</span> <span class="mi">28</span><span class="p">,</span> <span class="mi">128</span><span class="p">),</span>
-</span></span><span class="line"><span class="cl">               <span class="n">nn</span><span class="o">.</span><span class="n">ReLU</span><span class="p">(</span><span class="kc">True</span><span class="p">),</span>
-</span></span><span class="line"><span class="cl">               <span class="n">nn</span><span class="o">.</span><span class="n">Linear</span><span class="p">(</span><span class="mi">128</span><span class="p">,</span> <span class="mi">64</span><span class="p">),</span>
-</span></span><span class="line"><span class="cl">               <span class="n">nn</span><span class="o">.</span><span class="n">ReLU</span><span class="p">(</span><span class="kc">True</span><span class="p">),</span> 
-</span></span><span class="line"><span class="cl">               <span class="n">nn</span><span class="o">.</span><span class="n">Linear</span><span class="p">(</span><span class="mi">64</span><span class="p">,</span> <span class="mi">32</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">               <span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># Design of the network can be changed</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div><div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
-</span><span class="lnt">8
-</span><span class="lnt">9
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="bp">self</span><span class="o">.</span><span class="n">decoder</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">Sequential</span><span class="p">(</span>
-</span></span><span class="line"><span class="cl">            <span class="n">nn</span><span class="o">.</span><span class="n">Linear</span><span class="p">(</span><span class="mi">32</span><span class="p">,</span> <span class="mi">64</span><span class="p">),</span>
-</span></span><span class="line"><span class="cl">            <span class="n">nn</span><span class="o">.</span><span class="n">ReLU</span><span class="p">(</span><span class="kc">True</span><span class="p">),</span>
-</span></span><span class="line"><span class="cl">            <span class="n">nn</span><span class="o">.</span><span class="n">Linear</span><span class="p">(</span><span class="mi">64</span><span class="p">,</span> <span class="mi">128</span><span class="p">),</span>
-</span></span><span class="line"><span class="cl">            <span class="n">nn</span><span class="o">.</span><span class="n">ReLU</span><span class="p">(</span><span class="kc">True</span><span class="p">),</span> 
-</span></span><span class="line"><span class="cl">            <span class="n">nn</span><span class="o">.</span><span class="n">Linear</span><span class="p">(</span><span class="mi">128</span><span class="p">,</span> <span class="mi">28</span> <span class="o">*</span> <span class="mi">28</span><span class="p">),</span> 
-</span></span><span class="line"><span class="cl">            <span class="n">nn</span><span class="o">.</span><span class="n">Tanh</span><span class="p">()</span>
-</span></span><span class="line"><span class="cl">            <span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># Design of the network can be changed</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div>
+<h2 id="forward-kl-vs-reverse-kl">Forward KL vs. Reverse KL
+</h2><p>In machine learning, we often aim to minimize the discrepancy between a true distribution $p(x)$ and a model distribution $q_\theta(x)$. The optimization objective varies depending on which distribution is placed in the expectation operator. Define the two optimization objectives:</p>
+<ol>
+<li>forward KL divergence: $\min_{q} D_{\text{KL}}(p \ \Vert \ q)$</li>
+<li>reverse KL divergence: $\min_{q} D_{\text{KL}}(q \ \Vert \ p)$</li>
+</ol>
+<h3 id="ideal-cases">Ideal Cases
+</h3>$$
+\begin{gathered}
+\arg\min_{q} D_{\text{KL}}(p \ \Vert \ q) = 0 \ \Rightarrow \ q^*(x) = p(x) \\
+\arg\min_{q} D_{\text{KL}}(q \ \Vert \ p) = 0 \ \Rightarrow \ q^*(x) = p(x)
+\end{gathered}
+$$<p>Under this ideal mathematical assumption, the optimal solution is the target distribution itself. Therefore, in this case, optimizing both forward and backward KL divergence are equivalent.</p>
+<h3 id="practical-cases">Practical Cases
+</h3><p>In practice, the model distribution $q_\theta(x)$ is determined by the parameter $\theta$ (e.g., a single Gaussian distribution or a neural network with a specific architecture), and it constitutes a restricted hypothesis space $\mathcal{Q}<em>\theta$. The true distribution $p(x)$, however, is often extremely complex and does not belong to the set $\mathcal{Q}</em>\theta$ at all. This implies that $\min D_{\text{KL}} &gt; 0$.</p>
+<p>In this case, the objective functions for the forward and backward KL divergences will cause the parameters $\theta^*$ to converge in completely different directions. We will perform a rigorous derivation using the example of fitting an arbitrary complex distribution with a single Gaussian distribution.</p>
+<p>Suppose the target distribution $p(x)$ is an unknown complex multimodal distribution, and the model distribution is a Gaussian distribution $q_\theta(x) = \mathcal{N}(x; \mu, \Sigma)$, with parameters $\theta = {\mu, \Sigma}$.</p>
+<h4 id="forward-kl-divergence">Forward KL Divergence
+</h4>$$
+\min_\theta D_{\text{KL}}(p \ \Vert \ q_\theta) = \mathbb{E}_{x \sim p(x)} \left[\log \frac{p(x)}{q_\theta(x)}\right] = \mathbb{E}_{x \sim p(x)} [\log p(x) - \log q_\theta(x)].
+$$$$
+\theta^* = \arg\max_\theta \mathbb{E}_{x \sim p(x)}[\log q_\theta(x)]
+$$$$
+\mu^* = \arg\max_\mu \mathbb{E}_{x \sim p(x)}\left[ -\frac{1}{2}(x-\mu)^T \Sigma^{-1} (x-\mu) \right]
+$$$$0 = \nabla_\mu \mathbb{E}_{x \sim p(x)} \left[ -\frac{1}{2}(x-\mu)^T \Sigma^{-1} (x-\mu) \right] = \mathbb{E}_{x \sim p(x)}[\Sigma^{-1}(x-\mu)]$$$$
+\mu^* = \mathbb{E}_{x \sim p(x)}[x]
+$$<p><strong>Conclusion</strong>: The optimal mean is the <strong>global mean</strong> of the true distribution, covering all modes. If the target distribution consists of two peaks that are very far apart (such as the distributions of cat and dog images), the model’s mean will be firmly locked at the physical center between these two peaks (which is often a meaningless “valley” region with no probability mass at all). This is why it is called <strong>Mode Covering</strong> (also known as Mean-Seeking, Zero-Avoiding).</p>
+<h4 id="reverse-kl-divergence">Reverse KL Divergence
+</h4>$$
+\min_\theta D_{\text{KL}}(q_\theta \ \Vert \ p) = \mathbb{E}_{x \sim q_\theta(x)} \left[\log \frac{q_\theta(x)}{p(x)}\right] = -H(q_\theta(x)) + \mathbb{E}_{x \sim q_\theta(x)} \left[ -\log p(x) \right]
+$$<p>The objective function here consists of two parts, which is the essence of maximizing the ELBO in variational inference:</p>
+<ol>
+<li>The cross-entropy term $\mathbb{E}<em>{q</em>\theta}[-\log p(x)]$: This requires that $q_\theta(x)$ be concentrated in regions where $p(x)$ is large. If $q_\theta$ allocates probability mass to the “valley” regions where $p(x) \approx 0$, causing $-\log p(x) \to \infty$, the penalty from this term will instantly explode.</li>
+<li>Negative entropy term $-H(q_\theta)$: This requires that the variance of $q_\theta(x)$ itself be as small as possible (the more concentrated the distribution, the smaller the negative entropy).</li>
+</ol>
+<p><strong>Conclusion</strong>: The model collapses to a single mode to avoid low-density regions of $p(x)$. Its optimal solution is to select, from among the numerous peaks in $p(x)$, the local peak (mode) with the largest “area” and the easiest to fit, then place $\mu^*$ at the vertex of this peak and shrink the variance $\Sigma$ so that it is completely contained within this single peak. This is why it is called <strong>Mode-Seeking</strong> (also known as Zero-Forcing).</p>
+
 </section>
 
 
@@ -429,7 +409,7 @@
     
     <section class="article-tags">
         
-            <a href="/tags/machine-learning/">Machine Learning</a>
+            <a href="/tags/math/">Math</a>
         
     </section>
 
@@ -489,6 +469,19 @@
             
                 
 <article class="">
+    <a href="/p/study-notes-on-stochastic-optimal-control/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Study Notes on Stochastic Optimal Control</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
     <a href="/p/study-notes-on-stochastic-differential-equations/">
         
         
@@ -515,12 +508,12 @@
             
                 
 <article class="">
-    <a href="/p/2024.07.18/">
+    <a href="/p/study-notes-on-optimal-transport/">
         
         
 
         <div class="article-details">
-            <h2 class="article-title">2024.07.18</h2>
+            <h2 class="article-title">Study Notes on Optimal Transport</h2>
         </div>
     </a>
 </article>
@@ -528,25 +521,12 @@
             
                 
 <article class="">
-    <a href="/p/study-notes-on-forward-and-reverse-kl-divergence/">
+    <a href="/p/study-notes-on-database/">
         
         
 
         <div class="article-details">
-            <h2 class="article-title">Study Notes on Forward and Reverse KL Divergence</h2>
-        </div>
-    </a>
-</article>
-
-            
-                
-<article class="">
-    <a href="/p/study-notes-on-stochastic-optimal-control/">
-        
-        
-
-        <div class="article-details">
-            <h2 class="article-title">Study Notes on Stochastic Optimal Control</h2>
+            <h2 class="article-title">Study Notes on DataBase</h2>
         </div>
     </a>
 </article>

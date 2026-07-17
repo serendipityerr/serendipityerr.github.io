@@ -6,7 +6,64 @@
         <description>Recent content on Serendipity&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Mon, 16 Feb 2026 11:12:04 +0800</lastBuildDate><atom:link href="https://serendipityerr.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Fri, 17 Jul 2026 23:02:04 +0800</lastBuildDate><atom:link href="https://serendipityerr.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Study Notes on Forward and Reverse KL Divergence</title>
+        <link>https://serendipityerr.github.io/p/study-notes-on-forward-and-reverse-kl-divergence/</link>
+        <pubDate>Fri, 17 Jul 2026 23:02:04 +0800</pubDate>
+        
+        <guid>https://serendipityerr.github.io/p/study-notes-on-forward-and-reverse-kl-divergence/</guid>
+        <description>&lt;h2 id=&#34;introduction-to-kl-divergence&#34;&gt;Introduction to KL Divergence
+&lt;/h2&gt;&lt;h3 id=&#34;definition&#34;&gt;Definition
+&lt;/h3&gt;&lt;p&gt;KL divergence (also known as relative entropy) is used to measure the difference between two probability distributions $p(x)$ and $q(x)$.&lt;/p&gt;
+$$
+D_{\text{KL}}(P \ \Vert \ Q) = \sum_{x \in \mathcal{X}} P(x) \log \frac{P(x)}{Q(x)}.
+$$$$
+D_{\text{KL}}(p \ \Vert \ q) = \int_{\mathcal{X}} p(x) \log \frac{p(x)}{q(x)} dx = \mathbb{E}_{x \sim p(x)} \left[ \log \frac{p(x)}{q(x)} \right].
+$$&lt;p&gt;In the following sections, we mainly focus on the continuous version.&lt;/p&gt;
+&lt;h3 id=&#34;key-properties&#34;&gt;Key Properties
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Non-negativity (Gibbs&amp;rsquo; Inequality)&lt;/strong&gt;: $D_{\text{KL}}(p \ \Vert \ q) \geq 0$ iff $p(x) = q(x)$ (almost anywhere).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Asymmetry&lt;/strong&gt;: Generally, $D_{\text{KL}}(p \ \Vert \ q) \neq D_{\text{KL}}(q \ \Vert \ p)$. Therefore, KL divergence is &lt;strong&gt;not&lt;/strong&gt; a true distance metric.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;forward-kl-vs-reverse-kl&#34;&gt;Forward KL vs. Reverse KL
+&lt;/h2&gt;&lt;p&gt;In machine learning, we often aim to minimize the discrepancy between a true distribution $p(x)$ and a model distribution $q_\theta(x)$. The optimization objective varies depending on which distribution is placed in the expectation operator. Define the two optimization objectives:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;forward KL divergence: $\min_{q} D_{\text{KL}}(p \ \Vert \ q)$&lt;/li&gt;
+&lt;li&gt;reverse KL divergence: $\min_{q} D_{\text{KL}}(q \ \Vert \ p)$&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;ideal-cases&#34;&gt;Ideal Cases
+&lt;/h3&gt;$$
+\begin{gathered}
+\arg\min_{q} D_{\text{KL}}(p \ \Vert \ q) = 0 \ \Rightarrow \ q^*(x) = p(x) \\
+\arg\min_{q} D_{\text{KL}}(q \ \Vert \ p) = 0 \ \Rightarrow \ q^*(x) = p(x)
+\end{gathered}
+$$&lt;p&gt;Under this ideal mathematical assumption, the optimal solution is the target distribution itself. Therefore, in this case, optimizing both forward and backward KL divergence are equivalent.&lt;/p&gt;
+&lt;h3 id=&#34;practical-cases&#34;&gt;Practical Cases
+&lt;/h3&gt;&lt;p&gt;In practice, the model distribution $q_\theta(x)$ is determined by the parameter $\theta$ (e.g., a single Gaussian distribution or a neural network with a specific architecture), and it constitutes a restricted hypothesis space $\mathcal{Q}&lt;em&gt;\theta$. The true distribution $p(x)$, however, is often extremely complex and does not belong to the set $\mathcal{Q}&lt;/em&gt;\theta$ at all. This implies that $\min D_{\text{KL}} &amp;gt; 0$.&lt;/p&gt;
+&lt;p&gt;In this case, the objective functions for the forward and backward KL divergences will cause the parameters $\theta^*$ to converge in completely different directions. We will perform a rigorous derivation using the example of fitting an arbitrary complex distribution with a single Gaussian distribution.&lt;/p&gt;
+&lt;p&gt;Suppose the target distribution $p(x)$ is an unknown complex multimodal distribution, and the model distribution is a Gaussian distribution $q_\theta(x) = \mathcal{N}(x; \mu, \Sigma)$, with parameters $\theta = {\mu, \Sigma}$.&lt;/p&gt;
+&lt;h4 id=&#34;forward-kl-divergence&#34;&gt;Forward KL Divergence
+&lt;/h4&gt;$$
+\min_\theta D_{\text{KL}}(p \ \Vert \ q_\theta) = \mathbb{E}_{x \sim p(x)} \left[\log \frac{p(x)}{q_\theta(x)}\right] = \mathbb{E}_{x \sim p(x)} [\log p(x) - \log q_\theta(x)].
+$$$$
+\theta^* = \arg\max_\theta \mathbb{E}_{x \sim p(x)}[\log q_\theta(x)]
+$$$$
+\mu^* = \arg\max_\mu \mathbb{E}_{x \sim p(x)}\left[ -\frac{1}{2}(x-\mu)^T \Sigma^{-1} (x-\mu) \right]
+$$$$0 = \nabla_\mu \mathbb{E}_{x \sim p(x)} \left[ -\frac{1}{2}(x-\mu)^T \Sigma^{-1} (x-\mu) \right] = \mathbb{E}_{x \sim p(x)}[\Sigma^{-1}(x-\mu)]$$$$
+\mu^* = \mathbb{E}_{x \sim p(x)}[x]
+$$&lt;p&gt;&lt;strong&gt;Conclusion&lt;/strong&gt;: The optimal mean is the &lt;strong&gt;global mean&lt;/strong&gt; of the true distribution, covering all modes. If the target distribution consists of two peaks that are very far apart (such as the distributions of cat and dog images), the model’s mean will be firmly locked at the physical center between these two peaks (which is often a meaningless “valley” region with no probability mass at all). This is why it is called &lt;strong&gt;Mode Covering&lt;/strong&gt; (also known as Mean-Seeking, Zero-Avoiding).&lt;/p&gt;
+&lt;h4 id=&#34;reverse-kl-divergence&#34;&gt;Reverse KL Divergence
+&lt;/h4&gt;$$
+\min_\theta D_{\text{KL}}(q_\theta \ \Vert \ p) = \mathbb{E}_{x \sim q_\theta(x)} \left[\log \frac{q_\theta(x)}{p(x)}\right] = -H(q_\theta(x)) + \mathbb{E}_{x \sim q_\theta(x)} \left[ -\log p(x) \right]
+$$&lt;p&gt;The objective function here consists of two parts, which is the essence of maximizing the ELBO in variational inference:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;The cross-entropy term $\mathbb{E}&lt;em&gt;{q&lt;/em&gt;\theta}[-\log p(x)]$: This requires that $q_\theta(x)$ be concentrated in regions where $p(x)$ is large. If $q_\theta$ allocates probability mass to the “valley” regions where $p(x) \approx 0$, causing $-\log p(x) \to \infty$, the penalty from this term will instantly explode.&lt;/li&gt;
+&lt;li&gt;Negative entropy term $-H(q_\theta)$: This requires that the variance of $q_\theta(x)$ itself be as small as possible (the more concentrated the distribution, the smaller the negative entropy).&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;Conclusion&lt;/strong&gt;: The model collapses to a single mode to avoid low-density regions of $p(x)$. Its optimal solution is to select, from among the numerous peaks in $p(x)$, the local peak (mode) with the largest “area” and the easiest to fit, then place $\mu^*$ at the vertex of this peak and shrink the variance $\Sigma$ so that it is completely contained within this single peak. This is why it is called &lt;strong&gt;Mode-Seeking&lt;/strong&gt; (also known as Zero-Forcing).&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>The Summary of 2025</title>
         <link>https://serendipityerr.github.io/p/the-summary-of-2025/</link>
         <pubDate>Mon, 16 Feb 2026 11:12:04 +0800</pubDate>
