@@ -6,7 +6,77 @@
         <description>Recent content in Posts on Serendipity&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Fri, 17 Jul 2026 23:02:04 +0800</lastBuildDate><atom:link href="https://serendipityerr.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 27 Aug 2026 00:46:35 +0800</lastBuildDate><atom:link href="https://serendipityerr.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Linux Server Commands CheatSheet</title>
+        <link>https://serendipityerr.github.io/p/linux-server-commands-cheatsheet/</link>
+        <pubDate>Thu, 27 Aug 2026 00:46:35 +0800</pubDate>
+        
+        <guid>https://serendipityerr.github.io/p/linux-server-commands-cheatsheet/</guid>
+        <description>&lt;p&gt;A handy CheatSheet for TMUX and Docker commands you’ll use every day.&lt;/p&gt;
+&lt;h2 id=&#34;some-useful-tmux-instructions&#34;&gt;Some useful TMUX instructions
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;tmux ls&lt;/code&gt;/&lt;code&gt;tmux list-session&lt;/code&gt; – List all sessions&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;tmux new -s &amp;lt;session-ID&amp;gt;/&amp;lt;session-name&amp;gt;&lt;/code&gt; – Create a new session with the given name&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;tmux kill-session -t &amp;lt;session-ID&amp;gt;/&amp;lt;session-name&amp;gt;&lt;/code&gt; – Kill the specified session&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;tmux attach -t &amp;lt;session-ID&amp;gt;/&amp;lt;session-name&amp;gt;&lt;/code&gt; – Attach to the specified session&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;tmux switch -t &amp;lt;session-ID&amp;gt;/&amp;lt;session-name&amp;gt;&lt;/code&gt; – Switch to the specified session&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;some-useful-docker-instructions&#34;&gt;Some useful Docker instructions
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;docker --version&lt;/code&gt; – Show Docker version information&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;docker info&lt;/code&gt; – Display system‑wide information (containers, images, etc.)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;docker help&lt;/code&gt; – Get help for any Docker command&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;docker run&lt;/code&gt; – Create and start a new container&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;docker ps&lt;/code&gt; – List currently running containers&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;docker ps -a&lt;/code&gt; – List all containers (including stopped ones)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;docker start &amp;lt;container-ID&amp;gt;/&amp;lt;container-name&amp;gt;&lt;/code&gt; – Start a stopped container&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;docker stop &amp;lt;container-ID&amp;gt;/&amp;lt;container-name&amp;gt;&lt;/code&gt; – Stop a running container&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;docker restart &amp;lt;container-ID&amp;gt;/&amp;lt;container-name&amp;gt;&lt;/code&gt; – Restart a container&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;docker rm &amp;lt;container-ID&amp;gt;/&amp;lt;container-name&amp;gt;&lt;/code&gt; – Remove a &lt;strong&gt;stopped&lt;/strong&gt; container&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;docker rm -f &amp;lt;container-ID&amp;gt;/&amp;lt;container-name&amp;gt;&lt;/code&gt; – Force remove &lt;strong&gt;running&lt;/strong&gt; containers&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;docker exec &amp;lt;container-ID&amp;gt;/&amp;lt;container-name&amp;gt; [command]&lt;/code&gt; – Run a command inside a running container&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;docker logs &amp;lt;container-ID&amp;gt;&lt;/code&gt; – View the logs of a container&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;To Be Continued…&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>Study Notes on Forward and Reverse KL Divergence</title>
         <link>https://serendipityerr.github.io/p/study-notes-on-forward-and-reverse-kl-divergence/</link>
         <pubDate>Fri, 17 Jul 2026 23:02:04 +0800</pubDate>
