@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="A handy CheatSheet for TMUX and Docker commands you’ll use every day.\nSome useful TMUX instructions\rtmux ls/tmux list-session – List all sessions\ntmux new -s &lt;session-ID&gt;/&lt;session-name&gt; – Create a new session with the given name\ntmux kill-session -t &lt;session-ID&gt;/&lt;session-name&gt; – Kill the specified session\ntmux attach -t &lt;session-ID&gt;/&lt;session-name&gt; – Attach to the specified session\ntmux switch -t &lt;session-ID&gt;/&lt;session-name&gt; – Switch to the specified session\nSome useful Docker instructions\rdocker --version – Show Docker version information\n">
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="A handy CheatSheet for TMUX and Docker commands you’ll use every day.\nSome useful TMUX instructions\rList all sessions\n1 2 tmux ls tmux list-session Create a new session with the given name\n1 tmux new -s &lt;session-name&gt; Kill the specified session\n1 tmux kill-session -t &lt;session-ID&gt;/&lt;session-name&gt; Attach to the specified session\n1 tmux attach -t &lt;session-ID&gt;/&lt;session-name&gt; Switch to the specified session\n">
 <title>Linux Server Commands CheatSheet</title>
 
 <link rel='canonical' href='https://serendipityerr.github.io/p/linux-server-commands-cheatsheet/'>
 
 <link rel="stylesheet" href="/scss/style.min.b9c8156d464c343bdacaf14a871581fb94cbbdb9dd5cbce4ba017361187cc930.css"><meta property='og:title' content="Linux Server Commands CheatSheet">
-<meta property='og:description' content="A handy CheatSheet for TMUX and Docker commands you’ll use every day.\nSome useful TMUX instructions\rtmux ls/tmux list-session – List all sessions\ntmux new -s &lt;session-ID&gt;/&lt;session-name&gt; – Create a new session with the given name\ntmux kill-session -t &lt;session-ID&gt;/&lt;session-name&gt; – Kill the specified session\ntmux attach -t &lt;session-ID&gt;/&lt;session-name&gt; – Attach to the specified session\ntmux switch -t &lt;session-ID&gt;/&lt;session-name&gt; – Switch to the specified session\nSome useful Docker instructions\rdocker --version – Show Docker version information\n">
+<meta property='og:description' content="A handy CheatSheet for TMUX and Docker commands you’ll use every day.\nSome useful TMUX instructions\rList all sessions\n1 2 tmux ls tmux list-session Create a new session with the given name\n1 tmux new -s &lt;session-name&gt; Kill the specified session\n1 tmux kill-session -t &lt;session-ID&gt;/&lt;session-name&gt; Attach to the specified session\n1 tmux attach -t &lt;session-ID&gt;/&lt;session-name&gt; Switch to the specified session\n">
 <meta property='og:url' content='https://serendipityerr.github.io/p/linux-server-commands-cheatsheet/'>
 <meta property='og:site_name' content='Serendipity&#39;s Blog'>
 <meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Linux' /><meta property='article:published_time' content='2026-08-27T00:46:35&#43;08:00'/><meta property='article:modified_time' content='2026-08-27T00:46:35&#43;08:00'/>
 <meta name="twitter:title" content="Linux Server Commands CheatSheet">
-<meta name="twitter:description" content="A handy CheatSheet for TMUX and Docker commands you’ll use every day.\nSome useful TMUX instructions\rtmux ls/tmux list-session – List all sessions\ntmux new -s &lt;session-ID&gt;/&lt;session-name&gt; – Create a new session with the given name\ntmux kill-session -t &lt;session-ID&gt;/&lt;session-name&gt; – Kill the specified session\ntmux attach -t &lt;session-ID&gt;/&lt;session-name&gt; – Attach to the specified session\ntmux switch -t &lt;session-ID&gt;/&lt;session-name&gt; – Switch to the specified session\nSome useful Docker instructions\rdocker --version – Show Docker version information\n">
+<meta name="twitter:description" content="A handy CheatSheet for TMUX and Docker commands you’ll use every day.\nSome useful TMUX instructions\rList all sessions\n1 2 tmux ls tmux list-session Create a new session with the given name\n1 tmux new -s &lt;session-name&gt; Kill the specified session\n1 tmux kill-session -t &lt;session-ID&gt;/&lt;session-name&gt; Attach to the specified session\n1 tmux attach -t &lt;session-ID&gt;/&lt;session-name&gt; Switch to the specified session\n">
     <link rel="shortcut icon" href="/favicon.ico" />
 
     </head>
@@ -341,64 +341,210 @@
 <h2 id="some-useful-tmux-instructions">Some useful TMUX instructions
 </h2><ul>
 <li>
-<p><code>tmux ls</code>/<code>tmux list-session</code> – List all sessions</p>
-</li>
+<p>List all sessions</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">tmux ls
+</span></span><span class="line"><span class="cl">tmux list-session
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
 <li>
-<p><code>tmux new -s &lt;session-ID&gt;/&lt;session-name&gt;</code> – Create a new session with the given name</p>
-</li>
+<p>Create a new session with the given name</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">tmux new -s &lt;session-name&gt;
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
 <li>
-<p><code>tmux kill-session -t &lt;session-ID&gt;/&lt;session-name&gt;</code> – Kill the specified session</p>
-</li>
+<p>Kill the specified session</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">tmux kill-session -t &lt;session-ID&gt;/&lt;session-name&gt;
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
 <li>
-<p><code>tmux attach -t &lt;session-ID&gt;/&lt;session-name&gt;</code> – Attach to the specified session</p>
-</li>
+<p>Attach to the specified session</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">tmux attach -t &lt;session-ID&gt;/&lt;session-name&gt;
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
 <li>
-<p><code>tmux switch -t &lt;session-ID&gt;/&lt;session-name&gt;</code> – Switch to the specified session</p>
-</li>
+<p>Switch to the specified session</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">tmux switch -t &lt;session-ID&gt;/&lt;session-name&gt;
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
 </ul>
 <h2 id="some-useful-docker-instructions">Some useful Docker instructions
 </h2><ul>
 <li>
-<p><code>docker --version</code> – Show Docker version information</p>
-</li>
+<p>Show Docker version information</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">docker --version
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
 <li>
-<p><code>docker info</code> – Display system‑wide information (containers, images, etc.)</p>
-</li>
+<p>Display system‑wide information (containers, images, etc.)</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">docker info
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
 <li>
-<p><code>docker help</code> – Get help for any Docker command</p>
-</li>
+<p>Get help for any Docker command</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">docker <span class="nb">help</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
 <li>
-<p><code>docker run</code> – Create and start a new container</p>
-</li>
+<p>Create and start a new container from the specified image</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">docker run <span class="o">[</span>image<span class="o">]</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
 <li>
-<p><code>docker ps</code> – List currently running containers</p>
-</li>
+<p>List currently running containers</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">docker ps
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
 <li>
-<p><code>docker ps -a</code> – List all containers (including stopped ones)</p>
-</li>
+<p>List all containers (including stopped ones)</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">docker ps -a
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
 <li>
-<p><code>docker start &lt;container-ID&gt;/&lt;container-name&gt;</code> – Start a stopped container</p>
-</li>
+<p>Start a stopped container</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">docker start &lt;container-ID&gt;/&lt;container-name&gt;
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
 <li>
-<p><code>docker stop &lt;container-ID&gt;/&lt;container-name&gt;</code> – Stop a running container</p>
-</li>
+<p>Stop a running container</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">docker stop &lt;container-ID&gt;/&lt;container-name&gt;
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
 <li>
-<p><code>docker restart &lt;container-ID&gt;/&lt;container-name&gt;</code> – Restart a container</p>
-</li>
+<p>Restart a container</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">docker restart &lt;container-ID&gt;/&lt;container-name&gt;
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
 <li>
-<p><code>docker rm &lt;container-ID&gt;/&lt;container-name&gt;</code> – Remove a <strong>stopped</strong> container</p>
-</li>
+<p>Remove a <strong>stopped</strong> container</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">docker rm &lt;container-ID&gt;/&lt;container-name&gt;
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
 <li>
-<p><code>docker rm -f &lt;container-ID&gt;/&lt;container-name&gt;</code> – Force remove <strong>running</strong> containers</p>
-</li>
+<p>Force remove <strong>running</strong> containers</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">docker rm -f &lt;container-ID&gt;/&lt;container-name&gt;
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
 <li>
-<p><code>docker exec &lt;container-ID&gt;/&lt;container-name&gt; [command]</code> – Run a command inside a running container</p>
-</li>
+<p>Run a command inside a running container</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">docker <span class="nb">exec</span> &lt;container-ID&gt;/&lt;container-name&gt; <span class="o">[</span>command<span class="o">]</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
 <li>
-<p><code>docker logs &lt;container-ID&gt;</code> – View the logs of a container</p>
-</li>
+<p>View the logs of a container</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">docker logs &lt;container-ID&gt;/&lt;container-name&gt;
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
 </ul>
-<p>To Be Continued…</p>
+<p>To Be Continued&hellip;</p>
 
 </section>
 
