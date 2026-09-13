@@ -451,8 +451,8 @@ $$&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; the minimization over the whole pa
 &lt;/ol&gt;
 $$
 \begin{gathered}
-u^*_t(x_t) = \arg\min_u \{ R(x_t, u, t) + J(t+1, x_t + f(x_t, u, t)) \} \\
-J(t, x_t) = R(x_t, u^*_t(x_t), t) + J(t+1, x_t + f(x_t, u^*_t(x_t), t)
+u^*_t(x_t) = \arg\min_u \{ R(x_t, u, t) + J(x_t + f(x_t, u, t), t+1) \} \\
+J(x_t, t) = R(x_t, u^*_t(x_t), t) + J(x_t + f(x_t, u^*_t(x_t), t), t+1)
 \end{gathered}
 $$&lt;ol start=&#34;3&#34;&gt;
 &lt;li&gt;Forwards: For $t=T-1, \cdots, 1, 0$ compute&lt;/li&gt;
