@@ -15,10 +15,10 @@
         <description>&lt;h2 id=&#34;what-is-distillation&#34;&gt;What is Distillation?
 &lt;/h2&gt;&lt;p&gt;扩散模型（Diffusion Models）可以生成高质量图像，却往往需要几十次网络计算才能完成一张图。一个自然的问题是：能否把这些计算压缩到很少的次数甚至是一次？&lt;/p&gt;
 &lt;p&gt;这就是蒸馏（Distillation）要做的事情：将一个预训练好的多步扩散模型压缩为少步或一步生成模型，通过知识蒸馏保持生成质量同时显著加速推理。比如说，现在已经有了一个图像生成的扩散模型（教师 Teacher 网络），他已经能够通过 100 步的反向过程生成出一张质量不错的图像，但是 100 步的生成过程的时间开销是非常大的，可能是几分钟，我们希望用一个新的网络（学生 Student 网络）学习这个教师生成图像的知识，使其能用很少的步数（例如 1-4 步）生成出一张和教师 100 步生成的质量差不多的图像。&lt;/p&gt;
-&lt;p&gt;传统蒸馏的一种非常直接的做法是：给教师和学生相同的初始随机噪声，让学生一步生成的图像接近教师多步采样的结果。&lt;/p&gt;
+&lt;p&gt;传统蒸馏的一种非常直接的做法是：给教师和学生相同的初始随机噪声 $z \sim \mathcal{N}(0, I)$，让学生一步生成的图像接近教师多步采样的结果。&lt;/p&gt;
 $$
-z\xrightarrow{\text{教师多步采样}}y, \ z\xrightarrow{G_\theta}x, \ \min_\theta\ell(x,y).
-$$&lt;p&gt;但实际上教师的噪声到图像映射非常复杂，如果纯粹逐样本之间的拟合，单步学生难以准确复现。这篇文章 DMD（Distribution Matching Distillation，分布匹配蒸馏）给出的答案是：训练一个单步的学生生成模型，用预训练的教师生成模型指导它的输出分布，再用教师生成的配对数据稳定训练。相比上面的传统蒸馏方法， DMD 放松了逐样本对应的要求：学生可以生成与教师某次输出不同的图像，但是只要整体上足够真实，并且分布接近目标，我们认为也是很好的。&lt;/p&gt;
+z\xrightarrow{\text{教师多步采样}}y, \ z\xrightarrow{G_\theta}x, \ \min_\theta\ell(x,y),
+$$&lt;p&gt;其中 $\ell$ 可以是某些距离函数。但实际上教师的噪声到图像映射非常复杂，如果纯粹逐样本之间的拟合，单步学生难以准确复现。这篇文章 DMD（Distribution Matching Distillation，分布匹配蒸馏）给出的答案是：训练一个单步的学生生成模型，用预训练的教师生成模型指导它的输出分布，再用教师生成的配对数据稳定训练。相比上面的传统蒸馏方法， DMD 放松了逐样本对应的要求：学生可以生成与教师某次输出不同的图像，但是只要整体上足够真实，并且分布接近目标，那么也是足够好的。&lt;/p&gt;
 &lt;h2 id=&#34;distribution-matching-distillation-dmd&#34;&gt;Distribution Matching Distillation (DMD)
 &lt;/h2&gt;&lt;h3 id=&#34;preliminary&#34;&gt;Preliminary
 &lt;/h3&gt;&lt;p&gt;回归一下 DDPMs 中的一些定义：我们定义了这样的前向加噪过程（这里与之前blog里的记号略有不同，这里的 $\alpha _t$ 指的是之前blog里的 $\sqrt{\bar{\alpha} _t}$，$\sigma _t$ 指的是之前blog里的 $\sqrt{1 - \bar{\alpha}_t}$）：&lt;/p&gt;
