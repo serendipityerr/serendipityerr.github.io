@@ -14,7 +14,7 @@
         <guid>https://serendipityerr.github.io/p/study-notes-on-distribution-matching-distillation-dmd/</guid>
         <description>&lt;h2 id=&#34;what-is-distillation&#34;&gt;What is Distillation?
 &lt;/h2&gt;&lt;p&gt;扩散模型（Diffusion Models）可以生成高质量图像，却往往需要几十次网络计算才能完成一张图。一个自然的问题是：能否把这些计算压缩到很少的次数甚至是一次？&lt;/p&gt;
-&lt;p&gt;这就是蒸馏（Distillation）要做的事情：将一个预训练好的多步扩散模型压缩为少步或一步生成模型，通过知识蒸馏保持生成质量同时显著加速推理。比如说，现在已经有了一个图像生成的扩散模型（教师 Teacher 网络），他已经能够通过100步的反向过程生成出一张质量不错的图像，但是100步的生成过程的时间开销是非常大的，可能是几分钟，我们希望用一个新的网络（学生 Student 网络）学习这个教师生成图像的知识，使其能用很少的步数（例如1-4步）生成出一张和教师100步生成的质量差不多的图像。&lt;/p&gt;
+&lt;p&gt;这就是蒸馏（Distillation）要做的事情：将一个预训练好的多步扩散模型压缩为少步或一步生成模型，通过知识蒸馏保持生成质量同时显著加速推理。比如说，现在已经有了一个图像生成的扩散模型（教师 Teacher 网络），他已经能够通过 100 步的反向过程生成出一张质量不错的图像，但是 100 步的生成过程的时间开销是非常大的，可能是几分钟，我们希望用一个新的网络（学生 Student 网络）学习这个教师生成图像的知识，使其能用很少的步数（例如 1-4 步）生成出一张和教师 100 步生成的质量差不多的图像。&lt;/p&gt;
 &lt;p&gt;传统蒸馏的一种非常直接的做法是：给教师和学生相同的初始随机噪声，让学生一步生成的图像接近教师多步采样的结果。&lt;/p&gt;
 $$
 z\xrightarrow{\text{教师多步采样}}y, \ z\xrightarrow{G_\theta}x, \ \min_\theta\ell(x,y).
@@ -43,7 +43,7 @@ D _{\mathrm{KL}} (p_{\mathrm{fake}}(x) \| p_{\mathrm{real}}(x)) &amp;= \mathbb{E
 &amp;=\mathbb{E} _{z \sim \mathcal N(0,I)} \left[\log p _{\mathrm{fake}}(G _\theta(z)) - \log p _{\mathrm{real}}(G _\theta(z))\right].
 \end{aligned}
 $$&lt;p&gt;第二步就是重参数化：从 $p _{\mathrm{fake}}$ 采样，等价于先采样高斯噪声 $z$，再通过 Student 生成模型得到 $x = G _\theta(z)$。但这里有一个问题：我们既不知道 $p _{\mathrm{real}}(x)$ 的具体表达式，也不知道 $p _{\mathrm{fake}}(x)$ 的具体表达式。Student 生成模型虽然可以生成图像，但我们不能计算这些图像的实际概率密度。&lt;/p&gt;
-&lt;p&gt;但是！我们在神经网络训练的时候，真正需要用来梯度下降更新的其实是 Loss 对参数 $\theta$ 的梯度，那么如果我们考虑 $\nabla _\theta D _{\mathrm{KL}} (p _{\mathrm{fake}} | p _{\mathrm{real}})$ 呢？&lt;/p&gt;
+&lt;p&gt;但是！我们在神经网络训练的时候，真正需要用来梯度下降更新的其实是 Loss 对参数 $\theta$ 的梯度，那么如果我们考虑 $\nabla _\theta D _{\mathrm{KL}} (p _{\mathrm{fake}} \Vert p _{\mathrm{real}})$ 呢？&lt;/p&gt;
 $$
 \nabla _\theta D _{\mathrm{KL}}(p _{\mathrm{fake}}(x) \| p _{\mathrm{real}}(x)) =\mathbb{E} _z\left[ J _\theta(z)^\top \nabla _x \log p _{\mathrm{fake}}(x) - J _\theta(z)^\top \nabla _x \log p _{\mathrm{real}}(x) \right] + \mathbb{E} _{x \sim p _{\mathrm{fake}}} \left[\partial_\theta \log p _{\mathrm{fake}}(x)\right].
 $$&lt;p&gt;其中 $J _\theta(z)=\frac{\partial G _\theta(z)}{\partial\theta}$。最后一项在允许交换积分与求导等正则条件下其实是0：&lt;/p&gt;
