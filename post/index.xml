@@ -27,7 +27,7 @@ x_t = \alpha_t x_0 + \sigma_t \varepsilon, \ \varepsilon \sim \mathcal N(0,I)
 $$&lt;p&gt;我们通过逐步在数据样本中加入随机噪声把真实数据 $x_0$ 变成接近标准正态分布的 $x_T$，再训练网络去反转这个过程，进而学会从噪声中生成数据：&lt;/p&gt;
 $$
 x _0 \sim p _{\mathrm{real}} \xrightarrow{\text{Forward Process}} x _T\sim\mathcal N(0,I), \ x _T \xrightarrow{\text{Reverse Process}} \hat{x} _0.
-$$&lt;p&gt;这里的 $p _{\mathrm{real}}$ 就是真实数据分布。我们认为一个预训练好的 Teacher 生成模型生成出的数据分布已经能够很好的拟合真实数据分布 $p _{\mathrm{real}}$ 了，于是在蒸馏中，我们用这个 Teacher 生成模型提供这个分布的信息，我们把这个 Teacher 网络称为 $\mu^{\mathrm{base}}$ 。DDPMs 通常用噪声网络参数化 $\varepsilon^{\mathrm{base}}(x_t,t)$ 预测噪声，而 DMD 为了方便推导，使用 data prediction：$\mu^{\mathrm{base}}(x _t,t) \approx x _0$。也就是说输入一张带噪图像 $x_t$ 和时间步 $t$，直接输出对干净样本的估计。事实上，$\epsilon _\theta(x _t,t)$ 和 $\mu^{\mathrm{base}}$ 可以根据 Tweedie&amp;rsquo;s Formula 和前向加噪公式相互转化，所以基于不同的网络参数化进行推导本质没有太多区别：&lt;/p&gt;
+$$&lt;p&gt;这里的 $p _{\mathrm{real}}$ 就是真实数据分布。我们认为一个预训练好的 Teacher 生成模型生成出的数据分布已经能够很好的拟合真实数据分布 $p _{\mathrm{real}}$ 了，于是在蒸馏中，我们用这个 Teacher 生成模型提供这个分布的信息，我们把这个 Teacher 网络称为 $\mu^{\mathrm{base}}$ 。DDPMs 通常用噪声网络参数化 $\varepsilon^{\mathrm{base}}(x_t,t)$ 预测噪声，而 DMD 为了方便推导，使用 data prediction：$\mu^{\mathrm{base}}(x _t,t) \approx x _0$。也就是说输入一张带噪图像 $x_t$ 和时间步 $t$，直接输出对干净样本的估计。事实上，$\varepsilon _\theta(x _t,t)$ 和 $\mu^{\mathrm{base}}$ 可以根据 Tweedie&amp;rsquo;s Formula 和前向加噪公式相互转化，所以基于不同的网络参数化进行推导本质没有太多区别：&lt;/p&gt;
 $$
 \mu^{\mathrm{base}}(x _t,t) = \frac{x_t-\sigma _t \varepsilon^{\mathrm{base}}(x _t,t)}{\alpha _t}, \ \varepsilon^{\mathrm{base}}(x _t,t)=\frac{x _t-\alpha _t \mu^{\mathrm{base}}(x _t,t)}{\sigma _t}.
 $$&lt;p&gt;我们先定义要蒸馏的模型与单步生成过程，然后再考虑如何构造 Training Loss。Teacher 生成模型已经能够从随机噪声 $z \sim \mathcal N(0,I)$ 中生成图像，但需要反复调用去噪网络。我们希望训练一个新的 Student 生成模型 $G _\theta$（神经网络参数为 $\theta$），直接完成这个映射，也就是：&lt;/p&gt;
@@ -73,7 +73,7 @@ $$
 s _{\mathrm{real}}(x_t,t) \approx -\frac{x_t - \alpha_t \mu^{\mathrm{base}}(x_t,t)}{\sigma_t^2}.
 $$&lt;p&gt;我们假定 Teacher 模型学出来生成的真实分布是固定的，因此 Teacher 模型 $s_{\mathrm{real}}(x_t,t)$ 在训练中保持冻结。&lt;/p&gt;
 &lt;h4 id=&#34;fake-score为-student-生成模型训练一个去噪器&#34;&gt;Fake Score：为 Student 生成模型训练一个去噪器
-&lt;/h4&gt;&lt;p&gt;虽然我们知道 $x=G &lt;em&gt;\theta(z)$，但光有生成网络 $G&lt;/em&gt;\theta$ 不足以估计 Student 生成模型生成分布的 score $\nabla_{x}\log p_{\mathrm{fake},t}(x)$ ，因为 score 描述概率密度怎样随样本位置变化。&lt;/p&gt;
+&lt;/h4&gt;&lt;p&gt;虽然我们知道 $x=G _\theta(z)$，但光有生成网络 $G _\theta$ 不足以估计 Student 生成模型生成分布的 score $\nabla _{x} \log p _{\mathrm{fake},t}(x)$ ，因为 score 能够描述概率密度怎样随样本位置变化。&lt;/p&gt;
 &lt;p&gt;所以 DMD 引入了另一个去噪网络 $\mu^{\mathrm{fake}} _\phi$（fake diffusion model，网络参数为 $\phi$），让它学习当前 Student 生成模型生成的分布。它使用 Student 的输出作为训练数据，然后用 $\ell _2$ norm 让 $\mu^{\mathrm{fake}} _\phi$ 去拟合 Student 的输出：&lt;/p&gt;
 $$
 \begin{gathered}
@@ -111,13 +111,13 @@ $$&lt;p&gt;论文默认用 LPIPS 作为 $\ell$，让 Student 与 Teacher 生成�
 &lt;p&gt;于是，DMD 蒸馏的最终目标写成：&lt;/p&gt;
 $$
 \mathcal L _\theta = D _{\mathrm{KL}} + \lambda _{\mathrm{reg}} \mathcal{L} _{\mathrm{reg}}
-$$&lt;p&gt;其中 $\lambda_{\mathrm{reg}}=0.25$ 作为默认设置。实际网络更新中，第一项使用前面得到的近似梯度 $\nabla_\theta \mathbb{E} _t [D _{\mathrm{KL}}(p _{\mathrm{fake}}(x _t) | p _{\mathrm{real}}(x _t))]$，第二项直接自动微分即可。&lt;/p&gt;
+$$&lt;p&gt;其中 $\lambda_{\mathrm{reg}}=0.25$ 作为默认设置。实际网络更新中，第一项使用前面得到的近似梯度 $\nabla_\theta \mathbb{E} _t [D _{\mathrm{KL}}(p _{\mathrm{fake}}(x _t) \Vert p _{\mathrm{real}}(x _t))]$，第二项直接自动微分即可。&lt;/p&gt;
 &lt;h4 id=&#34;training-algorithm&#34;&gt;Training Algorithm
 &lt;/h4&gt;&lt;p&gt;现在把前面的推导对应到一轮训练。回顾一下我们一共有三个核心网络：冻结的 Teacher 生成模型 $\mu^{\mathrm{base}}$、用于单步生成的 Student 生成模型 $G_\theta$，以及学习 Student 生成分布的 fake 去噪器 $\mu^{\mathrm{fake}}_\phi$。训练流程可以总结为：&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;采样新噪声 $z$，通过 Student 单步生成 $x=G_\theta(z)$；同时从 $\mathcal D$ 读取 $(z_{\mathrm{ref}},y_{\mathrm{ref}})$，得到 $x_{\mathrm{ref}}=G_\theta(z_{\mathrm{ref}})$。&lt;/li&gt;
 &lt;li&gt;随机采样时间 $t$ 和高斯噪声 $\varepsilon$，给 $x$ 加噪得到 $x_t = \alpha_t x_0 + \sigma_t \varepsilon$。&lt;/li&gt;
-&lt;li&gt;将同一个 $x_t$ 输入 Teacher 生成模型 $\mu^{\mathrm{base}}$ 和 fake 去噪器 $\mu^{\mathrm{fake}} _\phi$，计算分布匹配梯度 $\nabla _\theta D _{\mathrm{KL}}(p _{\mathrm{fake}}(x _t) | p _{\mathrm{real}}(x _t))$。&lt;/li&gt;
+&lt;li&gt;将同一个 $x_t$ 输入 Teacher 生成模型 $\mu^{\mathrm{base}}$ 和 fake 去噪器 $\mu^{\mathrm{fake}} _\phi$，计算分布匹配梯度 $\nabla _\theta D _{\mathrm{KL}}(p _{\mathrm{fake}}(x _t) \Vert p _{\mathrm{real}}(x _t))$。&lt;/li&gt;
 &lt;li&gt;加上 $\operatorname{LPIPS}(x_{\mathrm{ref}},y_{\mathrm{ref}})$ 的梯度，更新 Student 的参数 $\theta$。&lt;/li&gt;
 &lt;li&gt;对本轮 Student 生成的 $x$ 停止梯度，再采样一个时间 $t^\prime$ 并加噪，用 $\mathcal L_\phi$ 更新 fake 去噪器 $\mu^{\mathrm{fake}}_\phi$ 的参数 $\phi$。&lt;/li&gt;
 &lt;li&gt;下一轮由更新后的 Student 生成样本，重复以上过程。&lt;/li&gt;
